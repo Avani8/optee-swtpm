@@ -1,0 +1,3560 @@
+
+;; Function asymPublicTemplate (asymPublicTemplate, funcdef_no=2, decl_uid=7000, cgraph_uid=2, symbol_order=2)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+Purged edges from bb 39
+deleting block 39
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 16->17 to 18 failed.
+Merging block 18 into block 17...
+Merged blocks 17 and 18.
+Merged 17 and 18 without moving.
+Merging block 40 into block 39...
+Merged blocks 39 and 40.
+Merged 39 and 40 without moving.
+Merging block 41 into block 39...
+Merged blocks 39 and 41.
+Merged 39 and 41 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 15 NOTE_INSN_DELETED)
+(note 15 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 15 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])
+        (reg:DI 5 di [ publicArea ])) objecttemplates.c:81 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 addObjectAttributes+0 S4 A128])
+        (reg:SI 4 si [ addObjectAttributes ])) objecttemplates.c:81 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes+0 S4 A128])
+        (reg:SI 1 dx [ deleteObjectAttributes ])) objecttemplates.c:81 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 keyType+0 S4 A32])
+        (reg:SI 2 cx [ keyType ])) objecttemplates.c:81 -1
+     (nil))
+(insn 6 5 8 2 (set (reg:SI 133)
+        (reg:SI 37 r8 [ algPublic ])) objecttemplates.c:81 -1
+     (nil))
+(insn 8 6 10 2 (set (reg:SI 134)
+        (reg:SI 38 r9 [ curveID ])) objecttemplates.c:81 -1
+     (nil))
+(insn 10 8 12 2 (set (reg:SI 135)
+        (mem/c:SI (reg/f:DI 81 virtual-incoming-args) [0 nalg+0 S4 A64])) objecttemplates.c:81 -1
+     (nil))
+(insn 12 10 7 2 (set (reg:SI 136)
+        (mem/c:SI (plus:DI (reg/f:DI 81 virtual-incoming-args)
+                (const_int 8 [0x8])) [0 halg+0 S4 A64])) objecttemplates.c:81 -1
+     (nil))
+(insn 7 12 9 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 algPublic+0 S2 A32])
+        (subreg:HI (reg:SI 133) 0)) objecttemplates.c:81 -1
+     (nil))
+(insn 9 7 11 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -44 [0xffffffffffffffd4])) [0 curveID+0 S2 A32])
+        (subreg:HI (reg:SI 134) 0)) objecttemplates.c:81 -1
+     (nil))
+(insn 11 9 13 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 nalg+0 S2 A32])
+        (subreg:HI (reg:SI 135) 0)) objecttemplates.c:81 -1
+     (nil))
+(insn 13 11 14 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -52 [0xffffffffffffffcc])) [0 halg+0 S2 A32])
+        (subreg:HI (reg:SI 136) 0)) objecttemplates.c:81 -1
+     (nil))
+(note 14 13 17 2 NOTE_INSN_FUNCTION_BEG)
+(insn 17 14 18 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) objecttemplates.c:82 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:84 -1
+     (nil))
+(jump_insn 19 18 20 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 167)
+            (pc))) objecttemplates.c:84 -1
+     (nil)
+ -> 167)
+(note 20 19 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 4 (set (reg/f:DI 137)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:85 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 138)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 addObjectAttributes+0 S4 A128])) objecttemplates.c:85 -1
+     (nil))
+(insn 23 22 24 4 (set (mem/j:SI (plus:DI (reg/f:DI 137)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes+0 S4 A32])
+        (reg:SI 138)) objecttemplates.c:85 -1
+     (nil))
+(insn 24 23 25 4 (set (reg/f:DI 139)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:86 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 87 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 139)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:86 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 88 [ D.7302 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes.val+0 S4 A128])) objecttemplates.c:86 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 89 [ D.7302 ])
+        (not:SI (reg:SI 88 [ D.7302 ]))) objecttemplates.c:86 -1
+     (nil))
+(insn 28 27 29 4 (parallel [
+            (set (reg:SI 90 [ D.7302 ])
+                (and:SI (reg:SI 87 [ D.7302 ])
+                    (reg:SI 89 [ D.7302 ])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:86 -1
+     (nil))
+(insn 29 28 30 4 (set (reg/f:DI 140)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:86 -1
+     (nil))
+(insn 30 29 31 4 (set (mem/j:SI (plus:DI (reg/f:DI 140)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 90 [ D.7302 ])) objecttemplates.c:86 -1
+     (nil))
+(insn 31 30 32 4 (set (reg/f:DI 141)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:89 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:HI 142)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 algPublic+0 S2 A32])) objecttemplates.c:89 -1
+     (nil))
+(insn 33 32 34 4 (set (mem/j:HI (reg/f:DI 141) [0 publicArea_12(D)->type+0 S2 A32])
+        (reg:HI 142)) objecttemplates.c:89 -1
+     (nil))
+(insn 34 33 35 4 (set (reg/f:DI 143)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:90 -1
+     (nil))
+(insn 35 34 36 4 (set (reg:HI 144)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 nalg+0 S2 A32])) objecttemplates.c:90 -1
+     (nil))
+(insn 36 35 37 4 (set (mem/j:HI (plus:DI (reg/f:DI 143)
+                (const_int 2 [0x2])) [0 publicArea_12(D)->nameAlg+0 S2 A16])
+        (reg:HI 144)) objecttemplates.c:90 -1
+     (nil))
+(insn 37 36 38 4 (set (reg/f:DI 145)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:93 -1
+     (nil))
+(insn 38 37 39 4 (set (reg:SI 91 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 145)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:93 -1
+     (nil))
+(insn 39 38 40 4 (parallel [
+            (set (reg:SI 92 [ D.7302 ])
+                (ior:SI (reg:SI 91 [ D.7302 ])
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:93 -1
+     (nil))
+(insn 40 39 41 4 (set (reg/f:DI 146)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:93 -1
+     (nil))
+(insn 41 40 42 4 (set (mem/j:SI (plus:DI (reg/f:DI 146)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 92 [ D.7302 ])) objecttemplates.c:93 -1
+     (nil))
+(insn 42 41 43 4 (set (reg/f:DI 147)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:94 -1
+     (nil))
+(insn 43 42 44 4 (set (reg:SI 93 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 147)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:94 -1
+     (nil))
+(insn 44 43 45 4 (parallel [
+            (set (reg:SI 94 [ D.7302 ])
+                (ior:SI (reg:SI 93 [ D.7302 ])
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:94 -1
+     (nil))
+(insn 45 44 46 4 (set (reg/f:DI 148)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:94 -1
+     (nil))
+(insn 46 45 47 4 (set (mem/j:SI (plus:DI (reg/f:DI 148)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 94 [ D.7302 ])) objecttemplates.c:94 -1
+     (nil))
+(insn 47 46 48 4 (set (reg/f:DI 149)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:95 -1
+     (nil))
+(insn 48 47 49 4 (set (reg:SI 95 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 149)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:95 -1
+     (nil))
+(insn 49 48 50 4 (parallel [
+            (set (reg:SI 96 [ D.7302 ])
+                (and:SI (reg:SI 95 [ D.7302 ])
+                    (const_int -129 [0xffffffffffffff7f])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:95 -1
+     (nil))
+(insn 50 49 51 4 (set (reg/f:DI 150)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:95 -1
+     (nil))
+(insn 51 50 52 4 (set (mem/j:SI (plus:DI (reg/f:DI 150)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 96 [ D.7302 ])) objecttemplates.c:95 -1
+     (nil))
+(insn 52 51 53 4 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 keyType+0 S4 A32])
+            (const_int 12 [0xc]))) objecttemplates.c:97 -1
+     (nil))
+(jump_insn 53 52 381 4 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 158)
+            (pc))) objecttemplates.c:97 -1
+     (nil)
+ -> 158)
+(note 381 53 54 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 54 381 55 5 (set (reg:DI 151)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 keyType+0 S4 A32]))) objecttemplates.c:97 -1
+     (nil))
+(insn 55 54 56 5 (parallel [
+            (set (reg:DI 152)
+                (ashift:DI (reg:DI 151)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:97 -1
+     (nil))
+(insn 56 55 57 5 (set (reg:DI 153)
+        (label_ref:DI 62)) objecttemplates.c:97 -1
+     (insn_list:REG_LABEL_OPERAND 62 (nil)))
+(insn 57 56 58 5 (set (reg:SI 154)
+        (mem/u/c:SI (plus:DI (reg:DI 152)
+                (reg:DI 153)) [0  S4 A8])) objecttemplates.c:97 -1
+     (nil))
+(insn 58 57 59 5 (set (reg:DI 155)
+        (sign_extend:DI (reg:SI 154))) objecttemplates.c:97 -1
+     (nil))
+(insn 59 58 60 5 (set (reg:DI 157)
+        (label_ref:DI 62)) objecttemplates.c:97 -1
+     (insn_list:REG_LABEL_OPERAND 62 (nil)))
+(insn 60 59 61 5 (parallel [
+            (set (reg:DI 156)
+                (plus:DI (reg:DI 155)
+                    (reg:DI 157)))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:97 -1
+     (nil))
+(jump_insn 61 60 62 5 (parallel [
+            (set (pc)
+                (reg:DI 156))
+            (use (label_ref 62))
+        ]) objecttemplates.c:97 -1
+     (nil)
+ -> 62)
+(code_label 62 61 63 5 "" [3 uses])
+(jump_table_data 63 62 64 (addr_diff_vec:SI (label_ref:DI 62)
+         [
+            (label_ref:DI 158)
+            (label_ref:DI 158)
+            (label_ref:DI 84)
+            (label_ref:DI 65)
+            (label_ref:DI 65)
+            (label_ref:DI 103)
+            (label_ref:DI 122)
+            (label_ref:DI 141)
+            (label_ref:DI 158)
+            (label_ref:DI 158)
+            (label_ref:DI 158)
+            (label_ref:DI 103)
+            (label_ref:DI 122)
+        ]
+        (const_int 0 [0])
+        (const_int 0 [0])))
+(barrier 64 63 65)
+(code_label 65 64 66 6 6 "" [2 uses])
+(note 66 65 67 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 67 66 68 6 (set (reg/f:DI 158)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:100 -1
+     (nil))
+(insn 68 67 69 6 (set (reg:SI 97 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 158)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:100 -1
+     (nil))
+(insn 69 68 70 6 (parallel [
+            (set (reg:SI 98 [ D.7302 ])
+                (and:SI (reg:SI 97 [ D.7302 ])
+                    (const_int -262145 [0xfffffffffffbffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:100 -1
+     (nil))
+(insn 70 69 71 6 (set (reg/f:DI 159)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:100 -1
+     (nil))
+(insn 71 70 72 6 (set (mem/j:SI (plus:DI (reg/f:DI 159)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 98 [ D.7302 ])) objecttemplates.c:100 -1
+     (nil))
+(insn 72 71 73 6 (set (reg/f:DI 160)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:101 -1
+     (nil))
+(insn 73 72 74 6 (set (reg:SI 99 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 160)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:101 -1
+     (nil))
+(insn 74 73 75 6 (parallel [
+            (set (reg:SI 100 [ D.7302 ])
+                (ior:SI (reg:SI 99 [ D.7302 ])
+                    (const_int 131072 [0x20000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:101 -1
+     (nil))
+(insn 75 74 76 6 (set (reg/f:DI 161)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:101 -1
+     (nil))
+(insn 76 75 77 6 (set (mem/j:SI (plus:DI (reg/f:DI 161)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 100 [ D.7302 ])) objecttemplates.c:101 -1
+     (nil))
+(insn 77 76 78 6 (set (reg/f:DI 162)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:102 -1
+     (nil))
+(insn 78 77 79 6 (set (reg:SI 101 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 162)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:102 -1
+     (nil))
+(insn 79 78 80 6 (parallel [
+            (set (reg:SI 102 [ D.7302 ])
+                (and:SI (reg:SI 101 [ D.7302 ])
+                    (const_int -65537 [0xfffffffffffeffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:102 -1
+     (nil))
+(insn 80 79 81 6 (set (reg/f:DI 163)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:102 -1
+     (nil))
+(insn 81 80 82 6 (set (mem/j:SI (plus:DI (reg/f:DI 163)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 102 [ D.7302 ])) objecttemplates.c:102 -1
+     (nil))
+(jump_insn 82 81 83 6 (set (pc)
+        (label_ref 158)) objecttemplates.c:103 -1
+     (nil)
+ -> 158)
+(barrier 83 82 84)
+(code_label 84 83 85 7 4 "" [1 uses])
+(note 85 84 86 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 86 85 87 7 (set (reg/f:DI 164)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:105 -1
+     (nil))
+(insn 87 86 88 7 (set (reg:SI 103 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 164)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:105 -1
+     (nil))
+(insn 88 87 89 7 (parallel [
+            (set (reg:SI 104 [ D.7302 ])
+                (and:SI (reg:SI 103 [ D.7302 ])
+                    (const_int -262145 [0xfffffffffffbffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:105 -1
+     (nil))
+(insn 89 88 90 7 (set (reg/f:DI 165)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:105 -1
+     (nil))
+(insn 90 89 91 7 (set (mem/j:SI (plus:DI (reg/f:DI 165)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 104 [ D.7302 ])) objecttemplates.c:105 -1
+     (nil))
+(insn 91 90 92 7 (set (reg/f:DI 166)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:106 -1
+     (nil))
+(insn 92 91 93 7 (set (reg:SI 105 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 166)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:106 -1
+     (nil))
+(insn 93 92 94 7 (parallel [
+            (set (reg:SI 106 [ D.7302 ])
+                (ior:SI (reg:SI 105 [ D.7302 ])
+                    (const_int 131072 [0x20000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:106 -1
+     (nil))
+(insn 94 93 95 7 (set (reg/f:DI 167)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:106 -1
+     (nil))
+(insn 95 94 96 7 (set (mem/j:SI (plus:DI (reg/f:DI 167)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 106 [ D.7302 ])) objecttemplates.c:106 -1
+     (nil))
+(insn 96 95 97 7 (set (reg/f:DI 168)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:107 -1
+     (nil))
+(insn 97 96 98 7 (set (reg:SI 107 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 168)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:107 -1
+     (nil))
+(insn 98 97 99 7 (parallel [
+            (set (reg:SI 108 [ D.7302 ])
+                (ior:SI (reg:SI 107 [ D.7302 ])
+                    (const_int 65536 [0x10000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:107 -1
+     (nil))
+(insn 99 98 100 7 (set (reg/f:DI 169)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:107 -1
+     (nil))
+(insn 100 99 101 7 (set (mem/j:SI (plus:DI (reg/f:DI 169)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 108 [ D.7302 ])) objecttemplates.c:107 -1
+     (nil))
+(jump_insn 101 100 102 7 (set (pc)
+        (label_ref 158)) objecttemplates.c:108 -1
+     (nil)
+ -> 158)
+(barrier 102 101 103)
+(code_label 103 102 104 8 7 "" [2 uses])
+(note 104 103 105 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 105 104 106 8 (set (reg/f:DI 170)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:111 -1
+     (nil))
+(insn 106 105 107 8 (set (reg:SI 109 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 170)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:111 -1
+     (nil))
+(insn 107 106 108 8 (parallel [
+            (set (reg:SI 110 [ D.7302 ])
+                (ior:SI (reg:SI 109 [ D.7302 ])
+                    (const_int 262144 [0x40000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:111 -1
+     (nil))
+(insn 108 107 109 8 (set (reg/f:DI 171)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:111 -1
+     (nil))
+(insn 109 108 110 8 (set (mem/j:SI (plus:DI (reg/f:DI 171)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 110 [ D.7302 ])) objecttemplates.c:111 -1
+     (nil))
+(insn 110 109 111 8 (set (reg/f:DI 172)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:112 -1
+     (nil))
+(insn 111 110 112 8 (set (reg:SI 111 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 172)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:112 -1
+     (nil))
+(insn 112 111 113 8 (parallel [
+            (set (reg:SI 112 [ D.7302 ])
+                (and:SI (reg:SI 111 [ D.7302 ])
+                    (const_int -131073 [0xfffffffffffdffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:112 -1
+     (nil))
+(insn 113 112 114 8 (set (reg/f:DI 173)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:112 -1
+     (nil))
+(insn 114 113 115 8 (set (mem/j:SI (plus:DI (reg/f:DI 173)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 112 [ D.7302 ])) objecttemplates.c:112 -1
+     (nil))
+(insn 115 114 116 8 (set (reg/f:DI 174)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:113 -1
+     (nil))
+(insn 116 115 117 8 (set (reg:SI 113 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 174)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:113 -1
+     (nil))
+(insn 117 116 118 8 (parallel [
+            (set (reg:SI 114 [ D.7302 ])
+                (and:SI (reg:SI 113 [ D.7302 ])
+                    (const_int -65537 [0xfffffffffffeffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:113 -1
+     (nil))
+(insn 118 117 119 8 (set (reg/f:DI 175)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:113 -1
+     (nil))
+(insn 119 118 120 8 (set (mem/j:SI (plus:DI (reg/f:DI 175)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 114 [ D.7302 ])) objecttemplates.c:113 -1
+     (nil))
+(jump_insn 120 119 121 8 (set (pc)
+        (label_ref 158)) objecttemplates.c:114 -1
+     (nil)
+ -> 158)
+(barrier 121 120 122)
+(code_label 122 121 123 9 8 "" [2 uses])
+(note 123 122 124 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 124 123 125 9 (set (reg/f:DI 176)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:117 -1
+     (nil))
+(insn 125 124 126 9 (set (reg:SI 115 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 176)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:117 -1
+     (nil))
+(insn 126 125 127 9 (parallel [
+            (set (reg:SI 116 [ D.7302 ])
+                (ior:SI (reg:SI 115 [ D.7302 ])
+                    (const_int 262144 [0x40000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:117 -1
+     (nil))
+(insn 127 126 128 9 (set (reg/f:DI 177)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:117 -1
+     (nil))
+(insn 128 127 129 9 (set (mem/j:SI (plus:DI (reg/f:DI 177)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 116 [ D.7302 ])) objecttemplates.c:117 -1
+     (nil))
+(insn 129 128 130 9 (set (reg/f:DI 178)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:118 -1
+     (nil))
+(insn 130 129 131 9 (set (reg:SI 117 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 178)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:118 -1
+     (nil))
+(insn 131 130 132 9 (parallel [
+            (set (reg:SI 118 [ D.7302 ])
+                (and:SI (reg:SI 117 [ D.7302 ])
+                    (const_int -131073 [0xfffffffffffdffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:118 -1
+     (nil))
+(insn 132 131 133 9 (set (reg/f:DI 179)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:118 -1
+     (nil))
+(insn 133 132 134 9 (set (mem/j:SI (plus:DI (reg/f:DI 179)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 118 [ D.7302 ])) objecttemplates.c:118 -1
+     (nil))
+(insn 134 133 135 9 (set (reg/f:DI 180)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:119 -1
+     (nil))
+(insn 135 134 136 9 (set (reg:SI 119 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 180)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:119 -1
+     (nil))
+(insn 136 135 137 9 (parallel [
+            (set (reg:SI 120 [ D.7302 ])
+                (ior:SI (reg:SI 119 [ D.7302 ])
+                    (const_int 65536 [0x10000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:119 -1
+     (nil))
+(insn 137 136 138 9 (set (reg/f:DI 181)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:119 -1
+     (nil))
+(insn 138 137 139 9 (set (mem/j:SI (plus:DI (reg/f:DI 181)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 120 [ D.7302 ])) objecttemplates.c:119 -1
+     (nil))
+(jump_insn 139 138 140 9 (set (pc)
+        (label_ref 158)) objecttemplates.c:120 -1
+     (nil)
+ -> 158)
+(barrier 140 139 141)
+(code_label 141 140 142 10 9 "" [1 uses])
+(note 142 141 143 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 143 142 144 10 (set (reg/f:DI 182)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:122 -1
+     (nil))
+(insn 144 143 145 10 (set (reg:SI 121 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 182)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:122 -1
+     (nil))
+(insn 145 144 146 10 (parallel [
+            (set (reg:SI 122 [ D.7302 ])
+                (ior:SI (reg:SI 121 [ D.7302 ])
+                    (const_int 262144 [0x40000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:122 -1
+     (nil))
+(insn 146 145 147 10 (set (reg/f:DI 183)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:122 -1
+     (nil))
+(insn 147 146 148 10 (set (mem/j:SI (plus:DI (reg/f:DI 183)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 122 [ D.7302 ])) objecttemplates.c:122 -1
+     (nil))
+(insn 148 147 149 10 (set (reg/f:DI 184)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:123 -1
+     (nil))
+(insn 149 148 150 10 (set (reg:SI 123 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 184)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:123 -1
+     (nil))
+(insn 150 149 151 10 (parallel [
+            (set (reg:SI 124 [ D.7302 ])
+                (ior:SI (reg:SI 123 [ D.7302 ])
+                    (const_int 131072 [0x20000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:123 -1
+     (nil))
+(insn 151 150 152 10 (set (reg/f:DI 185)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:123 -1
+     (nil))
+(insn 152 151 153 10 (set (mem/j:SI (plus:DI (reg/f:DI 185)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 124 [ D.7302 ])) objecttemplates.c:123 -1
+     (nil))
+(insn 153 152 154 10 (set (reg/f:DI 186)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:124 -1
+     (nil))
+(insn 154 153 155 10 (set (reg:SI 125 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 186)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:124 -1
+     (nil))
+(insn 155 154 156 10 (parallel [
+            (set (reg:SI 126 [ D.7302 ])
+                (and:SI (reg:SI 125 [ D.7302 ])
+                    (const_int -65537 [0xfffffffffffeffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:124 -1
+     (nil))
+(insn 156 155 157 10 (set (reg/f:DI 187)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:124 -1
+     (nil))
+(insn 157 156 158 10 (set (mem/j:SI (plus:DI (reg/f:DI 187)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 126 [ D.7302 ])) objecttemplates.c:124 -1
+     (nil))
+(code_label 158 157 159 11 3 "" [10 uses])
+(note 159 158 160 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 160 159 161 11 (set (reg/f:DI 188)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:127 -1
+     (nil))
+(insn 161 160 162 11 (set (reg:SI 127 [ D.7302 ])
+        (mem/j:SI (plus:DI (reg/f:DI 188)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:127 -1
+     (nil))
+(insn 162 161 163 11 (set (reg:SI 128 [ D.7302 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes.val+0 S4 A128])) objecttemplates.c:127 -1
+     (nil))
+(insn 163 162 164 11 (set (reg:SI 129 [ D.7302 ])
+        (not:SI (reg:SI 128 [ D.7302 ]))) objecttemplates.c:127 -1
+     (nil))
+(insn 164 163 165 11 (parallel [
+            (set (reg:SI 130 [ D.7302 ])
+                (and:SI (reg:SI 127 [ D.7302 ])
+                    (reg:SI 129 [ D.7302 ])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:127 -1
+     (nil))
+(insn 165 164 166 11 (set (reg/f:DI 189)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:127 -1
+     (nil))
+(insn 166 165 167 11 (set (mem/j:SI (plus:DI (reg/f:DI 189)
+                (const_int 4 [0x4])) [0 publicArea_12(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 130 [ D.7302 ])) objecttemplates.c:127 -1
+     (nil))
+(code_label 167 166 168 12 2 "" [1 uses])
+(note 168 167 169 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 169 168 170 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:129 -1
+     (nil))
+(jump_insn 170 169 171 12 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 357)
+            (pc))) objecttemplates.c:129 -1
+     (nil)
+ -> 357)
+(note 171 170 172 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 172 171 173 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 algPublic+0 S2 A32])
+            (const_int 1 [0x1]))) objecttemplates.c:134 -1
+     (nil))
+(jump_insn 173 172 174 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 247)
+            (pc))) objecttemplates.c:134 -1
+     (nil)
+ -> 247)
+(note 174 173 175 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 175 174 176 14 (set (reg:SI 190 [ keyType ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 keyType+0 S4 A32])) objecttemplates.c:137 -1
+     (nil))
+(insn 176 175 177 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 190 [ keyType ])
+            (const_int 2 [0x2]))) objecttemplates.c:137 -1
+     (nil))
+(jump_insn 177 176 382 14 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 192)
+            (pc))) objecttemplates.c:137 -1
+     (nil)
+ -> 192)
+(note 382 177 178 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 178 382 179 15 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 190 [ keyType ])
+            (const_int 2 [0x2]))) objecttemplates.c:137 -1
+     (nil))
+(jump_insn 179 178 383 15 (set (pc)
+        (if_then_else (lt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 200)
+            (pc))) objecttemplates.c:137 -1
+     (nil)
+ -> 200)
+(note 383 179 180 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 180 383 181 16 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 190 [ keyType ])
+            (const_int 7 [0x7]))) objecttemplates.c:137 -1
+     (nil))
+(jump_insn 181 180 384 16 (set (pc)
+        (if_then_else (gt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 200)
+            (pc))) objecttemplates.c:137 -1
+     (nil)
+ -> 200)
+(note 384 181 188 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 188 384 189 17 (set (reg/f:DI 191)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:144 -1
+     (nil))
+(insn 189 188 190 17 (set (mem/j:HI (plus:DI (reg/f:DI 191)
+                (const_int 140 [0x8c])) [0 publicArea_12(D)->parameters.rsaDetail.symmetric.algorithm+0 S2 A32])
+        (const_int 16 [0x10])) objecttemplates.c:144 -1
+     (nil))
+(jump_insn 190 189 191 17 (set (pc)
+        (label_ref 200)) objecttemplates.c:145 -1
+     (nil)
+ -> 200)
+(barrier 191 190 192)
+(code_label 192 191 193 19 13 "" [1 uses])
+(note 193 192 194 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 194 193 195 19 (set (reg/f:DI 192)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:147 -1
+     (nil))
+(insn 195 194 196 19 (set (mem/j:HI (plus:DI (reg/f:DI 192)
+                (const_int 140 [0x8c])) [0 publicArea_12(D)->parameters.rsaDetail.symmetric.algorithm+0 S2 A32])
+        (const_int 6 [0x6])) objecttemplates.c:147 -1
+     (nil))
+(insn 196 195 197 19 (set (reg/f:DI 193)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:149 -1
+     (nil))
+(insn 197 196 198 19 (set (mem/j:HI (plus:DI (reg/f:DI 193)
+                (const_int 142 [0x8e])) [0 publicArea_12(D)->parameters.rsaDetail.symmetric.keyBits.aes+0 S2 A16])
+        (const_int 128 [0x80])) objecttemplates.c:149 -1
+     (nil))
+(insn 198 197 199 19 (set (reg/f:DI 194)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:151 -1
+     (nil))
+(insn 199 198 200 19 (set (mem/j:HI (plus:DI (reg/f:DI 194)
+                (const_int 144 [0x90])) [0 publicArea_12(D)->parameters.rsaDetail.symmetric.mode.aes+0 S2 A32])
+        (const_int 67 [0x43])) objecttemplates.c:151 -1
+     (nil))
+(code_label 200 199 201 20 12 "" [3 uses])
+(note 201 200 202 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 202 201 203 20 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 keyType+0 S4 A32])
+            (const_int 7 [0x7]))) objecttemplates.c:156 -1
+     (nil))
+(jump_insn 203 202 386 20 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 237)
+            (pc))) objecttemplates.c:156 -1
+     (nil)
+ -> 237)
+(note 386 203 204 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 204 386 205 21 (set (reg:DI 195)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 keyType+0 S4 A32]))) objecttemplates.c:156 -1
+     (nil))
+(insn 205 204 206 21 (parallel [
+            (set (reg:DI 196)
+                (ashift:DI (reg:DI 195)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:156 -1
+     (nil))
+(insn 206 205 207 21 (set (reg:DI 197)
+        (label_ref:DI 212)) objecttemplates.c:156 -1
+     (insn_list:REG_LABEL_OPERAND 212 (nil)))
+(insn 207 206 208 21 (set (reg:SI 198)
+        (mem/u/c:SI (plus:DI (reg:DI 196)
+                (reg:DI 197)) [0  S4 A8])) objecttemplates.c:156 -1
+     (nil))
+(insn 208 207 209 21 (set (reg:DI 199)
+        (sign_extend:DI (reg:SI 198))) objecttemplates.c:156 -1
+     (nil))
+(insn 209 208 210 21 (set (reg:DI 201)
+        (label_ref:DI 212)) objecttemplates.c:156 -1
+     (insn_list:REG_LABEL_OPERAND 212 (nil)))
+(insn 210 209 211 21 (parallel [
+            (set (reg:DI 200)
+                (plus:DI (reg:DI 199)
+                    (reg:DI 201)))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:156 -1
+     (nil))
+(jump_insn 211 210 212 21 (parallel [
+            (set (pc)
+                (reg:DI 200))
+            (use (label_ref 212))
+        ]) objecttemplates.c:156 -1
+     (nil)
+ -> 212)
+(code_label 212 211 213 17 "" [3 uses])
+(jump_table_data 213 212 214 (addr_diff_vec:SI (label_ref:DI 212)
+         [
+            (label_ref:DI 237)
+            (label_ref:DI 237)
+            (label_ref:DI 215)
+            (label_ref:DI 215)
+            (label_ref:DI 221)
+            (label_ref:DI 215)
+            (label_ref:DI 230)
+            (label_ref:DI 215)
+        ]
+        (const_int 0 [0])
+        (const_int 0 [0])))
+(barrier 214 213 215)
+(code_label 215 214 216 22 16 "" [4 uses])
+(note 216 215 217 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 217 216 218 22 (set (reg/f:DI 202)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:161 -1
+     (nil))
+(insn 218 217 219 22 (set (mem/j:HI (plus:DI (reg/f:DI 202)
+                (const_int 146 [0x92])) [0 publicArea_12(D)->parameters.rsaDetail.scheme.scheme+0 S2 A16])
+        (const_int 16 [0x10])) objecttemplates.c:161 -1
+     (nil))
+(jump_insn 219 218 220 22 (set (pc)
+        (label_ref 237)) objecttemplates.c:162 -1
+     (nil)
+ -> 237)
+(barrier 220 219 221)
+(code_label 221 220 222 23 18 "" [1 uses])
+(note 222 221 223 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 223 222 224 23 (set (reg/f:DI 203)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:164 -1
+     (nil))
+(insn 224 223 225 23 (set (mem/j:HI (plus:DI (reg/f:DI 203)
+                (const_int 146 [0x92])) [0 publicArea_12(D)->parameters.rsaDetail.scheme.scheme+0 S2 A16])
+        (const_int 23 [0x17])) objecttemplates.c:164 -1
+     (nil))
+(insn 225 224 226 23 (set (reg/f:DI 204)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:169 -1
+     (nil))
+(insn 226 225 227 23 (set (reg:HI 205)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -52 [0xffffffffffffffcc])) [0 halg+0 S2 A32])) objecttemplates.c:169 -1
+     (nil))
+(insn 227 226 228 23 (set (mem/j:HI (plus:DI (reg/f:DI 204)
+                (const_int 148 [0x94])) [0 publicArea_12(D)->parameters.rsaDetail.scheme.details.oaep.hashAlg+0 S2 A32])
+        (reg:HI 205)) objecttemplates.c:169 -1
+     (nil))
+(jump_insn 228 227 229 23 (set (pc)
+        (label_ref 237)) objecttemplates.c:170 -1
+     (nil)
+ -> 237)
+(barrier 229 228 230)
+(code_label 230 229 231 24 19 "" [1 uses])
+(note 231 230 232 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 232 231 233 24 (set (reg/f:DI 206)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:172 -1
+     (nil))
+(insn 233 232 234 24 (set (mem/j:HI (plus:DI (reg/f:DI 206)
+                (const_int 146 [0x92])) [0 publicArea_12(D)->parameters.rsaDetail.scheme.scheme+0 S2 A16])
+        (const_int 20 [0x14])) objecttemplates.c:172 -1
+     (nil))
+(insn 234 233 235 24 (set (reg/f:DI 207)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:177 -1
+     (nil))
+(insn 235 234 236 24 (set (reg:HI 208)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -52 [0xffffffffffffffcc])) [0 halg+0 S2 A32])) objecttemplates.c:177 -1
+     (nil))
+(insn 236 235 237 24 (set (mem/j:HI (plus:DI (reg/f:DI 207)
+                (const_int 148 [0x94])) [0 publicArea_12(D)->parameters.rsaDetail.scheme.details.rsassa.hashAlg+0 S2 A32])
+        (reg:HI 208)) objecttemplates.c:177 -1
+     (nil))
+(code_label 237 236 238 25 15 "" [5 uses])
+(note 238 237 239 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 239 238 240 25 (set (reg/f:DI 209)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:182 -1
+     (nil))
+(insn 240 239 241 25 (set (mem/j:HI (plus:DI (reg/f:DI 209)
+                (const_int 152 [0x98])) [0 publicArea_12(D)->parameters.rsaDetail.keyBits+0 S2 A32])
+        (const_int 2048 [0x800])) objecttemplates.c:182 -1
+     (nil))
+(insn 241 240 242 25 (set (reg/f:DI 210)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:183 -1
+     (nil))
+(insn 242 241 243 25 (set (mem/j:SI (plus:DI (reg/f:DI 210)
+                (const_int 156 [0x9c])) [0 publicArea_12(D)->parameters.rsaDetail.exponent+0 S4 A32])
+        (const_int 0 [0])) objecttemplates.c:183 -1
+     (nil))
+(insn 243 242 244 25 (set (reg/f:DI 211)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:186 -1
+     (nil))
+(insn 244 243 245 25 (set (mem/j:HI (plus:DI (reg/f:DI 211)
+                (const_int 160 [0xa0])) [0 publicArea_12(D)->unique.rsa.t.size+0 S2 A32])
+        (const_int 0 [0])) objecttemplates.c:186 -1
+     (nil))
+(jump_insn 245 244 246 25 (set (pc)
+        (label_ref 357)) -1
+     (nil)
+ -> 357)
+(barrier 246 245 247)
+(code_label 247 246 248 26 11 "" [1 uses])
+(note 248 247 249 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 249 248 250 26 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 keyType+0 S4 A32])
+            (const_int 12 [0xc]))) objecttemplates.c:191 -1
+     (nil))
+(jump_insn 250 249 387 26 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 276)
+            (pc))) objecttemplates.c:191 -1
+     (nil)
+ -> 276)
+(note 387 250 251 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 251 387 252 27 (set (reg:DI 212)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 keyType+0 S4 A32]))) objecttemplates.c:191 -1
+     (nil))
+(insn 252 251 253 27 (parallel [
+            (set (reg:DI 213)
+                (ashift:DI (reg:DI 212)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:191 -1
+     (nil))
+(insn 253 252 254 27 (set (reg:DI 214)
+        (label_ref:DI 259)) objecttemplates.c:191 -1
+     (insn_list:REG_LABEL_OPERAND 259 (nil)))
+(insn 254 253 255 27 (set (reg:SI 215)
+        (mem/u/c:SI (plus:DI (reg:DI 213)
+                (reg:DI 214)) [0  S4 A8])) objecttemplates.c:191 -1
+     (nil))
+(insn 255 254 256 27 (set (reg:DI 216)
+        (sign_extend:DI (reg:SI 215))) objecttemplates.c:191 -1
+     (nil))
+(insn 256 255 257 27 (set (reg:DI 218)
+        (label_ref:DI 259)) objecttemplates.c:191 -1
+     (insn_list:REG_LABEL_OPERAND 259 (nil)))
+(insn 257 256 258 27 (parallel [
+            (set (reg:DI 217)
+                (plus:DI (reg:DI 216)
+                    (reg:DI 218)))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:191 -1
+     (nil))
+(jump_insn 258 257 259 27 (parallel [
+            (set (pc)
+                (reg:DI 217))
+            (use (label_ref 259))
+        ]) objecttemplates.c:191 -1
+     (nil)
+ -> 259)
+(code_label 259 258 260 22 "" [3 uses])
+(jump_table_data 260 259 261 (addr_diff_vec:SI (label_ref:DI 259)
+         [
+            (label_ref:DI 276)
+            (label_ref:DI 276)
+            (label_ref:DI 268)
+            (label_ref:DI 262)
+            (label_ref:DI 262)
+            (label_ref:DI 262)
+            (label_ref:DI 262)
+            (label_ref:DI 262)
+            (label_ref:DI 276)
+            (label_ref:DI 276)
+            (label_ref:DI 276)
+            (label_ref:DI 262)
+            (label_ref:DI 262)
+        ]
+        (const_int 0 [0])
+        (const_int 0 [0])))
+(barrier 261 260 262)
+(code_label 262 261 263 28 23 "" [7 uses])
+(note 263 262 264 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 264 263 265 28 (set (reg/f:DI 219)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:200 -1
+     (nil))
+(insn 265 264 266 28 (set (mem/j:HI (plus:DI (reg/f:DI 219)
+                (const_int 140 [0x8c])) [0 publicArea_12(D)->parameters.eccDetail.symmetric.algorithm+0 S2 A32])
+        (const_int 16 [0x10])) objecttemplates.c:200 -1
+     (nil))
+(jump_insn 266 265 267 28 (set (pc)
+        (label_ref 276)) objecttemplates.c:201 -1
+     (nil)
+ -> 276)
+(barrier 267 266 268)
+(code_label 268 267 269 29 21 "" [1 uses])
+(note 269 268 270 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 270 269 271 29 (set (reg/f:DI 220)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:203 -1
+     (nil))
+(insn 271 270 272 29 (set (mem/j:HI (plus:DI (reg/f:DI 220)
+                (const_int 140 [0x8c])) [0 publicArea_12(D)->parameters.eccDetail.symmetric.algorithm+0 S2 A32])
+        (const_int 6 [0x6])) objecttemplates.c:203 -1
+     (nil))
+(insn 272 271 273 29 (set (reg/f:DI 221)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:205 -1
+     (nil))
+(insn 273 272 274 29 (set (mem/j:HI (plus:DI (reg/f:DI 221)
+                (const_int 142 [0x8e])) [0 publicArea_12(D)->parameters.eccDetail.symmetric.keyBits.aes+0 S2 A16])
+        (const_int 128 [0x80])) objecttemplates.c:205 -1
+     (nil))
+(insn 274 273 275 29 (set (reg/f:DI 222)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:207 -1
+     (nil))
+(insn 275 274 276 29 (set (mem/j:HI (plus:DI (reg/f:DI 222)
+                (const_int 144 [0x90])) [0 publicArea_12(D)->parameters.eccDetail.symmetric.mode.aes+0 S2 A32])
+        (const_int 67 [0x43])) objecttemplates.c:207 -1
+     (nil))
+(code_label 276 275 277 30 20 "" [7 uses])
+(note 277 276 278 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 278 277 279 30 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 keyType+0 S4 A32])
+            (const_int 12 [0xc]))) objecttemplates.c:212 -1
+     (nil))
+(jump_insn 279 278 388 30 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 351)
+            (pc))) objecttemplates.c:212 -1
+     (nil)
+ -> 351)
+(note 388 279 280 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 280 388 281 31 (set (reg:DI 223)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 keyType+0 S4 A32]))) objecttemplates.c:212 -1
+     (nil))
+(insn 281 280 282 31 (parallel [
+            (set (reg:DI 224)
+                (ashift:DI (reg:DI 223)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:212 -1
+     (nil))
+(insn 282 281 283 31 (set (reg:DI 225)
+        (label_ref:DI 288)) objecttemplates.c:212 -1
+     (insn_list:REG_LABEL_OPERAND 288 (nil)))
+(insn 283 282 284 31 (set (reg:SI 226)
+        (mem/u/c:SI (plus:DI (reg:DI 224)
+                (reg:DI 225)) [0  S4 A8])) objecttemplates.c:212 -1
+     (nil))
+(insn 284 283 285 31 (set (reg:DI 227)
+        (sign_extend:DI (reg:SI 226))) objecttemplates.c:212 -1
+     (nil))
+(insn 285 284 286 31 (set (reg:DI 229)
+        (label_ref:DI 288)) objecttemplates.c:212 -1
+     (insn_list:REG_LABEL_OPERAND 288 (nil)))
+(insn 286 285 287 31 (parallel [
+            (set (reg:DI 228)
+                (plus:DI (reg:DI 227)
+                    (reg:DI 229)))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:212 -1
+     (nil))
+(jump_insn 287 286 288 31 (parallel [
+            (set (pc)
+                (reg:DI 228))
+            (use (label_ref 288))
+        ]) objecttemplates.c:212 -1
+     (nil)
+ -> 288)
+(code_label 288 287 289 26 "" [3 uses])
+(jump_table_data 289 288 290 (addr_diff_vec:SI (label_ref:DI 288)
+         [
+            (label_ref:DI 351)
+            (label_ref:DI 351)
+            (label_ref:DI 339)
+            (label_ref:DI 291)
+            (label_ref:DI 291)
+            (label_ref:DI 291)
+            (label_ref:DI 302)
+            (label_ref:DI 291)
+            (label_ref:DI 351)
+            (label_ref:DI 351)
+            (label_ref:DI 351)
+            (label_ref:DI 319)
+            (label_ref:DI 319)
+        ]
+        (const_int 0 [0])
+        (const_int 0 [0])))
+(barrier 290 289 291)
+(code_label 291 290 292 32 27 "" [4 uses])
+(note 292 291 293 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 293 292 294 32 (set (reg/f:DI 230)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:217 -1
+     (nil))
+(insn 294 293 295 32 (set (mem/j:HI (plus:DI (reg/f:DI 230)
+                (const_int 146 [0x92])) [0 publicArea_12(D)->parameters.eccDetail.scheme.scheme+0 S2 A16])
+        (const_int 16 [0x10])) objecttemplates.c:217 -1
+     (nil))
+(insn 295 294 296 32 (set (reg/f:DI 231)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:220 -1
+     (nil))
+(insn 296 295 297 32 (set (reg:HI 232)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -44 [0xffffffffffffffd4])) [0 curveID+0 S2 A32])) objecttemplates.c:220 -1
+     (nil))
+(insn 297 296 298 32 (set (mem/j:HI (plus:DI (reg/f:DI 231)
+                (const_int 152 [0x98])) [0 publicArea_12(D)->parameters.eccDetail.curveID+0 S2 A32])
+        (reg:HI 232)) objecttemplates.c:220 -1
+     (nil))
+(insn 298 297 299 32 (set (reg/f:DI 233)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:223 -1
+     (nil))
+(insn 299 298 300 32 (set (mem/j:HI (plus:DI (reg/f:DI 233)
+                (const_int 154 [0x9a])) [0 publicArea_12(D)->parameters.eccDetail.kdf.scheme+0 S2 A16])
+        (const_int 16 [0x10])) objecttemplates.c:223 -1
+     (nil))
+(jump_insn 300 299 301 32 (set (pc)
+        (label_ref 351)) objecttemplates.c:224 -1
+     (nil)
+ -> 351)
+(barrier 301 300 302)
+(code_label 302 301 303 33 28 "" [1 uses])
+(note 303 302 304 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 304 303 305 33 (set (reg/f:DI 234)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:226 -1
+     (nil))
+(insn 305 304 306 33 (set (mem/j:HI (plus:DI (reg/f:DI 234)
+                (const_int 146 [0x92])) [0 publicArea_12(D)->parameters.eccDetail.scheme.scheme+0 S2 A16])
+        (const_int 24 [0x18])) objecttemplates.c:226 -1
+     (nil))
+(insn 306 305 307 33 (set (reg/f:DI 235)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:229 -1
+     (nil))
+(insn 307 306 308 33 (set (reg:HI 236)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -52 [0xffffffffffffffcc])) [0 halg+0 S2 A32])) objecttemplates.c:229 -1
+     (nil))
+(insn 308 307 309 33 (set (mem/j:HI (plus:DI (reg/f:DI 235)
+                (const_int 148 [0x94])) [0 publicArea_12(D)->parameters.eccDetail.scheme.details.ecdsa.hashAlg+0 S2 A32])
+        (reg:HI 236)) objecttemplates.c:229 -1
+     (nil))
+(insn 309 308 310 33 (set (reg/f:DI 237)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:232 -1
+     (nil))
+(insn 310 309 311 33 (set (reg:HI 238)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -44 [0xffffffffffffffd4])) [0 curveID+0 S2 A32])) objecttemplates.c:232 -1
+     (nil))
+(insn 311 310 312 33 (set (mem/j:HI (plus:DI (reg/f:DI 237)
+                (const_int 152 [0x98])) [0 publicArea_12(D)->parameters.eccDetail.curveID+0 S2 A32])
+        (reg:HI 238)) objecttemplates.c:232 -1
+     (nil))
+(insn 312 311 313 33 (set (reg/f:DI 239)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:235 -1
+     (nil))
+(insn 313 312 314 33 (set (mem/j:HI (plus:DI (reg/f:DI 239)
+                (const_int 154 [0x9a])) [0 publicArea_12(D)->parameters.eccDetail.kdf.scheme+0 S2 A16])
+        (const_int 16 [0x10])) objecttemplates.c:235 -1
+     (nil))
+(insn 314 313 315 33 (set (reg/f:DI 240)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:240 -1
+     (nil))
+(insn 315 314 316 33 (set (reg:HI 241)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -52 [0xffffffffffffffcc])) [0 halg+0 S2 A32])) objecttemplates.c:240 -1
+     (nil))
+(insn 316 315 317 33 (set (mem/j:HI (plus:DI (reg/f:DI 240)
+                (const_int 156 [0x9c])) [0 publicArea_12(D)->parameters.eccDetail.kdf.details.mgf1.hashAlg+0 S2 A32])
+        (reg:HI 241)) objecttemplates.c:240 -1
+     (nil))
+(jump_insn 317 316 318 33 (set (pc)
+        (label_ref 351)) objecttemplates.c:241 -1
+     (nil)
+ -> 351)
+(barrier 318 317 319)
+(code_label 319 318 320 34 29 "" [2 uses])
+(note 320 319 321 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 321 320 322 34 (set (reg/f:DI 242)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:244 -1
+     (nil))
+(insn 322 321 323 34 (set (mem/j:HI (plus:DI (reg/f:DI 242)
+                (const_int 146 [0x92])) [0 publicArea_12(D)->parameters.eccDetail.scheme.scheme+0 S2 A16])
+        (const_int 26 [0x1a])) objecttemplates.c:244 -1
+     (nil))
+(insn 323 322 324 34 (set (reg/f:DI 243)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:245 -1
+     (nil))
+(insn 324 323 325 34 (set (reg:HI 244)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -52 [0xffffffffffffffcc])) [0 halg+0 S2 A32])) objecttemplates.c:245 -1
+     (nil))
+(insn 325 324 326 34 (set (mem/j:HI (plus:DI (reg/f:DI 243)
+                (const_int 148 [0x94])) [0 publicArea_12(D)->parameters.eccDetail.scheme.details.ecdaa.hashAlg+0 S2 A32])
+        (reg:HI 244)) objecttemplates.c:245 -1
+     (nil))
+(insn 326 325 327 34 (set (reg/f:DI 245)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:246 -1
+     (nil))
+(insn 327 326 328 34 (set (mem/j:HI (plus:DI (reg/f:DI 245)
+                (const_int 150 [0x96])) [0 publicArea_12(D)->parameters.eccDetail.scheme.details.ecdaa.count+0 S2 A16])
+        (const_int 1 [0x1])) objecttemplates.c:246 -1
+     (nil))
+(insn 328 327 329 34 (set (reg/f:DI 246)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:247 -1
+     (nil))
+(insn 329 328 330 34 (set (reg:HI 247)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -44 [0xffffffffffffffd4])) [0 curveID+0 S2 A32])) objecttemplates.c:247 -1
+     (nil))
+(insn 330 329 331 34 (set (mem/j:HI (plus:DI (reg/f:DI 246)
+                (const_int 152 [0x98])) [0 publicArea_12(D)->parameters.eccDetail.curveID+0 S2 A32])
+        (reg:HI 247)) objecttemplates.c:247 -1
+     (nil))
+(insn 331 330 332 34 (set (reg/f:DI 248)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:248 -1
+     (nil))
+(insn 332 331 333 34 (set (mem/j:HI (plus:DI (reg/f:DI 248)
+                (const_int 154 [0x9a])) [0 publicArea_12(D)->parameters.eccDetail.kdf.scheme+0 S2 A16])
+        (const_int 16 [0x10])) objecttemplates.c:248 -1
+     (nil))
+(insn 333 332 334 34 (set (reg/f:DI 249)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:249 -1
+     (nil))
+(insn 334 333 335 34 (set (mem/j:HI (plus:DI (reg/f:DI 249)
+                (const_int 210 [0xd2])) [0 publicArea_12(D)->unique.ecc.y.t.size+0 S2 A16])
+        (const_int 0 [0])) objecttemplates.c:249 -1
+     (nil))
+(insn 335 334 336 34 (set (reg/f:DI 250)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:250 -1
+     (nil))
+(insn 336 335 337 34 (set (mem/j:HI (plus:DI (reg/f:DI 250)
+                (const_int 160 [0xa0])) [0 publicArea_12(D)->unique.ecc.x.t.size+0 S2 A32])
+        (const_int 0 [0])) objecttemplates.c:250 -1
+     (nil))
+(jump_insn 337 336 338 34 (set (pc)
+        (label_ref 351)) objecttemplates.c:251 -1
+     (nil)
+ -> 351)
+(barrier 338 337 339)
+(code_label 339 338 340 35 25 "" [1 uses])
+(note 340 339 341 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 341 340 342 35 (set (reg/f:DI 251)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:253 -1
+     (nil))
+(insn 342 341 343 35 (set (mem/j:HI (plus:DI (reg/f:DI 251)
+                (const_int 146 [0x92])) [0 publicArea_12(D)->parameters.eccDetail.scheme.scheme+0 S2 A16])
+        (const_int 16 [0x10])) objecttemplates.c:253 -1
+     (nil))
+(insn 343 342 344 35 (set (reg/f:DI 252)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:254 -1
+     (nil))
+(insn 344 343 345 35 (set (mem/j:HI (plus:DI (reg/f:DI 252)
+                (const_int 148 [0x94])) [0 publicArea_12(D)->parameters.eccDetail.scheme.details.anySig.hashAlg+0 S2 A32])
+        (const_int 0 [0])) objecttemplates.c:254 -1
+     (nil))
+(insn 345 344 346 35 (set (reg/f:DI 253)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:255 -1
+     (nil))
+(insn 346 345 347 35 (set (mem/j:HI (plus:DI (reg/f:DI 253)
+                (const_int 152 [0x98])) [0 publicArea_12(D)->parameters.eccDetail.curveID+0 S2 A32])
+        (const_int 3 [0x3])) objecttemplates.c:255 -1
+     (nil))
+(insn 347 346 348 35 (set (reg/f:DI 254)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:256 -1
+     (nil))
+(insn 348 347 349 35 (set (mem/j:HI (plus:DI (reg/f:DI 254)
+                (const_int 154 [0x9a])) [0 publicArea_12(D)->parameters.eccDetail.kdf.scheme+0 S2 A16])
+        (const_int 16 [0x10])) objecttemplates.c:256 -1
+     (nil))
+(insn 349 348 350 35 (set (reg/f:DI 255)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:257 -1
+     (nil))
+(insn 350 349 351 35 (set (mem/j:HI (plus:DI (reg/f:DI 255)
+                (const_int 156 [0x9c])) [0 publicArea_12(D)->parameters.eccDetail.kdf.details.mgf1.hashAlg+0 S2 A32])
+        (const_int 0 [0])) objecttemplates.c:257 -1
+     (nil))
+(code_label 351 350 352 36 24 "" [9 uses])
+(note 352 351 353 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 353 352 354 36 (set (reg/f:DI 256)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:262 -1
+     (nil))
+(insn 354 353 355 36 (set (mem/j:HI (plus:DI (reg/f:DI 256)
+                (const_int 160 [0xa0])) [0 publicArea_12(D)->unique.ecc.x.t.size+0 S2 A32])
+        (const_int 0 [0])) objecttemplates.c:262 -1
+     (nil))
+(insn 355 354 356 36 (set (reg/f:DI 257)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:263 -1
+     (nil))
+(insn 356 355 357 36 (set (mem/j:HI (plus:DI (reg/f:DI 257)
+                (const_int 210 [0xd2])) [0 publicArea_12(D)->unique.ecc.y.t.size+0 S2 A16])
+        (const_int 0 [0])) objecttemplates.c:263 -1
+     (nil))
+(code_label 357 356 358 37 10 "" [2 uses])
+(note 358 357 359 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 359 358 360 37 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:266 -1
+     (nil))
+(jump_insn 360 359 361 37 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 369)
+            (pc))) objecttemplates.c:266 -1
+     (nil)
+ -> 369)
+(note 361 360 362 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 362 361 363 38 (set (reg:DI 258)
+        (mem/f/c:DI (plus:DI (reg/f:DI 81 virtual-incoming-args)
+                (const_int 16 [0x10])) [0 policyFilename+0 S8 A64])) objecttemplates.c:267 -1
+     (nil))
+(insn 363 362 364 38 (set (reg:DI 259)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:267 -1
+     (nil))
+(insn 364 363 365 38 (set (reg:DI 4 si)
+        (reg:DI 258)) objecttemplates.c:267 -1
+     (nil))
+(insn 365 364 366 38 (set (reg:DI 5 di)
+        (reg:DI 259)) objecttemplates.c:267 -1
+     (nil))
+(call_insn 366 365 367 38 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getPolicy") [flags 0x3]  <function_decl 0x7f78b4f9ae58 getPolicy>) [0 getPolicy S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:267 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 367 366 368 38 (set (reg:SI 260)
+        (reg:SI 0 ax)) objecttemplates.c:267 -1
+     (nil))
+(insn 368 367 369 38 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 260)) objecttemplates.c:267 -1
+     (nil))
+(code_label 369 368 370 39 30 "" [1 uses])
+(note 370 369 371 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 371 370 374 39 (set (reg:SI 131 [ D.7303 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) objecttemplates.c:269 -1
+     (nil))
+(insn 374 371 378 39 (set (reg:SI 132 [ <retval> ])
+        (reg:SI 131 [ D.7303 ])) objecttemplates.c:269 -1
+     (nil))
+(insn 378 374 379 39 (set (reg/i:SI 0 ax)
+        (reg:SI 132 [ <retval> ])) objecttemplates.c:270 -1
+     (nil))
+(insn 379 378 0 39 (use (reg/i:SI 0 ax)) objecttemplates.c:270 -1
+     (nil))
+
+;; Function symmetricCipherTemplate (symmetricCipherTemplate, funcdef_no=3, decl_uid=7007, cgraph_uid=3, symbol_order=3)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+Removing jump 92.
+Merging block 11 into block 9...
+Merged blocks 9 and 11.
+Merged 9 and 11 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 10 NOTE_INSN_DELETED)
+(note 10 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 10 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])
+        (reg:DI 5 di [ publicArea ])) objecttemplates.c:283 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 addObjectAttributes+0 S4 A128])
+        (reg:SI 4 si [ addObjectAttributes ])) objecttemplates.c:283 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes+0 S4 A128])
+        (reg:SI 1 dx [ deleteObjectAttributes ])) objecttemplates.c:283 -1
+     (nil))
+(insn 5 4 7 2 (set (reg:SI 105)
+        (reg:SI 2 cx [ nalg ])) objecttemplates.c:283 -1
+     (nil))
+(insn 7 5 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 rev116+0 S4 A32])
+        (reg:SI 37 r8 [ rev116 ])) objecttemplates.c:283 -1
+     (nil))
+(insn 8 7 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 policyFilename+0 S8 A64])
+        (reg:DI 38 r9 [ policyFilename ])) objecttemplates.c:283 -1
+     (nil))
+(insn 6 8 9 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 nalg+0 S2 A32])
+        (subreg:HI (reg:SI 105) 0)) objecttemplates.c:283 -1
+     (nil))
+(note 9 6 12 2 NOTE_INSN_FUNCTION_BEG)
+(insn 12 9 13 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) objecttemplates.c:284 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:286 -1
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 74)
+            (pc))) objecttemplates.c:286 -1
+     (nil)
+ -> 74)
+(note 15 14 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:287 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 107)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 addObjectAttributes+0 S4 A128])) objecttemplates.c:287 -1
+     (nil))
+(insn 18 17 19 4 (set (mem/j:SI (plus:DI (reg/f:DI 106)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes+0 S4 A32])
+        (reg:SI 107)) objecttemplates.c:287 -1
+     (nil))
+(insn 19 18 20 4 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:291 -1
+     (nil))
+(insn 20 19 21 4 (set (mem/j:HI (reg/f:DI 108) [0 publicArea_7(D)->type+0 S2 A32])
+        (const_int 37 [0x25])) objecttemplates.c:291 -1
+     (nil))
+(insn 21 20 22 4 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:292 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:HI 110)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 nalg+0 S2 A32])) objecttemplates.c:292 -1
+     (nil))
+(insn 23 22 24 4 (set (mem/j:HI (plus:DI (reg/f:DI 109)
+                (const_int 2 [0x2])) [0 publicArea_7(D)->nameAlg+0 S2 A16])
+        (reg:HI 110)) objecttemplates.c:292 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 rev116+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:295 -1
+     (nil))
+(jump_insn 25 24 26 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) objecttemplates.c:295 -1
+     (nil)
+ -> 32)
+(note 26 25 27 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 5 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:297 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:SI 87 [ D.7304 ])
+        (mem/j:SI (plus:DI (reg/f:DI 111)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:297 -1
+     (nil))
+(insn 29 28 30 5 (parallel [
+            (set (reg:SI 88 [ D.7304 ])
+                (ior:SI (reg:SI 87 [ D.7304 ])
+                    (const_int 262144 [0x40000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:297 -1
+     (nil))
+(insn 30 29 31 5 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:297 -1
+     (nil))
+(insn 31 30 32 5 (set (mem/j:SI (plus:DI (reg/f:DI 112)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 88 [ D.7304 ])) objecttemplates.c:297 -1
+     (nil))
+(code_label 32 31 33 6 34 "" [1 uses])
+(note 33 32 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 6 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:299 -1
+     (nil))
+(insn 35 34 36 6 (set (reg:SI 89 [ D.7304 ])
+        (mem/j:SI (plus:DI (reg/f:DI 113)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:299 -1
+     (nil))
+(insn 36 35 37 6 (parallel [
+            (set (reg:SI 90 [ D.7304 ])
+                (ior:SI (reg:SI 89 [ D.7304 ])
+                    (const_int 131072 [0x20000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:299 -1
+     (nil))
+(insn 37 36 38 6 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:299 -1
+     (nil))
+(insn 38 37 39 6 (set (mem/j:SI (plus:DI (reg/f:DI 114)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 90 [ D.7304 ])) objecttemplates.c:299 -1
+     (nil))
+(insn 39 38 40 6 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:300 -1
+     (nil))
+(insn 40 39 41 6 (set (reg:SI 91 [ D.7304 ])
+        (mem/j:SI (plus:DI (reg/f:DI 115)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:300 -1
+     (nil))
+(insn 41 40 42 6 (parallel [
+            (set (reg:SI 92 [ D.7304 ])
+                (and:SI (reg:SI 91 [ D.7304 ])
+                    (const_int -65537 [0xfffffffffffeffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:300 -1
+     (nil))
+(insn 42 41 43 6 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:300 -1
+     (nil))
+(insn 43 42 44 6 (set (mem/j:SI (plus:DI (reg/f:DI 116)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 92 [ D.7304 ])) objecttemplates.c:300 -1
+     (nil))
+(insn 44 43 45 6 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:301 -1
+     (nil))
+(insn 45 44 46 6 (set (reg:SI 93 [ D.7304 ])
+        (mem/j:SI (plus:DI (reg/f:DI 117)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:301 -1
+     (nil))
+(insn 46 45 47 6 (parallel [
+            (set (reg:SI 94 [ D.7304 ])
+                (ior:SI (reg:SI 93 [ D.7304 ])
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:301 -1
+     (nil))
+(insn 47 46 48 6 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:301 -1
+     (nil))
+(insn 48 47 49 6 (set (mem/j:SI (plus:DI (reg/f:DI 118)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 94 [ D.7304 ])) objecttemplates.c:301 -1
+     (nil))
+(insn 49 48 50 6 (set (reg/f:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:302 -1
+     (nil))
+(insn 50 49 51 6 (set (reg:SI 95 [ D.7304 ])
+        (mem/j:SI (plus:DI (reg/f:DI 119)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:302 -1
+     (nil))
+(insn 51 50 52 6 (parallel [
+            (set (reg:SI 96 [ D.7304 ])
+                (ior:SI (reg:SI 95 [ D.7304 ])
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:302 -1
+     (nil))
+(insn 52 51 53 6 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:302 -1
+     (nil))
+(insn 53 52 54 6 (set (mem/j:SI (plus:DI (reg/f:DI 120)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 96 [ D.7304 ])) objecttemplates.c:302 -1
+     (nil))
+(insn 54 53 55 6 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:303 -1
+     (nil))
+(insn 55 54 56 6 (set (reg:SI 97 [ D.7304 ])
+        (mem/j:SI (plus:DI (reg/f:DI 121)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:303 -1
+     (nil))
+(insn 56 55 57 6 (parallel [
+            (set (reg:SI 98 [ D.7304 ])
+                (and:SI (reg:SI 97 [ D.7304 ])
+                    (const_int -129 [0xffffffffffffff7f])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:303 -1
+     (nil))
+(insn 57 56 58 6 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:303 -1
+     (nil))
+(insn 58 57 59 6 (set (mem/j:SI (plus:DI (reg/f:DI 122)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 98 [ D.7304 ])) objecttemplates.c:303 -1
+     (nil))
+(insn 59 58 60 6 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:304 -1
+     (nil))
+(insn 60 59 61 6 (set (reg:SI 99 [ D.7304 ])
+        (mem/j:SI (plus:DI (reg/f:DI 123)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:304 -1
+     (nil))
+(insn 61 60 62 6 (set (reg:SI 100 [ D.7304 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes.val+0 S4 A128])) objecttemplates.c:304 -1
+     (nil))
+(insn 62 61 63 6 (set (reg:SI 101 [ D.7304 ])
+        (not:SI (reg:SI 100 [ D.7304 ]))) objecttemplates.c:304 -1
+     (nil))
+(insn 63 62 64 6 (parallel [
+            (set (reg:SI 102 [ D.7304 ])
+                (and:SI (reg:SI 99 [ D.7304 ])
+                    (reg:SI 101 [ D.7304 ])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:304 -1
+     (nil))
+(insn 64 63 65 6 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:304 -1
+     (nil))
+(insn 65 64 66 6 (set (mem/j:SI (plus:DI (reg/f:DI 124)
+                (const_int 4 [0x4])) [0 publicArea_7(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 102 [ D.7304 ])) objecttemplates.c:304 -1
+     (nil))
+(insn 66 65 67 6 (set (reg/f:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:313 -1
+     (nil))
+(insn 67 66 68 6 (set (mem/j:HI (plus:DI (reg/f:DI 125)
+                (const_int 140 [0x8c])) [0 publicArea_7(D)->parameters.symDetail.sym.algorithm+0 S2 A32])
+        (const_int 6 [0x6])) objecttemplates.c:313 -1
+     (nil))
+(insn 68 67 69 6 (set (reg/f:DI 126)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:315 -1
+     (nil))
+(insn 69 68 70 6 (set (mem/j:HI (plus:DI (reg/f:DI 126)
+                (const_int 142 [0x8e])) [0 publicArea_7(D)->parameters.symDetail.sym.keyBits.aes+0 S2 A16])
+        (const_int 128 [0x80])) objecttemplates.c:315 -1
+     (nil))
+(insn 70 69 71 6 (set (reg/f:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:317 -1
+     (nil))
+(insn 71 70 72 6 (set (mem/j:HI (plus:DI (reg/f:DI 127)
+                (const_int 144 [0x90])) [0 publicArea_7(D)->parameters.symDetail.sym.mode.aes+0 S2 A32])
+        (const_int 67 [0x43])) objecttemplates.c:317 -1
+     (nil))
+(insn 72 71 73 6 (set (reg/f:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:322 -1
+     (nil))
+(insn 73 72 74 6 (set (mem/j:HI (plus:DI (reg/f:DI 128)
+                (const_int 160 [0xa0])) [0 publicArea_7(D)->unique.sym.t.size+0 S2 A32])
+        (const_int 0 [0])) objecttemplates.c:322 -1
+     (nil))
+(code_label 74 73 75 7 33 "" [1 uses])
+(note 75 74 76 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 76 75 77 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:324 -1
+     (nil))
+(jump_insn 77 76 78 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 86)
+            (pc))) objecttemplates.c:324 -1
+     (nil)
+ -> 86)
+(note 78 77 79 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 79 78 80 8 (set (reg:DI 129)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 policyFilename+0 S8 A64])) objecttemplates.c:325 -1
+     (nil))
+(insn 80 79 81 8 (set (reg:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:325 -1
+     (nil))
+(insn 81 80 82 8 (set (reg:DI 4 si)
+        (reg:DI 129)) objecttemplates.c:325 -1
+     (nil))
+(insn 82 81 83 8 (set (reg:DI 5 di)
+        (reg:DI 130)) objecttemplates.c:325 -1
+     (nil))
+(call_insn 83 82 84 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getPolicy") [flags 0x3]  <function_decl 0x7f78b4f9ae58 getPolicy>) [0 getPolicy S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:325 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 84 83 85 8 (set (reg:SI 131)
+        (reg:SI 0 ax)) objecttemplates.c:325 -1
+     (nil))
+(insn 85 84 86 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 131)) objecttemplates.c:325 -1
+     (nil))
+(code_label 86 85 87 9 35 "" [1 uses])
+(note 87 86 88 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 91 9 (set (reg:SI 103 [ D.7305 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) objecttemplates.c:327 -1
+     (nil))
+(insn 91 88 95 9 (set (reg:SI 104 [ <retval> ])
+        (reg:SI 103 [ D.7305 ])) objecttemplates.c:327 -1
+     (nil))
+(insn 95 91 96 9 (set (reg/i:SI 0 ax)
+        (reg:SI 104 [ <retval> ])) objecttemplates.c:328 -1
+     (nil))
+(insn 96 95 0 9 (use (reg/i:SI 0 ax)) objecttemplates.c:328 -1
+     (nil))
+
+;; Function keyedHashPublicTemplate (keyedHashPublicTemplate, funcdef_no=4, decl_uid=7014, cgraph_uid=4, symbol_order=4)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 87.
+Merging block 9 into block 7...
+Merged blocks 7 and 9.
+Merged 7 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 11 NOTE_INSN_DELETED)
+(note 11 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 11 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])
+        (reg:DI 5 di [ publicArea ])) objecttemplates.c:342 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 addObjectAttributes+0 S4 A128])
+        (reg:SI 4 si [ addObjectAttributes ])) objecttemplates.c:342 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes+0 S4 A128])
+        (reg:SI 1 dx [ deleteObjectAttributes ])) objecttemplates.c:342 -1
+     (nil))
+(insn 5 4 7 2 (set (reg:SI 105)
+        (reg:SI 2 cx [ nalg ])) objecttemplates.c:342 -1
+     (nil))
+(insn 7 5 9 2 (set (reg:SI 106)
+        (reg:SI 37 r8 [ halg ])) objecttemplates.c:342 -1
+     (nil))
+(insn 9 7 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 policyFilename+0 S8 A64])
+        (reg:DI 38 r9 [ policyFilename ])) objecttemplates.c:342 -1
+     (nil))
+(insn 6 9 8 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 nalg+0 S2 A32])
+        (subreg:HI (reg:SI 105) 0)) objecttemplates.c:342 -1
+     (nil))
+(insn 8 6 10 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 halg+0 S2 A32])
+        (subreg:HI (reg:SI 106) 0)) objecttemplates.c:342 -1
+     (nil))
+(note 10 8 13 2 NOTE_INSN_FUNCTION_BEG)
+(insn 13 10 14 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) objecttemplates.c:343 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:345 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 69)
+            (pc))) objecttemplates.c:345 -1
+     (nil)
+ -> 69)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 4 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:346 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 108)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 addObjectAttributes+0 S4 A128])) objecttemplates.c:346 -1
+     (nil))
+(insn 19 18 20 4 (set (mem/j:SI (plus:DI (reg/f:DI 107)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes+0 S4 A32])
+        (reg:SI 108)) objecttemplates.c:346 -1
+     (nil))
+(insn 20 19 21 4 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:351 -1
+     (nil))
+(insn 21 20 22 4 (set (mem/j:HI (reg/f:DI 109) [0 publicArea_6(D)->type+0 S2 A32])
+        (const_int 8 [0x8])) objecttemplates.c:351 -1
+     (nil))
+(insn 22 21 23 4 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:353 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:HI 111)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 nalg+0 S2 A32])) objecttemplates.c:353 -1
+     (nil))
+(insn 24 23 25 4 (set (mem/j:HI (plus:DI (reg/f:DI 110)
+                (const_int 2 [0x2])) [0 publicArea_6(D)->nameAlg+0 S2 A16])
+        (reg:HI 111)) objecttemplates.c:353 -1
+     (nil))
+(insn 25 24 26 4 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:355 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 87 [ D.7306 ])
+        (mem/j:SI (plus:DI (reg/f:DI 112)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:355 -1
+     (nil))
+(insn 27 26 28 4 (parallel [
+            (set (reg:SI 88 [ D.7306 ])
+                (ior:SI (reg:SI 87 [ D.7306 ])
+                    (const_int 262144 [0x40000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:355 -1
+     (nil))
+(insn 28 27 29 4 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:355 -1
+     (nil))
+(insn 29 28 30 4 (set (mem/j:SI (plus:DI (reg/f:DI 113)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 88 [ D.7306 ])) objecttemplates.c:355 -1
+     (nil))
+(insn 30 29 31 4 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:356 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 89 [ D.7306 ])
+        (mem/j:SI (plus:DI (reg/f:DI 114)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:356 -1
+     (nil))
+(insn 32 31 33 4 (parallel [
+            (set (reg:SI 90 [ D.7306 ])
+                (and:SI (reg:SI 89 [ D.7306 ])
+                    (const_int -131073 [0xfffffffffffdffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:356 -1
+     (nil))
+(insn 33 32 34 4 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:356 -1
+     (nil))
+(insn 34 33 35 4 (set (mem/j:SI (plus:DI (reg/f:DI 115)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 90 [ D.7306 ])) objecttemplates.c:356 -1
+     (nil))
+(insn 35 34 36 4 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:357 -1
+     (nil))
+(insn 36 35 37 4 (set (reg:SI 91 [ D.7306 ])
+        (mem/j:SI (plus:DI (reg/f:DI 116)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:357 -1
+     (nil))
+(insn 37 36 38 4 (parallel [
+            (set (reg:SI 92 [ D.7306 ])
+                (and:SI (reg:SI 91 [ D.7306 ])
+                    (const_int -65537 [0xfffffffffffeffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:357 -1
+     (nil))
+(insn 38 37 39 4 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:357 -1
+     (nil))
+(insn 39 38 40 4 (set (mem/j:SI (plus:DI (reg/f:DI 117)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 92 [ D.7306 ])) objecttemplates.c:357 -1
+     (nil))
+(insn 40 39 41 4 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:358 -1
+     (nil))
+(insn 41 40 42 4 (set (reg:SI 93 [ D.7306 ])
+        (mem/j:SI (plus:DI (reg/f:DI 118)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:358 -1
+     (nil))
+(insn 42 41 43 4 (parallel [
+            (set (reg:SI 94 [ D.7306 ])
+                (ior:SI (reg:SI 93 [ D.7306 ])
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:358 -1
+     (nil))
+(insn 43 42 44 4 (set (reg/f:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:358 -1
+     (nil))
+(insn 44 43 45 4 (set (mem/j:SI (plus:DI (reg/f:DI 119)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 94 [ D.7306 ])) objecttemplates.c:358 -1
+     (nil))
+(insn 45 44 46 4 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:359 -1
+     (nil))
+(insn 46 45 47 4 (set (reg:SI 95 [ D.7306 ])
+        (mem/j:SI (plus:DI (reg/f:DI 120)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:359 -1
+     (nil))
+(insn 47 46 48 4 (parallel [
+            (set (reg:SI 96 [ D.7306 ])
+                (ior:SI (reg:SI 95 [ D.7306 ])
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:359 -1
+     (nil))
+(insn 48 47 49 4 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:359 -1
+     (nil))
+(insn 49 48 50 4 (set (mem/j:SI (plus:DI (reg/f:DI 121)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 96 [ D.7306 ])) objecttemplates.c:359 -1
+     (nil))
+(insn 50 49 51 4 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:360 -1
+     (nil))
+(insn 51 50 52 4 (set (reg:SI 97 [ D.7306 ])
+        (mem/j:SI (plus:DI (reg/f:DI 122)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:360 -1
+     (nil))
+(insn 52 51 53 4 (parallel [
+            (set (reg:SI 98 [ D.7306 ])
+                (and:SI (reg:SI 97 [ D.7306 ])
+                    (const_int -129 [0xffffffffffffff7f])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:360 -1
+     (nil))
+(insn 53 52 54 4 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:360 -1
+     (nil))
+(insn 54 53 55 4 (set (mem/j:SI (plus:DI (reg/f:DI 123)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 98 [ D.7306 ])) objecttemplates.c:360 -1
+     (nil))
+(insn 55 54 56 4 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:361 -1
+     (nil))
+(insn 56 55 57 4 (set (reg:SI 99 [ D.7306 ])
+        (mem/j:SI (plus:DI (reg/f:DI 124)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:361 -1
+     (nil))
+(insn 57 56 58 4 (set (reg:SI 100 [ D.7306 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes.val+0 S4 A128])) objecttemplates.c:361 -1
+     (nil))
+(insn 58 57 59 4 (set (reg:SI 101 [ D.7306 ])
+        (not:SI (reg:SI 100 [ D.7306 ]))) objecttemplates.c:361 -1
+     (nil))
+(insn 59 58 60 4 (parallel [
+            (set (reg:SI 102 [ D.7306 ])
+                (and:SI (reg:SI 99 [ D.7306 ])
+                    (reg:SI 101 [ D.7306 ])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:361 -1
+     (nil))
+(insn 60 59 61 4 (set (reg/f:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:361 -1
+     (nil))
+(insn 61 60 62 4 (set (mem/j:SI (plus:DI (reg/f:DI 125)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 102 [ D.7306 ])) objecttemplates.c:361 -1
+     (nil))
+(insn 62 61 63 4 (set (reg/f:DI 126)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:369 -1
+     (nil))
+(insn 63 62 64 4 (set (mem/j:HI (plus:DI (reg/f:DI 126)
+                (const_int 140 [0x8c])) [0 publicArea_6(D)->parameters.keyedHashDetail.scheme.scheme+0 S2 A32])
+        (const_int 5 [0x5])) objecttemplates.c:369 -1
+     (nil))
+(insn 64 63 65 4 (set (reg/f:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:373 -1
+     (nil))
+(insn 65 64 66 4 (set (reg:HI 128)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 halg+0 S2 A32])) objecttemplates.c:373 -1
+     (nil))
+(insn 66 65 67 4 (set (mem/j:HI (plus:DI (reg/f:DI 127)
+                (const_int 142 [0x8e])) [0 publicArea_6(D)->parameters.keyedHashDetail.scheme.details.hmac.hashAlg+0 S2 A16])
+        (reg:HI 128)) objecttemplates.c:373 -1
+     (nil))
+(insn 67 66 68 4 (set (reg/f:DI 129)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:377 -1
+     (nil))
+(insn 68 67 69 4 (set (mem/j:HI (plus:DI (reg/f:DI 129)
+                (const_int 160 [0xa0])) [0 publicArea_6(D)->unique.sym.t.size+0 S2 A32])
+        (const_int 0 [0])) objecttemplates.c:377 -1
+     (nil))
+(code_label 69 68 70 5 38 "" [1 uses])
+(note 70 69 71 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 71 70 72 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:379 -1
+     (nil))
+(jump_insn 72 71 73 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 81)
+            (pc))) objecttemplates.c:379 -1
+     (nil)
+ -> 81)
+(note 73 72 74 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 74 73 75 6 (set (reg:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 policyFilename+0 S8 A64])) objecttemplates.c:380 -1
+     (nil))
+(insn 75 74 76 6 (set (reg:DI 131)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:380 -1
+     (nil))
+(insn 76 75 77 6 (set (reg:DI 4 si)
+        (reg:DI 130)) objecttemplates.c:380 -1
+     (nil))
+(insn 77 76 78 6 (set (reg:DI 5 di)
+        (reg:DI 131)) objecttemplates.c:380 -1
+     (nil))
+(call_insn 78 77 79 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getPolicy") [flags 0x3]  <function_decl 0x7f78b4f9ae58 getPolicy>) [0 getPolicy S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:380 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 79 78 80 6 (set (reg:SI 132)
+        (reg:SI 0 ax)) objecttemplates.c:380 -1
+     (nil))
+(insn 80 79 81 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 132)) objecttemplates.c:380 -1
+     (nil))
+(code_label 81 80 82 7 39 "" [1 uses])
+(note 82 81 83 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 86 7 (set (reg:SI 103 [ D.7307 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) objecttemplates.c:382 -1
+     (nil))
+(insn 86 83 90 7 (set (reg:SI 104 [ <retval> ])
+        (reg:SI 103 [ D.7307 ])) objecttemplates.c:382 -1
+     (nil))
+(insn 90 86 91 7 (set (reg/i:SI 0 ax)
+        (reg:SI 104 [ <retval> ])) objecttemplates.c:383 -1
+     (nil))
+(insn 91 90 0 7 (use (reg/i:SI 0 ax)) objecttemplates.c:383 -1
+     (nil))
+
+;; Function derivationParentPublicTemplate (derivationParentPublicTemplate, funcdef_no=5, decl_uid=7021, cgraph_uid=5, symbol_order=5)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 104.
+Merging block 9 into block 7...
+Merged blocks 7 and 9.
+Merged 7 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 11 NOTE_INSN_DELETED)
+(note 11 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 11 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])
+        (reg:DI 5 di [ publicArea ])) objecttemplates.c:398 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 addObjectAttributes+0 S4 A128])
+        (reg:SI 4 si [ addObjectAttributes ])) objecttemplates.c:398 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes+0 S4 A128])
+        (reg:SI 1 dx [ deleteObjectAttributes ])) objecttemplates.c:398 -1
+     (nil))
+(insn 5 4 7 2 (set (reg:SI 111)
+        (reg:SI 2 cx [ nalg ])) objecttemplates.c:398 -1
+     (nil))
+(insn 7 5 9 2 (set (reg:SI 112)
+        (reg:SI 37 r8 [ halg ])) objecttemplates.c:398 -1
+     (nil))
+(insn 9 7 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 policyFilename+0 S8 A64])
+        (reg:DI 38 r9 [ policyFilename ])) objecttemplates.c:398 -1
+     (nil))
+(insn 6 9 8 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 nalg+0 S2 A32])
+        (subreg:HI (reg:SI 111) 0)) objecttemplates.c:398 -1
+     (nil))
+(insn 8 6 10 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 halg+0 S2 A32])
+        (subreg:HI (reg:SI 112) 0)) objecttemplates.c:398 -1
+     (nil))
+(note 10 8 13 2 NOTE_INSN_FUNCTION_BEG)
+(insn 13 10 14 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) objecttemplates.c:399 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:401 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 86)
+            (pc))) objecttemplates.c:401 -1
+     (nil)
+ -> 86)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 4 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:402 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 114)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 addObjectAttributes+0 S4 A128])) objecttemplates.c:402 -1
+     (nil))
+(insn 19 18 20 4 (set (mem/j:SI (plus:DI (reg/f:DI 113)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes+0 S4 A32])
+        (reg:SI 114)) objecttemplates.c:402 -1
+     (nil))
+(insn 20 19 21 4 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:407 -1
+     (nil))
+(insn 21 20 22 4 (set (mem/j:HI (reg/f:DI 115) [0 publicArea_6(D)->type+0 S2 A32])
+        (const_int 8 [0x8])) objecttemplates.c:407 -1
+     (nil))
+(insn 22 21 23 4 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:409 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:HI 117)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 nalg+0 S2 A32])) objecttemplates.c:409 -1
+     (nil))
+(insn 24 23 25 4 (set (mem/j:HI (plus:DI (reg/f:DI 116)
+                (const_int 2 [0x2])) [0 publicArea_6(D)->nameAlg+0 S2 A16])
+        (reg:HI 117)) objecttemplates.c:409 -1
+     (nil))
+(insn 25 24 26 4 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:411 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 87 [ D.7308 ])
+        (mem/j:SI (plus:DI (reg/f:DI 118)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:411 -1
+     (nil))
+(insn 27 26 28 4 (parallel [
+            (set (reg:SI 88 [ D.7308 ])
+                (ior:SI (reg:SI 87 [ D.7308 ])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:411 -1
+     (nil))
+(insn 28 27 29 4 (set (reg/f:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:411 -1
+     (nil))
+(insn 29 28 30 4 (set (mem/j:SI (plus:DI (reg/f:DI 119)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 88 [ D.7308 ])) objecttemplates.c:411 -1
+     (nil))
+(insn 30 29 31 4 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:412 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 89 [ D.7308 ])
+        (mem/j:SI (plus:DI (reg/f:DI 120)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:412 -1
+     (nil))
+(insn 32 31 33 4 (parallel [
+            (set (reg:SI 90 [ D.7308 ])
+                (ior:SI (reg:SI 89 [ D.7308 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:412 -1
+     (nil))
+(insn 33 32 34 4 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:412 -1
+     (nil))
+(insn 34 33 35 4 (set (mem/j:SI (plus:DI (reg/f:DI 121)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 90 [ D.7308 ])) objecttemplates.c:412 -1
+     (nil))
+(insn 35 34 36 4 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:413 -1
+     (nil))
+(insn 36 35 37 4 (set (reg:SI 91 [ D.7308 ])
+        (mem/j:SI (plus:DI (reg/f:DI 122)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:413 -1
+     (nil))
+(insn 37 36 38 4 (parallel [
+            (set (reg:SI 92 [ D.7308 ])
+                (and:SI (reg:SI 91 [ D.7308 ])
+                    (const_int -262145 [0xfffffffffffbffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:413 -1
+     (nil))
+(insn 38 37 39 4 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:413 -1
+     (nil))
+(insn 39 38 40 4 (set (mem/j:SI (plus:DI (reg/f:DI 123)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 92 [ D.7308 ])) objecttemplates.c:413 -1
+     (nil))
+(insn 40 39 41 4 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:414 -1
+     (nil))
+(insn 41 40 42 4 (set (reg:SI 93 [ D.7308 ])
+        (mem/j:SI (plus:DI (reg/f:DI 124)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:414 -1
+     (nil))
+(insn 42 41 43 4 (parallel [
+            (set (reg:SI 94 [ D.7308 ])
+                (ior:SI (reg:SI 93 [ D.7308 ])
+                    (const_int 131072 [0x20000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:414 -1
+     (nil))
+(insn 43 42 44 4 (set (reg/f:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:414 -1
+     (nil))
+(insn 44 43 45 4 (set (mem/j:SI (plus:DI (reg/f:DI 125)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 94 [ D.7308 ])) objecttemplates.c:414 -1
+     (nil))
+(insn 45 44 46 4 (set (reg/f:DI 126)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:415 -1
+     (nil))
+(insn 46 45 47 4 (set (reg:SI 95 [ D.7308 ])
+        (mem/j:SI (plus:DI (reg/f:DI 126)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:415 -1
+     (nil))
+(insn 47 46 48 4 (parallel [
+            (set (reg:SI 96 [ D.7308 ])
+                (ior:SI (reg:SI 95 [ D.7308 ])
+                    (const_int 65536 [0x10000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:415 -1
+     (nil))
+(insn 48 47 49 4 (set (reg/f:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:415 -1
+     (nil))
+(insn 49 48 50 4 (set (mem/j:SI (plus:DI (reg/f:DI 127)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 96 [ D.7308 ])) objecttemplates.c:415 -1
+     (nil))
+(insn 50 49 51 4 (set (reg/f:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:416 -1
+     (nil))
+(insn 51 50 52 4 (set (reg:SI 97 [ D.7308 ])
+        (mem/j:SI (plus:DI (reg/f:DI 128)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:416 -1
+     (nil))
+(insn 52 51 53 4 (parallel [
+            (set (reg:SI 98 [ D.7308 ])
+                (ior:SI (reg:SI 97 [ D.7308 ])
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:416 -1
+     (nil))
+(insn 53 52 54 4 (set (reg/f:DI 129)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:416 -1
+     (nil))
+(insn 54 53 55 4 (set (mem/j:SI (plus:DI (reg/f:DI 129)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 98 [ D.7308 ])) objecttemplates.c:416 -1
+     (nil))
+(insn 55 54 56 4 (set (reg/f:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:417 -1
+     (nil))
+(insn 56 55 57 4 (set (reg:SI 99 [ D.7308 ])
+        (mem/j:SI (plus:DI (reg/f:DI 130)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:417 -1
+     (nil))
+(insn 57 56 58 4 (parallel [
+            (set (reg:SI 100 [ D.7308 ])
+                (ior:SI (reg:SI 99 [ D.7308 ])
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:417 -1
+     (nil))
+(insn 58 57 59 4 (set (reg/f:DI 131)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:417 -1
+     (nil))
+(insn 59 58 60 4 (set (mem/j:SI (plus:DI (reg/f:DI 131)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 100 [ D.7308 ])) objecttemplates.c:417 -1
+     (nil))
+(insn 60 59 61 4 (set (reg/f:DI 132)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:418 -1
+     (nil))
+(insn 61 60 62 4 (set (reg:SI 101 [ D.7308 ])
+        (mem/j:SI (plus:DI (reg/f:DI 132)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:418 -1
+     (nil))
+(insn 62 61 63 4 (parallel [
+            (set (reg:SI 102 [ D.7308 ])
+                (and:SI (reg:SI 101 [ D.7308 ])
+                    (const_int -129 [0xffffffffffffff7f])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:418 -1
+     (nil))
+(insn 63 62 64 4 (set (reg/f:DI 133)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:418 -1
+     (nil))
+(insn 64 63 65 4 (set (mem/j:SI (plus:DI (reg/f:DI 133)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 102 [ D.7308 ])) objecttemplates.c:418 -1
+     (nil))
+(insn 65 64 66 4 (set (reg/f:DI 134)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:419 -1
+     (nil))
+(insn 66 65 67 4 (set (reg:SI 103 [ D.7308 ])
+        (mem/j:SI (plus:DI (reg/f:DI 134)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:419 -1
+     (nil))
+(insn 67 66 68 4 (parallel [
+            (set (reg:SI 104 [ D.7308 ])
+                (ior:SI (reg:SI 103 [ D.7308 ])
+                    (const_int 65536 [0x10000])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:419 -1
+     (nil))
+(insn 68 67 69 4 (set (reg/f:DI 135)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:419 -1
+     (nil))
+(insn 69 68 70 4 (set (mem/j:SI (plus:DI (reg/f:DI 135)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 104 [ D.7308 ])) objecttemplates.c:419 -1
+     (nil))
+(insn 70 69 71 4 (set (reg/f:DI 136)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:420 -1
+     (nil))
+(insn 71 70 72 4 (set (reg:SI 105 [ D.7308 ])
+        (mem/j:SI (plus:DI (reg/f:DI 136)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:420 -1
+     (nil))
+(insn 72 71 73 4 (set (reg:SI 106 [ D.7308 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes.val+0 S4 A128])) objecttemplates.c:420 -1
+     (nil))
+(insn 73 72 74 4 (set (reg:SI 107 [ D.7308 ])
+        (not:SI (reg:SI 106 [ D.7308 ]))) objecttemplates.c:420 -1
+     (nil))
+(insn 74 73 75 4 (parallel [
+            (set (reg:SI 108 [ D.7308 ])
+                (and:SI (reg:SI 105 [ D.7308 ])
+                    (reg:SI 107 [ D.7308 ])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:420 -1
+     (nil))
+(insn 75 74 76 4 (set (reg/f:DI 137)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:420 -1
+     (nil))
+(insn 76 75 77 4 (set (mem/j:SI (plus:DI (reg/f:DI 137)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 108 [ D.7308 ])) objecttemplates.c:420 -1
+     (nil))
+(insn 77 76 78 4 (set (reg/f:DI 138)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:428 -1
+     (nil))
+(insn 78 77 79 4 (set (mem/j:HI (plus:DI (reg/f:DI 138)
+                (const_int 140 [0x8c])) [0 publicArea_6(D)->parameters.keyedHashDetail.scheme.scheme+0 S2 A32])
+        (const_int 10 [0xa])) objecttemplates.c:428 -1
+     (nil))
+(insn 79 78 80 4 (set (reg/f:DI 139)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:432 -1
+     (nil))
+(insn 80 79 81 4 (set (mem/j:HI (plus:DI (reg/f:DI 139)
+                (const_int 144 [0x90])) [0 publicArea_6(D)->parameters.keyedHashDetail.scheme.details.xorr.kdf+0 S2 A32])
+        (const_int 34 [0x22])) objecttemplates.c:432 -1
+     (nil))
+(insn 81 80 82 4 (set (reg/f:DI 140)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:433 -1
+     (nil))
+(insn 82 81 83 4 (set (reg:HI 141)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 halg+0 S2 A32])) objecttemplates.c:433 -1
+     (nil))
+(insn 83 82 84 4 (set (mem/j:HI (plus:DI (reg/f:DI 140)
+                (const_int 142 [0x8e])) [0 publicArea_6(D)->parameters.keyedHashDetail.scheme.details.xorr.hashAlg+0 S2 A16])
+        (reg:HI 141)) objecttemplates.c:433 -1
+     (nil))
+(insn 84 83 85 4 (set (reg/f:DI 142)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:437 -1
+     (nil))
+(insn 85 84 86 4 (set (mem/j:HI (plus:DI (reg/f:DI 142)
+                (const_int 160 [0xa0])) [0 publicArea_6(D)->unique.sym.t.size+0 S2 A32])
+        (const_int 0 [0])) objecttemplates.c:437 -1
+     (nil))
+(code_label 86 85 87 5 42 "" [1 uses])
+(note 87 86 88 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 89 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:439 -1
+     (nil))
+(jump_insn 89 88 90 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 98)
+            (pc))) objecttemplates.c:439 -1
+     (nil)
+ -> 98)
+(note 90 89 91 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 91 90 92 6 (set (reg:DI 143)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 policyFilename+0 S8 A64])) objecttemplates.c:440 -1
+     (nil))
+(insn 92 91 93 6 (set (reg:DI 144)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:440 -1
+     (nil))
+(insn 93 92 94 6 (set (reg:DI 4 si)
+        (reg:DI 143)) objecttemplates.c:440 -1
+     (nil))
+(insn 94 93 95 6 (set (reg:DI 5 di)
+        (reg:DI 144)) objecttemplates.c:440 -1
+     (nil))
+(call_insn 95 94 96 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getPolicy") [flags 0x3]  <function_decl 0x7f78b4f9ae58 getPolicy>) [0 getPolicy S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:440 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 96 95 97 6 (set (reg:SI 145)
+        (reg:SI 0 ax)) objecttemplates.c:440 -1
+     (nil))
+(insn 97 96 98 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 145)) objecttemplates.c:440 -1
+     (nil))
+(code_label 98 97 99 7 43 "" [1 uses])
+(note 99 98 100 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 100 99 103 7 (set (reg:SI 109 [ D.7309 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) objecttemplates.c:442 -1
+     (nil))
+(insn 103 100 107 7 (set (reg:SI 110 [ <retval> ])
+        (reg:SI 109 [ D.7309 ])) objecttemplates.c:442 -1
+     (nil))
+(insn 107 103 108 7 (set (reg/i:SI 0 ax)
+        (reg:SI 110 [ <retval> ])) objecttemplates.c:443 -1
+     (nil))
+(insn 108 107 0 7 (use (reg/i:SI 0 ax)) objecttemplates.c:443 -1
+     (nil))
+
+;; Function blPublicTemplate (blPublicTemplate, funcdef_no=6, decl_uid=7027, cgraph_uid=6, symbol_order=6)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 82.
+Merging block 9 into block 7...
+Merged blocks 7 and 9.
+Merged 7 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])
+        (reg:DI 5 di [ publicArea ])) objecttemplates.c:455 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 addObjectAttributes+0 S4 A128])
+        (reg:SI 4 si [ addObjectAttributes ])) objecttemplates.c:455 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes+0 S4 A128])
+        (reg:SI 1 dx [ deleteObjectAttributes ])) objecttemplates.c:455 -1
+     (nil))
+(insn 5 4 7 2 (set (reg:SI 105)
+        (reg:SI 2 cx [ nalg ])) objecttemplates.c:455 -1
+     (nil))
+(insn 7 5 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 policyFilename+0 S8 A64])
+        (reg:DI 37 r8 [ policyFilename ])) objecttemplates.c:455 -1
+     (nil))
+(insn 6 7 8 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 nalg+0 S2 A32])
+        (subreg:HI (reg:SI 105) 0)) objecttemplates.c:455 -1
+     (nil))
+(note 8 6 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 8 12 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) objecttemplates.c:456 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:458 -1
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 64)
+            (pc))) objecttemplates.c:458 -1
+     (nil)
+ -> 64)
+(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:459 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 107)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 addObjectAttributes+0 S4 A128])) objecttemplates.c:459 -1
+     (nil))
+(insn 17 16 18 4 (set (mem/j:SI (plus:DI (reg/f:DI 106)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes+0 S4 A32])
+        (reg:SI 107)) objecttemplates.c:459 -1
+     (nil))
+(insn 18 17 19 4 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:464 -1
+     (nil))
+(insn 19 18 20 4 (set (mem/j:HI (reg/f:DI 108) [0 publicArea_6(D)->type+0 S2 A32])
+        (const_int 8 [0x8])) objecttemplates.c:464 -1
+     (nil))
+(insn 20 19 21 4 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:466 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:HI 110)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 nalg+0 S2 A32])) objecttemplates.c:466 -1
+     (nil))
+(insn 22 21 23 4 (set (mem/j:HI (plus:DI (reg/f:DI 109)
+                (const_int 2 [0x2])) [0 publicArea_6(D)->nameAlg+0 S2 A16])
+        (reg:HI 110)) objecttemplates.c:466 -1
+     (nil))
+(insn 23 22 24 4 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:468 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 87 [ D.7310 ])
+        (mem/j:SI (plus:DI (reg/f:DI 111)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:468 -1
+     (nil))
+(insn 25 24 26 4 (parallel [
+            (set (reg:SI 88 [ D.7310 ])
+                (and:SI (reg:SI 87 [ D.7310 ])
+                    (const_int -262145 [0xfffffffffffbffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:468 -1
+     (nil))
+(insn 26 25 27 4 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:468 -1
+     (nil))
+(insn 27 26 28 4 (set (mem/j:SI (plus:DI (reg/f:DI 112)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 88 [ D.7310 ])) objecttemplates.c:468 -1
+     (nil))
+(insn 28 27 29 4 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:469 -1
+     (nil))
+(insn 29 28 30 4 (set (reg:SI 89 [ D.7310 ])
+        (mem/j:SI (plus:DI (reg/f:DI 113)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:469 -1
+     (nil))
+(insn 30 29 31 4 (parallel [
+            (set (reg:SI 90 [ D.7310 ])
+                (and:SI (reg:SI 89 [ D.7310 ])
+                    (const_int -131073 [0xfffffffffffdffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:469 -1
+     (nil))
+(insn 31 30 32 4 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:469 -1
+     (nil))
+(insn 32 31 33 4 (set (mem/j:SI (plus:DI (reg/f:DI 114)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 90 [ D.7310 ])) objecttemplates.c:469 -1
+     (nil))
+(insn 33 32 34 4 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:470 -1
+     (nil))
+(insn 34 33 35 4 (set (reg:SI 91 [ D.7310 ])
+        (mem/j:SI (plus:DI (reg/f:DI 115)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:470 -1
+     (nil))
+(insn 35 34 36 4 (parallel [
+            (set (reg:SI 92 [ D.7310 ])
+                (and:SI (reg:SI 91 [ D.7310 ])
+                    (const_int -65537 [0xfffffffffffeffff])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:470 -1
+     (nil))
+(insn 36 35 37 4 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:470 -1
+     (nil))
+(insn 37 36 38 4 (set (mem/j:SI (plus:DI (reg/f:DI 116)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 92 [ D.7310 ])) objecttemplates.c:470 -1
+     (nil))
+(insn 38 37 39 4 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:471 -1
+     (nil))
+(insn 39 38 40 4 (set (reg:SI 93 [ D.7310 ])
+        (mem/j:SI (plus:DI (reg/f:DI 117)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:471 -1
+     (nil))
+(insn 40 39 41 4 (parallel [
+            (set (reg:SI 94 [ D.7310 ])
+                (and:SI (reg:SI 93 [ D.7310 ])
+                    (const_int -33 [0xffffffffffffffdf])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:471 -1
+     (nil))
+(insn 41 40 42 4 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:471 -1
+     (nil))
+(insn 42 41 43 4 (set (mem/j:SI (plus:DI (reg/f:DI 118)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 94 [ D.7310 ])) objecttemplates.c:471 -1
+     (nil))
+(insn 43 42 44 4 (set (reg/f:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:472 -1
+     (nil))
+(insn 44 43 45 4 (set (reg:SI 95 [ D.7310 ])
+        (mem/j:SI (plus:DI (reg/f:DI 119)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:472 -1
+     (nil))
+(insn 45 44 46 4 (parallel [
+            (set (reg:SI 96 [ D.7310 ])
+                (ior:SI (reg:SI 95 [ D.7310 ])
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:472 -1
+     (nil))
+(insn 46 45 47 4 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:472 -1
+     (nil))
+(insn 47 46 48 4 (set (mem/j:SI (plus:DI (reg/f:DI 120)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 96 [ D.7310 ])) objecttemplates.c:472 -1
+     (nil))
+(insn 48 47 49 4 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:473 -1
+     (nil))
+(insn 49 48 50 4 (set (reg:SI 97 [ D.7310 ])
+        (mem/j:SI (plus:DI (reg/f:DI 121)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:473 -1
+     (nil))
+(insn 50 49 51 4 (parallel [
+            (set (reg:SI 98 [ D.7310 ])
+                (and:SI (reg:SI 97 [ D.7310 ])
+                    (const_int -129 [0xffffffffffffff7f])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:473 -1
+     (nil))
+(insn 51 50 52 4 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:473 -1
+     (nil))
+(insn 52 51 53 4 (set (mem/j:SI (plus:DI (reg/f:DI 122)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 98 [ D.7310 ])) objecttemplates.c:473 -1
+     (nil))
+(insn 53 52 54 4 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:474 -1
+     (nil))
+(insn 54 53 55 4 (set (reg:SI 99 [ D.7310 ])
+        (mem/j:SI (plus:DI (reg/f:DI 123)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])) objecttemplates.c:474 -1
+     (nil))
+(insn 55 54 56 4 (set (reg:SI 100 [ D.7310 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 deleteObjectAttributes.val+0 S4 A128])) objecttemplates.c:474 -1
+     (nil))
+(insn 56 55 57 4 (set (reg:SI 101 [ D.7310 ])
+        (not:SI (reg:SI 100 [ D.7310 ]))) objecttemplates.c:474 -1
+     (nil))
+(insn 57 56 58 4 (parallel [
+            (set (reg:SI 102 [ D.7310 ])
+                (and:SI (reg:SI 99 [ D.7310 ])
+                    (reg:SI 101 [ D.7310 ])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:474 -1
+     (nil))
+(insn 58 57 59 4 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:474 -1
+     (nil))
+(insn 59 58 60 4 (set (mem/j:SI (plus:DI (reg/f:DI 124)
+                (const_int 4 [0x4])) [0 publicArea_6(D)->objectAttributes.val+0 S4 A32])
+        (reg:SI 102 [ D.7310 ])) objecttemplates.c:474 -1
+     (nil))
+(insn 60 59 61 4 (set (reg/f:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:482 -1
+     (nil))
+(insn 61 60 62 4 (set (mem/j:HI (plus:DI (reg/f:DI 125)
+                (const_int 140 [0x8c])) [0 publicArea_6(D)->parameters.keyedHashDetail.scheme.scheme+0 S2 A32])
+        (const_int 16 [0x10])) objecttemplates.c:482 -1
+     (nil))
+(insn 62 61 63 4 (set (reg/f:DI 126)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:487 -1
+     (nil))
+(insn 63 62 64 4 (set (mem/j:HI (plus:DI (reg/f:DI 126)
+                (const_int 160 [0xa0])) [0 publicArea_6(D)->unique.sym.t.size+0 S2 A32])
+        (const_int 0 [0])) objecttemplates.c:487 -1
+     (nil))
+(code_label 64 63 65 5 46 "" [1 uses])
+(note 65 64 66 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:489 -1
+     (nil))
+(jump_insn 67 66 68 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 76)
+            (pc))) objecttemplates.c:489 -1
+     (nil)
+ -> 76)
+(note 68 67 69 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 69 68 70 6 (set (reg:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 policyFilename+0 S8 A64])) objecttemplates.c:490 -1
+     (nil))
+(insn 70 69 71 6 (set (reg:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:490 -1
+     (nil))
+(insn 71 70 72 6 (set (reg:DI 4 si)
+        (reg:DI 127)) objecttemplates.c:490 -1
+     (nil))
+(insn 72 71 73 6 (set (reg:DI 5 di)
+        (reg:DI 128)) objecttemplates.c:490 -1
+     (nil))
+(call_insn 73 72 74 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getPolicy") [flags 0x3]  <function_decl 0x7f78b4f9ae58 getPolicy>) [0 getPolicy S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:490 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 74 73 75 6 (set (reg:SI 129)
+        (reg:SI 0 ax)) objecttemplates.c:490 -1
+     (nil))
+(insn 75 74 76 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 129)) objecttemplates.c:490 -1
+     (nil))
+(code_label 76 75 77 7 47 "" [1 uses])
+(note 77 76 78 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 78 77 81 7 (set (reg:SI 103 [ D.7311 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) objecttemplates.c:492 -1
+     (nil))
+(insn 81 78 85 7 (set (reg:SI 104 [ <retval> ])
+        (reg:SI 103 [ D.7311 ])) objecttemplates.c:492 -1
+     (nil))
+(insn 85 81 86 7 (set (reg/i:SI 0 ax)
+        (reg:SI 104 [ <retval> ])) objecttemplates.c:493 -1
+     (nil))
+(insn 86 85 0 7 (use (reg/i:SI 0 ax)) objecttemplates.c:493 -1
+     (nil))
+
+;; Function getPolicy (getPolicy, funcdef_no=7, decl_uid=7032, cgraph_uid=7, symbol_order=7)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 35.
+Merging block 9 into block 7...
+Merged blocks 7 and 9.
+Merged 7 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])
+        (reg:DI 5 di [ publicArea ])) objecttemplates.c:497 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 policyFilename+0 S8 A64])
+        (reg:DI 4 si [ policyFilename ])) objecttemplates.c:497 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) objecttemplates.c:498 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) objecttemplates.c:500 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 29)
+            (pc))) objecttemplates.c:500 -1
+     (nil)
+ -> 29)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 policyFilename+0 S8 A64])
+            (const_int 0 [0]))) objecttemplates.c:501 -1
+     (nil))
+(jump_insn 12 11 13 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 25)
+            (pc))) objecttemplates.c:501 -1
+     (nil)
+ -> 25)
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 5 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:502 -1
+     (nil))
+(insn 15 14 16 5 (parallel [
+            (set (reg/f:DI 87 [ D.7312 ])
+                (plus:DI (reg/f:DI 90)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) objecttemplates.c:502 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 16 15 17 5 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 policyFilename+0 S8 A64])) objecttemplates.c:502 -1
+     (nil))
+(insn 17 16 18 5 (set (reg:DI 1 dx)
+        (reg:DI 91)) objecttemplates.c:502 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:SI 4 si)
+        (const_int 128 [0x80])) objecttemplates.c:502 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.7312 ])) objecttemplates.c:502 -1
+     (nil))
+(call_insn 20 19 21 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_Read2B") [flags 0x41]  <function_decl 0x7f78b52deca8 TSS_File_Read2B>) [0 TSS_File_Read2B S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:502 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 21 20 22 5 (set (reg:SI 92)
+        (reg:SI 0 ax)) objecttemplates.c:502 -1
+     (nil))
+(insn 22 21 23 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 92)) objecttemplates.c:502 -1
+     (nil))
+(jump_insn 23 22 24 5 (set (pc)
+        (label_ref 29)) -1
+     (nil)
+ -> 29)
+(barrier 24 23 25)
+(code_label 25 24 26 6 51 "" [1 uses])
+(note 26 25 27 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 6 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 publicArea+0 S8 A64])) objecttemplates.c:507 -1
+     (nil))
+(insn 28 27 29 6 (set (mem/j:HI (plus:DI (reg/f:DI 93)
+                (const_int 8 [0x8])) [0 publicArea_6(D)->authPolicy.t.size+0 S2 A32])
+        (const_int 0 [0])) objecttemplates.c:507 -1
+     (nil))
+(code_label 29 28 30 7 50 "" [2 uses])
+(note 30 29 31 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 34 7 (set (reg:SI 88 [ D.7313 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) objecttemplates.c:510 -1
+     (nil))
+(insn 34 31 38 7 (set (reg:SI 89 [ <retval> ])
+        (reg:SI 88 [ D.7313 ])) objecttemplates.c:510 -1
+     (nil))
+(insn 38 34 39 7 (set (reg/i:SI 0 ax)
+        (reg:SI 89 [ <retval> ])) objecttemplates.c:511 -1
+     (nil))
+(insn 39 38 0 7 (use (reg/i:SI 0 ax)) objecttemplates.c:511 -1
+     (nil))
+
+;; Function printUsageTemplate (printUsageTemplate, funcdef_no=8, decl_uid=7029, cgraph_uid=8, symbol_order=8)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f78b5043630 *.LC0>)) objecttemplates.c:515 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:515 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f78b50436c0 *.LC1>)) objecttemplates.c:516 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:516 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f78b5043750 *.LC2>)) objecttemplates.c:517 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:517 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f78b50437e0 *.LC3>)) objecttemplates.c:518 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:518 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f78b5043870 *.LC4>)) objecttemplates.c:519 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:519 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f78b5043900 *.LC5>)) objecttemplates.c:520 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:520 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) objecttemplates.c:521 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f78b537b000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:521 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f78b5043990 *.LC6>)) objecttemplates.c:522 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:522 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 21 20 22 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) objecttemplates.c:523 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f78b537b000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:523 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 23 22 24 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f78b5043a20 *.LC7>)) objecttemplates.c:524 -1
+     (nil))
+(call_insn 24 23 25 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:524 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f78b5043ab0 *.LC8>)) objecttemplates.c:525 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:525 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 27 26 28 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f78b5043b40 *.LC9>)) objecttemplates.c:526 -1
+     (nil))
+(call_insn 28 27 29 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:526 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 29 28 30 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f78b5043bd0 *.LC10>)) objecttemplates.c:527 -1
+     (nil))
+(call_insn 30 29 31 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:527 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 31 30 32 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f78b5043c60 *.LC11>)) objecttemplates.c:528 -1
+     (nil))
+(call_insn 32 31 33 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:528 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 33 32 34 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7f78b5043cf0 *.LC12>)) objecttemplates.c:529 -1
+     (nil))
+(call_insn 34 33 35 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:529 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 35 34 36 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7f78b5043d80 *.LC13>)) objecttemplates.c:530 -1
+     (nil))
+(call_insn 36 35 37 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:530 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 37 36 38 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f78b5043e10 *.LC14>)) objecttemplates.c:531 -1
+     (nil))
+(call_insn 38 37 39 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:531 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 39 38 40 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7f78b5043ea0 *.LC15>)) objecttemplates.c:532 -1
+     (nil))
+(call_insn 40 39 41 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:532 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 41 40 42 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7f78b5043f30 *.LC16>)) objecttemplates.c:533 -1
+     (nil))
+(call_insn 42 41 43 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:533 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 43 42 44 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7f78b504c000 *.LC17>)) objecttemplates.c:534 -1
+     (nil))
+(call_insn 44 43 45 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:534 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 45 44 46 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7f78b504c090 *.LC18>)) objecttemplates.c:535 -1
+     (nil))
+(call_insn 46 45 47 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:535 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 47 46 48 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7f78b504c120 *.LC19>)) objecttemplates.c:536 -1
+     (nil))
+(call_insn 48 47 49 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:536 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 49 48 50 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC20") [flags 0x2]  <var_decl 0x7f78b504c1b0 *.LC20>)) objecttemplates.c:537 -1
+     (nil))
+(call_insn 50 49 51 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:537 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 51 50 52 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC21") [flags 0x2]  <var_decl 0x7f78b504c240 *.LC21>)) objecttemplates.c:538 -1
+     (nil))
+(call_insn 52 51 53 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:538 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 53 52 54 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) objecttemplates.c:539 -1
+     (nil))
+(call_insn 54 53 55 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f78b537b000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:539 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 55 54 56 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC22") [flags 0x2]  <var_decl 0x7f78b504c2d0 *.LC22>)) objecttemplates.c:540 -1
+     (nil))
+(call_insn 56 55 57 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:540 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 57 56 58 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC23") [flags 0x2]  <var_decl 0x7f78b504c360 *.LC23>)) objecttemplates.c:545 -1
+     (nil))
+(call_insn 58 57 59 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:545 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 59 58 60 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC24") [flags 0x2]  <var_decl 0x7f78b504c3f0 *.LC24>)) objecttemplates.c:546 -1
+     (nil))
+(call_insn 60 59 61 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:546 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 61 60 62 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC25") [flags 0x2]  <var_decl 0x7f78b504c480 *.LC25>)) objecttemplates.c:547 -1
+     (nil))
+(call_insn 62 61 63 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:547 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 63 62 64 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) objecttemplates.c:548 -1
+     (nil))
+(call_insn 64 63 65 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f78b537b000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:548 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 65 64 66 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC26") [flags 0x2]  <var_decl 0x7f78b504c510 *.LC26>)) objecttemplates.c:549 -1
+     (nil))
+(call_insn 66 65 67 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:549 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 67 66 68 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC27") [flags 0x2]  <var_decl 0x7f78b504c5a0 *.LC27>)) objecttemplates.c:550 -1
+     (nil))
+(call_insn 68 67 73 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f78b537b360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) objecttemplates.c:550 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 73 68 0 2 (const_int 0 [0]) objecttemplates.c:551 -1
+     (nil))

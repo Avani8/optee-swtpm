@@ -1,0 +1,201 @@
+
+;; Function _plat__Signal_PowerOn (_plat__Signal_PowerOn, funcdef_no=0, decl_uid=2544, cgraph_uid=0, symbol_order=0)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 11.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 6 2 (call (mem:QI (symbol_ref:DI ("_plat__TimerReset") [flags 0x41]  <function_decl 0x7f0932dd9d80 _plat__TimerReset>) [0 _plat__TimerReset S1 A8])
+        (const_int 0 [0])) PowerPlat.c:76 -1
+     (nil)
+    (nil))
+(insn 6 5 7 2 (set (mem/c:SI (symbol_ref:DI ("s_powerLost") [flags 0x40]  <var_decl 0x7f0932dab750 s_powerLost>) [0 s_powerLost+0 S4 A32])
+        (const_int 1 [0x1])) PowerPlat.c:78 -1
+     (nil))
+(insn 7 6 10 2 (set (reg:SI 87 [ D.2595 ])
+        (const_int 0 [0])) PowerPlat.c:79 -1
+     (nil))
+(insn 10 7 14 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.2595 ])) PowerPlat.c:79 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) PowerPlat.c:80 -1
+     (nil))
+(insn 15 14 0 2 (use (reg/i:SI 0 ax)) PowerPlat.c:80 -1
+     (nil))
+
+;; Function _plat__WasPowerLost (_plat__WasPowerLost, funcdef_no=1, decl_uid=2546, cgraph_uid=1, symbol_order=1)
+
+Partition 0: size 4 align 4
+	retVal_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 12.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 89)
+        (mem/c:SI (symbol_ref:DI ("s_powerLost") [flags 0x40]  <var_decl 0x7f0932dab750 s_powerLost>) [0 s_powerLost+0 S4 A32])) PowerPlat.c:96 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 retVal+0 S4 A32])
+        (reg:SI 89)) PowerPlat.c:96 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:SI (symbol_ref:DI ("s_powerLost") [flags 0x40]  <var_decl 0x7f0932dab750 s_powerLost>) [0 s_powerLost+0 S4 A32])
+        (const_int 0 [0])) PowerPlat.c:97 -1
+     (nil))
+(insn 8 7 11 2 (set (reg:SI 87 [ D.2596 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 retVal+0 S4 A32])) PowerPlat.c:98 -1
+     (nil))
+(insn 11 8 15 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.2596 ])) PowerPlat.c:98 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) PowerPlat.c:99 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 0 ax)) PowerPlat.c:99 -1
+     (nil))
+
+;; Function _plat__Signal_Reset (_plat__Signal_Reset, funcdef_no=2, decl_uid=2548, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 12.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/c:QI (symbol_ref:DI ("s_locality") [flags 0x40]  <var_decl 0x7f0932d5fe10 s_locality>) [0 s_locality+0 S1 A8])
+        (const_int 0 [0])) PowerPlat.c:108 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:SI (symbol_ref:DI ("s_isCanceled") [flags 0x40]  <var_decl 0x7f0932d5f630 s_isCanceled>) [0 s_isCanceled+0 S4 A32])
+        (const_int 0 [0])) PowerPlat.c:110 -1
+     (nil))
+(call_insn 7 6 8 2 (call (mem:QI (symbol_ref:DI ("_TPM_Init") [flags 0x41]  <function_decl 0x7f0932de4948 _TPM_Init>) [0 _TPM_Init S1 A8])
+        (const_int 0 [0])) PowerPlat.c:111 -1
+     (nil)
+    (nil))
+(insn 8 7 11 2 (set (reg:SI 87 [ D.2597 ])
+        (const_int 0 [0])) PowerPlat.c:114 -1
+     (nil))
+(insn 11 8 15 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.2597 ])) PowerPlat.c:114 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) PowerPlat.c:115 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 0 ax)) PowerPlat.c:115 -1
+     (nil))
+
+;; Function _plat__Signal_PowerOff (_plat__Signal_PowerOff, funcdef_no=3, decl_uid=2550, cgraph_uid=3, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 10 2 (call (mem:QI (symbol_ref:DI ("_plat__NVDisable") [flags 0x41]  <function_decl 0x7f0932dde798 _plat__NVDisable>) [0 _plat__NVDisable S1 A8])
+        (const_int 0 [0])) PowerPlat.c:124 -1
+     (nil)
+    (nil))
+(insn 10 5 0 2 (const_int 0 [0]) PowerPlat.c:125 -1
+     (nil))

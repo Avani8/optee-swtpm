@@ -1,0 +1,446 @@
+
+;; Function AlgorithmCapGetImplemented (AlgorithmCapGetImplemented, funcdef_no=2, decl_uid=11975, cgraph_uid=2, symbol_order=3)
+
+Partition 2: size 4 align 4
+	algNum_12
+Partition 1: size 4 align 4
+	i_3
+Partition 0: size 1 align 1
+	more_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 6->7 to 11 failed.
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+Removing jump 78.
+Merging block 15 into block 13...
+Merged blocks 13 and 15.
+Merged 13 and 15 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 6->7 to 11 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 4 2 (set (reg:SI 97)
+        (reg:SI 5 di [ algID ])) AlgorithmCap.c:189 -1
+     (nil))
+(insn 4 2 5 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 count+0 S4 A32])
+        (reg:SI 4 si [ count ])) AlgorithmCap.c:189 -1
+     (nil))
+(insn 5 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 algList+0 S8 A64])
+        (reg:DI 1 dx [ algList ])) AlgorithmCap.c:189 -1
+     (nil))
+(insn 3 5 6 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 algID+0 S2 A32])
+        (subreg:HI (reg:SI 97) 0)) AlgorithmCap.c:189 -1
+     (nil))
+(note 6 3 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -9 [0xfffffffffffffff7])) [0 more+0 S1 A8])
+        (const_int 0 [0])) AlgorithmCap.c:190 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 algList+0 S8 A64])) AlgorithmCap.c:194 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/j:SI (reg/f:DI 98) [0 algList_8(D)->count+0 S4 A32])
+        (const_int 0 [0])) AlgorithmCap.c:194 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 count+0 S4 A32])
+            (const_int 127 [0x7f]))) AlgorithmCap.c:196 -1
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) AlgorithmCap.c:196 -1
+     (nil)
+ -> 16)
+(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 count+0 S4 A32])
+        (const_int 127 [0x7f])) AlgorithmCap.c:197 -1
+     (nil))
+(code_label 16 15 17 5 2 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 algNum+0 S4 A32])
+        (const_int 26 [0x1a])) AlgorithmCap.c:199 -1
+     (nil))
+(insn 19 18 20 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+        (const_int 0 [0])) AlgorithmCap.c:201 -1
+     (nil))
+(jump_insn 20 19 21 5 (set (pc)
+        (label_ref 66)) AlgorithmCap.c:201 -1
+     (nil)
+ -> 66)
+(barrier 21 20 68)
+(code_label 68 21 22 6 8 "" [1 uses])
+(note 22 68 23 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 6 (set (reg:DI 99)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32]))) AlgorithmCap.c:204 -1
+     (nil))
+(insn 24 23 25 6 (set (reg:HI 87 [ D.12897 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 99)
+                    (const_int 8 [0x8]))
+                (symbol_ref:DI ("s_algorithms") [flags 0x2]  <var_decl 0x7f289d680ea0 s_algorithms>)) [0 s_algorithms[i_3].algID+0 S2 A64])) AlgorithmCap.c:204 -1
+     (nil))
+(insn 25 24 26 6 (set (reg:CC 17 flags)
+        (compare:CC (reg:HI 87 [ D.12897 ])
+            (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 algID+0 S2 A32]))) AlgorithmCap.c:204 -1
+     (nil))
+(jump_insn 26 25 27 6 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 30)
+            (pc))) AlgorithmCap.c:204 -1
+     (nil)
+ -> 30)
+(note 27 26 28 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 28 27 29 7 (set (pc)
+        (label_ref 63)) AlgorithmCap.c:205 -1
+     (nil)
+ -> 63)
+(barrier 29 28 30)
+(code_label 30 29 31 8 4 "" [1 uses])
+(note 31 30 32 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 8 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 algList+0 S8 A64])) AlgorithmCap.c:206 -1
+     (nil))
+(insn 33 32 34 8 (set (reg:SI 88 [ D.12898 ])
+        (mem/j:SI (reg/f:DI 100) [0 algList_8(D)->count+0 S4 A32])) AlgorithmCap.c:206 -1
+     (nil))
+(insn 34 33 35 8 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 88 [ D.12898 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 count+0 S4 A32]))) AlgorithmCap.c:206 -1
+     (nil))
+(jump_insn 35 34 36 8 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 58)
+            (pc))) AlgorithmCap.c:206 -1
+     (nil)
+ -> 58)
+(note 36 35 37 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 9 (set (reg/f:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 algList+0 S8 A64])) AlgorithmCap.c:210 -1
+     (nil))
+(insn 38 37 39 9 (set (reg:SI 89 [ D.12898 ])
+        (mem/j:SI (reg/f:DI 101) [0 algList_8(D)->count+0 S4 A32])) AlgorithmCap.c:210 -1
+     (nil))
+(insn 39 38 40 9 (set (reg:DI 102)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32]))) AlgorithmCap.c:210 -1
+     (nil))
+(insn 40 39 41 9 (set (reg:HI 90 [ D.12897 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 102)
+                    (const_int 8 [0x8]))
+                (symbol_ref:DI ("s_algorithms") [flags 0x2]  <var_decl 0x7f289d680ea0 s_algorithms>)) [0 s_algorithms[i_3].algID+0 S2 A64])) AlgorithmCap.c:210 -1
+     (nil))
+(insn 41 40 42 9 (set (reg/f:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 algList+0 S8 A64])) AlgorithmCap.c:210 -1
+     (nil))
+(insn 42 41 43 9 (set (reg:DI 104)
+        (zero_extend:DI (reg:SI 89 [ D.12898 ]))) AlgorithmCap.c:210 -1
+     (nil))
+(insn 43 42 44 9 (set (mem/j:HI (plus:DI (plus:DI (mult:DI (reg:DI 104)
+                        (const_int 8 [0x8]))
+                    (reg/f:DI 103))
+                (const_int 4 [0x4])) [0 algList_8(D)->algProperties[_18].alg+0 S2 A32])
+        (reg:HI 90 [ D.12897 ])) AlgorithmCap.c:210 -1
+     (nil))
+(insn 44 43 45 9 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 algList+0 S8 A64])) AlgorithmCap.c:211 -1
+     (nil))
+(insn 45 44 46 9 (set (reg:SI 91 [ D.12898 ])
+        (mem/j:SI (reg/f:DI 105) [0 algList_8(D)->count+0 S4 A32])) AlgorithmCap.c:211 -1
+     (nil))
+(insn 46 45 47 9 (set (reg:DI 106)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32]))) AlgorithmCap.c:212 -1
+     (nil))
+(insn 47 46 48 9 (set (reg:SI 92 [ D.12898 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 106)
+                    (const_int 8 [0x8]))
+                (const:DI (plus:DI (symbol_ref:DI ("s_algorithms") [flags 0x2]  <var_decl 0x7f289d680ea0 s_algorithms>)
+                        (const_int 4 [0x4])))) [0 s_algorithms[i_3].attributes+0 S4 A32])) AlgorithmCap.c:212 -1
+     (nil))
+(insn 48 47 49 9 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 algList+0 S8 A64])) AlgorithmCap.c:211 -1
+     (nil))
+(insn 49 48 50 9 (set (reg:DI 108)
+        (zero_extend:DI (reg:SI 91 [ D.12898 ]))) AlgorithmCap.c:211 -1
+     (nil))
+(insn 50 49 51 9 (set (mem/j:SI (plus:DI (plus:DI (mult:DI (reg:DI 108)
+                        (const_int 8 [0x8]))
+                    (reg/f:DI 107))
+                (const_int 8 [0x8])) [0 algList_8(D)->algProperties[_21].algProperties+0 S4 A32])
+        (reg:SI 92 [ D.12898 ])) AlgorithmCap.c:211 -1
+     (nil))
+(insn 51 50 52 9 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 algList+0 S8 A64])) AlgorithmCap.c:213 -1
+     (nil))
+(insn 52 51 53 9 (set (reg:SI 93 [ D.12898 ])
+        (mem/j:SI (reg/f:DI 109) [0 algList_8(D)->count+0 S4 A32])) AlgorithmCap.c:213 -1
+     (nil))
+(insn 53 52 54 9 (parallel [
+            (set (reg:SI 94 [ D.12898 ])
+                (plus:SI (reg:SI 93 [ D.12898 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) AlgorithmCap.c:213 -1
+     (nil))
+(insn 54 53 55 9 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 algList+0 S8 A64])) AlgorithmCap.c:213 -1
+     (nil))
+(insn 55 54 56 9 (set (mem/j:SI (reg/f:DI 110) [0 algList_8(D)->count+0 S4 A32])
+        (reg:SI 94 [ D.12898 ])) AlgorithmCap.c:213 -1
+     (nil))
+(jump_insn 56 55 57 9 (set (pc)
+        (label_ref 63)) -1
+     (nil)
+ -> 63)
+(barrier 57 56 58)
+(code_label 58 57 59 10 6 "" [1 uses])
+(note 59 58 60 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 10 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -9 [0xfffffffffffffff7])) [0 more+0 S1 A8])
+        (const_int 1 [0x1])) AlgorithmCap.c:219 -1
+     (nil))
+(jump_insn 61 60 62 10 (set (pc)
+        (label_ref 72)) AlgorithmCap.c:220 -1
+     (nil)
+ -> 72)
+(barrier 62 61 63)
+(code_label 63 62 64 11 5 "" [2 uses])
+(note 64 63 65 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 65 64 66 11 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) AlgorithmCap.c:201 -1
+     (nil))
+(code_label 66 65 67 12 3 "" [1 uses])
+(note 67 66 69 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 69 67 70 12 (set (reg:SI 111)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])) AlgorithmCap.c:201 -1
+     (nil))
+(insn 70 69 71 12 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 111)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 algNum+0 S4 A32]))) AlgorithmCap.c:201 -1
+     (nil))
+(jump_insn 71 70 72 12 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 68)
+            (pc))) AlgorithmCap.c:201 -1
+     (nil)
+ -> 68)
+(code_label 72 71 73 13 7 "" [1 uses])
+(note 73 72 74 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 74 73 77 13 (set (reg:QI 95 [ D.12899 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -9 [0xfffffffffffffff7])) [0 more+0 S1 A8])) AlgorithmCap.c:223 -1
+     (nil))
+(insn 77 74 81 13 (set (reg:QI 96 [ <retval> ])
+        (reg:QI 95 [ D.12899 ])) AlgorithmCap.c:223 -1
+     (nil))
+(insn 81 77 82 13 (set (reg/i:QI 0 ax)
+        (reg:QI 96 [ <retval> ])) AlgorithmCap.c:224 -1
+     (nil))
+(insn 82 81 0 13 (use (reg/i:QI 0 ax)) AlgorithmCap.c:224 -1
+     (nil))
+
+;; Function AlgorithmGetImplementedVector (AlgorithmGetImplementedVector, funcdef_no=3, decl_uid=11977, cgraph_uid=3, symbol_order=4)
+
+Partition 0: size 4 align 4
+	index_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 5->6 to 8 failed.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 implemented+0 S8 A64])
+        (reg:DI 5 di [ implemented ])) AlgorithmCap.c:230 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 implemented+0 S8 A64])) AlgorithmCap.c:233 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 1 dx)
+        (const_int 9 [0x9])) AlgorithmCap.c:233 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 4 si)
+        (const_int 0 [0])) AlgorithmCap.c:233 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 5 di)
+        (reg:DI 89)) AlgorithmCap.c:233 -1
+     (nil))
+(call_insn 10 9 11 2 (call (mem:QI (symbol_ref:DI ("MemorySet") [flags 0x41]  <function_decl 0x7f289d75b870 MemorySet>) [0 MemorySet S1 A8])
+        (const_int 0 [0])) AlgorithmCap.c:233 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 11 10 12 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 index+0 S4 A32])
+        (const_int 25 [0x19])) AlgorithmCap.c:234 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (label_ref 25)) AlgorithmCap.c:234 -1
+     (nil)
+ -> 25)
+(barrier 13 12 27)
+(code_label 27 13 14 4 13 "" [1 uses])
+(note 14 27 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (reg:SI 91)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 index+0 S4 A32])) AlgorithmCap.c:237 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 90)
+        (sign_extend:DI (reg:SI 91))) AlgorithmCap.c:237 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:HI 87 [ D.12900 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 90)
+                    (const_int 8 [0x8]))
+                (symbol_ref:DI ("s_algorithms") [flags 0x2]  <var_decl 0x7f289d680ea0 s_algorithms>)) [0 s_algorithms[index_1].algID+0 S2 A64])) AlgorithmCap.c:237 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 88 [ D.12901 ])
+        (zero_extend:SI (reg:HI 87 [ D.12900 ]))) AlgorithmCap.c:237 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 implemented+0 S8 A64])) AlgorithmCap.c:237 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:SI 1 dx)
+        (const_int 9 [0x9])) AlgorithmCap.c:237 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:DI 4 si)
+        (reg:DI 92)) AlgorithmCap.c:237 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.12901 ])) AlgorithmCap.c:237 -1
+     (nil))
+(call_insn 23 22 24 4 (call (mem:QI (symbol_ref:DI ("SetBit") [flags 0x41]  <function_decl 0x7f289d757ca8 SetBit>) [0 SetBit S1 A8])
+        (const_int 0 [0])) AlgorithmCap.c:237 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 24 23 25 4 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 index+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 index+0 S4 A32])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) AlgorithmCap.c:236 -1
+     (nil))
+(code_label 25 24 26 5 12 "" [1 uses])
+(note 26 25 28 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 28 26 29 5 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 index+0 S4 A32])
+            (const_int 0 [0]))) AlgorithmCap.c:234 -1
+     (nil))
+(jump_insn 29 28 30 5 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 27)
+            (pc))) AlgorithmCap.c:234 -1
+     (nil)
+ -> 27)
+(note 30 29 35 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 35 30 0 6 (const_int 0 [0]) AlgorithmCap.c:238 -1
+     (nil))

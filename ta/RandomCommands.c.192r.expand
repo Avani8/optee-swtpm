@@ -1,0 +1,229 @@
+
+;; Function TPM2_GetRandom (TPM2_GetRandom, funcdef_no=2, decl_uid=12858, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Removing jump 36.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) RandomCommands.c:70 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) RandomCommands.c:70 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) RandomCommands.c:74 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:HI 87 [ D.12889 ])
+        (mem/j:HI (reg/f:DI 94) [0 in_3(D)->bytesRequested+0 S2 A16])) RandomCommands.c:74 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:HI 87 [ D.12889 ])
+            (const_int 48 [0x30]))) RandomCommands.c:74 -1
+     (nil))
+(jump_insn 10 9 11 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) RandomCommands.c:74 -1
+     (nil)
+ -> 16)
+(note 11 10 12 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 12 11 13 4 (set (reg/f:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 out+0 S8 A64])) RandomCommands.c:75 -1
+     (nil))
+(insn 13 12 14 4 (set (mem/j:HI (reg/f:DI 95) [0 out_5(D)->randomBytes.t.size+0 S2 A16])
+        (const_int 48 [0x30])) RandomCommands.c:75 -1
+     (nil))
+(jump_insn 14 13 15 4 (set (pc)
+        (label_ref 22)) -1
+     (nil)
+ -> 22)
+(barrier 15 14 16)
+(code_label 16 15 17 5 2 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg/f:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) RandomCommands.c:77 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:HI 88 [ D.12889 ])
+        (mem/j:HI (reg/f:DI 96) [0 in_3(D)->bytesRequested+0 S2 A16])) RandomCommands.c:77 -1
+     (nil))
+(insn 20 19 21 5 (set (reg/f:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 out+0 S8 A64])) RandomCommands.c:77 -1
+     (nil))
+(insn 21 20 22 5 (set (mem/j:HI (reg/f:DI 97) [0 out_5(D)->randomBytes.t.size+0 S2 A16])
+        (reg:HI 88 [ D.12889 ])) RandomCommands.c:77 -1
+     (nil))
+(code_label 22 21 23 6 3 "" [1 uses])
+(note 23 22 24 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 6 (set (reg/f:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 out+0 S8 A64])) RandomCommands.c:78 -1
+     (nil))
+(insn 25 24 26 6 (parallel [
+            (set (reg/f:DI 89 [ D.12890 ])
+                (plus:DI (reg/f:DI 98)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) RandomCommands.c:78 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 out+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 26 25 27 6 (set (reg/f:DI 99)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 out+0 S8 A64])) RandomCommands.c:78 -1
+     (nil))
+(insn 27 26 28 6 (set (reg:HI 90 [ D.12889 ])
+        (mem/j:HI (reg/f:DI 99) [0 out_5(D)->randomBytes.t.size+0 S2 A16])) RandomCommands.c:78 -1
+     (nil))
+(insn 28 27 29 6 (set (reg:SI 91 [ D.12891 ])
+        (zero_extend:SI (reg:HI 90 [ D.12889 ]))) RandomCommands.c:78 -1
+     (nil))
+(insn 29 28 30 6 (set (reg:DI 4 si)
+        (reg/f:DI 89 [ D.12890 ])) RandomCommands.c:78 -1
+     (nil))
+(insn 30 29 31 6 (set (reg:SI 5 di)
+        (reg:SI 91 [ D.12891 ])) RandomCommands.c:78 -1
+     (nil))
+(call_insn 31 30 32 6 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptRandomGenerate") [flags 0x41]  <function_decl 0x7f556e3875e8 CryptRandomGenerate>) [0 CryptRandomGenerate S1 A8])
+            (const_int 0 [0]))) RandomCommands.c:78 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 32 31 35 6 (set (reg:SI 92 [ D.12892 ])
+        (const_int 0 [0])) RandomCommands.c:79 -1
+     (nil))
+(insn 35 32 39 6 (set (reg:SI 93 [ <retval> ])
+        (reg:SI 92 [ D.12892 ])) RandomCommands.c:79 -1
+     (nil))
+(insn 39 35 40 6 (set (reg/i:SI 0 ax)
+        (reg:SI 93 [ <retval> ])) RandomCommands.c:80 -1
+     (nil))
+(insn 40 39 0 6 (use (reg/i:SI 0 ax)) RandomCommands.c:80 -1
+     (nil))
+
+;; Function TPM2_StirRandom (TPM2_StirRandom, funcdef_no=3, decl_uid=12867, cgraph_uid=3, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 18.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) RandomCommands.c:89 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) RandomCommands.c:91 -1
+     (nil))
+(insn 7 6 8 2 (parallel [
+            (set (reg/f:DI 87 [ D.12893 ])
+                (plus:DI (reg/f:DI 92)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) RandomCommands.c:91 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 8 7 9 2 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) RandomCommands.c:91 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:HI 88 [ D.12894 ])
+        (mem/j:HI (reg/f:DI 93) [0 in_1(D)->inData.t.size+0 S2 A16])) RandomCommands.c:91 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 89 [ D.12895 ])
+        (zero_extend:SI (reg:HI 88 [ D.12894 ]))) RandomCommands.c:91 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 4 si)
+        (reg/f:DI 87 [ D.12893 ])) RandomCommands.c:91 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 5 di)
+        (reg:SI 89 [ D.12895 ])) RandomCommands.c:91 -1
+     (nil))
+(call_insn 13 12 14 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptRandomStir") [flags 0x41]  <function_decl 0x7f556e387510 CryptRandomStir>) [0 CryptRandomStir S1 A8])
+            (const_int 0 [0]))) RandomCommands.c:91 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 14 13 17 2 (set (reg:SI 90 [ D.12896 ])
+        (const_int 0 [0])) RandomCommands.c:92 -1
+     (nil))
+(insn 17 14 21 2 (set (reg:SI 91 [ <retval> ])
+        (reg:SI 90 [ D.12896 ])) RandomCommands.c:92 -1
+     (nil))
+(insn 21 17 22 2 (set (reg/i:SI 0 ax)
+        (reg:SI 91 [ <retval> ])) RandomCommands.c:93 -1
+     (nil))
+(insn 22 21 0 2 (use (reg/i:SI 0 ax)) RandomCommands.c:93 -1
+     (nil))

@@ -1,0 +1,939 @@
+
+;; Function tpmclock (tpmclock, funcdef_no=0, decl_uid=2440, cgraph_uid=0, symbol_order=0)
+
+Partition 1: size 16 align 16
+	tval
+Partition 0: size 8 align 8
+	tpmtime_9
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 25.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 3 2 NOTE_INSN_FUNCTION_BEG)
+(insn 3 2 6 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.2768+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:91 -1
+     (nil))
+(insn 6 3 7 2 (parallel [
+            (set (reg:DI 95)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:95 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) Clock.c:95 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 5 di)
+        (reg:DI 95)) Clock.c:95 -1
+     (nil))
+(call_insn 9 8 10 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("gettimeofday") [flags 0x41]  <function_decl 0x7f5259a38948 gettimeofday>) [0 gettimeofday S1 A8])
+            (const_int 0 [0]))) Clock.c:95 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 10 9 11 2 (set (reg:DI 87 [ D.2765 ])
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 tval.tv_sec+0 S8 A64])) Clock.c:96 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 88 [ D.2766 ])
+        (reg:DI 87 [ D.2765 ])) Clock.c:96 -1
+     (nil))
+(insn 12 11 13 2 (parallel [
+            (set (reg:DI 89 [ D.2766 ])
+                (mult:DI (reg:DI 88 [ D.2766 ])
+                    (const_int 1000 [0x3e8])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:96 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 90 [ D.2765 ])
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tval.tv_usec+0 S8 A64])) Clock.c:96 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 91 [ D.2766 ])
+        (reg:DI 90 [ D.2765 ])) Clock.c:96 -1
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg:DI 96)
+                (lshiftrt:DI (reg:DI 91 [ D.2766 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:96 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 98)
+        (const_int 2361183241434822607 [0x20c49ba5e353f7cf])) Clock.c:96 -1
+     (nil))
+(insn 17 16 18 2 (parallel [
+            (set (reg:DI 97)
+                (truncate:DI (lshiftrt:TI (mult:TI (zero_extend:TI (reg:DI 96))
+                            (zero_extend:TI (reg:DI 98)))
+                        (const_int 64 [0x40]))))
+            (clobber (scratch:DI))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:96 -1
+     (nil))
+(insn 18 17 19 2 (parallel [
+            (set (reg:DI 92 [ D.2766 ])
+                (lshiftrt:DI (reg:DI 97)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:96 -1
+     (expr_list:REG_EQUAL (udiv:DI (reg:DI 91 [ D.2766 ])
+            (const_int 1000 [0x3e8]))
+        (nil)))
+(insn 19 18 20 2 (parallel [
+            (set (reg:DI 99)
+                (plus:DI (reg:DI 89 [ D.2766 ])
+                    (reg:DI 92 [ D.2766 ])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:96 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 tpmtime+0 S8 A64])
+        (reg:DI 99)) Clock.c:96 -1
+     (nil))
+(insn 21 20 24 2 (set (reg:DI 93 [ D.2767 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 tpmtime+0 S8 A64])) Clock.c:97 -1
+     (nil))
+(insn 24 21 28 2 (set (reg:DI 94 [ <retval> ])
+        (reg:DI 93 [ D.2767 ])) Clock.c:97 -1
+     (nil))
+(insn 28 24 29 2 (set (reg/i:DI 0 ax)
+        (reg:DI 94 [ <retval> ])) Clock.c:98 -1
+     (nil))
+(insn 29 28 30 2 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.2768+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) Clock.c:98 -1
+     (nil))
+(jump_insn 30 29 36 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) Clock.c:98 -1
+     (nil)
+ -> 33)
+(note 36 30 31 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(call_insn 31 36 32 6 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f52596931b0 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) Clock.c:98 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 32 31 33)
+(code_label 33 32 37 7 3 "" [1 uses])
+(note 37 33 34 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 34 37 0 7 (use (reg/i:DI 0 ax)) Clock.c:98 -1
+     (nil))
+
+;; Function _plat__TimerReset (_plat__TimerReset, funcdef_no=1, decl_uid=2562, cgraph_uid=1, symbol_order=1)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 6 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("tpmclock") [flags 0x3]  <function_decl 0x7f5259a386c0 tpmclock>) [0 tpmclock S1 A8])
+            (const_int 0 [0]))) Clock.c:125 -1
+     (nil)
+    (nil))
+(insn 6 5 7 2 (set (reg:DI 87 [ D.2771 ])
+        (reg:DI 0 ax)) Clock.c:125 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 88 [ D.2772 ])
+        (reg:DI 87 [ D.2771 ])) Clock.c:125 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:DI (symbol_ref:DI ("s_realTimePrevious") [flags 0x40]  <var_decl 0x7f5259a6f2d0 s_realTimePrevious>) [0 s_realTimePrevious+0 S8 A64])
+        (reg:DI 88 [ D.2772 ])) Clock.c:125 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:DI (symbol_ref:DI ("s_tpmTime") [flags 0x40]  <var_decl 0x7f5259a6f360 s_tpmTime>) [0 s_tpmTime+0 S8 A64])
+        (const_int 0 [0])) Clock.c:126 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])
+        (const_int 30000 [0x7530])) Clock.c:127 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (symbol_ref:DI ("s_timerReset") [flags 0x40]  <var_decl 0x7f5259a6f3f0 s_timerReset>) [0 s_timerReset+0 S4 A32])
+        (const_int 1 [0x1])) Clock.c:128 -1
+     (nil))
+(insn 12 11 17 2 (set (mem/c:SI (symbol_ref:DI ("s_timerStopped") [flags 0x40]  <var_decl 0x7f5259a6f480 s_timerStopped>) [0 s_timerStopped+0 S4 A32])
+        (const_int 1 [0x1])) Clock.c:129 -1
+     (nil))
+(insn 17 12 0 2 (const_int 0 [0]) Clock.c:130 -1
+     (nil))
+
+;; Function _plat__TimerRestart (_plat__TimerRestart, funcdef_no=2, decl_uid=2564, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 10 2 (set (mem/c:SI (symbol_ref:DI ("s_timerStopped") [flags 0x40]  <var_decl 0x7f5259a6f480 s_timerStopped>) [0 s_timerStopped+0 S4 A32])
+        (const_int 1 [0x1])) Clock.c:140 -1
+     (nil))
+(insn 10 5 0 2 (const_int 0 [0]) Clock.c:141 -1
+     (nil))
+
+;; Function _plat__TimerRead (_plat__TimerRead, funcdef_no=3, decl_uid=2566, cgraph_uid=3, symbol_order=3)
+
+Partition 1: size 8 align 8
+	adjusted_19
+Partition 0: size 8 align 8
+	timeDiff_4
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 55.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 108)
+        (mem/c:DI (symbol_ref:DI ("s_realTimePrevious") [flags 0x40]  <var_decl 0x7f5259a6f2d0 s_realTimePrevious>) [0 s_realTimePrevious+0 S8 A64])) Clock.c:173 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 timeDiff+0 S8 A64])
+        (reg:DI 108)) Clock.c:173 -1
+     (nil))
+(call_insn 7 6 8 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("tpmclock") [flags 0x3]  <function_decl 0x7f5259a386c0 tpmclock>) [0 tpmclock S1 A8])
+            (const_int 0 [0]))) Clock.c:175 -1
+     (nil)
+    (nil))
+(insn 8 7 9 2 (set (reg:DI 88 [ D.2774 ])
+        (reg:DI 0 ax)) Clock.c:175 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 89 [ D.2775 ])
+        (reg:DI 88 [ D.2774 ])) Clock.c:175 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:DI (symbol_ref:DI ("s_realTimePrevious") [flags 0x40]  <var_decl 0x7f5259a6f2d0 s_realTimePrevious>) [0 s_realTimePrevious+0 S8 A64])
+        (reg:DI 89 [ D.2775 ])) Clock.c:175 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 90 [ D.2775 ])
+        (mem/c:DI (symbol_ref:DI ("s_realTimePrevious") [flags 0x40]  <var_decl 0x7f5259a6f2d0 s_realTimePrevious>) [0 s_realTimePrevious+0 S8 A64])) Clock.c:182 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:CCGC 17 flags)
+        (compare:CCGC (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 timeDiff+0 S8 A64])
+            (reg:DI 90 [ D.2775 ]))) Clock.c:182 -1
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (lt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) Clock.c:182 -1
+     (nil)
+ -> 21)
+(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (reg:DI 109)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 timeDiff+0 S8 A64])) Clock.c:184 -1
+     (nil))
+(insn 16 15 17 4 (set (mem/c:DI (symbol_ref:DI ("s_realTimePrevious") [flags 0x40]  <var_decl 0x7f5259a6f2d0 s_realTimePrevious>) [0 s_realTimePrevious+0 S8 A64])
+        (reg:DI 109)) Clock.c:184 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:DI 91 [ D.2775 ])
+        (mem/c:DI (symbol_ref:DI ("s_tpmTime") [flags 0x40]  <var_decl 0x7f5259a6f360 s_tpmTime>) [0 s_tpmTime+0 S8 A64])) Clock.c:185 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:DI 87 [ D.2773 ])
+        (reg:DI 91 [ D.2775 ])) Clock.c:185 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (label_ref 52)) Clock.c:185 -1
+     (nil)
+ -> 52)
+(barrier 20 19 21)
+(code_label 21 20 22 5 9 "" [1 uses])
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 26 5 (set (reg:DI 92 [ D.2775 ])
+        (mem/c:DI (symbol_ref:DI ("s_realTimePrevious") [flags 0x40]  <var_decl 0x7f5259a6f2d0 s_realTimePrevious>) [0 s_realTimePrevious+0 S8 A64])) Clock.c:188 -1
+     (nil))
+(insn 26 23 27 5 (parallel [
+            (set (reg:DI 111)
+                (minus:DI (reg:DI 92 [ D.2775 ])
+                    (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -16 [0xfffffffffffffff0])) [0 timeDiff+0 S8 A64])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:188 -1
+     (nil))
+(insn 27 26 28 5 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 timeDiff+0 S8 A64])
+        (reg:DI 111)) Clock.c:188 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:SI 93 [ D.2776 ])
+        (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])) Clock.c:195 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:DI 94 [ D.2774 ])
+        (zero_extend:DI (reg:SI 93 [ D.2776 ]))) Clock.c:195 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:DI 95 [ D.2774 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 timeDiff+0 S8 A64])) Clock.c:195 -1
+     (nil))
+(insn 31 30 32 5 (parallel [
+            (set (reg:DI 96 [ D.2774 ])
+                (mult:DI (reg:DI 94 [ D.2774 ])
+                    (reg:DI 95 [ D.2774 ])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:195 -1
+     (nil))
+(insn 32 31 33 5 (parallel [
+            (set (reg:DI 112)
+                (lshiftrt:DI (reg:DI 96 [ D.2774 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:195 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:DI 114)
+        (const_int 314824432191309681 [0x45e7b272f608771])) Clock.c:195 -1
+     (nil))
+(insn 34 33 35 5 (parallel [
+            (set (reg:DI 113)
+                (truncate:DI (lshiftrt:TI (mult:TI (zero_extend:TI (reg:DI 112))
+                            (zero_extend:TI (reg:DI 114)))
+                        (const_int 64 [0x40]))))
+            (clobber (scratch:DI))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:195 -1
+     (nil))
+(insn 35 34 36 5 (parallel [
+            (set (reg:DI 115)
+                (lshiftrt:DI (reg:DI 113)
+                    (const_int 5 [0x5])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:195 -1
+     (nil))
+(insn 36 35 37 5 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 adjusted+0 S8 A64])
+        (reg:DI 115)) Clock.c:195 -1
+     (nil))
+(insn 37 36 38 5 (set (reg:DI 97 [ D.2775 ])
+        (mem/c:DI (symbol_ref:DI ("s_tpmTime") [flags 0x40]  <var_decl 0x7f5259a6f360 s_tpmTime>) [0 s_tpmTime+0 S8 A64])) Clock.c:196 -1
+     (nil))
+(insn 38 37 39 5 (set (reg:DI 98 [ D.2775 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 adjusted+0 S8 A64])) Clock.c:196 -1
+     (nil))
+(insn 39 38 40 5 (parallel [
+            (set (reg:DI 99 [ D.2775 ])
+                (plus:DI (reg:DI 97 [ D.2775 ])
+                    (reg:DI 98 [ D.2775 ])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:196 -1
+     (nil))
+(insn 40 39 41 5 (set (mem/c:DI (symbol_ref:DI ("s_tpmTime") [flags 0x40]  <var_decl 0x7f5259a6f360 s_tpmTime>) [0 s_tpmTime+0 S8 A64])
+        (reg:DI 99 [ D.2775 ])) Clock.c:196 -1
+     (nil))
+(insn 41 40 42 5 (set (reg:DI 100 [ D.2775 ])
+        (mem/c:DI (symbol_ref:DI ("s_realTimePrevious") [flags 0x40]  <var_decl 0x7f5259a6f2d0 s_realTimePrevious>) [0 s_realTimePrevious+0 S8 A64])) Clock.c:208 -1
+     (nil))
+(insn 42 41 43 5 (set (reg:DI 101 [ D.2774 ])
+        (reg:DI 100 [ D.2775 ])) Clock.c:208 -1
+     (nil))
+(insn 43 42 44 5 (parallel [
+            (set (reg:DI 102 [ D.2774 ])
+                (minus:DI (reg:DI 101 [ D.2774 ])
+                    (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -8 [0xfffffffffffffff8])) [0 adjusted+0 S8 A64])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:208 -1
+     (nil))
+(insn 44 43 45 5 (set (reg:DI 103 [ D.2775 ])
+        (reg:DI 102 [ D.2774 ])) Clock.c:208 -1
+     (nil))
+(insn 45 44 46 5 (set (mem/c:DI (symbol_ref:DI ("s_realTimePrevious") [flags 0x40]  <var_decl 0x7f5259a6f2d0 s_realTimePrevious>) [0 s_realTimePrevious+0 S8 A64])
+        (reg:DI 103 [ D.2775 ])) Clock.c:208 -1
+     (nil))
+(insn 46 45 47 5 (set (reg:DI 104 [ D.2775 ])
+        (mem/c:DI (symbol_ref:DI ("s_realTimePrevious") [flags 0x40]  <var_decl 0x7f5259a6f2d0 s_realTimePrevious>) [0 s_realTimePrevious+0 S8 A64])) Clock.c:209 -1
+     (nil))
+(insn 47 46 48 5 (set (reg:DI 116)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 timeDiff+0 S8 A64])) Clock.c:209 -1
+     (nil))
+(insn 48 47 49 5 (parallel [
+            (set (reg:DI 105 [ D.2775 ])
+                (plus:DI (reg:DI 104 [ D.2775 ])
+                    (reg:DI 116)))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:209 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 104 [ D.2775 ])
+            (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 timeDiff+0 S8 A64]))
+        (nil)))
+(insn 49 48 50 5 (set (mem/c:DI (symbol_ref:DI ("s_realTimePrevious") [flags 0x40]  <var_decl 0x7f5259a6f2d0 s_realTimePrevious>) [0 s_realTimePrevious+0 S8 A64])
+        (reg:DI 105 [ D.2775 ])) Clock.c:209 -1
+     (nil))
+(insn 50 49 51 5 (set (reg:DI 106 [ D.2775 ])
+        (mem/c:DI (symbol_ref:DI ("s_tpmTime") [flags 0x40]  <var_decl 0x7f5259a6f360 s_tpmTime>) [0 s_tpmTime+0 S8 A64])) Clock.c:217 -1
+     (nil))
+(insn 51 50 52 5 (set (reg:DI 87 [ D.2773 ])
+        (reg:DI 106 [ D.2775 ])) Clock.c:217 -1
+     (nil))
+(code_label 52 51 53 6 10 "" [1 uses])
+(note 53 52 54 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 54 53 58 6 (set (reg:DI 107 [ <retval> ])
+        (reg:DI 87 [ D.2773 ])) -1
+     (nil))
+(insn 58 54 59 6 (set (reg/i:DI 0 ax)
+        (reg:DI 107 [ <retval> ])) Clock.c:219 -1
+     (nil))
+(insn 59 58 0 6 (use (reg/i:DI 0 ax)) Clock.c:219 -1
+     (nil))
+
+;; Function _plat__TimerWasReset (_plat__TimerWasReset, funcdef_no=4, decl_uid=2568, cgraph_uid=4, symbol_order=4)
+
+Partition 0: size 4 align 4
+	retVal_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 12.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 89)
+        (mem/c:SI (symbol_ref:DI ("s_timerReset") [flags 0x40]  <var_decl 0x7f5259a6f3f0 s_timerReset>) [0 s_timerReset+0 S4 A32])) Clock.c:228 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 retVal+0 S4 A32])
+        (reg:SI 89)) Clock.c:228 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:SI (symbol_ref:DI ("s_timerReset") [flags 0x40]  <var_decl 0x7f5259a6f3f0 s_timerReset>) [0 s_timerReset+0 S4 A32])
+        (const_int 0 [0])) Clock.c:229 -1
+     (nil))
+(insn 8 7 11 2 (set (reg:SI 87 [ D.2777 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 retVal+0 S4 A32])) Clock.c:230 -1
+     (nil))
+(insn 11 8 15 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.2777 ])) Clock.c:230 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) Clock.c:231 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 0 ax)) Clock.c:231 -1
+     (nil))
+
+;; Function _plat__TimerWasStopped (_plat__TimerWasStopped, funcdef_no=5, decl_uid=2570, cgraph_uid=5, symbol_order=5)
+
+Partition 0: size 4 align 4
+	retVal_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 12.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 89)
+        (mem/c:SI (symbol_ref:DI ("s_timerStopped") [flags 0x40]  <var_decl 0x7f5259a6f480 s_timerStopped>) [0 s_timerStopped+0 S4 A32])) Clock.c:245 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 retVal+0 S4 A32])
+        (reg:SI 89)) Clock.c:245 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:SI (symbol_ref:DI ("s_timerStopped") [flags 0x40]  <var_decl 0x7f5259a6f480 s_timerStopped>) [0 s_timerStopped+0 S4 A32])
+        (const_int 0 [0])) Clock.c:246 -1
+     (nil))
+(insn 8 7 11 2 (set (reg:SI 87 [ D.2778 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 retVal+0 S4 A32])) Clock.c:247 -1
+     (nil))
+(insn 11 8 15 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.2778 ])) Clock.c:247 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) Clock.c:248 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 0 ax)) Clock.c:248 -1
+     (nil))
+
+;; Function _plat__ClockAdjustRate (_plat__ClockAdjustRate, funcdef_no=6, decl_uid=2572, cgraph_uid=6, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+Purged edges from bb 25
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 6->7 to 18 failed.
+Redirecting jump 15 from 18 to 19.
+Forwarding edge 10->11 to 18 failed.
+Redirecting jump 24 from 18 to 19.
+deleting block 18
+Removing jump 66.
+Edge 21->23 redirected to 25
+Merging block 23 into block 22...
+Merged blocks 22 and 23.
+Merged 22 and 23 without moving.
+Merging block 24 into block 22...
+Merged blocks 22 and 24.
+Merged 22 and 24 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 adjust+0 S4 A32])
+        (reg:SI 5 di [ adjust ])) Clock.c:256 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 101 [ adjust ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 adjust+0 S4 A32])) Clock.c:259 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ adjust ])
+            (const_int -1 [0xffffffffffffffff]))) Clock.c:259 -1
+     (nil))
+(jump_insn 8 7 90 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 61)
+            (pc))) Clock.c:259 -1
+     (nil)
+ -> 61)
+(note 90 8 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 9 90 10 4 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 101 [ adjust ])
+            (const_int -1 [0xffffffffffffffff]))) Clock.c:259 -1
+     (nil))
+(jump_insn 10 9 91 4 (set (pc)
+        (if_then_else (gt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) Clock.c:259 -1
+     (nil)
+ -> 17)
+(note 91 10 11 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 11 91 12 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ adjust ])
+            (const_int -300 [0xfffffffffffffed4]))) Clock.c:259 -1
+     (nil))
+(jump_insn 12 11 92 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) Clock.c:259 -1
+     (nil)
+ -> 33)
+(note 92 12 13 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 13 92 14 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ adjust ])
+            (const_int -30 [0xffffffffffffffe2]))) Clock.c:259 -1
+     (nil))
+(jump_insn 14 13 93 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 47)
+            (pc))) Clock.c:259 -1
+     (nil)
+ -> 47)
+(note 93 14 15 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 15 93 16 7 (set (pc)
+        (label_ref:DI 70)) Clock.c:259 654 {jump}
+     (nil)
+ -> 70)
+(barrier 16 15 17)
+(code_label 17 16 94 8 18 "" [1 uses])
+(note 94 17 18 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 18 94 19 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ adjust ])
+            (const_int 30 [0x1e]))) Clock.c:259 -1
+     (nil))
+(jump_insn 19 18 95 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 40)
+            (pc))) Clock.c:259 -1
+     (nil)
+ -> 40)
+(note 95 19 20 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 20 95 21 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ adjust ])
+            (const_int 300 [0x12c]))) Clock.c:259 -1
+     (nil))
+(jump_insn 21 20 96 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) Clock.c:259 -1
+     (nil)
+ -> 26)
+(note 96 21 22 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 22 96 23 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ adjust ])
+            (const_int 1 [0x1]))) Clock.c:259 -1
+     (nil))
+(jump_insn 23 22 97 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) Clock.c:259 -1
+     (nil)
+ -> 54)
+(note 97 23 24 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 24 97 25 11 (set (pc)
+        (label_ref:DI 70)) Clock.c:259 654 {jump}
+     (nil)
+ -> 70)
+(barrier 25 24 26)
+(code_label 26 25 27 12 22 "" [1 uses])
+(note 27 26 28 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 12 (set (reg:SI 87 [ D.2779 ])
+        (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])) Clock.c:262 -1
+     (nil))
+(insn 29 28 30 12 (parallel [
+            (set (reg:SI 88 [ D.2779 ])
+                (plus:SI (reg:SI 87 [ D.2779 ])
+                    (const_int 300 [0x12c])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:262 -1
+     (nil))
+(insn 30 29 31 12 (set (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])
+        (reg:SI 88 [ D.2779 ])) Clock.c:262 -1
+     (nil))
+(jump_insn 31 30 32 12 (set (pc)
+        (label_ref 70)) Clock.c:263 -1
+     (nil)
+ -> 70)
+(barrier 32 31 33)
+(code_label 33 32 34 13 19 "" [1 uses])
+(note 34 33 35 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 13 (set (reg:SI 89 [ D.2779 ])
+        (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])) Clock.c:265 -1
+     (nil))
+(insn 36 35 37 13 (parallel [
+            (set (reg:SI 90 [ D.2779 ])
+                (plus:SI (reg:SI 89 [ D.2779 ])
+                    (const_int -300 [0xfffffffffffffed4])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:265 -1
+     (nil))
+(insn 37 36 38 13 (set (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])
+        (reg:SI 90 [ D.2779 ])) Clock.c:265 -1
+     (nil))
+(jump_insn 38 37 39 13 (set (pc)
+        (label_ref 70)) Clock.c:266 -1
+     (nil)
+ -> 70)
+(barrier 39 38 40)
+(code_label 40 39 41 14 21 "" [1 uses])
+(note 41 40 42 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 14 (set (reg:SI 91 [ D.2779 ])
+        (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])) Clock.c:268 -1
+     (nil))
+(insn 43 42 44 14 (parallel [
+            (set (reg:SI 92 [ D.2779 ])
+                (plus:SI (reg:SI 91 [ D.2779 ])
+                    (const_int 30 [0x1e])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:268 -1
+     (nil))
+(insn 44 43 45 14 (set (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])
+        (reg:SI 92 [ D.2779 ])) Clock.c:268 -1
+     (nil))
+(jump_insn 45 44 46 14 (set (pc)
+        (label_ref 70)) Clock.c:269 -1
+     (nil)
+ -> 70)
+(barrier 46 45 47)
+(code_label 47 46 48 15 20 "" [1 uses])
+(note 48 47 49 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 15 (set (reg:SI 93 [ D.2779 ])
+        (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])) Clock.c:271 -1
+     (nil))
+(insn 50 49 51 15 (parallel [
+            (set (reg:SI 94 [ D.2779 ])
+                (plus:SI (reg:SI 93 [ D.2779 ])
+                    (const_int -30 [0xffffffffffffffe2])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:271 -1
+     (nil))
+(insn 51 50 52 15 (set (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])
+        (reg:SI 94 [ D.2779 ])) Clock.c:271 -1
+     (nil))
+(jump_insn 52 51 53 15 (set (pc)
+        (label_ref 70)) Clock.c:272 -1
+     (nil)
+ -> 70)
+(barrier 53 52 54)
+(code_label 54 53 55 16 23 "" [1 uses])
+(note 55 54 56 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 57 16 (set (reg:SI 95 [ D.2779 ])
+        (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])) Clock.c:274 -1
+     (nil))
+(insn 57 56 58 16 (parallel [
+            (set (reg:SI 96 [ D.2779 ])
+                (plus:SI (reg:SI 95 [ D.2779 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:274 -1
+     (nil))
+(insn 58 57 59 16 (set (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])
+        (reg:SI 96 [ D.2779 ])) Clock.c:274 -1
+     (nil))
+(jump_insn 59 58 60 16 (set (pc)
+        (label_ref 70)) Clock.c:275 -1
+     (nil)
+ -> 70)
+(barrier 60 59 61)
+(code_label 61 60 62 17 17 "" [1 uses])
+(note 62 61 63 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 63 62 64 17 (set (reg:SI 97 [ D.2779 ])
+        (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])) Clock.c:277 -1
+     (nil))
+(insn 64 63 65 17 (parallel [
+            (set (reg:SI 98 [ D.2779 ])
+                (plus:SI (reg:SI 97 [ D.2779 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) Clock.c:277 -1
+     (nil))
+(insn 65 64 70 17 (set (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])
+        (reg:SI 98 [ D.2779 ])) Clock.c:277 -1
+     (nil))
+(code_label 70 65 71 19 24 "" [7 uses])
+(note 71 70 72 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 19 (set (reg:SI 99 [ D.2779 ])
+        (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])) Clock.c:283 -1
+     (nil))
+(insn 73 72 74 19 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 99 [ D.2779 ])
+            (const_int 35000 [0x88b8]))) Clock.c:283 -1
+     (nil))
+(jump_insn 74 73 75 19 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 77)
+            (pc))) Clock.c:283 -1
+     (nil)
+ -> 77)
+(note 75 74 76 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 76 75 77 20 (set (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])
+        (const_int 35000 [0x88b8])) Clock.c:284 -1
+     (nil))
+(code_label 77 76 78 21 25 "" [1 uses])
+(note 78 77 79 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 79 78 80 21 (set (reg:SI 100 [ D.2779 ])
+        (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])) Clock.c:285 -1
+     (nil))
+(insn 80 79 81 21 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 100 [ D.2779 ])
+            (const_int 24999 [0x61a7]))) Clock.c:285 -1
+     (nil))
+(jump_insn 81 80 82 21 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 88)
+            (pc))) Clock.c:285 612 {*jcc_1}
+     (nil)
+ -> 88)
+(note 82 81 83 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 98 22 (set (mem/c:SI (symbol_ref:DI ("s_adjustRate") [flags 0x40]  <var_decl 0x7f5259a6f5a0 s_adjustRate>) [0 s_adjustRate+0 S4 A32])
+        (const_int 25000 [0x61a8])) Clock.c:286 -1
+     (nil))
+(insn 98 83 88 22 (const_int 0 [0]) Clock.c:287 -1
+     (nil))
+(code_label 88 98 89 25 15 "" [1 uses])
+(note 89 88 0 25 [bb 25] NOTE_INSN_BASIC_BLOCK)

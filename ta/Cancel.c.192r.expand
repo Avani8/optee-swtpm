@@ -1,0 +1,120 @@
+
+;; Function _plat__IsCanceled (_plat__IsCanceled, funcdef_no=0, decl_uid=2485, cgraph_uid=0, symbol_order=0)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 9.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 8 2 (set (reg:SI 87 [ D.2585 ])
+        (mem/c:SI (symbol_ref:DI ("s_isCanceled") [flags 0x40]  <var_decl 0x7f6f2ac20630 s_isCanceled>) [0 s_isCanceled+0 S4 A32])) Cancel.c:80 -1
+     (nil))
+(insn 8 5 12 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.2585 ])) Cancel.c:80 -1
+     (nil))
+(insn 12 8 13 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) Cancel.c:81 -1
+     (nil))
+(insn 13 12 0 2 (use (reg/i:SI 0 ax)) Cancel.c:81 -1
+     (nil))
+
+;; Function _plat__SetCancel (_plat__SetCancel, funcdef_no=1, decl_uid=2487, cgraph_uid=1, symbol_order=1)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 10 2 (set (mem/c:SI (symbol_ref:DI ("s_isCanceled") [flags 0x40]  <var_decl 0x7f6f2ac20630 s_isCanceled>) [0 s_isCanceled+0 S4 A32])
+        (const_int 1 [0x1])) Cancel.c:89 -1
+     (nil))
+(insn 10 5 0 2 (const_int 0 [0]) Cancel.c:90 -1
+     (nil))
+
+;; Function _plat__ClearCancel (_plat__ClearCancel, funcdef_no=2, decl_uid=2489, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 10 2 (set (mem/c:SI (symbol_ref:DI ("s_isCanceled") [flags 0x40]  <var_decl 0x7f6f2ac20630 s_isCanceled>) [0 s_isCanceled+0 S4 A32])
+        (const_int 0 [0])) Cancel.c:99 -1
+     (nil))
+(insn 10 5 0 2 (const_int 0 [0]) Cancel.c:100 -1
+     (nil))

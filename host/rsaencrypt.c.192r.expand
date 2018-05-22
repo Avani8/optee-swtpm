@@ -1,0 +1,2170 @@
+
+;; Function main (main, funcdef_no=2, decl_uid=6998, cgraph_uid=2, symbol_order=3)
+
+Partition 6: size 400 align 16
+	in
+Partition 7: size 258 align 16
+	out
+Partition 3: size 8 align 8
+	encryptFilename_15
+Partition 2: size 8 align 8
+	decryptFilename_12
+Partition 15: size 8 align 8
+	num
+Partition 14: size 8 align 8
+	submsg
+Partition 13: size 8 align 8
+	msg
+Partition 12: size 8 align 8
+	buffer1
+Partition 11: size 8 align 8
+	buffer
+Partition 10: size 8 align 8
+	length
+Partition 5: size 8 align 8
+	tssContext
+Partition 4: size 4 align 4
+	rc1_141
+Partition 1: size 4 align 4
+	i_10
+Partition 0: size 4 align 4
+	rc_1
+Partition 8: size 4 align 4
+	keyHandle
+Partition 9: size 2 align 2
+	written
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+;; Generating RTL for gimple basic block 38
+
+;; Generating RTL for gimple basic block 39
+
+;; Generating RTL for gimple basic block 40
+
+;; Generating RTL for gimple basic block 41
+
+;; Generating RTL for gimple basic block 42
+
+;; Generating RTL for gimple basic block 43
+
+;; Generating RTL for gimple basic block 44
+
+;; Generating RTL for gimple basic block 45
+
+;; Generating RTL for gimple basic block 46
+
+;; Generating RTL for gimple basic block 47
+
+;; Generating RTL for gimple basic block 48
+
+;; Generating RTL for gimple basic block 49
+
+;; Generating RTL for gimple basic block 50
+
+;; Generating RTL for gimple basic block 51
+
+;; Generating RTL for gimple basic block 52
+
+;; Generating RTL for gimple basic block 53
+
+;; Generating RTL for gimple basic block 54
+
+;; Generating RTL for gimple basic block 55
+
+;; Generating RTL for gimple basic block 56
+
+;; Generating RTL for gimple basic block 57
+
+;; Generating RTL for gimple basic block 58
+
+;; Generating RTL for gimple basic block 59
+
+;; Generating RTL for gimple basic block 60
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 61 from 8 to 24.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Redirecting jump 99 from 13 to 24.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+Redirecting jump 137 from 18 to 24.
+Merging block 18 into block 17...
+Merged blocks 17 and 18.
+Merged 17 and 18 without moving.
+Edge 56->58 redirected to 60
+Merging block 58 into block 57...
+Merged blocks 57 and 58.
+Merged 57 and 58 without moving.
+Merging block 61 into block 60...
+Merged blocks 60 and 61.
+Merged 60 and 61 without moving.
+Removing jump 453.
+Merging block 62 into block 60...
+Merged blocks 60 and 62.
+Merged 60 and 62 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -788 [0xfffffffffffffcec])) [0 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) rsaencrypt.c:60 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) rsaencrypt.c:60 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.7177+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:60 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) rsaencrypt.c:61 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -760 [0xfffffffffffffd08])) [0 tssContext+0 S8 A64])
+        (const_int 0 [0])) rsaencrypt.c:63 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 keyHandle+0 S4 A64])
+        (const_int 0 [0])) rsaencrypt.c:66 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -704 [0xfffffffffffffd40])) [0 decryptFilename+0 S8 A64])
+        (const_int 0 [0])) rsaencrypt.c:67 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -696 [0xfffffffffffffd48])) [0 encryptFilename+0 S8 A64])
+        (const_int 0 [0])) rsaencrypt.c:68 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -778 [0xfffffffffffffcf6])) [0 written+0 S2 A16])
+        (const_int 0 [0])) rsaencrypt.c:70 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -752 [0xfffffffffffffd10])) [0 length+0 S8 A64])
+        (const_int 0 [0])) rsaencrypt.c:71 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -744 [0xfffffffffffffd18])) [0 buffer+0 S8 A64])
+        (const_int 0 [0])) rsaencrypt.c:72 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -736 [0xfffffffffffffd20])) [0 buffer1+0 S8 A64])
+        (const_int 0 [0])) rsaencrypt.c:73 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:DI 87 [ D.7165 ])
+        (mem/f/c:DI (symbol_ref:DI ("stdout") [flags 0x40]  <var_decl 0x7f3e6706c5a0 stdout>) [0 stdout+0 S8 A64])) rsaencrypt.c:75 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 2 cx)
+        (const_int 0 [0])) rsaencrypt.c:75 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) rsaencrypt.c:75 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) rsaencrypt.c:75 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.7165 ])) rsaencrypt.c:75 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("setvbuf") [flags 0x41]  <function_decl 0x7f3e670ac1b0 setvbuf>) [0 setvbuf S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:75 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 23 22 24 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f3e66c16750 *.LC0>)) rsaencrypt.c:76 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) rsaencrypt.c:76 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) rsaencrypt.c:76 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7f3e66f20000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:76 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 27 26 28 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) rsaencrypt.c:79 -1
+     (nil))
+(jump_insn 28 27 29 2 (set (pc)
+        (label_ref 204)) rsaencrypt.c:79 -1
+     (nil)
+ -> 204)
+(barrier 29 28 210)
+(code_label 210 29 30 4 16 "" [1 uses])
+(note 30 210 31 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 4 (set (reg:SI 157)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:80 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:DI 88 [ D.7166 ])
+        (sign_extend:DI (reg:SI 157))) rsaencrypt.c:80 -1
+     (nil))
+(insn 33 32 34 4 (parallel [
+            (set (reg:DI 89 [ D.7166 ])
+                (ashift:DI (reg:DI 88 [ D.7166 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:80 -1
+     (nil))
+(insn 34 33 35 4 (set (reg/f:DI 158)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])) rsaencrypt.c:80 -1
+     (nil))
+(insn 35 34 36 4 (parallel [
+            (set (reg/f:DI 90 [ D.7167 ])
+                (plus:DI (reg:DI 89 [ D.7166 ])
+                    (reg/f:DI 158)))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:80 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])
+            (reg:DI 89 [ D.7166 ]))
+        (nil)))
+(insn 36 35 37 4 (set (reg/f:DI 91 [ D.7168 ])
+        (mem/f:DI (reg/f:DI 90 [ D.7167 ]) [0 *_54+0 S8 A64])) rsaencrypt.c:80 -1
+     (nil))
+(insn 37 36 38 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f3e66c167e0 *.LC1>)) rsaencrypt.c:80 -1
+     (nil))
+(insn 38 37 39 4 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ D.7168 ])) rsaencrypt.c:80 -1
+     (nil))
+(call_insn/i 39 38 40 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3e66fb40d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:80 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 40 39 41 4 (set (reg:SI 92 [ D.7169 ])
+        (reg:SI 0 ax)) rsaencrypt.c:80 -1
+     (nil))
+(insn 41 40 42 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.7169 ])
+            (const_int 0 [0]))) rsaencrypt.c:80 -1
+     (nil))
+(jump_insn 42 41 43 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 72)
+            (pc))) rsaencrypt.c:80 -1
+     (nil)
+ -> 72)
+(note 43 42 44 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:81 -1
+     (nil))
+(insn 45 44 46 5 (set (reg:SI 159)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:82 -1
+     (nil))
+(insn 46 45 47 5 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 159)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -788 [0xfffffffffffffcec])) [0 argc+0 S4 A32]))) rsaencrypt.c:82 -1
+     (nil))
+(jump_insn 47 46 48 5 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 63)
+            (pc))) rsaencrypt.c:82 -1
+     (nil)
+ -> 63)
+(note 48 47 49 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 6 (set (reg:SI 160)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:83 -1
+     (nil))
+(insn 50 49 51 6 (set (reg:DI 93 [ D.7166 ])
+        (sign_extend:DI (reg:SI 160))) rsaencrypt.c:83 -1
+     (nil))
+(insn 51 50 52 6 (parallel [
+            (set (reg:DI 94 [ D.7166 ])
+                (ashift:DI (reg:DI 93 [ D.7166 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:83 -1
+     (nil))
+(insn 52 51 53 6 (set (reg/f:DI 161)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])) rsaencrypt.c:83 -1
+     (nil))
+(insn 53 52 54 6 (parallel [
+            (set (reg/f:DI 95 [ D.7167 ])
+                (plus:DI (reg:DI 94 [ D.7166 ])
+                    (reg/f:DI 161)))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:83 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])
+            (reg:DI 94 [ D.7166 ]))
+        (nil)))
+(insn 54 53 55 6 (set (reg/f:DI 96 [ D.7168 ])
+        (mem/f:DI (reg/f:DI 95 [ D.7167 ]) [0 *_60+0 S8 A64])) rsaencrypt.c:83 -1
+     (nil))
+(insn 55 54 56 6 (parallel [
+            (set (reg:DI 162)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -776 [0xfffffffffffffcf8])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:83 -1
+     (nil))
+(insn 56 55 57 6 (set (reg:DI 1 dx)
+        (reg:DI 162)) rsaencrypt.c:83 -1
+     (nil))
+(insn 57 56 58 6 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f3e66c16870 *.LC2>)) rsaencrypt.c:83 -1
+     (nil))
+(insn 58 57 59 6 (set (reg:DI 5 di)
+        (reg/f:DI 96 [ D.7168 ])) rsaencrypt.c:83 -1
+     (nil))
+(insn 59 58 60 6 (set (reg:QI 0 ax)
+        (const_int 0 [0])) rsaencrypt.c:83 -1
+     (nil))
+(call_insn 60 59 61 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3e66fbdca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:83 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 61 60 62 6 (set (pc)
+        (label_ref:DI 201)) 654 {jump}
+     (nil)
+ -> 201)
+(barrier 62 61 63)
+(code_label 63 62 64 7 4 "" [1 uses])
+(note 64 63 65 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 65 64 66 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f3e66c16900 *.LC3>)) rsaencrypt.c:86 -1
+     (nil))
+(call_insn 66 65 67 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:86 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 67 66 70 7 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3e66bdca20 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:87 -1
+     (nil)
+    (nil))
+(jump_insn 70 67 71 7 (set (pc)
+        (label_ref 201)) -1
+     (nil)
+ -> 201)
+(barrier 71 70 72)
+(code_label 72 71 73 9 3 "" [1 uses])
+(note 73 72 74 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 74 73 75 9 (set (reg:SI 163)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:90 -1
+     (nil))
+(insn 75 74 76 9 (set (reg:DI 97 [ D.7166 ])
+        (sign_extend:DI (reg:SI 163))) rsaencrypt.c:90 -1
+     (nil))
+(insn 76 75 77 9 (parallel [
+            (set (reg:DI 98 [ D.7166 ])
+                (ashift:DI (reg:DI 97 [ D.7166 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:90 -1
+     (nil))
+(insn 77 76 78 9 (set (reg/f:DI 164)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])) rsaencrypt.c:90 -1
+     (nil))
+(insn 78 77 79 9 (parallel [
+            (set (reg/f:DI 99 [ D.7167 ])
+                (plus:DI (reg:DI 98 [ D.7166 ])
+                    (reg/f:DI 164)))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:90 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])
+            (reg:DI 98 [ D.7166 ]))
+        (nil)))
+(insn 79 78 80 9 (set (reg/f:DI 100 [ D.7168 ])
+        (mem/f:DI (reg/f:DI 99 [ D.7167 ]) [0 *_67+0 S8 A64])) rsaencrypt.c:90 -1
+     (nil))
+(insn 80 79 81 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f3e66c16990 *.LC4>)) rsaencrypt.c:90 -1
+     (nil))
+(insn 81 80 82 9 (set (reg:DI 5 di)
+        (reg/f:DI 100 [ D.7168 ])) rsaencrypt.c:90 -1
+     (nil))
+(call_insn/i 82 81 83 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3e66fb40d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:90 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 83 82 84 9 (set (reg:SI 101 [ D.7169 ])
+        (reg:SI 0 ax)) rsaencrypt.c:90 -1
+     (nil))
+(insn 84 83 85 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ D.7169 ])
+            (const_int 0 [0]))) rsaencrypt.c:90 -1
+     (nil))
+(jump_insn 85 84 86 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 110)
+            (pc))) rsaencrypt.c:90 -1
+     (nil)
+ -> 110)
+(note 86 85 87 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 87 86 88 10 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:91 -1
+     (nil))
+(insn 88 87 89 10 (set (reg:SI 165)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:92 -1
+     (nil))
+(insn 89 88 90 10 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 165)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -788 [0xfffffffffffffcec])) [0 argc+0 S4 A32]))) rsaencrypt.c:92 -1
+     (nil))
+(jump_insn 90 89 91 10 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 101)
+            (pc))) rsaencrypt.c:92 -1
+     (nil)
+ -> 101)
+(note 91 90 92 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 92 91 93 11 (set (reg:SI 166)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:93 -1
+     (nil))
+(insn 93 92 94 11 (set (reg:DI 102 [ D.7166 ])
+        (sign_extend:DI (reg:SI 166))) rsaencrypt.c:93 -1
+     (nil))
+(insn 94 93 95 11 (parallel [
+            (set (reg:DI 103 [ D.7166 ])
+                (ashift:DI (reg:DI 102 [ D.7166 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:93 -1
+     (nil))
+(insn 95 94 96 11 (set (reg/f:DI 167)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])) rsaencrypt.c:93 -1
+     (nil))
+(insn 96 95 97 11 (parallel [
+            (set (reg/f:DI 104 [ D.7167 ])
+                (plus:DI (reg:DI 103 [ D.7166 ])
+                    (reg/f:DI 167)))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:93 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])
+            (reg:DI 103 [ D.7166 ]))
+        (nil)))
+(insn 97 96 98 11 (set (reg/f:DI 168)
+        (mem/f:DI (reg/f:DI 104 [ D.7167 ]) [0 *_73+0 S8 A64])) rsaencrypt.c:93 -1
+     (nil))
+(insn 98 97 99 11 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -704 [0xfffffffffffffd40])) [0 decryptFilename+0 S8 A64])
+        (reg/f:DI 168)) rsaencrypt.c:93 -1
+     (nil))
+(jump_insn 99 98 100 11 (set (pc)
+        (label_ref:DI 201)) 654 {jump}
+     (nil)
+ -> 201)
+(barrier 100 99 101)
+(code_label 101 100 102 12 8 "" [1 uses])
+(note 102 101 103 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 103 102 104 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f3e66c16a20 *.LC5>)) rsaencrypt.c:96 -1
+     (nil))
+(call_insn 104 103 105 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:96 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 105 104 108 12 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3e66bdca20 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:97 -1
+     (nil)
+    (nil))
+(jump_insn 108 105 109 12 (set (pc)
+        (label_ref 201)) -1
+     (nil)
+ -> 201)
+(barrier 109 108 110)
+(code_label 110 109 111 14 7 "" [1 uses])
+(note 111 110 112 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 112 111 113 14 (set (reg:SI 169)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:100 -1
+     (nil))
+(insn 113 112 114 14 (set (reg:DI 105 [ D.7166 ])
+        (sign_extend:DI (reg:SI 169))) rsaencrypt.c:100 -1
+     (nil))
+(insn 114 113 115 14 (parallel [
+            (set (reg:DI 106 [ D.7166 ])
+                (ashift:DI (reg:DI 105 [ D.7166 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:100 -1
+     (nil))
+(insn 115 114 116 14 (set (reg/f:DI 170)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])) rsaencrypt.c:100 -1
+     (nil))
+(insn 116 115 117 14 (parallel [
+            (set (reg/f:DI 107 [ D.7167 ])
+                (plus:DI (reg:DI 106 [ D.7166 ])
+                    (reg/f:DI 170)))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:100 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])
+            (reg:DI 106 [ D.7166 ]))
+        (nil)))
+(insn 117 116 118 14 (set (reg/f:DI 108 [ D.7168 ])
+        (mem/f:DI (reg/f:DI 107 [ D.7167 ]) [0 *_79+0 S8 A64])) rsaencrypt.c:100 -1
+     (nil))
+(insn 118 117 119 14 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f3e66c16ab0 *.LC6>)) rsaencrypt.c:100 -1
+     (nil))
+(insn 119 118 120 14 (set (reg:DI 5 di)
+        (reg/f:DI 108 [ D.7168 ])) rsaencrypt.c:100 -1
+     (nil))
+(call_insn/i 120 119 121 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3e66fb40d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:100 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 121 120 122 14 (set (reg:SI 109 [ D.7169 ])
+        (reg:SI 0 ax)) rsaencrypt.c:100 -1
+     (nil))
+(insn 122 121 123 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 109 [ D.7169 ])
+            (const_int 0 [0]))) rsaencrypt.c:100 -1
+     (nil))
+(jump_insn 123 122 124 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 148)
+            (pc))) rsaencrypt.c:100 -1
+     (nil)
+ -> 148)
+(note 124 123 125 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 125 124 126 15 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:101 -1
+     (nil))
+(insn 126 125 127 15 (set (reg:SI 171)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:102 -1
+     (nil))
+(insn 127 126 128 15 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 171)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -788 [0xfffffffffffffcec])) [0 argc+0 S4 A32]))) rsaencrypt.c:102 -1
+     (nil))
+(jump_insn 128 127 129 15 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 139)
+            (pc))) rsaencrypt.c:102 -1
+     (nil)
+ -> 139)
+(note 129 128 130 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 130 129 131 16 (set (reg:SI 172)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:103 -1
+     (nil))
+(insn 131 130 132 16 (set (reg:DI 110 [ D.7166 ])
+        (sign_extend:DI (reg:SI 172))) rsaencrypt.c:103 -1
+     (nil))
+(insn 132 131 133 16 (parallel [
+            (set (reg:DI 111 [ D.7166 ])
+                (ashift:DI (reg:DI 110 [ D.7166 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:103 -1
+     (nil))
+(insn 133 132 134 16 (set (reg/f:DI 173)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])) rsaencrypt.c:103 -1
+     (nil))
+(insn 134 133 135 16 (parallel [
+            (set (reg/f:DI 112 [ D.7167 ])
+                (plus:DI (reg:DI 111 [ D.7166 ])
+                    (reg/f:DI 173)))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:103 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])
+            (reg:DI 111 [ D.7166 ]))
+        (nil)))
+(insn 135 134 136 16 (set (reg/f:DI 174)
+        (mem/f:DI (reg/f:DI 112 [ D.7167 ]) [0 *_85+0 S8 A64])) rsaencrypt.c:103 -1
+     (nil))
+(insn 136 135 137 16 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -696 [0xfffffffffffffd48])) [0 encryptFilename+0 S8 A64])
+        (reg/f:DI 174)) rsaencrypt.c:103 -1
+     (nil))
+(jump_insn 137 136 138 16 (set (pc)
+        (label_ref:DI 201)) 654 {jump}
+     (nil)
+ -> 201)
+(barrier 138 137 139)
+(code_label 139 138 140 17 11 "" [1 uses])
+(note 140 139 141 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 141 140 142 17 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f3e66c16b40 *.LC7>)) rsaencrypt.c:106 -1
+     (nil))
+(call_insn 142 141 143 17 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:106 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 143 142 146 17 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3e66bdca20 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:107 -1
+     (nil)
+    (nil))
+(jump_insn 146 143 147 17 (set (pc)
+        (label_ref 201)) -1
+     (nil)
+ -> 201)
+(barrier 147 146 148)
+(code_label 148 147 149 19 10 "" [1 uses])
+(note 149 148 150 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 150 149 151 19 (set (reg:SI 175)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:110 -1
+     (nil))
+(insn 151 150 152 19 (set (reg:DI 113 [ D.7166 ])
+        (sign_extend:DI (reg:SI 175))) rsaencrypt.c:110 -1
+     (nil))
+(insn 152 151 153 19 (parallel [
+            (set (reg:DI 114 [ D.7166 ])
+                (ashift:DI (reg:DI 113 [ D.7166 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:110 -1
+     (nil))
+(insn 153 152 154 19 (set (reg/f:DI 176)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])) rsaencrypt.c:110 -1
+     (nil))
+(insn 154 153 155 19 (parallel [
+            (set (reg/f:DI 115 [ D.7167 ])
+                (plus:DI (reg:DI 114 [ D.7166 ])
+                    (reg/f:DI 176)))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:110 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])
+            (reg:DI 114 [ D.7166 ]))
+        (nil)))
+(insn 155 154 156 19 (set (reg/f:DI 116 [ D.7168 ])
+        (mem/f:DI (reg/f:DI 115 [ D.7167 ]) [0 *_91+0 S8 A64])) rsaencrypt.c:110 -1
+     (nil))
+(insn 156 155 157 19 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f3e66c16bd0 *.LC8>)) rsaencrypt.c:110 -1
+     (nil))
+(insn 157 156 158 19 (set (reg:DI 5 di)
+        (reg/f:DI 116 [ D.7168 ])) rsaencrypt.c:110 -1
+     (nil))
+(call_insn/i 158 157 159 19 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3e66fb40d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:110 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 159 158 160 19 (set (reg:SI 117 [ D.7169 ])
+        (reg:SI 0 ax)) rsaencrypt.c:110 -1
+     (nil))
+(insn 160 159 161 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 117 [ D.7169 ])
+            (const_int 0 [0]))) rsaencrypt.c:110 -1
+     (nil))
+(jump_insn 161 160 162 19 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 166)
+            (pc))) rsaencrypt.c:110 -1
+     (nil)
+ -> 166)
+(note 162 161 163 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(call_insn 163 162 164 20 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3e66bdca20 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:111 -1
+     (nil)
+    (nil))
+(jump_insn 164 163 165 20 (set (pc)
+        (label_ref 201)) -1
+     (nil)
+ -> 201)
+(barrier 165 164 166)
+(code_label 166 165 167 21 13 "" [1 uses])
+(note 167 166 168 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 168 167 169 21 (set (reg:SI 177)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:113 -1
+     (nil))
+(insn 169 168 170 21 (set (reg:DI 118 [ D.7166 ])
+        (sign_extend:DI (reg:SI 177))) rsaencrypt.c:113 -1
+     (nil))
+(insn 170 169 171 21 (parallel [
+            (set (reg:DI 119 [ D.7166 ])
+                (ashift:DI (reg:DI 118 [ D.7166 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:113 -1
+     (nil))
+(insn 171 170 172 21 (set (reg/f:DI 178)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])) rsaencrypt.c:113 -1
+     (nil))
+(insn 172 171 173 21 (parallel [
+            (set (reg/f:DI 120 [ D.7167 ])
+                (plus:DI (reg:DI 119 [ D.7166 ])
+                    (reg/f:DI 178)))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:113 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])
+            (reg:DI 119 [ D.7166 ]))
+        (nil)))
+(insn 173 172 174 21 (set (reg/f:DI 121 [ D.7168 ])
+        (mem/f:DI (reg/f:DI 120 [ D.7167 ]) [0 *_97+0 S8 A64])) rsaencrypt.c:113 -1
+     (nil))
+(insn 174 173 175 21 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f3e66c16c60 *.LC9>)) rsaencrypt.c:113 -1
+     (nil))
+(insn 175 174 176 21 (set (reg:DI 5 di)
+        (reg/f:DI 121 [ D.7168 ])) rsaencrypt.c:113 -1
+     (nil))
+(call_insn/i 176 175 177 21 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3e66fb40d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:113 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 177 176 178 21 (set (reg:SI 122 [ D.7169 ])
+        (reg:SI 0 ax)) rsaencrypt.c:113 -1
+     (nil))
+(insn 178 177 179 21 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 122 [ D.7169 ])
+            (const_int 0 [0]))) rsaencrypt.c:113 -1
+     (nil))
+(jump_insn 179 178 180 21 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 188)
+            (pc))) rsaencrypt.c:113 -1
+     (nil)
+ -> 188)
+(note 180 179 181 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 181 180 182 22 (set (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f3e66d7c090 verbose>) [0 verbose+0 S4 A32])
+        (const_int 1 [0x1])) rsaencrypt.c:114 -1
+     (nil))
+(insn 182 181 183 22 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f3e66c16cf0 *.LC10>)) rsaencrypt.c:115 -1
+     (nil))
+(insn 183 182 184 22 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) rsaencrypt.c:115 -1
+     (nil))
+(insn 184 183 185 22 (set (reg:DI 5 di)
+        (const_int 0 [0])) rsaencrypt.c:115 -1
+     (nil))
+(call_insn 185 184 186 22 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7f3e66f20000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:115 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(jump_insn 186 185 187 22 (set (pc)
+        (label_ref 201)) -1
+     (nil)
+ -> 201)
+(barrier 187 186 188)
+(code_label 188 187 189 23 14 "" [1 uses])
+(note 189 188 190 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 190 189 191 23 (set (reg:SI 179)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:118 -1
+     (nil))
+(insn 191 190 192 23 (set (reg:DI 123 [ D.7166 ])
+        (sign_extend:DI (reg:SI 179))) rsaencrypt.c:118 -1
+     (nil))
+(insn 192 191 193 23 (parallel [
+            (set (reg:DI 124 [ D.7166 ])
+                (ashift:DI (reg:DI 123 [ D.7166 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:118 -1
+     (nil))
+(insn 193 192 194 23 (set (reg/f:DI 180)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])) rsaencrypt.c:118 -1
+     (nil))
+(insn 194 193 195 23 (parallel [
+            (set (reg/f:DI 125 [ D.7167 ])
+                (plus:DI (reg:DI 124 [ D.7166 ])
+                    (reg/f:DI 180)))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:118 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -800 [0xfffffffffffffce0])) [0 argv+0 S8 A64])
+            (reg:DI 124 [ D.7166 ]))
+        (nil)))
+(insn 195 194 196 23 (set (reg/f:DI 126 [ D.7168 ])
+        (mem/f:DI (reg/f:DI 125 [ D.7167 ]) [0 *_104+0 S8 A64])) rsaencrypt.c:118 -1
+     (nil))
+(insn 196 195 197 23 (set (reg:DI 4 si)
+        (reg/f:DI 126 [ D.7168 ])) rsaencrypt.c:118 -1
+     (nil))
+(insn 197 196 198 23 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f3e66c16d80 *.LC11>)) rsaencrypt.c:118 -1
+     (nil))
+(insn 198 197 199 23 (set (reg:QI 0 ax)
+        (const_int 0 [0])) rsaencrypt.c:118 -1
+     (nil))
+(call_insn 199 198 200 23 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f3e66fbaca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:118 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(call_insn 200 199 201 23 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3e66bdca20 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:119 -1
+     (nil)
+    (nil))
+(code_label 201 200 202 24 6 "" [8 uses])
+(note 202 201 203 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 203 202 204 24 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:79 -1
+     (nil))
+(code_label 204 203 205 25 2 "" [1 uses])
+(note 205 204 206 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 206 205 207 25 (set (reg:SI 181)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -768 [0xfffffffffffffd00])) [0 i+0 S4 A32])) rsaencrypt.c:79 -1
+     (nil))
+(insn 207 206 208 25 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 181)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -788 [0xfffffffffffffcec])) [0 argc+0 S4 A32]))) rsaencrypt.c:79 -1
+     (nil))
+(jump_insn 208 207 209 25 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 213)
+            (pc))) rsaencrypt.c:79 -1
+     (nil)
+ -> 213)
+(note 209 208 211 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 211 209 212 26 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:79 -1
+     (nil))
+(jump_insn 212 211 213 26 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 210)
+            (pc))) rsaencrypt.c:79 -1
+     (nil)
+ -> 210)
+(code_label 213 212 214 27 15 "" [1 uses])
+(note 214 213 215 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 215 214 216 27 (set (reg:SI 127 [ D.7170 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 keyHandle+0 S4 A64])) rsaencrypt.c:122 -1
+     (nil))
+(insn 216 215 217 27 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 127 [ D.7170 ])
+            (const_int 0 [0]))) rsaencrypt.c:122 -1
+     (nil))
+(jump_insn 217 216 218 27 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 222)
+            (pc))) rsaencrypt.c:122 -1
+     (nil)
+ -> 222)
+(note 218 217 219 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 219 218 220 28 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7f3e66c16e10 *.LC12>)) rsaencrypt.c:123 -1
+     (nil))
+(call_insn 220 219 221 28 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:123 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 221 220 222 28 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3e66bdca20 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:124 -1
+     (nil)
+    (nil))
+(code_label 222 221 223 29 17 "" [1 uses])
+(note 223 222 224 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 224 223 225 29 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -704 [0xfffffffffffffd40])) [0 decryptFilename+0 S8 A64])
+            (const_int 0 [0]))) rsaencrypt.c:126 -1
+     (nil))
+(jump_insn 225 224 226 29 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 230)
+            (pc))) rsaencrypt.c:126 -1
+     (nil)
+ -> 230)
+(note 226 225 227 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 227 226 228 30 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7f3e66c16ea0 *.LC13>)) rsaencrypt.c:127 -1
+     (nil))
+(call_insn 228 227 229 30 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:127 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 229 228 230 30 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3e66bdca20 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:128 -1
+     (nil)
+    (nil))
+(code_label 230 229 231 31 18 "" [1 uses])
+(note 231 230 232 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 232 231 233 31 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:130 -1
+     (nil))
+(jump_insn 233 232 234 31 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 244)
+            (pc))) rsaencrypt.c:130 -1
+     (nil)
+ -> 244)
+(note 234 233 235 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 235 234 236 32 (set (reg:DI 182)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -704 [0xfffffffffffffd40])) [0 decryptFilename+0 S8 A64])) rsaencrypt.c:131 -1
+     (nil))
+(insn 236 235 237 32 (parallel [
+            (set (reg:DI 183)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -752 [0xfffffffffffffd10])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:131 -1
+     (nil))
+(insn 237 236 238 32 (parallel [
+            (set (reg:DI 184)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -744 [0xfffffffffffffd18])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:131 -1
+     (nil))
+(insn 238 237 239 32 (set (reg:DI 1 dx)
+        (reg:DI 182)) rsaencrypt.c:131 -1
+     (nil))
+(insn 239 238 240 32 (set (reg:DI 4 si)
+        (reg:DI 183)) rsaencrypt.c:131 -1
+     (nil))
+(insn 240 239 241 32 (set (reg:DI 5 di)
+        (reg:DI 184)) rsaencrypt.c:131 -1
+     (nil))
+(call_insn 241 240 242 32 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_ReadBinaryFile") [flags 0x41]  <function_decl 0x7f3e66f20948 TSS_File_ReadBinaryFile>) [0 TSS_File_ReadBinaryFile S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:131 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 242 241 243 32 (set (reg:SI 185)
+        (reg:SI 0 ax)) rsaencrypt.c:131 -1
+     (nil))
+(insn 243 242 244 32 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+        (reg:SI 185)) rsaencrypt.c:131 -1
+     (nil))
+(code_label 244 243 245 33 19 "" [1 uses])
+(note 245 244 246 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 246 245 247 33 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:135 -1
+     (nil))
+(jump_insn 247 246 248 33 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 260)
+            (pc))) rsaencrypt.c:135 -1
+     (nil)
+ -> 260)
+(note 248 247 249 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 249 248 250 34 (set (reg:DI 128 [ D.7166 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -752 [0xfffffffffffffd10])) [0 length+0 S8 A64])) rsaencrypt.c:136 -1
+     (nil))
+(insn 250 249 251 34 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 128 [ D.7166 ])
+            (const_int 256 [0x100]))) rsaencrypt.c:136 -1
+     (nil))
+(jump_insn 251 250 252 34 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 260)
+            (pc))) rsaencrypt.c:136 -1
+     (nil)
+ -> 260)
+(note 252 251 253 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 253 252 254 35 (set (reg:DI 129 [ D.7166 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -752 [0xfffffffffffffd10])) [0 length+0 S8 A64])) rsaencrypt.c:137 -1
+     (nil))
+(insn 254 253 255 35 (set (reg:SI 130 [ D.7170 ])
+        (subreg:SI (reg:DI 129 [ D.7166 ]) 0)) rsaencrypt.c:137 -1
+     (nil))
+(insn 255 254 256 35 (set (reg:SI 4 si)
+        (reg:SI 130 [ D.7170 ])) rsaencrypt.c:137 -1
+     (nil))
+(insn 256 255 257 35 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f3e66c16f30 *.LC14>)) rsaencrypt.c:137 -1
+     (nil))
+(insn 257 256 258 35 (set (reg:QI 0 ax)
+        (const_int 0 [0])) rsaencrypt.c:137 -1
+     (nil))
+(call_insn 258 257 259 35 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f3e66fbaca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:137 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 259 258 260 35 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+        (const_int 720900 [0xb0004])) rsaencrypt.c:138 -1
+     (nil))
+(code_label 260 259 261 36 20 "" [2 uses])
+(note 261 260 262 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 262 261 263 36 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:141 -1
+     (nil))
+(jump_insn 263 262 264 36 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 280)
+            (pc))) rsaencrypt.c:141 -1
+     (nil)
+ -> 280)
+(note 264 263 265 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 265 264 266 37 (set (reg:SI 131 [ D.7170 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 keyHandle+0 S4 A64])) rsaencrypt.c:143 -1
+     (nil))
+(insn 266 265 267 37 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -416 [0xfffffffffffffe60])) [0 in.keyHandle+0 S4 A64])
+        (reg:SI 131 [ D.7170 ])) rsaencrypt.c:143 -1
+     (nil))
+(insn 267 266 268 37 (set (reg:DI 132 [ D.7166 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -752 [0xfffffffffffffd10])) [0 length+0 S8 A64])) rsaencrypt.c:147 -1
+     (nil))
+(insn 268 267 269 37 (set (reg:HI 133 [ D.7171 ])
+        (subreg:HI (reg:DI 132 [ D.7166 ]) 0)) rsaencrypt.c:147 -1
+     (nil))
+(insn 269 268 270 37 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -412 [0xfffffffffffffe64])) [0 in.message.t.size+0 S2 A32])
+        (reg:HI 133 [ D.7171 ])) rsaencrypt.c:147 -1
+     (nil))
+(insn 270 269 271 37 (set (reg:DI 134 [ D.7166 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -752 [0xfffffffffffffd10])) [0 length+0 S8 A64])) rsaencrypt.c:148 -1
+     (nil))
+(insn 271 270 272 37 (set (reg/f:DI 135 [ D.7172 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -744 [0xfffffffffffffd18])) [0 buffer+0 S8 A64])) rsaencrypt.c:148 -1
+     (nil))
+(insn 272 271 273 37 (parallel [
+            (set (reg:DI 186)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -416 [0xfffffffffffffe60])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:148 -1
+     (nil))
+(insn 273 272 274 37 (parallel [
+            (set (reg:DI 187)
+                (plus:DI (reg:DI 186)
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:148 -1
+     (nil))
+(insn 274 273 275 37 (set (reg:DI 1 dx)
+        (reg:DI 134 [ D.7166 ])) rsaencrypt.c:148 -1
+     (nil))
+(insn 275 274 276 37 (set (reg:DI 4 si)
+        (reg/f:DI 135 [ D.7172 ])) rsaencrypt.c:148 -1
+     (nil))
+(insn 276 275 277 37 (set (reg:DI 5 di)
+        (reg:DI 187)) rsaencrypt.c:148 -1
+     (nil))
+(call_insn 277 276 278 37 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f3e66fb0e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:148 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 278 277 279 37 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -154 [0xffffffffffffff66])) [0 in.inScheme.scheme+0 S2 A16])
+        (const_int 16 [0x10])) rsaencrypt.c:153 -1
+     (nil))
+(insn 279 278 280 37 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -148 [0xffffffffffffff6c])) [0 in.label.t.size+0 S2 A32])
+        (const_int 0 [0])) rsaencrypt.c:158 -1
+     (nil))
+(code_label 280 279 281 38 21 "" [1 uses])
+(note 281 280 282 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 282 281 283 38 (set (reg/f:DI 136 [ D.7172 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -744 [0xfffffffffffffd18])) [0 buffer+0 S8 A64])) rsaencrypt.c:161 -1
+     (nil))
+(insn 283 282 284 38 (set (reg:DI 5 di)
+        (reg/f:DI 136 [ D.7172 ])) rsaencrypt.c:161 -1
+     (nil))
+(call_insn 284 283 285 38 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f3e66fd0e58 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:161 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 285 284 286 38 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -744 [0xfffffffffffffd18])) [0 buffer+0 S8 A64])
+        (const_int 0 [0])) rsaencrypt.c:162 -1
+     (nil))
+(insn 286 285 287 38 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:164 -1
+     (nil))
+(jump_insn 287 286 288 38 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 294)
+            (pc))) rsaencrypt.c:164 -1
+     (nil)
+ -> 294)
+(note 288 287 289 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 289 288 290 39 (parallel [
+            (set (reg:DI 188)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -760 [0xfffffffffffffd08])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:165 -1
+     (nil))
+(insn 290 289 291 39 (set (reg:DI 5 di)
+        (reg:DI 188)) rsaencrypt.c:165 -1
+     (nil))
+(call_insn 291 290 292 39 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Create") [flags 0x41]  <function_decl 0x7f3e66f18ca8 TSS_Create>) [0 TSS_Create S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:165 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 292 291 293 39 (set (reg:SI 189)
+        (reg:SI 0 ax)) rsaencrypt.c:165 -1
+     (nil))
+(insn 293 292 294 39 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+        (reg:SI 189)) rsaencrypt.c:165 -1
+     (nil))
+(code_label 294 293 295 40 22 "" [1 uses])
+(note 295 294 296 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(insn 296 295 297 40 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:168 -1
+     (nil))
+(jump_insn 297 296 298 40 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 315)
+            (pc))) rsaencrypt.c:168 -1
+     (nil)
+ -> 315)
+(note 298 297 299 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 299 298 300 41 (set (reg/f:DI 137 [ D.7173 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -760 [0xfffffffffffffd08])) [0 tssContext+0 S8 A64])) rsaencrypt.c:169 -1
+     (nil))
+(insn 300 299 301 41 (parallel [
+            (set (reg:DI 190)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -416 [0xfffffffffffffe60])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:169 -1
+     (nil))
+(insn 301 300 302 41 (parallel [
+            (set (reg:DI 191)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -688 [0xfffffffffffffd50])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:169 -1
+     (nil))
+(insn 302 301 303 41 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 0 [0])) rsaencrypt.c:169 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 303 302 304 41 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) rsaencrypt.c:169 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 304 303 305 41 (set (reg:SI 38 r9)
+        (const_int 1073741831 [0x40000007])) rsaencrypt.c:169 -1
+     (nil))
+(insn 305 304 306 41 (set (reg:SI 37 r8)
+        (const_int 372 [0x174])) rsaencrypt.c:169 -1
+     (nil))
+(insn 306 305 307 41 (set (reg:DI 2 cx)
+        (const_int 0 [0])) rsaencrypt.c:169 -1
+     (nil))
+(insn 307 306 308 41 (set (reg:DI 1 dx)
+        (reg:DI 190)) rsaencrypt.c:169 -1
+     (nil))
+(insn 308 307 309 41 (set (reg:DI 4 si)
+        (reg:DI 191)) rsaencrypt.c:169 -1
+     (nil))
+(insn 309 308 310 41 (set (reg:DI 5 di)
+        (reg/f:DI 137 [ D.7173 ])) rsaencrypt.c:169 -1
+     (nil))
+(insn 310 309 311 41 (set (reg:QI 0 ax)
+        (const_int 0 [0])) rsaencrypt.c:169 -1
+     (nil))
+(call_insn 311 310 312 41 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Execute") [flags 0x41]  <function_decl 0x7f3e66f18e58 TSS_Execute>) [0 TSS_Execute S1 A8])
+            (const_int 16 [0x10]))) rsaencrypt.c:169 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (expr_list:SI (use (reg:SI 37 r8))
+                            (expr_list:SI (use (reg:SI 38 r9))
+                                (nil)))))))))
+(insn 312 311 313 41 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:169 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 313 312 314 41 (set (reg:SI 192)
+        (reg:SI 0 ax)) rsaencrypt.c:169 -1
+     (nil))
+(insn 314 313 315 41 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+        (reg:SI 192)) rsaencrypt.c:169 -1
+     (nil))
+(code_label 315 314 316 42 23 "" [1 uses])
+(note 316 315 317 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 317 316 318 42 (set (reg/f:DI 138 [ D.7173 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -760 [0xfffffffffffffd08])) [0 tssContext+0 S8 A64])) rsaencrypt.c:177 -1
+     (nil))
+(insn 318 317 319 42 (set (reg:DI 5 di)
+        (reg/f:DI 138 [ D.7173 ])) rsaencrypt.c:177 -1
+     (nil))
+(call_insn 319 318 320 42 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Delete") [flags 0x41]  <function_decl 0x7f3e66f18d80 TSS_Delete>) [0 TSS_Delete S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:177 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 320 319 321 42 (set (reg:SI 193)
+        (reg:SI 0 ax)) rsaencrypt.c:177 -1
+     (nil))
+(insn 321 320 322 42 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -764 [0xfffffffffffffd04])) [0 rc1+0 S4 A32])
+        (reg:SI 193)) rsaencrypt.c:177 -1
+     (nil))
+(insn 322 321 323 42 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:178 -1
+     (nil))
+(jump_insn 323 322 324 42 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 327)
+            (pc))) rsaencrypt.c:178 -1
+     (nil)
+ -> 327)
+(note 324 323 325 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(insn 325 324 326 43 (set (reg:SI 194)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -764 [0xfffffffffffffd04])) [0 rc1+0 S4 A32])) rsaencrypt.c:179 -1
+     (nil))
+(insn 326 325 327 43 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+        (reg:SI 194)) rsaencrypt.c:179 -1
+     (nil))
+(code_label 327 326 328 44 24 "" [1 uses])
+(note 328 327 329 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(insn 329 328 330 44 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:182 -1
+     (nil))
+(jump_insn 330 329 331 44 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 345)
+            (pc))) rsaencrypt.c:182 -1
+     (nil)
+ -> 345)
+(note 331 330 332 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 332 331 333 45 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -696 [0xfffffffffffffd48])) [0 encryptFilename+0 S8 A64])
+            (const_int 0 [0]))) rsaencrypt.c:182 -1
+     (nil))
+(jump_insn 333 332 334 45 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 345)
+            (pc))) rsaencrypt.c:182 -1
+     (nil)
+ -> 345)
+(note 334 333 335 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(insn 335 334 336 46 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -778 [0xfffffffffffffcf6])) [0 written+0 S2 A16])
+        (const_int 0 [0])) rsaencrypt.c:183 -1
+     (nil))
+(insn 336 335 337 46 (parallel [
+            (set (reg:DI 195)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -778 [0xfffffffffffffcf6])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:184 -1
+     (nil))
+(insn 337 336 338 46 (parallel [
+            (set (reg:DI 196)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -688 [0xfffffffffffffd50])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:184 -1
+     (nil))
+(insn 338 337 339 46 (set (reg:DI 2 cx)
+        (const_int 0 [0])) rsaencrypt.c:184 -1
+     (nil))
+(insn 339 338 340 46 (set (reg:DI 1 dx)
+        (const_int 0 [0])) rsaencrypt.c:184 -1
+     (nil))
+(insn 340 339 341 46 (set (reg:DI 4 si)
+        (reg:DI 195)) rsaencrypt.c:184 -1
+     (nil))
+(insn 341 340 342 46 (set (reg:DI 5 di)
+        (reg:DI 196)) rsaencrypt.c:184 -1
+     (nil))
+(call_insn 342 341 343 46 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_TPM2B_PUBLIC_KEY_RSA_Marshal") [flags 0x41]  <function_decl 0x7f3e66bc81b0 TSS_TPM2B_PUBLIC_KEY_RSA_Marshal>) [0 TSS_TPM2B_PUBLIC_KEY_RSA_Marshal S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:184 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 343 342 344 46 (set (reg:SI 197)
+        (reg:SI 0 ax)) rsaencrypt.c:184 -1
+     (nil))
+(insn 344 343 345 46 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+        (reg:SI 197)) rsaencrypt.c:184 -1
+     (nil))
+(code_label 345 344 346 47 25 "" [2 uses])
+(note 346 345 347 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(insn 347 346 348 47 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:186 -1
+     (nil))
+(jump_insn 348 347 349 47 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 374)
+            (pc))) rsaencrypt.c:186 -1
+     (nil)
+ -> 374)
+(note 349 348 350 48 [bb 48] NOTE_INSN_BASIC_BLOCK)
+(insn 350 349 351 48 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -696 [0xfffffffffffffd48])) [0 encryptFilename+0 S8 A64])
+            (const_int 0 [0]))) rsaencrypt.c:186 -1
+     (nil))
+(jump_insn 351 350 352 48 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 374)
+            (pc))) rsaencrypt.c:186 -1
+     (nil)
+ -> 374)
+(note 352 351 353 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(insn 353 352 354 49 (set (reg:HI 139 [ D.7171 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -778 [0xfffffffffffffcf6])) [0 written+0 S2 A16])) rsaencrypt.c:187 -1
+     (nil))
+(insn 354 353 355 49 (set (reg:DI 140 [ D.7166 ])
+        (zero_extend:DI (reg:HI 139 [ D.7171 ]))) rsaencrypt.c:187 -1
+     (nil))
+(insn 355 354 356 49 (set (reg/f:DI 141 [ D.7172 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -744 [0xfffffffffffffd18])) [0 buffer+0 S8 A64])) rsaencrypt.c:187 -1
+     (nil))
+(insn 356 355 357 49 (set (reg:DI 4 si)
+        (reg:DI 140 [ D.7166 ])) rsaencrypt.c:187 -1
+     (nil))
+(insn 357 356 358 49 (set (reg:DI 5 di)
+        (reg/f:DI 141 [ D.7172 ])) rsaencrypt.c:187 -1
+     (nil))
+(call_insn 358 357 359 49 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("realloc") [flags 0x41]  <function_decl 0x7f3e66fde000 realloc>) [0 __builtin_realloc S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:187 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 359 358 360 49 (set (reg/f:DI 142 [ D.7174 ])
+        (reg:DI 0 ax)) rsaencrypt.c:187 -1
+     (nil))
+(insn 360 359 361 49 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -744 [0xfffffffffffffd18])) [0 buffer+0 S8 A64])
+        (reg/f:DI 142 [ D.7174 ])) rsaencrypt.c:187 -1
+     (nil))
+(insn 361 360 362 49 (set (reg/f:DI 143 [ D.7172 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -744 [0xfffffffffffffd18])) [0 buffer+0 S8 A64])) rsaencrypt.c:188 -1
+     (nil))
+(insn 362 361 363 49 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -736 [0xfffffffffffffd20])) [0 buffer1+0 S8 A64])
+        (reg/f:DI 143 [ D.7172 ])) rsaencrypt.c:188 -1
+     (nil))
+(insn 363 362 364 49 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -778 [0xfffffffffffffcf6])) [0 written+0 S2 A16])
+        (const_int 0 [0])) rsaencrypt.c:189 -1
+     (nil))
+(insn 364 363 365 49 (parallel [
+            (set (reg:DI 198)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -736 [0xfffffffffffffd20])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:190 -1
+     (nil))
+(insn 365 364 366 49 (parallel [
+            (set (reg:DI 199)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -778 [0xfffffffffffffcf6])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:190 -1
+     (nil))
+(insn 366 365 367 49 (parallel [
+            (set (reg:DI 200)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -688 [0xfffffffffffffd50])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:190 -1
+     (nil))
+(insn 367 366 368 49 (set (reg:DI 2 cx)
+        (const_int 0 [0])) rsaencrypt.c:190 -1
+     (nil))
+(insn 368 367 369 49 (set (reg:DI 1 dx)
+        (reg:DI 198)) rsaencrypt.c:190 -1
+     (nil))
+(insn 369 368 370 49 (set (reg:DI 4 si)
+        (reg:DI 199)) rsaencrypt.c:190 -1
+     (nil))
+(insn 370 369 371 49 (set (reg:DI 5 di)
+        (reg:DI 200)) rsaencrypt.c:190 -1
+     (nil))
+(call_insn 371 370 372 49 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_TPM2B_PUBLIC_KEY_RSA_Marshal") [flags 0x41]  <function_decl 0x7f3e66bc81b0 TSS_TPM2B_PUBLIC_KEY_RSA_Marshal>) [0 TSS_TPM2B_PUBLIC_KEY_RSA_Marshal S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:190 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 372 371 373 49 (set (reg:SI 201)
+        (reg:SI 0 ax)) rsaencrypt.c:190 -1
+     (nil))
+(insn 373 372 374 49 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+        (reg:SI 201)) rsaencrypt.c:190 -1
+     (nil))
+(code_label 374 373 375 50 26 "" [2 uses])
+(note 375 374 376 50 [bb 50] NOTE_INSN_BASIC_BLOCK)
+(insn 376 375 377 50 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:192 -1
+     (nil))
+(jump_insn 377 376 378 50 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 394)
+            (pc))) rsaencrypt.c:192 -1
+     (nil)
+ -> 394)
+(note 378 377 379 51 [bb 51] NOTE_INSN_BASIC_BLOCK)
+(insn 379 378 380 51 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -696 [0xfffffffffffffd48])) [0 encryptFilename+0 S8 A64])
+            (const_int 0 [0]))) rsaencrypt.c:192 -1
+     (nil))
+(jump_insn 380 379 381 51 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 394)
+            (pc))) rsaencrypt.c:192 -1
+     (nil)
+ -> 394)
+(note 381 380 382 52 [bb 52] NOTE_INSN_BASIC_BLOCK)
+(insn 382 381 383 52 (set (reg:HI 144 [ D.7171 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -778 [0xfffffffffffffcf6])) [0 written+0 S2 A16])) rsaencrypt.c:193 -1
+     (nil))
+(insn 383 382 384 52 (set (reg:DI 145 [ D.7166 ])
+        (zero_extend:DI (reg:HI 144 [ D.7171 ]))) rsaencrypt.c:193 -1
+     (nil))
+(insn 384 383 385 52 (parallel [
+            (set (reg:DI 146 [ D.7166 ])
+                (plus:DI (reg:DI 145 [ D.7166 ])
+                    (const_int -2 [0xfffffffffffffffe])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:193 -1
+     (nil))
+(insn 385 384 386 52 (set (reg/f:DI 147 [ D.7172 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -744 [0xfffffffffffffd18])) [0 buffer+0 S8 A64])) rsaencrypt.c:193 -1
+     (nil))
+(insn 386 385 387 52 (parallel [
+            (set (reg/f:DI 148 [ D.7175 ])
+                (plus:DI (reg/f:DI 147 [ D.7172 ])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:193 -1
+     (nil))
+(insn 387 386 388 52 (set (reg:DI 202)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -696 [0xfffffffffffffd48])) [0 encryptFilename+0 S8 A64])) rsaencrypt.c:193 -1
+     (nil))
+(insn 388 387 389 52 (set (reg:DI 1 dx)
+        (reg:DI 202)) rsaencrypt.c:193 -1
+     (nil))
+(insn 389 388 390 52 (set (reg:DI 4 si)
+        (reg:DI 146 [ D.7166 ])) rsaencrypt.c:193 -1
+     (nil))
+(insn 390 389 391 52 (set (reg:DI 5 di)
+        (reg/f:DI 148 [ D.7175 ])) rsaencrypt.c:193 -1
+     (nil))
+(call_insn 391 390 392 52 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_WriteBinaryFile") [flags 0x41]  <function_decl 0x7f3e66f20a20 TSS_File_WriteBinaryFile>) [0 TSS_File_WriteBinaryFile S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:193 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 392 391 393 52 (set (reg:SI 203)
+        (reg:SI 0 ax)) rsaencrypt.c:193 -1
+     (nil))
+(insn 393 392 394 52 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+        (reg:SI 203)) rsaencrypt.c:193 -1
+     (nil))
+(code_label 394 393 395 53 27 "" [2 uses])
+(note 395 394 396 53 [bb 53] NOTE_INSN_BASIC_BLOCK)
+(insn 396 395 397 53 (set (reg/f:DI 149 [ D.7172 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -744 [0xfffffffffffffd18])) [0 buffer+0 S8 A64])) rsaencrypt.c:197 -1
+     (nil))
+(insn 397 396 398 53 (set (reg:DI 5 di)
+        (reg/f:DI 149 [ D.7172 ])) rsaencrypt.c:197 -1
+     (nil))
+(call_insn 398 397 399 53 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f3e66fd0e58 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:197 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 399 398 400 53 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) rsaencrypt.c:198 -1
+     (nil))
+(jump_insn 400 399 401 53 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 421)
+            (pc))) rsaencrypt.c:198 -1
+     (nil)
+ -> 421)
+(note 401 400 402 54 [bb 54] NOTE_INSN_BASIC_BLOCK)
+(insn 402 401 403 54 (set (reg:SI 150 [ D.7169 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f3e66d7c090 verbose>) [0 verbose+0 S4 A32])) rsaencrypt.c:199 -1
+     (nil))
+(insn 403 402 404 54 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 150 [ D.7169 ])
+            (const_int 0 [0]))) rsaencrypt.c:199 -1
+     (nil))
+(jump_insn 404 403 405 54 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 409)
+            (pc))) rsaencrypt.c:199 -1
+     (nil)
+ -> 409)
+(note 405 404 406 55 [bb 55] NOTE_INSN_BASIC_BLOCK)
+(insn 406 405 407 55 (parallel [
+            (set (reg:DI 204)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -688 [0xfffffffffffffd50])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:199 -1
+     (nil))
+(insn 407 406 408 55 (set (reg:DI 5 di)
+        (reg:DI 204)) rsaencrypt.c:199 -1
+     (nil))
+(call_insn 408 407 409 55 (call (mem:QI (symbol_ref:DI ("printRsaEncrypt") [flags 0x3]  <function_decl 0x7f3e66bdc948 printRsaEncrypt>) [0 printRsaEncrypt S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:199 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 409 408 410 56 29 "" [1 uses])
+(note 410 409 411 56 [bb 56] NOTE_INSN_BASIC_BLOCK)
+(insn 411 410 412 56 (set (reg:SI 151 [ D.7169 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f3e66d7c090 verbose>) [0 verbose+0 S4 A32])) rsaencrypt.c:200 -1
+     (nil))
+(insn 412 411 413 56 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 151 [ D.7169 ])
+            (const_int 0 [0]))) rsaencrypt.c:200 -1
+     (nil))
+(jump_insn 413 412 414 56 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 447)
+            (pc))) rsaencrypt.c:200 612 {*jcc_1}
+     (nil)
+ -> 447)
+(note 414 413 415 57 [bb 57] NOTE_INSN_BASIC_BLOCK)
+(insn 415 414 416 57 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7f3e66c2a000 *.LC15>)) rsaencrypt.c:200 -1
+     (nil))
+(call_insn 416 415 419 57 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:200 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 419 416 420 57 (set (pc)
+        (label_ref 447)) -1
+     (nil)
+ -> 447)
+(barrier 420 419 421)
+(code_label 421 420 422 59 28 "" [1 uses])
+(note 422 421 423 59 [bb 59] NOTE_INSN_BASIC_BLOCK)
+(insn 423 422 424 59 (set (reg:SI 205)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])) rsaencrypt.c:206 -1
+     (nil))
+(insn 424 423 425 59 (set (reg:SI 4 si)
+        (reg:SI 205)) rsaencrypt.c:206 -1
+     (nil))
+(insn 425 424 426 59 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7f3e66c2a090 *.LC16>)) rsaencrypt.c:206 -1
+     (nil))
+(insn 426 425 427 59 (set (reg:QI 0 ax)
+        (const_int 0 [0])) rsaencrypt.c:206 -1
+     (nil))
+(call_insn 427 426 428 59 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f3e66fbaca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:206 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 428 427 429 59 (set (reg:SI 206)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])) rsaencrypt.c:207 -1
+     (nil))
+(insn 429 428 430 59 (parallel [
+            (set (reg:DI 207)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -712 [0xfffffffffffffd38])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:207 -1
+     (nil))
+(insn 430 429 431 59 (parallel [
+            (set (reg:DI 208)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -720 [0xfffffffffffffd30])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:207 -1
+     (nil))
+(insn 431 430 432 59 (parallel [
+            (set (reg:DI 209)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -728 [0xfffffffffffffd28])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:207 -1
+     (nil))
+(insn 432 431 433 59 (set (reg:SI 2 cx)
+        (reg:SI 206)) rsaencrypt.c:207 -1
+     (nil))
+(insn 433 432 434 59 (set (reg:DI 1 dx)
+        (reg:DI 207)) rsaencrypt.c:207 -1
+     (nil))
+(insn 434 433 435 59 (set (reg:DI 4 si)
+        (reg:DI 208)) rsaencrypt.c:207 -1
+     (nil))
+(insn 435 434 436 59 (set (reg:DI 5 di)
+        (reg:DI 209)) rsaencrypt.c:207 -1
+     (nil))
+(call_insn 436 435 437 59 (call (mem:QI (symbol_ref:DI ("TSS_ResponseCode_toString") [flags 0x41]  <function_decl 0x7f3e66f20e58 TSS_ResponseCode_toString>) [0 TSS_ResponseCode_toString S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:207 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 437 436 438 59 (set (reg/f:DI 152 [ D.7176 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -712 [0xfffffffffffffd38])) [0 num+0 S8 A64])) rsaencrypt.c:208 -1
+     (nil))
+(insn 438 437 439 59 (set (reg/f:DI 153 [ D.7176 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -720 [0xfffffffffffffd30])) [0 submsg+0 S8 A64])) rsaencrypt.c:208 -1
+     (nil))
+(insn 439 438 440 59 (set (reg/f:DI 154 [ D.7176 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -728 [0xfffffffffffffd28])) [0 msg+0 S8 A64])) rsaencrypt.c:208 -1
+     (nil))
+(insn 440 439 441 59 (set (reg:DI 2 cx)
+        (reg/f:DI 152 [ D.7176 ])) rsaencrypt.c:208 -1
+     (nil))
+(insn 441 440 442 59 (set (reg:DI 1 dx)
+        (reg/f:DI 153 [ D.7176 ])) rsaencrypt.c:208 -1
+     (nil))
+(insn 442 441 443 59 (set (reg:DI 4 si)
+        (reg/f:DI 154 [ D.7176 ])) rsaencrypt.c:208 -1
+     (nil))
+(insn 443 442 444 59 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7f3e66c2a120 *.LC17>)) rsaencrypt.c:208 -1
+     (nil))
+(insn 444 443 445 59 (set (reg:QI 0 ax)
+        (const_int 0 [0])) rsaencrypt.c:208 -1
+     (nil))
+(call_insn 445 444 446 59 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f3e66fbaca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:208 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (nil)))))))
+(insn 446 445 447 59 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])
+        (const_int 1 [0x1])) rsaencrypt.c:209 -1
+     (nil))
+(code_label 447 446 448 60 31 "" [2 uses])
+(note 448 447 449 60 [bb 60] NOTE_INSN_BASIC_BLOCK)
+(insn 449 448 452 60 (set (reg:SI 155 [ D.7169 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -772 [0xfffffffffffffcfc])) [0 rc+0 S4 A32])) rsaencrypt.c:211 -1
+     (nil))
+(insn 452 449 456 60 (set (reg:SI 156 [ <retval> ])
+        (reg:SI 155 [ D.7169 ])) -1
+     (nil))
+(insn 456 452 457 60 (set (reg/i:SI 0 ax)
+        (reg:SI 156 [ <retval> ])) rsaencrypt.c:212 -1
+     (nil))
+(insn 457 456 458 60 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.7177+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) rsaencrypt.c:212 -1
+     (nil))
+(jump_insn 458 457 464 60 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 461)
+            (pc))) rsaencrypt.c:212 -1
+     (nil)
+ -> 461)
+(note 464 458 459 63 [bb 63] NOTE_INSN_BASIC_BLOCK)
+(call_insn 459 464 460 63 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f3e66c09948 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:212 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 460 459 461)
+(code_label 461 460 465 64 33 "" [1 uses])
+(note 465 461 462 64 [bb 64] NOTE_INSN_BASIC_BLOCK)
+(insn 462 465 0 64 (use (reg/i:SI 0 ax)) rsaencrypt.c:212 -1
+     (nil))
+
+;; Function printRsaEncrypt (printRsaEncrypt, funcdef_no=3, decl_uid=6992, cgraph_uid=3, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 out+0 S8 A64])
+        (reg:DI 5 di [ out ])) rsaencrypt.c:215 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 out+0 S8 A64])) rsaencrypt.c:216 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:HI 87 [ D.7198 ])
+        (mem/j:HI (reg/f:DI 90) [0 out_2(D)->outData.t.size+0 S2 A16])) rsaencrypt.c:216 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 88 [ D.7199 ])
+        (zero_extend:SI (reg:HI 87 [ D.7198 ]))) rsaencrypt.c:216 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 out+0 S8 A64])) rsaencrypt.c:216 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg/f:DI 89 [ D.7200 ])
+                (plus:DI (reg/f:DI 91)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) rsaencrypt.c:216 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 out+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 11 10 12 2 (set (reg:SI 1 dx)
+        (reg:SI 88 [ D.7199 ])) rsaencrypt.c:216 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 4 si)
+        (reg/f:DI 89 [ D.7200 ])) rsaencrypt.c:216 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7f3e66c36630 *.LC18>)) rsaencrypt.c:216 -1
+     (nil))
+(call_insn 14 13 17 2 (call (mem:QI (symbol_ref:DI ("TSS_PrintAll") [flags 0x41]  <function_decl 0x7f3e66ee7948 TSS_PrintAll>) [0 TSS_PrintAll S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:216 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 17 14 0 2 (const_int 0 [0]) rsaencrypt.c:217 -1
+     (nil))
+
+;; Function printUsage (printUsage, funcdef_no=4, decl_uid=6994, cgraph_uid=4, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) rsaencrypt.c:221 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3e66fbd000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:221 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7f3e66c36990 *.LC19>)) rsaencrypt.c:222 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:222 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) rsaencrypt.c:223 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3e66fbd000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:223 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC20") [flags 0x2]  <var_decl 0x7f3e66c36a20 *.LC20>)) rsaencrypt.c:224 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:224 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) rsaencrypt.c:225 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3e66fbd000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:225 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC21") [flags 0x2]  <var_decl 0x7f3e66c36ab0 *.LC21>)) rsaencrypt.c:226 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:226 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC22") [flags 0x2]  <var_decl 0x7f3e66c36b40 *.LC22>)) rsaencrypt.c:227 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:227 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC23") [flags 0x2]  <var_decl 0x7f3e66c36bd0 *.LC23>)) rsaencrypt.c:228 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3e66fbd360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) rsaencrypt.c:228 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 21 20 22 2 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) rsaencrypt.c:229 -1
+     (nil))
+(call_insn 22 21 23 2 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7f3e66fd0000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) rsaencrypt.c:229 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 23 22 0)

@@ -1,0 +1,349 @@
+
+;; Function TPM2_PP_Commands (TPM2_PP_Commands, funcdef_no=2, decl_uid=12856, cgraph_uid=2, symbol_order=2)
+
+Partition 0: size 4 align 4
+	i_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 60.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) ManagementCommands.c:69 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 88 [ D.12895 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7fb1a49c1cf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) ManagementCommands.c:74 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.12895 ])
+            (const_int 0 [0]))) ManagementCommands.c:74 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 13)
+            (pc))) ManagementCommands.c:74 -1
+     (nil)
+ -> 13)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 11 4 (set (reg:SI 87 [ D.12894 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7fb1a49c1cf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) ManagementCommands.c:74 -1
+     (nil))
+(jump_insn 11 10 12 4 (set (pc)
+        (label_ref 57)) ManagementCommands.c:74 -1
+     (nil)
+ -> 57)
+(barrier 12 11 13)
+(code_label 13 12 14 5 2 "" [1 uses])
+(note 14 13 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+        (const_int 0 [0])) ManagementCommands.c:77 -1
+     (nil))
+(jump_insn 16 15 17 5 (set (pc)
+        (label_ref 25)) ManagementCommands.c:77 -1
+     (nil)
+ -> 25)
+(barrier 17 16 29)
+(code_label 29 17 18 6 5 "" [1 uses])
+(note 18 29 19 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 6 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) ManagementCommands.c:82 -1
+     (nil))
+(insn 20 19 21 6 (set (reg:DI 95)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32]))) ManagementCommands.c:82 -1
+     (nil))
+(insn 21 20 22 6 (set (reg:SI 90 [ D.12895 ])
+        (mem/j:SI (plus:DI (plus:DI (mult:DI (reg:DI 95)
+                        (const_int 4 [0x4]))
+                    (reg/f:DI 94))
+                (const_int 8 [0x8])) [0 in_11(D)->setList.commandCodes S4 A32])) ManagementCommands.c:82 -1
+     (nil))
+(insn 22 21 23 6 (set (reg:SI 5 di)
+        (reg:SI 90 [ D.12895 ])) ManagementCommands.c:82 -1
+     (nil))
+(call_insn 23 22 24 6 (call (mem:QI (symbol_ref:DI ("PhysicalPresenceCommandSet") [flags 0x41]  <function_decl 0x7fb1a4ad56c0 PhysicalPresenceCommandSet>) [0 PhysicalPresenceCommandSet S1 A8])
+        (const_int 0 [0])) ManagementCommands.c:82 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 24 23 25 6 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) ManagementCommands.c:77 -1
+     (nil))
+(code_label 25 24 26 7 4 "" [1 uses])
+(note 26 25 27 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 7 (set (reg/f:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) ManagementCommands.c:77 -1
+     (nil))
+(insn 28 27 30 7 (set (reg:SI 89 [ D.12895 ])
+        (mem/j:SI (plus:DI (reg/f:DI 96)
+                (const_int 4 [0x4])) [0 in_11(D)->setList.count+0 S4 A32])) ManagementCommands.c:77 -1
+     (nil))
+(insn 30 28 31 7 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 89 [ D.12895 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32]))) ManagementCommands.c:77 -1
+     (nil))
+(jump_insn 31 30 32 7 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 29)
+            (pc))) ManagementCommands.c:77 -1
+     (nil)
+ -> 29)
+(note 32 31 33 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+        (const_int 0 [0])) ManagementCommands.c:84 -1
+     (nil))
+(jump_insn 34 33 35 8 (set (pc)
+        (label_ref 44)) ManagementCommands.c:84 -1
+     (nil)
+ -> 44)
+(barrier 35 34 48)
+(code_label 48 35 36 9 7 "" [1 uses])
+(note 36 48 37 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 9 (set (reg/f:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) ManagementCommands.c:89 -1
+     (nil))
+(insn 38 37 39 9 (set (reg:DI 98)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32]))) ManagementCommands.c:89 -1
+     (nil))
+(insn 39 38 40 9 (parallel [
+            (set (reg:DI 99)
+                (plus:DI (reg:DI 98)
+                    (const_int 256 [0x100])))
+            (clobber (reg:CC 17 flags))
+        ]) ManagementCommands.c:89 -1
+     (nil))
+(insn 40 39 41 9 (set (reg:SI 92 [ D.12895 ])
+        (mem/j:SI (plus:DI (plus:DI (mult:DI (reg:DI 99)
+                        (const_int 4 [0x4]))
+                    (reg/f:DI 97))
+                (const_int 4 [0x4])) [0 in_11(D)->clearList.commandCodes S4 A32])) ManagementCommands.c:89 -1
+     (nil))
+(insn 41 40 42 9 (set (reg:SI 5 di)
+        (reg:SI 92 [ D.12895 ])) ManagementCommands.c:89 -1
+     (nil))
+(call_insn 42 41 43 9 (call (mem:QI (symbol_ref:DI ("PhysicalPresenceCommandClear") [flags 0x41]  <function_decl 0x7fb1a4ad5798 PhysicalPresenceCommandClear>) [0 PhysicalPresenceCommandClear S1 A8])
+        (const_int 0 [0])) ManagementCommands.c:89 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 43 42 44 9 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) ManagementCommands.c:84 -1
+     (nil))
+(code_label 44 43 45 10 6 "" [1 uses])
+(note 45 44 46 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 10 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) ManagementCommands.c:84 -1
+     (nil))
+(insn 47 46 49 10 (set (reg:SI 91 [ D.12895 ])
+        (mem/j:SI (plus:DI (reg/f:DI 100)
+                (const_int 1024 [0x400])) [0 in_11(D)->clearList.count+0 S4 A32])) ManagementCommands.c:84 -1
+     (nil))
+(insn 49 47 50 10 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 91 [ D.12895 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32]))) ManagementCommands.c:84 -1
+     (nil))
+(jump_insn 50 49 51 10 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 48)
+            (pc))) ManagementCommands.c:84 -1
+     (nil)
+ -> 48)
+(note 51 50 52 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 11 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fb1a49c1ea0 gp>)
+                (const_int 852 [0x354])))) ManagementCommands.c:91 -1
+     (nil))
+(insn 53 52 54 11 (set (reg:SI 4 si)
+        (const_int 15 [0xf])) ManagementCommands.c:91 -1
+     (nil))
+(insn 54 53 55 11 (set (reg:SI 5 di)
+        (const_int 852 [0x354])) ManagementCommands.c:91 -1
+     (nil))
+(call_insn 55 54 56 11 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fb1a4a2abd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) ManagementCommands.c:91 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 56 55 57 11 (set (reg:SI 87 [ D.12894 ])
+        (const_int 0 [0])) ManagementCommands.c:92 -1
+     (nil))
+(code_label 57 56 58 12 3 "" [1 uses])
+(note 58 57 59 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 63 12 (set (reg:SI 93 [ <retval> ])
+        (reg:SI 87 [ D.12894 ])) -1
+     (nil))
+(insn 63 59 64 12 (set (reg/i:SI 0 ax)
+        (reg:SI 93 [ <retval> ])) ManagementCommands.c:93 -1
+     (nil))
+(insn 64 63 0 12 (use (reg/i:SI 0 ax)) ManagementCommands.c:93 -1
+     (nil))
+
+;; Function TPM2_SetAlgorithmSet (TPM2_SetAlgorithmSet, funcdef_no=3, decl_uid=12872, cgraph_uid=3, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 26.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) ManagementCommands.c:102 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 88 [ D.12897 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7fb1a49c1cf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) ManagementCommands.c:106 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.12897 ])
+            (const_int 0 [0]))) ManagementCommands.c:106 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 13)
+            (pc))) ManagementCommands.c:106 -1
+     (nil)
+ -> 13)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 11 4 (set (reg:SI 87 [ D.12896 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7fb1a49c1cf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) ManagementCommands.c:106 -1
+     (nil))
+(jump_insn 11 10 12 4 (set (pc)
+        (label_ref 23)) ManagementCommands.c:106 -1
+     (nil)
+ -> 23)
+(barrier 12 11 13)
+(code_label 13 12 14 5 9 "" [1 uses])
+(note 14 13 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 5 (set (reg/f:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) ManagementCommands.c:108 -1
+     (nil))
+(insn 16 15 17 5 (set (reg:SI 89 [ D.12897 ])
+        (mem/j:SI (plus:DI (reg/f:DI 91)
+                (const_int 4 [0x4])) [0 in_6(D)->algorithmSet+0 S4 A32])) ManagementCommands.c:108 -1
+     (nil))
+(insn 17 16 18 5 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fb1a49c1ea0 gp>)
+                    (const_int 920 [0x398]))) [0 gp.algorithmSet+0 S4 A64])
+        (reg:SI 89 [ D.12897 ])) ManagementCommands.c:108 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fb1a49c1ea0 gp>)
+                (const_int 920 [0x398])))) ManagementCommands.c:110 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:SI 4 si)
+        (const_int 4 [0x4])) ManagementCommands.c:110 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:SI 5 di)
+        (const_int 920 [0x398])) ManagementCommands.c:110 -1
+     (nil))
+(call_insn 21 20 22 5 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fb1a4a2abd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) ManagementCommands.c:110 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 22 21 23 5 (set (reg:SI 87 [ D.12896 ])
+        (const_int 0 [0])) ManagementCommands.c:111 -1
+     (nil))
+(code_label 23 22 24 6 10 "" [1 uses])
+(note 24 23 25 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 29 6 (set (reg:SI 90 [ <retval> ])
+        (reg:SI 87 [ D.12896 ])) -1
+     (nil))
+(insn 29 25 30 6 (set (reg/i:SI 0 ax)
+        (reg:SI 90 [ <retval> ])) ManagementCommands.c:112 -1
+     (nil))
+(insn 30 29 0 6 (use (reg/i:SI 0 ax)) ManagementCommands.c:112 -1
+     (nil))

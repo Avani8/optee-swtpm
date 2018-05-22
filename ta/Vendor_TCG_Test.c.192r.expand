@@ -1,0 +1,66 @@
+
+;; Function TPM2_Vendor_TCG_Test (TPM2_Vendor_TCG_Test, funcdef_no=2, decl_uid=12858, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 15.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) Vendor_TCG_Test.c:72 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) Vendor_TCG_Test.c:72 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) Vendor_TCG_Test.c:73 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:QI 87 [ D.12868 ])
+        (mem/j:QI (reg/f:DI 90) [0 in_2(D)->inputData+0 S1 A8])) Vendor_TCG_Test.c:73 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 out+0 S8 A64])) Vendor_TCG_Test.c:73 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/j:QI (reg/f:DI 91) [0 out_4(D)->outputData+0 S1 A8])
+        (reg:QI 87 [ D.12868 ])) Vendor_TCG_Test.c:73 -1
+     (nil))
+(insn 11 10 14 2 (set (reg:SI 88 [ D.12869 ])
+        (const_int 0 [0])) Vendor_TCG_Test.c:74 -1
+     (nil))
+(insn 14 11 18 2 (set (reg:SI 89 [ <retval> ])
+        (reg:SI 88 [ D.12869 ])) Vendor_TCG_Test.c:74 -1
+     (nil))
+(insn 18 14 19 2 (set (reg/i:SI 0 ax)
+        (reg:SI 89 [ <retval> ])) Vendor_TCG_Test.c:75 -1
+     (nil))
+(insn 19 18 0 2 (use (reg/i:SI 0 ax)) Vendor_TCG_Test.c:75 -1
+     (nil))

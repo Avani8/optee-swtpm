@@ -1,0 +1,1636 @@
+
+;; Function _plat__NvErrors (_plat__NvErrors, funcdef_no=0, decl_uid=2683, cgraph_uid=0, symbol_order=0)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 recoverable+0 S4 A32])
+        (reg:SI 5 di [ recoverable ])) NVMem.c:82 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 unrecoverable+0 S4 A32])
+        (reg:SI 4 si [ unrecoverable ])) NVMem.c:82 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 unrecoverable+0 S4 A32])) NVMem.c:83 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:SI (symbol_ref:DI ("s_NV_unrecoverable") [flags 0x40]  <var_decl 0x7f2efcfb75a0 s_NV_unrecoverable>) [0 s_NV_unrecoverable+0 S4 A32])
+        (reg:SI 87)) NVMem.c:83 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 recoverable+0 S4 A32])) NVMem.c:84 -1
+     (nil))
+(insn 10 9 13 2 (set (mem/c:SI (symbol_ref:DI ("s_NV_recoverable") [flags 0x40]  <var_decl 0x7f2efcfb7630 s_NV_recoverable>) [0 s_NV_recoverable+0 S4 A32])
+        (reg:SI 88)) NVMem.c:84 -1
+     (nil))
+(insn 13 10 0 2 (const_int 0 [0]) NVMem.c:85 -1
+     (nil))
+
+;; Function _plat__NVEnable (_plat__NVEnable, funcdef_no=1, decl_uid=2685, cgraph_uid=1, symbol_order=1)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 9->11 redirected to 15
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+Removing jump 121.
+Merging block 19 into block 18...
+Merged blocks 18 and 19.
+Merged 18 and 19 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 platParameter+0 S8 A64])
+        (reg:DI 5 di [ platParameter ])) NVMem.c:102 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (mem/c:SI (symbol_ref:DI ("s_NV_unrecoverable") [flags 0x40]  <var_decl 0x7f2efcfb75a0 s_NV_unrecoverable>) [0 s_NV_unrecoverable+0 S4 A32])
+        (const_int 0 [0])) NVMem.c:105 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:SI (symbol_ref:DI ("s_NV_recoverable") [flags 0x40]  <var_decl 0x7f2efcfb7630 s_NV_recoverable>) [0 s_NV_recoverable+0 S4 A32])
+        (const_int 0 [0])) NVMem.c:106 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 88 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:108 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 88 [ D.2894 ])
+            (const_int 0 [0]))) NVMem.c:108 -1
+     (nil))
+(jump_insn 10 9 11 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 15)
+            (pc))) NVMem.c:108 -1
+     (nil)
+ -> 15)
+(note 11 10 12 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 12 11 13 4 (set (reg:SI 87 [ D.2893 ])
+        (const_int 0 [0])) NVMem.c:109 -1
+     (nil))
+(jump_insn 13 12 14 4 (set (pc)
+        (label_ref 118)) NVMem.c:109 -1
+     (nil)
+ -> 118)
+(barrier 14 13 15)
+(code_label 15 14 16 5 3 "" [1 uses])
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 5 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f2efcc1a5a0 *.LC0>)) NVMem.c:115 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f2efcc1a630 *.LC1>)) NVMem.c:115 -1
+     (nil))
+(call_insn 19 18 20 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fopen") [flags 0x41]  <function_decl 0x7f2efcfc55e8 fopen>) [0 fopen S1 A8])
+            (const_int 0 [0]))) NVMem.c:115 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 20 19 21 5 (set (reg/f:DI 89 [ D.2894 ])
+        (reg:DI 0 ax)) NVMem.c:115 -1
+     (nil))
+(insn 21 20 22 5 (set (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])
+        (reg/f:DI 89 [ D.2894 ])) NVMem.c:115 -1
+     (nil))
+(insn 22 21 23 5 (set (reg/f:DI 90 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:117 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 90 [ D.2894 ])
+            (const_int 0 [0]))) NVMem.c:117 -1
+     (nil))
+(jump_insn 24 23 25 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) NVMem.c:117 -1
+     (nil)
+ -> 39)
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 6 (set (reg/f:DI 91 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:120 -1
+     (nil))
+(insn 27 26 28 6 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) NVMem.c:120 -1
+     (nil))
+(insn 28 27 29 6 (set (reg:DI 4 si)
+        (const_int 0 [0])) NVMem.c:120 -1
+     (nil))
+(insn 29 28 30 6 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ D.2894 ])) NVMem.c:120 -1
+     (nil))
+(call_insn 30 29 31 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fseek") [flags 0x41]  <function_decl 0x7f2efcfd0a20 fseek>) [0 fseek S1 A8])
+            (const_int 0 [0]))) NVMem.c:120 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 31 30 32 6 (set (reg/f:DI 92 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:121 -1
+     (nil))
+(insn 32 31 33 6 (set (reg:DI 5 di)
+        (reg/f:DI 92 [ D.2894 ])) NVMem.c:121 -1
+     (nil))
+(call_insn 33 32 34 6 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("ftell") [flags 0x41]  <function_decl 0x7f2efcbe1000 ftell>) [0 ftell S1 A8])
+            (const_int 0 [0]))) NVMem.c:121 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 34 33 35 6 (set (reg:DI 93 [ D.2895 ])
+        (reg:DI 0 ax)) NVMem.c:121 -1
+     (nil))
+(insn 35 34 36 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 93 [ D.2895 ])
+            (const_int 0 [0]))) NVMem.c:121 -1
+     (nil))
+(jump_insn 36 35 37 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) NVMem.c:121 -1
+     (nil)
+ -> 39)
+(note 37 36 38 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 7 (set (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])
+        (const_int 0 [0])) NVMem.c:122 -1
+     (nil))
+(code_label 39 38 40 8 5 "" [2 uses])
+(note 40 39 41 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 8 (set (reg/f:DI 94 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:124 -1
+     (nil))
+(insn 42 41 43 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 94 [ D.2894 ])
+            (const_int 0 [0]))) NVMem.c:124 -1
+     (nil))
+(jump_insn 43 42 44 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 73)
+            (pc))) NVMem.c:124 -1
+     (nil)
+ -> 73)
+(note 44 43 45 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 45 44 46 9 (set (reg:DI 1 dx)
+        (const_int 16384 [0x4000])) NVMem.c:127 -1
+     (nil))
+(insn 46 45 47 9 (set (reg:SI 4 si)
+        (const_int 0 [0])) NVMem.c:127 -1
+     (nil))
+(insn 47 46 48 9 (set (reg:DI 5 di)
+        (symbol_ref:DI ("s_NV") [flags 0x40]  <var_decl 0x7f2efcfb7480 s_NV>)) NVMem.c:127 -1
+     (nil))
+(call_insn 48 47 49 9 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memset") [flags 0x41]  <function_decl 0x7f2efce61438 memset>) [0 __builtin_memset S1 A8])
+            (const_int 0 [0]))) NVMem.c:127 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 49 48 50 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f2efcc1a6c0 *.LC2>)) NVMem.c:133 -1
+     (nil))
+(insn 50 49 51 9 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f2efcc1a630 *.LC1>)) NVMem.c:133 -1
+     (nil))
+(call_insn 51 50 52 9 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fopen") [flags 0x41]  <function_decl 0x7f2efcfc55e8 fopen>) [0 fopen S1 A8])
+            (const_int 0 [0]))) NVMem.c:133 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 52 51 53 9 (set (reg/f:DI 95 [ D.2894 ])
+        (reg:DI 0 ax)) NVMem.c:133 -1
+     (nil))
+(insn 53 52 54 9 (set (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])
+        (reg/f:DI 95 [ D.2894 ])) NVMem.c:133 -1
+     (nil))
+(insn 54 53 55 9 (set (reg/f:DI 96 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:135 -1
+     (nil))
+(insn 55 54 56 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 96 [ D.2894 ])
+            (const_int 0 [0]))) NVMem.c:135 -1
+     (nil))
+(jump_insn 56 55 57 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 106)
+            (pc))) NVMem.c:135 612 {*jcc_1}
+     (nil)
+ -> 106)
+(note 57 56 58 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 59 10 (set (reg/f:DI 97 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:138 -1
+     (nil))
+(insn 59 58 60 10 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) NVMem.c:138 -1
+     (nil))
+(insn 60 59 61 10 (set (reg:DI 4 si)
+        (const_int 0 [0])) NVMem.c:138 -1
+     (nil))
+(insn 61 60 62 10 (set (reg:DI 5 di)
+        (reg/f:DI 97 [ D.2894 ])) NVMem.c:138 -1
+     (nil))
+(call_insn 62 61 63 10 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fseek") [flags 0x41]  <function_decl 0x7f2efcfd0a20 fseek>) [0 fseek S1 A8])
+            (const_int 0 [0]))) NVMem.c:138 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 63 62 64 10 (set (reg/f:DI 98 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:140 -1
+     (nil))
+(insn 64 63 65 10 (set (reg:DI 2 cx)
+        (reg/f:DI 98 [ D.2894 ])) NVMem.c:140 -1
+     (nil))
+(insn 65 64 66 10 (set (reg:DI 1 dx)
+        (const_int 16384 [0x4000])) NVMem.c:140 -1
+     (nil))
+(insn 66 65 67 10 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) NVMem.c:140 -1
+     (nil))
+(insn 67 66 68 10 (set (reg:DI 5 di)
+        (symbol_ref:DI ("s_NV") [flags 0x40]  <var_decl 0x7f2efcfb7480 s_NV>)) NVMem.c:140 -1
+     (nil))
+(call_insn 68 67 71 10 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fwrite") [flags 0x41]  <function_decl 0x7f2efce6a948 fwrite>) [0 __builtin_fwrite S1 A8])
+            (const_int 0 [0]))) NVMem.c:140 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(jump_insn 71 68 72 10 (set (pc)
+        (label_ref 106)) -1
+     (nil)
+ -> 106)
+(barrier 72 71 73)
+(code_label 73 72 74 12 6 "" [1 uses])
+(note 74 73 75 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 75 74 76 12 (set (reg/f:DI 99 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:146 -1
+     (nil))
+(insn 76 75 77 12 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) NVMem.c:146 -1
+     (nil))
+(insn 77 76 78 12 (set (reg:DI 4 si)
+        (const_int 0 [0])) NVMem.c:146 -1
+     (nil))
+(insn 78 77 79 12 (set (reg:DI 5 di)
+        (reg/f:DI 99 [ D.2894 ])) NVMem.c:146 -1
+     (nil))
+(call_insn 79 78 80 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fseek") [flags 0x41]  <function_decl 0x7f2efcfd0a20 fseek>) [0 fseek S1 A8])
+            (const_int 0 [0]))) NVMem.c:146 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 80 79 81 12 (set (reg/f:DI 100 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:147 -1
+     (nil))
+(insn 81 80 82 12 (set (reg:DI 5 di)
+        (reg/f:DI 100 [ D.2894 ])) NVMem.c:147 -1
+     (nil))
+(call_insn 82 81 83 12 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("ftell") [flags 0x41]  <function_decl 0x7f2efcbe1000 ftell>) [0 ftell S1 A8])
+            (const_int 0 [0]))) NVMem.c:147 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 83 82 84 12 (set (reg:DI 101 [ D.2895 ])
+        (reg:DI 0 ax)) NVMem.c:147 -1
+     (nil))
+(insn 84 83 85 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 101 [ D.2895 ])
+            (const_int 16384 [0x4000]))) NVMem.c:147 -1
+     (nil))
+(jump_insn 85 84 86 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 93)
+            (pc))) NVMem.c:147 -1
+     (nil)
+ -> 93)
+(note 86 85 87 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 87 86 88 13 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.2747") [flags 0x2]  <var_decl 0x7f2efcfb7900 __PRETTY_FUNCTION__>)) NVMem.c:147 -1
+     (nil))
+(insn 88 87 89 13 (set (reg:SI 1 dx)
+        (const_int 147 [0x93])) NVMem.c:147 -1
+     (nil))
+(insn 89 88 90 13 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f2efcc1a750 *.LC3>)) NVMem.c:147 -1
+     (nil))
+(insn 90 89 91 13 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f2efcc1a7e0 *.LC4>)) NVMem.c:147 -1
+     (nil))
+(call_insn 91 90 92 13 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41]  <function_decl 0x7f2efcf425e8 __assert_fail>) [0 __assert_fail S1 A8])
+        (const_int 0 [0])) NVMem.c:147 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 92 91 93)
+(code_label 93 92 94 14 9 "" [1 uses])
+(note 94 93 95 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 95 94 96 14 (set (reg/f:DI 102 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:149 -1
+     (nil))
+(insn 96 95 97 14 (set (reg:SI 1 dx)
+        (const_int 0 [0])) NVMem.c:149 -1
+     (nil))
+(insn 97 96 98 14 (set (reg:DI 4 si)
+        (const_int 0 [0])) NVMem.c:149 -1
+     (nil))
+(insn 98 97 99 14 (set (reg:DI 5 di)
+        (reg/f:DI 102 [ D.2894 ])) NVMem.c:149 -1
+     (nil))
+(call_insn 99 98 100 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fseek") [flags 0x41]  <function_decl 0x7f2efcfd0a20 fseek>) [0 fseek S1 A8])
+            (const_int 0 [0]))) NVMem.c:149 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 100 99 101 14 (set (reg/f:DI 103 [ D.2894 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:150 -1
+     (nil))
+(insn 101 100 102 14 (set (reg:DI 2 cx)
+        (reg/f:DI 103 [ D.2894 ])) NVMem.c:150 -1
+     (nil))
+(insn 102 101 103 14 (set (reg:DI 1 dx)
+        (const_int 1 [0x1])) NVMem.c:150 -1
+     (nil))
+(insn 103 102 104 14 (set (reg:DI 4 si)
+        (const_int 16384 [0x4000])) NVMem.c:150 -1
+     (nil))
+(insn 104 103 105 14 (set (reg:DI 5 di)
+        (symbol_ref:DI ("s_NV") [flags 0x40]  <var_decl 0x7f2efcfb7480 s_NV>)) NVMem.c:150 -1
+     (nil))
+(call_insn 105 104 106 14 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fread") [flags 0x41]  <function_decl 0x7f2efcfd0870 fread>) [0 fread S1 A8])
+            (const_int 0 [0]))) NVMem.c:150 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(code_label 106 105 107 15 8 "" [2 uses])
+(note 107 106 108 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 108 107 109 15 (set (reg:SI 104 [ D.2893 ])
+        (mem/c:SI (symbol_ref:DI ("s_NV_unrecoverable") [flags 0x40]  <var_decl 0x7f2efcfb75a0 s_NV_unrecoverable>) [0 s_NV_unrecoverable+0 S4 A32])) NVMem.c:156 -1
+     (nil))
+(insn 109 108 110 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 104 [ D.2893 ])
+            (const_int 0 [0]))) NVMem.c:156 -1
+     (nil))
+(jump_insn 110 109 111 15 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 115)
+            (pc))) NVMem.c:156 -1
+     (nil)
+ -> 115)
+(note 111 110 112 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 112 111 113 16 (set (reg:SI 87 [ D.2893 ])
+        (const_int -1 [0xffffffffffffffff])) NVMem.c:157 -1
+     (nil))
+(jump_insn 113 112 114 16 (set (pc)
+        (label_ref 118)) NVMem.c:157 -1
+     (nil)
+ -> 118)
+(barrier 114 113 115)
+(code_label 115 114 116 17 10 "" [1 uses])
+(note 116 115 117 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 117 116 118 17 (set (reg:SI 87 [ D.2893 ])
+        (mem/c:SI (symbol_ref:DI ("s_NV_recoverable") [flags 0x40]  <var_decl 0x7f2efcfb7630 s_NV_recoverable>) [0 s_NV_recoverable+0 S4 A32])) NVMem.c:158 -1
+     (nil))
+(code_label 118 117 119 18 4 "" [2 uses])
+(note 119 118 120 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 120 119 124 18 (set (reg:SI 105 [ <retval> ])
+        (reg:SI 87 [ D.2893 ])) -1
+     (nil))
+(insn 124 120 125 18 (set (reg/i:SI 0 ax)
+        (reg:SI 105 [ <retval> ])) NVMem.c:159 -1
+     (nil))
+(insn 125 124 0 18 (use (reg/i:SI 0 ax)) NVMem.c:159 -1
+     (nil))
+
+;; Function _plat__NVDisable (_plat__NVDisable, funcdef_no=2, decl_uid=2687, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:DI 87 [ D.2901 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:168 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 87 [ D.2901 ])
+            (const_int 0 [0]))) NVMem.c:168 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 15)
+            (pc))) NVMem.c:168 -1
+     (nil)
+ -> 15)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 4 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.2751") [flags 0x2]  <var_decl 0x7f2efcfb7990 __PRETTY_FUNCTION__>)) NVMem.c:168 -1
+     (nil))
+(insn 10 9 11 4 (set (reg:SI 1 dx)
+        (const_int 168 [0xa8])) NVMem.c:168 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f2efcc1a750 *.LC3>)) NVMem.c:168 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f2efcc2c3f0 *.LC5>)) NVMem.c:168 -1
+     (nil))
+(call_insn 13 12 14 4 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41]  <function_decl 0x7f2efcf425e8 __assert_fail>) [0 __assert_fail S1 A8])
+        (const_int 0 [0])) NVMem.c:168 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 14 13 15)
+(code_label 15 14 16 5 12 "" [1 uses])
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 5 (set (reg/f:DI 88 [ D.2901 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:170 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:DI 5 di)
+        (reg/f:DI 88 [ D.2901 ])) NVMem.c:170 -1
+     (nil))
+(call_insn 19 18 20 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fclose") [flags 0x41]  <function_decl 0x7f2efcfc5360 fclose>) [0 fclose S1 A8])
+            (const_int 0 [0]))) NVMem.c:170 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 20 19 25 5 (set (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])
+        (const_int 0 [0])) NVMem.c:172 -1
+     (nil))
+(insn 25 20 0 5 (const_int 0 [0]) NVMem.c:174 -1
+     (nil))
+
+;; Function _plat__IsNvAvailable (_plat__IsNvAvailable, funcdef_no=3, decl_uid=2689, cgraph_uid=3, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 27.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 88 [ D.2903 ])
+        (mem/c:SI (symbol_ref:DI ("s_NvIsAvailable") [flags 0x40]  <var_decl 0x7f2efcfb7510 s_NvIsAvailable>) [0 s_NvIsAvailable+0 S4 A32])) NVMem.c:188 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.2903 ])
+            (const_int 0 [0]))) NVMem.c:188 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 12)
+            (pc))) NVMem.c:188 -1
+     (nil)
+ -> 12)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 4 (set (reg:SI 87 [ D.2903 ])
+        (const_int 1 [0x1])) NVMem.c:189 -1
+     (nil))
+(jump_insn 10 9 11 4 (set (pc)
+        (label_ref 24)) NVMem.c:189 -1
+     (nil)
+ -> 24)
+(barrier 11 10 12)
+(code_label 12 11 13 5 15 "" [1 uses])
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 5 (set (reg/f:DI 89 [ D.2904 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:191 -1
+     (nil))
+(insn 15 14 16 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 89 [ D.2904 ])
+            (const_int 0 [0]))) NVMem.c:191 -1
+     (nil))
+(jump_insn 16 15 17 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) NVMem.c:191 -1
+     (nil)
+ -> 21)
+(note 17 16 18 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 6 (set (reg:SI 87 [ D.2903 ])
+        (const_int 1 [0x1])) NVMem.c:192 -1
+     (nil))
+(jump_insn 19 18 20 6 (set (pc)
+        (label_ref 24)) NVMem.c:192 -1
+     (nil)
+ -> 24)
+(barrier 20 19 21)
+(code_label 21 20 22 7 17 "" [1 uses])
+(note 22 21 23 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 7 (set (reg:SI 87 [ D.2903 ])
+        (const_int 0 [0])) NVMem.c:194 -1
+     (nil))
+(code_label 24 23 25 8 16 "" [2 uses])
+(note 25 24 26 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 30 8 (set (reg:SI 90 [ <retval> ])
+        (reg:SI 87 [ D.2903 ])) -1
+     (nil))
+(insn 30 26 31 8 (set (reg/i:SI 0 ax)
+        (reg:SI 90 [ <retval> ])) NVMem.c:195 -1
+     (nil))
+(insn 31 30 0 8 (use (reg/i:SI 0 ax)) NVMem.c:195 -1
+     (nil))
+
+;; Function _plat__NvMemoryRead (_plat__NvMemoryRead, funcdef_no=4, decl_uid=2693, cgraph_uid=4, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startOffset+0 S4 A32])
+        (reg:SI 5 di [ startOffset ])) NVMem.c:204 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32])
+        (reg:SI 4 si [ size ])) NVMem.c:204 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 data+0 S8 A64])
+        (reg:DI 1 dx [ data ])) NVMem.c:204 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:SI 90)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startOffset+0 S4 A32])) NVMem.c:205 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 91)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32])) NVMem.c:205 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:SI 87 [ D.2905 ])
+                (plus:SI (reg:SI 90)
+                    (reg:SI 91)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:205 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 startOffset+0 S4 A32])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32]))
+        (nil)))
+(insn 11 10 12 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 87 [ D.2905 ])
+            (const_int 16384 [0x4000]))) NVMem.c:205 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) NVMem.c:205 -1
+     (nil)
+ -> 20)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.2760") [flags 0x2]  <var_decl 0x7f2efcfb7a20 __PRETTY_FUNCTION__>)) NVMem.c:205 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 1 dx)
+        (const_int 205 [0xcd])) NVMem.c:205 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f2efcc1a750 *.LC3>)) NVMem.c:205 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f2efcc301b0 *.LC6>)) NVMem.c:205 -1
+     (nil))
+(call_insn 18 17 19 4 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41]  <function_decl 0x7f2efcf425e8 __assert_fail>) [0 __assert_fail S1 A8])
+        (const_int 0 [0])) NVMem.c:205 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 19 18 20)
+(code_label 20 19 21 5 19 "" [1 uses])
+(note 21 20 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 5 (set (reg:DI 88 [ D.2906 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32]))) NVMem.c:207 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:DI 92)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 startOffset+0 S4 A32]))) NVMem.c:207 -1
+     (nil))
+(insn 24 23 25 5 (parallel [
+            (set (reg/f:DI 89 [ D.2907 ])
+                (plus:DI (reg:DI 92)
+                    (symbol_ref:DI ("s_NV") [flags 0x40]  <var_decl 0x7f2efcfb7480 s_NV>)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:207 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 data+0 S8 A64])) NVMem.c:207 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:DI 1 dx)
+        (reg:DI 88 [ D.2906 ])) NVMem.c:207 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:DI 4 si)
+        (reg/f:DI 89 [ D.2907 ])) NVMem.c:207 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:DI 5 di)
+        (reg:DI 93)) NVMem.c:207 -1
+     (nil))
+(call_insn 29 28 34 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f2efce60e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) NVMem.c:207 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 34 29 0 5 (const_int 0 [0]) NVMem.c:208 -1
+     (nil))
+
+;; Function _plat__NvIsDifferent (_plat__NvIsDifferent, funcdef_no=5, decl_uid=2697, cgraph_uid=5, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 23.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startOffset+0 S4 A32])
+        (reg:SI 5 di [ startOffset ])) NVMem.c:222 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32])
+        (reg:SI 4 si [ size ])) NVMem.c:222 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 data+0 S8 A64])
+        (reg:DI 1 dx [ data ])) NVMem.c:222 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:DI 87 [ D.2909 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32]))) NVMem.c:223 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 93)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 startOffset+0 S4 A32]))) NVMem.c:223 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg/f:DI 88 [ D.2910 ])
+                (plus:DI (reg:DI 93)
+                    (symbol_ref:DI ("s_NV") [flags 0x40]  <var_decl 0x7f2efcfb7480 s_NV>)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:223 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 data+0 S8 A64])) NVMem.c:223 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 1 dx)
+        (reg:DI 87 [ D.2909 ])) NVMem.c:223 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 4 si)
+        (reg:DI 94)) NVMem.c:223 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 5 di)
+        (reg/f:DI 88 [ D.2910 ])) NVMem.c:223 -1
+     (nil))
+(call_insn/i 15 14 16 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcmp") [flags 0x41]  <function_decl 0x7f2efce60ca8 memcmp>) [0 __builtin_memcmp S1 A8])
+            (const_int 0 [0]))) NVMem.c:223 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 16 15 17 2 (set (reg:SI 89 [ D.2911 ])
+        (reg:SI 0 ax)) NVMem.c:223 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.2911 ])
+            (const_int 0 [0]))) NVMem.c:223 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:QI 90 [ D.2912 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) NVMem.c:223 -1
+     (nil))
+(insn 19 18 22 2 (set (reg:SI 91 [ D.2911 ])
+        (zero_extend:SI (reg:QI 90 [ D.2912 ]))) NVMem.c:223 -1
+     (nil))
+(insn 22 19 26 2 (set (reg:SI 92 [ <retval> ])
+        (reg:SI 91 [ D.2911 ])) NVMem.c:223 -1
+     (nil))
+(insn 26 22 27 2 (set (reg/i:SI 0 ax)
+        (reg:SI 92 [ <retval> ])) NVMem.c:224 -1
+     (nil))
+(insn 27 26 0 2 (use (reg/i:SI 0 ax)) NVMem.c:224 -1
+     (nil))
+
+;; Function _plat__NvMemoryWrite (_plat__NvMemoryWrite, funcdef_no=6, decl_uid=2701, cgraph_uid=6, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startOffset+0 S4 A32])
+        (reg:SI 5 di [ startOffset ])) NVMem.c:237 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32])
+        (reg:SI 4 si [ size ])) NVMem.c:237 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 data+0 S8 A64])
+        (reg:DI 1 dx [ data ])) NVMem.c:237 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:SI 90)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startOffset+0 S4 A32])) NVMem.c:238 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 91)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32])) NVMem.c:238 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:SI 87 [ D.2913 ])
+                (plus:SI (reg:SI 90)
+                    (reg:SI 91)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:238 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 startOffset+0 S4 A32])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32]))
+        (nil)))
+(insn 11 10 12 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 87 [ D.2913 ])
+            (const_int 16384 [0x4000]))) NVMem.c:238 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) NVMem.c:238 -1
+     (nil)
+ -> 20)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.2771") [flags 0x2]  <var_decl 0x7f2efcfb7ab0 __PRETTY_FUNCTION__>)) NVMem.c:238 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 1 dx)
+        (const_int 238 [0xee])) NVMem.c:238 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f2efcc1a750 *.LC3>)) NVMem.c:238 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f2efcc301b0 *.LC6>)) NVMem.c:238 -1
+     (nil))
+(call_insn 18 17 19 4 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41]  <function_decl 0x7f2efcf425e8 __assert_fail>) [0 __assert_fail S1 A8])
+        (const_int 0 [0])) NVMem.c:238 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 19 18 20)
+(code_label 20 19 21 5 24 "" [1 uses])
+(note 21 20 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 5 (set (reg:DI 88 [ D.2914 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32]))) NVMem.c:240 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:DI 92)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 startOffset+0 S4 A32]))) NVMem.c:240 -1
+     (nil))
+(insn 24 23 25 5 (parallel [
+            (set (reg/f:DI 89 [ D.2915 ])
+                (plus:DI (reg:DI 92)
+                    (symbol_ref:DI ("s_NV") [flags 0x40]  <var_decl 0x7f2efcfb7480 s_NV>)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:240 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 data+0 S8 A64])) NVMem.c:240 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:DI 1 dx)
+        (reg:DI 88 [ D.2914 ])) NVMem.c:240 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:DI 4 si)
+        (reg:DI 93)) NVMem.c:240 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:DI 5 di)
+        (reg/f:DI 89 [ D.2915 ])) NVMem.c:240 -1
+     (nil))
+(call_insn 29 28 32 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f2efce60e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) NVMem.c:240 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 32 29 0 5 (const_int 0 [0]) NVMem.c:241 -1
+     (nil))
+
+;; Function _plat__NvMemoryClear (_plat__NvMemoryClear, funcdef_no=7, decl_uid=2704, cgraph_uid=7, symbol_order=7)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 start+0 S4 A32])
+        (reg:SI 5 di [ start ])) NVMem.c:250 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32])
+        (reg:SI 4 si [ size ])) NVMem.c:250 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 90)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 start+0 S4 A32])) NVMem.c:251 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 91)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32])) NVMem.c:251 -1
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg:SI 87 [ D.2916 ])
+                (plus:SI (reg:SI 90)
+                    (reg:SI 91)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:251 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 start+0 S4 A32])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32]))
+        (nil)))
+(insn 10 9 11 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 87 [ D.2916 ])
+            (const_int 16384 [0x4000]))) NVMem.c:251 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 19)
+            (pc))) NVMem.c:251 -1
+     (nil)
+ -> 19)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.2776") [flags 0x2]  <var_decl 0x7f2efcfb7b40 __PRETTY_FUNCTION__>)) NVMem.c:251 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:SI 1 dx)
+        (const_int 251 [0xfb])) NVMem.c:251 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f2efcc1a750 *.LC3>)) NVMem.c:251 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f2efcc3d2d0 *.LC7>)) NVMem.c:251 -1
+     (nil))
+(call_insn 17 16 18 4 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41]  <function_decl 0x7f2efcf425e8 __assert_fail>) [0 __assert_fail S1 A8])
+        (const_int 0 [0])) NVMem.c:251 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 18 17 19)
+(code_label 19 18 20 5 26 "" [1 uses])
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 5 (set (reg:DI 88 [ D.2917 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 size+0 S4 A32]))) NVMem.c:253 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:DI 92)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 start+0 S4 A32]))) NVMem.c:253 -1
+     (nil))
+(insn 23 22 24 5 (parallel [
+            (set (reg/f:DI 89 [ D.2918 ])
+                (plus:DI (reg:DI 92)
+                    (symbol_ref:DI ("s_NV") [flags 0x40]  <var_decl 0x7f2efcfb7480 s_NV>)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:253 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:DI 1 dx)
+        (reg:DI 88 [ D.2917 ])) NVMem.c:253 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 4 si)
+        (const_int 255 [0xff])) NVMem.c:253 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:DI 5 di)
+        (reg/f:DI 89 [ D.2918 ])) NVMem.c:253 -1
+     (nil))
+(call_insn 27 26 30 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memset") [flags 0x41]  <function_decl 0x7f2efce61438 memset>) [0 __builtin_memset S1 A8])
+            (const_int 0 [0]))) NVMem.c:253 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 30 27 0 5 (const_int 0 [0]) NVMem.c:254 -1
+     (nil))
+
+;; Function _plat__NvMemoryMove (_plat__NvMemoryMove, funcdef_no=8, decl_uid=2708, cgraph_uid=8, symbol_order=8)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Merging block 9 into block 7...
+Merged blocks 7 and 9.
+Merged 7 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 sourceOffset+0 S4 A32])
+        (reg:SI 5 di [ sourceOffset ])) NVMem.c:264 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 destOffset+0 S4 A32])
+        (reg:SI 4 si [ destOffset ])) NVMem.c:264 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 size+0 S4 A32])
+        (reg:SI 1 dx [ size ])) NVMem.c:264 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:SI 92)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 sourceOffset+0 S4 A32])) NVMem.c:265 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 93)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 size+0 S4 A32])) NVMem.c:265 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:SI 87 [ D.2920 ])
+                (plus:SI (reg:SI 92)
+                    (reg:SI 93)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:265 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 sourceOffset+0 S4 A32])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 size+0 S4 A32]))
+        (nil)))
+(insn 11 10 12 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 87 [ D.2920 ])
+            (const_int 16384 [0x4000]))) NVMem.c:265 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) NVMem.c:265 -1
+     (nil)
+ -> 20)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.2782") [flags 0x2]  <var_decl 0x7f2efcfb7bd0 __PRETTY_FUNCTION__>)) NVMem.c:265 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 1 dx)
+        (const_int 265 [0x109])) NVMem.c:265 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f2efcc1a750 *.LC3>)) NVMem.c:265 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f2efcc3d990 *.LC8>)) NVMem.c:265 -1
+     (nil))
+(call_insn 18 17 19 4 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41]  <function_decl 0x7f2efcf425e8 __assert_fail>) [0 __assert_fail S1 A8])
+        (const_int 0 [0])) NVMem.c:265 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 19 18 20)
+(code_label 20 19 21 5 28 "" [1 uses])
+(note 21 20 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 5 (set (reg:SI 94)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 destOffset+0 S4 A32])) NVMem.c:266 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:SI 95)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 size+0 S4 A32])) NVMem.c:266 -1
+     (nil))
+(insn 24 23 25 5 (parallel [
+            (set (reg:SI 88 [ D.2920 ])
+                (plus:SI (reg:SI 94)
+                    (reg:SI 95)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:266 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 destOffset+0 S4 A32])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 size+0 S4 A32]))
+        (nil)))
+(insn 25 24 26 5 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 88 [ D.2920 ])
+            (const_int 16384 [0x4000]))) NVMem.c:266 -1
+     (nil))
+(jump_insn 26 25 27 5 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) NVMem.c:266 -1
+     (nil)
+ -> 34)
+(note 27 26 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 6 (set (reg:DI 2 cx)
+        (symbol_ref:DI ("__PRETTY_FUNCTION__.2782") [flags 0x2]  <var_decl 0x7f2efcfb7bd0 __PRETTY_FUNCTION__>)) NVMem.c:266 -1
+     (nil))
+(insn 29 28 30 6 (set (reg:SI 1 dx)
+        (const_int 266 [0x10a])) NVMem.c:266 -1
+     (nil))
+(insn 30 29 31 6 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f2efcc1a750 *.LC3>)) NVMem.c:266 -1
+     (nil))
+(insn 31 30 32 6 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f2efcc3da20 *.LC9>)) NVMem.c:266 -1
+     (nil))
+(call_insn 32 31 33 6 (call (mem:QI (symbol_ref:DI ("__assert_fail") [flags 0x41]  <function_decl 0x7f2efcf425e8 __assert_fail>) [0 __assert_fail S1 A8])
+        (const_int 0 [0])) NVMem.c:266 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(barrier 33 32 34)
+(code_label 34 33 35 7 29 "" [1 uses])
+(note 35 34 36 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 7 (set (reg:DI 89 [ D.2921 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 size+0 S4 A32]))) NVMem.c:268 -1
+     (nil))
+(insn 37 36 38 7 (set (reg:DI 96)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 sourceOffset+0 S4 A32]))) NVMem.c:268 -1
+     (nil))
+(insn 38 37 39 7 (parallel [
+            (set (reg/f:DI 90 [ D.2922 ])
+                (plus:DI (reg:DI 96)
+                    (symbol_ref:DI ("s_NV") [flags 0x40]  <var_decl 0x7f2efcfb7480 s_NV>)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:268 -1
+     (nil))
+(insn 39 38 40 7 (set (reg:DI 97)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 destOffset+0 S4 A32]))) NVMem.c:268 -1
+     (nil))
+(insn 40 39 41 7 (parallel [
+            (set (reg/f:DI 91 [ D.2922 ])
+                (plus:DI (reg:DI 97)
+                    (symbol_ref:DI ("s_NV") [flags 0x40]  <var_decl 0x7f2efcfb7480 s_NV>)))
+            (clobber (reg:CC 17 flags))
+        ]) NVMem.c:268 -1
+     (nil))
+(insn 41 40 42 7 (set (reg:DI 1 dx)
+        (reg:DI 89 [ D.2921 ])) NVMem.c:268 -1
+     (nil))
+(insn 42 41 43 7 (set (reg:DI 4 si)
+        (reg/f:DI 90 [ D.2922 ])) NVMem.c:268 -1
+     (nil))
+(insn 43 42 44 7 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ D.2922 ])) NVMem.c:268 -1
+     (nil))
+(call_insn 44 43 49 7 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memmove") [flags 0x41]  <function_decl 0x7f2efce610d8 memmove>) [0 __builtin_memmove S1 A8])
+            (const_int 0 [0]))) NVMem.c:268 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 49 44 0 7 (const_int 0 [0]) NVMem.c:269 -1
+     (nil))
+
+;; Function _plat__NvCommit (_plat__NvCommit, funcdef_no=9, decl_uid=2710, cgraph_uid=9, symbol_order=9)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 29.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:DI 88 [ D.2926 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:283 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 88 [ D.2926 ])
+            (const_int 0 [0]))) NVMem.c:283 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 12)
+            (pc))) NVMem.c:283 -1
+     (nil)
+ -> 12)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 4 (set (reg:SI 87 [ D.2925 ])
+        (const_int 1 [0x1])) NVMem.c:284 -1
+     (nil))
+(jump_insn 10 9 11 4 (set (pc)
+        (label_ref 26)) NVMem.c:284 -1
+     (nil)
+ -> 26)
+(barrier 11 10 12)
+(code_label 12 11 13 5 32 "" [1 uses])
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 5 (set (reg/f:DI 89 [ D.2926 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:286 -1
+     (nil))
+(insn 15 14 16 5 (set (reg:SI 1 dx)
+        (const_int 0 [0])) NVMem.c:286 -1
+     (nil))
+(insn 16 15 17 5 (set (reg:DI 4 si)
+        (const_int 0 [0])) NVMem.c:286 -1
+     (nil))
+(insn 17 16 18 5 (set (reg:DI 5 di)
+        (reg/f:DI 89 [ D.2926 ])) NVMem.c:286 -1
+     (nil))
+(call_insn 18 17 19 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fseek") [flags 0x41]  <function_decl 0x7f2efcfd0a20 fseek>) [0 fseek S1 A8])
+            (const_int 0 [0]))) NVMem.c:286 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 19 18 20 5 (set (reg/f:DI 90 [ D.2926 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_NVFile") [flags 0x40]  <var_decl 0x7f2efcfb73f0 s_NVFile>) [0 s_NVFile+0 S8 A64])) NVMem.c:287 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:DI 2 cx)
+        (reg/f:DI 90 [ D.2926 ])) NVMem.c:287 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:DI 1 dx)
+        (const_int 16384 [0x4000])) NVMem.c:287 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) NVMem.c:287 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:DI 5 di)
+        (symbol_ref:DI ("s_NV") [flags 0x40]  <var_decl 0x7f2efcfb7480 s_NV>)) NVMem.c:287 -1
+     (nil))
+(call_insn 24 23 25 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("fwrite") [flags 0x41]  <function_decl 0x7f2efce6a948 fwrite>) [0 __builtin_fwrite S1 A8])
+            (const_int 0 [0]))) NVMem.c:287 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 25 24 26 5 (set (reg:SI 87 [ D.2925 ])
+        (const_int 0 [0])) NVMem.c:288 -1
+     (nil))
+(code_label 26 25 27 6 33 "" [1 uses])
+(note 27 26 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 32 6 (set (reg:SI 91 [ <retval> ])
+        (reg:SI 87 [ D.2925 ])) -1
+     (nil))
+(insn 32 28 33 6 (set (reg/i:SI 0 ax)
+        (reg:SI 91 [ <retval> ])) NVMem.c:292 -1
+     (nil))
+(insn 33 32 0 6 (use (reg/i:SI 0 ax)) NVMem.c:292 -1
+     (nil))
+
+;; Function _plat__SetNvAvail (_plat__SetNvAvail, funcdef_no=10, decl_uid=2712, cgraph_uid=10, symbol_order=10)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 10 2 (set (mem/c:SI (symbol_ref:DI ("s_NvIsAvailable") [flags 0x40]  <var_decl 0x7f2efcfb7510 s_NvIsAvailable>) [0 s_NvIsAvailable+0 S4 A32])
+        (const_int 1 [0x1])) NVMem.c:301 -1
+     (nil))
+(insn 10 5 0 2 (const_int 0 [0]) NVMem.c:302 -1
+     (nil))
+
+;; Function _plat__ClearNvAvail (_plat__ClearNvAvail, funcdef_no=11, decl_uid=2714, cgraph_uid=11, symbol_order=11)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 10 2 (set (mem/c:SI (symbol_ref:DI ("s_NvIsAvailable") [flags 0x40]  <var_decl 0x7f2efcfb7510 s_NvIsAvailable>) [0 s_NvIsAvailable+0 S4 A32])
+        (const_int 0 [0])) NVMem.c:312 -1
+     (nil))
+(insn 10 5 0 2 (const_int 0 [0]) NVMem.c:313 -1
+     (nil))

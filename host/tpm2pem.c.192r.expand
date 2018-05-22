@@ -1,0 +1,1151 @@
+
+;; Function main (main, funcdef_no=2, decl_uid=15576, cgraph_uid=2, symbol_order=3)
+
+Partition 4: size 424 align 16
+	public
+Partition 3: size 8 align 8
+	pemFilename_9
+Partition 2: size 8 align 8
+	publicKeyFilename_6
+Partition 7: size 8 align 8
+	num
+Partition 6: size 8 align 8
+	submsg
+Partition 5: size 8 align 8
+	msg
+Partition 1: size 4 align 4
+	i_4
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 40 from 8 to 19.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Redirecting jump 78 from 13 to 19.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+Edge 31->33 redirected to 35
+Merging block 33 into block 32...
+Merged blocks 32 and 33.
+Merged 32 and 33 without moving.
+Merging block 36 into block 35...
+Merged blocks 35 and 36.
+Merged 35 and 36 without moving.
+Removing jump 239.
+Merging block 37 into block 35...
+Merged blocks 35 and 37.
+Merged 35 and 37 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -484 [0xfffffffffffffe1c])) [0 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) tpm2pem.c:65 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) tpm2pem.c:65 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.15669+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:65 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tpm2pem.c:66 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -448 [0xfffffffffffffe40])) [0 publicKeyFilename+0 S8 A64])
+        (const_int 0 [0])) tpm2pem.c:68 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -440 [0xfffffffffffffe48])) [0 pemFilename+0 S8 A64])
+        (const_int 0 [0])) tpm2pem.c:69 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) tpm2pem.c:72 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (label_ref 141)) tpm2pem.c:72 -1
+     (nil)
+ -> 141)
+(barrier 13 12 147)
+(code_label 147 13 14 4 13 "" [1 uses])
+(note 14 147 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (reg:SI 123)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])) tpm2pem.c:73 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 87 [ D.15664 ])
+        (sign_extend:DI (reg:SI 123))) tpm2pem.c:73 -1
+     (nil))
+(insn 17 16 18 4 (parallel [
+            (set (reg:DI 88 [ D.15664 ])
+                (ashift:DI (reg:DI 87 [ D.15664 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:73 -1
+     (nil))
+(insn 18 17 19 4 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])) tpm2pem.c:73 -1
+     (nil))
+(insn 19 18 20 4 (parallel [
+            (set (reg/f:DI 89 [ D.15665 ])
+                (plus:DI (reg:DI 88 [ D.15664 ])
+                    (reg/f:DI 124)))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:73 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])
+            (reg:DI 88 [ D.15664 ]))
+        (nil)))
+(insn 20 19 21 4 (set (reg/f:DI 90 [ D.15666 ])
+        (mem/f:DI (reg/f:DI 89 [ D.15665 ]) [0 *_31+0 S8 A64])) tpm2pem.c:73 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f48da5ad120 *.LC0>)) tpm2pem.c:73 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:DI 5 di)
+        (reg/f:DI 90 [ D.15666 ])) tpm2pem.c:73 -1
+     (nil))
+(call_insn/i 23 22 24 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f48daf460d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:73 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 24 23 25 4 (set (reg:SI 91 [ D.15667 ])
+        (reg:SI 0 ax)) tpm2pem.c:73 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.15667 ])
+            (const_int 0 [0]))) tpm2pem.c:73 -1
+     (nil))
+(jump_insn 26 25 27 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) tpm2pem.c:73 -1
+     (nil)
+ -> 51)
+(note 27 26 28 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:74 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:SI 125)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])) tpm2pem.c:75 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 125)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -484 [0xfffffffffffffe1c])) [0 argc+0 S4 A32]))) tpm2pem.c:75 -1
+     (nil))
+(jump_insn 31 30 32 5 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) tpm2pem.c:75 -1
+     (nil)
+ -> 42)
+(note 32 31 33 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 6 (set (reg:SI 126)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])) tpm2pem.c:76 -1
+     (nil))
+(insn 34 33 35 6 (set (reg:DI 92 [ D.15664 ])
+        (sign_extend:DI (reg:SI 126))) tpm2pem.c:76 -1
+     (nil))
+(insn 35 34 36 6 (parallel [
+            (set (reg:DI 93 [ D.15664 ])
+                (ashift:DI (reg:DI 92 [ D.15664 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:76 -1
+     (nil))
+(insn 36 35 37 6 (set (reg/f:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])) tpm2pem.c:76 -1
+     (nil))
+(insn 37 36 38 6 (parallel [
+            (set (reg/f:DI 94 [ D.15665 ])
+                (plus:DI (reg:DI 93 [ D.15664 ])
+                    (reg/f:DI 127)))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:76 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])
+            (reg:DI 93 [ D.15664 ]))
+        (nil)))
+(insn 38 37 39 6 (set (reg/f:DI 128)
+        (mem/f:DI (reg/f:DI 94 [ D.15665 ]) [0 *_37+0 S8 A64])) tpm2pem.c:76 -1
+     (nil))
+(insn 39 38 40 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -448 [0xfffffffffffffe40])) [0 publicKeyFilename+0 S8 A64])
+        (reg/f:DI 128)) tpm2pem.c:76 -1
+     (nil))
+(jump_insn 40 39 41 6 (set (pc)
+        (label_ref:DI 138)) 654 {jump}
+     (nil)
+ -> 138)
+(barrier 41 40 42)
+(code_label 42 41 43 7 4 "" [1 uses])
+(note 43 42 44 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f48da5ad1b0 *.LC1>)) tpm2pem.c:79 -1
+     (nil))
+(call_insn 45 44 46 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f48daf4f360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:79 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 46 45 49 7 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f48da58d0d8 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpm2pem.c:80 -1
+     (nil)
+    (nil))
+(jump_insn 49 46 50 7 (set (pc)
+        (label_ref 138)) -1
+     (nil)
+ -> 138)
+(barrier 50 49 51)
+(code_label 51 50 52 9 3 "" [1 uses])
+(note 52 51 53 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 9 (set (reg:SI 129)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])) tpm2pem.c:83 -1
+     (nil))
+(insn 54 53 55 9 (set (reg:DI 95 [ D.15664 ])
+        (sign_extend:DI (reg:SI 129))) tpm2pem.c:83 -1
+     (nil))
+(insn 55 54 56 9 (parallel [
+            (set (reg:DI 96 [ D.15664 ])
+                (ashift:DI (reg:DI 95 [ D.15664 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:83 -1
+     (nil))
+(insn 56 55 57 9 (set (reg/f:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])) tpm2pem.c:83 -1
+     (nil))
+(insn 57 56 58 9 (parallel [
+            (set (reg/f:DI 97 [ D.15665 ])
+                (plus:DI (reg:DI 96 [ D.15664 ])
+                    (reg/f:DI 130)))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:83 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])
+            (reg:DI 96 [ D.15664 ]))
+        (nil)))
+(insn 58 57 59 9 (set (reg/f:DI 98 [ D.15666 ])
+        (mem/f:DI (reg/f:DI 97 [ D.15665 ]) [0 *_43+0 S8 A64])) tpm2pem.c:83 -1
+     (nil))
+(insn 59 58 60 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f48da5ad240 *.LC2>)) tpm2pem.c:83 -1
+     (nil))
+(insn 60 59 61 9 (set (reg:DI 5 di)
+        (reg/f:DI 98 [ D.15666 ])) tpm2pem.c:83 -1
+     (nil))
+(call_insn/i 61 60 62 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f48daf460d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:83 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 62 61 63 9 (set (reg:SI 99 [ D.15667 ])
+        (reg:SI 0 ax)) tpm2pem.c:83 -1
+     (nil))
+(insn 63 62 64 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 99 [ D.15667 ])
+            (const_int 0 [0]))) tpm2pem.c:83 -1
+     (nil))
+(jump_insn 64 63 65 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 89)
+            (pc))) tpm2pem.c:83 -1
+     (nil)
+ -> 89)
+(note 65 64 66 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 10 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:84 -1
+     (nil))
+(insn 67 66 68 10 (set (reg:SI 131)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])) tpm2pem.c:85 -1
+     (nil))
+(insn 68 67 69 10 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 131)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -484 [0xfffffffffffffe1c])) [0 argc+0 S4 A32]))) tpm2pem.c:85 -1
+     (nil))
+(jump_insn 69 68 70 10 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 80)
+            (pc))) tpm2pem.c:85 -1
+     (nil)
+ -> 80)
+(note 70 69 71 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 71 70 72 11 (set (reg:SI 132)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])) tpm2pem.c:86 -1
+     (nil))
+(insn 72 71 73 11 (set (reg:DI 100 [ D.15664 ])
+        (sign_extend:DI (reg:SI 132))) tpm2pem.c:86 -1
+     (nil))
+(insn 73 72 74 11 (parallel [
+            (set (reg:DI 101 [ D.15664 ])
+                (ashift:DI (reg:DI 100 [ D.15664 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:86 -1
+     (nil))
+(insn 74 73 75 11 (set (reg/f:DI 133)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])) tpm2pem.c:86 -1
+     (nil))
+(insn 75 74 76 11 (parallel [
+            (set (reg/f:DI 102 [ D.15665 ])
+                (plus:DI (reg:DI 101 [ D.15664 ])
+                    (reg/f:DI 133)))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:86 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])
+            (reg:DI 101 [ D.15664 ]))
+        (nil)))
+(insn 76 75 77 11 (set (reg/f:DI 134)
+        (mem/f:DI (reg/f:DI 102 [ D.15665 ]) [0 *_49+0 S8 A64])) tpm2pem.c:86 -1
+     (nil))
+(insn 77 76 78 11 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -440 [0xfffffffffffffe48])) [0 pemFilename+0 S8 A64])
+        (reg/f:DI 134)) tpm2pem.c:86 -1
+     (nil))
+(jump_insn 78 77 79 11 (set (pc)
+        (label_ref:DI 138)) 654 {jump}
+     (nil)
+ -> 138)
+(barrier 79 78 80)
+(code_label 80 79 81 12 8 "" [1 uses])
+(note 81 80 82 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 82 81 83 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f48da5ad2d0 *.LC3>)) tpm2pem.c:89 -1
+     (nil))
+(call_insn 83 82 84 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f48daf4f360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:89 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 84 83 87 12 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f48da58d0d8 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpm2pem.c:90 -1
+     (nil)
+    (nil))
+(jump_insn 87 84 88 12 (set (pc)
+        (label_ref 138)) -1
+     (nil)
+ -> 138)
+(barrier 88 87 89)
+(code_label 89 88 90 14 7 "" [1 uses])
+(note 90 89 91 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 91 90 92 14 (set (reg:SI 135)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])) tpm2pem.c:93 -1
+     (nil))
+(insn 92 91 93 14 (set (reg:DI 103 [ D.15664 ])
+        (sign_extend:DI (reg:SI 135))) tpm2pem.c:93 -1
+     (nil))
+(insn 93 92 94 14 (parallel [
+            (set (reg:DI 104 [ D.15664 ])
+                (ashift:DI (reg:DI 103 [ D.15664 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:93 -1
+     (nil))
+(insn 94 93 95 14 (set (reg/f:DI 136)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])) tpm2pem.c:93 -1
+     (nil))
+(insn 95 94 96 14 (parallel [
+            (set (reg/f:DI 105 [ D.15665 ])
+                (plus:DI (reg:DI 104 [ D.15664 ])
+                    (reg/f:DI 136)))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:93 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])
+            (reg:DI 104 [ D.15664 ]))
+        (nil)))
+(insn 96 95 97 14 (set (reg/f:DI 106 [ D.15666 ])
+        (mem/f:DI (reg/f:DI 105 [ D.15665 ]) [0 *_55+0 S8 A64])) tpm2pem.c:93 -1
+     (nil))
+(insn 97 96 98 14 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f48da5ad360 *.LC4>)) tpm2pem.c:93 -1
+     (nil))
+(insn 98 97 99 14 (set (reg:DI 5 di)
+        (reg/f:DI 106 [ D.15666 ])) tpm2pem.c:93 -1
+     (nil))
+(call_insn/i 99 98 100 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f48daf460d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:93 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 100 99 101 14 (set (reg:SI 107 [ D.15667 ])
+        (reg:SI 0 ax)) tpm2pem.c:93 -1
+     (nil))
+(insn 101 100 102 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 107 [ D.15667 ])
+            (const_int 0 [0]))) tpm2pem.c:93 -1
+     (nil))
+(jump_insn 102 101 103 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 107)
+            (pc))) tpm2pem.c:93 -1
+     (nil)
+ -> 107)
+(note 103 102 104 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(call_insn 104 103 105 15 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f48da58d0d8 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpm2pem.c:94 -1
+     (nil)
+    (nil))
+(jump_insn 105 104 106 15 (set (pc)
+        (label_ref 138)) -1
+     (nil)
+ -> 138)
+(barrier 106 105 107)
+(code_label 107 106 108 16 10 "" [1 uses])
+(note 108 107 109 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 109 108 110 16 (set (reg:SI 137)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])) tpm2pem.c:96 -1
+     (nil))
+(insn 110 109 111 16 (set (reg:DI 108 [ D.15664 ])
+        (sign_extend:DI (reg:SI 137))) tpm2pem.c:96 -1
+     (nil))
+(insn 111 110 112 16 (parallel [
+            (set (reg:DI 109 [ D.15664 ])
+                (ashift:DI (reg:DI 108 [ D.15664 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:96 -1
+     (nil))
+(insn 112 111 113 16 (set (reg/f:DI 138)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])) tpm2pem.c:96 -1
+     (nil))
+(insn 113 112 114 16 (parallel [
+            (set (reg/f:DI 110 [ D.15665 ])
+                (plus:DI (reg:DI 109 [ D.15664 ])
+                    (reg/f:DI 138)))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:96 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])
+            (reg:DI 109 [ D.15664 ]))
+        (nil)))
+(insn 114 113 115 16 (set (reg/f:DI 111 [ D.15666 ])
+        (mem/f:DI (reg/f:DI 110 [ D.15665 ]) [0 *_61+0 S8 A64])) tpm2pem.c:96 -1
+     (nil))
+(insn 115 114 116 16 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f48da5ad3f0 *.LC5>)) tpm2pem.c:96 -1
+     (nil))
+(insn 116 115 117 16 (set (reg:DI 5 di)
+        (reg/f:DI 111 [ D.15666 ])) tpm2pem.c:96 -1
+     (nil))
+(call_insn/i 117 116 118 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f48daf460d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:96 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 118 117 119 16 (set (reg:SI 112 [ D.15667 ])
+        (reg:SI 0 ax)) tpm2pem.c:96 -1
+     (nil))
+(insn 119 118 120 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 112 [ D.15667 ])
+            (const_int 0 [0]))) tpm2pem.c:96 -1
+     (nil))
+(jump_insn 120 119 121 16 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 125)
+            (pc))) tpm2pem.c:96 -1
+     (nil)
+ -> 125)
+(note 121 120 122 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 122 121 123 17 (set (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f48da774e10 verbose>) [0 verbose+0 S4 A32])
+        (const_int 1 [0x1])) tpm2pem.c:97 -1
+     (nil))
+(jump_insn 123 122 124 17 (set (pc)
+        (label_ref 138)) -1
+     (nil)
+ -> 138)
+(barrier 124 123 125)
+(code_label 125 124 126 18 11 "" [1 uses])
+(note 126 125 127 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 127 126 128 18 (set (reg:SI 139)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])) tpm2pem.c:100 -1
+     (nil))
+(insn 128 127 129 18 (set (reg:DI 113 [ D.15664 ])
+        (sign_extend:DI (reg:SI 139))) tpm2pem.c:100 -1
+     (nil))
+(insn 129 128 130 18 (parallel [
+            (set (reg:DI 114 [ D.15664 ])
+                (ashift:DI (reg:DI 113 [ D.15664 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:100 -1
+     (nil))
+(insn 130 129 131 18 (set (reg/f:DI 140)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])) tpm2pem.c:100 -1
+     (nil))
+(insn 131 130 132 18 (parallel [
+            (set (reg/f:DI 115 [ D.15665 ])
+                (plus:DI (reg:DI 114 [ D.15664 ])
+                    (reg/f:DI 140)))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:100 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -496 [0xfffffffffffffe10])) [0 argv+0 S8 A64])
+            (reg:DI 114 [ D.15664 ]))
+        (nil)))
+(insn 132 131 133 18 (set (reg/f:DI 116 [ D.15666 ])
+        (mem/f:DI (reg/f:DI 115 [ D.15665 ]) [0 *_67+0 S8 A64])) tpm2pem.c:100 -1
+     (nil))
+(insn 133 132 134 18 (set (reg:DI 4 si)
+        (reg/f:DI 116 [ D.15666 ])) tpm2pem.c:100 -1
+     (nil))
+(insn 134 133 135 18 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f48da5ad480 *.LC6>)) tpm2pem.c:100 -1
+     (nil))
+(insn 135 134 136 18 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tpm2pem.c:100 -1
+     (nil))
+(call_insn 136 135 137 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f48daf4cca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:100 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(call_insn 137 136 138 18 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f48da58d0d8 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpm2pem.c:101 -1
+     (nil)
+    (nil))
+(code_label 138 137 139 19 6 "" [6 uses])
+(note 139 138 140 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 140 139 141 19 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:72 -1
+     (nil))
+(code_label 141 140 142 20 2 "" [1 uses])
+(note 142 141 143 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 143 142 144 20 (set (reg:SI 141)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -476 [0xfffffffffffffe24])) [0 i+0 S4 A32])) tpm2pem.c:72 -1
+     (nil))
+(insn 144 143 145 20 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 141)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -484 [0xfffffffffffffe1c])) [0 argc+0 S4 A32]))) tpm2pem.c:72 -1
+     (nil))
+(jump_insn 145 144 146 20 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 150)
+            (pc))) tpm2pem.c:72 -1
+     (nil)
+ -> 150)
+(note 146 145 148 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 148 146 149 21 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tpm2pem.c:72 -1
+     (nil))
+(jump_insn 149 148 150 21 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 147)
+            (pc))) tpm2pem.c:72 -1
+     (nil)
+ -> 147)
+(code_label 150 149 151 22 12 "" [1 uses])
+(note 151 150 152 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 152 151 153 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -448 [0xfffffffffffffe40])) [0 publicKeyFilename+0 S8 A64])
+            (const_int 0 [0]))) tpm2pem.c:104 -1
+     (nil))
+(jump_insn 153 152 154 22 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 158)
+            (pc))) tpm2pem.c:104 -1
+     (nil)
+ -> 158)
+(note 154 153 155 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 155 154 156 23 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f48da5ad510 *.LC7>)) tpm2pem.c:105 -1
+     (nil))
+(call_insn 156 155 157 23 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f48daf4f360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:105 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 157 156 158 23 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f48da58d0d8 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpm2pem.c:106 -1
+     (nil)
+    (nil))
+(code_label 158 157 159 24 14 "" [1 uses])
+(note 159 158 160 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 160 159 161 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -440 [0xfffffffffffffe48])) [0 pemFilename+0 S8 A64])
+            (const_int 0 [0]))) tpm2pem.c:108 -1
+     (nil))
+(jump_insn 161 160 162 24 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 166)
+            (pc))) tpm2pem.c:108 -1
+     (nil)
+ -> 166)
+(note 162 161 163 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 163 162 164 25 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f48da5ad5a0 *.LC8>)) tpm2pem.c:109 -1
+     (nil))
+(call_insn 164 163 165 25 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f48daf4f360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:109 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 165 164 166 25 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f48da58d0d8 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpm2pem.c:110 -1
+     (nil)
+    (nil))
+(code_label 166 165 167 26 15 "" [1 uses])
+(note 167 166 168 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 168 167 169 26 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tpm2pem.c:113 -1
+     (nil))
+(jump_insn 169 168 170 26 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 180)
+            (pc))) tpm2pem.c:113 -1
+     (nil)
+ -> 180)
+(note 170 169 171 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 171 170 172 27 (set (reg:DI 142)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -448 [0xfffffffffffffe40])) [0 publicKeyFilename+0 S8 A64])) tpm2pem.c:114 -1
+     (nil))
+(insn 172 171 173 27 (parallel [
+            (set (reg:DI 143)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -432 [0xfffffffffffffe50])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:114 -1
+     (nil))
+(insn 173 172 174 27 (set (reg:DI 1 dx)
+        (reg:DI 142)) tpm2pem.c:114 -1
+     (nil))
+(insn 174 173 175 27 (set (reg:DI 144)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("TPM2B_PUBLIC_Unmarshal") [flags 0x41]  <function_decl 0x7f48da5761b0 TPM2B_PUBLIC_Unmarshal>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tpm2pem.c:114 -1
+     (nil))
+(insn 175 174 176 27 (set (reg:DI 4 si)
+        (reg:DI 144)) tpm2pem.c:114 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("TPM2B_PUBLIC_Unmarshal") [flags 0x41]  <function_decl 0x7f48da5761b0 TPM2B_PUBLIC_Unmarshal>)
+        (nil)))
+(insn 176 175 177 27 (set (reg:DI 5 di)
+        (reg:DI 143)) tpm2pem.c:114 -1
+     (nil))
+(call_insn 177 176 178 27 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_ReadStructure") [flags 0x41]  <function_decl 0x7f48da833360 TSS_File_ReadStructure>) [0 TSS_File_ReadStructure S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:114 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 178 177 179 27 (set (reg:SI 145)
+        (reg:SI 0 ax)) tpm2pem.c:114 -1
+     (nil))
+(insn 179 178 180 27 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])
+        (reg:SI 145)) tpm2pem.c:114 -1
+     (nil))
+(code_label 180 179 181 28 16 "" [1 uses])
+(note 181 180 182 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 182 181 183 28 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tpm2pem.c:119 -1
+     (nil))
+(jump_insn 183 182 184 28 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 192)
+            (pc))) tpm2pem.c:119 -1
+     (nil)
+ -> 192)
+(note 184 183 185 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 185 184 186 29 (set (reg:DI 146)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -440 [0xfffffffffffffe48])) [0 pemFilename+0 S8 A64])) tpm2pem.c:120 -1
+     (nil))
+(insn 186 185 187 29 (parallel [
+            (set (reg:DI 147)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -432 [0xfffffffffffffe50])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:120 -1
+     (nil))
+(insn 187 186 188 29 (set (reg:DI 4 si)
+        (reg:DI 146)) tpm2pem.c:120 -1
+     (nil))
+(insn 188 187 189 29 (set (reg:DI 5 di)
+        (reg:DI 147)) tpm2pem.c:120 -1
+     (nil))
+(call_insn 189 188 190 29 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("convertPublicToPEM") [flags 0x41]  <function_decl 0x7f48da5845e8 convertPublicToPEM>) [0 convertPublicToPEM S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:120 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 190 189 191 29 (set (reg:SI 148)
+        (reg:SI 0 ax)) tpm2pem.c:120 -1
+     (nil))
+(insn 191 190 192 29 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])
+        (reg:SI 148)) tpm2pem.c:120 -1
+     (nil))
+(code_label 192 191 193 30 17 "" [1 uses])
+(note 193 192 194 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 194 193 195 30 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tpm2pem.c:122 -1
+     (nil))
+(jump_insn 195 194 196 30 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 207)
+            (pc))) tpm2pem.c:122 -1
+     (nil)
+ -> 207)
+(note 196 195 197 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 197 196 198 31 (set (reg:SI 117 [ D.15667 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f48da774e10 verbose>) [0 verbose+0 S4 A32])) tpm2pem.c:123 -1
+     (nil))
+(insn 198 197 199 31 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 117 [ D.15667 ])
+            (const_int 0 [0]))) tpm2pem.c:123 -1
+     (nil))
+(jump_insn 199 198 200 31 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 233)
+            (pc))) tpm2pem.c:123 612 {*jcc_1}
+     (nil)
+ -> 233)
+(note 200 199 201 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 201 200 202 32 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f48da5ad630 *.LC9>)) tpm2pem.c:123 -1
+     (nil))
+(call_insn 202 201 205 32 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f48daf4f360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:123 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 205 202 206 32 (set (pc)
+        (label_ref 233)) -1
+     (nil)
+ -> 233)
+(barrier 206 205 207)
+(code_label 207 206 208 34 18 "" [1 uses])
+(note 208 207 209 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 209 208 210 34 (set (reg:SI 149)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])) tpm2pem.c:129 -1
+     (nil))
+(insn 210 209 211 34 (set (reg:SI 4 si)
+        (reg:SI 149)) tpm2pem.c:129 -1
+     (nil))
+(insn 211 210 212 34 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f48da5ad6c0 *.LC10>)) tpm2pem.c:129 -1
+     (nil))
+(insn 212 211 213 34 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tpm2pem.c:129 -1
+     (nil))
+(call_insn 213 212 214 34 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f48daf4cca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:129 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 214 213 215 34 (set (reg:SI 150)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])) tpm2pem.c:130 -1
+     (nil))
+(insn 215 214 216 34 (parallel [
+            (set (reg:DI 151)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -456 [0xfffffffffffffe38])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:130 -1
+     (nil))
+(insn 216 215 217 34 (parallel [
+            (set (reg:DI 152)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -464 [0xfffffffffffffe30])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:130 -1
+     (nil))
+(insn 217 216 218 34 (parallel [
+            (set (reg:DI 153)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -472 [0xfffffffffffffe28])))
+            (clobber (reg:CC 17 flags))
+        ]) tpm2pem.c:130 -1
+     (nil))
+(insn 218 217 219 34 (set (reg:SI 2 cx)
+        (reg:SI 150)) tpm2pem.c:130 -1
+     (nil))
+(insn 219 218 220 34 (set (reg:DI 1 dx)
+        (reg:DI 151)) tpm2pem.c:130 -1
+     (nil))
+(insn 220 219 221 34 (set (reg:DI 4 si)
+        (reg:DI 152)) tpm2pem.c:130 -1
+     (nil))
+(insn 221 220 222 34 (set (reg:DI 5 di)
+        (reg:DI 153)) tpm2pem.c:130 -1
+     (nil))
+(call_insn 222 221 223 34 (call (mem:QI (symbol_ref:DI ("TSS_ResponseCode_toString") [flags 0x41]  <function_decl 0x7f48da521e58 TSS_ResponseCode_toString>) [0 TSS_ResponseCode_toString S1 A8])
+        (const_int 0 [0])) tpm2pem.c:130 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 223 222 224 34 (set (reg/f:DI 118 [ D.15668 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -456 [0xfffffffffffffe38])) [0 num+0 S8 A64])) tpm2pem.c:131 -1
+     (nil))
+(insn 224 223 225 34 (set (reg/f:DI 119 [ D.15668 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -464 [0xfffffffffffffe30])) [0 submsg+0 S8 A64])) tpm2pem.c:131 -1
+     (nil))
+(insn 225 224 226 34 (set (reg/f:DI 120 [ D.15668 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -472 [0xfffffffffffffe28])) [0 msg+0 S8 A64])) tpm2pem.c:131 -1
+     (nil))
+(insn 226 225 227 34 (set (reg:DI 2 cx)
+        (reg/f:DI 118 [ D.15668 ])) tpm2pem.c:131 -1
+     (nil))
+(insn 227 226 228 34 (set (reg:DI 1 dx)
+        (reg/f:DI 119 [ D.15668 ])) tpm2pem.c:131 -1
+     (nil))
+(insn 228 227 229 34 (set (reg:DI 4 si)
+        (reg/f:DI 120 [ D.15668 ])) tpm2pem.c:131 -1
+     (nil))
+(insn 229 228 230 34 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f48da5ad750 *.LC11>)) tpm2pem.c:131 -1
+     (nil))
+(insn 230 229 231 34 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tpm2pem.c:131 -1
+     (nil))
+(call_insn 231 230 232 34 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f48daf4cca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:131 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (nil)))))))
+(insn 232 231 233 34 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])
+        (const_int 1 [0x1])) tpm2pem.c:132 -1
+     (nil))
+(code_label 233 232 234 35 20 "" [2 uses])
+(note 234 233 235 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 235 234 238 35 (set (reg:SI 121 [ D.15667 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -480 [0xfffffffffffffe20])) [0 rc+0 S4 A32])) tpm2pem.c:134 -1
+     (nil))
+(insn 238 235 242 35 (set (reg:SI 122 [ <retval> ])
+        (reg:SI 121 [ D.15667 ])) -1
+     (nil))
+(insn 242 238 243 35 (set (reg/i:SI 0 ax)
+        (reg:SI 122 [ <retval> ])) tpm2pem.c:135 -1
+     (nil))
+(insn 243 242 244 35 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.15669+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) tpm2pem.c:135 -1
+     (nil))
+(jump_insn 244 243 250 35 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 247)
+            (pc))) tpm2pem.c:135 -1
+     (nil)
+ -> 247)
+(note 250 244 245 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(call_insn 245 250 246 38 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f48da58dbd0 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) tpm2pem.c:135 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 246 245 247)
+(code_label 247 246 251 39 22 "" [1 uses])
+(note 251 247 248 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 248 251 0 39 (use (reg/i:SI 0 ax)) tpm2pem.c:135 -1
+     (nil))
+
+;; Function printUsage (printUsage, funcdef_no=3, decl_uid=15572, cgraph_uid=3, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) tpm2pem.c:139 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f48daf4f000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:139 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7f48da59dc60 *.LC12>)) tpm2pem.c:140 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f48daf4f360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:140 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) tpm2pem.c:141 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f48daf4f000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:141 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7f48da5bbea0 *.LC13>)) tpm2pem.c:142 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f48daf4f360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:142 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) tpm2pem.c:143 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f48daf4f000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:143 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f48da5bbf30 *.LC14>)) tpm2pem.c:144 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f48daf4f360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:144 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7f48da5c2000 *.LC15>)) tpm2pem.c:145 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f48daf4f360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpm2pem.c:145 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) tpm2pem.c:146 -1
+     (nil))
+(call_insn 20 19 21 2 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7f48daf62000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) tpm2pem.c:146 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 21 20 0)

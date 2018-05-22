@@ -1,0 +1,3212 @@
+
+;; Function TPM2_Certify (TPM2_Certify, funcdef_no=2, decl_uid=12876, cgraph_uid=2, symbol_order=2)
+
+Partition 2: size 1232 align 16
+	certifyInfo
+Partition 1: size 8 align 8
+	certifiedObject_10
+Partition 0: size 8 align 8
+	signObject_7
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 28 from 8 to 9.
+Redirecting jump 43 from 8 to 9.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 116.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AttestationCommands.c:71 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AttestationCommands.c:71 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13145+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:71 -1
+     (nil))
+(insn 8 5 9 2 (set (reg/f:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:73 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13139 ])
+        (mem/j:SI (plus:DI (reg/f:DI 101)
+                (const_int 4 [0x4])) [0 in_4(D)->signHandle+0 S4 A32])) AttestationCommands.c:73 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13139 ])) AttestationCommands.c:73 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f2a88d650d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:73 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 12 11 13 2 (set (reg:DI 102)
+        (reg:DI 0 ax)) AttestationCommands.c:73 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1264 [0xfffffffffffffb10])) [0 signObject+0 S8 A64])
+        (reg:DI 102)) AttestationCommands.c:73 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:74 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 89 [ D.13139 ])
+        (mem/j:SI (reg/f:DI 103) [0 in_4(D)->objectHandle+0 S4 A32])) AttestationCommands.c:74 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 5 di)
+        (reg:SI 89 [ D.13139 ])) AttestationCommands.c:74 -1
+     (nil))
+(call_insn 17 16 18 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f2a88d650d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:74 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 18 17 19 2 (set (reg:DI 104)
+        (reg:DI 0 ax)) AttestationCommands.c:74 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 certifiedObject+0 S8 A64])
+        (reg:DI 104)) AttestationCommands.c:74 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1264 [0xfffffffffffffb10])) [0 signObject+0 S8 A64])) AttestationCommands.c:76 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (reg:DI 105)) AttestationCommands.c:76 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("IsSigningObject") [flags 0x41]  <function_decl 0x7f2a88e87000 IsSigningObject>) [0 IsSigningObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:76 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 23 22 24 2 (set (reg:SI 90 [ D.13140 ])
+        (reg:SI 0 ax)) AttestationCommands.c:76 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13140 ])
+            (const_int 0 [0]))) AttestationCommands.c:76 -1
+     (nil))
+(jump_insn 25 24 26 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 30)
+            (pc))) AttestationCommands.c:76 -1
+     (nil)
+ -> 30)
+(note 26 25 27 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 4 (set (reg:SI 87 [ D.13138 ])
+        (const_int 668 [0x29c])) AttestationCommands.c:77 -1
+     (nil))
+(jump_insn 28 27 29 4 (set (pc)
+        (label_ref:DI 113)) AttestationCommands.c:77 654 {jump}
+     (nil)
+ -> 113)
+(barrier 29 28 30)
+(code_label 30 29 31 5 2 "" [1 uses])
+(note 31 30 32 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 5 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:78 -1
+     (nil))
+(insn 33 32 34 5 (parallel [
+            (set (reg/f:DI 91 [ D.13141 ])
+                (plus:DI (reg/f:DI 106)
+                    (const_int 60 [0x3c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:78 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 60 [0x3c]))
+        (nil)))
+(insn 34 33 35 5 (set (reg:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1264 [0xfffffffffffffb10])) [0 signObject+0 S8 A64])) AttestationCommands.c:78 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:DI 4 si)
+        (reg/f:DI 91 [ D.13141 ])) AttestationCommands.c:78 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:DI 5 di)
+        (reg:DI 107)) AttestationCommands.c:78 -1
+     (nil))
+(call_insn 37 36 38 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptSelectSignScheme") [flags 0x41]  <function_decl 0x7f2a88e4d000 CryptSelectSignScheme>) [0 CryptSelectSignScheme S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:78 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 38 37 39 5 (set (reg:SI 92 [ D.13140 ])
+        (reg:SI 0 ax)) AttestationCommands.c:78 -1
+     (nil))
+(insn 39 38 40 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.13140 ])
+            (const_int 0 [0]))) AttestationCommands.c:78 -1
+     (nil))
+(jump_insn 40 39 41 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) AttestationCommands.c:78 -1
+     (nil)
+ -> 45)
+(note 41 40 42 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 6 (set (reg:SI 87 [ D.13138 ])
+        (const_int 722 [0x2d2])) AttestationCommands.c:79 -1
+     (nil))
+(jump_insn 43 42 44 6 (set (pc)
+        (label_ref:DI 113)) AttestationCommands.c:79 654 {jump}
+     (nil)
+ -> 113)
+(barrier 44 43 45)
+(code_label 45 44 46 7 4 "" [1 uses])
+(note 46 45 47 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 7 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:83 -1
+     (nil))
+(insn 48 47 49 7 (parallel [
+            (set (reg/f:DI 93 [ D.13142 ])
+                (plus:DI (reg/f:DI 108)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:83 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 49 48 50 7 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:83 -1
+     (nil))
+(insn 50 49 51 7 (parallel [
+            (set (reg/f:DI 94 [ D.13141 ])
+                (plus:DI (reg/f:DI 109)
+                    (const_int 60 [0x3c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:83 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 60 [0x3c]))
+        (nil)))
+(insn 51 50 52 7 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:83 -1
+     (nil))
+(insn 52 51 53 7 (set (reg:SI 95 [ D.13139 ])
+        (mem/j:SI (plus:DI (reg/f:DI 110)
+                (const_int 4 [0x4])) [0 in_4(D)->signHandle+0 S4 A32])) AttestationCommands.c:83 -1
+     (nil))
+(insn 53 52 54 7 (parallel [
+            (set (reg:DI 111)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:83 -1
+     (nil))
+(insn 54 53 55 7 (set (reg:DI 2 cx)
+        (reg:DI 111)) AttestationCommands.c:83 -1
+     (nil))
+(insn 55 54 56 7 (set (reg:DI 1 dx)
+        (reg/f:DI 93 [ D.13142 ])) AttestationCommands.c:83 -1
+     (nil))
+(insn 56 55 57 7 (set (reg:DI 4 si)
+        (reg/f:DI 94 [ D.13141 ])) AttestationCommands.c:83 -1
+     (nil))
+(insn 57 56 58 7 (set (reg:SI 5 di)
+        (reg:SI 95 [ D.13139 ])) AttestationCommands.c:83 -1
+     (nil))
+(call_insn 58 57 59 7 (call (mem:QI (symbol_ref:DI ("FillInAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82d80 FillInAttestInfo>) [0 FillInAttestInfo S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:83 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 59 58 60 7 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1244 [0xfffffffffffffb24])) [0 certifyInfo.type+0 S2 A32])
+        (const_int -32745 [0xffffffffffff8017])) AttestationCommands.c:86 -1
+     (nil))
+(insn 60 59 61 7 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 certifiedObject+0 S8 A64])) AttestationCommands.c:89 -1
+     (nil))
+(insn 61 60 62 7 (set (reg:DI 113)
+        (mem/j:DI (plus:DI (reg/f:DI 112)
+                (const_int 1756 [0x6dc])) [0 certifiedObject_10->name+0 S8 A32])) AttestationCommands.c:89 -1
+     (nil))
+(insn 62 61 63 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1104 [0xfffffffffffffbb0])) [0 certifyInfo.attested.certify.name+0 S8 A64])
+        (reg:DI 113)) AttestationCommands.c:89 -1
+     (nil))
+(insn 63 62 64 7 (set (reg:DI 114)
+        (mem/j:DI (plus:DI (reg/f:DI 112)
+                (const_int 1764 [0x6e4])) [0 certifiedObject_10->name+8 S8 A32])) AttestationCommands.c:89 -1
+     (nil))
+(insn 64 63 65 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1096 [0xfffffffffffffbb8])) [0 certifyInfo.attested.certify.name+8 S8 A64])
+        (reg:DI 114)) AttestationCommands.c:89 -1
+     (nil))
+(insn 65 64 66 7 (set (reg:DI 115)
+        (mem/j:DI (plus:DI (reg/f:DI 112)
+                (const_int 1772 [0x6ec])) [0 certifiedObject_10->name+16 S8 A32])) AttestationCommands.c:89 -1
+     (nil))
+(insn 66 65 67 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1088 [0xfffffffffffffbc0])) [0 certifyInfo.attested.certify.name+16 S8 A64])
+        (reg:DI 115)) AttestationCommands.c:89 -1
+     (nil))
+(insn 67 66 68 7 (set (reg:DI 116)
+        (mem/j:DI (plus:DI (reg/f:DI 112)
+                (const_int 1780 [0x6f4])) [0 certifiedObject_10->name+24 S8 A32])) AttestationCommands.c:89 -1
+     (nil))
+(insn 68 67 69 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1080 [0xfffffffffffffbc8])) [0 certifyInfo.attested.certify.name+24 S8 A64])
+        (reg:DI 116)) AttestationCommands.c:89 -1
+     (nil))
+(insn 69 68 70 7 (set (reg:DI 117)
+        (mem/j:DI (plus:DI (reg/f:DI 112)
+                (const_int 1788 [0x6fc])) [0 certifiedObject_10->name+32 S8 A32])) AttestationCommands.c:89 -1
+     (nil))
+(insn 70 69 71 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1072 [0xfffffffffffffbd0])) [0 certifyInfo.attested.certify.name+32 S8 A64])
+        (reg:DI 117)) AttestationCommands.c:89 -1
+     (nil))
+(insn 71 70 72 7 (set (reg:DI 118)
+        (mem/j:DI (plus:DI (reg/f:DI 112)
+                (const_int 1796 [0x704])) [0 certifiedObject_10->name+40 S8 A32])) AttestationCommands.c:89 -1
+     (nil))
+(insn 72 71 73 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1064 [0xfffffffffffffbd8])) [0 certifyInfo.attested.certify.name+40 S8 A64])
+        (reg:DI 118)) AttestationCommands.c:89 -1
+     (nil))
+(insn 73 72 74 7 (set (reg:SI 119)
+        (mem/j:SI (plus:DI (reg/f:DI 112)
+                (const_int 1804 [0x70c])) [0 certifiedObject_10->name+48 S4 A32])) AttestationCommands.c:89 -1
+     (nil))
+(insn 74 73 75 7 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1056 [0xfffffffffffffbe0])) [0 certifyInfo.attested.certify.name+48 S4 A64])
+        (reg:SI 119)) AttestationCommands.c:89 -1
+     (nil))
+(insn 75 74 76 7 (set (reg:HI 120)
+        (mem/j:HI (plus:DI (reg/f:DI 112)
+                (const_int 1808 [0x710])) [0 certifiedObject_10->name+52 S2 A32])) AttestationCommands.c:89 -1
+     (nil))
+(insn 76 75 77 7 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1052 [0xfffffffffffffbe4])) [0 certifyInfo.attested.certify.name+52 S2 A32])
+        (reg:HI 120)) AttestationCommands.c:89 -1
+     (nil))
+(insn 77 76 78 7 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 certifiedObject+0 S8 A64])) AttestationCommands.c:90 -1
+     (nil))
+(insn 78 77 79 7 (set (reg:DI 122)
+        (mem/j:DI (plus:DI (reg/f:DI 121)
+                (const_int 1696 [0x6a0])) [0 certifiedObject_10->qualifiedName+0 S8 A64])) AttestationCommands.c:90 -1
+     (nil))
+(insn 79 78 80 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1050 [0xfffffffffffffbe6])) [0 certifyInfo.attested.certify.qualifiedName+0 S8 A16])
+        (reg:DI 122)) AttestationCommands.c:90 -1
+     (nil))
+(insn 80 79 81 7 (set (reg:DI 123)
+        (mem/j:DI (plus:DI (reg/f:DI 121)
+                (const_int 1704 [0x6a8])) [0 certifiedObject_10->qualifiedName+8 S8 A64])) AttestationCommands.c:90 -1
+     (nil))
+(insn 81 80 82 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1042 [0xfffffffffffffbee])) [0 certifyInfo.attested.certify.qualifiedName+8 S8 A16])
+        (reg:DI 123)) AttestationCommands.c:90 -1
+     (nil))
+(insn 82 81 83 7 (set (reg:DI 124)
+        (mem/j:DI (plus:DI (reg/f:DI 121)
+                (const_int 1712 [0x6b0])) [0 certifiedObject_10->qualifiedName+16 S8 A64])) AttestationCommands.c:90 -1
+     (nil))
+(insn 83 82 84 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1034 [0xfffffffffffffbf6])) [0 certifyInfo.attested.certify.qualifiedName+16 S8 A16])
+        (reg:DI 124)) AttestationCommands.c:90 -1
+     (nil))
+(insn 84 83 85 7 (set (reg:DI 125)
+        (mem/j:DI (plus:DI (reg/f:DI 121)
+                (const_int 1720 [0x6b8])) [0 certifiedObject_10->qualifiedName+24 S8 A64])) AttestationCommands.c:90 -1
+     (nil))
+(insn 85 84 86 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1026 [0xfffffffffffffbfe])) [0 certifyInfo.attested.certify.qualifiedName+24 S8 A16])
+        (reg:DI 125)) AttestationCommands.c:90 -1
+     (nil))
+(insn 86 85 87 7 (set (reg:DI 126)
+        (mem/j:DI (plus:DI (reg/f:DI 121)
+                (const_int 1728 [0x6c0])) [0 certifiedObject_10->qualifiedName+32 S8 A64])) AttestationCommands.c:90 -1
+     (nil))
+(insn 87 86 88 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1018 [0xfffffffffffffc06])) [0 certifyInfo.attested.certify.qualifiedName+32 S8 A16])
+        (reg:DI 126)) AttestationCommands.c:90 -1
+     (nil))
+(insn 88 87 89 7 (set (reg:DI 127)
+        (mem/j:DI (plus:DI (reg/f:DI 121)
+                (const_int 1736 [0x6c8])) [0 certifiedObject_10->qualifiedName+40 S8 A64])) AttestationCommands.c:90 -1
+     (nil))
+(insn 89 88 90 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1010 [0xfffffffffffffc0e])) [0 certifyInfo.attested.certify.qualifiedName+40 S8 A16])
+        (reg:DI 127)) AttestationCommands.c:90 -1
+     (nil))
+(insn 90 89 91 7 (set (reg:SI 128)
+        (mem/j:SI (plus:DI (reg/f:DI 121)
+                (const_int 1744 [0x6d0])) [0 certifiedObject_10->qualifiedName+48 S4 A64])) AttestationCommands.c:90 -1
+     (nil))
+(insn 91 90 92 7 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1002 [0xfffffffffffffc16])) [0 certifyInfo.attested.certify.qualifiedName+48 S4 A16])
+        (reg:SI 128)) AttestationCommands.c:90 -1
+     (nil))
+(insn 92 91 93 7 (set (reg:HI 129)
+        (mem/j:HI (plus:DI (reg/f:DI 121)
+                (const_int 1748 [0x6d4])) [0 certifiedObject_10->qualifiedName+52 S2 A32])) AttestationCommands.c:90 -1
+     (nil))
+(insn 93 92 94 7 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -998 [0xfffffffffffffc1a])) [0 certifyInfo.attested.certify.qualifiedName+52 S2 A16])
+        (reg:HI 129)) AttestationCommands.c:90 -1
+     (nil))
+(insn 94 93 95 7 (set (reg/f:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])) AttestationCommands.c:95 -1
+     (nil))
+(insn 95 94 96 7 (parallel [
+            (set (reg/f:DI 96 [ D.13143 ])
+                (plus:DI (reg/f:DI 130)
+                    (const_int 1234 [0x4d2])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:95 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])
+            (const_int 1234 [0x4d2]))
+        (nil)))
+(insn 96 95 97 7 (set (reg/f:DI 97 [ D.13144 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])) AttestationCommands.c:95 -1
+     (nil))
+(insn 97 96 98 7 (set (reg/f:DI 131)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:95 -1
+     (nil))
+(insn 98 97 99 7 (parallel [
+            (set (reg/f:DI 98 [ D.13142 ])
+                (plus:DI (reg/f:DI 131)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:95 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 99 98 100 7 (set (reg/f:DI 132)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:95 -1
+     (nil))
+(insn 100 99 101 7 (parallel [
+            (set (reg/f:DI 99 [ D.13141 ])
+                (plus:DI (reg/f:DI 132)
+                    (const_int 60 [0x3c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:95 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 60 [0x3c]))
+        (nil)))
+(insn 101 100 102 7 (parallel [
+            (set (reg:DI 133)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:95 -1
+     (nil))
+(insn 102 101 103 7 (set (reg:DI 134)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1264 [0xfffffffffffffb10])) [0 signObject+0 S8 A64])) AttestationCommands.c:95 -1
+     (nil))
+(insn 103 102 104 7 (set (reg:DI 38 r9)
+        (reg/f:DI 96 [ D.13143 ])) AttestationCommands.c:95 -1
+     (nil))
+(insn 104 103 105 7 (set (reg:DI 37 r8)
+        (reg/f:DI 97 [ D.13144 ])) AttestationCommands.c:95 -1
+     (nil))
+(insn 105 104 106 7 (set (reg:DI 2 cx)
+        (reg/f:DI 98 [ D.13142 ])) AttestationCommands.c:95 -1
+     (nil))
+(insn 106 105 107 7 (set (reg:DI 1 dx)
+        (reg:DI 133)) AttestationCommands.c:95 -1
+     (nil))
+(insn 107 106 108 7 (set (reg:DI 4 si)
+        (reg/f:DI 99 [ D.13141 ])) AttestationCommands.c:95 -1
+     (nil))
+(insn 108 107 109 7 (set (reg:DI 5 di)
+        (reg:DI 134)) AttestationCommands.c:95 -1
+     (nil))
+(call_insn 109 108 110 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SignAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82e58 SignAttestInfo>) [0 SignAttestInfo S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:95 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 110 109 113 7 (set (reg:SI 87 [ D.13138 ])
+        (reg:SI 0 ax)) AttestationCommands.c:95 -1
+     (nil))
+(code_label 113 110 114 9 5 "" [2 uses])
+(note 114 113 115 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 115 114 119 9 (set (reg:SI 100 [ <retval> ])
+        (reg:SI 87 [ D.13138 ])) -1
+     (nil))
+(insn 119 115 120 9 (set (reg/i:SI 0 ax)
+        (reg:SI 100 [ <retval> ])) AttestationCommands.c:97 -1
+     (nil))
+(insn 120 119 121 9 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13145+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) AttestationCommands.c:97 -1
+     (nil))
+(jump_insn 121 120 127 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 124)
+            (pc))) AttestationCommands.c:97 -1
+     (nil)
+ -> 124)
+(note 127 121 122 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(call_insn 122 127 123 11 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f2a88eb95e8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:97 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 123 122 124)
+(code_label 124 123 128 12 6 "" [1 uses])
+(note 128 124 125 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 125 128 0 12 (use (reg/i:SI 0 ax)) AttestationCommands.c:97 -1
+     (nil))
+
+;; Function TPM2_CertifyCreation (TPM2_CertifyCreation, funcdef_no=3, decl_uid=12898, cgraph_uid=3, symbol_order=3)
+
+Partition 3: size 1232 align 16
+	certifyInfo
+Partition 2: size 60 align 16
+	ticket
+Partition 1: size 8 align 8
+	signObject_10
+Partition 0: size 8 align 8
+	certified_7
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 28 from 10 to 11.
+Redirecting jump 43 from 10 to 11.
+Redirecting jump 71 from 10 to 11.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+Removing jump 142.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AttestationCommands.c:108 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1344 [0xfffffffffffffac0])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AttestationCommands.c:108 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13158+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:108 -1
+     (nil))
+(insn 8 5 9 2 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:111 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13149 ])
+        (mem/j:SI (plus:DI (reg/f:DI 106)
+                (const_int 4 [0x4])) [0 in_4(D)->objectHandle+0 S4 A32])) AttestationCommands.c:111 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13149 ])) AttestationCommands.c:111 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f2a88d650d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:111 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 12 11 13 2 (set (reg:DI 107)
+        (reg:DI 0 ax)) AttestationCommands.c:111 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1328 [0xfffffffffffffad0])) [0 certified+0 S8 A64])
+        (reg:DI 107)) AttestationCommands.c:111 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:112 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 89 [ D.13149 ])
+        (mem/j:SI (reg/f:DI 108) [0 in_4(D)->signHandle+0 S4 A32])) AttestationCommands.c:112 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 5 di)
+        (reg:SI 89 [ D.13149 ])) AttestationCommands.c:112 -1
+     (nil))
+(call_insn 17 16 18 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f2a88d650d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:112 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 18 17 19 2 (set (reg:DI 109)
+        (reg:DI 0 ax)) AttestationCommands.c:112 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1320 [0xfffffffffffffad8])) [0 signObject+0 S8 A64])
+        (reg:DI 109)) AttestationCommands.c:112 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1320 [0xfffffffffffffad8])) [0 signObject+0 S8 A64])) AttestationCommands.c:114 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (reg:DI 110)) AttestationCommands.c:114 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("IsSigningObject") [flags 0x41]  <function_decl 0x7f2a88e87000 IsSigningObject>) [0 IsSigningObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:114 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 23 22 24 2 (set (reg:SI 90 [ D.13150 ])
+        (reg:SI 0 ax)) AttestationCommands.c:114 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13150 ])
+            (const_int 0 [0]))) AttestationCommands.c:114 -1
+     (nil))
+(jump_insn 25 24 26 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 30)
+            (pc))) AttestationCommands.c:114 -1
+     (nil)
+ -> 30)
+(note 26 25 27 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 4 (set (reg:SI 87 [ D.13148 ])
+        (const_int 412 [0x19c])) AttestationCommands.c:115 -1
+     (nil))
+(jump_insn 28 27 29 4 (set (pc)
+        (label_ref:DI 139)) AttestationCommands.c:115 654 {jump}
+     (nil)
+ -> 139)
+(barrier 29 28 30)
+(code_label 30 29 31 5 8 "" [1 uses])
+(note 31 30 32 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 5 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:116 -1
+     (nil))
+(insn 33 32 34 5 (parallel [
+            (set (reg/f:DI 91 [ D.13151 ])
+                (plus:DI (reg/f:DI 111)
+                    (const_int 110 [0x6e])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:116 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])
+            (const_int 110 [0x6e]))
+        (nil)))
+(insn 34 33 35 5 (set (reg:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1320 [0xfffffffffffffad8])) [0 signObject+0 S8 A64])) AttestationCommands.c:116 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:DI 4 si)
+        (reg/f:DI 91 [ D.13151 ])) AttestationCommands.c:116 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:DI 5 di)
+        (reg:DI 112)) AttestationCommands.c:116 -1
+     (nil))
+(call_insn 37 36 38 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptSelectSignScheme") [flags 0x41]  <function_decl 0x7f2a88e4d000 CryptSelectSignScheme>) [0 CryptSelectSignScheme S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:116 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 38 37 39 5 (set (reg:SI 92 [ D.13150 ])
+        (reg:SI 0 ax)) AttestationCommands.c:116 -1
+     (nil))
+(insn 39 38 40 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.13150 ])
+            (const_int 0 [0]))) AttestationCommands.c:116 -1
+     (nil))
+(jump_insn 40 39 41 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) AttestationCommands.c:116 -1
+     (nil)
+ -> 45)
+(note 41 40 42 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 6 (set (reg:SI 87 [ D.13148 ])
+        (const_int 978 [0x3d2])) AttestationCommands.c:117 -1
+     (nil))
+(jump_insn 43 42 44 6 (set (pc)
+        (label_ref:DI 139)) AttestationCommands.c:117 654 {jump}
+     (nil)
+ -> 139)
+(barrier 44 43 45)
+(code_label 45 44 46 7 10 "" [1 uses])
+(note 46 45 47 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 7 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:120 -1
+     (nil))
+(insn 48 47 49 7 (parallel [
+            (set (reg/f:DI 93 [ D.13152 ])
+                (plus:DI (reg/f:DI 113)
+                    (const_int 60 [0x3c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:120 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])
+            (const_int 60 [0x3c]))
+        (nil)))
+(insn 49 48 50 7 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1328 [0xfffffffffffffad0])) [0 certified+0 S8 A64])) AttestationCommands.c:120 -1
+     (nil))
+(insn 50 49 51 7 (parallel [
+            (set (reg/f:DI 94 [ D.13153 ])
+                (plus:DI (reg/f:DI 114)
+                    (const_int 1756 [0x6dc])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:120 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1328 [0xfffffffffffffad0])) [0 certified+0 S8 A64])
+            (const_int 1756 [0x6dc]))
+        (nil)))
+(insn 51 50 52 7 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:120 -1
+     (nil))
+(insn 52 51 53 7 (set (reg:SI 95 [ D.13149 ])
+        (mem/j:SI (plus:DI (reg/f:DI 115)
+                (const_int 120 [0x78])) [0 in_4(D)->creationTicket.hierarchy+0 S4 A32])) AttestationCommands.c:120 -1
+     (nil))
+(insn 53 52 54 7 (parallel [
+            (set (reg:DI 116)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1312 [0xfffffffffffffae0])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:120 -1
+     (nil))
+(insn 54 53 55 7 (set (reg:DI 2 cx)
+        (reg:DI 116)) AttestationCommands.c:120 -1
+     (nil))
+(insn 55 54 56 7 (set (reg:DI 1 dx)
+        (reg/f:DI 93 [ D.13152 ])) AttestationCommands.c:120 -1
+     (nil))
+(insn 56 55 57 7 (set (reg:DI 4 si)
+        (reg/f:DI 94 [ D.13153 ])) AttestationCommands.c:120 -1
+     (nil))
+(insn 57 56 58 7 (set (reg:SI 5 di)
+        (reg:SI 95 [ D.13149 ])) AttestationCommands.c:120 -1
+     (nil))
+(call_insn 58 57 59 7 (call (mem:QI (symbol_ref:DI ("TicketComputeCreation") [flags 0x41]  <function_decl 0x7f2a88e46000 TicketComputeCreation>) [0 TicketComputeCreation S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:120 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 59 58 60 7 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:123 -1
+     (nil))
+(insn 60 59 61 7 (parallel [
+            (set (reg/f:DI 96 [ D.13154 ])
+                (plus:DI (reg/f:DI 117)
+                    (const_int 124 [0x7c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:123 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])
+            (const_int 124 [0x7c]))
+        (nil)))
+(insn 61 60 62 7 (parallel [
+            (set (reg:DI 118)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1312 [0xfffffffffffffae0])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:123 -1
+     (nil))
+(insn 62 61 63 7 (parallel [
+            (set (reg:DI 119)
+                (plus:DI (reg:DI 118)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:123 -1
+     (nil))
+(insn 63 62 64 7 (set (reg:DI 4 si)
+        (reg/f:DI 96 [ D.13154 ])) AttestationCommands.c:123 -1
+     (nil))
+(insn 64 63 65 7 (set (reg:DI 5 di)
+        (reg:DI 119)) AttestationCommands.c:123 -1
+     (nil))
+(call_insn 65 64 66 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("MemoryEqual2B") [flags 0x41]  <function_decl 0x7f2a88e33798 MemoryEqual2B>) [0 MemoryEqual2B S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:123 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 66 65 67 7 (set (reg:SI 97 [ D.13150 ])
+        (reg:SI 0 ax)) AttestationCommands.c:123 -1
+     (nil))
+(insn 67 66 68 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 97 [ D.13150 ])
+            (const_int 0 [0]))) AttestationCommands.c:123 -1
+     (nil))
+(jump_insn 68 67 69 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 73)
+            (pc))) AttestationCommands.c:123 -1
+     (nil)
+ -> 73)
+(note 69 68 70 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 70 69 71 8 (set (reg:SI 87 [ D.13148 ])
+        (const_int 1248 [0x4e0])) AttestationCommands.c:124 -1
+     (nil))
+(jump_insn 71 70 72 8 (set (pc)
+        (label_ref:DI 139)) AttestationCommands.c:124 654 {jump}
+     (nil)
+ -> 139)
+(barrier 72 71 73)
+(code_label 73 72 74 9 11 "" [1 uses])
+(note 74 73 75 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 75 74 76 9 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:127 -1
+     (nil))
+(insn 76 75 77 9 (parallel [
+            (set (reg/f:DI 98 [ D.13155 ])
+                (plus:DI (reg/f:DI 120)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:127 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 77 76 78 9 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:127 -1
+     (nil))
+(insn 78 77 79 9 (parallel [
+            (set (reg/f:DI 99 [ D.13151 ])
+                (plus:DI (reg/f:DI 121)
+                    (const_int 110 [0x6e])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:127 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])
+            (const_int 110 [0x6e]))
+        (nil)))
+(insn 79 78 80 9 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:127 -1
+     (nil))
+(insn 80 79 81 9 (set (reg:SI 100 [ D.13149 ])
+        (mem/j:SI (reg/f:DI 122) [0 in_4(D)->signHandle+0 S4 A32])) AttestationCommands.c:127 -1
+     (nil))
+(insn 81 80 82 9 (parallel [
+            (set (reg:DI 123)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:127 -1
+     (nil))
+(insn 82 81 83 9 (set (reg:DI 2 cx)
+        (reg:DI 123)) AttestationCommands.c:127 -1
+     (nil))
+(insn 83 82 84 9 (set (reg:DI 1 dx)
+        (reg/f:DI 98 [ D.13155 ])) AttestationCommands.c:127 -1
+     (nil))
+(insn 84 83 85 9 (set (reg:DI 4 si)
+        (reg/f:DI 99 [ D.13151 ])) AttestationCommands.c:127 -1
+     (nil))
+(insn 85 84 86 9 (set (reg:SI 5 di)
+        (reg:SI 100 [ D.13149 ])) AttestationCommands.c:127 -1
+     (nil))
+(call_insn 86 85 87 9 (call (mem:QI (symbol_ref:DI ("FillInAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82d80 FillInAttestInfo>) [0 FillInAttestInfo S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:127 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 87 86 88 9 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1244 [0xfffffffffffffb24])) [0 certifyInfo.type+0 S2 A32])
+        (const_int -32742 [0xffffffffffff801a])) AttestationCommands.c:131 -1
+     (nil))
+(insn 88 87 89 9 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1328 [0xfffffffffffffad0])) [0 certified+0 S8 A64])) AttestationCommands.c:132 -1
+     (nil))
+(insn 89 88 90 9 (set (reg:DI 125)
+        (mem/j:DI (plus:DI (reg/f:DI 124)
+                (const_int 1756 [0x6dc])) [0 certified_7->name+0 S8 A32])) AttestationCommands.c:132 -1
+     (nil))
+(insn 90 89 91 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1104 [0xfffffffffffffbb0])) [0 certifyInfo.attested.creation.objectName+0 S8 A64])
+        (reg:DI 125)) AttestationCommands.c:132 -1
+     (nil))
+(insn 91 90 92 9 (set (reg:DI 126)
+        (mem/j:DI (plus:DI (reg/f:DI 124)
+                (const_int 1764 [0x6e4])) [0 certified_7->name+8 S8 A32])) AttestationCommands.c:132 -1
+     (nil))
+(insn 92 91 93 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1096 [0xfffffffffffffbb8])) [0 certifyInfo.attested.creation.objectName+8 S8 A64])
+        (reg:DI 126)) AttestationCommands.c:132 -1
+     (nil))
+(insn 93 92 94 9 (set (reg:DI 127)
+        (mem/j:DI (plus:DI (reg/f:DI 124)
+                (const_int 1772 [0x6ec])) [0 certified_7->name+16 S8 A32])) AttestationCommands.c:132 -1
+     (nil))
+(insn 94 93 95 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1088 [0xfffffffffffffbc0])) [0 certifyInfo.attested.creation.objectName+16 S8 A64])
+        (reg:DI 127)) AttestationCommands.c:132 -1
+     (nil))
+(insn 95 94 96 9 (set (reg:DI 128)
+        (mem/j:DI (plus:DI (reg/f:DI 124)
+                (const_int 1780 [0x6f4])) [0 certified_7->name+24 S8 A32])) AttestationCommands.c:132 -1
+     (nil))
+(insn 96 95 97 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1080 [0xfffffffffffffbc8])) [0 certifyInfo.attested.creation.objectName+24 S8 A64])
+        (reg:DI 128)) AttestationCommands.c:132 -1
+     (nil))
+(insn 97 96 98 9 (set (reg:DI 129)
+        (mem/j:DI (plus:DI (reg/f:DI 124)
+                (const_int 1788 [0x6fc])) [0 certified_7->name+32 S8 A32])) AttestationCommands.c:132 -1
+     (nil))
+(insn 98 97 99 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1072 [0xfffffffffffffbd0])) [0 certifyInfo.attested.creation.objectName+32 S8 A64])
+        (reg:DI 129)) AttestationCommands.c:132 -1
+     (nil))
+(insn 99 98 100 9 (set (reg:DI 130)
+        (mem/j:DI (plus:DI (reg/f:DI 124)
+                (const_int 1796 [0x704])) [0 certified_7->name+40 S8 A32])) AttestationCommands.c:132 -1
+     (nil))
+(insn 100 99 101 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1064 [0xfffffffffffffbd8])) [0 certifyInfo.attested.creation.objectName+40 S8 A64])
+        (reg:DI 130)) AttestationCommands.c:132 -1
+     (nil))
+(insn 101 100 102 9 (set (reg:SI 131)
+        (mem/j:SI (plus:DI (reg/f:DI 124)
+                (const_int 1804 [0x70c])) [0 certified_7->name+48 S4 A32])) AttestationCommands.c:132 -1
+     (nil))
+(insn 102 101 103 9 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1056 [0xfffffffffffffbe0])) [0 certifyInfo.attested.creation.objectName+48 S4 A64])
+        (reg:SI 131)) AttestationCommands.c:132 -1
+     (nil))
+(insn 103 102 104 9 (set (reg:HI 132)
+        (mem/j:HI (plus:DI (reg/f:DI 124)
+                (const_int 1808 [0x710])) [0 certified_7->name+52 S2 A32])) AttestationCommands.c:132 -1
+     (nil))
+(insn 104 103 105 9 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1052 [0xfffffffffffffbe4])) [0 certifyInfo.attested.creation.objectName+52 S2 A32])
+        (reg:HI 132)) AttestationCommands.c:132 -1
+     (nil))
+(insn 105 104 106 9 (set (reg/f:DI 133)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:134 -1
+     (nil))
+(insn 106 105 107 9 (set (reg:DI 134)
+        (mem/j:DI (plus:DI (reg/f:DI 133)
+                (const_int 60 [0x3c])) [0 in_4(D)->creationHash+0 S8 A32])) AttestationCommands.c:134 -1
+     (nil))
+(insn 107 106 108 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1050 [0xfffffffffffffbe6])) [0 certifyInfo.attested.creation.creationHash+0 S8 A16])
+        (reg:DI 134)) AttestationCommands.c:134 -1
+     (nil))
+(insn 108 107 109 9 (set (reg:DI 135)
+        (mem/j:DI (plus:DI (reg/f:DI 133)
+                (const_int 68 [0x44])) [0 in_4(D)->creationHash+8 S8 A32])) AttestationCommands.c:134 -1
+     (nil))
+(insn 109 108 110 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1042 [0xfffffffffffffbee])) [0 certifyInfo.attested.creation.creationHash+8 S8 A16])
+        (reg:DI 135)) AttestationCommands.c:134 -1
+     (nil))
+(insn 110 109 111 9 (set (reg:DI 136)
+        (mem/j:DI (plus:DI (reg/f:DI 133)
+                (const_int 76 [0x4c])) [0 in_4(D)->creationHash+16 S8 A32])) AttestationCommands.c:134 -1
+     (nil))
+(insn 111 110 112 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1034 [0xfffffffffffffbf6])) [0 certifyInfo.attested.creation.creationHash+16 S8 A16])
+        (reg:DI 136)) AttestationCommands.c:134 -1
+     (nil))
+(insn 112 111 113 9 (set (reg:DI 137)
+        (mem/j:DI (plus:DI (reg/f:DI 133)
+                (const_int 84 [0x54])) [0 in_4(D)->creationHash+24 S8 A32])) AttestationCommands.c:134 -1
+     (nil))
+(insn 113 112 114 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1026 [0xfffffffffffffbfe])) [0 certifyInfo.attested.creation.creationHash+24 S8 A16])
+        (reg:DI 137)) AttestationCommands.c:134 -1
+     (nil))
+(insn 114 113 115 9 (set (reg:DI 138)
+        (mem/j:DI (plus:DI (reg/f:DI 133)
+                (const_int 92 [0x5c])) [0 in_4(D)->creationHash+32 S8 A32])) AttestationCommands.c:134 -1
+     (nil))
+(insn 115 114 116 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1018 [0xfffffffffffffc06])) [0 certifyInfo.attested.creation.creationHash+32 S8 A16])
+        (reg:DI 138)) AttestationCommands.c:134 -1
+     (nil))
+(insn 116 115 117 9 (set (reg:DI 139)
+        (mem/j:DI (plus:DI (reg/f:DI 133)
+                (const_int 100 [0x64])) [0 in_4(D)->creationHash+40 S8 A32])) AttestationCommands.c:134 -1
+     (nil))
+(insn 117 116 118 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1010 [0xfffffffffffffc0e])) [0 certifyInfo.attested.creation.creationHash+40 S8 A16])
+        (reg:DI 139)) AttestationCommands.c:134 -1
+     (nil))
+(insn 118 117 119 9 (set (reg:HI 140)
+        (mem/j:HI (plus:DI (reg/f:DI 133)
+                (const_int 108 [0x6c])) [0 in_4(D)->creationHash+48 S2 A32])) AttestationCommands.c:134 -1
+     (nil))
+(insn 119 118 120 9 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1002 [0xfffffffffffffc16])) [0 certifyInfo.attested.creation.creationHash+48 S2 A16])
+        (reg:HI 140)) AttestationCommands.c:134 -1
+     (nil))
+(insn 120 119 121 9 (set (reg/f:DI 141)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1344 [0xfffffffffffffac0])) [0 out+0 S8 A64])) AttestationCommands.c:139 -1
+     (nil))
+(insn 121 120 122 9 (parallel [
+            (set (reg/f:DI 101 [ D.13156 ])
+                (plus:DI (reg/f:DI 141)
+                    (const_int 1234 [0x4d2])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:139 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1344 [0xfffffffffffffac0])) [0 out+0 S8 A64])
+            (const_int 1234 [0x4d2]))
+        (nil)))
+(insn 122 121 123 9 (set (reg/f:DI 102 [ D.13157 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1344 [0xfffffffffffffac0])) [0 out+0 S8 A64])) AttestationCommands.c:139 -1
+     (nil))
+(insn 123 122 124 9 (set (reg/f:DI 142)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:139 -1
+     (nil))
+(insn 124 123 125 9 (parallel [
+            (set (reg/f:DI 103 [ D.13155 ])
+                (plus:DI (reg/f:DI 142)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:139 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 125 124 126 9 (set (reg/f:DI 143)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])) AttestationCommands.c:139 -1
+     (nil))
+(insn 126 125 127 9 (parallel [
+            (set (reg/f:DI 104 [ D.13151 ])
+                (plus:DI (reg/f:DI 143)
+                    (const_int 110 [0x6e])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:139 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1336 [0xfffffffffffffac8])) [0 in+0 S8 A64])
+            (const_int 110 [0x6e]))
+        (nil)))
+(insn 127 126 128 9 (parallel [
+            (set (reg:DI 144)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:139 -1
+     (nil))
+(insn 128 127 129 9 (set (reg:DI 145)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1320 [0xfffffffffffffad8])) [0 signObject+0 S8 A64])) AttestationCommands.c:139 -1
+     (nil))
+(insn 129 128 130 9 (set (reg:DI 38 r9)
+        (reg/f:DI 101 [ D.13156 ])) AttestationCommands.c:139 -1
+     (nil))
+(insn 130 129 131 9 (set (reg:DI 37 r8)
+        (reg/f:DI 102 [ D.13157 ])) AttestationCommands.c:139 -1
+     (nil))
+(insn 131 130 132 9 (set (reg:DI 2 cx)
+        (reg/f:DI 103 [ D.13155 ])) AttestationCommands.c:139 -1
+     (nil))
+(insn 132 131 133 9 (set (reg:DI 1 dx)
+        (reg:DI 144)) AttestationCommands.c:139 -1
+     (nil))
+(insn 133 132 134 9 (set (reg:DI 4 si)
+        (reg/f:DI 104 [ D.13151 ])) AttestationCommands.c:139 -1
+     (nil))
+(insn 134 133 135 9 (set (reg:DI 5 di)
+        (reg:DI 145)) AttestationCommands.c:139 -1
+     (nil))
+(call_insn 135 134 136 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SignAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82e58 SignAttestInfo>) [0 SignAttestInfo S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:139 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 136 135 139 9 (set (reg:SI 87 [ D.13148 ])
+        (reg:SI 0 ax)) AttestationCommands.c:139 -1
+     (nil))
+(code_label 139 136 140 11 12 "" [3 uses])
+(note 140 139 141 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 141 140 145 11 (set (reg:SI 105 [ <retval> ])
+        (reg:SI 87 [ D.13148 ])) -1
+     (nil))
+(insn 145 141 146 11 (set (reg/i:SI 0 ax)
+        (reg:SI 105 [ <retval> ])) AttestationCommands.c:142 -1
+     (nil))
+(insn 146 145 147 11 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13158+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) AttestationCommands.c:142 -1
+     (nil))
+(jump_insn 147 146 153 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 150)
+            (pc))) AttestationCommands.c:142 -1
+     (nil)
+ -> 150)
+(note 153 147 148 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(call_insn 148 153 149 13 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f2a88eb95e8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:142 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 149 148 150)
+(code_label 150 149 154 14 13 "" [1 uses])
+(note 154 150 151 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 151 154 0 14 (use (reg/i:SI 0 ax)) AttestationCommands.c:142 -1
+     (nil))
+
+;; Function TPM2_Quote (TPM2_Quote, funcdef_no=4, decl_uid=12919, cgraph_uid=4, symbol_order=4)
+
+Partition 2: size 1232 align 16
+	quoted
+Partition 0: size 8 align 8
+	signObject_7
+Partition 1: size 2 align 2
+	hashAlg_20
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 22 from 10 to 11.
+Redirecting jump 37 from 10 to 11.
+Redirecting jump 61 from 10 to 11.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+Removing jump 103.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AttestationCommands.c:153 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AttestationCommands.c:153 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13167+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:153 -1
+     (nil))
+(insn 8 5 9 2 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:156 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13160 ])
+        (mem/j:SI (reg/f:DI 102) [0 in_4(D)->signHandle+0 S4 A32])) AttestationCommands.c:156 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13160 ])) AttestationCommands.c:156 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f2a88d650d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:156 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 12 11 13 2 (set (reg:DI 103)
+        (reg:DI 0 ax)) AttestationCommands.c:156 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])
+        (reg:DI 103)) AttestationCommands.c:156 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:158 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (reg:DI 104)) AttestationCommands.c:158 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("IsSigningObject") [flags 0x41]  <function_decl 0x7f2a88e87000 IsSigningObject>) [0 IsSigningObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:158 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 89 [ D.13161 ])
+        (reg:SI 0 ax)) AttestationCommands.c:158 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.13161 ])
+            (const_int 0 [0]))) AttestationCommands.c:158 -1
+     (nil))
+(jump_insn 19 18 20 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) AttestationCommands.c:158 -1
+     (nil)
+ -> 24)
+(note 20 19 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 4 (set (reg:SI 87 [ D.13159 ])
+        (const_int 412 [0x19c])) AttestationCommands.c:159 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (label_ref:DI 100)) AttestationCommands.c:159 654 {jump}
+     (nil)
+ -> 100)
+(barrier 23 22 24)
+(code_label 24 23 25 5 15 "" [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 5 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:160 -1
+     (nil))
+(insn 27 26 28 5 (parallel [
+            (set (reg/f:DI 90 [ D.13162 ])
+                (plus:DI (reg/f:DI 105)
+                    (const_int 56 [0x38])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:160 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 56 [0x38]))
+        (nil)))
+(insn 28 27 29 5 (set (reg:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:160 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:DI 4 si)
+        (reg/f:DI 90 [ D.13162 ])) AttestationCommands.c:160 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:DI 5 di)
+        (reg:DI 106)) AttestationCommands.c:160 -1
+     (nil))
+(call_insn 31 30 32 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptSelectSignScheme") [flags 0x41]  <function_decl 0x7f2a88e4d000 CryptSelectSignScheme>) [0 CryptSelectSignScheme S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:160 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 32 31 33 5 (set (reg:SI 91 [ D.13161 ])
+        (reg:SI 0 ax)) AttestationCommands.c:160 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13161 ])
+            (const_int 0 [0]))) AttestationCommands.c:160 -1
+     (nil))
+(jump_insn 34 33 35 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) AttestationCommands.c:160 -1
+     (nil)
+ -> 39)
+(note 35 34 36 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 6 (set (reg:SI 87 [ D.13159 ])
+        (const_int 722 [0x2d2])) AttestationCommands.c:161 -1
+     (nil))
+(jump_insn 37 36 38 6 (set (pc)
+        (label_ref:DI 100)) AttestationCommands.c:161 654 {jump}
+     (nil)
+ -> 100)
+(barrier 38 37 39)
+(code_label 39 38 40 7 17 "" [1 uses])
+(note 40 39 41 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 7 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:166 -1
+     (nil))
+(insn 42 41 43 7 (parallel [
+            (set (reg/f:DI 92 [ D.13163 ])
+                (plus:DI (reg/f:DI 107)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:166 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 43 42 44 7 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:166 -1
+     (nil))
+(insn 44 43 45 7 (parallel [
+            (set (reg/f:DI 93 [ D.13162 ])
+                (plus:DI (reg/f:DI 108)
+                    (const_int 56 [0x38])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:166 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 56 [0x38]))
+        (nil)))
+(insn 45 44 46 7 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:166 -1
+     (nil))
+(insn 46 45 47 7 (set (reg:SI 94 [ D.13160 ])
+        (mem/j:SI (reg/f:DI 109) [0 in_4(D)->signHandle+0 S4 A32])) AttestationCommands.c:166 -1
+     (nil))
+(insn 47 46 48 7 (parallel [
+            (set (reg:DI 110)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:166 -1
+     (nil))
+(insn 48 47 49 7 (set (reg:DI 2 cx)
+        (reg:DI 110)) AttestationCommands.c:166 -1
+     (nil))
+(insn 49 48 50 7 (set (reg:DI 1 dx)
+        (reg/f:DI 92 [ D.13163 ])) AttestationCommands.c:166 -1
+     (nil))
+(insn 50 49 51 7 (set (reg:DI 4 si)
+        (reg/f:DI 93 [ D.13162 ])) AttestationCommands.c:166 -1
+     (nil))
+(insn 51 50 52 7 (set (reg:SI 5 di)
+        (reg:SI 94 [ D.13160 ])) AttestationCommands.c:166 -1
+     (nil))
+(call_insn 52 51 53 7 (call (mem:QI (symbol_ref:DI ("FillInAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82d80 FillInAttestInfo>) [0 FillInAttestInfo S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:166 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 53 52 54 7 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1244 [0xfffffffffffffb24])) [0 quoted.type+0 S2 A32])
+        (const_int -32744 [0xffffffffffff8018])) AttestationCommands.c:169 -1
+     (nil))
+(insn 54 53 55 7 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:173 -1
+     (nil))
+(insn 55 54 56 7 (set (reg:HI 112)
+        (mem/j:HI (plus:DI (reg/f:DI 111)
+                (const_int 58 [0x3a])) [0 in_4(D)->inScheme.details.any.hashAlg+0 S2 A16])) AttestationCommands.c:173 -1
+     (nil))
+(insn 56 55 57 7 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1258 [0xfffffffffffffb16])) [0 hashAlg+0 S2 A16])
+        (reg:HI 112)) AttestationCommands.c:173 -1
+     (nil))
+(insn 57 56 58 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1258 [0xfffffffffffffb16])) [0 hashAlg+0 S2 A16])
+            (const_int 16 [0x10]))) AttestationCommands.c:174 -1
+     (nil))
+(jump_insn 58 57 59 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 63)
+            (pc))) AttestationCommands.c:174 -1
+     (nil)
+ -> 63)
+(note 59 58 60 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 8 (set (reg:SI 87 [ D.13159 ])
+        (const_int 722 [0x2d2])) AttestationCommands.c:175 -1
+     (nil))
+(jump_insn 61 60 62 8 (set (pc)
+        (label_ref:DI 100)) AttestationCommands.c:175 654 {jump}
+     (nil)
+ -> 100)
+(barrier 62 61 63)
+(code_label 63 62 64 9 18 "" [1 uses])
+(note 64 63 65 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 65 64 66 9 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:177 -1
+     (nil))
+(insn 66 65 67 9 (parallel [
+            (set (reg/f:DI 95 [ D.13164 ])
+                (plus:DI (reg/f:DI 113)
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:177 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 64 [0x40]))
+        (nil)))
+(insn 67 66 68 9 (set (reg:SI 96 [ D.13161 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1258 [0xfffffffffffffb16])) [0 hashAlg+0 S2 A16]))) AttestationCommands.c:177 -1
+     (nil))
+(insn 68 67 69 9 (parallel [
+            (set (reg:DI 114)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:177 -1
+     (nil))
+(insn 69 68 70 9 (parallel [
+            (set (reg:DI 115)
+                (plus:DI (reg:DI 114)
+                    (const_int 168 [0xa8])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:177 -1
+     (nil))
+(insn 70 69 71 9 (set (reg:DI 1 dx)
+        (reg:DI 115)) AttestationCommands.c:177 -1
+     (nil))
+(insn 71 70 72 9 (set (reg:DI 4 si)
+        (reg/f:DI 95 [ D.13164 ])) AttestationCommands.c:177 -1
+     (nil))
+(insn 72 71 73 9 (set (reg:SI 5 di)
+        (reg:SI 96 [ D.13161 ])) AttestationCommands.c:177 -1
+     (nil))
+(call_insn 73 72 74 9 (call (mem:QI (symbol_ref:DI ("PCRComputeCurrentDigest") [flags 0x41]  <function_decl 0x7f2a88d93360 PCRComputeCurrentDigest>) [0 PCRComputeCurrentDigest S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:177 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 74 73 75 9 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:181 -1
+     (nil))
+(insn 75 74 76 9 (set (reg:DI 117)
+        (mem/j:DI (plus:DI (reg/f:DI 116)
+                (const_int 64 [0x40])) [0 in_4(D)->PCRselect+0 S8 A32])) AttestationCommands.c:181 -1
+     (nil))
+(insn 76 75 77 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1104 [0xfffffffffffffbb0])) [0 quoted.attested.quote.pcrSelect+0 S8 A64])
+        (reg:DI 117)) AttestationCommands.c:181 -1
+     (nil))
+(insn 77 76 78 9 (set (reg:DI 118)
+        (mem/j:DI (plus:DI (reg/f:DI 116)
+                (const_int 72 [0x48])) [0 in_4(D)->PCRselect+8 S8 A32])) AttestationCommands.c:181 -1
+     (nil))
+(insn 78 77 79 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1096 [0xfffffffffffffbb8])) [0 quoted.attested.quote.pcrSelect+8 S8 A64])
+        (reg:DI 118)) AttestationCommands.c:181 -1
+     (nil))
+(insn 79 78 80 9 (set (reg:DI 119)
+        (mem/j:DI (plus:DI (reg/f:DI 116)
+                (const_int 80 [0x50])) [0 in_4(D)->PCRselect+16 S8 A32])) AttestationCommands.c:181 -1
+     (nil))
+(insn 80 79 81 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1088 [0xfffffffffffffbc0])) [0 quoted.attested.quote.pcrSelect+16 S8 A64])
+        (reg:DI 119)) AttestationCommands.c:181 -1
+     (nil))
+(insn 81 80 82 9 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])) AttestationCommands.c:184 -1
+     (nil))
+(insn 82 81 83 9 (parallel [
+            (set (reg/f:DI 97 [ D.13165 ])
+                (plus:DI (reg/f:DI 120)
+                    (const_int 1234 [0x4d2])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:184 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])
+            (const_int 1234 [0x4d2]))
+        (nil)))
+(insn 83 82 84 9 (set (reg/f:DI 98 [ D.13166 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])) AttestationCommands.c:184 -1
+     (nil))
+(insn 84 83 85 9 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:184 -1
+     (nil))
+(insn 85 84 86 9 (parallel [
+            (set (reg/f:DI 99 [ D.13163 ])
+                (plus:DI (reg/f:DI 121)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:184 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 86 85 87 9 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:184 -1
+     (nil))
+(insn 87 86 88 9 (parallel [
+            (set (reg/f:DI 100 [ D.13162 ])
+                (plus:DI (reg/f:DI 122)
+                    (const_int 56 [0x38])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:184 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 56 [0x38]))
+        (nil)))
+(insn 88 87 89 9 (parallel [
+            (set (reg:DI 123)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:184 -1
+     (nil))
+(insn 89 88 90 9 (set (reg:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:184 -1
+     (nil))
+(insn 90 89 91 9 (set (reg:DI 38 r9)
+        (reg/f:DI 97 [ D.13165 ])) AttestationCommands.c:184 -1
+     (nil))
+(insn 91 90 92 9 (set (reg:DI 37 r8)
+        (reg/f:DI 98 [ D.13166 ])) AttestationCommands.c:184 -1
+     (nil))
+(insn 92 91 93 9 (set (reg:DI 2 cx)
+        (reg/f:DI 99 [ D.13163 ])) AttestationCommands.c:184 -1
+     (nil))
+(insn 93 92 94 9 (set (reg:DI 1 dx)
+        (reg:DI 123)) AttestationCommands.c:184 -1
+     (nil))
+(insn 94 93 95 9 (set (reg:DI 4 si)
+        (reg/f:DI 100 [ D.13162 ])) AttestationCommands.c:184 -1
+     (nil))
+(insn 95 94 96 9 (set (reg:DI 5 di)
+        (reg:DI 124)) AttestationCommands.c:184 -1
+     (nil))
+(call_insn 96 95 97 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SignAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82e58 SignAttestInfo>) [0 SignAttestInfo S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:184 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 97 96 100 9 (set (reg:SI 87 [ D.13159 ])
+        (reg:SI 0 ax)) AttestationCommands.c:184 -1
+     (nil))
+(code_label 100 97 101 11 19 "" [3 uses])
+(note 101 100 102 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 102 101 106 11 (set (reg:SI 101 [ <retval> ])
+        (reg:SI 87 [ D.13159 ])) -1
+     (nil))
+(insn 106 102 107 11 (set (reg/i:SI 0 ax)
+        (reg:SI 101 [ <retval> ])) AttestationCommands.c:186 -1
+     (nil))
+(insn 107 106 108 11 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13167+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) AttestationCommands.c:186 -1
+     (nil))
+(jump_insn 108 107 114 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 111)
+            (pc))) AttestationCommands.c:186 -1
+     (nil)
+ -> 111)
+(note 114 108 109 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(call_insn 109 114 110 13 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f2a88eb95e8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:186 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 110 109 111)
+(code_label 111 110 115 14 20 "" [1 uses])
+(note 115 111 112 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 112 115 0 14 (use (reg/i:SI 0 ax)) AttestationCommands.c:186 -1
+     (nil))
+
+;; Function TPM2_GetSessionAuditDigest (TPM2_GetSessionAuditDigest, funcdef_no=5, decl_uid=12940, cgraph_uid=5, symbol_order=5)
+
+Partition 2: size 1232 align 16
+	auditInfo
+Partition 1: size 8 align 8
+	signObject_10
+Partition 0: size 8 align 8
+	session_7
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 28 from 10 to 11.
+Redirecting jump 43 from 10 to 11.
+Redirecting jump 54 from 10 to 11.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+Removing jump 115.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AttestationCommands.c:197 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AttestationCommands.c:197 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13177+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:197 -1
+     (nil))
+(insn 8 5 9 2 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:198 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13169 ])
+        (mem/j:SI (plus:DI (reg/f:DI 107)
+                (const_int 8 [0x8])) [0 in_4(D)->sessionHandle+0 S4 A32])) AttestationCommands.c:198 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13169 ])) AttestationCommands.c:198 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SessionGet") [flags 0x41]  <function_decl 0x7f2a88d7c6c0 SessionGet>) [0 SessionGet S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:198 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 12 11 13 2 (set (reg:DI 108)
+        (reg:DI 0 ax)) AttestationCommands.c:198 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1264 [0xfffffffffffffb10])) [0 session+0 S8 A64])
+        (reg:DI 108)) AttestationCommands.c:198 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:200 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 89 [ D.13169 ])
+        (mem/j:SI (plus:DI (reg/f:DI 109)
+                (const_int 4 [0x4])) [0 in_4(D)->signHandle+0 S4 A32])) AttestationCommands.c:200 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 5 di)
+        (reg:SI 89 [ D.13169 ])) AttestationCommands.c:200 -1
+     (nil))
+(call_insn 17 16 18 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f2a88d650d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:200 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 18 17 19 2 (set (reg:DI 110)
+        (reg:DI 0 ax)) AttestationCommands.c:200 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])
+        (reg:DI 110)) AttestationCommands.c:200 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:202 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (reg:DI 111)) AttestationCommands.c:202 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("IsSigningObject") [flags 0x41]  <function_decl 0x7f2a88e87000 IsSigningObject>) [0 IsSigningObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:202 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 23 22 24 2 (set (reg:SI 90 [ D.13170 ])
+        (reg:SI 0 ax)) AttestationCommands.c:202 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13170 ])
+            (const_int 0 [0]))) AttestationCommands.c:202 -1
+     (nil))
+(jump_insn 25 24 26 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 30)
+            (pc))) AttestationCommands.c:202 -1
+     (nil)
+ -> 30)
+(note 26 25 27 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 4 (set (reg:SI 87 [ D.13168 ])
+        (const_int 668 [0x29c])) AttestationCommands.c:203 -1
+     (nil))
+(jump_insn 28 27 29 4 (set (pc)
+        (label_ref:DI 112)) AttestationCommands.c:203 654 {jump}
+     (nil)
+ -> 112)
+(barrier 29 28 30)
+(code_label 30 29 31 5 22 "" [1 uses])
+(note 31 30 32 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 5 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:204 -1
+     (nil))
+(insn 33 32 34 5 (parallel [
+            (set (reg/f:DI 91 [ D.13171 ])
+                (plus:DI (reg/f:DI 112)
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:204 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 64 [0x40]))
+        (nil)))
+(insn 34 33 35 5 (set (reg:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:204 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:DI 4 si)
+        (reg/f:DI 91 [ D.13171 ])) AttestationCommands.c:204 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:DI 5 di)
+        (reg:DI 113)) AttestationCommands.c:204 -1
+     (nil))
+(call_insn 37 36 38 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptSelectSignScheme") [flags 0x41]  <function_decl 0x7f2a88e4d000 CryptSelectSignScheme>) [0 CryptSelectSignScheme S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:204 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 38 37 39 5 (set (reg:SI 92 [ D.13170 ])
+        (reg:SI 0 ax)) AttestationCommands.c:204 -1
+     (nil))
+(insn 39 38 40 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.13170 ])
+            (const_int 0 [0]))) AttestationCommands.c:204 -1
+     (nil))
+(jump_insn 40 39 41 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) AttestationCommands.c:204 -1
+     (nil)
+ -> 45)
+(note 41 40 42 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 6 (set (reg:SI 87 [ D.13168 ])
+        (const_int 722 [0x2d2])) AttestationCommands.c:205 -1
+     (nil))
+(jump_insn 43 42 44 6 (set (pc)
+        (label_ref:DI 112)) AttestationCommands.c:205 654 {jump}
+     (nil)
+ -> 112)
+(barrier 44 43 45)
+(code_label 45 44 46 7 24 "" [1 uses])
+(note 46 45 47 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 7 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1264 [0xfffffffffffffb10])) [0 session+0 S8 A64])) AttestationCommands.c:207 -1
+     (nil))
+(insn 48 47 49 7 (set (reg:QI 93 [ D.13172 ])
+        (mem:QI (reg/f:DI 114) [0 *session_7+0 S1 A64])) AttestationCommands.c:207 -1
+     (nil))
+(insn 49 48 50 7 (parallel [
+            (set (reg:QI 94 [ D.13172 ])
+                (and:QI (reg:QI 93 [ D.13172 ])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:207 -1
+     (nil))
+(insn 50 49 51 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 94 [ D.13172 ])
+            (const_int 0 [0]))) AttestationCommands.c:207 -1
+     (nil))
+(jump_insn 51 50 52 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 56)
+            (pc))) AttestationCommands.c:207 -1
+     (nil)
+ -> 56)
+(note 52 51 53 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 8 (set (reg:SI 87 [ D.13168 ])
+        (const_int 906 [0x38a])) AttestationCommands.c:208 -1
+     (nil))
+(jump_insn 54 53 55 8 (set (pc)
+        (label_ref:DI 112)) AttestationCommands.c:208 654 {jump}
+     (nil)
+ -> 112)
+(barrier 55 54 56)
+(code_label 56 55 57 9 25 "" [1 uses])
+(note 57 56 58 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 59 9 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:211 -1
+     (nil))
+(insn 59 58 60 9 (parallel [
+            (set (reg/f:DI 95 [ D.13173 ])
+                (plus:DI (reg/f:DI 115)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:211 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 12 [0xc]))
+        (nil)))
+(insn 60 59 61 9 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:211 -1
+     (nil))
+(insn 61 60 62 9 (parallel [
+            (set (reg/f:DI 96 [ D.13171 ])
+                (plus:DI (reg/f:DI 116)
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:211 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 64 [0x40]))
+        (nil)))
+(insn 62 61 63 9 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:211 -1
+     (nil))
+(insn 63 62 64 9 (set (reg:SI 97 [ D.13169 ])
+        (mem/j:SI (plus:DI (reg/f:DI 117)
+                (const_int 4 [0x4])) [0 in_4(D)->signHandle+0 S4 A32])) AttestationCommands.c:211 -1
+     (nil))
+(insn 64 63 65 9 (parallel [
+            (set (reg:DI 118)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:211 -1
+     (nil))
+(insn 65 64 66 9 (set (reg:DI 2 cx)
+        (reg:DI 118)) AttestationCommands.c:211 -1
+     (nil))
+(insn 66 65 67 9 (set (reg:DI 1 dx)
+        (reg/f:DI 95 [ D.13173 ])) AttestationCommands.c:211 -1
+     (nil))
+(insn 67 66 68 9 (set (reg:DI 4 si)
+        (reg/f:DI 96 [ D.13171 ])) AttestationCommands.c:211 -1
+     (nil))
+(insn 68 67 69 9 (set (reg:SI 5 di)
+        (reg:SI 97 [ D.13169 ])) AttestationCommands.c:211 -1
+     (nil))
+(call_insn 69 68 70 9 (call (mem:QI (symbol_ref:DI ("FillInAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82d80 FillInAttestInfo>) [0 FillInAttestInfo S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:211 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 70 69 71 9 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1244 [0xfffffffffffffb24])) [0 auditInfo.type+0 S2 A32])
+        (const_int -32746 [0xffffffffffff8016])) AttestationCommands.c:214 -1
+     (nil))
+(insn 71 70 72 9 (set (reg/f:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1264 [0xfffffffffffffb10])) [0 session+0 S8 A64])) AttestationCommands.c:215 -1
+     (nil))
+(insn 72 71 73 9 (set (reg:DI 120)
+        (mem/j:DI (plus:DI (reg/f:DI 119)
+                (const_int 196 [0xc4])) [0 session_7->u2.auditDigest+0 S8 A32])) AttestationCommands.c:215 -1
+     (nil))
+(insn 73 72 74 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1102 [0xfffffffffffffbb2])) [0 auditInfo.attested.sessionAudit.sessionDigest+0 S8 A16])
+        (reg:DI 120)) AttestationCommands.c:215 -1
+     (nil))
+(insn 74 73 75 9 (set (reg:DI 121)
+        (mem/j:DI (plus:DI (reg/f:DI 119)
+                (const_int 204 [0xcc])) [0 session_7->u2.auditDigest+8 S8 A32])) AttestationCommands.c:215 -1
+     (nil))
+(insn 75 74 76 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1094 [0xfffffffffffffbba])) [0 auditInfo.attested.sessionAudit.sessionDigest+8 S8 A16])
+        (reg:DI 121)) AttestationCommands.c:215 -1
+     (nil))
+(insn 76 75 77 9 (set (reg:DI 122)
+        (mem/j:DI (plus:DI (reg/f:DI 119)
+                (const_int 212 [0xd4])) [0 session_7->u2.auditDigest+16 S8 A32])) AttestationCommands.c:215 -1
+     (nil))
+(insn 77 76 78 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1086 [0xfffffffffffffbc2])) [0 auditInfo.attested.sessionAudit.sessionDigest+16 S8 A16])
+        (reg:DI 122)) AttestationCommands.c:215 -1
+     (nil))
+(insn 78 77 79 9 (set (reg:DI 123)
+        (mem/j:DI (plus:DI (reg/f:DI 119)
+                (const_int 220 [0xdc])) [0 session_7->u2.auditDigest+24 S8 A32])) AttestationCommands.c:215 -1
+     (nil))
+(insn 79 78 80 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1078 [0xfffffffffffffbca])) [0 auditInfo.attested.sessionAudit.sessionDigest+24 S8 A16])
+        (reg:DI 123)) AttestationCommands.c:215 -1
+     (nil))
+(insn 80 79 81 9 (set (reg:DI 124)
+        (mem/j:DI (plus:DI (reg/f:DI 119)
+                (const_int 228 [0xe4])) [0 session_7->u2.auditDigest+32 S8 A32])) AttestationCommands.c:215 -1
+     (nil))
+(insn 81 80 82 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1070 [0xfffffffffffffbd2])) [0 auditInfo.attested.sessionAudit.sessionDigest+32 S8 A16])
+        (reg:DI 124)) AttestationCommands.c:215 -1
+     (nil))
+(insn 82 81 83 9 (set (reg:DI 125)
+        (mem/j:DI (plus:DI (reg/f:DI 119)
+                (const_int 236 [0xec])) [0 session_7->u2.auditDigest+40 S8 A32])) AttestationCommands.c:215 -1
+     (nil))
+(insn 83 82 84 9 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1062 [0xfffffffffffffbda])) [0 auditInfo.attested.sessionAudit.sessionDigest+40 S8 A16])
+        (reg:DI 125)) AttestationCommands.c:215 -1
+     (nil))
+(insn 84 83 85 9 (set (reg:HI 126)
+        (mem/j:HI (plus:DI (reg/f:DI 119)
+                (const_int 244 [0xf4])) [0 session_7->u2.auditDigest+48 S2 A32])) AttestationCommands.c:215 -1
+     (nil))
+(insn 85 84 86 9 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1054 [0xfffffffffffffbe2])) [0 auditInfo.attested.sessionAudit.sessionDigest+48 S2 A16])
+        (reg:HI 126)) AttestationCommands.c:215 -1
+     (nil))
+(insn 86 85 87 9 (set (reg/f:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:218 -1
+     (nil))
+(insn 87 86 88 9 (set (reg:SI 98 [ D.13169 ])
+        (mem/j:SI (plus:DI (reg/f:DI 127)
+                (const_int 8 [0x8])) [0 in_4(D)->sessionHandle+0 S4 A32])) AttestationCommands.c:218 -1
+     (nil))
+(insn 88 87 89 9 (set (reg:SI 99 [ D.13169 ])
+        (mem/c:SI (symbol_ref:DI ("g_exclusiveAuditSession") [flags 0x40]  <var_decl 0x7f2a88d16480 g_exclusiveAuditSession>) [0 g_exclusiveAuditSession+0 S4 A32])) AttestationCommands.c:218 -1
+     (nil))
+(insn 89 88 90 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 98 [ D.13169 ])
+            (reg:SI 99 [ D.13169 ]))) AttestationCommands.c:218 -1
+     (nil))
+(insn 90 89 91 9 (set (reg:QI 100 [ D.13174 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) AttestationCommands.c:218 -1
+     (nil))
+(insn 91 90 92 9 (set (reg:QI 101 [ D.13172 ])
+        (reg:QI 100 [ D.13174 ])) AttestationCommands.c:218 -1
+     (nil))
+(insn 92 91 93 9 (set (mem/j/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1104 [0xfffffffffffffbb0])) [0 auditInfo.attested.sessionAudit.exclusiveSession+0 S1 A64])
+        (reg:QI 101 [ D.13172 ])) AttestationCommands.c:218 -1
+     (nil))
+(insn 93 92 94 9 (set (reg/f:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])) AttestationCommands.c:221 -1
+     (nil))
+(insn 94 93 95 9 (parallel [
+            (set (reg/f:DI 102 [ D.13175 ])
+                (plus:DI (reg/f:DI 128)
+                    (const_int 1234 [0x4d2])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:221 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])
+            (const_int 1234 [0x4d2]))
+        (nil)))
+(insn 95 94 96 9 (set (reg/f:DI 103 [ D.13176 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])) AttestationCommands.c:221 -1
+     (nil))
+(insn 96 95 97 9 (set (reg/f:DI 129)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:221 -1
+     (nil))
+(insn 97 96 98 9 (parallel [
+            (set (reg/f:DI 104 [ D.13173 ])
+                (plus:DI (reg/f:DI 129)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:221 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 12 [0xc]))
+        (nil)))
+(insn 98 97 99 9 (set (reg/f:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:221 -1
+     (nil))
+(insn 99 98 100 9 (parallel [
+            (set (reg/f:DI 105 [ D.13171 ])
+                (plus:DI (reg/f:DI 130)
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:221 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 64 [0x40]))
+        (nil)))
+(insn 100 99 101 9 (parallel [
+            (set (reg:DI 131)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:221 -1
+     (nil))
+(insn 101 100 102 9 (set (reg:DI 132)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:221 -1
+     (nil))
+(insn 102 101 103 9 (set (reg:DI 38 r9)
+        (reg/f:DI 102 [ D.13175 ])) AttestationCommands.c:221 -1
+     (nil))
+(insn 103 102 104 9 (set (reg:DI 37 r8)
+        (reg/f:DI 103 [ D.13176 ])) AttestationCommands.c:221 -1
+     (nil))
+(insn 104 103 105 9 (set (reg:DI 2 cx)
+        (reg/f:DI 104 [ D.13173 ])) AttestationCommands.c:221 -1
+     (nil))
+(insn 105 104 106 9 (set (reg:DI 1 dx)
+        (reg:DI 131)) AttestationCommands.c:221 -1
+     (nil))
+(insn 106 105 107 9 (set (reg:DI 4 si)
+        (reg/f:DI 105 [ D.13171 ])) AttestationCommands.c:221 -1
+     (nil))
+(insn 107 106 108 9 (set (reg:DI 5 di)
+        (reg:DI 132)) AttestationCommands.c:221 -1
+     (nil))
+(call_insn 108 107 109 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SignAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82e58 SignAttestInfo>) [0 SignAttestInfo S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:221 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 109 108 112 9 (set (reg:SI 87 [ D.13168 ])
+        (reg:SI 0 ax)) AttestationCommands.c:221 -1
+     (nil))
+(code_label 112 109 113 11 26 "" [3 uses])
+(note 113 112 114 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 114 113 118 11 (set (reg:SI 106 [ <retval> ])
+        (reg:SI 87 [ D.13168 ])) -1
+     (nil))
+(insn 118 114 119 11 (set (reg/i:SI 0 ax)
+        (reg:SI 106 [ <retval> ])) AttestationCommands.c:224 -1
+     (nil))
+(insn 119 118 120 11 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13177+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) AttestationCommands.c:224 -1
+     (nil))
+(jump_insn 120 119 126 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 123)
+            (pc))) AttestationCommands.c:224 -1
+     (nil)
+ -> 123)
+(note 126 120 121 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(call_insn 121 126 122 13 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f2a88eb95e8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:224 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 122 121 123)
+(code_label 123 122 127 14 27 "" [1 uses])
+(note 127 123 124 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 124 127 0 14 (use (reg/i:SI 0 ax)) AttestationCommands.c:224 -1
+     (nil))
+
+;; Function TPM2_GetCommandAuditDigest (TPM2_GetCommandAuditDigest, funcdef_no=6, decl_uid=12960, cgraph_uid=6, symbol_order=6)
+
+Partition 2: size 1232 align 16
+	auditInfo
+Partition 0: size 8 align 8
+	signObject_8
+Partition 1: size 4 align 4
+	result_33
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 22 from 11 to 12.
+Redirecting jump 37 from 11 to 12.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+Removing jump 112.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AttestationCommands.c:235 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AttestationCommands.c:235 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13187+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:235 -1
+     (nil))
+(insn 8 5 9 2 (set (reg/f:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:238 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13179 ])
+        (mem/j:SI (plus:DI (reg/f:DI 103)
+                (const_int 4 [0x4])) [0 in_5(D)->signHandle+0 S4 A32])) AttestationCommands.c:238 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13179 ])) AttestationCommands.c:238 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f2a88d650d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:238 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 12 11 13 2 (set (reg:DI 104)
+        (reg:DI 0 ax)) AttestationCommands.c:238 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])
+        (reg:DI 104)) AttestationCommands.c:238 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:240 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (reg:DI 105)) AttestationCommands.c:240 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("IsSigningObject") [flags 0x41]  <function_decl 0x7f2a88e87000 IsSigningObject>) [0 IsSigningObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:240 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 89 [ D.13180 ])
+        (reg:SI 0 ax)) AttestationCommands.c:240 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.13180 ])
+            (const_int 0 [0]))) AttestationCommands.c:240 -1
+     (nil))
+(jump_insn 19 18 20 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) AttestationCommands.c:240 -1
+     (nil)
+ -> 24)
+(note 20 19 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 4 (set (reg:SI 87 [ D.13178 ])
+        (const_int 668 [0x29c])) AttestationCommands.c:241 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (label_ref:DI 109)) AttestationCommands.c:241 654 {jump}
+     (nil)
+ -> 109)
+(barrier 23 22 24)
+(code_label 24 23 25 5 29 "" [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 5 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:242 -1
+     (nil))
+(insn 27 26 28 5 (parallel [
+            (set (reg/f:DI 90 [ D.13181 ])
+                (plus:DI (reg/f:DI 106)
+                    (const_int 60 [0x3c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:242 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 60 [0x3c]))
+        (nil)))
+(insn 28 27 29 5 (set (reg:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:242 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:DI 4 si)
+        (reg/f:DI 90 [ D.13181 ])) AttestationCommands.c:242 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:DI 5 di)
+        (reg:DI 107)) AttestationCommands.c:242 -1
+     (nil))
+(call_insn 31 30 32 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptSelectSignScheme") [flags 0x41]  <function_decl 0x7f2a88e4d000 CryptSelectSignScheme>) [0 CryptSelectSignScheme S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:242 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 32 31 33 5 (set (reg:SI 91 [ D.13180 ])
+        (reg:SI 0 ax)) AttestationCommands.c:242 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13180 ])
+            (const_int 0 [0]))) AttestationCommands.c:242 -1
+     (nil))
+(jump_insn 34 33 35 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) AttestationCommands.c:242 -1
+     (nil)
+ -> 39)
+(note 35 34 36 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 6 (set (reg:SI 87 [ D.13178 ])
+        (const_int 722 [0x2d2])) AttestationCommands.c:243 -1
+     (nil))
+(jump_insn 37 36 38 6 (set (pc)
+        (label_ref:DI 109)) AttestationCommands.c:243 654 {jump}
+     (nil)
+ -> 109)
+(barrier 38 37 39)
+(code_label 39 38 40 7 31 "" [1 uses])
+(note 40 39 41 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 7 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:246 -1
+     (nil))
+(insn 42 41 43 7 (parallel [
+            (set (reg/f:DI 92 [ D.13182 ])
+                (plus:DI (reg/f:DI 108)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:246 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 43 42 44 7 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:246 -1
+     (nil))
+(insn 44 43 45 7 (parallel [
+            (set (reg/f:DI 93 [ D.13181 ])
+                (plus:DI (reg/f:DI 109)
+                    (const_int 60 [0x3c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:246 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 60 [0x3c]))
+        (nil)))
+(insn 45 44 46 7 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:246 -1
+     (nil))
+(insn 46 45 47 7 (set (reg:SI 94 [ D.13179 ])
+        (mem/j:SI (plus:DI (reg/f:DI 110)
+                (const_int 4 [0x4])) [0 in_5(D)->signHandle+0 S4 A32])) AttestationCommands.c:246 -1
+     (nil))
+(insn 47 46 48 7 (parallel [
+            (set (reg:DI 111)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:246 -1
+     (nil))
+(insn 48 47 49 7 (set (reg:DI 2 cx)
+        (reg:DI 111)) AttestationCommands.c:246 -1
+     (nil))
+(insn 49 48 50 7 (set (reg:DI 1 dx)
+        (reg/f:DI 92 [ D.13182 ])) AttestationCommands.c:246 -1
+     (nil))
+(insn 50 49 51 7 (set (reg:DI 4 si)
+        (reg/f:DI 93 [ D.13181 ])) AttestationCommands.c:246 -1
+     (nil))
+(insn 51 50 52 7 (set (reg:SI 5 di)
+        (reg:SI 94 [ D.13179 ])) AttestationCommands.c:246 -1
+     (nil))
+(call_insn 52 51 53 7 (call (mem:QI (symbol_ref:DI ("FillInAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82d80 FillInAttestInfo>) [0 FillInAttestInfo S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:246 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 53 52 54 7 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1244 [0xfffffffffffffb24])) [0 auditInfo.type+0 S2 A32])
+        (const_int -32747 [0xffffffffffff8015])) AttestationCommands.c:249 -1
+     (nil))
+(insn 54 53 55 7 (set (reg:HI 95 [ D.13183 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f2a88d16ea0 gp>)
+                    (const_int 906 [0x38a]))) [0 gp.auditHashAlg+0 S2 A16])) AttestationCommands.c:250 -1
+     (nil))
+(insn 55 54 56 7 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1096 [0xfffffffffffffbb8])) [0 auditInfo.attested.commandAudit.digestAlg+0 S2 A64])
+        (reg:HI 95 [ D.13183 ])) AttestationCommands.c:250 -1
+     (nil))
+(insn 56 55 57 7 (set (reg:DI 96 [ D.13184 ])
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f2a88d16ea0 gp>)
+                    (const_int 912 [0x390]))) [0 gp.auditCounter+0 S8 A64])) AttestationCommands.c:251 -1
+     (nil))
+(insn 57 56 58 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1104 [0xfffffffffffffbb0])) [0 auditInfo.attested.commandAudit.auditCounter+0 S8 A64])
+        (reg:DI 96 [ D.13184 ])) AttestationCommands.c:251 -1
+     (nil))
+(insn 58 57 59 7 (set (reg:DI 112)
+        (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7f2a88d58090 gr>)
+                (const_int 216 [0xd8])))) AttestationCommands.c:253 -1
+     (nil))
+(insn 59 58 60 7 (set (reg:DI 113)
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7f2a88d58090 gr>)
+                    (const_int 216 [0xd8]))) [0 gr.commandAuditDigest+0 S8 A64])) AttestationCommands.c:253 -1
+     (nil))
+(insn 60 59 61 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1094 [0xfffffffffffffbba])) [0 auditInfo.attested.commandAudit.auditDigest+0 S8 A16])
+        (reg:DI 113)) AttestationCommands.c:253 -1
+     (nil))
+(insn 61 60 62 7 (set (reg:DI 114)
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7f2a88d58090 gr>)
+                    (const_int 224 [0xe0]))) [0 gr.commandAuditDigest+8 S8 A64])) AttestationCommands.c:253 -1
+     (nil))
+(insn 62 61 63 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1086 [0xfffffffffffffbc2])) [0 auditInfo.attested.commandAudit.auditDigest+8 S8 A16])
+        (reg:DI 114)) AttestationCommands.c:253 -1
+     (nil))
+(insn 63 62 64 7 (set (reg:DI 115)
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7f2a88d58090 gr>)
+                    (const_int 232 [0xe8]))) [0 gr.commandAuditDigest+16 S8 A64])) AttestationCommands.c:253 -1
+     (nil))
+(insn 64 63 65 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1078 [0xfffffffffffffbca])) [0 auditInfo.attested.commandAudit.auditDigest+16 S8 A16])
+        (reg:DI 115)) AttestationCommands.c:253 -1
+     (nil))
+(insn 65 64 66 7 (set (reg:DI 116)
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7f2a88d58090 gr>)
+                    (const_int 240 [0xf0]))) [0 gr.commandAuditDigest+24 S8 A64])) AttestationCommands.c:253 -1
+     (nil))
+(insn 66 65 67 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1070 [0xfffffffffffffbd2])) [0 auditInfo.attested.commandAudit.auditDigest+24 S8 A16])
+        (reg:DI 116)) AttestationCommands.c:253 -1
+     (nil))
+(insn 67 66 68 7 (set (reg:DI 117)
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7f2a88d58090 gr>)
+                    (const_int 248 [0xf8]))) [0 gr.commandAuditDigest+32 S8 A64])) AttestationCommands.c:253 -1
+     (nil))
+(insn 68 67 69 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1062 [0xfffffffffffffbda])) [0 auditInfo.attested.commandAudit.auditDigest+32 S8 A16])
+        (reg:DI 117)) AttestationCommands.c:253 -1
+     (nil))
+(insn 69 68 70 7 (set (reg:DI 118)
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7f2a88d58090 gr>)
+                    (const_int 256 [0x100]))) [0 gr.commandAuditDigest+40 S8 A64])) AttestationCommands.c:253 -1
+     (nil))
+(insn 70 69 71 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1054 [0xfffffffffffffbe2])) [0 auditInfo.attested.commandAudit.auditDigest+40 S8 A16])
+        (reg:DI 118)) AttestationCommands.c:253 -1
+     (nil))
+(insn 71 70 72 7 (set (reg:HI 119)
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7f2a88d58090 gr>)
+                    (const_int 264 [0x108]))) [0 gr.commandAuditDigest+48 S2 A64])) AttestationCommands.c:253 -1
+     (nil))
+(insn 72 71 73 7 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1046 [0xfffffffffffffbea])) [0 auditInfo.attested.commandAudit.auditDigest+48 S2 A16])
+        (reg:HI 119)) AttestationCommands.c:253 -1
+     (nil))
+(insn 73 72 74 7 (parallel [
+            (set (reg:DI 120)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:254 -1
+     (nil))
+(insn 74 73 75 7 (parallel [
+            (set (reg:DI 121)
+                (plus:DI (reg:DI 120)
+                    (const_int 204 [0xcc])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:254 -1
+     (nil))
+(insn 75 74 76 7 (set (reg:DI 5 di)
+        (reg:DI 121)) AttestationCommands.c:254 -1
+     (nil))
+(call_insn 76 75 77 7 (call (mem:QI (symbol_ref:DI ("CommandAuditGetDigest") [flags 0x41]  <function_decl 0x7f2a88e2f000 CommandAuditGetDigest>) [0 CommandAuditGetDigest S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:254 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 77 76 78 7 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])) AttestationCommands.c:259 -1
+     (nil))
+(insn 78 77 79 7 (parallel [
+            (set (reg/f:DI 97 [ D.13185 ])
+                (plus:DI (reg/f:DI 122)
+                    (const_int 1234 [0x4d2])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:259 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])
+            (const_int 1234 [0x4d2]))
+        (nil)))
+(insn 79 78 80 7 (set (reg/f:DI 98 [ D.13186 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])) AttestationCommands.c:259 -1
+     (nil))
+(insn 80 79 81 7 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:259 -1
+     (nil))
+(insn 81 80 82 7 (parallel [
+            (set (reg/f:DI 99 [ D.13182 ])
+                (plus:DI (reg/f:DI 123)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:259 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 82 81 83 7 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:259 -1
+     (nil))
+(insn 83 82 84 7 (parallel [
+            (set (reg/f:DI 100 [ D.13181 ])
+                (plus:DI (reg/f:DI 124)
+                    (const_int 60 [0x3c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:259 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 60 [0x3c]))
+        (nil)))
+(insn 84 83 85 7 (parallel [
+            (set (reg:DI 125)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:259 -1
+     (nil))
+(insn 85 84 86 7 (set (reg:DI 126)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:259 -1
+     (nil))
+(insn 86 85 87 7 (set (reg:DI 38 r9)
+        (reg/f:DI 97 [ D.13185 ])) AttestationCommands.c:259 -1
+     (nil))
+(insn 87 86 88 7 (set (reg:DI 37 r8)
+        (reg/f:DI 98 [ D.13186 ])) AttestationCommands.c:259 -1
+     (nil))
+(insn 88 87 89 7 (set (reg:DI 2 cx)
+        (reg/f:DI 99 [ D.13182 ])) AttestationCommands.c:259 -1
+     (nil))
+(insn 89 88 90 7 (set (reg:DI 1 dx)
+        (reg:DI 125)) AttestationCommands.c:259 -1
+     (nil))
+(insn 90 89 91 7 (set (reg:DI 4 si)
+        (reg/f:DI 100 [ D.13181 ])) AttestationCommands.c:259 -1
+     (nil))
+(insn 91 90 92 7 (set (reg:DI 5 di)
+        (reg:DI 126)) AttestationCommands.c:259 -1
+     (nil))
+(call_insn 92 91 93 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SignAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82e58 SignAttestInfo>) [0 SignAttestInfo S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:259 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 93 92 94 7 (set (reg:SI 127)
+        (reg:SI 0 ax)) AttestationCommands.c:259 -1
+     (nil))
+(insn 94 93 95 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1260 [0xfffffffffffffb14])) [0 result+0 S4 A32])
+        (reg:SI 127)) AttestationCommands.c:259 -1
+     (nil))
+(insn 95 94 96 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1260 [0xfffffffffffffb14])) [0 result+0 S4 A32])
+            (const_int 0 [0]))) AttestationCommands.c:263 -1
+     (nil))
+(jump_insn 96 95 97 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 104)
+            (pc))) AttestationCommands.c:263 -1
+     (nil)
+ -> 104)
+(note 97 96 98 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 98 97 99 8 (set (reg/f:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:263 -1
+     (nil))
+(insn 99 98 100 8 (set (reg:SI 101 [ D.13179 ])
+        (mem/j:SI (plus:DI (reg/f:DI 128)
+                (const_int 4 [0x4])) [0 in_5(D)->signHandle+0 S4 A32])) AttestationCommands.c:263 -1
+     (nil))
+(insn 100 99 101 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ D.13179 ])
+            (const_int 1073741831 [0x40000007]))) AttestationCommands.c:263 -1
+     (nil))
+(jump_insn 101 100 102 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 104)
+            (pc))) AttestationCommands.c:263 -1
+     (nil)
+ -> 104)
+(note 102 101 103 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 103 102 104 9 (set (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7f2a88d58090 gr>)
+                    (const_int 216 [0xd8]))) [0 gr.commandAuditDigest.t.size+0 S2 A64])
+        (const_int 0 [0])) AttestationCommands.c:265 -1
+     (nil))
+(code_label 104 103 105 10 32 "" [2 uses])
+(note 105 104 106 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 106 105 109 10 (set (reg:SI 87 [ D.13178 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1260 [0xfffffffffffffb14])) [0 result+0 S4 A32])) AttestationCommands.c:266 -1
+     (nil))
+(code_label 109 106 110 12 33 "" [2 uses])
+(note 110 109 111 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 111 110 115 12 (set (reg:SI 102 [ <retval> ])
+        (reg:SI 87 [ D.13178 ])) -1
+     (nil))
+(insn 115 111 116 12 (set (reg/i:SI 0 ax)
+        (reg:SI 102 [ <retval> ])) AttestationCommands.c:267 -1
+     (nil))
+(insn 116 115 117 12 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13187+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) AttestationCommands.c:267 -1
+     (nil))
+(jump_insn 117 116 123 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 120)
+            (pc))) AttestationCommands.c:267 -1
+     (nil)
+ -> 120)
+(note 123 117 118 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(call_insn 118 123 119 14 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f2a88eb95e8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:267 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 119 118 120)
+(code_label 120 119 124 15 34 "" [1 uses])
+(note 124 120 121 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 121 124 0 15 (use (reg/i:SI 0 ax)) AttestationCommands.c:267 -1
+     (nil))
+
+;; Function TPM2_GetTime (TPM2_GetTime, funcdef_no=7, decl_uid=12980, cgraph_uid=7, symbol_order=7)
+
+Partition 1: size 1232 align 16
+	timeInfo
+Partition 0: size 8 align 8
+	signObject_7
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 22 from 8 to 9.
+Redirecting jump 37 from 8 to 9.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 89.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AttestationCommands.c:278 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AttestationCommands.c:278 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13196+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:278 -1
+     (nil))
+(insn 8 5 9 2 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:280 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13189 ])
+        (mem/j:SI (plus:DI (reg/f:DI 107)
+                (const_int 4 [0x4])) [0 in_4(D)->signHandle+0 S4 A32])) AttestationCommands.c:280 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13189 ])) AttestationCommands.c:280 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f2a88d650d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:280 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 12 11 13 2 (set (reg:DI 108)
+        (reg:DI 0 ax)) AttestationCommands.c:280 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])
+        (reg:DI 108)) AttestationCommands.c:280 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:282 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (reg:DI 109)) AttestationCommands.c:282 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("IsSigningObject") [flags 0x41]  <function_decl 0x7f2a88e87000 IsSigningObject>) [0 IsSigningObject S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:282 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 89 [ D.13190 ])
+        (reg:SI 0 ax)) AttestationCommands.c:282 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.13190 ])
+            (const_int 0 [0]))) AttestationCommands.c:282 -1
+     (nil))
+(jump_insn 19 18 20 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) AttestationCommands.c:282 -1
+     (nil)
+ -> 24)
+(note 20 19 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 4 (set (reg:SI 87 [ D.13188 ])
+        (const_int 668 [0x29c])) AttestationCommands.c:283 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (label_ref:DI 86)) AttestationCommands.c:283 654 {jump}
+     (nil)
+ -> 86)
+(barrier 23 22 24)
+(code_label 24 23 25 5 36 "" [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 5 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:284 -1
+     (nil))
+(insn 27 26 28 5 (parallel [
+            (set (reg/f:DI 90 [ D.13191 ])
+                (plus:DI (reg/f:DI 110)
+                    (const_int 60 [0x3c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:284 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 60 [0x3c]))
+        (nil)))
+(insn 28 27 29 5 (set (reg:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:284 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:DI 4 si)
+        (reg/f:DI 90 [ D.13191 ])) AttestationCommands.c:284 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:DI 5 di)
+        (reg:DI 111)) AttestationCommands.c:284 -1
+     (nil))
+(call_insn 31 30 32 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptSelectSignScheme") [flags 0x41]  <function_decl 0x7f2a88e4d000 CryptSelectSignScheme>) [0 CryptSelectSignScheme S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:284 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 32 31 33 5 (set (reg:SI 91 [ D.13190 ])
+        (reg:SI 0 ax)) AttestationCommands.c:284 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13190 ])
+            (const_int 0 [0]))) AttestationCommands.c:284 -1
+     (nil))
+(jump_insn 34 33 35 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) AttestationCommands.c:284 -1
+     (nil)
+ -> 39)
+(note 35 34 36 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 6 (set (reg:SI 87 [ D.13188 ])
+        (const_int 722 [0x2d2])) AttestationCommands.c:285 -1
+     (nil))
+(jump_insn 37 36 38 6 (set (pc)
+        (label_ref:DI 86)) AttestationCommands.c:285 654 {jump}
+     (nil)
+ -> 86)
+(barrier 38 37 39)
+(code_label 39 38 40 7 38 "" [1 uses])
+(note 40 39 41 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 7 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:288 -1
+     (nil))
+(insn 42 41 43 7 (parallel [
+            (set (reg/f:DI 92 [ D.13192 ])
+                (plus:DI (reg/f:DI 112)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:288 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 43 42 44 7 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:288 -1
+     (nil))
+(insn 44 43 45 7 (parallel [
+            (set (reg/f:DI 93 [ D.13191 ])
+                (plus:DI (reg/f:DI 113)
+                    (const_int 60 [0x3c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:288 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 60 [0x3c]))
+        (nil)))
+(insn 45 44 46 7 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:288 -1
+     (nil))
+(insn 46 45 47 7 (set (reg:SI 94 [ D.13189 ])
+        (mem/j:SI (plus:DI (reg/f:DI 114)
+                (const_int 4 [0x4])) [0 in_4(D)->signHandle+0 S4 A32])) AttestationCommands.c:288 -1
+     (nil))
+(insn 47 46 48 7 (parallel [
+            (set (reg:DI 115)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:288 -1
+     (nil))
+(insn 48 47 49 7 (set (reg:DI 2 cx)
+        (reg:DI 115)) AttestationCommands.c:288 -1
+     (nil))
+(insn 49 48 50 7 (set (reg:DI 1 dx)
+        (reg/f:DI 92 [ D.13192 ])) AttestationCommands.c:288 -1
+     (nil))
+(insn 50 49 51 7 (set (reg:DI 4 si)
+        (reg/f:DI 93 [ D.13191 ])) AttestationCommands.c:288 -1
+     (nil))
+(insn 51 50 52 7 (set (reg:SI 5 di)
+        (reg:SI 94 [ D.13189 ])) AttestationCommands.c:288 -1
+     (nil))
+(call_insn 52 51 53 7 (call (mem:QI (symbol_ref:DI ("FillInAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82d80 FillInAttestInfo>) [0 FillInAttestInfo S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:288 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 53 52 54 7 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1244 [0xfffffffffffffb24])) [0 timeInfo.type+0 S2 A32])
+        (const_int -32743 [0xffffffffffff8019])) AttestationCommands.c:290 -1
+     (nil))
+(insn 54 53 55 7 (set (reg:DI 95 [ D.13193 ])
+        (mem/c:DI (symbol_ref:DI ("g_time") [flags 0x40]  <var_decl 0x7f2a88d16510 g_time>) [0 g_time+0 S8 A64])) AttestationCommands.c:291 -1
+     (nil))
+(insn 55 54 56 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1104 [0xfffffffffffffbb0])) [0 timeInfo.attested.time.time.time+0 S8 A64])
+        (reg:DI 95 [ D.13193 ])) AttestationCommands.c:291 -1
+     (nil))
+(insn 56 55 57 7 (parallel [
+            (set (reg:DI 116)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:292 -1
+     (nil))
+(insn 57 56 58 7 (parallel [
+            (set (reg:DI 117)
+                (plus:DI (reg:DI 116)
+                    (const_int 152 [0x98])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:292 -1
+     (nil))
+(insn 58 57 59 7 (set (reg:DI 5 di)
+        (reg:DI 117)) AttestationCommands.c:292 -1
+     (nil))
+(call_insn 59 58 60 7 (call (mem:QI (symbol_ref:DI ("TimeFillInfo") [flags 0x41]  <function_decl 0x7f2a88e2a438 TimeFillInfo>) [0 TimeFillInfo S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:292 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 60 59 61 7 (set (reg:SI 96 [ D.13189 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f2a88d16ea0 gp>)
+                    (const_int 924 [0x39c]))) [0 gp.firmwareV1+0 S4 A32])) AttestationCommands.c:295 -1
+     (nil))
+(insn 61 60 62 7 (set (reg:DI 97 [ D.13193 ])
+        (zero_extend:DI (reg:SI 96 [ D.13189 ]))) AttestationCommands.c:295 -1
+     (nil))
+(insn 62 61 63 7 (parallel [
+            (set (reg:DI 98 [ D.13193 ])
+                (ashift:DI (reg:DI 97 [ D.13193 ])
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:295 -1
+     (nil))
+(insn 63 62 64 7 (set (reg:SI 99 [ D.13189 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f2a88d16ea0 gp>)
+                    (const_int 928 [0x3a0]))) [0 gp.firmwareV2+0 S4 A64])) AttestationCommands.c:295 -1
+     (nil))
+(insn 64 63 65 7 (set (reg:DI 100 [ D.13193 ])
+        (zero_extend:DI (reg:SI 99 [ D.13189 ]))) AttestationCommands.c:295 -1
+     (nil))
+(insn 65 64 66 7 (parallel [
+            (set (reg:DI 101 [ D.13193 ])
+                (plus:DI (reg:DI 98 [ D.13193 ])
+                    (reg:DI 100 [ D.13193 ])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:295 -1
+     (nil))
+(insn 66 65 67 7 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1072 [0xfffffffffffffbd0])) [0 timeInfo.attested.time.firmwareVersion+0 S8 A64])
+        (reg:DI 101 [ D.13193 ])) AttestationCommands.c:295 -1
+     (nil))
+(insn 67 66 68 7 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])) AttestationCommands.c:298 -1
+     (nil))
+(insn 68 67 69 7 (parallel [
+            (set (reg/f:DI 102 [ D.13194 ])
+                (plus:DI (reg/f:DI 118)
+                    (const_int 1234 [0x4d2])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:298 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])
+            (const_int 1234 [0x4d2]))
+        (nil)))
+(insn 69 68 70 7 (set (reg/f:DI 103 [ D.13195 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1280 [0xfffffffffffffb00])) [0 out+0 S8 A64])) AttestationCommands.c:298 -1
+     (nil))
+(insn 70 69 71 7 (set (reg/f:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:298 -1
+     (nil))
+(insn 71 70 72 7 (parallel [
+            (set (reg/f:DI 104 [ D.13192 ])
+                (plus:DI (reg/f:DI 119)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:298 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 72 71 73 7 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])) AttestationCommands.c:298 -1
+     (nil))
+(insn 73 72 74 7 (parallel [
+            (set (reg/f:DI 105 [ D.13191 ])
+                (plus:DI (reg/f:DI 120)
+                    (const_int 60 [0x3c])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:298 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1272 [0xfffffffffffffb08])) [0 in+0 S8 A64])
+            (const_int 60 [0x3c]))
+        (nil)))
+(insn 74 73 75 7 (parallel [
+            (set (reg:DI 121)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1248 [0xfffffffffffffb20])))
+            (clobber (reg:CC 17 flags))
+        ]) AttestationCommands.c:298 -1
+     (nil))
+(insn 75 74 76 7 (set (reg:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1256 [0xfffffffffffffb18])) [0 signObject+0 S8 A64])) AttestationCommands.c:298 -1
+     (nil))
+(insn 76 75 77 7 (set (reg:DI 38 r9)
+        (reg/f:DI 102 [ D.13194 ])) AttestationCommands.c:298 -1
+     (nil))
+(insn 77 76 78 7 (set (reg:DI 37 r8)
+        (reg/f:DI 103 [ D.13195 ])) AttestationCommands.c:298 -1
+     (nil))
+(insn 78 77 79 7 (set (reg:DI 2 cx)
+        (reg/f:DI 104 [ D.13192 ])) AttestationCommands.c:298 -1
+     (nil))
+(insn 79 78 80 7 (set (reg:DI 1 dx)
+        (reg:DI 121)) AttestationCommands.c:298 -1
+     (nil))
+(insn 80 79 81 7 (set (reg:DI 4 si)
+        (reg/f:DI 105 [ D.13191 ])) AttestationCommands.c:298 -1
+     (nil))
+(insn 81 80 82 7 (set (reg:DI 5 di)
+        (reg:DI 122)) AttestationCommands.c:298 -1
+     (nil))
+(call_insn 82 81 83 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SignAttestInfo") [flags 0x41]  <function_decl 0x7f2a88e82e58 SignAttestInfo>) [0 SignAttestInfo S1 A8])
+            (const_int 0 [0]))) AttestationCommands.c:298 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 83 82 86 7 (set (reg:SI 87 [ D.13188 ])
+        (reg:SI 0 ax)) AttestationCommands.c:298 -1
+     (nil))
+(code_label 86 83 87 9 39 "" [2 uses])
+(note 87 86 88 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 92 9 (set (reg:SI 106 [ <retval> ])
+        (reg:SI 87 [ D.13188 ])) -1
+     (nil))
+(insn 92 88 93 9 (set (reg/i:SI 0 ax)
+        (reg:SI 106 [ <retval> ])) AttestationCommands.c:300 -1
+     (nil))
+(insn 93 92 94 9 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13196+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) AttestationCommands.c:300 -1
+     (nil))
+(jump_insn 94 93 100 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 97)
+            (pc))) AttestationCommands.c:300 -1
+     (nil)
+ -> 97)
+(note 100 94 95 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(call_insn 95 100 96 11 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f2a88eb95e8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) AttestationCommands.c:300 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 96 95 97)
+(code_label 97 96 101 12 40 "" [1 uses])
+(note 101 97 98 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 98 101 0 12 (use (reg/i:SI 0 ax)) AttestationCommands.c:300 -1
+     (nil))

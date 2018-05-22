@@ -1,0 +1,347 @@
+
+;; Function LocalityGetAttributes (LocalityGetAttributes, funcdef_no=2, decl_uid=11899, cgraph_uid=2, symbol_order=2)
+
+Partition 0: size 8 align 8
+	localityAsByte_2
+Partition 1: size 1 align 1
+	locality_attributes
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+Removing jump 81.
+Merging block 15 into block 13...
+Merged blocks 13 and 15.
+Merged 13 and 15 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg:SI 100)
+        (reg:SI 5 di [ locality ])) Locality.c:72 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 locality+0 S1 A32])
+        (subreg:QI (reg:SI 100) 0)) Locality.c:72 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.12883+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) Locality.c:72 -1
+     (nil))
+(insn 8 5 9 2 (parallel [
+            (set (reg:DI 101)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -17 [0xffffffffffffffef])))
+            (clobber (reg:CC 17 flags))
+        ]) Locality.c:74 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 localityAsByte+0 S8 A64])
+        (reg:DI 101)) Locality.c:74 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:DI 102)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -17 [0xffffffffffffffef])))
+            (clobber (reg:CC 17 flags))
+        ]) Locality.c:75 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 1 dx)
+        (const_int 1 [0x1])) Locality.c:75 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 4 si)
+        (const_int 0 [0])) Locality.c:75 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 5 di)
+        (reg:DI 102)) Locality.c:75 -1
+     (nil))
+(call_insn 14 13 15 2 (call (mem:QI (symbol_ref:DI ("MemorySet") [flags 0x41]  <function_decl 0x7f36dc2c2870 MemorySet>) [0 MemorySet S1 A8])
+        (const_int 0 [0])) Locality.c:75 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 15 14 16 2 (set (reg:SI 87 [ D.12880 ])
+        (zero_extend:SI (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 locality+0 S1 A32]))) Locality.c:76 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 87 [ D.12880 ])
+            (const_int 4 [0x4]))) Locality.c:76 -1
+     (nil))
+(jump_insn 17 16 92 2 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 60)
+            (pc))) Locality.c:76 -1
+     (nil)
+ -> 60)
+(note 92 17 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 92 19 4 (set (reg:DI 103)
+        (zero_extend:DI (reg:SI 87 [ D.12880 ]))) Locality.c:76 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:DI 104)
+        (mem/u/c:DI (plus:DI (ashift:DI (reg:DI 103)
+                    (const_int 3 [0x3]))
+                (label_ref:DI 22)) [0  S8 A8])) Locality.c:76 -1
+     (insn_list:REG_LABEL_OPERAND 22 (nil)))
+(jump_insn 20 19 21 4 (parallel [
+            (set (pc)
+                (reg:DI 104))
+            (use (label_ref 22))
+        ]) Locality.c:76 -1
+     (nil)
+ -> 22)
+(barrier 21 20 22)
+(code_label 22 21 23 4 "" [2 uses])
+(jump_table_data 23 22 24 (addr_vec:DI [
+            (label_ref:DI 25)
+            (label_ref:DI 32)
+            (label_ref:DI 39)
+            (label_ref:DI 46)
+            (label_ref:DI 53)
+        ]))
+(barrier 24 23 25)
+(code_label 25 24 26 5 3 "" [1 uses])
+(note 26 25 27 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 5 (set (reg:QI 88 [ D.12881 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])) Locality.c:79 -1
+     (nil))
+(insn 28 27 29 5 (parallel [
+            (set (reg:QI 89 [ D.12881 ])
+                (ior:QI (reg:QI 88 [ D.12881 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) Locality.c:79 -1
+     (nil))
+(insn 29 28 30 5 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])
+        (reg:QI 89 [ D.12881 ])) Locality.c:79 -1
+     (nil))
+(jump_insn 30 29 31 5 (set (pc)
+        (label_ref 75)) Locality.c:80 -1
+     (nil)
+ -> 75)
+(barrier 31 30 32)
+(code_label 32 31 33 6 5 "" [1 uses])
+(note 33 32 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 6 (set (reg:QI 90 [ D.12881 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])) Locality.c:82 -1
+     (nil))
+(insn 35 34 36 6 (parallel [
+            (set (reg:QI 91 [ D.12881 ])
+                (ior:QI (reg:QI 90 [ D.12881 ])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) Locality.c:82 -1
+     (nil))
+(insn 36 35 37 6 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])
+        (reg:QI 91 [ D.12881 ])) Locality.c:82 -1
+     (nil))
+(jump_insn 37 36 38 6 (set (pc)
+        (label_ref 75)) Locality.c:83 -1
+     (nil)
+ -> 75)
+(barrier 38 37 39)
+(code_label 39 38 40 7 6 "" [1 uses])
+(note 40 39 41 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 7 (set (reg:QI 92 [ D.12881 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])) Locality.c:85 -1
+     (nil))
+(insn 42 41 43 7 (parallel [
+            (set (reg:QI 93 [ D.12881 ])
+                (ior:QI (reg:QI 92 [ D.12881 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) Locality.c:85 -1
+     (nil))
+(insn 43 42 44 7 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])
+        (reg:QI 93 [ D.12881 ])) Locality.c:85 -1
+     (nil))
+(jump_insn 44 43 45 7 (set (pc)
+        (label_ref 75)) Locality.c:86 -1
+     (nil)
+ -> 75)
+(barrier 45 44 46)
+(code_label 46 45 47 8 7 "" [1 uses])
+(note 47 46 48 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 8 (set (reg:QI 94 [ D.12881 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])) Locality.c:88 -1
+     (nil))
+(insn 49 48 50 8 (parallel [
+            (set (reg:QI 95 [ D.12881 ])
+                (ior:QI (reg:QI 94 [ D.12881 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) Locality.c:88 -1
+     (nil))
+(insn 50 49 51 8 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])
+        (reg:QI 95 [ D.12881 ])) Locality.c:88 -1
+     (nil))
+(jump_insn 51 50 52 8 (set (pc)
+        (label_ref 75)) Locality.c:89 -1
+     (nil)
+ -> 75)
+(barrier 52 51 53)
+(code_label 53 52 54 9 8 "" [1 uses])
+(note 54 53 55 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 55 54 56 9 (set (reg:QI 96 [ D.12881 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])) Locality.c:91 -1
+     (nil))
+(insn 56 55 57 9 (parallel [
+            (set (reg:QI 97 [ D.12881 ])
+                (ior:QI (reg:QI 96 [ D.12881 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) Locality.c:91 -1
+     (nil))
+(insn 57 56 58 9 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])
+        (reg:QI 97 [ D.12881 ])) Locality.c:91 -1
+     (nil))
+(jump_insn 58 57 59 9 (set (pc)
+        (label_ref 75)) Locality.c:92 -1
+     (nil)
+ -> 75)
+(barrier 59 58 60)
+(code_label 60 59 61 10 2 "" [1 uses])
+(note 61 60 62 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 62 61 63 10 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 locality+0 S1 A32])
+            (const_int 31 [0x1f]))) Locality.c:94 -1
+     (nil))
+(jump_insn 63 62 64 10 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 70)
+            (pc))) Locality.c:94 -1
+     (nil)
+ -> 70)
+(note 64 63 65 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 65 64 66 11 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) Locality.c:94 -1
+     (nil))
+(insn 66 65 67 11 (set (reg:SI 4 si)
+        (const_int 94 [0x5e])) Locality.c:94 -1
+     (nil))
+(insn 67 66 68 11 (set (reg:DI 5 di)
+        (const_int 0 [0])) Locality.c:94 -1
+     (nil))
+(call_insn 68 67 69 11 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7f36dc2270d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) Locality.c:94 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 69 68 70)
+(code_label 70 69 71 12 10 "" [1 uses])
+(note 71 70 72 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 12 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 localityAsByte+0 S8 A64])) Locality.c:95 -1
+     (nil))
+(insn 73 72 74 12 (set (reg:QI 106)
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 locality+0 S1 A32])) Locality.c:95 -1
+     (nil))
+(insn 74 73 75 12 (set (mem:QI (reg/f:DI 105) [0 *localityAsByte_2+0 S1 A8])
+        (reg:QI 106)) Locality.c:95 -1
+     (nil))
+(code_label 75 74 76 13 9 "" [5 uses])
+(note 76 75 77 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 77 76 80 13 (set (reg:QI 98 [ D.12882 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -17 [0xffffffffffffffef])) [0 locality_attributes+0 S1 A8])) Locality.c:98 -1
+     (nil))
+(insn 80 77 84 13 (set (reg:QI 99 [ <retval> ])
+        (reg:QI 98 [ D.12882 ])) Locality.c:98 -1
+     (nil))
+(insn 84 80 85 13 (set (reg/i:QI 0 ax)
+        (reg:QI 99 [ <retval> ])) Locality.c:99 -1
+     (nil))
+(insn 85 84 86 13 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.12883+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) Locality.c:99 -1
+     (nil))
+(jump_insn 86 85 93 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 89)
+            (pc))) Locality.c:99 -1
+     (nil)
+ -> 89)
+(note 93 86 87 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(call_insn 87 93 88 16 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f36dc3201b0 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) Locality.c:99 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 88 87 89)
+(code_label 89 88 94 17 12 "" [1 uses])
+(note 94 89 90 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 90 94 0 17 (use (reg/i:QI 0 ax)) Locality.c:99 -1
+     (nil))

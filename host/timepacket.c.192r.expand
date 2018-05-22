@@ -1,0 +1,1880 @@
+
+;; Function main (main, funcdef_no=2, decl_uid=6161, cgraph_uid=2, symbol_order=3)
+
+Partition 14: size 4096 align 16
+	responseBuffer
+Partition 7: size 8 align 8
+	endTime_126
+Partition 6: size 8 align 8
+	startTime_118
+Partition 5: size 8 align 8
+	timeDiff_16
+Partition 2: size 8 align 8
+	commandFilename_9
+Partition 19: size 8 align 8
+	num	usec
+Partition 18: size 8 align 8
+	submsg
+Partition 17: size 8 align 8
+	msg
+Partition 13: size 8 align 8
+	commandLength
+Partition 12: size 8 align 8
+	commandStringLength
+Partition 11: size 8 align 8
+	commandBuffer
+Partition 10: size 8 align 8
+	commandBufferString
+Partition 9: size 8 align 8
+	tssContext
+Partition 8: size 4 align 4
+	rc1_135
+Partition 4: size 4 align 4
+	count_15
+Partition 3: size 4 align 4
+	loops_12
+Partition 1: size 4 align 4
+	i_7
+Partition 0: size 4 align 4
+	rc_1
+Partition 15: size 4 align 4
+	responseLength
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+;; Generating RTL for gimple basic block 38
+
+;; Generating RTL for gimple basic block 39
+
+;; Generating RTL for gimple basic block 40
+
+;; Generating RTL for gimple basic block 41
+
+;; Generating RTL for gimple basic block 42
+
+;; Generating RTL for gimple basic block 43
+
+;; Generating RTL for gimple basic block 44
+
+;; Generating RTL for gimple basic block 45
+
+;; Generating RTL for gimple basic block 46
+
+;; Generating RTL for gimple basic block 47
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 53 from 8 to 19.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Redirecting jump 94 from 13 to 19.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+Edge 46->48 redirected to 50
+Merging block 48 into block 47...
+Merged blocks 47 and 48.
+Merged 47 and 48 without moving.
+Merging block 51 into block 50...
+Merged blocks 50 and 51.
+Merged 50 and 51 without moving.
+Removing jump 403.
+Merging block 52 into block 50...
+Merged blocks 50 and 52.
+Merged 50 and 52 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4244 [0xffffffffffffef6c])) [0 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) timepacket.c:64 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) timepacket.c:64 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.6316+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:64 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) timepacket.c:65 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4208 [0xffffffffffffef90])) [0 tssContext+0 S8 A64])
+        (const_int 0 [0])) timepacket.c:67 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4144 [0xffffffffffffefd0])) [0 commandFilename+0 S8 A64])
+        (const_int 0 [0])) timepacket.c:68 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4200 [0xffffffffffffef98])) [0 commandBufferString+0 S8 A64])
+        (const_int 0 [0])) timepacket.c:69 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4192 [0xffffffffffffefa0])) [0 commandBuffer+0 S8 A64])
+        (const_int 0 [0])) timepacket.c:70 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4220 [0xffffffffffffef84])) [0 loops+0 S4 A32])
+        (const_int 1 [0x1])) timepacket.c:73 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 87 [ D.6303 ])
+        (mem/f/c:DI (symbol_ref:DI ("stdout") [flags 0x40]  <var_decl 0x7ff9a7b4c5a0 stdout>) [0 stdout+0 S8 A64])) timepacket.c:80 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 2 cx)
+        (const_int 0 [0])) timepacket.c:80 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) timepacket.c:80 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) timepacket.c:80 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.6303 ])) timepacket.c:80 -1
+     (nil))
+(call_insn 19 18 20 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("setvbuf") [flags 0x41]  <function_decl 0x7ff9a7b8c1b0 setvbuf>) [0 setvbuf S1 A8])
+            (const_int 0 [0]))) timepacket.c:80 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 20 19 21 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7ff9a76c3ab0 *.LC0>)) timepacket.c:81 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) timepacket.c:81 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) timepacket.c:81 -1
+     (nil))
+(call_insn 23 22 24 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7ff9a76960d8 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) timepacket.c:81 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 24 23 25 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) timepacket.c:84 -1
+     (nil))
+(jump_insn 25 24 26 2 (set (pc)
+        (label_ref 161)) timepacket.c:84 -1
+     (nil)
+ -> 161)
+(barrier 26 25 167)
+(code_label 167 26 27 4 13 "" [1 uses])
+(note 27 167 28 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 4 (set (reg:SI 150)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])) timepacket.c:85 -1
+     (nil))
+(insn 29 28 30 4 (set (reg:DI 88 [ D.6304 ])
+        (sign_extend:DI (reg:SI 150))) timepacket.c:85 -1
+     (nil))
+(insn 30 29 31 4 (parallel [
+            (set (reg:DI 89 [ D.6304 ])
+                (ashift:DI (reg:DI 88 [ D.6304 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:85 -1
+     (nil))
+(insn 31 30 32 4 (set (reg/f:DI 151)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])) timepacket.c:85 -1
+     (nil))
+(insn 32 31 33 4 (parallel [
+            (set (reg/f:DI 90 [ D.6305 ])
+                (plus:DI (reg:DI 89 [ D.6304 ])
+                    (reg/f:DI 151)))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:85 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])
+            (reg:DI 89 [ D.6304 ]))
+        (nil)))
+(insn 33 32 34 4 (set (reg/f:DI 91 [ D.6306 ])
+        (mem/f:DI (reg/f:DI 90 [ D.6305 ]) [0 *_45+0 S8 A64])) timepacket.c:85 -1
+     (nil))
+(insn 34 33 35 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7ff9a76c3b40 *.LC1>)) timepacket.c:85 -1
+     (nil))
+(insn 35 34 36 4 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ D.6306 ])) timepacket.c:85 -1
+     (nil))
+(call_insn/i 36 35 37 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7ff9a7a940d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) timepacket.c:85 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 37 36 38 4 (set (reg:SI 92 [ D.6307 ])
+        (reg:SI 0 ax)) timepacket.c:85 -1
+     (nil))
+(insn 38 37 39 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.6307 ])
+            (const_int 0 [0]))) timepacket.c:85 -1
+     (nil))
+(jump_insn 39 38 40 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 64)
+            (pc))) timepacket.c:85 -1
+     (nil)
+ -> 64)
+(note 40 39 41 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:86 -1
+     (nil))
+(insn 42 41 43 5 (set (reg:SI 152)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])) timepacket.c:87 -1
+     (nil))
+(insn 43 42 44 5 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 152)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4244 [0xffffffffffffef6c])) [0 argc+0 S4 A32]))) timepacket.c:87 -1
+     (nil))
+(jump_insn 44 43 45 5 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 55)
+            (pc))) timepacket.c:87 -1
+     (nil)
+ -> 55)
+(note 45 44 46 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 6 (set (reg:SI 153)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])) timepacket.c:88 -1
+     (nil))
+(insn 47 46 48 6 (set (reg:DI 93 [ D.6304 ])
+        (sign_extend:DI (reg:SI 153))) timepacket.c:88 -1
+     (nil))
+(insn 48 47 49 6 (parallel [
+            (set (reg:DI 94 [ D.6304 ])
+                (ashift:DI (reg:DI 93 [ D.6304 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:88 -1
+     (nil))
+(insn 49 48 50 6 (set (reg/f:DI 154)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])) timepacket.c:88 -1
+     (nil))
+(insn 50 49 51 6 (parallel [
+            (set (reg/f:DI 95 [ D.6305 ])
+                (plus:DI (reg:DI 94 [ D.6304 ])
+                    (reg/f:DI 154)))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:88 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])
+            (reg:DI 94 [ D.6304 ]))
+        (nil)))
+(insn 51 50 52 6 (set (reg/f:DI 155)
+        (mem/f:DI (reg/f:DI 95 [ D.6305 ]) [0 *_51+0 S8 A64])) timepacket.c:88 -1
+     (nil))
+(insn 52 51 53 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4144 [0xffffffffffffefd0])) [0 commandFilename+0 S8 A64])
+        (reg/f:DI 155)) timepacket.c:88 -1
+     (nil))
+(jump_insn 53 52 54 6 (set (pc)
+        (label_ref:DI 158)) 654 {jump}
+     (nil)
+ -> 158)
+(barrier 54 53 55)
+(code_label 55 54 56 7 4 "" [1 uses])
+(note 56 55 57 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 57 56 58 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7ff9a76c3bd0 *.LC2>)) timepacket.c:91 -1
+     (nil))
+(call_insn 58 57 59 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7ff9a7a9d360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) timepacket.c:91 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 59 58 62 7 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7ff9a76a0360 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) timepacket.c:92 -1
+     (nil)
+    (nil))
+(jump_insn 62 59 63 7 (set (pc)
+        (label_ref 158)) -1
+     (nil)
+ -> 158)
+(barrier 63 62 64)
+(code_label 64 63 65 9 3 "" [1 uses])
+(note 65 64 66 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 9 (set (reg:SI 156)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])) timepacket.c:95 -1
+     (nil))
+(insn 67 66 68 9 (set (reg:DI 96 [ D.6304 ])
+        (sign_extend:DI (reg:SI 156))) timepacket.c:95 -1
+     (nil))
+(insn 68 67 69 9 (parallel [
+            (set (reg:DI 97 [ D.6304 ])
+                (ashift:DI (reg:DI 96 [ D.6304 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:95 -1
+     (nil))
+(insn 69 68 70 9 (set (reg/f:DI 157)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])) timepacket.c:95 -1
+     (nil))
+(insn 70 69 71 9 (parallel [
+            (set (reg/f:DI 98 [ D.6305 ])
+                (plus:DI (reg:DI 97 [ D.6304 ])
+                    (reg/f:DI 157)))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:95 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])
+            (reg:DI 97 [ D.6304 ]))
+        (nil)))
+(insn 71 70 72 9 (set (reg/f:DI 99 [ D.6306 ])
+        (mem/f:DI (reg/f:DI 98 [ D.6305 ]) [0 *_57+0 S8 A64])) timepacket.c:95 -1
+     (nil))
+(insn 72 71 73 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7ff9a76c3c60 *.LC3>)) timepacket.c:95 -1
+     (nil))
+(insn 73 72 74 9 (set (reg:DI 5 di)
+        (reg/f:DI 99 [ D.6306 ])) timepacket.c:95 -1
+     (nil))
+(call_insn/i 74 73 75 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7ff9a7a940d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) timepacket.c:95 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 75 74 76 9 (set (reg:SI 100 [ D.6307 ])
+        (reg:SI 0 ax)) timepacket.c:95 -1
+     (nil))
+(insn 76 75 77 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 100 [ D.6307 ])
+            (const_int 0 [0]))) timepacket.c:95 -1
+     (nil))
+(jump_insn 77 76 78 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 105)
+            (pc))) timepacket.c:95 -1
+     (nil)
+ -> 105)
+(note 78 77 79 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 79 78 80 10 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:96 -1
+     (nil))
+(insn 80 79 81 10 (set (reg:SI 158)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])) timepacket.c:97 -1
+     (nil))
+(insn 81 80 82 10 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 158)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4244 [0xffffffffffffef6c])) [0 argc+0 S4 A32]))) timepacket.c:97 -1
+     (nil))
+(jump_insn 82 81 83 10 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 96)
+            (pc))) timepacket.c:97 -1
+     (nil)
+ -> 96)
+(note 83 82 84 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 84 83 85 11 (set (reg:SI 159)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])) timepacket.c:98 -1
+     (nil))
+(insn 85 84 86 11 (set (reg:DI 101 [ D.6304 ])
+        (sign_extend:DI (reg:SI 159))) timepacket.c:98 -1
+     (nil))
+(insn 86 85 87 11 (parallel [
+            (set (reg:DI 102 [ D.6304 ])
+                (ashift:DI (reg:DI 101 [ D.6304 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:98 -1
+     (nil))
+(insn 87 86 88 11 (set (reg/f:DI 160)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])) timepacket.c:98 -1
+     (nil))
+(insn 88 87 89 11 (parallel [
+            (set (reg/f:DI 103 [ D.6305 ])
+                (plus:DI (reg:DI 102 [ D.6304 ])
+                    (reg/f:DI 160)))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:98 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])
+            (reg:DI 102 [ D.6304 ]))
+        (nil)))
+(insn 89 88 90 11 (set (reg/f:DI 104 [ D.6306 ])
+        (mem/f:DI (reg/f:DI 103 [ D.6305 ]) [0 *_63+0 S8 A64])) timepacket.c:98 -1
+     (nil))
+(insn 90 89 91 11 (set (reg:DI 5 di)
+        (reg/f:DI 104 [ D.6306 ])) timepacket.c:98 -1
+     (nil))
+(call_insn/i 91 90 92 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("atoi") [flags 0x41]  <function_decl 0x7ff9a7bbc0d8 atoi>) [0 atoi S1 A8])
+            (const_int 0 [0]))) timepacket.c:98 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 92 91 93 11 (set (reg:SI 105 [ D.6307 ])
+        (reg:SI 0 ax)) timepacket.c:98 -1
+     (nil))
+(insn 93 92 94 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4220 [0xffffffffffffef84])) [0 loops+0 S4 A32])
+        (reg:SI 105 [ D.6307 ])) timepacket.c:98 -1
+     (nil))
+(jump_insn 94 93 95 11 (set (pc)
+        (label_ref:DI 158)) 654 {jump}
+     (nil)
+ -> 158)
+(barrier 95 94 96)
+(code_label 96 95 97 12 8 "" [1 uses])
+(note 97 96 98 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 98 97 99 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7ff9a76c3cf0 *.LC4>)) timepacket.c:101 -1
+     (nil))
+(call_insn 99 98 100 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7ff9a7a9d360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) timepacket.c:101 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 100 99 103 12 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7ff9a76a0360 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) timepacket.c:102 -1
+     (nil)
+    (nil))
+(jump_insn 103 100 104 12 (set (pc)
+        (label_ref 158)) -1
+     (nil)
+ -> 158)
+(barrier 104 103 105)
+(code_label 105 104 106 14 7 "" [1 uses])
+(note 106 105 107 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 107 106 108 14 (set (reg:SI 161)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])) timepacket.c:105 -1
+     (nil))
+(insn 108 107 109 14 (set (reg:DI 106 [ D.6304 ])
+        (sign_extend:DI (reg:SI 161))) timepacket.c:105 -1
+     (nil))
+(insn 109 108 110 14 (parallel [
+            (set (reg:DI 107 [ D.6304 ])
+                (ashift:DI (reg:DI 106 [ D.6304 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:105 -1
+     (nil))
+(insn 110 109 111 14 (set (reg/f:DI 162)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])) timepacket.c:105 -1
+     (nil))
+(insn 111 110 112 14 (parallel [
+            (set (reg/f:DI 108 [ D.6305 ])
+                (plus:DI (reg:DI 107 [ D.6304 ])
+                    (reg/f:DI 162)))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:105 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])
+            (reg:DI 107 [ D.6304 ]))
+        (nil)))
+(insn 112 111 113 14 (set (reg/f:DI 109 [ D.6306 ])
+        (mem/f:DI (reg/f:DI 108 [ D.6305 ]) [0 *_71+0 S8 A64])) timepacket.c:105 -1
+     (nil))
+(insn 113 112 114 14 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7ff9a76c3d80 *.LC5>)) timepacket.c:105 -1
+     (nil))
+(insn 114 113 115 14 (set (reg:DI 5 di)
+        (reg/f:DI 109 [ D.6306 ])) timepacket.c:105 -1
+     (nil))
+(call_insn/i 115 114 116 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7ff9a7a940d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) timepacket.c:105 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 116 115 117 14 (set (reg:SI 110 [ D.6307 ])
+        (reg:SI 0 ax)) timepacket.c:105 -1
+     (nil))
+(insn 117 116 118 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 110 [ D.6307 ])
+            (const_int 0 [0]))) timepacket.c:105 -1
+     (nil))
+(jump_insn 118 117 119 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 123)
+            (pc))) timepacket.c:105 -1
+     (nil)
+ -> 123)
+(note 119 118 120 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(call_insn 120 119 121 15 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7ff9a76a0360 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) timepacket.c:106 -1
+     (nil)
+    (nil))
+(jump_insn 121 120 122 15 (set (pc)
+        (label_ref 158)) -1
+     (nil)
+ -> 158)
+(barrier 122 121 123)
+(code_label 123 122 124 16 10 "" [1 uses])
+(note 124 123 125 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 125 124 126 16 (set (reg:SI 163)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])) timepacket.c:108 -1
+     (nil))
+(insn 126 125 127 16 (set (reg:DI 111 [ D.6304 ])
+        (sign_extend:DI (reg:SI 163))) timepacket.c:108 -1
+     (nil))
+(insn 127 126 128 16 (parallel [
+            (set (reg:DI 112 [ D.6304 ])
+                (ashift:DI (reg:DI 111 [ D.6304 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:108 -1
+     (nil))
+(insn 128 127 129 16 (set (reg/f:DI 164)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])) timepacket.c:108 -1
+     (nil))
+(insn 129 128 130 16 (parallel [
+            (set (reg/f:DI 113 [ D.6305 ])
+                (plus:DI (reg:DI 112 [ D.6304 ])
+                    (reg/f:DI 164)))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:108 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])
+            (reg:DI 112 [ D.6304 ]))
+        (nil)))
+(insn 130 129 131 16 (set (reg/f:DI 114 [ D.6306 ])
+        (mem/f:DI (reg/f:DI 113 [ D.6305 ]) [0 *_77+0 S8 A64])) timepacket.c:108 -1
+     (nil))
+(insn 131 130 132 16 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7ff9a76c3e10 *.LC6>)) timepacket.c:108 -1
+     (nil))
+(insn 132 131 133 16 (set (reg:DI 5 di)
+        (reg/f:DI 114 [ D.6306 ])) timepacket.c:108 -1
+     (nil))
+(call_insn/i 133 132 134 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7ff9a7a940d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) timepacket.c:108 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 134 133 135 16 (set (reg:SI 115 [ D.6307 ])
+        (reg:SI 0 ax)) timepacket.c:108 -1
+     (nil))
+(insn 135 134 136 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 115 [ D.6307 ])
+            (const_int 0 [0]))) timepacket.c:108 -1
+     (nil))
+(jump_insn 136 135 137 16 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 145)
+            (pc))) timepacket.c:108 -1
+     (nil)
+ -> 145)
+(note 137 136 138 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 138 137 139 17 (set (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7ff9a78eb750 verbose>) [0 verbose+0 S4 A32])
+        (const_int 1 [0x1])) timepacket.c:109 -1
+     (nil))
+(insn 139 138 140 17 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7ff9a76c3ea0 *.LC7>)) timepacket.c:110 -1
+     (nil))
+(insn 140 139 141 17 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) timepacket.c:110 -1
+     (nil))
+(insn 141 140 142 17 (set (reg:DI 5 di)
+        (const_int 0 [0])) timepacket.c:110 -1
+     (nil))
+(call_insn 142 141 143 17 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7ff9a76960d8 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) timepacket.c:110 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(jump_insn 143 142 144 17 (set (pc)
+        (label_ref 158)) -1
+     (nil)
+ -> 158)
+(barrier 144 143 145)
+(code_label 145 144 146 18 11 "" [1 uses])
+(note 146 145 147 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 147 146 148 18 (set (reg:SI 165)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])) timepacket.c:113 -1
+     (nil))
+(insn 148 147 149 18 (set (reg:DI 116 [ D.6304 ])
+        (sign_extend:DI (reg:SI 165))) timepacket.c:113 -1
+     (nil))
+(insn 149 148 150 18 (parallel [
+            (set (reg:DI 117 [ D.6304 ])
+                (ashift:DI (reg:DI 116 [ D.6304 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:113 -1
+     (nil))
+(insn 150 149 151 18 (set (reg/f:DI 166)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])) timepacket.c:113 -1
+     (nil))
+(insn 151 150 152 18 (parallel [
+            (set (reg/f:DI 118 [ D.6305 ])
+                (plus:DI (reg:DI 117 [ D.6304 ])
+                    (reg/f:DI 166)))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:113 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4256 [0xffffffffffffef60])) [0 argv+0 S8 A64])
+            (reg:DI 117 [ D.6304 ]))
+        (nil)))
+(insn 152 151 153 18 (set (reg/f:DI 119 [ D.6306 ])
+        (mem/f:DI (reg/f:DI 118 [ D.6305 ]) [0 *_84+0 S8 A64])) timepacket.c:113 -1
+     (nil))
+(insn 153 152 154 18 (set (reg:DI 4 si)
+        (reg/f:DI 119 [ D.6306 ])) timepacket.c:113 -1
+     (nil))
+(insn 154 153 155 18 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7ff9a76c3f30 *.LC8>)) timepacket.c:113 -1
+     (nil))
+(insn 155 154 156 18 (set (reg:QI 0 ax)
+        (const_int 0 [0])) timepacket.c:113 -1
+     (nil))
+(call_insn 156 155 157 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7ff9a7a9aca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) timepacket.c:113 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(call_insn 157 156 158 18 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7ff9a76a0360 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) timepacket.c:114 -1
+     (nil)
+    (nil))
+(code_label 158 157 159 19 6 "" [6 uses])
+(note 159 158 160 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 160 159 161 19 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:84 -1
+     (nil))
+(code_label 161 160 162 20 2 "" [1 uses])
+(note 162 161 163 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 163 162 164 20 (set (reg:SI 167)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4224 [0xffffffffffffef80])) [0 i+0 S4 A32])) timepacket.c:84 -1
+     (nil))
+(insn 164 163 165 20 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 167)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4244 [0xffffffffffffef6c])) [0 argc+0 S4 A32]))) timepacket.c:84 -1
+     (nil))
+(jump_insn 165 164 166 20 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 170)
+            (pc))) timepacket.c:84 -1
+     (nil)
+ -> 170)
+(note 166 165 168 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 168 166 169 21 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) timepacket.c:84 -1
+     (nil))
+(jump_insn 169 168 170 21 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 167)
+            (pc))) timepacket.c:84 -1
+     (nil)
+ -> 167)
+(code_label 170 169 171 22 12 "" [1 uses])
+(note 171 170 172 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 172 171 173 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4144 [0xffffffffffffefd0])) [0 commandFilename+0 S8 A64])
+            (const_int 0 [0]))) timepacket.c:117 -1
+     (nil))
+(jump_insn 173 172 174 22 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 178)
+            (pc))) timepacket.c:117 -1
+     (nil)
+ -> 178)
+(note 174 173 175 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 175 174 176 23 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7ff9a76d7000 *.LC9>)) timepacket.c:118 -1
+     (nil))
+(call_insn 176 175 177 23 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7ff9a7a9d360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) timepacket.c:118 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 177 176 178 23 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7ff9a76a0360 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) timepacket.c:119 -1
+     (nil)
+    (nil))
+(code_label 178 177 179 24 14 "" [1 uses])
+(note 179 178 180 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 180 179 181 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) timepacket.c:121 -1
+     (nil))
+(jump_insn 181 180 182 24 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 192)
+            (pc))) timepacket.c:121 -1
+     (nil)
+ -> 192)
+(note 182 181 183 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 183 182 184 25 (set (reg:DI 168)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4144 [0xffffffffffffefd0])) [0 commandFilename+0 S8 A64])) timepacket.c:122 -1
+     (nil))
+(insn 184 183 185 25 (parallel [
+            (set (reg:DI 169)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4184 [0xffffffffffffefa8])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:122 -1
+     (nil))
+(insn 185 184 186 25 (parallel [
+            (set (reg:DI 170)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4200 [0xffffffffffffef98])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:122 -1
+     (nil))
+(insn 186 185 187 25 (set (reg:DI 1 dx)
+        (reg:DI 168)) timepacket.c:122 -1
+     (nil))
+(insn 187 186 188 25 (set (reg:DI 4 si)
+        (reg:DI 169)) timepacket.c:122 -1
+     (nil))
+(insn 188 187 189 25 (set (reg:DI 5 di)
+        (reg:DI 170)) timepacket.c:122 -1
+     (nil))
+(call_insn 189 188 190 25 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_ReadBinaryFile") [flags 0x41]  <function_decl 0x7ff9a7696ca8 TSS_File_ReadBinaryFile>) [0 TSS_File_ReadBinaryFile S1 A8])
+            (const_int 0 [0]))) timepacket.c:122 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 190 189 191 25 (set (reg:SI 171)
+        (reg:SI 0 ax)) timepacket.c:122 -1
+     (nil))
+(insn 191 190 192 25 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+        (reg:SI 171)) timepacket.c:122 -1
+     (nil))
+(code_label 192 191 193 26 15 "" [1 uses])
+(note 193 192 194 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 194 193 195 26 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) timepacket.c:124 -1
+     (nil))
+(jump_insn 195 194 196 26 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 216)
+            (pc))) timepacket.c:124 -1
+     (nil)
+ -> 216)
+(note 196 195 197 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 197 196 198 27 (set (reg/f:DI 120 [ D.6308 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4200 [0xffffffffffffef98])) [0 commandBufferString+0 S8 A64])) timepacket.c:125 -1
+     (nil))
+(insn 198 197 199 27 (set (reg:DI 121 [ D.6304 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4184 [0xffffffffffffefa8])) [0 commandStringLength+0 S8 A64])) timepacket.c:125 -1
+     (nil))
+(insn 199 198 200 27 (parallel [
+            (set (reg:DI 122 [ D.6309 ])
+                (plus:DI (reg:DI 121 [ D.6304 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:125 -1
+     (nil))
+(insn 200 199 201 27 (parallel [
+            (set (reg/f:DI 123 [ D.6308 ])
+                (plus:DI (reg/f:DI 120 [ D.6308 ])
+                    (reg:DI 122 [ D.6309 ])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:125 -1
+     (nil))
+(insn 201 200 202 27 (set (reg:QI 124 [ D.6310 ])
+        (mem:QI (reg/f:DI 123 [ D.6308 ]) [0 *_96+0 S1 A8])) timepacket.c:125 -1
+     (nil))
+(insn 202 201 203 27 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 124 [ D.6310 ])
+            (const_int 32 [0x20]))) timepacket.c:125 -1
+     (nil))
+(jump_insn 203 202 204 27 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 209)
+            (pc))) timepacket.c:125 -1
+     (nil)
+ -> 209)
+(note 204 203 205 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 205 204 206 28 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7ff9a76d7090 *.LC10>)) timepacket.c:126 -1
+     (nil))
+(call_insn 206 205 207 28 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7ff9a7a9d360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) timepacket.c:126 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 207 206 208 28 (set (pc)
+        (label_ref 216)) -1
+     (nil)
+ -> 216)
+(barrier 208 207 209)
+(code_label 209 208 210 29 17 "" [1 uses])
+(note 210 209 211 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 211 210 212 29 (set (reg/f:DI 125 [ D.6308 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4200 [0xffffffffffffef98])) [0 commandBufferString+0 S8 A64])) timepacket.c:130 -1
+     (nil))
+(insn 212 211 213 29 (set (reg:DI 126 [ D.6304 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4184 [0xffffffffffffefa8])) [0 commandStringLength+0 S8 A64])) timepacket.c:130 -1
+     (nil))
+(insn 213 212 214 29 (parallel [
+            (set (reg:DI 127 [ D.6309 ])
+                (plus:DI (reg:DI 126 [ D.6304 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:130 -1
+     (nil))
+(insn 214 213 215 29 (parallel [
+            (set (reg/f:DI 128 [ D.6308 ])
+                (plus:DI (reg/f:DI 125 [ D.6308 ])
+                    (reg:DI 127 [ D.6309 ])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:130 -1
+     (nil))
+(insn 215 214 216 29 (set (mem:QI (reg/f:DI 128 [ D.6308 ]) [0 *_102+0 S1 A8])
+        (const_int 0 [0])) timepacket.c:130 -1
+     (nil))
+(code_label 216 215 217 30 16 "" [2 uses])
+(note 217 216 218 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 218 217 219 30 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) timepacket.c:133 -1
+     (nil))
+(jump_insn 219 218 220 30 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 230)
+            (pc))) timepacket.c:133 -1
+     (nil)
+ -> 230)
+(note 220 219 221 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 221 220 222 31 (set (reg/f:DI 129 [ D.6308 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4200 [0xffffffffffffef98])) [0 commandBufferString+0 S8 A64])) timepacket.c:134 -1
+     (nil))
+(insn 222 221 223 31 (parallel [
+            (set (reg:DI 172)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4176 [0xffffffffffffefb0])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:134 -1
+     (nil))
+(insn 223 222 224 31 (parallel [
+            (set (reg:DI 173)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4192 [0xffffffffffffefa0])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:134 -1
+     (nil))
+(insn 224 223 225 31 (set (reg:DI 1 dx)
+        (reg/f:DI 129 [ D.6308 ])) timepacket.c:134 -1
+     (nil))
+(insn 225 224 226 31 (set (reg:DI 4 si)
+        (reg:DI 172)) timepacket.c:134 -1
+     (nil))
+(insn 226 225 227 31 (set (reg:DI 5 di)
+        (reg:DI 173)) timepacket.c:134 -1
+     (nil))
+(call_insn 227 226 228 31 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Array_Scan") [flags 0x41]  <function_decl 0x7ff9a765b948 TSS_Array_Scan>) [0 TSS_Array_Scan S1 A8])
+            (const_int 0 [0]))) timepacket.c:134 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 228 227 229 31 (set (reg:SI 174)
+        (reg:SI 0 ax)) timepacket.c:134 -1
+     (nil))
+(insn 229 228 230 31 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+        (reg:SI 174)) timepacket.c:134 -1
+     (nil))
+(code_label 230 229 231 32 18 "" [1 uses])
+(note 231 230 232 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 232 231 233 32 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) timepacket.c:138 -1
+     (nil))
+(jump_insn 233 232 234 32 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 240)
+            (pc))) timepacket.c:138 -1
+     (nil)
+ -> 240)
+(note 234 233 235 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 235 234 236 33 (parallel [
+            (set (reg:DI 175)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4208 [0xffffffffffffef90])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:139 -1
+     (nil))
+(insn 236 235 237 33 (set (reg:DI 5 di)
+        (reg:DI 175)) timepacket.c:139 -1
+     (nil))
+(call_insn 237 236 238 33 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Create") [flags 0x41]  <function_decl 0x7ff9a7690d80 TSS_Create>) [0 TSS_Create S1 A8])
+            (const_int 0 [0]))) timepacket.c:139 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 238 237 239 33 (set (reg:SI 176)
+        (reg:SI 0 ax)) timepacket.c:139 -1
+     (nil))
+(insn 239 238 240 33 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+        (reg:SI 176)) timepacket.c:139 -1
+     (nil))
+(code_label 240 239 241 34 19 "" [1 uses])
+(note 241 240 242 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 242 241 243 34 (set (reg:DF 177)
+        (mem/u/c:DF (symbol_ref/u:DI ("*.LC11") [flags 0x2]) [0  S8 A64])) timepacket.c:141 -1
+     (nil))
+(insn 243 242 244 34 (set (mem/c:DF (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4136 [0xffffffffffffefd8])) [0 timeDiff+0 S8 A64])
+        (reg:DF 177)) timepacket.c:141 -1
+     (nil))
+(insn 244 243 245 34 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4216 [0xffffffffffffef88])) [0 count+0 S4 A32])
+        (const_int 0 [0])) timepacket.c:142 -1
+     (nil))
+(jump_insn 245 244 246 34 (set (pc)
+        (label_ref 301)) timepacket.c:142 -1
+     (nil)
+ -> 301)
+(barrier 246 245 306)
+(code_label 306 246 247 35 22 "" [1 uses])
+(note 247 306 248 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 248 247 249 35 (parallel [
+            (set (reg:DI 178)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4152 [0xffffffffffffefc8])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:144 -1
+     (nil))
+(insn 249 248 250 35 (set (reg:SI 4 si)
+        (const_int 4 [0x4])) timepacket.c:144 -1
+     (nil))
+(insn 250 249 251 35 (set (reg:DI 5 di)
+        (reg:DI 178)) timepacket.c:144 -1
+     (nil))
+(call_insn 251 250 252 35 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("RAND_bytes") [flags 0x41]  <function_decl 0x7ff9a789ca20 RAND_bytes>) [0 RAND_bytes S1 A8])
+            (const_int 0 [0]))) timepacket.c:144 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 252 251 253 35 (set (reg:SI 130 [ D.6311 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4152 [0xffffffffffffefc8])) [0 usec+0 S4 A64])) timepacket.c:145 -1
+     (nil))
+(insn 253 252 254 35 (set (reg:SI 180)
+        (const_int 1125899907 [0x431bde83])) timepacket.c:145 -1
+     (nil))
+(insn 254 253 255 35 (parallel [
+            (set (reg:SI 179)
+                (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg:SI 130 [ D.6311 ]))
+                            (zero_extend:DI (reg:SI 180)))
+                        (const_int 32 [0x20]))))
+            (clobber (scratch:SI))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:145 -1
+     (nil))
+(insn 255 254 256 35 (parallel [
+            (set (reg:SI 131 [ D.6311 ])
+                (lshiftrt:SI (reg:SI 179)
+                    (const_int 18 [0x12])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:145 -1
+     (expr_list:REG_EQUAL (udiv:SI (reg:SI 130 [ D.6311 ])
+            (const_int 1000000 [0xf4240]))
+        (nil)))
+(insn 256 255 257 35 (parallel [
+            (set (reg:SI 181)
+                (mult:SI (reg:SI 131 [ D.6311 ])
+                    (const_int 1000000 [0xf4240])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:145 -1
+     (nil))
+(insn 257 256 258 35 (parallel [
+            (set (reg:SI 131 [ D.6311 ])
+                (minus:SI (reg:SI 130 [ D.6311 ])
+                    (reg:SI 181)))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:145 -1
+     (nil))
+(insn 258 257 259 35 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4152 [0xffffffffffffefc8])) [0 usec+0 S4 A64])
+        (reg:SI 131 [ D.6311 ])) timepacket.c:145 -1
+     (nil))
+(insn 259 258 260 35 (set (reg:SI 132 [ D.6311 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4152 [0xffffffffffffefc8])) [0 usec+0 S4 A64])) timepacket.c:146 -1
+     (nil))
+(insn 260 259 261 35 (set (reg:SI 5 di)
+        (reg:SI 132 [ D.6311 ])) timepacket.c:146 -1
+     (nil))
+(call_insn 261 260 262 35 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("usleep") [flags 0x41]  <function_decl 0x7ff9a7845a20 usleep>) [0 usleep S1 A8])
+            (const_int 0 [0]))) timepacket.c:146 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 262 261 263 35 (set (reg:DI 5 di)
+        (const_int 0 [0])) timepacket.c:147 -1
+     (nil))
+(call_insn 263 262 264 35 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("time") [flags 0x41]  <function_decl 0x7ff9a7828798 time>) [0 time S1 A8])
+            (const_int 0 [0]))) timepacket.c:147 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 264 263 265 35 (set (reg:DI 182)
+        (reg:DI 0 ax)) timepacket.c:147 -1
+     (nil))
+(insn 265 264 266 35 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4128 [0xffffffffffffefe0])) [0 startTime+0 S8 A64])
+        (reg:DI 182)) timepacket.c:147 -1
+     (nil))
+(insn 266 265 267 35 (set (reg:DI 133 [ D.6304 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4176 [0xffffffffffffefb0])) [0 commandLength+0 S8 A64])) timepacket.c:148 -1
+     (nil))
+(insn 267 266 268 35 (set (reg:SI 134 [ D.6311 ])
+        (subreg:SI (reg:DI 133 [ D.6304 ]) 0)) timepacket.c:148 -1
+     (nil))
+(insn 268 267 269 35 (set (reg/f:DI 135 [ D.6308 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4192 [0xffffffffffffefa0])) [0 commandBuffer+0 S8 A64])) timepacket.c:148 -1
+     (nil))
+(insn 269 268 270 35 (set (reg/f:DI 136 [ D.6312 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4208 [0xffffffffffffef90])) [0 tssContext+0 S8 A64])) timepacket.c:148 -1
+     (nil))
+(insn 270 269 271 35 (parallel [
+            (set (reg:DI 183)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4232 [0xffffffffffffef78])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:148 -1
+     (nil))
+(insn 271 270 272 35 (parallel [
+            (set (reg:DI 184)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4112 [0xffffffffffffeff0])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:148 -1
+     (nil))
+(insn 272 271 273 35 (set (reg:DI 38 r9)
+        (const_int 0 [0])) timepacket.c:148 -1
+     (nil))
+(insn 273 272 274 35 (set (reg:SI 37 r8)
+        (reg:SI 134 [ D.6311 ])) timepacket.c:148 -1
+     (nil))
+(insn 274 273 275 35 (set (reg:DI 2 cx)
+        (reg/f:DI 135 [ D.6308 ])) timepacket.c:148 -1
+     (nil))
+(insn 275 274 276 35 (set (reg:DI 1 dx)
+        (reg:DI 183)) timepacket.c:148 -1
+     (nil))
+(insn 276 275 277 35 (set (reg:DI 4 si)
+        (reg:DI 184)) timepacket.c:148 -1
+     (nil))
+(insn 277 276 278 35 (set (reg:DI 5 di)
+        (reg/f:DI 136 [ D.6312 ])) timepacket.c:148 -1
+     (nil))
+(call_insn 278 277 279 35 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Transmit") [flags 0x41]  <function_decl 0x7ff9a7696288 TSS_Transmit>) [0 TSS_Transmit S1 A8])
+            (const_int 0 [0]))) timepacket.c:148 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:SI (use (reg:SI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 279 278 280 35 (set (reg:SI 185)
+        (reg:SI 0 ax)) timepacket.c:148 -1
+     (nil))
+(insn 280 279 281 35 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+        (reg:SI 185)) timepacket.c:148 -1
+     (nil))
+(insn 281 280 282 35 (set (reg:DI 5 di)
+        (const_int 0 [0])) timepacket.c:152 -1
+     (nil))
+(call_insn 282 281 283 35 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("time") [flags 0x41]  <function_decl 0x7ff9a7828798 time>) [0 time S1 A8])
+            (const_int 0 [0]))) timepacket.c:152 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 283 282 284 35 (set (reg:DI 186)
+        (reg:DI 0 ax)) timepacket.c:152 -1
+     (nil))
+(insn 284 283 285 35 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4120 [0xffffffffffffefe8])) [0 endTime+0 S8 A64])
+        (reg:DI 186)) timepacket.c:152 -1
+     (nil))
+(insn 285 284 286 35 (set (reg:SI 187)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4216 [0xffffffffffffef88])) [0 count+0 S4 A32])) timepacket.c:153 -1
+     (nil))
+(insn 286 285 287 35 (parallel [
+            (set (reg:SI 137 [ D.6311 ])
+                (plus:SI (reg:SI 187)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:153 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4216 [0xffffffffffffef88])) [0 count+0 S4 A32])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 287 286 288 35 (set (reg:SI 4 si)
+        (reg:SI 137 [ D.6311 ])) timepacket.c:153 -1
+     (nil))
+(insn 288 287 289 35 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7ff9a76d7120 *.LC12>)) timepacket.c:153 -1
+     (nil))
+(insn 289 288 290 35 (set (reg:QI 0 ax)
+        (const_int 0 [0])) timepacket.c:153 -1
+     (nil))
+(call_insn 290 289 291 35 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7ff9a7a9aca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) timepacket.c:153 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 291 290 292 35 (set (reg:DI 188)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4128 [0xffffffffffffefe0])) [0 startTime+0 S8 A64])) timepacket.c:154 -1
+     (nil))
+(insn 292 291 293 35 (set (reg:DI 189)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4120 [0xffffffffffffefe8])) [0 endTime+0 S8 A64])) timepacket.c:154 -1
+     (nil))
+(insn 293 292 294 35 (set (reg:DI 4 si)
+        (reg:DI 188)) timepacket.c:154 -1
+     (nil))
+(insn 294 293 295 35 (set (reg:DI 5 di)
+        (reg:DI 189)) timepacket.c:154 -1
+     (nil))
+(call_insn/u 295 294 296 35 (set (reg:DF 21 xmm0)
+        (call (mem:QI (symbol_ref:DI ("difftime") [flags 0x41]  <function_decl 0x7ff9a7828870 difftime>) [0 difftime S1 A8])
+            (const_int 0 [0]))) timepacket.c:154 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 296 295 297 35 (set (reg:DF 138 [ D.6313 ])
+        (reg:DF 21 xmm0)) timepacket.c:154 -1
+     (nil))
+(insn 297 296 298 35 (set (reg:DF 191)
+        (mem/c:DF (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4136 [0xffffffffffffefd8])) [0 timeDiff+0 S8 A64])) timepacket.c:154 -1
+     (nil))
+(insn 298 297 299 35 (set (reg:DF 190)
+        (plus:DF (reg:DF 191)
+            (reg:DF 138 [ D.6313 ]))) timepacket.c:154 -1
+     (nil))
+(insn 299 298 300 35 (set (mem/c:DF (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4136 [0xffffffffffffefd8])) [0 timeDiff+0 S8 A64])
+        (reg:DF 190)) timepacket.c:154 -1
+     (nil))
+(insn 300 299 301 35 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4216 [0xffffffffffffef88])) [0 count+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4216 [0xffffffffffffef88])) [0 count+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:142 -1
+     (nil))
+(code_label 301 300 302 36 20 "" [1 uses])
+(note 302 301 303 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 303 302 304 36 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) timepacket.c:142 -1
+     (nil))
+(jump_insn 304 303 305 36 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 310)
+            (pc))) timepacket.c:142 -1
+     (nil)
+ -> 310)
+(note 305 304 307 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 307 305 308 37 (set (reg:SI 192)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4216 [0xffffffffffffef88])) [0 count+0 S4 A32])) timepacket.c:142 -1
+     (nil))
+(insn 308 307 309 37 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 192)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4220 [0xffffffffffffef84])) [0 loops+0 S4 A32]))) timepacket.c:142 -1
+     (nil))
+(jump_insn 309 308 310 37 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 306)
+            (pc))) timepacket.c:142 -1
+     (nil)
+ -> 306)
+(code_label 310 309 311 38 21 "" [1 uses])
+(note 311 310 312 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 312 311 313 38 (set (reg/f:DI 139 [ D.6312 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4208 [0xffffffffffffef90])) [0 tssContext+0 S8 A64])) timepacket.c:159 -1
+     (nil))
+(insn 313 312 314 38 (set (reg:DI 5 di)
+        (reg/f:DI 139 [ D.6312 ])) timepacket.c:159 -1
+     (nil))
+(call_insn 314 313 315 38 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Delete") [flags 0x41]  <function_decl 0x7ff9a7690e58 TSS_Delete>) [0 TSS_Delete S1 A8])
+            (const_int 0 [0]))) timepacket.c:159 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 315 314 316 38 (set (reg:SI 193)
+        (reg:SI 0 ax)) timepacket.c:159 -1
+     (nil))
+(insn 316 315 317 38 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4212 [0xffffffffffffef8c])) [0 rc1+0 S4 A32])
+        (reg:SI 193)) timepacket.c:159 -1
+     (nil))
+(insn 317 316 318 38 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) timepacket.c:160 -1
+     (nil))
+(jump_insn 318 317 319 38 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 322)
+            (pc))) timepacket.c:160 -1
+     (nil)
+ -> 322)
+(note 319 318 320 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 320 319 321 39 (set (reg:SI 194)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4212 [0xffffffffffffef8c])) [0 rc1+0 S4 A32])) timepacket.c:161 -1
+     (nil))
+(insn 321 320 322 39 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+        (reg:SI 194)) timepacket.c:161 -1
+     (nil))
+(code_label 322 321 323 40 23 "" [1 uses])
+(note 323 322 324 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(insn 324 323 325 40 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) timepacket.c:164 -1
+     (nil))
+(jump_insn 325 324 326 40 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 350)
+            (pc))) timepacket.c:164 -1
+     (nil)
+ -> 350)
+(note 326 325 327 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 327 326 328 41 (set (reg:DI 195)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4220 [0xffffffffffffef84])) [0 loops+0 S4 A32]))) timepacket.c:165 -1
+     (nil))
+(insn 328 327 329 41 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (reg:DI 195)
+            (const_int 0 [0]))) timepacket.c:165 -1
+     (nil))
+(jump_insn 329 328 414 41 (set (pc)
+        (if_then_else (lt (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 333)
+            (pc))) timepacket.c:165 -1
+     (nil)
+ -> 333)
+(note 414 329 330 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 330 414 331 42 (set (reg:DF 140 [ D.6313 ])
+        (float:DF (reg:DI 195))) timepacket.c:165 -1
+     (nil))
+(jump_insn 331 330 332 42 (set (pc)
+        (label_ref 339)) timepacket.c:165 -1
+     (nil)
+ -> 339)
+(barrier 332 331 333)
+(code_label 333 332 415 43 25 "" [1 uses])
+(note 415 333 334 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(insn 334 415 335 43 (parallel [
+            (set (reg:DI 197)
+                (lshiftrt:DI (reg:DI 195)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:165 -1
+     (nil))
+(insn 335 334 336 43 (parallel [
+            (set (reg:DI 198)
+                (and:DI (reg:DI 195)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:165 -1
+     (nil))
+(insn 336 335 337 43 (parallel [
+            (set (reg:DI 197)
+                (ior:DI (reg:DI 197)
+                    (reg:DI 198)))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:165 -1
+     (nil))
+(insn 337 336 338 43 (set (reg:DF 196)
+        (float:DF (reg:DI 197))) timepacket.c:165 -1
+     (nil))
+(insn 338 337 339 43 (set (reg:DF 140 [ D.6313 ])
+        (plus:DF (reg:DF 196)
+            (reg:DF 196))) timepacket.c:165 -1
+     (nil))
+(code_label 339 338 416 44 26 "" [1 uses])
+(note 416 339 340 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(insn 340 416 341 44 (set (reg:DF 199)
+        (mem/c:DF (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4136 [0xffffffffffffefd8])) [0 timeDiff+0 S8 A64])) timepacket.c:165 -1
+     (nil))
+(insn 341 340 342 44 (set (reg:DF 141 [ D.6313 ])
+        (div:DF (reg:DF 199)
+            (reg:DF 140 [ D.6313 ]))) timepacket.c:165 -1
+     (nil))
+(insn 342 341 343 44 (set (reg:DF 200)
+        (mem/c:DF (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4136 [0xffffffffffffefd8])) [0 timeDiff+0 S8 A64])) timepacket.c:165 -1
+     (nil))
+(insn 343 342 344 44 (set (reg:SI 201)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4220 [0xffffffffffffef84])) [0 loops+0 S4 A32])) timepacket.c:165 -1
+     (nil))
+(insn 344 343 345 44 (set (reg:DF 22 xmm1)
+        (reg:DF 141 [ D.6313 ])) timepacket.c:165 -1
+     (nil))
+(insn 345 344 346 44 (set (reg:DF 21 xmm0)
+        (reg:DF 200)) timepacket.c:165 -1
+     (nil))
+(insn 346 345 347 44 (set (reg:SI 4 si)
+        (reg:SI 201)) timepacket.c:165 -1
+     (nil))
+(insn 347 346 348 44 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7ff9a76d71b0 *.LC13>)) timepacket.c:165 -1
+     (nil))
+(insn 348 347 349 44 (set (reg:QI 0 ax)
+        (const_int 2 [0x2])) timepacket.c:165 -1
+     (nil))
+(call_insn 349 348 350 44 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7ff9a7a9aca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) timepacket.c:165 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DF (use (reg:DF 21 xmm0))
+                    (expr_list:DF (use (reg:DF 22 xmm1))
+                        (nil)))))))
+(code_label 350 349 351 45 24 "" [1 uses])
+(note 351 350 352 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 352 351 353 45 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) timepacket.c:167 -1
+     (nil))
+(jump_insn 353 352 354 45 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 365)
+            (pc))) timepacket.c:167 -1
+     (nil)
+ -> 365)
+(note 354 353 355 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(insn 355 354 356 46 (set (reg:SI 142 [ D.6307 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7ff9a78eb750 verbose>) [0 verbose+0 S4 A32])) timepacket.c:168 -1
+     (nil))
+(insn 356 355 357 46 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 142 [ D.6307 ])
+            (const_int 0 [0]))) timepacket.c:168 -1
+     (nil))
+(jump_insn 357 356 358 46 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 391)
+            (pc))) timepacket.c:168 612 {*jcc_1}
+     (nil)
+ -> 391)
+(note 358 357 359 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(insn 359 358 360 47 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7ff9a76d7240 *.LC14>)) timepacket.c:168 -1
+     (nil))
+(call_insn 360 359 363 47 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7ff9a7a9d360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) timepacket.c:168 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 363 360 364 47 (set (pc)
+        (label_ref 391)) -1
+     (nil)
+ -> 391)
+(barrier 364 363 365)
+(code_label 365 364 366 49 27 "" [1 uses])
+(note 366 365 367 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(insn 367 366 368 49 (set (reg:SI 202)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])) timepacket.c:174 -1
+     (nil))
+(insn 368 367 369 49 (set (reg:SI 4 si)
+        (reg:SI 202)) timepacket.c:174 -1
+     (nil))
+(insn 369 368 370 49 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7ff9a76d72d0 *.LC15>)) timepacket.c:174 -1
+     (nil))
+(insn 370 369 371 49 (set (reg:QI 0 ax)
+        (const_int 0 [0])) timepacket.c:174 -1
+     (nil))
+(call_insn 371 370 372 49 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7ff9a7a9aca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) timepacket.c:174 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 372 371 373 49 (set (reg:SI 203)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])) timepacket.c:175 -1
+     (nil))
+(insn 373 372 374 49 (parallel [
+            (set (reg:DI 204)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4152 [0xffffffffffffefc8])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:175 -1
+     (nil))
+(insn 374 373 375 49 (parallel [
+            (set (reg:DI 205)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4160 [0xffffffffffffefc0])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:175 -1
+     (nil))
+(insn 375 374 376 49 (parallel [
+            (set (reg:DI 206)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4168 [0xffffffffffffefb8])))
+            (clobber (reg:CC 17 flags))
+        ]) timepacket.c:175 -1
+     (nil))
+(insn 376 375 377 49 (set (reg:SI 2 cx)
+        (reg:SI 203)) timepacket.c:175 -1
+     (nil))
+(insn 377 376 378 49 (set (reg:DI 1 dx)
+        (reg:DI 204)) timepacket.c:175 -1
+     (nil))
+(insn 378 377 379 49 (set (reg:DI 4 si)
+        (reg:DI 205)) timepacket.c:175 -1
+     (nil))
+(insn 379 378 380 49 (set (reg:DI 5 di)
+        (reg:DI 206)) timepacket.c:175 -1
+     (nil))
+(call_insn 380 379 381 49 (call (mem:QI (symbol_ref:DI ("TSS_ResponseCode_toString") [flags 0x41]  <function_decl 0x7ff9a76a0288 TSS_ResponseCode_toString>) [0 TSS_ResponseCode_toString S1 A8])
+        (const_int 0 [0])) timepacket.c:175 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 381 380 382 49 (set (reg/f:DI 143 [ D.6314 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4152 [0xffffffffffffefc8])) [0 num+0 S8 A64])) timepacket.c:176 -1
+     (nil))
+(insn 382 381 383 49 (set (reg/f:DI 144 [ D.6314 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4160 [0xffffffffffffefc0])) [0 submsg+0 S8 A64])) timepacket.c:176 -1
+     (nil))
+(insn 383 382 384 49 (set (reg/f:DI 145 [ D.6314 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4168 [0xffffffffffffefb8])) [0 msg+0 S8 A64])) timepacket.c:176 -1
+     (nil))
+(insn 384 383 385 49 (set (reg:DI 2 cx)
+        (reg/f:DI 143 [ D.6314 ])) timepacket.c:176 -1
+     (nil))
+(insn 385 384 386 49 (set (reg:DI 1 dx)
+        (reg/f:DI 144 [ D.6314 ])) timepacket.c:176 -1
+     (nil))
+(insn 386 385 387 49 (set (reg:DI 4 si)
+        (reg/f:DI 145 [ D.6314 ])) timepacket.c:176 -1
+     (nil))
+(insn 387 386 388 49 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7ff9a76d7360 *.LC16>)) timepacket.c:176 -1
+     (nil))
+(insn 388 387 389 49 (set (reg:QI 0 ax)
+        (const_int 0 [0])) timepacket.c:176 -1
+     (nil))
+(call_insn 389 388 390 49 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7ff9a7a9aca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) timepacket.c:176 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (nil)))))))
+(insn 390 389 391 49 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])
+        (const_int 1 [0x1])) timepacket.c:177 -1
+     (nil))
+(code_label 391 390 392 50 29 "" [2 uses])
+(note 392 391 393 50 [bb 50] NOTE_INSN_BASIC_BLOCK)
+(insn 393 392 394 50 (set (reg/f:DI 146 [ D.6308 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4200 [0xffffffffffffef98])) [0 commandBufferString+0 S8 A64])) timepacket.c:179 -1
+     (nil))
+(insn 394 393 395 50 (set (reg:DI 5 di)
+        (reg/f:DI 146 [ D.6308 ])) timepacket.c:179 -1
+     (nil))
+(call_insn 395 394 396 50 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7ff9a7ab0e58 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) timepacket.c:179 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 396 395 397 50 (set (reg/f:DI 147 [ D.6308 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4192 [0xffffffffffffefa0])) [0 commandBuffer+0 S8 A64])) timepacket.c:180 -1
+     (nil))
+(insn 397 396 398 50 (set (reg:DI 5 di)
+        (reg/f:DI 147 [ D.6308 ])) timepacket.c:180 -1
+     (nil))
+(call_insn 398 397 399 50 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7ff9a7ab0e58 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) timepacket.c:180 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 399 398 402 50 (set (reg:SI 148 [ D.6307 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4228 [0xffffffffffffef7c])) [0 rc+0 S4 A32])) timepacket.c:181 -1
+     (nil))
+(insn 402 399 406 50 (set (reg:SI 149 [ <retval> ])
+        (reg:SI 148 [ D.6307 ])) -1
+     (nil))
+(insn 406 402 407 50 (set (reg/i:SI 0 ax)
+        (reg:SI 149 [ <retval> ])) timepacket.c:182 -1
+     (nil))
+(insn 407 406 408 50 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.6316+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) timepacket.c:182 -1
+     (nil))
+(jump_insn 408 407 417 50 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 411)
+            (pc))) timepacket.c:182 -1
+     (nil)
+ -> 411)
+(note 417 408 409 53 [bb 53] NOTE_INSN_BASIC_BLOCK)
+(call_insn 409 417 410 53 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7ff9a76a0510 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) timepacket.c:182 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 410 409 411)
+(code_label 411 410 418 54 31 "" [1 uses])
+(note 418 411 412 54 [bb 54] NOTE_INSN_BASIC_BLOCK)
+(insn 412 418 0 54 (use (reg/i:SI 0 ax)) timepacket.c:182 -1
+     (nil))
+
+;; Function printUsage (printUsage, funcdef_no=3, decl_uid=6157, cgraph_uid=3, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) timepacket.c:186 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7ff9a7a9d000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) timepacket.c:186 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7ff9a76c3120 *.LC17>)) timepacket.c:187 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7ff9a7a9d360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) timepacket.c:187 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) timepacket.c:188 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7ff9a7a9d000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) timepacket.c:188 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7ff9a76ec5a0 *.LC18>)) timepacket.c:189 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7ff9a7a9d360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) timepacket.c:189 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) timepacket.c:190 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7ff9a7a9d000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) timepacket.c:190 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7ff9a76ec630 *.LC19>)) timepacket.c:191 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7ff9a7a9d360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) timepacket.c:191 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC20") [flags 0x2]  <var_decl 0x7ff9a76ec6c0 *.LC20>)) timepacket.c:192 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7ff9a7a9d360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) timepacket.c:192 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) timepacket.c:193 -1
+     (nil))
+(call_insn 20 19 21 2 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7ff9a7ab0000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) timepacket.c:193 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 21 20 0)

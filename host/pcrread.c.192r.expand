@@ -1,0 +1,3422 @@
+
+;; Function main (main, funcdef_no=2, decl_uid=6076, cgraph_uid=2, symbol_order=3)
+
+Partition 9: size 1072 align 16
+	out
+Partition 8: size 24 align 16
+	in
+Partition 2: size 8 align 8
+	datafilename_8
+Partition 15: size 8 align 8
+	num
+Partition 14: size 8 align 8
+	submsg
+Partition 13: size 8 align 8
+	msg
+Partition 7: size 8 align 8
+	tssContext
+Partition 6: size 4 align 4
+	rc1_205
+Partition 5: size 4 align 4
+	bp_14
+Partition 3: size 4 align 4
+	noSpace_11
+Partition 1: size 4 align 4
+	i_6
+Partition 0: size 4 align 4
+	rc_1
+Partition 12: size 4 align 4
+	sessionAttributes0
+Partition 11: size 4 align 4
+	sessionHandle0
+Partition 10: size 4 align 4
+	pcrHandle
+Partition 4: size 2 align 2
+	c_13
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+;; Generating RTL for gimple basic block 38
+
+;; Generating RTL for gimple basic block 39
+
+;; Generating RTL for gimple basic block 40
+
+;; Generating RTL for gimple basic block 41
+
+;; Generating RTL for gimple basic block 42
+
+;; Generating RTL for gimple basic block 43
+
+;; Generating RTL for gimple basic block 44
+
+;; Generating RTL for gimple basic block 45
+
+;; Generating RTL for gimple basic block 46
+
+;; Generating RTL for gimple basic block 47
+
+;; Generating RTL for gimple basic block 48
+
+;; Generating RTL for gimple basic block 49
+
+;; Generating RTL for gimple basic block 50
+
+;; Generating RTL for gimple basic block 51
+
+;; Generating RTL for gimple basic block 52
+
+;; Generating RTL for gimple basic block 53
+
+;; Generating RTL for gimple basic block 54
+
+;; Generating RTL for gimple basic block 55
+
+;; Generating RTL for gimple basic block 56
+
+;; Generating RTL for gimple basic block 57
+
+;; Generating RTL for gimple basic block 58
+
+;; Generating RTL for gimple basic block 59
+
+;; Generating RTL for gimple basic block 60
+
+;; Generating RTL for gimple basic block 61
+
+;; Generating RTL for gimple basic block 62
+
+;; Generating RTL for gimple basic block 63
+
+;; Generating RTL for gimple basic block 64
+
+;; Generating RTL for gimple basic block 65
+
+;; Generating RTL for gimple basic block 66
+
+;; Generating RTL for gimple basic block 67
+
+;; Generating RTL for gimple basic block 68
+
+;; Generating RTL for gimple basic block 69
+
+;; Generating RTL for gimple basic block 70
+
+;; Generating RTL for gimple basic block 71
+
+;; Generating RTL for gimple basic block 72
+
+;; Generating RTL for gimple basic block 73
+
+;; Generating RTL for gimple basic block 74
+
+;; Generating RTL for gimple basic block 75
+
+;; Generating RTL for gimple basic block 76
+
+;; Generating RTL for gimple basic block 77
+
+;; Generating RTL for gimple basic block 78
+
+;; Generating RTL for gimple basic block 79
+
+;; Generating RTL for gimple basic block 80
+
+;; Generating RTL for gimple basic block 81
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 60 from 8 to 48.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Redirecting jump 140 from 23 to 48.
+Redirecting jump 168 from 23 to 48.
+Redirecting jump 196 from 23 to 48.
+Merging block 23 into block 22...
+Merged blocks 22 and 23.
+Merged 22 and 23 without moving.
+Redirecting jump 205 from 25 to 48.
+Merging block 25 into block 24...
+Merged blocks 24 and 25.
+Merged 24 and 25 without moving.
+Redirecting jump 243 from 30 to 48.
+Merging block 30 into block 29...
+Merged blocks 29 and 30.
+Merged 29 and 30 without moving.
+Edge 38->40 redirected to 48
+Merging block 40 into block 39...
+Merged blocks 39 and 40.
+Merged 39 and 40 without moving.
+Redirecting jump 339 from 42 to 48.
+Merging block 42 into block 41...
+Merged blocks 41 and 42.
+Merged 41 and 42 without moving.
+Redirecting jump 612 from 76 to 81.
+Merging block 76 into block 75...
+Merged blocks 75 and 76.
+Merged 75 and 76 without moving.
+Redirecting jump 623 from 79 to 81.
+Edge 77->79 redirected to 81
+Merging block 79 into block 78...
+Merged blocks 78 and 79.
+Merged 78 and 79 without moving.
+Merging block 82 into block 81...
+Merged blocks 81 and 82.
+Merged 81 and 82 without moving.
+Removing jump 672.
+Merging block 83 into block 81...
+Merged blocks 81 and 83.
+Merged 81 and 83 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1204 [0xfffffffffffffb4c])) [0 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) pcrread.c:60 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) pcrread.c:60 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.6330+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:60 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) pcrread.c:61 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1160 [0xfffffffffffffb78])) [0 tssContext+0 S8 A64])
+        (const_int 0 [0])) pcrread.c:63 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1192 [0xfffffffffffffb58])) [0 pcrHandle+0 S4 A64])
+        (const_int 24 [0x18])) pcrread.c:66 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1128 [0xfffffffffffffb98])) [0 datafilename+0 S8 A64])
+        (const_int 0 [0])) pcrread.c:67 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1172 [0xfffffffffffffb6c])) [0 noSpace+0 S4 A32])
+        (const_int 0 [0])) pcrread.c:68 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1188 [0xfffffffffffffb5c])) [0 sessionHandle0+0 S4 A32])
+        (const_int 1073741831 [0x40000007])) pcrread.c:69 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1184 [0xfffffffffffffb60])) [0 sessionAttributes0+0 S4 A64])
+        (const_int 0 [0])) pcrread.c:70 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:DI 87 [ D.6320 ])
+        (mem/f/c:DI (symbol_ref:DI ("stdout") [flags 0x40]  <var_decl 0x7fec5bf115a0 stdout>) [0 stdout+0 S8 A64])) pcrread.c:72 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 2 cx)
+        (const_int 0 [0])) pcrread.c:72 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) pcrread.c:72 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) pcrread.c:72 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.6320 ])) pcrread.c:72 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("setvbuf") [flags 0x41]  <function_decl 0x7fec5bf511b0 setvbuf>) [0 setvbuf S1 A8])
+            (const_int 0 [0]))) pcrread.c:72 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 21 20 22 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7fec5ba6b1b0 *.LC0>)) pcrread.c:73 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) pcrread.c:73 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) pcrread.c:73 -1
+     (nil))
+(call_insn 24 23 25 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7fec5bdc5000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) pcrread.c:73 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 25 24 26 2 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])
+        (const_int -1 [0xffffffffffffffff])) pcrread.c:75 -1
+     (nil))
+(insn 26 25 27 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) pcrread.c:78 -1
+     (nil))
+(jump_insn 27 26 28 2 (set (pc)
+        (label_ref 406)) pcrread.c:78 -1
+     (nil)
+ -> 406)
+(barrier 28 27 412)
+(code_label 412 28 29 4 30 "" [1 uses])
+(note 29 412 30 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 4 (set (reg:SI 202)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:79 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:DI 88 [ D.6321 ])
+        (sign_extend:DI (reg:SI 202))) pcrread.c:79 -1
+     (nil))
+(insn 32 31 33 4 (parallel [
+            (set (reg:DI 89 [ D.6321 ])
+                (ashift:DI (reg:DI 88 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:79 -1
+     (nil))
+(insn 33 32 34 4 (set (reg/f:DI 203)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:79 -1
+     (nil))
+(insn 34 33 35 4 (parallel [
+            (set (reg/f:DI 90 [ D.6322 ])
+                (plus:DI (reg:DI 89 [ D.6321 ])
+                    (reg/f:DI 203)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:79 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 89 [ D.6321 ]))
+        (nil)))
+(insn 35 34 36 4 (set (reg/f:DI 91 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 90 [ D.6322 ]) [0 *_54+0 S8 A64])) pcrread.c:79 -1
+     (nil))
+(insn 36 35 37 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7fec5ba6b240 *.LC1>)) pcrread.c:79 -1
+     (nil))
+(insn 37 36 38 4 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ D.6323 ])) pcrread.c:79 -1
+     (nil))
+(call_insn/i 38 37 39 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fec5be590d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) pcrread.c:79 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 39 38 40 4 (set (reg:SI 92 [ D.6324 ])
+        (reg:SI 0 ax)) pcrread.c:79 -1
+     (nil))
+(insn 40 39 41 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:79 -1
+     (nil))
+(jump_insn 41 40 42 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) pcrread.c:79 -1
+     (nil)
+ -> 71)
+(note 42 41 43 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 43 42 44 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:80 -1
+     (nil))
+(insn 44 43 45 5 (set (reg:SI 204)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:81 -1
+     (nil))
+(insn 45 44 46 5 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 204)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1204 [0xfffffffffffffb4c])) [0 argc+0 S4 A32]))) pcrread.c:81 -1
+     (nil))
+(jump_insn 46 45 47 5 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) pcrread.c:81 -1
+     (nil)
+ -> 62)
+(note 47 46 48 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 6 (set (reg:SI 205)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:82 -1
+     (nil))
+(insn 49 48 50 6 (set (reg:DI 93 [ D.6321 ])
+        (sign_extend:DI (reg:SI 205))) pcrread.c:82 -1
+     (nil))
+(insn 50 49 51 6 (parallel [
+            (set (reg:DI 94 [ D.6321 ])
+                (ashift:DI (reg:DI 93 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:82 -1
+     (nil))
+(insn 51 50 52 6 (set (reg/f:DI 206)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:82 -1
+     (nil))
+(insn 52 51 53 6 (parallel [
+            (set (reg/f:DI 95 [ D.6322 ])
+                (plus:DI (reg:DI 94 [ D.6321 ])
+                    (reg/f:DI 206)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:82 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 94 [ D.6321 ]))
+        (nil)))
+(insn 53 52 54 6 (set (reg/f:DI 96 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 95 [ D.6322 ]) [0 *_60+0 S8 A64])) pcrread.c:82 -1
+     (nil))
+(insn 54 53 55 6 (parallel [
+            (set (reg:DI 207)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1192 [0xfffffffffffffb58])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:82 -1
+     (nil))
+(insn 55 54 56 6 (set (reg:DI 1 dx)
+        (reg:DI 207)) pcrread.c:82 -1
+     (nil))
+(insn 56 55 57 6 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7fec5ba6b2d0 *.LC2>)) pcrread.c:82 -1
+     (nil))
+(insn 57 56 58 6 (set (reg:DI 5 di)
+        (reg/f:DI 96 [ D.6323 ])) pcrread.c:82 -1
+     (nil))
+(insn 58 57 59 6 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:82 -1
+     (nil))
+(call_insn 59 58 60 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7fec5be62ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) pcrread.c:82 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 60 59 61 6 (set (pc)
+        (label_ref:DI 403)) 654 {jump}
+     (nil)
+ -> 403)
+(barrier 61 60 62)
+(code_label 62 61 63 7 4 "" [1 uses])
+(note 63 62 64 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 65 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7fec5ba6b360 *.LC3>)) pcrread.c:85 -1
+     (nil))
+(call_insn 65 64 66 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:85 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 66 65 69 7 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:86 -1
+     (nil)
+    (nil))
+(jump_insn 69 66 70 7 (set (pc)
+        (label_ref 403)) -1
+     (nil)
+ -> 403)
+(barrier 70 69 71)
+(code_label 71 70 72 9 3 "" [1 uses])
+(note 72 71 73 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 73 72 74 9 (set (reg:SI 208)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:89 -1
+     (nil))
+(insn 74 73 75 9 (set (reg:DI 97 [ D.6321 ])
+        (sign_extend:DI (reg:SI 208))) pcrread.c:89 -1
+     (nil))
+(insn 75 74 76 9 (parallel [
+            (set (reg:DI 98 [ D.6321 ])
+                (ashift:DI (reg:DI 97 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:89 -1
+     (nil))
+(insn 76 75 77 9 (set (reg/f:DI 209)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:89 -1
+     (nil))
+(insn 77 76 78 9 (parallel [
+            (set (reg/f:DI 99 [ D.6322 ])
+                (plus:DI (reg:DI 98 [ D.6321 ])
+                    (reg/f:DI 209)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:89 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 98 [ D.6321 ]))
+        (nil)))
+(insn 78 77 79 9 (set (reg/f:DI 100 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 99 [ D.6322 ]) [0 *_67+0 S8 A64])) pcrread.c:89 -1
+     (nil))
+(insn 79 78 80 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7fec5ba6b3f0 *.LC4>)) pcrread.c:89 -1
+     (nil))
+(insn 80 79 81 9 (set (reg:DI 5 di)
+        (reg/f:DI 100 [ D.6323 ])) pcrread.c:89 -1
+     (nil))
+(call_insn/i 81 80 82 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fec5be590d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) pcrread.c:89 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 82 81 83 9 (set (reg:SI 101 [ D.6324 ])
+        (reg:SI 0 ax)) pcrread.c:89 -1
+     (nil))
+(insn 83 82 84 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:89 -1
+     (nil))
+(jump_insn 84 83 85 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 216)
+            (pc))) pcrread.c:89 -1
+     (nil)
+ -> 216)
+(note 85 84 86 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 86 85 87 10 (set (reg:SI 102 [ D.6325 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])) pcrread.c:90 -1
+     (nil))
+(insn 87 86 88 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 102 [ D.6325 ])
+            (const_int -1 [0xffffffffffffffff]))) pcrread.c:90 -1
+     (nil))
+(jump_insn 88 87 89 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 93)
+            (pc))) pcrread.c:90 -1
+     (nil)
+ -> 93)
+(note 89 88 90 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 90 89 91 11 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])
+        (const_int 1 [0x1])) pcrread.c:91 -1
+     (nil))
+(jump_insn 91 90 92 11 (set (pc)
+        (label_ref 98)) -1
+     (nil)
+ -> 98)
+(barrier 92 91 93)
+(code_label 93 92 94 12 8 "" [1 uses])
+(note 94 93 95 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 95 94 96 12 (set (reg:SI 103 [ D.6325 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])) pcrread.c:94 -1
+     (nil))
+(insn 96 95 97 12 (parallel [
+            (set (reg:SI 104 [ D.6325 ])
+                (plus:SI (reg:SI 103 [ D.6325 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:94 -1
+     (nil))
+(insn 97 96 98 12 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])
+        (reg:SI 104 [ D.6325 ])) pcrread.c:94 -1
+     (nil))
+(code_label 98 97 99 13 9 "" [1 uses])
+(note 99 98 100 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 100 99 101 13 (set (reg:SI 105 [ D.6325 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])) pcrread.c:96 -1
+     (nil))
+(insn 101 100 102 13 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 105 [ D.6325 ])
+            (const_int 3 [0x3]))) pcrread.c:96 -1
+     (nil))
+(jump_insn 102 101 103 13 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 109)
+            (pc))) pcrread.c:96 -1
+     (nil)
+ -> 109)
+(note 103 102 104 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 104 103 105 14 (set (reg:SI 4 si)
+        (const_int 3 [0x3])) pcrread.c:97 -1
+     (nil))
+(insn 105 104 106 14 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7fec5ba6b480 *.LC5>)) pcrread.c:97 -1
+     (nil))
+(insn 106 105 107 14 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:97 -1
+     (nil))
+(call_insn 107 106 108 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fec5be5fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) pcrread.c:97 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(call_insn 108 107 109 14 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:98 -1
+     (nil)
+    (nil))
+(code_label 109 108 110 15 10 "" [1 uses])
+(note 110 109 111 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 111 110 112 15 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:100 -1
+     (nil))
+(insn 112 111 113 15 (set (reg:SI 210)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:101 -1
+     (nil))
+(insn 113 112 114 15 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 210)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1204 [0xfffffffffffffb4c])) [0 argc+0 S4 A32]))) pcrread.c:101 -1
+     (nil))
+(jump_insn 114 113 115 15 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 207)
+            (pc))) pcrread.c:101 -1
+     (nil)
+ -> 207)
+(note 115 114 116 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 116 115 117 16 (set (reg:SI 211)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:102 -1
+     (nil))
+(insn 117 116 118 16 (set (reg:DI 106 [ D.6321 ])
+        (sign_extend:DI (reg:SI 211))) pcrread.c:102 -1
+     (nil))
+(insn 118 117 119 16 (parallel [
+            (set (reg:DI 107 [ D.6321 ])
+                (ashift:DI (reg:DI 106 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:102 -1
+     (nil))
+(insn 119 118 120 16 (set (reg/f:DI 212)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:102 -1
+     (nil))
+(insn 120 119 121 16 (parallel [
+            (set (reg/f:DI 108 [ D.6322 ])
+                (plus:DI (reg:DI 107 [ D.6321 ])
+                    (reg/f:DI 212)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:102 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 107 [ D.6321 ]))
+        (nil)))
+(insn 121 120 122 16 (set (reg/f:DI 109 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 108 [ D.6322 ]) [0 *_81+0 S8 A64])) pcrread.c:102 -1
+     (nil))
+(insn 122 121 123 16 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7fec5ba6b510 *.LC6>)) pcrread.c:102 -1
+     (nil))
+(insn 123 122 124 16 (set (reg:DI 5 di)
+        (reg/f:DI 109 [ D.6323 ])) pcrread.c:102 -1
+     (nil))
+(call_insn/i 124 123 125 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fec5be590d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) pcrread.c:102 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 125 124 126 16 (set (reg:SI 110 [ D.6324 ])
+        (reg:SI 0 ax)) pcrread.c:102 -1
+     (nil))
+(insn 126 125 127 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 110 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:102 -1
+     (nil))
+(jump_insn 127 126 128 16 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 142)
+            (pc))) pcrread.c:102 -1
+     (nil)
+ -> 142)
+(note 128 127 129 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 129 128 130 17 (set (reg:SI 111 [ D.6325 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])) pcrread.c:103 -1
+     (nil))
+(insn 130 129 131 17 (parallel [
+            (set (reg:SI 112 [ D.6325 ])
+                (plus:SI (reg:SI 111 [ D.6325 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:103 -1
+     (nil))
+(insn 131 130 132 17 (set (reg:DI 213)
+        (zero_extend:DI (reg:SI 112 [ D.6325 ]))) pcrread.c:103 -1
+     (nil))
+(insn 132 131 133 17 (set (reg:DI 214)
+        (reg:DI 213)) pcrread.c:103 -1
+     (nil))
+(insn 133 132 134 17 (parallel [
+            (set (reg:DI 214)
+                (ashift:DI (reg:DI 214)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:103 -1
+     (nil))
+(insn 134 133 135 17 (parallel [
+            (set (reg:DI 214)
+                (plus:DI (reg:DI 214)
+                    (reg:DI 213)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:103 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 213)
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 135 134 136 17 (parallel [
+            (set (reg:DI 215)
+                (ashift:DI (reg:DI 214)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:103 -1
+     (nil))
+(insn 136 135 137 17 (set (reg:DI 214)
+        (reg:DI 215)) pcrread.c:103 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 213)
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 137 136 138 17 (parallel [
+            (set (reg:DI 216)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (reg:DI 214)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:103 -1
+     (nil))
+(insn 138 137 139 17 (parallel [
+            (set (reg/f:DI 217)
+                (plus:DI (reg:DI 216)
+                    (const_int -1116 [0xfffffffffffffba4])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:103 -1
+     (nil))
+(insn 139 138 140 17 (set (mem/j:HI (reg/f:DI 217) [0 in.pcrSelectionIn.pcrSelections[_85].hash+0 S2 A16])
+        (const_int 4 [0x4])) pcrread.c:103 -1
+     (nil))
+(jump_insn 140 139 141 17 (set (pc)
+        (label_ref:DI 403)) 654 {jump}
+     (nil)
+ -> 403)
+(barrier 141 140 142)
+(code_label 142 141 143 18 12 "" [1 uses])
+(note 143 142 144 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 144 143 145 18 (set (reg:SI 218)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:105 -1
+     (nil))
+(insn 145 144 146 18 (set (reg:DI 113 [ D.6321 ])
+        (sign_extend:DI (reg:SI 218))) pcrread.c:105 -1
+     (nil))
+(insn 146 145 147 18 (parallel [
+            (set (reg:DI 114 [ D.6321 ])
+                (ashift:DI (reg:DI 113 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:105 -1
+     (nil))
+(insn 147 146 148 18 (set (reg/f:DI 219)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:105 -1
+     (nil))
+(insn 148 147 149 18 (parallel [
+            (set (reg/f:DI 115 [ D.6322 ])
+                (plus:DI (reg:DI 114 [ D.6321 ])
+                    (reg/f:DI 219)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:105 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 114 [ D.6321 ]))
+        (nil)))
+(insn 149 148 150 18 (set (reg/f:DI 116 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 115 [ D.6322 ]) [0 *_89+0 S8 A64])) pcrread.c:105 -1
+     (nil))
+(insn 150 149 151 18 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7fec5ba6b5a0 *.LC7>)) pcrread.c:105 -1
+     (nil))
+(insn 151 150 152 18 (set (reg:DI 5 di)
+        (reg/f:DI 116 [ D.6323 ])) pcrread.c:105 -1
+     (nil))
+(call_insn/i 152 151 153 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fec5be590d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) pcrread.c:105 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 153 152 154 18 (set (reg:SI 117 [ D.6324 ])
+        (reg:SI 0 ax)) pcrread.c:105 -1
+     (nil))
+(insn 154 153 155 18 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 117 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:105 -1
+     (nil))
+(jump_insn 155 154 156 18 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 170)
+            (pc))) pcrread.c:105 -1
+     (nil)
+ -> 170)
+(note 156 155 157 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 157 156 158 19 (set (reg:SI 118 [ D.6325 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])) pcrread.c:106 -1
+     (nil))
+(insn 158 157 159 19 (parallel [
+            (set (reg:SI 119 [ D.6325 ])
+                (plus:SI (reg:SI 118 [ D.6325 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:106 -1
+     (nil))
+(insn 159 158 160 19 (set (reg:DI 220)
+        (zero_extend:DI (reg:SI 119 [ D.6325 ]))) pcrread.c:106 -1
+     (nil))
+(insn 160 159 161 19 (set (reg:DI 221)
+        (reg:DI 220)) pcrread.c:106 -1
+     (nil))
+(insn 161 160 162 19 (parallel [
+            (set (reg:DI 221)
+                (ashift:DI (reg:DI 221)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:106 -1
+     (nil))
+(insn 162 161 163 19 (parallel [
+            (set (reg:DI 221)
+                (plus:DI (reg:DI 221)
+                    (reg:DI 220)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:106 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 220)
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 163 162 164 19 (parallel [
+            (set (reg:DI 222)
+                (ashift:DI (reg:DI 221)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:106 -1
+     (nil))
+(insn 164 163 165 19 (set (reg:DI 221)
+        (reg:DI 222)) pcrread.c:106 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 220)
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 165 164 166 19 (parallel [
+            (set (reg:DI 223)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (reg:DI 221)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:106 -1
+     (nil))
+(insn 166 165 167 19 (parallel [
+            (set (reg/f:DI 224)
+                (plus:DI (reg:DI 223)
+                    (const_int -1116 [0xfffffffffffffba4])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:106 -1
+     (nil))
+(insn 167 166 168 19 (set (mem/j:HI (reg/f:DI 224) [0 in.pcrSelectionIn.pcrSelections[_93].hash+0 S2 A16])
+        (const_int 11 [0xb])) pcrread.c:106 -1
+     (nil))
+(jump_insn 168 167 169 19 (set (pc)
+        (label_ref:DI 403)) 654 {jump}
+     (nil)
+ -> 403)
+(barrier 169 168 170)
+(code_label 170 169 171 20 14 "" [1 uses])
+(note 171 170 172 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 172 171 173 20 (set (reg:SI 225)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:108 -1
+     (nil))
+(insn 173 172 174 20 (set (reg:DI 120 [ D.6321 ])
+        (sign_extend:DI (reg:SI 225))) pcrread.c:108 -1
+     (nil))
+(insn 174 173 175 20 (parallel [
+            (set (reg:DI 121 [ D.6321 ])
+                (ashift:DI (reg:DI 120 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:108 -1
+     (nil))
+(insn 175 174 176 20 (set (reg/f:DI 226)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:108 -1
+     (nil))
+(insn 176 175 177 20 (parallel [
+            (set (reg/f:DI 122 [ D.6322 ])
+                (plus:DI (reg:DI 121 [ D.6321 ])
+                    (reg/f:DI 226)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:108 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 121 [ D.6321 ]))
+        (nil)))
+(insn 177 176 178 20 (set (reg/f:DI 123 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 122 [ D.6322 ]) [0 *_97+0 S8 A64])) pcrread.c:108 -1
+     (nil))
+(insn 178 177 179 20 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7fec5ba6b630 *.LC8>)) pcrread.c:108 -1
+     (nil))
+(insn 179 178 180 20 (set (reg:DI 5 di)
+        (reg/f:DI 123 [ D.6323 ])) pcrread.c:108 -1
+     (nil))
+(call_insn/i 180 179 181 20 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fec5be590d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) pcrread.c:108 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 181 180 182 20 (set (reg:SI 124 [ D.6324 ])
+        (reg:SI 0 ax)) pcrread.c:108 -1
+     (nil))
+(insn 182 181 183 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 124 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:108 -1
+     (nil))
+(jump_insn 183 182 184 20 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 198)
+            (pc))) pcrread.c:108 -1
+     (nil)
+ -> 198)
+(note 184 183 185 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 185 184 186 21 (set (reg:SI 125 [ D.6325 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])) pcrread.c:109 -1
+     (nil))
+(insn 186 185 187 21 (parallel [
+            (set (reg:SI 126 [ D.6325 ])
+                (plus:SI (reg:SI 125 [ D.6325 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:109 -1
+     (nil))
+(insn 187 186 188 21 (set (reg:DI 227)
+        (zero_extend:DI (reg:SI 126 [ D.6325 ]))) pcrread.c:109 -1
+     (nil))
+(insn 188 187 189 21 (set (reg:DI 228)
+        (reg:DI 227)) pcrread.c:109 -1
+     (nil))
+(insn 189 188 190 21 (parallel [
+            (set (reg:DI 228)
+                (ashift:DI (reg:DI 228)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:109 -1
+     (nil))
+(insn 190 189 191 21 (parallel [
+            (set (reg:DI 228)
+                (plus:DI (reg:DI 228)
+                    (reg:DI 227)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:109 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 227)
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 191 190 192 21 (parallel [
+            (set (reg:DI 229)
+                (ashift:DI (reg:DI 228)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:109 -1
+     (nil))
+(insn 192 191 193 21 (set (reg:DI 228)
+        (reg:DI 229)) pcrread.c:109 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 227)
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 193 192 194 21 (parallel [
+            (set (reg:DI 230)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (reg:DI 228)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:109 -1
+     (nil))
+(insn 194 193 195 21 (parallel [
+            (set (reg/f:DI 231)
+                (plus:DI (reg:DI 230)
+                    (const_int -1116 [0xfffffffffffffba4])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:109 -1
+     (nil))
+(insn 195 194 196 21 (set (mem/j:HI (reg/f:DI 231) [0 in.pcrSelectionIn.pcrSelections[_101].hash+0 S2 A16])
+        (const_int 12 [0xc])) pcrread.c:109 -1
+     (nil))
+(jump_insn 196 195 197 21 (set (pc)
+        (label_ref:DI 403)) 654 {jump}
+     (nil)
+ -> 403)
+(barrier 197 196 198)
+(code_label 198 197 199 22 15 "" [1 uses])
+(note 199 198 200 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 200 199 201 22 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7fec5ba6b6c0 *.LC9>)) pcrread.c:112 -1
+     (nil))
+(call_insn 201 200 202 22 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:112 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 202 201 205 22 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:113 -1
+     (nil)
+    (nil))
+(jump_insn 205 202 206 22 (set (pc)
+        (label_ref:DI 403)) 654 {jump}
+     (nil)
+ -> 403)
+(barrier 206 205 207)
+(code_label 207 206 208 24 11 "" [1 uses])
+(note 208 207 209 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 209 208 210 24 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7fec5ba6b750 *.LC10>)) pcrread.c:117 -1
+     (nil))
+(call_insn 210 209 211 24 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:117 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 211 210 214 24 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:118 -1
+     (nil)
+    (nil))
+(jump_insn 214 211 215 24 (set (pc)
+        (label_ref 403)) -1
+     (nil)
+ -> 403)
+(barrier 215 214 216)
+(code_label 216 215 217 26 7 "" [1 uses])
+(note 217 216 218 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 218 217 219 26 (set (reg:SI 232)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:121 -1
+     (nil))
+(insn 219 218 220 26 (set (reg:DI 127 [ D.6321 ])
+        (sign_extend:DI (reg:SI 232))) pcrread.c:121 -1
+     (nil))
+(insn 220 219 221 26 (parallel [
+            (set (reg:DI 128 [ D.6321 ])
+                (ashift:DI (reg:DI 127 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:121 -1
+     (nil))
+(insn 221 220 222 26 (set (reg/f:DI 233)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:121 -1
+     (nil))
+(insn 222 221 223 26 (parallel [
+            (set (reg/f:DI 129 [ D.6322 ])
+                (plus:DI (reg:DI 128 [ D.6321 ])
+                    (reg/f:DI 233)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:121 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 128 [ D.6321 ]))
+        (nil)))
+(insn 223 222 224 26 (set (reg/f:DI 130 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 129 [ D.6322 ]) [0 *_109+0 S8 A64])) pcrread.c:121 -1
+     (nil))
+(insn 224 223 225 26 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7fec5ba6b7e0 *.LC11>)) pcrread.c:121 -1
+     (nil))
+(insn 225 224 226 26 (set (reg:DI 5 di)
+        (reg/f:DI 130 [ D.6323 ])) pcrread.c:121 -1
+     (nil))
+(call_insn/i 226 225 227 26 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fec5be590d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) pcrread.c:121 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 227 226 228 26 (set (reg:SI 131 [ D.6324 ])
+        (reg:SI 0 ax)) pcrread.c:121 -1
+     (nil))
+(insn 228 227 229 26 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 131 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:121 -1
+     (nil))
+(jump_insn 229 228 230 26 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 254)
+            (pc))) pcrread.c:121 -1
+     (nil)
+ -> 254)
+(note 230 229 231 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 231 230 232 27 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:122 -1
+     (nil))
+(insn 232 231 233 27 (set (reg:SI 234)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:123 -1
+     (nil))
+(insn 233 232 234 27 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 234)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1204 [0xfffffffffffffb4c])) [0 argc+0 S4 A32]))) pcrread.c:123 -1
+     (nil))
+(jump_insn 234 233 235 27 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 245)
+            (pc))) pcrread.c:123 -1
+     (nil)
+ -> 245)
+(note 235 234 236 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 236 235 237 28 (set (reg:SI 235)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:124 -1
+     (nil))
+(insn 237 236 238 28 (set (reg:DI 132 [ D.6321 ])
+        (sign_extend:DI (reg:SI 235))) pcrread.c:124 -1
+     (nil))
+(insn 238 237 239 28 (parallel [
+            (set (reg:DI 133 [ D.6321 ])
+                (ashift:DI (reg:DI 132 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:124 -1
+     (nil))
+(insn 239 238 240 28 (set (reg/f:DI 236)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:124 -1
+     (nil))
+(insn 240 239 241 28 (parallel [
+            (set (reg/f:DI 134 [ D.6322 ])
+                (plus:DI (reg:DI 133 [ D.6321 ])
+                    (reg/f:DI 236)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:124 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 133 [ D.6321 ]))
+        (nil)))
+(insn 241 240 242 28 (set (reg/f:DI 237)
+        (mem/f:DI (reg/f:DI 134 [ D.6322 ]) [0 *_115+0 S8 A64])) pcrread.c:124 -1
+     (nil))
+(insn 242 241 243 28 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1128 [0xfffffffffffffb98])) [0 datafilename+0 S8 A64])
+        (reg/f:DI 237)) pcrread.c:124 -1
+     (nil))
+(jump_insn 243 242 244 28 (set (pc)
+        (label_ref:DI 403)) 654 {jump}
+     (nil)
+ -> 403)
+(barrier 244 243 245)
+(code_label 245 244 246 29 18 "" [1 uses])
+(note 246 245 247 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 247 246 248 29 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7fec5ba6b870 *.LC12>)) pcrread.c:126 -1
+     (nil))
+(call_insn 248 247 249 29 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:126 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 249 248 252 29 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:127 -1
+     (nil)
+    (nil))
+(jump_insn 252 249 253 29 (set (pc)
+        (label_ref 403)) -1
+     (nil)
+ -> 403)
+(barrier 253 252 254)
+(code_label 254 253 255 31 17 "" [1 uses])
+(note 255 254 256 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 256 255 257 31 (set (reg:SI 238)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:130 -1
+     (nil))
+(insn 257 256 258 31 (set (reg:DI 135 [ D.6321 ])
+        (sign_extend:DI (reg:SI 238))) pcrread.c:130 -1
+     (nil))
+(insn 258 257 259 31 (parallel [
+            (set (reg:DI 136 [ D.6321 ])
+                (ashift:DI (reg:DI 135 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:130 -1
+     (nil))
+(insn 259 258 260 31 (set (reg/f:DI 239)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:130 -1
+     (nil))
+(insn 260 259 261 31 (parallel [
+            (set (reg/f:DI 137 [ D.6322 ])
+                (plus:DI (reg:DI 136 [ D.6321 ])
+                    (reg/f:DI 239)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:130 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 136 [ D.6321 ]))
+        (nil)))
+(insn 261 260 262 31 (set (reg/f:DI 138 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 137 [ D.6322 ]) [0 *_121+0 S8 A64])) pcrread.c:130 -1
+     (nil))
+(insn 262 261 263 31 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7fec5ba6b900 *.LC13>)) pcrread.c:130 -1
+     (nil))
+(insn 263 262 264 31 (set (reg:DI 5 di)
+        (reg/f:DI 138 [ D.6323 ])) pcrread.c:130 -1
+     (nil))
+(call_insn/i 264 263 265 31 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fec5be590d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) pcrread.c:130 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 265 264 266 31 (set (reg:SI 139 [ D.6324 ])
+        (reg:SI 0 ax)) pcrread.c:130 -1
+     (nil))
+(insn 266 265 267 31 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 139 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:130 -1
+     (nil))
+(jump_insn 267 266 268 31 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 272)
+            (pc))) pcrread.c:130 -1
+     (nil)
+ -> 272)
+(note 268 267 269 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 269 268 270 32 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1172 [0xfffffffffffffb6c])) [0 noSpace+0 S4 A32])
+        (const_int 1 [0x1])) pcrread.c:131 -1
+     (nil))
+(jump_insn 270 269 271 32 (set (pc)
+        (label_ref 403)) -1
+     (nil)
+ -> 403)
+(barrier 271 270 272)
+(code_label 272 271 273 33 20 "" [1 uses])
+(note 273 272 274 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 274 273 275 33 (set (reg:SI 240)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:133 -1
+     (nil))
+(insn 275 274 276 33 (set (reg:DI 140 [ D.6321 ])
+        (sign_extend:DI (reg:SI 240))) pcrread.c:133 -1
+     (nil))
+(insn 276 275 277 33 (parallel [
+            (set (reg:DI 141 [ D.6321 ])
+                (ashift:DI (reg:DI 140 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:133 -1
+     (nil))
+(insn 277 276 278 33 (set (reg/f:DI 241)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:133 -1
+     (nil))
+(insn 278 277 279 33 (parallel [
+            (set (reg/f:DI 142 [ D.6322 ])
+                (plus:DI (reg:DI 141 [ D.6321 ])
+                    (reg/f:DI 241)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:133 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 141 [ D.6321 ]))
+        (nil)))
+(insn 279 278 280 33 (set (reg/f:DI 143 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 142 [ D.6322 ]) [0 *_127+0 S8 A64])) pcrread.c:133 -1
+     (nil))
+(insn 280 279 281 33 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7fec5ba6b990 *.LC14>)) pcrread.c:133 -1
+     (nil))
+(insn 281 280 282 33 (set (reg:DI 5 di)
+        (reg/f:DI 143 [ D.6323 ])) pcrread.c:133 -1
+     (nil))
+(call_insn/i 282 281 283 33 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fec5be590d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) pcrread.c:133 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 283 282 284 33 (set (reg:SI 144 [ D.6324 ])
+        (reg:SI 0 ax)) pcrread.c:133 -1
+     (nil))
+(insn 284 283 285 33 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 144 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:133 -1
+     (nil))
+(jump_insn 285 284 286 33 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 350)
+            (pc))) pcrread.c:133 -1
+     (nil)
+ -> 350)
+(note 286 285 287 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 287 286 288 34 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:134 -1
+     (nil))
+(insn 288 287 289 34 (set (reg:SI 242)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:135 -1
+     (nil))
+(insn 289 288 290 34 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 242)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1204 [0xfffffffffffffb4c])) [0 argc+0 S4 A32]))) pcrread.c:135 -1
+     (nil))
+(jump_insn 290 289 291 34 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 306)
+            (pc))) pcrread.c:135 -1
+     (nil)
+ -> 306)
+(note 291 290 292 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 292 291 293 35 (set (reg:SI 243)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:136 -1
+     (nil))
+(insn 293 292 294 35 (set (reg:DI 145 [ D.6321 ])
+        (sign_extend:DI (reg:SI 243))) pcrread.c:136 -1
+     (nil))
+(insn 294 293 295 35 (parallel [
+            (set (reg:DI 146 [ D.6321 ])
+                (ashift:DI (reg:DI 145 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:136 -1
+     (nil))
+(insn 295 294 296 35 (set (reg/f:DI 244)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:136 -1
+     (nil))
+(insn 296 295 297 35 (parallel [
+            (set (reg/f:DI 147 [ D.6322 ])
+                (plus:DI (reg:DI 146 [ D.6321 ])
+                    (reg/f:DI 244)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:136 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 146 [ D.6321 ]))
+        (nil)))
+(insn 297 296 298 35 (set (reg/f:DI 148 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 147 [ D.6322 ]) [0 *_133+0 S8 A64])) pcrread.c:136 -1
+     (nil))
+(insn 298 297 299 35 (parallel [
+            (set (reg:DI 245)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1188 [0xfffffffffffffb5c])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:136 -1
+     (nil))
+(insn 299 298 300 35 (set (reg:DI 1 dx)
+        (reg:DI 245)) pcrread.c:136 -1
+     (nil))
+(insn 300 299 301 35 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7fec5ba6ba20 *.LC15>)) pcrread.c:136 -1
+     (nil))
+(insn 301 300 302 35 (set (reg:DI 5 di)
+        (reg/f:DI 148 [ D.6323 ])) pcrread.c:136 -1
+     (nil))
+(insn 302 301 303 35 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:136 -1
+     (nil))
+(call_insn 303 302 304 35 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7fec5be62ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) pcrread.c:136 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 304 303 305 35 (set (pc)
+        (label_ref 311)) -1
+     (nil)
+ -> 311)
+(barrier 305 304 306)
+(code_label 306 305 307 36 22 "" [1 uses])
+(note 307 306 308 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 308 307 309 36 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7fec5ba6bab0 *.LC16>)) pcrread.c:139 -1
+     (nil))
+(call_insn 309 308 310 36 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:139 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 310 309 311 36 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:140 -1
+     (nil)
+    (nil))
+(code_label 311 310 312 37 23 "" [1 uses])
+(note 312 311 313 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 313 312 314 37 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:142 -1
+     (nil))
+(insn 314 313 315 37 (set (reg:SI 246)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:143 -1
+     (nil))
+(insn 315 314 316 37 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 246)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1204 [0xfffffffffffffb4c])) [0 argc+0 S4 A32]))) pcrread.c:143 -1
+     (nil))
+(jump_insn 316 315 317 37 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 341)
+            (pc))) pcrread.c:143 -1
+     (nil)
+ -> 341)
+(note 317 316 318 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 318 317 319 38 (set (reg:SI 247)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:144 -1
+     (nil))
+(insn 319 318 320 38 (set (reg:DI 149 [ D.6321 ])
+        (sign_extend:DI (reg:SI 247))) pcrread.c:144 -1
+     (nil))
+(insn 320 319 321 38 (parallel [
+            (set (reg:DI 150 [ D.6321 ])
+                (ashift:DI (reg:DI 149 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:144 -1
+     (nil))
+(insn 321 320 322 38 (set (reg/f:DI 248)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:144 -1
+     (nil))
+(insn 322 321 323 38 (parallel [
+            (set (reg/f:DI 151 [ D.6322 ])
+                (plus:DI (reg:DI 150 [ D.6321 ])
+                    (reg/f:DI 248)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:144 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 150 [ D.6321 ]))
+        (nil)))
+(insn 323 322 324 38 (set (reg/f:DI 152 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 151 [ D.6322 ]) [0 *_141+0 S8 A64])) pcrread.c:144 -1
+     (nil))
+(insn 324 323 325 38 (parallel [
+            (set (reg:DI 249)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1184 [0xfffffffffffffb60])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:144 -1
+     (nil))
+(insn 325 324 326 38 (set (reg:DI 1 dx)
+        (reg:DI 249)) pcrread.c:144 -1
+     (nil))
+(insn 326 325 327 38 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7fec5ba6ba20 *.LC15>)) pcrread.c:144 -1
+     (nil))
+(insn 327 326 328 38 (set (reg:DI 5 di)
+        (reg/f:DI 152 [ D.6323 ])) pcrread.c:144 -1
+     (nil))
+(insn 328 327 329 38 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:144 -1
+     (nil))
+(call_insn 329 328 330 38 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7fec5be62ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) pcrread.c:144 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 330 329 331 38 (set (reg:SI 153 [ D.6325 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1184 [0xfffffffffffffb60])) [0 sessionAttributes0+0 S4 A64])) pcrread.c:145 -1
+     (nil))
+(insn 331 330 332 38 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 153 [ D.6325 ])
+            (const_int 255 [0xff]))) pcrread.c:145 -1
+     (nil))
+(jump_insn 332 331 333 38 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 403)
+            (pc))) pcrread.c:145 612 {*jcc_1}
+     (nil)
+ -> 403)
+(note 333 332 334 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 334 333 335 39 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7fec5ba6bb40 *.LC17>)) pcrread.c:146 -1
+     (nil))
+(call_insn 335 334 336 39 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:146 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 336 335 339 39 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:147 -1
+     (nil)
+    (nil))
+(jump_insn 339 336 340 39 (set (pc)
+        (label_ref:DI 403)) 654 {jump}
+     (nil)
+ -> 403)
+(barrier 340 339 341)
+(code_label 341 340 342 41 24 "" [1 uses])
+(note 342 341 343 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 343 342 344 41 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7fec5ba6bab0 *.LC16>)) pcrread.c:151 -1
+     (nil))
+(call_insn 344 343 345 41 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:151 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 345 344 348 41 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:152 -1
+     (nil)
+    (nil))
+(jump_insn 348 345 349 41 (set (pc)
+        (label_ref 403)) -1
+     (nil)
+ -> 403)
+(barrier 349 348 350)
+(code_label 350 349 351 43 21 "" [1 uses])
+(note 351 350 352 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(insn 352 351 353 43 (set (reg:SI 250)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:155 -1
+     (nil))
+(insn 353 352 354 43 (set (reg:DI 154 [ D.6321 ])
+        (sign_extend:DI (reg:SI 250))) pcrread.c:155 -1
+     (nil))
+(insn 354 353 355 43 (parallel [
+            (set (reg:DI 155 [ D.6321 ])
+                (ashift:DI (reg:DI 154 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:155 -1
+     (nil))
+(insn 355 354 356 43 (set (reg/f:DI 251)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:155 -1
+     (nil))
+(insn 356 355 357 43 (parallel [
+            (set (reg/f:DI 156 [ D.6322 ])
+                (plus:DI (reg:DI 155 [ D.6321 ])
+                    (reg/f:DI 251)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:155 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 155 [ D.6321 ]))
+        (nil)))
+(insn 357 356 358 43 (set (reg/f:DI 157 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 156 [ D.6322 ]) [0 *_151+0 S8 A64])) pcrread.c:155 -1
+     (nil))
+(insn 358 357 359 43 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7fec5ba6bbd0 *.LC18>)) pcrread.c:155 -1
+     (nil))
+(insn 359 358 360 43 (set (reg:DI 5 di)
+        (reg/f:DI 157 [ D.6323 ])) pcrread.c:155 -1
+     (nil))
+(call_insn/i 360 359 361 43 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fec5be590d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) pcrread.c:155 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 361 360 362 43 (set (reg:SI 158 [ D.6324 ])
+        (reg:SI 0 ax)) pcrread.c:155 -1
+     (nil))
+(insn 362 361 363 43 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 158 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:155 -1
+     (nil))
+(jump_insn 363 362 364 43 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 368)
+            (pc))) pcrread.c:155 -1
+     (nil)
+ -> 368)
+(note 364 363 365 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(call_insn 365 364 366 44 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:156 -1
+     (nil)
+    (nil))
+(jump_insn 366 365 367 44 (set (pc)
+        (label_ref 403)) -1
+     (nil)
+ -> 403)
+(barrier 367 366 368)
+(code_label 368 367 369 45 27 "" [1 uses])
+(note 369 368 370 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 370 369 371 45 (set (reg:SI 252)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:158 -1
+     (nil))
+(insn 371 370 372 45 (set (reg:DI 159 [ D.6321 ])
+        (sign_extend:DI (reg:SI 252))) pcrread.c:158 -1
+     (nil))
+(insn 372 371 373 45 (parallel [
+            (set (reg:DI 160 [ D.6321 ])
+                (ashift:DI (reg:DI 159 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:158 -1
+     (nil))
+(insn 373 372 374 45 (set (reg/f:DI 253)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:158 -1
+     (nil))
+(insn 374 373 375 45 (parallel [
+            (set (reg/f:DI 161 [ D.6322 ])
+                (plus:DI (reg:DI 160 [ D.6321 ])
+                    (reg/f:DI 253)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:158 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 160 [ D.6321 ]))
+        (nil)))
+(insn 375 374 376 45 (set (reg/f:DI 162 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 161 [ D.6322 ]) [0 *_157+0 S8 A64])) pcrread.c:158 -1
+     (nil))
+(insn 376 375 377 45 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7fec5ba6bc60 *.LC19>)) pcrread.c:158 -1
+     (nil))
+(insn 377 376 378 45 (set (reg:DI 5 di)
+        (reg/f:DI 162 [ D.6323 ])) pcrread.c:158 -1
+     (nil))
+(call_insn/i 378 377 379 45 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fec5be590d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) pcrread.c:158 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 379 378 380 45 (set (reg:SI 163 [ D.6324 ])
+        (reg:SI 0 ax)) pcrread.c:158 -1
+     (nil))
+(insn 380 379 381 45 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 163 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:158 -1
+     (nil))
+(jump_insn 381 380 382 45 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 390)
+            (pc))) pcrread.c:158 -1
+     (nil)
+ -> 390)
+(note 382 381 383 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(insn 383 382 384 46 (set (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7fec5bc21090 verbose>) [0 verbose+0 S4 A32])
+        (const_int 1 [0x1])) pcrread.c:159 -1
+     (nil))
+(insn 384 383 385 46 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC20") [flags 0x2]  <var_decl 0x7fec5ba6bcf0 *.LC20>)) pcrread.c:160 -1
+     (nil))
+(insn 385 384 386 46 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) pcrread.c:160 -1
+     (nil))
+(insn 386 385 387 46 (set (reg:DI 5 di)
+        (const_int 0 [0])) pcrread.c:160 -1
+     (nil))
+(call_insn 387 386 388 46 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7fec5bdc5000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) pcrread.c:160 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(jump_insn 388 387 389 46 (set (pc)
+        (label_ref 403)) -1
+     (nil)
+ -> 403)
+(barrier 389 388 390)
+(code_label 390 389 391 47 28 "" [1 uses])
+(note 391 390 392 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(insn 392 391 393 47 (set (reg:SI 254)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:163 -1
+     (nil))
+(insn 393 392 394 47 (set (reg:DI 164 [ D.6321 ])
+        (sign_extend:DI (reg:SI 254))) pcrread.c:163 -1
+     (nil))
+(insn 394 393 395 47 (parallel [
+            (set (reg:DI 165 [ D.6321 ])
+                (ashift:DI (reg:DI 164 [ D.6321 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:163 -1
+     (nil))
+(insn 395 394 396 47 (set (reg/f:DI 255)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])) pcrread.c:163 -1
+     (nil))
+(insn 396 395 397 47 (parallel [
+            (set (reg/f:DI 166 [ D.6322 ])
+                (plus:DI (reg:DI 165 [ D.6321 ])
+                    (reg/f:DI 255)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:163 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1216 [0xfffffffffffffb40])) [0 argv+0 S8 A64])
+            (reg:DI 165 [ D.6321 ]))
+        (nil)))
+(insn 397 396 398 47 (set (reg/f:DI 167 [ D.6323 ])
+        (mem/f:DI (reg/f:DI 166 [ D.6322 ]) [0 *_164+0 S8 A64])) pcrread.c:163 -1
+     (nil))
+(insn 398 397 399 47 (set (reg:DI 4 si)
+        (reg/f:DI 167 [ D.6323 ])) pcrread.c:163 -1
+     (nil))
+(insn 399 398 400 47 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC21") [flags 0x2]  <var_decl 0x7fec5ba6bd80 *.LC21>)) pcrread.c:163 -1
+     (nil))
+(insn 400 399 401 47 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:163 -1
+     (nil))
+(call_insn 401 400 402 47 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fec5be5fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) pcrread.c:163 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(call_insn 402 401 403 47 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:164 -1
+     (nil)
+    (nil))
+(code_label 403 402 404 48 6 "" [15 uses])
+(note 404 403 405 48 [bb 48] NOTE_INSN_BASIC_BLOCK)
+(insn 405 404 406 48 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:78 -1
+     (nil))
+(code_label 406 405 407 49 2 "" [1 uses])
+(note 407 406 408 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(insn 408 407 409 49 (set (reg:SI 256)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1176 [0xfffffffffffffb68])) [0 i+0 S4 A32])) pcrread.c:78 -1
+     (nil))
+(insn 409 408 410 49 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 256)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1204 [0xfffffffffffffb4c])) [0 argc+0 S4 A32]))) pcrread.c:78 -1
+     (nil))
+(jump_insn 410 409 411 49 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 415)
+            (pc))) pcrread.c:78 -1
+     (nil)
+ -> 415)
+(note 411 410 413 50 [bb 50] NOTE_INSN_BASIC_BLOCK)
+(insn 413 411 414 50 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) pcrread.c:78 -1
+     (nil))
+(jump_insn 414 413 415 50 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 412)
+            (pc))) pcrread.c:78 -1
+     (nil)
+ -> 412)
+(code_label 415 414 416 51 29 "" [1 uses])
+(note 416 415 417 51 [bb 51] NOTE_INSN_BASIC_BLOCK)
+(insn 417 416 418 51 (set (reg:SI 168 [ D.6325 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1192 [0xfffffffffffffb58])) [0 pcrHandle+0 S4 A64])) pcrread.c:167 -1
+     (nil))
+(insn 418 417 419 51 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 168 [ D.6325 ])
+            (const_int 23 [0x17]))) pcrread.c:167 -1
+     (nil))
+(jump_insn 419 418 420 51 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 424)
+            (pc))) pcrread.c:167 -1
+     (nil)
+ -> 424)
+(note 420 419 421 52 [bb 52] NOTE_INSN_BASIC_BLOCK)
+(insn 421 420 422 52 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC22") [flags 0x2]  <var_decl 0x7fec5ba6be10 *.LC22>)) pcrread.c:168 -1
+     (nil))
+(call_insn 422 421 423 52 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:168 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 423 422 424 52 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fec5ba1f1b0 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) pcrread.c:169 -1
+     (nil)
+    (nil))
+(code_label 424 423 425 53 31 "" [1 uses])
+(note 425 424 426 53 [bb 53] NOTE_INSN_BASIC_BLOCK)
+(insn 426 425 427 53 (set (reg:SI 169 [ D.6325 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])) pcrread.c:172 -1
+     (nil))
+(insn 427 426 428 53 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 169 [ D.6325 ])
+            (const_int -1 [0xffffffffffffffff]))) pcrread.c:172 -1
+     (nil))
+(jump_insn 428 427 429 53 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 432)
+            (pc))) pcrread.c:172 -1
+     (nil)
+ -> 432)
+(note 429 428 430 54 [bb 54] NOTE_INSN_BASIC_BLOCK)
+(insn 430 429 431 54 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])
+        (const_int 1 [0x1])) pcrread.c:173 -1
+     (nil))
+(insn 431 430 432 54 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1116 [0xfffffffffffffba4])) [0 in.pcrSelectionIn.pcrSelections[0].hash+0 S2 A32])
+        (const_int 11 [0xb])) pcrread.c:174 -1
+     (nil))
+(code_label 432 431 433 55 32 "" [1 uses])
+(note 433 432 434 55 [bb 55] NOTE_INSN_BASIC_BLOCK)
+(insn 434 433 435 55 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) pcrread.c:177 -1
+     (nil))
+(jump_insn 435 434 436 55 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 510)
+            (pc))) pcrread.c:177 -1
+     (nil)
+ -> 510)
+(note 436 435 437 56 [bb 56] NOTE_INSN_BASIC_BLOCK)
+(insn 437 436 438 56 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1194 [0xfffffffffffffb56])) [0 c+0 S2 A16])
+        (const_int 0 [0])) pcrread.c:181 -1
+     (nil))
+(jump_insn 438 437 439 56 (set (pc)
+        (label_ref 503)) pcrread.c:181 -1
+     (nil)
+ -> 503)
+(barrier 439 438 507)
+(code_label 507 439 440 57 35 "" [1 uses])
+(note 440 507 441 57 [bb 57] NOTE_INSN_BASIC_BLOCK)
+(insn 441 440 442 57 (set (reg:SI 172 [ D.6324 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1194 [0xfffffffffffffb56])) [0 c+0 S2 A16]))) pcrread.c:182 -1
+     (nil))
+(insn 442 441 443 57 (set (reg:DI 257)
+        (sign_extend:DI (reg:SI 172 [ D.6324 ]))) pcrread.c:182 -1
+     (nil))
+(insn 443 442 444 57 (set (reg:DI 258)
+        (reg:DI 257)) pcrread.c:182 -1
+     (nil))
+(insn 444 443 445 57 (parallel [
+            (set (reg:DI 258)
+                (ashift:DI (reg:DI 258)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:182 -1
+     (nil))
+(insn 445 444 446 57 (parallel [
+            (set (reg:DI 258)
+                (plus:DI (reg:DI 258)
+                    (reg:DI 257)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:182 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 257)
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 446 445 447 57 (parallel [
+            (set (reg:DI 259)
+                (ashift:DI (reg:DI 258)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:182 -1
+     (nil))
+(insn 447 446 448 57 (set (reg:DI 258)
+        (reg:DI 259)) pcrread.c:182 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 257)
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 448 447 449 57 (parallel [
+            (set (reg:DI 260)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (reg:DI 258)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:182 -1
+     (nil))
+(insn 449 448 450 57 (parallel [
+            (set (reg/f:DI 261)
+                (plus:DI (reg:DI 260)
+                    (const_int -1114 [0xfffffffffffffba6])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:182 -1
+     (nil))
+(insn 450 449 451 57 (set (mem/j:QI (reg/f:DI 261) [0 in.pcrSelectionIn.pcrSelections[_178].sizeofSelect+0 S1 A16])
+        (const_int 3 [0x3])) pcrread.c:182 -1
+     (nil))
+(insn 451 450 452 57 (set (reg:SI 173 [ D.6324 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1194 [0xfffffffffffffb56])) [0 c+0 S2 A16]))) pcrread.c:183 -1
+     (nil))
+(insn 452 451 453 57 (set (reg:DI 262)
+        (sign_extend:DI (reg:SI 173 [ D.6324 ]))) pcrread.c:183 -1
+     (nil))
+(insn 453 452 454 57 (set (reg:DI 263)
+        (reg:DI 262)) pcrread.c:183 -1
+     (nil))
+(insn 454 453 455 57 (parallel [
+            (set (reg:DI 263)
+                (ashift:DI (reg:DI 263)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:183 -1
+     (nil))
+(insn 455 454 456 57 (parallel [
+            (set (reg:DI 263)
+                (plus:DI (reg:DI 263)
+                    (reg:DI 262)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:183 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 262)
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 456 455 457 57 (parallel [
+            (set (reg:DI 264)
+                (ashift:DI (reg:DI 263)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:183 -1
+     (nil))
+(insn 457 456 458 57 (set (reg:DI 263)
+        (reg:DI 264)) pcrread.c:183 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 262)
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 458 457 459 57 (parallel [
+            (set (reg:DI 265)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (reg:DI 263)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:183 -1
+     (nil))
+(insn 459 458 460 57 (parallel [
+            (set (reg/f:DI 266)
+                (plus:DI (reg:DI 265)
+                    (const_int -1113 [0xfffffffffffffba7])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:183 -1
+     (nil))
+(insn 460 459 461 57 (set (mem/j:QI (reg/f:DI 266) [0 in.pcrSelectionIn.pcrSelections[_180].pcrSelect+0 S1 A8])
+        (const_int 0 [0])) pcrread.c:183 -1
+     (nil))
+(insn 461 460 462 57 (set (reg:SI 174 [ D.6324 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1194 [0xfffffffffffffb56])) [0 c+0 S2 A16]))) pcrread.c:184 -1
+     (nil))
+(insn 462 461 463 57 (set (reg:DI 267)
+        (sign_extend:DI (reg:SI 174 [ D.6324 ]))) pcrread.c:184 -1
+     (nil))
+(insn 463 462 464 57 (set (reg:DI 268)
+        (reg:DI 267)) pcrread.c:184 -1
+     (nil))
+(insn 464 463 465 57 (parallel [
+            (set (reg:DI 268)
+                (ashift:DI (reg:DI 268)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:184 -1
+     (nil))
+(insn 465 464 466 57 (parallel [
+            (set (reg:DI 268)
+                (plus:DI (reg:DI 268)
+                    (reg:DI 267)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:184 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 267)
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 466 465 467 57 (parallel [
+            (set (reg:DI 269)
+                (ashift:DI (reg:DI 268)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:184 -1
+     (nil))
+(insn 467 466 468 57 (set (reg:DI 268)
+        (reg:DI 269)) pcrread.c:184 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 267)
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 468 467 469 57 (parallel [
+            (set (reg:DI 270)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (reg:DI 268)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:184 -1
+     (nil))
+(insn 469 468 470 57 (parallel [
+            (set (reg/f:DI 271)
+                (plus:DI (reg:DI 270)
+                    (const_int -1112 [0xfffffffffffffba8])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:184 -1
+     (nil))
+(insn 470 469 471 57 (set (mem/j:QI (reg/f:DI 271) [0 in.pcrSelectionIn.pcrSelections[_182].pcrSelect+1 S1 A8])
+        (const_int 0 [0])) pcrread.c:184 -1
+     (nil))
+(insn 471 470 472 57 (set (reg:SI 175 [ D.6324 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1194 [0xfffffffffffffb56])) [0 c+0 S2 A16]))) pcrread.c:185 -1
+     (nil))
+(insn 472 471 473 57 (set (reg:DI 272)
+        (sign_extend:DI (reg:SI 175 [ D.6324 ]))) pcrread.c:185 -1
+     (nil))
+(insn 473 472 474 57 (set (reg:DI 273)
+        (reg:DI 272)) pcrread.c:185 -1
+     (nil))
+(insn 474 473 475 57 (parallel [
+            (set (reg:DI 273)
+                (ashift:DI (reg:DI 273)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:185 -1
+     (nil))
+(insn 475 474 476 57 (parallel [
+            (set (reg:DI 273)
+                (plus:DI (reg:DI 273)
+                    (reg:DI 272)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:185 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 272)
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 476 475 477 57 (parallel [
+            (set (reg:DI 274)
+                (ashift:DI (reg:DI 273)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:185 -1
+     (nil))
+(insn 477 476 478 57 (set (reg:DI 273)
+        (reg:DI 274)) pcrread.c:185 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 272)
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 478 477 479 57 (parallel [
+            (set (reg:DI 275)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (reg:DI 273)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:185 -1
+     (nil))
+(insn 479 478 480 57 (parallel [
+            (set (reg/f:DI 276)
+                (plus:DI (reg:DI 275)
+                    (const_int -1111 [0xfffffffffffffba9])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:185 -1
+     (nil))
+(insn 480 479 481 57 (set (mem/j:QI (reg/f:DI 276) [0 in.pcrSelectionIn.pcrSelections[_184].pcrSelect+2 S1 A8])
+        (const_int 0 [0])) pcrread.c:185 -1
+     (nil))
+(insn 481 480 482 57 (set (reg:SI 176 [ D.6324 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1194 [0xfffffffffffffb56])) [0 c+0 S2 A16]))) pcrread.c:186 -1
+     (nil))
+(insn 482 481 483 57 (set (reg:SI 177 [ D.6325 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1192 [0xfffffffffffffb58])) [0 pcrHandle+0 S4 A64])) pcrread.c:186 -1
+     (nil))
+(insn 483 482 484 57 (parallel [
+            (set (reg:SI 178 [ D.6325 ])
+                (lshiftrt:SI (reg:SI 177 [ D.6325 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:186 -1
+     (expr_list:REG_EQUAL (udiv:SI (reg:SI 177 [ D.6325 ])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 484 483 485 57 (set (reg:SI 179 [ D.6325 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1192 [0xfffffffffffffb58])) [0 pcrHandle+0 S4 A64])) pcrread.c:186 -1
+     (nil))
+(insn 485 484 486 57 (parallel [
+            (set (reg:SI 180 [ D.6325 ])
+                (and:SI (reg:SI 179 [ D.6325 ])
+                    (const_int 7 [0x7])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:186 -1
+     (nil))
+(insn 486 485 487 57 (set (reg:SI 277)
+        (const_int 1 [0x1])) pcrread.c:186 -1
+     (nil))
+(insn 487 486 488 57 (parallel [
+            (set (reg:SI 181 [ D.6324 ])
+                (ashift:SI (reg:SI 277)
+                    (subreg:QI (reg:SI 180 [ D.6325 ]) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:186 -1
+     (nil))
+(insn 488 487 489 57 (set (reg:QI 182 [ D.6326 ])
+        (subreg:QI (reg:SI 181 [ D.6324 ]) 0)) pcrread.c:186 -1
+     (nil))
+(insn 489 488 490 57 (set (reg:DI 278)
+        (zero_extend:DI (reg:SI 178 [ D.6325 ]))) pcrread.c:186 -1
+     (nil))
+(insn 490 489 491 57 (set (reg:DI 279)
+        (sign_extend:DI (reg:SI 176 [ D.6324 ]))) pcrread.c:186 -1
+     (nil))
+(insn 491 490 492 57 (set (reg:DI 280)
+        (reg:DI 279)) pcrread.c:186 -1
+     (nil))
+(insn 492 491 493 57 (parallel [
+            (set (reg:DI 280)
+                (ashift:DI (reg:DI 280)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:186 -1
+     (nil))
+(insn 493 492 494 57 (parallel [
+            (set (reg:DI 280)
+                (plus:DI (reg:DI 280)
+                    (reg:DI 279)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:186 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 279)
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 494 493 495 57 (parallel [
+            (set (reg:DI 281)
+                (ashift:DI (reg:DI 280)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:186 -1
+     (nil))
+(insn 495 494 496 57 (set (reg:DI 280)
+        (reg:DI 281)) pcrread.c:186 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 279)
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 496 495 497 57 (parallel [
+            (set (reg:DI 282)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (reg:DI 280)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:186 -1
+     (nil))
+(insn 497 496 498 57 (parallel [
+            (set (reg:DI 283)
+                (plus:DI (reg:DI 282)
+                    (reg:DI 278)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:186 -1
+     (nil))
+(insn 498 497 499 57 (parallel [
+            (set (reg/f:DI 284)
+                (plus:DI (reg:DI 283)
+                    (const_int -1113 [0xfffffffffffffba7])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:186 -1
+     (nil))
+(insn 499 498 500 57 (set (mem/j:QI (reg/f:DI 284) [0 in.pcrSelectionIn.pcrSelections[_186].pcrSelect S1 A8])
+        (reg:QI 182 [ D.6326 ])) pcrread.c:186 -1
+     (nil))
+(insn 500 499 501 57 (set (reg:HI 183 [ D.6327 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1194 [0xfffffffffffffb56])) [0 c+0 S2 A16])) pcrread.c:181 -1
+     (nil))
+(insn 501 500 502 57 (parallel [
+            (set (reg:HI 285)
+                (plus:HI (reg:HI 183 [ D.6327 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:181 -1
+     (nil))
+(insn 502 501 503 57 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1194 [0xfffffffffffffb56])) [0 c+0 S2 A16])
+        (reg:HI 285)) pcrread.c:181 -1
+     (nil))
+(code_label 503 502 504 58 34 "" [1 uses])
+(note 504 503 505 58 [bb 58] NOTE_INSN_BASIC_BLOCK)
+(insn 505 504 506 58 (set (reg:SI 170 [ D.6325 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1194 [0xfffffffffffffb56])) [0 c+0 S2 A16]))) pcrread.c:181 -1
+     (nil))
+(insn 506 505 508 58 (set (reg:SI 171 [ D.6325 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1120 [0xfffffffffffffba0])) [0 in.pcrSelectionIn.count+0 S4 A64])) pcrread.c:181 -1
+     (nil))
+(insn 508 506 509 58 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 170 [ D.6325 ])
+            (reg:SI 171 [ D.6325 ]))) pcrread.c:181 -1
+     (nil))
+(jump_insn 509 508 510 58 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 507)
+            (pc))) pcrread.c:181 -1
+     (nil)
+ -> 507)
+(code_label 510 509 511 59 33 "" [1 uses])
+(note 511 510 512 59 [bb 59] NOTE_INSN_BASIC_BLOCK)
+(insn 512 511 513 59 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) pcrread.c:190 -1
+     (nil))
+(jump_insn 513 512 514 59 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 520)
+            (pc))) pcrread.c:190 -1
+     (nil)
+ -> 520)
+(note 514 513 515 60 [bb 60] NOTE_INSN_BASIC_BLOCK)
+(insn 515 514 516 60 (parallel [
+            (set (reg:DI 286)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1160 [0xfffffffffffffb78])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:191 -1
+     (nil))
+(insn 516 515 517 60 (set (reg:DI 5 di)
+        (reg:DI 286)) pcrread.c:191 -1
+     (nil))
+(call_insn 517 516 518 60 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Create") [flags 0x41]  <function_decl 0x7fec5bdbdca8 TSS_Create>) [0 TSS_Create S1 A8])
+            (const_int 0 [0]))) pcrread.c:191 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 518 517 519 60 (set (reg:SI 287)
+        (reg:SI 0 ax)) pcrread.c:191 -1
+     (nil))
+(insn 519 518 520 60 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+        (reg:SI 287)) pcrread.c:191 -1
+     (nil))
+(code_label 520 519 521 61 36 "" [1 uses])
+(note 521 520 522 61 [bb 61] NOTE_INSN_BASIC_BLOCK)
+(insn 522 521 523 61 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) pcrread.c:194 -1
+     (nil))
+(jump_insn 523 522 524 61 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 547)
+            (pc))) pcrread.c:194 -1
+     (nil)
+ -> 547)
+(note 524 523 525 62 [bb 62] NOTE_INSN_BASIC_BLOCK)
+(insn 525 524 526 62 (set (reg:SI 184 [ D.6325 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1184 [0xfffffffffffffb60])) [0 sessionAttributes0+0 S4 A64])) pcrread.c:195 -1
+     (nil))
+(insn 526 525 527 62 (set (reg:SI 185 [ D.6325 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1188 [0xfffffffffffffb5c])) [0 sessionHandle0+0 S4 A32])) pcrread.c:195 -1
+     (nil))
+(insn 527 526 528 62 (set (reg/f:DI 186 [ D.6328 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1160 [0xfffffffffffffb78])) [0 tssContext+0 S8 A64])) pcrread.c:195 -1
+     (nil))
+(insn 528 527 529 62 (parallel [
+            (set (reg:DI 288)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1120 [0xfffffffffffffba0])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:195 -1
+     (nil))
+(insn 529 528 530 62 (parallel [
+            (set (reg:DI 289)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1088 [0xfffffffffffffbc0])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:195 -1
+     (nil))
+(insn 530 529 531 62 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:195 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 531 530 532 62 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 0 [0])) pcrread.c:195 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 532 531 533 62 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) pcrread.c:195 -1
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 533 532 534 62 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 1073741831 [0x40000007])) pcrread.c:195 -1
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(insn 534 533 535 62 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 184 [ D.6325 ])) pcrread.c:195 -1
+     (expr_list:REG_ARGS_SIZE (const_int 40 [0x28])
+        (nil)))
+(insn 535 534 536 62 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) pcrread.c:195 -1
+     (expr_list:REG_ARGS_SIZE (const_int 48 [0x30])
+        (nil)))
+(insn 536 535 537 62 (set (reg:SI 38 r9)
+        (reg:SI 185 [ D.6325 ])) pcrread.c:195 -1
+     (nil))
+(insn 537 536 538 62 (set (reg:SI 37 r8)
+        (const_int 382 [0x17e])) pcrread.c:195 -1
+     (nil))
+(insn 538 537 539 62 (set (reg:DI 2 cx)
+        (const_int 0 [0])) pcrread.c:195 -1
+     (nil))
+(insn 539 538 540 62 (set (reg:DI 1 dx)
+        (reg:DI 288)) pcrread.c:195 -1
+     (nil))
+(insn 540 539 541 62 (set (reg:DI 4 si)
+        (reg:DI 289)) pcrread.c:195 -1
+     (nil))
+(insn 541 540 542 62 (set (reg:DI 5 di)
+        (reg/f:DI 186 [ D.6328 ])) pcrread.c:195 -1
+     (nil))
+(insn 542 541 543 62 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:195 -1
+     (nil))
+(call_insn 543 542 544 62 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Execute") [flags 0x41]  <function_decl 0x7fec5bdbde58 TSS_Execute>) [0 TSS_Execute S1 A8])
+            (const_int 48 [0x30]))) pcrread.c:195 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (expr_list:SI (use (reg:SI 37 r8))
+                            (expr_list:SI (use (reg:SI 38 r9))
+                                (nil)))))))))
+(insn 544 543 545 62 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 48 [0x30])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:195 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 545 544 546 62 (set (reg:SI 290)
+        (reg:SI 0 ax)) pcrread.c:195 -1
+     (nil))
+(insn 546 545 547 62 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+        (reg:SI 290)) pcrread.c:195 -1
+     (nil))
+(code_label 547 546 548 63 37 "" [1 uses])
+(note 548 547 549 63 [bb 63] NOTE_INSN_BASIC_BLOCK)
+(insn 549 548 550 63 (set (reg/f:DI 187 [ D.6328 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1160 [0xfffffffffffffb78])) [0 tssContext+0 S8 A64])) pcrread.c:204 -1
+     (nil))
+(insn 550 549 551 63 (set (reg:DI 5 di)
+        (reg/f:DI 187 [ D.6328 ])) pcrread.c:204 -1
+     (nil))
+(call_insn 551 550 552 63 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Delete") [flags 0x41]  <function_decl 0x7fec5bdbdd80 TSS_Delete>) [0 TSS_Delete S1 A8])
+            (const_int 0 [0]))) pcrread.c:204 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 552 551 553 63 (set (reg:SI 291)
+        (reg:SI 0 ax)) pcrread.c:204 -1
+     (nil))
+(insn 553 552 554 63 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1164 [0xfffffffffffffb74])) [0 rc1+0 S4 A32])
+        (reg:SI 291)) pcrread.c:204 -1
+     (nil))
+(insn 554 553 555 63 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) pcrread.c:205 -1
+     (nil))
+(jump_insn 555 554 556 63 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 559)
+            (pc))) pcrread.c:205 -1
+     (nil)
+ -> 559)
+(note 556 555 557 64 [bb 64] NOTE_INSN_BASIC_BLOCK)
+(insn 557 556 558 64 (set (reg:SI 292)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1164 [0xfffffffffffffb74])) [0 rc1+0 S4 A32])) pcrread.c:206 -1
+     (nil))
+(insn 558 557 559 64 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+        (reg:SI 292)) pcrread.c:206 -1
+     (nil))
+(code_label 559 558 560 65 38 "" [1 uses])
+(note 560 559 561 65 [bb 65] NOTE_INSN_BASIC_BLOCK)
+(insn 561 560 562 65 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) pcrread.c:210 -1
+     (nil))
+(jump_insn 562 561 563 65 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 578)
+            (pc))) pcrread.c:210 -1
+     (nil)
+ -> 578)
+(note 563 562 564 66 [bb 66] NOTE_INSN_BASIC_BLOCK)
+(insn 564 563 565 66 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1128 [0xfffffffffffffb98])) [0 datafilename+0 S8 A64])
+            (const_int 0 [0]))) pcrread.c:210 -1
+     (nil))
+(jump_insn 565 564 566 66 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 578)
+            (pc))) pcrread.c:210 -1
+     (nil)
+ -> 578)
+(note 566 565 567 67 [bb 67] NOTE_INSN_BASIC_BLOCK)
+(insn 567 566 568 67 (set (reg:HI 188 [ D.6327 ])
+        (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1056 [0xfffffffffffffbe0])) [0 out.pcrValues.digests[0].t.size+0 S2 A64])) pcrread.c:212 -1
+     (nil))
+(insn 568 567 569 67 (set (reg:DI 189 [ D.6321 ])
+        (zero_extend:DI (reg:HI 188 [ D.6327 ]))) pcrread.c:211 -1
+     (nil))
+(insn 569 568 570 67 (set (reg:DI 293)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1128 [0xfffffffffffffb98])) [0 datafilename+0 S8 A64])) pcrread.c:211 -1
+     (nil))
+(insn 570 569 571 67 (parallel [
+            (set (reg:DI 294)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1088 [0xfffffffffffffbc0])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:211 -1
+     (nil))
+(insn 571 570 572 67 (parallel [
+            (set (reg:DI 295)
+                (plus:DI (reg:DI 294)
+                    (const_int 34 [0x22])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:211 -1
+     (nil))
+(insn 572 571 573 67 (set (reg:DI 1 dx)
+        (reg:DI 293)) pcrread.c:211 -1
+     (nil))
+(insn 573 572 574 67 (set (reg:DI 4 si)
+        (reg:DI 189 [ D.6321 ])) pcrread.c:211 -1
+     (nil))
+(insn 574 573 575 67 (set (reg:DI 5 di)
+        (reg:DI 295)) pcrread.c:211 -1
+     (nil))
+(call_insn 575 574 576 67 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_WriteBinaryFile") [flags 0x41]  <function_decl 0x7fec5bdc5a20 TSS_File_WriteBinaryFile>) [0 TSS_File_WriteBinaryFile S1 A8])
+            (const_int 0 [0]))) pcrread.c:211 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 576 575 577 67 (set (reg:SI 296)
+        (reg:SI 0 ax)) pcrread.c:211 -1
+     (nil))
+(insn 577 576 578 67 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+        (reg:SI 296)) pcrread.c:211 -1
+     (nil))
+(code_label 578 577 579 68 39 "" [2 uses])
+(note 579 578 580 68 [bb 68] NOTE_INSN_BASIC_BLOCK)
+(insn 580 579 581 68 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) pcrread.c:215 -1
+     (nil))
+(jump_insn 581 580 582 68 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 640)
+            (pc))) pcrread.c:215 -1
+     (nil)
+ -> 640)
+(note 582 581 583 69 [bb 69] NOTE_INSN_BASIC_BLOCK)
+(insn 583 582 584 69 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1172 [0xfffffffffffffb6c])) [0 noSpace+0 S4 A32])
+            (const_int 0 [0]))) pcrread.c:217 -1
+     (nil))
+(jump_insn 584 583 585 69 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 625)
+            (pc))) pcrread.c:217 -1
+     (nil)
+ -> 625)
+(note 585 584 586 70 [bb 70] NOTE_INSN_BASIC_BLOCK)
+(insn 586 585 587 70 (set (reg:SI 190 [ D.6325 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1060 [0xfffffffffffffbdc])) [0 out.pcrValues.count+0 S4 A32])) pcrread.c:219 -1
+     (nil))
+(insn 587 586 588 70 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 190 [ D.6325 ])
+            (const_int 0 [0]))) pcrread.c:219 -1
+     (nil))
+(jump_insn 588 587 589 70 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 614)
+            (pc))) pcrread.c:219 -1
+     (nil)
+ -> 614)
+(note 589 588 590 71 [bb 71] NOTE_INSN_BASIC_BLOCK)
+(insn 590 589 591 71 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1168 [0xfffffffffffffb70])) [0 bp+0 S4 A32])
+        (const_int 0 [0])) pcrread.c:221 -1
+     (nil))
+(jump_insn 591 590 592 71 (set (pc)
+        (label_ref 602)) pcrread.c:221 -1
+     (nil)
+ -> 602)
+(barrier 592 591 606)
+(code_label 606 592 593 72 44 "" [1 uses])
+(note 593 606 594 72 [bb 72] NOTE_INSN_BASIC_BLOCK)
+(insn 594 593 595 72 (set (reg:DI 297)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1168 [0xfffffffffffffb70])) [0 bp+0 S4 A32]))) pcrread.c:222 -1
+     (nil))
+(insn 595 594 596 72 (set (reg:QI 193 [ D.6326 ])
+        (mem/j:QI (plus:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (reg:DI 297))
+                (const_int -1054 [0xfffffffffffffbe2])) [0 out.pcrValues.digests[0].t.buffer S1 A8])) pcrread.c:222 -1
+     (nil))
+(insn 596 595 597 72 (set (reg:SI 194 [ D.6324 ])
+        (zero_extend:SI (reg:QI 193 [ D.6326 ]))) pcrread.c:222 -1
+     (nil))
+(insn 597 596 598 72 (set (reg:SI 4 si)
+        (reg:SI 194 [ D.6324 ])) pcrread.c:222 -1
+     (nil))
+(insn 598 597 599 72 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC23") [flags 0x2]  <var_decl 0x7fec5ba6bf30 *.LC23>)) pcrread.c:222 -1
+     (nil))
+(insn 599 598 600 72 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:222 -1
+     (nil))
+(call_insn 600 599 601 72 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fec5be5fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) pcrread.c:222 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 601 600 602 72 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -1168 [0xfffffffffffffb70])) [0 bp+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -1168 [0xfffffffffffffb70])) [0 bp+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:221 -1
+     (nil))
+(code_label 602 601 603 73 43 "" [1 uses])
+(note 603 602 604 73 [bb 73] NOTE_INSN_BASIC_BLOCK)
+(insn 604 603 605 73 (set (reg:HI 191 [ D.6327 ])
+        (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1056 [0xfffffffffffffbe0])) [0 out.pcrValues.digests[0].t.size+0 S2 A64])) pcrread.c:221 -1
+     (nil))
+(insn 605 604 607 73 (set (reg:SI 192 [ D.6325 ])
+        (zero_extend:SI (reg:HI 191 [ D.6327 ]))) pcrread.c:221 -1
+     (nil))
+(insn 607 605 608 73 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 192 [ D.6325 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1168 [0xfffffffffffffb70])) [0 bp+0 S4 A32]))) pcrread.c:221 -1
+     (nil))
+(jump_insn 608 607 609 73 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 606)
+            (pc))) pcrread.c:221 -1
+     (nil)
+ -> 606)
+(note 609 608 610 74 [bb 74] NOTE_INSN_BASIC_BLOCK)
+(insn 610 609 611 74 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) pcrread.c:224 -1
+     (nil))
+(call_insn 611 610 612 74 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7fec5be62000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) pcrread.c:224 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(jump_insn 612 611 613 74 (set (pc)
+        (label_ref:DI 666)) 654 {jump}
+     (nil)
+ -> 666)
+(barrier 613 612 614)
+(code_label 614 613 615 75 42 "" [1 uses])
+(note 615 614 616 75 [bb 75] NOTE_INSN_BASIC_BLOCK)
+(insn 616 615 617 75 (set (reg:SI 195 [ D.6325 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1060 [0xfffffffffffffbdc])) [0 out.pcrValues.count+0 S4 A32])) pcrread.c:227 -1
+     (nil))
+(insn 617 616 618 75 (set (reg:SI 4 si)
+        (reg:SI 195 [ D.6325 ])) pcrread.c:227 -1
+     (nil))
+(insn 618 617 619 75 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC24") [flags 0x2]  <var_decl 0x7fec5ba89000 *.LC24>)) pcrread.c:227 -1
+     (nil))
+(insn 619 618 620 75 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:227 -1
+     (nil))
+(call_insn 620 619 623 75 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fec5be5fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) pcrread.c:227 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(jump_insn 623 620 624 75 (set (pc)
+        (label_ref:DI 666)) 654 {jump}
+     (nil)
+ -> 666)
+(barrier 624 623 625)
+(code_label 625 624 626 77 41 "" [1 uses])
+(note 626 625 627 77 [bb 77] NOTE_INSN_BASIC_BLOCK)
+(insn 627 626 628 77 (parallel [
+            (set (reg:DI 298)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1088 [0xfffffffffffffbc0])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:232 -1
+     (nil))
+(insn 628 627 629 77 (set (reg:DI 5 di)
+        (reg:DI 298)) pcrread.c:232 -1
+     (nil))
+(call_insn 629 628 630 77 (call (mem:QI (symbol_ref:DI ("printPcrRead") [flags 0x3]  <function_decl 0x7fec5ba1f0d8 printPcrRead>) [0 printPcrRead S1 A8])
+        (const_int 0 [0])) pcrread.c:232 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 630 629 631 77 (set (reg:SI 196 [ D.6324 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7fec5bc21090 verbose>) [0 verbose+0 S4 A32])) pcrread.c:233 -1
+     (nil))
+(insn 631 630 632 77 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 196 [ D.6324 ])
+            (const_int 0 [0]))) pcrread.c:233 -1
+     (nil))
+(jump_insn 632 631 633 77 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 666)
+            (pc))) pcrread.c:233 612 {*jcc_1}
+     (nil)
+ -> 666)
+(note 633 632 634 78 [bb 78] NOTE_INSN_BASIC_BLOCK)
+(insn 634 633 635 78 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC25") [flags 0x2]  <var_decl 0x7fec5ba89090 *.LC25>)) pcrread.c:233 -1
+     (nil))
+(call_insn 635 634 638 78 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:233 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 638 635 639 78 (set (pc)
+        (label_ref 666)) -1
+     (nil)
+ -> 666)
+(barrier 639 638 640)
+(code_label 640 639 641 80 40 "" [1 uses])
+(note 641 640 642 80 [bb 80] NOTE_INSN_BASIC_BLOCK)
+(insn 642 641 643 80 (set (reg:SI 299)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])) pcrread.c:240 -1
+     (nil))
+(insn 643 642 644 80 (set (reg:SI 4 si)
+        (reg:SI 299)) pcrread.c:240 -1
+     (nil))
+(insn 644 643 645 80 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC26") [flags 0x2]  <var_decl 0x7fec5ba89120 *.LC26>)) pcrread.c:240 -1
+     (nil))
+(insn 645 644 646 80 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:240 -1
+     (nil))
+(call_insn 646 645 647 80 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fec5be5fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) pcrread.c:240 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 647 646 648 80 (set (reg:SI 300)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])) pcrread.c:241 -1
+     (nil))
+(insn 648 647 649 80 (parallel [
+            (set (reg:DI 301)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1136 [0xfffffffffffffb90])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:241 -1
+     (nil))
+(insn 649 648 650 80 (parallel [
+            (set (reg:DI 302)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1144 [0xfffffffffffffb88])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:241 -1
+     (nil))
+(insn 650 649 651 80 (parallel [
+            (set (reg:DI 303)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -1152 [0xfffffffffffffb80])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:241 -1
+     (nil))
+(insn 651 650 652 80 (set (reg:SI 2 cx)
+        (reg:SI 300)) pcrread.c:241 -1
+     (nil))
+(insn 652 651 653 80 (set (reg:DI 1 dx)
+        (reg:DI 301)) pcrread.c:241 -1
+     (nil))
+(insn 653 652 654 80 (set (reg:DI 4 si)
+        (reg:DI 302)) pcrread.c:241 -1
+     (nil))
+(insn 654 653 655 80 (set (reg:DI 5 di)
+        (reg:DI 303)) pcrread.c:241 -1
+     (nil))
+(call_insn 655 654 656 80 (call (mem:QI (symbol_ref:DI ("TSS_ResponseCode_toString") [flags 0x41]  <function_decl 0x7fec5bdc5e58 TSS_ResponseCode_toString>) [0 TSS_ResponseCode_toString S1 A8])
+        (const_int 0 [0])) pcrread.c:241 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 656 655 657 80 (set (reg/f:DI 197 [ D.6329 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1136 [0xfffffffffffffb90])) [0 num+0 S8 A64])) pcrread.c:242 -1
+     (nil))
+(insn 657 656 658 80 (set (reg/f:DI 198 [ D.6329 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1144 [0xfffffffffffffb88])) [0 submsg+0 S8 A64])) pcrread.c:242 -1
+     (nil))
+(insn 658 657 659 80 (set (reg/f:DI 199 [ D.6329 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1152 [0xfffffffffffffb80])) [0 msg+0 S8 A64])) pcrread.c:242 -1
+     (nil))
+(insn 659 658 660 80 (set (reg:DI 2 cx)
+        (reg/f:DI 197 [ D.6329 ])) pcrread.c:242 -1
+     (nil))
+(insn 660 659 661 80 (set (reg:DI 1 dx)
+        (reg/f:DI 198 [ D.6329 ])) pcrread.c:242 -1
+     (nil))
+(insn 661 660 662 80 (set (reg:DI 4 si)
+        (reg/f:DI 199 [ D.6329 ])) pcrread.c:242 -1
+     (nil))
+(insn 662 661 663 80 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC27") [flags 0x2]  <var_decl 0x7fec5ba891b0 *.LC27>)) pcrread.c:242 -1
+     (nil))
+(insn 663 662 664 80 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:242 -1
+     (nil))
+(call_insn 664 663 665 80 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fec5be5fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) pcrread.c:242 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (nil)))))))
+(insn 665 664 666 80 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])
+        (const_int 1 [0x1])) pcrread.c:243 -1
+     (nil))
+(code_label 666 665 667 81 47 "" [4 uses])
+(note 667 666 668 81 [bb 81] NOTE_INSN_BASIC_BLOCK)
+(insn 668 667 671 81 (set (reg:SI 200 [ D.6324 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1180 [0xfffffffffffffb64])) [0 rc+0 S4 A32])) pcrread.c:245 -1
+     (nil))
+(insn 671 668 675 81 (set (reg:SI 201 [ <retval> ])
+        (reg:SI 200 [ D.6324 ])) -1
+     (nil))
+(insn 675 671 676 81 (set (reg/i:SI 0 ax)
+        (reg:SI 201 [ <retval> ])) pcrread.c:246 -1
+     (nil))
+(insn 676 675 677 81 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.6330+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) pcrread.c:246 -1
+     (nil))
+(jump_insn 677 676 683 81 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 680)
+            (pc))) pcrread.c:246 -1
+     (nil)
+ -> 680)
+(note 683 677 678 84 [bb 84] NOTE_INSN_BASIC_BLOCK)
+(call_insn 678 683 679 84 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7fec5ba1f6c0 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) pcrread.c:246 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 679 678 680)
+(code_label 680 679 684 85 49 "" [1 uses])
+(note 684 680 681 85 [bb 85] NOTE_INSN_BASIC_BLOCK)
+(insn 681 684 0 85 (use (reg/i:SI 0 ax)) pcrread.c:246 -1
+     (nil))
+
+;; Function printPcrRead (printPcrRead, funcdef_no=3, decl_uid=6070, cgraph_uid=3, symbol_order=4)
+
+Partition 0: size 4 align 4
+	i_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 5->6 to 8 failed.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 out+0 S8 A64])
+        (reg:DI 5 di [ out ])) pcrread.c:249 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 out+0 S8 A64])) pcrread.c:253 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 87 [ D.6361 ])
+        (mem/j:SI (reg/f:DI 93) [0 out_4(D)->pcrUpdateCounter+0 S4 A32])) pcrread.c:253 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 out+0 S8 A64])) pcrread.c:253 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.6361 ])
+        (mem/j:SI (plus:DI (reg/f:DI 94)
+                (const_int 28 [0x1c])) [0 out_4(D)->pcrValues.count+0 S4 A32])) pcrread.c:253 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 1 dx)
+        (reg:SI 87 [ D.6361 ])) pcrread.c:253 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 4 si)
+        (reg:SI 88 [ D.6361 ])) pcrread.c:253 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC28") [flags 0x2]  <var_decl 0x7fec5ba9b510 *.LC28>)) pcrread.c:253 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) pcrread.c:253 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fec5be5fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) pcrread.c:253 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:SI (use (reg:SI 1 dx))
+                    (nil))))))
+(insn 15 14 16 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+        (const_int 0 [0])) pcrread.c:254 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (label_ref 45)) pcrread.c:254 -1
+     (nil)
+ -> 45)
+(barrier 17 16 49)
+(code_label 49 17 18 4 52 "" [1 uses])
+(note 18 49 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (set (reg/f:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 out+0 S8 A64])) pcrread.c:255 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:DI 96)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32]))) pcrread.c:255 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:DI 97)
+        (reg:DI 96)) pcrread.c:255 -1
+     (nil))
+(insn 22 21 23 4 (parallel [
+            (set (reg:DI 98)
+                (ashift:DI (reg:DI 97)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:DI 97)
+        (reg:DI 98)) pcrread.c:255 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 96)
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 24 23 25 4 (parallel [
+            (set (reg:DI 99)
+                (ashift:DI (reg:DI 97)
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (nil))
+(insn 25 24 26 4 (parallel [
+            (set (reg:DI 97)
+                (plus:DI (reg:DI 97)
+                    (reg:DI 99)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 96)
+            (const_int 130 [0x82]))
+        (nil)))
+(insn 26 25 27 4 (parallel [
+            (set (reg:DI 100)
+                (plus:DI (reg/f:DI 95)
+                    (reg:DI 97)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (nil))
+(insn 27 26 28 4 (parallel [
+            (set (reg/f:DI 101)
+                (plus:DI (reg:DI 100)
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:HI 90 [ D.6362 ])
+        (mem/j:HI (reg/f:DI 101) [0 out_4(D)->pcrValues.digests[i_1].t.size+0 S2 A16])) pcrread.c:255 -1
+     (nil))
+(insn 29 28 30 4 (set (reg:SI 91 [ D.6361 ])
+        (zero_extend:SI (reg:HI 90 [ D.6362 ]))) pcrread.c:255 -1
+     (nil))
+(insn 30 29 31 4 (set (reg:DI 102)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32]))) pcrread.c:255 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:DI 103)
+        (reg:DI 102)) pcrread.c:255 -1
+     (nil))
+(insn 32 31 33 4 (parallel [
+            (set (reg:DI 104)
+                (ashift:DI (reg:DI 103)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (nil))
+(insn 33 32 34 4 (set (reg:DI 103)
+        (reg:DI 104)) pcrread.c:255 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 102)
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 34 33 35 4 (parallel [
+            (set (reg:DI 105)
+                (ashift:DI (reg:DI 103)
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (nil))
+(insn 35 34 36 4 (parallel [
+            (set (reg:DI 103)
+                (plus:DI (reg:DI 103)
+                    (reg:DI 105)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (expr_list:REG_EQUAL (mult:DI (reg:DI 102)
+            (const_int 130 [0x82]))
+        (nil)))
+(insn 36 35 37 4 (parallel [
+            (set (reg:DI 106)
+                (plus:DI (reg:DI 103)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (nil))
+(insn 37 36 38 4 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 out+0 S8 A64])) pcrread.c:255 -1
+     (nil))
+(insn 38 37 39 4 (parallel [
+            (set (reg:DI 107)
+                (plus:DI (reg:DI 106)
+                    (reg/f:DI 108)))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 out+0 S8 A64])
+            (reg:DI 106))
+        (nil)))
+(insn 39 38 40 4 (parallel [
+            (set (reg/f:DI 92 [ D.6363 ])
+                (plus:DI (reg:DI 107)
+                    (const_int 18 [0x12])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:255 -1
+     (nil))
+(insn 40 39 41 4 (set (reg:SI 1 dx)
+        (reg:SI 91 [ D.6361 ])) pcrread.c:255 -1
+     (nil))
+(insn 41 40 42 4 (set (reg:DI 4 si)
+        (reg/f:DI 92 [ D.6363 ])) pcrread.c:255 -1
+     (nil))
+(insn 42 41 43 4 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC29") [flags 0x2]  <var_decl 0x7fec5ba9b5a0 *.LC29>)) pcrread.c:255 -1
+     (nil))
+(call_insn 43 42 44 4 (call (mem:QI (symbol_ref:DI ("TSS_PrintAll") [flags 0x41]  <function_decl 0x7fec5bd8c948 TSS_PrintAll>) [0 TSS_PrintAll S1 A8])
+        (const_int 0 [0])) pcrread.c:255 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 44 43 45 4 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) pcrread.c:254 -1
+     (nil))
+(code_label 45 44 46 5 51 "" [1 uses])
+(note 46 45 47 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 5 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 out+0 S8 A64])) pcrread.c:254 -1
+     (nil))
+(insn 48 47 50 5 (set (reg:SI 89 [ D.6361 ])
+        (mem/j:SI (plus:DI (reg/f:DI 109)
+                (const_int 28 [0x1c])) [0 out_4(D)->pcrValues.count+0 S4 A32])) pcrread.c:254 -1
+     (nil))
+(insn 50 48 51 5 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 89 [ D.6361 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32]))) pcrread.c:254 -1
+     (nil))
+(jump_insn 51 50 52 5 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 49)
+            (pc))) pcrread.c:254 -1
+     (nil)
+ -> 49)
+(note 52 51 57 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 57 52 0 6 (const_int 0 [0]) pcrread.c:257 -1
+     (nil))
+
+;; Function printUsage (printUsage, funcdef_no=4, decl_uid=6072, cgraph_uid=4, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) pcrread.c:262 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7fec5be62000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) pcrread.c:262 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC30") [flags 0x2]  <var_decl 0x7fec5ba9bb40 *.LC30>)) pcrread.c:263 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:263 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) pcrread.c:264 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7fec5be62000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) pcrread.c:264 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC31") [flags 0x2]  <var_decl 0x7fec5ba9bbd0 *.LC31>)) pcrread.c:265 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:265 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) pcrread.c:266 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7fec5be62000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) pcrread.c:266 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC32") [flags 0x2]  <var_decl 0x7fec5ba9bc60 *.LC32>)) pcrread.c:267 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:267 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC33") [flags 0x2]  <var_decl 0x7fec5ba9bcf0 *.LC33>)) pcrread.c:268 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:268 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC34") [flags 0x2]  <var_decl 0x7fec5ba9bd80 *.LC34>)) pcrread.c:269 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:269 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC35") [flags 0x2]  <var_decl 0x7fec5ba9be10 *.LC35>)) pcrread.c:270 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:270 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 23 22 24 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC36") [flags 0x2]  <var_decl 0x7fec5ba9bea0 *.LC36>)) pcrread.c:271 -1
+     (nil))
+(call_insn 24 23 25 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:271 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC37") [flags 0x2]  <var_decl 0x7fec5ba9bf30 *.LC37>)) pcrread.c:272 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:272 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 27 26 28 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC38") [flags 0x2]  <var_decl 0x7fec5ba9b3f0 *.LC38>)) pcrread.c:273 -1
+     (nil))
+(call_insn 28 27 29 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:273 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 29 28 30 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC39") [flags 0x2]  <var_decl 0x7fec5baa6000 *.LC39>)) pcrread.c:274 -1
+     (nil))
+(call_insn 30 29 31 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:274 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 31 30 32 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC40") [flags 0x2]  <var_decl 0x7fec5baa6090 *.LC40>)) pcrread.c:275 -1
+     (nil))
+(call_insn 32 31 33 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:275 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 33 32 34 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC41") [flags 0x2]  <var_decl 0x7fec5baa6120 *.LC41>)) pcrread.c:276 -1
+     (nil))
+(call_insn 34 33 35 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fec5be62360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) pcrread.c:276 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 35 34 36 2 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) pcrread.c:277 -1
+     (nil))
+(call_insn 36 35 37 2 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7fec5be75000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) pcrread.c:277 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 37 36 0)

@@ -1,0 +1,1602 @@
+
+;; Function TicketIsSafe (TicketIsSafe, funcdef_no=2, decl_uid=12136, cgraph_uid=2, symbol_order=2)
+
+Partition 2: size 8 align 8
+	marshalBuffer
+Partition 0: size 4 align 4
+	valueToCompare
+Partition 1: size 4 align 16
+	bufferToCompare
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 14 from 8 to 9.
+Redirecting jump 38 from 8 to 9.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 48.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 buffer+0 S8 A64])
+        (reg:DI 5 di [ buffer ])) Ticket.c:79 -1
+     (nil))
+(note 3 2 4 2 NOTE_INSN_FUNCTION_BEG)
+(insn 4 3 7 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.12958+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:79 -1
+     (nil))
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 valueToCompare+0 S4 A32])
+        (const_int -11254969 [0xffffffffff544347])) Ticket.c:80 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 buffer+0 S8 A64])) Ticket.c:86 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:HI 88 [ D.12955 ])
+        (mem/j:HI (reg/f:DI 92) [0 buffer_5(D)->size+0 S2 A16])) Ticket.c:86 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:HI 88 [ D.12955 ])
+            (const_int 3 [0x3]))) Ticket.c:86 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) Ticket.c:86 -1
+     (nil)
+ -> 16)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg:SI 87 [ D.12954 ])
+        (const_int 0 [0])) Ticket.c:87 -1
+     (nil))
+(jump_insn 14 13 15 4 (set (pc)
+        (label_ref:DI 45)) Ticket.c:87 654 {jump}
+     (nil)
+ -> 45)
+(barrier 15 14 16)
+(code_label 16 15 17 5 2 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (parallel [
+            (set (reg:DI 93)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:88 -1
+     (nil))
+(insn 19 18 20 5 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 marshalBuffer+0 S8 A64])
+        (reg:DI 93)) Ticket.c:88 -1
+     (nil))
+(insn 20 19 21 5 (parallel [
+            (set (reg:DI 94)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:89 -1
+     (nil))
+(insn 21 20 22 5 (parallel [
+            (set (reg:DI 95)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -28 [0xffffffffffffffe4])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:89 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:DI 1 dx)
+        (const_int 0 [0])) Ticket.c:89 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:DI 4 si)
+        (reg:DI 94)) Ticket.c:89 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:DI 5 di)
+        (reg:DI 95)) Ticket.c:89 -1
+     (nil))
+(call_insn 25 24 26 5 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TPM_GENERATED_Marshal") [flags 0x41]  <function_decl 0x7f05e720fca8 TPM_GENERATED_Marshal>) [0 TPM_GENERATED_Marshal S1 A8])
+            (const_int 0 [0]))) Ticket.c:89 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 26 25 27 5 (set (reg/f:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 buffer+0 S8 A64])) Ticket.c:90 -1
+     (nil))
+(insn 27 26 28 5 (parallel [
+            (set (reg/f:DI 89 [ D.12956 ])
+                (plus:DI (reg/f:DI 96)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:90 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 buffer+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 28 27 29 5 (parallel [
+            (set (reg:DI 97)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:90 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) Ticket.c:90 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:DI 4 si)
+        (reg:DI 97)) Ticket.c:90 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:DI 5 di)
+        (reg/f:DI 89 [ D.12956 ])) Ticket.c:90 -1
+     (nil))
+(call_insn 32 31 33 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("MemoryEqual") [flags 0x41]  <function_decl 0x7f05e72a3510 MemoryEqual>) [0 MemoryEqual S1 A8])
+            (const_int 0 [0]))) Ticket.c:90 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 33 32 34 5 (set (reg:SI 90 [ D.12957 ])
+        (reg:SI 0 ax)) Ticket.c:90 -1
+     (nil))
+(insn 34 33 35 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.12957 ])
+            (const_int 0 [0]))) Ticket.c:90 -1
+     (nil))
+(jump_insn 35 34 36 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 40)
+            (pc))) Ticket.c:90 -1
+     (nil)
+ -> 40)
+(note 36 35 37 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 6 (set (reg:SI 87 [ D.12954 ])
+        (const_int 0 [0])) Ticket.c:91 -1
+     (nil))
+(jump_insn 38 37 39 6 (set (pc)
+        (label_ref:DI 45)) Ticket.c:91 654 {jump}
+     (nil)
+ -> 45)
+(barrier 39 38 40)
+(code_label 40 39 41 7 4 "" [1 uses])
+(note 41 40 42 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 45 7 (set (reg:SI 87 [ D.12954 ])
+        (const_int 1 [0x1])) Ticket.c:93 -1
+     (nil))
+(code_label 45 42 46 9 5 "" [2 uses])
+(note 46 45 47 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 51 9 (set (reg:SI 91 [ <retval> ])
+        (reg:SI 87 [ D.12954 ])) -1
+     (nil))
+(insn 51 47 52 9 (set (reg/i:SI 0 ax)
+        (reg:SI 91 [ <retval> ])) Ticket.c:94 -1
+     (nil))
+(insn 52 51 53 9 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.12958+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) Ticket.c:94 -1
+     (nil))
+(jump_insn 53 52 59 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 56)
+            (pc))) Ticket.c:94 -1
+     (nil)
+ -> 56)
+(note 59 53 54 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(call_insn 54 59 55 11 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f05e7308bd0 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) Ticket.c:94 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 55 54 56)
+(code_label 56 55 60 12 6 "" [1 uses])
+(note 60 56 57 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 57 60 0 12 (use (reg/i:SI 0 ax)) Ticket.c:94 -1
+     (nil))
+
+;; Function TicketComputeVerified (TicketComputeVerified, funcdef_no=3, decl_uid=12141, cgraph_uid=3, symbol_order=3)
+
+Partition 1: size 368 align 16
+	hmacState
+Partition 0: size 8 align 8
+	proof_7
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 6 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Forwarding edge 2->5 to 6 failed.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+Merging block 6 into block 2...
+Merged blocks 2 and 6.
+Merged 2 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 hierarchy+0 S4 A32])
+        (reg:SI 5 di [ hierarchy ])) Ticket.c:104 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -416 [0xfffffffffffffe60])) [0 digest+0 S8 A64])
+        (reg:DI 4 si [ digest ])) Ticket.c:104 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -424 [0xfffffffffffffe58])) [0 keyName+0 S8 A64])
+        (reg:DI 1 dx [ keyName ])) Ticket.c:104 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])
+        (reg:DI 2 cx [ ticket ])) Ticket.c:104 -1
+     (nil))
+(note 6 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 6 10 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.12964+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:104 -1
+     (nil))
+(insn 10 7 11 2 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])) Ticket.c:109 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/j:HI (reg/f:DI 94) [0 ticket_2(D)->tag+0 S2 A32])
+        (const_int -32734 [0xffffffffffff8022])) Ticket.c:109 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])) Ticket.c:110 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 96)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 hierarchy+0 S4 A32])) Ticket.c:110 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/j:SI (plus:DI (reg/f:DI 95)
+                (const_int 4 [0x4])) [0 ticket_2(D)->hierarchy+0 S4 A32])
+        (reg:SI 96)) Ticket.c:110 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 97)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 hierarchy+0 S4 A32])) Ticket.c:111 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 5 di)
+        (reg:SI 97)) Ticket.c:111 -1
+     (nil))
+(call_insn 17 16 18 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HierarchyGetProof") [flags 0x41]  <function_decl 0x7f05e71ef510 HierarchyGetProof>) [0 HierarchyGetProof S1 A8])
+            (const_int 0 [0]))) Ticket.c:111 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 18 17 19 2 (set (reg:DI 98)
+        (reg:DI 0 ax)) Ticket.c:111 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -392 [0xfffffffffffffe78])) [0 proof+0 S8 A64])
+        (reg:DI 98)) Ticket.c:111 -1
+     (nil))
+(insn 20 19 21 2 (set (reg/f:DI 87 [ D.12961 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -392 [0xfffffffffffffe78])) [0 proof+0 S8 A64])) Ticket.c:114 -1
+     (nil))
+(insn 21 20 22 2 (parallel [
+            (set (reg:DI 99)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:113 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 1 dx)
+        (reg/f:DI 87 [ D.12961 ])) Ticket.c:113 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 4 si)
+        (const_int 12 [0xc])) Ticket.c:113 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 5 di)
+        (reg:DI 99)) Ticket.c:113 -1
+     (nil))
+(call_insn 25 24 26 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHmacStart2B") [flags 0x41]  <function_decl 0x7f05e72c2ca8 CryptHmacStart2B>) [0 CryptHmacStart2B S1 A8])
+            (const_int 0 [0]))) Ticket.c:113 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 26 25 27 2 (set (reg:HI 88 [ D.12962 ])
+        (reg:HI 0 ax)) Ticket.c:113 -1
+     (nil))
+(insn 27 26 28 2 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])) Ticket.c:113 -1
+     (nil))
+(insn 28 27 29 2 (set (mem/j:HI (plus:DI (reg/f:DI 100)
+                (const_int 8 [0x8])) [0 ticket_2(D)->digest.t.size+0 S2 A32])
+        (reg:HI 88 [ D.12962 ])) Ticket.c:113 -1
+     (nil))
+(insn 29 28 30 2 (set (reg/f:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])) Ticket.c:116 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:HI 89 [ D.12962 ])
+        (mem/j:HI (reg/f:DI 101) [0 ticket_2(D)->tag+0 S2 A32])) Ticket.c:116 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:DI 90 [ D.12963 ])
+        (zero_extend:DI (reg:HI 89 [ D.12962 ]))) Ticket.c:116 -1
+     (nil))
+(insn 32 31 33 2 (parallel [
+            (set (reg:DI 102)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:116 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 1 dx)
+        (reg:DI 90 [ D.12963 ])) Ticket.c:116 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:SI 4 si)
+        (const_int 2 [0x2])) Ticket.c:116 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:DI 5 di)
+        (reg:DI 102)) Ticket.c:116 -1
+     (nil))
+(call_insn 36 35 37 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdateInt") [flags 0x41]  <function_decl 0x7f05e72c2a20 CryptDigestUpdateInt>) [0 CryptDigestUpdateInt S1 A8])
+        (const_int 0 [0])) Ticket.c:116 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 37 36 38 2 (set (reg/f:DI 91 [ D.12961 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -416 [0xfffffffffffffe60])) [0 digest+0 S8 A64])) Ticket.c:118 -1
+     (nil))
+(insn 38 37 39 2 (parallel [
+            (set (reg:DI 103)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:118 -1
+     (nil))
+(insn 39 38 40 2 (set (reg:DI 4 si)
+        (reg/f:DI 91 [ D.12961 ])) Ticket.c:118 -1
+     (nil))
+(insn 40 39 41 2 (set (reg:DI 5 di)
+        (reg:DI 103)) Ticket.c:118 -1
+     (nil))
+(call_insn 41 40 42 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7f05e72c2870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Ticket.c:118 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 42 41 43 2 (set (reg/f:DI 92 [ D.12961 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -424 [0xfffffffffffffe58])) [0 keyName+0 S8 A64])) Ticket.c:120 -1
+     (nil))
+(insn 43 42 44 2 (parallel [
+            (set (reg:DI 104)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:120 -1
+     (nil))
+(insn 44 43 45 2 (set (reg:DI 4 si)
+        (reg/f:DI 92 [ D.12961 ])) Ticket.c:120 -1
+     (nil))
+(insn 45 44 46 2 (set (reg:DI 5 di)
+        (reg:DI 104)) Ticket.c:120 -1
+     (nil))
+(call_insn 46 45 47 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7f05e72c2870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Ticket.c:120 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 47 46 48 2 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])) Ticket.c:122 -1
+     (nil))
+(insn 48 47 49 2 (parallel [
+            (set (reg/f:DI 93 [ D.12961 ])
+                (plus:DI (reg/f:DI 105)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:122 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 49 48 50 2 (parallel [
+            (set (reg:DI 106)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:122 -1
+     (nil))
+(insn 50 49 51 2 (set (reg:DI 4 si)
+        (reg/f:DI 93 [ D.12961 ])) Ticket.c:122 -1
+     (nil))
+(insn 51 50 52 2 (set (reg:DI 5 di)
+        (reg:DI 106)) Ticket.c:122 -1
+     (nil))
+(call_insn 52 51 65 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHmacEnd2B") [flags 0x41]  <function_decl 0x7f05e72c2d80 CryptHmacEnd2B>) [0 CryptHmacEnd2B S1 A8])
+            (const_int 0 [0]))) Ticket.c:122 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 65 52 57 2 (const_int 0 [0]) Ticket.c:123 -1
+     (nil))
+(insn 57 65 58 2 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.12964+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) Ticket.c:124 -1
+     (nil))
+(jump_insn 58 57 63 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 61)
+            (pc))) Ticket.c:124 -1
+     (nil)
+ -> 61)
+(note 63 58 59 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(call_insn 59 63 60 7 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f05e7308bd0 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) Ticket.c:124 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 60 59 61)
+(code_label 61 60 64 8 9 "" [1 uses])
+(note 64 61 0 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+
+;; Function TicketComputeAuth (TicketComputeAuth, funcdef_no=4, decl_uid=12150, cgraph_uid=4, symbol_order=4)
+
+Partition 1: size 368 align 16
+	hmacState
+Partition 0: size 8 align 8
+	proof_5
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+Merging block 9 into block 6...
+Merged blocks 6 and 9.
+Merged 6 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 15 NOTE_INSN_DELETED)
+(note 15 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 15 4 2 (set (reg:SI 98)
+        (reg:SI 5 di [ type ])) Ticket.c:139 -1
+     (nil))
+(insn 4 2 5 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -408 [0xfffffffffffffe68])) [0 hierarchy+0 S4 A32])
+        (reg:SI 4 si [ hierarchy ])) Ticket.c:139 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -416 [0xfffffffffffffe60])) [0 timeout+0 S8 A64])
+        (reg:DI 1 dx [ timeout ])) Ticket.c:139 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -420 [0xfffffffffffffe5c])) [0 expiresOnReset+0 S4 A32])
+        (reg:SI 2 cx [ expiresOnReset ])) Ticket.c:139 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 cpHashA+0 S8 A64])
+        (reg:DI 37 r8 [ cpHashA ])) Ticket.c:139 -1
+     (nil))
+(insn 8 7 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -440 [0xfffffffffffffe48])) [0 policyRef+0 S8 A64])
+        (reg:DI 38 r9 [ policyRef ])) Ticket.c:139 -1
+     (nil))
+(insn 3 8 9 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 type+0 S2 A32])
+        (subreg:HI (reg:SI 98) 0)) Ticket.c:139 -1
+     (nil))
+(insn 9 3 10 2 (set (reg/f:DI 99)
+        (mem/f/c:DI (reg/f:DI 81 virtual-incoming-args) [0 entityName+0 S8 A64])) Ticket.c:139 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -448 [0xfffffffffffffe40])) [0 entityName+0 S8 A64])
+        (reg/f:DI 99)) Ticket.c:139 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 81 virtual-incoming-args)
+                (const_int 8 [0x8])) [0 ticket+0 S8 A64])) Ticket.c:139 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -456 [0xfffffffffffffe38])) [0 ticket+0 S8 A64])
+        (reg/f:DI 100)) Ticket.c:139 -1
+     (nil))
+(note 13 12 14 2 NOTE_INSN_FUNCTION_BEG)
+(insn 14 13 17 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.12969+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:139 -1
+     (nil))
+(insn 17 14 18 2 (set (reg:SI 101)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -408 [0xfffffffffffffe68])) [0 hierarchy+0 S4 A32])) Ticket.c:144 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 5 di)
+        (reg:SI 101)) Ticket.c:144 -1
+     (nil))
+(call_insn 19 18 20 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HierarchyGetProof") [flags 0x41]  <function_decl 0x7f05e71ef510 HierarchyGetProof>) [0 HierarchyGetProof S1 A8])
+            (const_int 0 [0]))) Ticket.c:144 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 20 19 21 2 (set (reg:DI 102)
+        (reg:DI 0 ax)) Ticket.c:144 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -392 [0xfffffffffffffe78])) [0 proof+0 S8 A64])
+        (reg:DI 102)) Ticket.c:144 -1
+     (nil))
+(insn 22 21 23 2 (set (reg/f:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -456 [0xfffffffffffffe38])) [0 ticket+0 S8 A64])) Ticket.c:146 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:HI 104)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 type+0 S2 A32])) Ticket.c:146 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/j:HI (reg/f:DI 103) [0 ticket_6(D)->tag+0 S2 A32])
+        (reg:HI 104)) Ticket.c:146 -1
+     (nil))
+(insn 25 24 26 2 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -456 [0xfffffffffffffe38])) [0 ticket+0 S8 A64])) Ticket.c:147 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 106)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -408 [0xfffffffffffffe68])) [0 hierarchy+0 S4 A32])) Ticket.c:147 -1
+     (nil))
+(insn 27 26 28 2 (set (mem/j:SI (plus:DI (reg/f:DI 105)
+                (const_int 4 [0x4])) [0 ticket_6(D)->hierarchy+0 S4 A32])
+        (reg:SI 106)) Ticket.c:147 -1
+     (nil))
+(insn 28 27 29 2 (set (reg/f:DI 87 [ D.12965 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -392 [0xfffffffffffffe78])) [0 proof+0 S8 A64])) Ticket.c:150 -1
+     (nil))
+(insn 29 28 30 2 (parallel [
+            (set (reg:DI 107)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:149 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:DI 1 dx)
+        (reg/f:DI 87 [ D.12965 ])) Ticket.c:149 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:SI 4 si)
+        (const_int 12 [0xc])) Ticket.c:149 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:DI 5 di)
+        (reg:DI 107)) Ticket.c:149 -1
+     (nil))
+(call_insn 33 32 34 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHmacStart2B") [flags 0x41]  <function_decl 0x7f05e72c2ca8 CryptHmacStart2B>) [0 CryptHmacStart2B S1 A8])
+            (const_int 0 [0]))) Ticket.c:149 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 34 33 35 2 (set (reg:HI 88 [ D.12966 ])
+        (reg:HI 0 ax)) Ticket.c:149 -1
+     (nil))
+(insn 35 34 36 2 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -456 [0xfffffffffffffe38])) [0 ticket+0 S8 A64])) Ticket.c:149 -1
+     (nil))
+(insn 36 35 37 2 (set (mem/j:HI (plus:DI (reg/f:DI 108)
+                (const_int 8 [0x8])) [0 ticket_6(D)->digest.t.size+0 S2 A32])
+        (reg:HI 88 [ D.12966 ])) Ticket.c:149 -1
+     (nil))
+(insn 37 36 38 2 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -456 [0xfffffffffffffe38])) [0 ticket+0 S8 A64])) Ticket.c:152 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:HI 89 [ D.12966 ])
+        (mem/j:HI (reg/f:DI 109) [0 ticket_6(D)->tag+0 S2 A32])) Ticket.c:152 -1
+     (nil))
+(insn 39 38 40 2 (set (reg:DI 90 [ D.12967 ])
+        (zero_extend:DI (reg:HI 89 [ D.12966 ]))) Ticket.c:152 -1
+     (nil))
+(insn 40 39 41 2 (parallel [
+            (set (reg:DI 110)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:152 -1
+     (nil))
+(insn 41 40 42 2 (set (reg:DI 1 dx)
+        (reg:DI 90 [ D.12967 ])) Ticket.c:152 -1
+     (nil))
+(insn 42 41 43 2 (set (reg:SI 4 si)
+        (const_int 2 [0x2])) Ticket.c:152 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:DI 5 di)
+        (reg:DI 110)) Ticket.c:152 -1
+     (nil))
+(call_insn 44 43 45 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdateInt") [flags 0x41]  <function_decl 0x7f05e72c2a20 CryptDigestUpdateInt>) [0 CryptDigestUpdateInt S1 A8])
+        (const_int 0 [0])) Ticket.c:152 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 45 44 46 2 (set (reg/f:DI 91 [ D.12965 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 cpHashA+0 S8 A64])) Ticket.c:154 -1
+     (nil))
+(insn 46 45 47 2 (parallel [
+            (set (reg:DI 111)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:154 -1
+     (nil))
+(insn 47 46 48 2 (set (reg:DI 4 si)
+        (reg/f:DI 91 [ D.12965 ])) Ticket.c:154 -1
+     (nil))
+(insn 48 47 49 2 (set (reg:DI 5 di)
+        (reg:DI 111)) Ticket.c:154 -1
+     (nil))
+(call_insn 49 48 50 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7f05e72c2870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Ticket.c:154 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 50 49 51 2 (set (reg/f:DI 92 [ D.12965 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -440 [0xfffffffffffffe48])) [0 policyRef+0 S8 A64])) Ticket.c:156 -1
+     (nil))
+(insn 51 50 52 2 (parallel [
+            (set (reg:DI 112)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:156 -1
+     (nil))
+(insn 52 51 53 2 (set (reg:DI 4 si)
+        (reg/f:DI 92 [ D.12965 ])) Ticket.c:156 -1
+     (nil))
+(insn 53 52 54 2 (set (reg:DI 5 di)
+        (reg:DI 112)) Ticket.c:156 -1
+     (nil))
+(call_insn 54 53 55 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7f05e72c2870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Ticket.c:156 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 55 54 56 2 (set (reg/f:DI 93 [ D.12965 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -448 [0xfffffffffffffe40])) [0 entityName+0 S8 A64])) Ticket.c:158 -1
+     (nil))
+(insn 56 55 57 2 (parallel [
+            (set (reg:DI 113)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:158 -1
+     (nil))
+(insn 57 56 58 2 (set (reg:DI 4 si)
+        (reg/f:DI 93 [ D.12965 ])) Ticket.c:158 -1
+     (nil))
+(insn 58 57 59 2 (set (reg:DI 5 di)
+        (reg:DI 113)) Ticket.c:158 -1
+     (nil))
+(call_insn 59 58 60 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7f05e72c2870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Ticket.c:158 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 60 59 61 2 (set (reg:DI 114)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -416 [0xfffffffffffffe60])) [0 timeout+0 S8 A64])) Ticket.c:160 -1
+     (nil))
+(insn 61 60 62 2 (parallel [
+            (set (reg:DI 115)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:160 -1
+     (nil))
+(insn 62 61 63 2 (set (reg:DI 1 dx)
+        (reg:DI 114)) Ticket.c:160 -1
+     (nil))
+(insn 63 62 64 2 (set (reg:SI 4 si)
+        (const_int 8 [0x8])) Ticket.c:160 -1
+     (nil))
+(insn 64 63 65 2 (set (reg:DI 5 di)
+        (reg:DI 115)) Ticket.c:160 -1
+     (nil))
+(call_insn 65 64 66 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdateInt") [flags 0x41]  <function_decl 0x7f05e72c2a20 CryptDigestUpdateInt>) [0 CryptDigestUpdateInt S1 A8])
+        (const_int 0 [0])) Ticket.c:160 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 66 65 67 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -416 [0xfffffffffffffe60])) [0 timeout+0 S8 A64])
+            (const_int 0 [0]))) Ticket.c:161 -1
+     (nil))
+(jump_insn 67 66 68 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 85)
+            (pc))) Ticket.c:161 -1
+     (nil)
+ -> 85)
+(note 68 67 69 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 69 68 70 4 (set (reg:SI 94 [ D.12968 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f05e7186ea0 gp>)
+                    (const_int 932 [0x3a4]))) [0 gp.timeEpoch+0 S4 A32])) Ticket.c:165 -1
+     (nil))
+(insn 70 69 71 4 (set (reg:DI 95 [ D.12967 ])
+        (zero_extend:DI (reg:SI 94 [ D.12968 ]))) Ticket.c:164 -1
+     (nil))
+(insn 71 70 72 4 (parallel [
+            (set (reg:DI 116)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:164 -1
+     (nil))
+(insn 72 71 73 4 (set (reg:DI 1 dx)
+        (reg:DI 95 [ D.12967 ])) Ticket.c:164 -1
+     (nil))
+(insn 73 72 74 4 (set (reg:SI 4 si)
+        (const_int 4 [0x4])) Ticket.c:164 -1
+     (nil))
+(insn 74 73 75 4 (set (reg:DI 5 di)
+        (reg:DI 116)) Ticket.c:164 -1
+     (nil))
+(call_insn 75 74 76 4 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdateInt") [flags 0x41]  <function_decl 0x7f05e72c2a20 CryptDigestUpdateInt>) [0 CryptDigestUpdateInt S1 A8])
+        (const_int 0 [0])) Ticket.c:164 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 76 75 77 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -420 [0xfffffffffffffe5c])) [0 expiresOnReset+0 S4 A32])
+            (const_int 0 [0]))) Ticket.c:167 -1
+     (nil))
+(jump_insn 77 76 78 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 85)
+            (pc))) Ticket.c:167 -1
+     (nil)
+ -> 85)
+(note 78 77 79 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 79 78 80 5 (set (reg:DI 96 [ D.12967 ])
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f05e7186ea0 gp>)
+                    (const_int 712 [0x2c8]))) [0 gp.totalResetCount+0 S8 A64])) Ticket.c:168 -1
+     (nil))
+(insn 80 79 81 5 (parallel [
+            (set (reg:DI 117)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:168 -1
+     (nil))
+(insn 81 80 82 5 (set (reg:DI 1 dx)
+        (reg:DI 96 [ D.12967 ])) Ticket.c:168 -1
+     (nil))
+(insn 82 81 83 5 (set (reg:SI 4 si)
+        (const_int 8 [0x8])) Ticket.c:168 -1
+     (nil))
+(insn 83 82 84 5 (set (reg:DI 5 di)
+        (reg:DI 117)) Ticket.c:168 -1
+     (nil))
+(call_insn 84 83 85 5 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdateInt") [flags 0x41]  <function_decl 0x7f05e72c2a20 CryptDigestUpdateInt>) [0 CryptDigestUpdateInt S1 A8])
+        (const_int 0 [0])) Ticket.c:168 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(code_label 85 84 86 6 11 "" [2 uses])
+(note 86 85 87 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 87 86 88 6 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -456 [0xfffffffffffffe38])) [0 ticket+0 S8 A64])) Ticket.c:172 -1
+     (nil))
+(insn 88 87 89 6 (parallel [
+            (set (reg/f:DI 97 [ D.12965 ])
+                (plus:DI (reg/f:DI 118)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:172 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -456 [0xfffffffffffffe38])) [0 ticket+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 89 88 90 6 (parallel [
+            (set (reg:DI 119)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:172 -1
+     (nil))
+(insn 90 89 91 6 (set (reg:DI 4 si)
+        (reg/f:DI 97 [ D.12965 ])) Ticket.c:172 -1
+     (nil))
+(insn 91 90 92 6 (set (reg:DI 5 di)
+        (reg:DI 119)) Ticket.c:172 -1
+     (nil))
+(call_insn 92 91 105 6 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHmacEnd2B") [flags 0x41]  <function_decl 0x7f05e72c2d80 CryptHmacEnd2B>) [0 CryptHmacEnd2B S1 A8])
+            (const_int 0 [0]))) Ticket.c:172 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 105 92 97 6 (const_int 0 [0]) Ticket.c:173 -1
+     (nil))
+(insn 97 105 98 6 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.12969+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) Ticket.c:174 -1
+     (nil))
+(jump_insn 98 97 103 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 101)
+            (pc))) Ticket.c:174 -1
+     (nil)
+ -> 101)
+(note 103 98 99 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(call_insn 99 103 100 10 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f05e7308bd0 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) Ticket.c:174 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 100 99 101)
+(code_label 101 100 104 11 13 "" [1 uses])
+(note 104 101 0 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+
+;; Function TicketComputeHashCheck (TicketComputeHashCheck, funcdef_no=5, decl_uid=12155, cgraph_uid=5, symbol_order=5)
+
+Partition 1: size 368 align 16
+	hmacState
+Partition 0: size 8 align 8
+	proof_4
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 6 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Forwarding edge 2->5 to 6 failed.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+Merging block 6 into block 2...
+Merged blocks 2 and 6.
+Merged 2 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 hierarchy+0 S4 A32])
+        (reg:SI 5 di [ hierarchy ])) Ticket.c:184 -1
+     (nil))
+(insn 3 2 5 2 (set (reg:SI 94)
+        (reg:SI 4 si [ hashAlg ])) Ticket.c:184 -1
+     (nil))
+(insn 5 3 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -416 [0xfffffffffffffe60])) [0 digest+0 S8 A64])
+        (reg:DI 1 dx [ digest ])) Ticket.c:184 -1
+     (nil))
+(insn 6 5 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -424 [0xfffffffffffffe58])) [0 ticket+0 S8 A64])
+        (reg:DI 2 cx [ ticket ])) Ticket.c:184 -1
+     (nil))
+(insn 4 6 7 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -408 [0xfffffffffffffe68])) [0 hashAlg+0 S2 A32])
+        (subreg:HI (reg:SI 94) 0)) Ticket.c:184 -1
+     (nil))
+(note 7 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 7 11 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.12973+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:184 -1
+     (nil))
+(insn 11 8 12 2 (set (reg:SI 95)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 hierarchy+0 S4 A32])) Ticket.c:189 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 5 di)
+        (reg:SI 95)) Ticket.c:189 -1
+     (nil))
+(call_insn 13 12 14 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HierarchyGetProof") [flags 0x41]  <function_decl 0x7f05e71ef510 HierarchyGetProof>) [0 HierarchyGetProof S1 A8])
+            (const_int 0 [0]))) Ticket.c:189 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 14 13 15 2 (set (reg:DI 96)
+        (reg:DI 0 ax)) Ticket.c:189 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -392 [0xfffffffffffffe78])) [0 proof+0 S8 A64])
+        (reg:DI 96)) Ticket.c:189 -1
+     (nil))
+(insn 16 15 17 2 (set (reg/f:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -424 [0xfffffffffffffe58])) [0 ticket+0 S8 A64])) Ticket.c:191 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/j:HI (reg/f:DI 97) [0 ticket_5(D)->tag+0 S2 A32])
+        (const_int -32732 [0xffffffffffff8024])) Ticket.c:191 -1
+     (nil))
+(insn 18 17 19 2 (set (reg/f:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -424 [0xfffffffffffffe58])) [0 ticket+0 S8 A64])) Ticket.c:192 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 99)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 hierarchy+0 S4 A32])) Ticket.c:192 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/j:SI (plus:DI (reg/f:DI 98)
+                (const_int 4 [0x4])) [0 ticket_5(D)->hierarchy+0 S4 A32])
+        (reg:SI 99)) Ticket.c:192 -1
+     (nil))
+(insn 21 20 22 2 (set (reg/f:DI 87 [ D.12970 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -392 [0xfffffffffffffe78])) [0 proof+0 S8 A64])) Ticket.c:195 -1
+     (nil))
+(insn 22 21 23 2 (parallel [
+            (set (reg:DI 100)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:194 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:DI 1 dx)
+        (reg/f:DI 87 [ D.12970 ])) Ticket.c:194 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 4 si)
+        (const_int 12 [0xc])) Ticket.c:194 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (reg:DI 100)) Ticket.c:194 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHmacStart2B") [flags 0x41]  <function_decl 0x7f05e72c2ca8 CryptHmacStart2B>) [0 CryptHmacStart2B S1 A8])
+            (const_int 0 [0]))) Ticket.c:194 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 27 26 28 2 (set (reg:HI 88 [ D.12971 ])
+        (reg:HI 0 ax)) Ticket.c:194 -1
+     (nil))
+(insn 28 27 29 2 (set (reg/f:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -424 [0xfffffffffffffe58])) [0 ticket+0 S8 A64])) Ticket.c:194 -1
+     (nil))
+(insn 29 28 30 2 (set (mem/j:HI (plus:DI (reg/f:DI 101)
+                (const_int 8 [0x8])) [0 ticket_5(D)->digest.t.size+0 S2 A32])
+        (reg:HI 88 [ D.12971 ])) Ticket.c:194 -1
+     (nil))
+(insn 30 29 31 2 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -424 [0xfffffffffffffe58])) [0 ticket+0 S8 A64])) Ticket.c:197 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:HI 89 [ D.12971 ])
+        (mem/j:HI (reg/f:DI 102) [0 ticket_5(D)->tag+0 S2 A32])) Ticket.c:197 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:DI 90 [ D.12972 ])
+        (zero_extend:DI (reg:HI 89 [ D.12971 ]))) Ticket.c:197 -1
+     (nil))
+(insn 33 32 34 2 (parallel [
+            (set (reg:DI 103)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:197 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:DI 1 dx)
+        (reg:DI 90 [ D.12972 ])) Ticket.c:197 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:SI 4 si)
+        (const_int 2 [0x2])) Ticket.c:197 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:DI 5 di)
+        (reg:DI 103)) Ticket.c:197 -1
+     (nil))
+(call_insn 37 36 38 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdateInt") [flags 0x41]  <function_decl 0x7f05e72c2a20 CryptDigestUpdateInt>) [0 CryptDigestUpdateInt S1 A8])
+        (const_int 0 [0])) Ticket.c:197 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 38 37 39 2 (set (reg:DI 91 [ D.12972 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -408 [0xfffffffffffffe68])) [0 hashAlg+0 S2 A32]))) Ticket.c:199 -1
+     (nil))
+(insn 39 38 40 2 (parallel [
+            (set (reg:DI 104)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:199 -1
+     (nil))
+(insn 40 39 41 2 (set (reg:DI 1 dx)
+        (reg:DI 91 [ D.12972 ])) Ticket.c:199 -1
+     (nil))
+(insn 41 40 42 2 (set (reg:SI 4 si)
+        (const_int 2 [0x2])) Ticket.c:199 -1
+     (nil))
+(insn 42 41 43 2 (set (reg:DI 5 di)
+        (reg:DI 104)) Ticket.c:199 -1
+     (nil))
+(call_insn 43 42 44 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdateInt") [flags 0x41]  <function_decl 0x7f05e72c2a20 CryptDigestUpdateInt>) [0 CryptDigestUpdateInt S1 A8])
+        (const_int 0 [0])) Ticket.c:199 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 44 43 45 2 (set (reg/f:DI 92 [ D.12970 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -416 [0xfffffffffffffe60])) [0 digest+0 S8 A64])) Ticket.c:201 -1
+     (nil))
+(insn 45 44 46 2 (parallel [
+            (set (reg:DI 105)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:201 -1
+     (nil))
+(insn 46 45 47 2 (set (reg:DI 4 si)
+        (reg/f:DI 92 [ D.12970 ])) Ticket.c:201 -1
+     (nil))
+(insn 47 46 48 2 (set (reg:DI 5 di)
+        (reg:DI 105)) Ticket.c:201 -1
+     (nil))
+(call_insn 48 47 49 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7f05e72c2870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Ticket.c:201 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 49 48 50 2 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -424 [0xfffffffffffffe58])) [0 ticket+0 S8 A64])) Ticket.c:203 -1
+     (nil))
+(insn 50 49 51 2 (parallel [
+            (set (reg/f:DI 93 [ D.12970 ])
+                (plus:DI (reg/f:DI 106)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:203 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -424 [0xfffffffffffffe58])) [0 ticket+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 51 50 52 2 (parallel [
+            (set (reg:DI 107)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:203 -1
+     (nil))
+(insn 52 51 53 2 (set (reg:DI 4 si)
+        (reg/f:DI 93 [ D.12970 ])) Ticket.c:203 -1
+     (nil))
+(insn 53 52 54 2 (set (reg:DI 5 di)
+        (reg:DI 107)) Ticket.c:203 -1
+     (nil))
+(call_insn 54 53 67 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHmacEnd2B") [flags 0x41]  <function_decl 0x7f05e72c2d80 CryptHmacEnd2B>) [0 CryptHmacEnd2B S1 A8])
+            (const_int 0 [0]))) Ticket.c:203 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 67 54 59 2 (const_int 0 [0]) Ticket.c:204 -1
+     (nil))
+(insn 59 67 60 2 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.12973+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) Ticket.c:205 -1
+     (nil))
+(jump_insn 60 59 65 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 63)
+            (pc))) Ticket.c:205 -1
+     (nil)
+ -> 63)
+(note 65 60 61 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(call_insn 61 65 62 7 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f05e7308bd0 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) Ticket.c:205 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 62 61 63)
+(code_label 63 62 66 8 16 "" [1 uses])
+(note 66 63 0 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+
+;; Function TicketComputeCreation (TicketComputeCreation, funcdef_no=6, decl_uid=12160, cgraph_uid=6, symbol_order=6)
+
+Partition 1: size 368 align 16
+	hmacState
+Partition 0: size 8 align 8
+	proof_5
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+Merging block 8 into block 5...
+Merged blocks 5 and 8.
+Merged 5 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 hierarchy+0 S4 A32])
+        (reg:SI 5 di [ hierarchy ])) Ticket.c:215 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -416 [0xfffffffffffffe60])) [0 name+0 S8 A64])
+        (reg:DI 4 si [ name ])) Ticket.c:215 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -424 [0xfffffffffffffe58])) [0 creation+0 S8 A64])
+        (reg:DI 1 dx [ creation ])) Ticket.c:215 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])
+        (reg:DI 2 cx [ ticket ])) Ticket.c:215 -1
+     (nil))
+(note 6 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 6 10 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.12977+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:215 -1
+     (nil))
+(insn 10 7 11 2 (set (reg:SI 94)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 hierarchy+0 S4 A32])) Ticket.c:219 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 5 di)
+        (reg:SI 94)) Ticket.c:219 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HierarchyGetProof") [flags 0x41]  <function_decl 0x7f05e71ef510 HierarchyGetProof>) [0 HierarchyGetProof S1 A8])
+            (const_int 0 [0]))) Ticket.c:219 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:DI 95)
+        (reg:DI 0 ax)) Ticket.c:219 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -392 [0xfffffffffffffe78])) [0 proof+0 S8 A64])
+        (reg:DI 95)) Ticket.c:219 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])) Ticket.c:221 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/j:HI (reg/f:DI 96) [0 ticket_6(D)->tag+0 S2 A32])
+        (const_int -32735 [0xffffffffffff8021])) Ticket.c:221 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])) Ticket.c:222 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 98)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -404 [0xfffffffffffffe6c])) [0 hierarchy+0 S4 A32])) Ticket.c:222 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/j:SI (plus:DI (reg/f:DI 97)
+                (const_int 4 [0x4])) [0 ticket_6(D)->hierarchy+0 S4 A32])
+        (reg:SI 98)) Ticket.c:222 -1
+     (nil))
+(insn 20 19 21 2 (set (reg/f:DI 87 [ D.12974 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -392 [0xfffffffffffffe78])) [0 proof+0 S8 A64])) Ticket.c:225 -1
+     (nil))
+(insn 21 20 22 2 (parallel [
+            (set (reg:DI 99)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:224 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 1 dx)
+        (reg/f:DI 87 [ D.12974 ])) Ticket.c:224 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 4 si)
+        (const_int 12 [0xc])) Ticket.c:224 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 5 di)
+        (reg:DI 99)) Ticket.c:224 -1
+     (nil))
+(call_insn 25 24 26 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHmacStart2B") [flags 0x41]  <function_decl 0x7f05e72c2ca8 CryptHmacStart2B>) [0 CryptHmacStart2B S1 A8])
+            (const_int 0 [0]))) Ticket.c:224 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 26 25 27 2 (set (reg:HI 88 [ D.12975 ])
+        (reg:HI 0 ax)) Ticket.c:224 -1
+     (nil))
+(insn 27 26 28 2 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])) Ticket.c:224 -1
+     (nil))
+(insn 28 27 29 2 (set (mem/j:HI (plus:DI (reg/f:DI 100)
+                (const_int 8 [0x8])) [0 ticket_6(D)->digest.t.size+0 S2 A32])
+        (reg:HI 88 [ D.12975 ])) Ticket.c:224 -1
+     (nil))
+(insn 29 28 30 2 (set (reg/f:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])) Ticket.c:227 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:HI 89 [ D.12975 ])
+        (mem/j:HI (reg/f:DI 101) [0 ticket_6(D)->tag+0 S2 A32])) Ticket.c:227 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:DI 90 [ D.12976 ])
+        (zero_extend:DI (reg:HI 89 [ D.12975 ]))) Ticket.c:227 -1
+     (nil))
+(insn 32 31 33 2 (parallel [
+            (set (reg:DI 102)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:227 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 1 dx)
+        (reg:DI 90 [ D.12976 ])) Ticket.c:227 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:SI 4 si)
+        (const_int 2 [0x2])) Ticket.c:227 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:DI 5 di)
+        (reg:DI 102)) Ticket.c:227 -1
+     (nil))
+(call_insn 36 35 37 2 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdateInt") [flags 0x41]  <function_decl 0x7f05e72c2a20 CryptDigestUpdateInt>) [0 CryptDigestUpdateInt S1 A8])
+        (const_int 0 [0])) Ticket.c:227 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 37 36 38 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -416 [0xfffffffffffffe60])) [0 name+0 S8 A64])
+            (const_int 0 [0]))) Ticket.c:229 -1
+     (nil))
+(jump_insn 38 37 39 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) Ticket.c:229 -1
+     (nil)
+ -> 45)
+(note 39 38 40 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 4 (set (reg/f:DI 91 [ D.12974 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -416 [0xfffffffffffffe60])) [0 name+0 S8 A64])) Ticket.c:230 -1
+     (nil))
+(insn 41 40 42 4 (parallel [
+            (set (reg:DI 103)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:230 -1
+     (nil))
+(insn 42 41 43 4 (set (reg:DI 4 si)
+        (reg/f:DI 91 [ D.12974 ])) Ticket.c:230 -1
+     (nil))
+(insn 43 42 44 4 (set (reg:DI 5 di)
+        (reg:DI 103)) Ticket.c:230 -1
+     (nil))
+(call_insn 44 43 45 4 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7f05e72c2870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Ticket.c:230 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(code_label 45 44 46 5 18 "" [1 uses])
+(note 46 45 47 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 5 (set (reg/f:DI 92 [ D.12974 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -424 [0xfffffffffffffe58])) [0 creation+0 S8 A64])) Ticket.c:232 -1
+     (nil))
+(insn 48 47 49 5 (parallel [
+            (set (reg:DI 104)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:232 -1
+     (nil))
+(insn 49 48 50 5 (set (reg:DI 4 si)
+        (reg/f:DI 92 [ D.12974 ])) Ticket.c:232 -1
+     (nil))
+(insn 50 49 51 5 (set (reg:DI 5 di)
+        (reg:DI 104)) Ticket.c:232 -1
+     (nil))
+(call_insn 51 50 52 5 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7f05e72c2870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Ticket.c:232 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 52 51 53 5 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])) Ticket.c:234 -1
+     (nil))
+(insn 53 52 54 5 (parallel [
+            (set (reg/f:DI 93 [ D.12974 ])
+                (plus:DI (reg/f:DI 105)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:234 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -432 [0xfffffffffffffe50])) [0 ticket+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 54 53 55 5 (parallel [
+            (set (reg:DI 106)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -384 [0xfffffffffffffe80])))
+            (clobber (reg:CC 17 flags))
+        ]) Ticket.c:234 -1
+     (nil))
+(insn 55 54 56 5 (set (reg:DI 4 si)
+        (reg/f:DI 93 [ D.12974 ])) Ticket.c:234 -1
+     (nil))
+(insn 56 55 57 5 (set (reg:DI 5 di)
+        (reg:DI 106)) Ticket.c:234 -1
+     (nil))
+(call_insn 57 56 70 5 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHmacEnd2B") [flags 0x41]  <function_decl 0x7f05e72c2d80 CryptHmacEnd2B>) [0 CryptHmacEnd2B S1 A8])
+            (const_int 0 [0]))) Ticket.c:234 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 70 57 62 5 (const_int 0 [0]) Ticket.c:235 -1
+     (nil))
+(insn 62 70 63 5 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.12977+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) Ticket.c:236 -1
+     (nil))
+(jump_insn 63 62 68 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 66)
+            (pc))) Ticket.c:236 -1
+     (nil)
+ -> 66)
+(note 68 63 64 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(call_insn 64 68 65 9 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f05e7308bd0 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) Ticket.c:236 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 65 64 66)
+(code_label 66 65 69 10 20 "" [1 uses])
+(note 69 66 0 10 [bb 10] NOTE_INSN_BASIC_BLOCK)

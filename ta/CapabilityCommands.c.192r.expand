@@ -1,0 +1,1336 @@
+
+;; Function TPM2_GetCapability (TPM2_GetCapability, funcdef_no=2, decl_uid=12861, cgraph_uid=2, symbol_order=2)
+
+Partition 0: size 8 align 8
+	data_6
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+Purged edges from bb 40
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 10->11 to 23 failed.
+Forwarding edge 14->15 to 23 failed.
+Removing jump 357.
+Merging block 40 into block 39...
+Merged blocks 39 and 40.
+Merged 39 and 40 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 10->11 to 23 failed.
+Forwarding edge 14->15 to 23 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) CapabilityCommands.c:70 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) CapabilityCommands.c:70 -1
+     (nil))
+(note 4 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(insn 10 4 11 2 (set (reg/f:DI 167)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:71 -1
+     (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg:DI 166)
+                (plus:DI (reg/f:DI 167)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) CapabilityCommands.c:71 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 12 11 13 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])
+        (reg:DI 166)) CapabilityCommands.c:71 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:DI 168)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:74 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 88 [ D.12984 ])
+        (mem/j:SI (reg/f:DI 168) [0 in_8(D)->capability+0 S4 A32])) CapabilityCommands.c:74 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:DI 169)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:74 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/j:SI (plus:DI (reg/f:DI 169)
+                (const_int 4 [0x4])) [0 out_5(D)->capabilityData.capability+0 S4 A32])
+        (reg:SI 88 [ D.12984 ])) CapabilityCommands.c:74 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:DI 170)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:75 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 89 [ D.12984 ])
+        (mem/j:SI (reg/f:DI 170) [0 in_8(D)->capability+0 S4 A32])) CapabilityCommands.c:75 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 89 [ D.12984 ])
+            (const_int 9 [0x9]))) CapabilityCommands.c:75 -1
+     (nil))
+(jump_insn 20 19 363 2 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 346)
+            (pc))) CapabilityCommands.c:75 -1
+     (nil)
+ -> 346)
+(note 363 20 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 21 363 22 4 (set (reg:DI 171)
+        (zero_extend:DI (reg:SI 89 [ D.12984 ]))) CapabilityCommands.c:75 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:DI 172)
+        (mem/u/c:DI (plus:DI (ashift:DI (reg:DI 171)
+                    (const_int 3 [0x3]))
+                (label_ref:DI 25)) [0  S8 A8])) CapabilityCommands.c:75 -1
+     (insn_list:REG_LABEL_OPERAND 25 (nil)))
+(jump_insn 23 22 24 4 (parallel [
+            (set (pc)
+                (reg:DI 172))
+            (use (label_ref 25))
+        ]) CapabilityCommands.c:75 -1
+     (nil)
+ -> 25)
+(barrier 24 23 25)
+(code_label 25 24 26 4 "" [2 uses])
+(jump_table_data 26 25 27 (addr_vec:DI [
+            (label_ref:DI 28)
+            (label_ref:DI 46)
+            (label_ref:DI 196)
+            (label_ref:DI 212)
+            (label_ref:DI 228)
+            (label_ref:DI 244)
+            (label_ref:DI 283)
+            (label_ref:DI 267)
+            (label_ref:DI 299)
+            (label_ref:DI 317)
+        ]))
+(barrier 27 26 28)
+(code_label 28 27 29 5 3 "" [1 uses])
+(note 29 28 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 5 (set (reg/f:DI 131 [ D.12990 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:78 -1
+     (nil))
+(insn 31 30 32 5 (set (reg/f:DI 173)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:78 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:SI 132 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 173)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:78 -1
+     (nil))
+(insn 33 32 34 5 (set (reg/f:DI 174)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:78 -1
+     (nil))
+(insn 34 33 35 5 (set (reg:SI 133 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 174)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:78 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:SI 134 [ D.12986 ])
+        (reg:SI 133 [ D.12984 ])) CapabilityCommands.c:78 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:SI 135 [ D.12986 ])
+        (zero_extend:SI (subreg:HI (reg:SI 134 [ D.12986 ]) 0))) CapabilityCommands.c:78 -1
+     (nil))
+(insn 37 36 38 5 (set (reg:DI 1 dx)
+        (reg/f:DI 131 [ D.12990 ])) CapabilityCommands.c:78 -1
+     (nil))
+(insn 38 37 39 5 (set (reg:SI 4 si)
+        (reg:SI 132 [ D.12984 ])) CapabilityCommands.c:78 -1
+     (nil))
+(insn 39 38 40 5 (set (reg:SI 5 di)
+        (reg:SI 135 [ D.12986 ])) CapabilityCommands.c:78 -1
+     (nil))
+(call_insn 40 39 41 5 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("AlgorithmCapGetImplemented") [flags 0x41]  <function_decl 0x7f30f8af3e58 AlgorithmCapGetImplemented>) [0 AlgorithmCapGetImplemented S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:78 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 41 40 42 5 (set (reg:QI 136 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:78 -1
+     (nil))
+(insn 42 41 43 5 (set (reg/f:DI 175)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:78 -1
+     (nil))
+(insn 43 42 44 5 (set (mem/j:QI (reg/f:DI 175) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 136 [ D.12985 ])) CapabilityCommands.c:78 -1
+     (nil))
+(jump_insn 44 43 45 5 (set (pc)
+        (label_ref 351)) CapabilityCommands.c:81 -1
+     (nil)
+ -> 351)
+(barrier 45 44 46)
+(code_label 46 45 47 6 5 "" [1 uses])
+(note 47 46 48 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 6 (set (reg/f:DI 176)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:83 -1
+     (nil))
+(insn 49 48 50 6 (set (reg:SI 90 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 176)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:83 -1
+     (nil))
+(insn 50 49 51 6 (set (reg:SI 5 di)
+        (reg:SI 90 [ D.12984 ])) CapabilityCommands.c:83 -1
+     (nil))
+(call_insn 51 50 52 6 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleGetType") [flags 0x41]  <function_decl 0x7f30f8af3360 HandleGetType>) [0 HandleGetType S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:83 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 52 51 53 6 (set (reg:QI 91 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:83 -1
+     (nil))
+(insn 53 52 54 6 (set (reg:SI 92 [ D.12986 ])
+        (zero_extend:SI (reg:QI 91 [ D.12985 ]))) CapabilityCommands.c:83 -1
+     (nil))
+(insn 54 53 55 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.12986 ])
+            (const_int 3 [0x3]))) CapabilityCommands.c:83 -1
+     (nil))
+(jump_insn 55 54 364 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 139)
+            (pc))) CapabilityCommands.c:83 -1
+     (nil)
+ -> 139)
+(note 364 55 56 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 56 364 57 7 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 92 [ D.12986 ])
+            (const_int 3 [0x3]))) CapabilityCommands.c:83 -1
+     (nil))
+(jump_insn 57 56 365 7 (set (pc)
+        (if_then_else (gt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 66)
+            (pc))) CapabilityCommands.c:83 -1
+     (nil)
+ -> 66)
+(note 365 57 58 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 58 365 59 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.12986 ])
+            (const_int 1 [0x1]))) CapabilityCommands.c:83 -1
+     (nil))
+(jump_insn 59 58 366 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 107)
+            (pc))) CapabilityCommands.c:83 -1
+     (nil)
+ -> 107)
+(note 366 59 60 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 60 366 61 9 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 92 [ D.12986 ])
+            (const_int 1 [0x1]))) CapabilityCommands.c:83 -1
+     (nil))
+(jump_insn 61 60 367 9 (set (pc)
+        (if_then_else (gt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 123)
+            (pc))) CapabilityCommands.c:83 -1
+     (nil)
+ -> 123)
+(note 367 61 62 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 62 367 63 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.12986 ])
+            (const_int 0 [0]))) CapabilityCommands.c:83 -1
+     (nil))
+(jump_insn 63 62 368 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 155)
+            (pc))) CapabilityCommands.c:83 -1
+     (nil)
+ -> 155)
+(note 368 63 64 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 64 368 65 11 (set (pc)
+        (label_ref 187)) CapabilityCommands.c:83 -1
+     (nil)
+ -> 187)
+(barrier 65 64 66)
+(code_label 66 65 369 12 17 "" [1 uses])
+(note 369 66 67 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 67 369 68 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.12986 ])
+            (const_int 128 [0x80]))) CapabilityCommands.c:83 -1
+     (nil))
+(jump_insn 68 67 370 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 75)
+            (pc))) CapabilityCommands.c:83 -1
+     (nil)
+ -> 75)
+(note 370 68 69 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 69 370 70 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.12986 ])
+            (const_int 129 [0x81]))) CapabilityCommands.c:83 -1
+     (nil))
+(jump_insn 70 69 371 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 91)
+            (pc))) CapabilityCommands.c:83 -1
+     (nil)
+ -> 91)
+(note 371 70 71 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 71 371 72 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.12986 ])
+            (const_int 64 [0x40]))) CapabilityCommands.c:83 -1
+     (nil))
+(jump_insn 72 71 372 14 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 171)
+            (pc))) CapabilityCommands.c:83 -1
+     (nil)
+ -> 171)
+(note 372 72 73 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 73 372 74 15 (set (pc)
+        (label_ref 187)) CapabilityCommands.c:83 -1
+     (nil)
+ -> 187)
+(barrier 74 73 75)
+(code_label 75 74 76 16 21 "" [1 uses])
+(note 76 75 77 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 77 76 78 16 (set (reg/f:DI 93 [ D.12987 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:87 -1
+     (nil))
+(insn 78 77 79 16 (set (reg/f:DI 177)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:87 -1
+     (nil))
+(insn 79 78 80 16 (set (reg:SI 94 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 177)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:87 -1
+     (nil))
+(insn 80 79 81 16 (set (reg/f:DI 178)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:87 -1
+     (nil))
+(insn 81 80 82 16 (set (reg:SI 95 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 178)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:87 -1
+     (nil))
+(insn 82 81 83 16 (set (reg:DI 1 dx)
+        (reg/f:DI 93 [ D.12987 ])) CapabilityCommands.c:87 -1
+     (nil))
+(insn 83 82 84 16 (set (reg:SI 4 si)
+        (reg:SI 94 [ D.12984 ])) CapabilityCommands.c:87 -1
+     (nil))
+(insn 84 83 85 16 (set (reg:SI 5 di)
+        (reg:SI 95 [ D.12984 ])) CapabilityCommands.c:87 -1
+     (nil))
+(call_insn 85 84 86 16 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("ObjectCapGetLoaded") [flags 0x41]  <function_decl 0x7f30f8a2f510 ObjectCapGetLoaded>) [0 ObjectCapGetLoaded S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:87 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 86 85 87 16 (set (reg:QI 96 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:87 -1
+     (nil))
+(insn 87 86 88 16 (set (reg/f:DI 179)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:87 -1
+     (nil))
+(insn 88 87 89 16 (set (mem/j:QI (reg/f:DI 179) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 96 [ D.12985 ])) CapabilityCommands.c:87 -1
+     (nil))
+(jump_insn 89 88 90 16 (set (pc)
+        (label_ref 192)) CapabilityCommands.c:90 -1
+     (nil)
+ -> 192)
+(barrier 90 89 91)
+(code_label 91 90 92 17 22 "" [1 uses])
+(note 92 91 93 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 93 92 94 17 (set (reg/f:DI 97 [ D.12987 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:93 -1
+     (nil))
+(insn 94 93 95 17 (set (reg/f:DI 180)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:93 -1
+     (nil))
+(insn 95 94 96 17 (set (reg:SI 98 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 180)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:93 -1
+     (nil))
+(insn 96 95 97 17 (set (reg/f:DI 181)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:93 -1
+     (nil))
+(insn 97 96 98 17 (set (reg:SI 99 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 181)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:93 -1
+     (nil))
+(insn 98 97 99 17 (set (reg:DI 1 dx)
+        (reg/f:DI 97 [ D.12987 ])) CapabilityCommands.c:93 -1
+     (nil))
+(insn 99 98 100 17 (set (reg:SI 4 si)
+        (reg:SI 98 [ D.12984 ])) CapabilityCommands.c:93 -1
+     (nil))
+(insn 100 99 101 17 (set (reg:SI 5 di)
+        (reg:SI 99 [ D.12984 ])) CapabilityCommands.c:93 -1
+     (nil))
+(call_insn 101 100 102 17 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NvCapGetPersistent") [flags 0x41]  <function_decl 0x7f30f8a4d5e8 NvCapGetPersistent>) [0 NvCapGetPersistent S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:93 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 102 101 103 17 (set (reg:QI 100 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:93 -1
+     (nil))
+(insn 103 102 104 17 (set (reg/f:DI 182)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:93 -1
+     (nil))
+(insn 104 103 105 17 (set (mem/j:QI (reg/f:DI 182) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 100 [ D.12985 ])) CapabilityCommands.c:93 -1
+     (nil))
+(jump_insn 105 104 106 17 (set (pc)
+        (label_ref 192)) CapabilityCommands.c:96 -1
+     (nil)
+ -> 192)
+(barrier 106 105 107)
+(code_label 107 106 108 18 18 "" [1 uses])
+(note 108 107 109 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 109 108 110 18 (set (reg/f:DI 101 [ D.12987 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:99 -1
+     (nil))
+(insn 110 109 111 18 (set (reg/f:DI 183)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:99 -1
+     (nil))
+(insn 111 110 112 18 (set (reg:SI 102 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 183)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:99 -1
+     (nil))
+(insn 112 111 113 18 (set (reg/f:DI 184)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:99 -1
+     (nil))
+(insn 113 112 114 18 (set (reg:SI 103 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 184)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:99 -1
+     (nil))
+(insn 114 113 115 18 (set (reg:DI 1 dx)
+        (reg/f:DI 101 [ D.12987 ])) CapabilityCommands.c:99 -1
+     (nil))
+(insn 115 114 116 18 (set (reg:SI 4 si)
+        (reg:SI 102 [ D.12984 ])) CapabilityCommands.c:99 -1
+     (nil))
+(insn 116 115 117 18 (set (reg:SI 5 di)
+        (reg:SI 103 [ D.12984 ])) CapabilityCommands.c:99 -1
+     (nil))
+(call_insn 117 116 118 18 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NvCapGetIndex") [flags 0x41]  <function_decl 0x7f30f8a4d6c0 NvCapGetIndex>) [0 NvCapGetIndex S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:99 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 118 117 119 18 (set (reg:QI 104 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:99 -1
+     (nil))
+(insn 119 118 120 18 (set (reg/f:DI 185)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:99 -1
+     (nil))
+(insn 120 119 121 18 (set (mem/j:QI (reg/f:DI 185) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 104 [ D.12985 ])) CapabilityCommands.c:99 -1
+     (nil))
+(jump_insn 121 120 122 18 (set (pc)
+        (label_ref 192)) CapabilityCommands.c:102 -1
+     (nil)
+ -> 192)
+(barrier 122 121 123)
+(code_label 123 122 124 19 19 "" [1 uses])
+(note 124 123 125 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 125 124 126 19 (set (reg/f:DI 105 [ D.12987 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:105 -1
+     (nil))
+(insn 126 125 127 19 (set (reg/f:DI 186)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:105 -1
+     (nil))
+(insn 127 126 128 19 (set (reg:SI 106 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 186)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:105 -1
+     (nil))
+(insn 128 127 129 19 (set (reg/f:DI 187)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:105 -1
+     (nil))
+(insn 129 128 130 19 (set (reg:SI 107 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 187)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:105 -1
+     (nil))
+(insn 130 129 131 19 (set (reg:DI 1 dx)
+        (reg/f:DI 105 [ D.12987 ])) CapabilityCommands.c:105 -1
+     (nil))
+(insn 131 130 132 19 (set (reg:SI 4 si)
+        (reg:SI 106 [ D.12984 ])) CapabilityCommands.c:105 -1
+     (nil))
+(insn 132 131 133 19 (set (reg:SI 5 di)
+        (reg:SI 107 [ D.12984 ])) CapabilityCommands.c:105 -1
+     (nil))
+(call_insn 133 132 134 19 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SessionCapGetLoaded") [flags 0x41]  <function_decl 0x7f30f8a40d80 SessionCapGetLoaded>) [0 SessionCapGetLoaded S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:105 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 134 133 135 19 (set (reg:QI 108 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:105 -1
+     (nil))
+(insn 135 134 136 19 (set (reg/f:DI 188)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:105 -1
+     (nil))
+(insn 136 135 137 19 (set (mem/j:QI (reg/f:DI 188) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 108 [ D.12985 ])) CapabilityCommands.c:105 -1
+     (nil))
+(jump_insn 137 136 138 19 (set (pc)
+        (label_ref 192)) CapabilityCommands.c:108 -1
+     (nil)
+ -> 192)
+(barrier 138 137 139)
+(code_label 139 138 140 20 16 "" [1 uses])
+(note 140 139 141 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 141 140 142 20 (set (reg/f:DI 109 [ D.12987 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:115 -1
+     (nil))
+(insn 142 141 143 20 (set (reg/f:DI 189)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:115 -1
+     (nil))
+(insn 143 142 144 20 (set (reg:SI 110 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 189)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:115 -1
+     (nil))
+(insn 144 143 145 20 (set (reg/f:DI 190)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:115 -1
+     (nil))
+(insn 145 144 146 20 (set (reg:SI 111 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 190)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:115 -1
+     (nil))
+(insn 146 145 147 20 (set (reg:DI 1 dx)
+        (reg/f:DI 109 [ D.12987 ])) CapabilityCommands.c:115 -1
+     (nil))
+(insn 147 146 148 20 (set (reg:SI 4 si)
+        (reg:SI 110 [ D.12984 ])) CapabilityCommands.c:115 -1
+     (nil))
+(insn 148 147 149 20 (set (reg:SI 5 di)
+        (reg:SI 111 [ D.12984 ])) CapabilityCommands.c:115 -1
+     (nil))
+(call_insn 149 148 150 20 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SessionCapGetSaved") [flags 0x41]  <function_decl 0x7f30f8a40e58 SessionCapGetSaved>) [0 SessionCapGetSaved S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:115 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 150 149 151 20 (set (reg:QI 112 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:115 -1
+     (nil))
+(insn 151 150 152 20 (set (reg/f:DI 191)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:115 -1
+     (nil))
+(insn 152 151 153 20 (set (mem/j:QI (reg/f:DI 191) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 112 [ D.12985 ])) CapabilityCommands.c:115 -1
+     (nil))
+(jump_insn 153 152 154 20 (set (pc)
+        (label_ref 192)) CapabilityCommands.c:118 -1
+     (nil)
+ -> 192)
+(barrier 154 153 155)
+(code_label 155 154 156 21 20 "" [1 uses])
+(note 156 155 157 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 157 156 158 21 (set (reg/f:DI 113 [ D.12987 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:121 -1
+     (nil))
+(insn 158 157 159 21 (set (reg/f:DI 192)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:121 -1
+     (nil))
+(insn 159 158 160 21 (set (reg:SI 114 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 192)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:121 -1
+     (nil))
+(insn 160 159 161 21 (set (reg/f:DI 193)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:121 -1
+     (nil))
+(insn 161 160 162 21 (set (reg:SI 115 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 193)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:121 -1
+     (nil))
+(insn 162 161 163 21 (set (reg:DI 1 dx)
+        (reg/f:DI 113 [ D.12987 ])) CapabilityCommands.c:121 -1
+     (nil))
+(insn 163 162 164 21 (set (reg:SI 4 si)
+        (reg:SI 114 [ D.12984 ])) CapabilityCommands.c:121 -1
+     (nil))
+(insn 164 163 165 21 (set (reg:SI 5 di)
+        (reg:SI 115 [ D.12984 ])) CapabilityCommands.c:121 -1
+     (nil))
+(call_insn 165 164 166 21 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("PCRCapGetHandles") [flags 0x41]  <function_decl 0x7f30f8a57a20 PCRCapGetHandles>) [0 PCRCapGetHandles S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:121 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 166 165 167 21 (set (reg:QI 116 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:121 -1
+     (nil))
+(insn 167 166 168 21 (set (reg/f:DI 194)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:121 -1
+     (nil))
+(insn 168 167 169 21 (set (mem/j:QI (reg/f:DI 194) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 116 [ D.12985 ])) CapabilityCommands.c:121 -1
+     (nil))
+(jump_insn 169 168 170 21 (set (pc)
+        (label_ref 192)) CapabilityCommands.c:124 -1
+     (nil)
+ -> 192)
+(barrier 170 169 171)
+(code_label 171 170 172 22 23 "" [1 uses])
+(note 172 171 173 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 173 172 174 22 (set (reg/f:DI 117 [ D.12987 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:127 -1
+     (nil))
+(insn 174 173 175 22 (set (reg/f:DI 195)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:127 -1
+     (nil))
+(insn 175 174 176 22 (set (reg:SI 118 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 195)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:127 -1
+     (nil))
+(insn 176 175 177 22 (set (reg/f:DI 196)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:127 -1
+     (nil))
+(insn 177 176 178 22 (set (reg:SI 119 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 196)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:127 -1
+     (nil))
+(insn 178 177 179 22 (set (reg:DI 1 dx)
+        (reg/f:DI 117 [ D.12987 ])) CapabilityCommands.c:127 -1
+     (nil))
+(insn 179 178 180 22 (set (reg:SI 4 si)
+        (reg:SI 118 [ D.12984 ])) CapabilityCommands.c:127 -1
+     (nil))
+(insn 180 179 181 22 (set (reg:SI 5 di)
+        (reg:SI 119 [ D.12984 ])) CapabilityCommands.c:127 -1
+     (nil))
+(call_insn 181 180 182 22 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("PermanentCapGetHandles") [flags 0x41]  <function_decl 0x7f30f8af3510 PermanentCapGetHandles>) [0 PermanentCapGetHandles S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:127 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 182 181 183 22 (set (reg:QI 120 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:127 -1
+     (nil))
+(insn 183 182 184 22 (set (reg/f:DI 197)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:127 -1
+     (nil))
+(insn 184 183 185 22 (set (mem/j:QI (reg/f:DI 197) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 120 [ D.12985 ])) CapabilityCommands.c:127 -1
+     (nil))
+(jump_insn 185 184 186 22 (set (pc)
+        (label_ref 192)) CapabilityCommands.c:130 -1
+     (nil)
+ -> 192)
+(barrier 186 185 187)
+(code_label 187 186 188 23 15 "" [2 uses])
+(note 188 187 189 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 189 188 190 23 (set (reg:SI 87 [ D.12983 ])
+        (const_int 715 [0x2cb])) CapabilityCommands.c:133 -1
+     (nil))
+(jump_insn 190 189 191 23 (set (pc)
+        (label_ref 354)) CapabilityCommands.c:133 -1
+     (nil)
+ -> 354)
+(barrier 191 190 192)
+(code_label 192 191 193 24 24 "" [7 uses])
+(note 193 192 194 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 194 193 195 24 (set (pc)
+        (label_ref 351)) CapabilityCommands.c:136 -1
+     (nil)
+ -> 351)
+(barrier 195 194 196)
+(code_label 196 195 197 25 6 "" [1 uses])
+(note 197 196 198 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 198 197 199 25 (set (reg/f:DI 137 [ D.12991 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:138 -1
+     (nil))
+(insn 199 198 200 25 (set (reg/f:DI 198)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:138 -1
+     (nil))
+(insn 200 199 201 25 (set (reg:SI 138 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 198)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:138 -1
+     (nil))
+(insn 201 200 202 25 (set (reg/f:DI 199)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:138 -1
+     (nil))
+(insn 202 201 203 25 (set (reg:SI 139 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 199)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:138 -1
+     (nil))
+(insn 203 202 204 25 (set (reg:DI 1 dx)
+        (reg/f:DI 137 [ D.12991 ])) CapabilityCommands.c:138 -1
+     (nil))
+(insn 204 203 205 25 (set (reg:SI 4 si)
+        (reg:SI 138 [ D.12984 ])) CapabilityCommands.c:138 -1
+     (nil))
+(insn 205 204 206 25 (set (reg:SI 5 di)
+        (reg:SI 139 [ D.12984 ])) CapabilityCommands.c:138 -1
+     (nil))
+(call_insn 206 205 207 25 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CommandCapGetCCList") [flags 0x41]  <function_decl 0x7f30f8a63360 CommandCapGetCCList>) [0 CommandCapGetCCList S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:138 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 207 206 208 25 (set (reg:QI 140 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:138 -1
+     (nil))
+(insn 208 207 209 25 (set (reg/f:DI 200)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:138 -1
+     (nil))
+(insn 209 208 210 25 (set (mem/j:QI (reg/f:DI 200) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 140 [ D.12985 ])) CapabilityCommands.c:138 -1
+     (nil))
+(jump_insn 210 209 211 25 (set (pc)
+        (label_ref 351)) CapabilityCommands.c:141 -1
+     (nil)
+ -> 351)
+(barrier 211 210 212)
+(code_label 212 211 213 26 7 "" [1 uses])
+(note 213 212 214 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 214 213 215 26 (set (reg/f:DI 141 [ D.12992 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:143 -1
+     (nil))
+(insn 215 214 216 26 (set (reg/f:DI 201)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:143 -1
+     (nil))
+(insn 216 215 217 26 (set (reg:SI 142 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 201)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:143 -1
+     (nil))
+(insn 217 216 218 26 (set (reg/f:DI 202)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:143 -1
+     (nil))
+(insn 218 217 219 26 (set (reg:SI 143 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 202)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:143 -1
+     (nil))
+(insn 219 218 220 26 (set (reg:DI 1 dx)
+        (reg/f:DI 141 [ D.12992 ])) CapabilityCommands.c:143 -1
+     (nil))
+(insn 220 219 221 26 (set (reg:SI 4 si)
+        (reg:SI 142 [ D.12984 ])) CapabilityCommands.c:143 -1
+     (nil))
+(insn 221 220 222 26 (set (reg:SI 5 di)
+        (reg:SI 143 [ D.12984 ])) CapabilityCommands.c:143 -1
+     (nil))
+(call_insn 222 221 223 26 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("PhysicalPresenceCapGetCCList") [flags 0x41]  <function_decl 0x7f30f8aee948 PhysicalPresenceCapGetCCList>) [0 PhysicalPresenceCapGetCCList S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:143 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 223 222 224 26 (set (reg:QI 144 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:143 -1
+     (nil))
+(insn 224 223 225 26 (set (reg/f:DI 203)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:143 -1
+     (nil))
+(insn 225 224 226 26 (set (mem/j:QI (reg/f:DI 203) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 144 [ D.12985 ])) CapabilityCommands.c:143 -1
+     (nil))
+(jump_insn 226 225 227 26 (set (pc)
+        (label_ref 351)) CapabilityCommands.c:146 -1
+     (nil)
+ -> 351)
+(barrier 227 226 228)
+(code_label 228 227 229 27 8 "" [1 uses])
+(note 229 228 230 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 230 229 231 27 (set (reg/f:DI 145 [ D.12992 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:148 -1
+     (nil))
+(insn 231 230 232 27 (set (reg/f:DI 204)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:148 -1
+     (nil))
+(insn 232 231 233 27 (set (reg:SI 146 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 204)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:148 -1
+     (nil))
+(insn 233 232 234 27 (set (reg/f:DI 205)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:148 -1
+     (nil))
+(insn 234 233 235 27 (set (reg:SI 147 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 205)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:148 -1
+     (nil))
+(insn 235 234 236 27 (set (reg:DI 1 dx)
+        (reg/f:DI 145 [ D.12992 ])) CapabilityCommands.c:148 -1
+     (nil))
+(insn 236 235 237 27 (set (reg:SI 4 si)
+        (reg:SI 146 [ D.12984 ])) CapabilityCommands.c:148 -1
+     (nil))
+(insn 237 236 238 27 (set (reg:SI 5 di)
+        (reg:SI 147 [ D.12984 ])) CapabilityCommands.c:148 -1
+     (nil))
+(call_insn 238 237 239 27 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CommandAuditCapGetCCList") [flags 0x41]  <function_decl 0x7f30f8aeee58 CommandAuditCapGetCCList>) [0 CommandAuditCapGetCCList S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:148 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 239 238 240 27 (set (reg:QI 148 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:148 -1
+     (nil))
+(insn 240 239 241 27 (set (reg/f:DI 206)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:148 -1
+     (nil))
+(insn 241 240 242 27 (set (mem/j:QI (reg/f:DI 206) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 148 [ D.12985 ])) CapabilityCommands.c:148 -1
+     (nil))
+(jump_insn 242 241 243 27 (set (pc)
+        (label_ref 351)) CapabilityCommands.c:151 -1
+     (nil)
+ -> 351)
+(barrier 243 242 244)
+(code_label 244 243 245 28 9 "" [1 uses])
+(note 245 244 246 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 246 245 247 28 (set (reg/f:DI 207)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:154 -1
+     (nil))
+(insn 247 246 248 28 (set (reg:SI 121 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 207)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:154 -1
+     (nil))
+(insn 248 247 249 28 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 121 [ D.12984 ])
+            (const_int 0 [0]))) CapabilityCommands.c:154 -1
+     (nil))
+(jump_insn 249 248 250 28 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 254)
+            (pc))) CapabilityCommands.c:154 -1
+     (nil)
+ -> 254)
+(note 250 249 251 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 251 250 252 29 (set (reg:SI 87 [ D.12983 ])
+        (const_int 708 [0x2c4])) CapabilityCommands.c:155 -1
+     (nil))
+(jump_insn 252 251 253 29 (set (pc)
+        (label_ref 354)) CapabilityCommands.c:155 -1
+     (nil)
+ -> 354)
+(barrier 253 252 254)
+(code_label 254 253 255 30 26 "" [1 uses])
+(note 255 254 256 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 256 255 257 30 (set (reg/f:DI 122 [ D.12988 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:156 -1
+     (nil))
+(insn 257 256 258 30 (set (reg/f:DI 208)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:156 -1
+     (nil))
+(insn 258 257 259 30 (set (reg:SI 123 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 208)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:156 -1
+     (nil))
+(insn 259 258 260 30 (set (reg:DI 4 si)
+        (reg/f:DI 122 [ D.12988 ])) CapabilityCommands.c:156 -1
+     (nil))
+(insn 260 259 261 30 (set (reg:SI 5 di)
+        (reg:SI 123 [ D.12984 ])) CapabilityCommands.c:156 -1
+     (nil))
+(call_insn 261 260 262 30 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("PCRCapGetAllocation") [flags 0x41]  <function_decl 0x7f30f8a57870 PCRCapGetAllocation>) [0 PCRCapGetAllocation S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:156 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 262 261 263 30 (set (reg:QI 124 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:156 -1
+     (nil))
+(insn 263 262 264 30 (set (reg/f:DI 209)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:156 -1
+     (nil))
+(insn 264 263 265 30 (set (mem/j:QI (reg/f:DI 209) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 124 [ D.12985 ])) CapabilityCommands.c:156 -1
+     (nil))
+(jump_insn 265 264 266 30 (set (pc)
+        (label_ref 351)) CapabilityCommands.c:158 -1
+     (nil)
+ -> 351)
+(barrier 266 265 267)
+(code_label 267 266 268 31 11 "" [1 uses])
+(note 268 267 269 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 269 268 270 31 (set (reg/f:DI 149 [ D.12993 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:160 -1
+     (nil))
+(insn 270 269 271 31 (set (reg/f:DI 210)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:160 -1
+     (nil))
+(insn 271 270 272 31 (set (reg:SI 150 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 210)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:160 -1
+     (nil))
+(insn 272 271 273 31 (set (reg/f:DI 211)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:160 -1
+     (nil))
+(insn 273 272 274 31 (set (reg:SI 151 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 211)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:160 -1
+     (nil))
+(insn 274 273 275 31 (set (reg:DI 1 dx)
+        (reg/f:DI 149 [ D.12993 ])) CapabilityCommands.c:160 -1
+     (nil))
+(insn 275 274 276 31 (set (reg:SI 4 si)
+        (reg:SI 150 [ D.12984 ])) CapabilityCommands.c:160 -1
+     (nil))
+(insn 276 275 277 31 (set (reg:SI 5 di)
+        (reg:SI 151 [ D.12984 ])) CapabilityCommands.c:160 -1
+     (nil))
+(call_insn 277 276 278 31 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("PCRCapGetProperties") [flags 0x41]  <function_decl 0x7f30f8a57948 PCRCapGetProperties>) [0 PCRCapGetProperties S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:160 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 278 277 279 31 (set (reg:QI 152 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:160 -1
+     (nil))
+(insn 279 278 280 31 (set (reg/f:DI 212)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:160 -1
+     (nil))
+(insn 280 279 281 31 (set (mem/j:QI (reg/f:DI 212) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 152 [ D.12985 ])) CapabilityCommands.c:160 -1
+     (nil))
+(jump_insn 281 280 282 31 (set (pc)
+        (label_ref 351)) CapabilityCommands.c:163 -1
+     (nil)
+ -> 351)
+(barrier 282 281 283)
+(code_label 283 282 284 32 10 "" [1 uses])
+(note 284 283 285 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 285 284 286 32 (set (reg/f:DI 153 [ D.12994 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:165 -1
+     (nil))
+(insn 286 285 287 32 (set (reg/f:DI 213)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:165 -1
+     (nil))
+(insn 287 286 288 32 (set (reg:SI 154 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 213)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:165 -1
+     (nil))
+(insn 288 287 289 32 (set (reg/f:DI 214)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:165 -1
+     (nil))
+(insn 289 288 290 32 (set (reg:SI 155 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 214)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:165 -1
+     (nil))
+(insn 290 289 291 32 (set (reg:DI 1 dx)
+        (reg/f:DI 153 [ D.12994 ])) CapabilityCommands.c:165 -1
+     (nil))
+(insn 291 290 292 32 (set (reg:SI 4 si)
+        (reg:SI 154 [ D.12984 ])) CapabilityCommands.c:165 -1
+     (nil))
+(insn 292 291 293 32 (set (reg:SI 5 di)
+        (reg:SI 155 [ D.12984 ])) CapabilityCommands.c:165 -1
+     (nil))
+(call_insn 293 292 294 32 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TPMCapGetProperties") [flags 0x41]  <function_decl 0x7f30f8af70d8 TPMCapGetProperties>) [0 TPMCapGetProperties S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:165 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 294 293 295 32 (set (reg:QI 156 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:165 -1
+     (nil))
+(insn 295 294 296 32 (set (reg/f:DI 215)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:165 -1
+     (nil))
+(insn 296 295 297 32 (set (mem/j:QI (reg/f:DI 215) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 156 [ D.12985 ])) CapabilityCommands.c:165 -1
+     (nil))
+(jump_insn 297 296 298 32 (set (pc)
+        (label_ref 351)) CapabilityCommands.c:168 -1
+     (nil)
+ -> 351)
+(barrier 298 297 299)
+(code_label 299 298 300 33 12 "" [1 uses])
+(note 300 299 301 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 301 300 302 33 (set (reg/f:DI 157 [ D.12995 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:171 -1
+     (nil))
+(insn 302 301 303 33 (set (reg/f:DI 216)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:171 -1
+     (nil))
+(insn 303 302 304 33 (set (reg:SI 158 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 216)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:171 -1
+     (nil))
+(insn 304 303 305 33 (set (reg/f:DI 217)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:171 -1
+     (nil))
+(insn 305 304 306 33 (set (reg:SI 159 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 217)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:171 -1
+     (nil))
+(insn 306 305 307 33 (set (reg:SI 160 [ D.12986 ])
+        (reg:SI 159 [ D.12984 ])) CapabilityCommands.c:171 -1
+     (nil))
+(insn 307 306 308 33 (set (reg:SI 161 [ D.12986 ])
+        (zero_extend:SI (subreg:HI (reg:SI 160 [ D.12986 ]) 0))) CapabilityCommands.c:171 -1
+     (nil))
+(insn 308 307 309 33 (set (reg:DI 1 dx)
+        (reg/f:DI 157 [ D.12995 ])) CapabilityCommands.c:171 -1
+     (nil))
+(insn 309 308 310 33 (set (reg:SI 4 si)
+        (reg:SI 158 [ D.12984 ])) CapabilityCommands.c:171 -1
+     (nil))
+(insn 310 309 311 33 (set (reg:SI 5 di)
+        (reg:SI 161 [ D.12986 ])) CapabilityCommands.c:171 -1
+     (nil))
+(call_insn 311 310 312 33 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptCapGetECCCurve") [flags 0x41]  <function_decl 0x7f30f8b35000 CryptCapGetECCCurve>) [0 CryptCapGetECCCurve S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:171 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 312 311 313 33 (set (reg:QI 162 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:171 -1
+     (nil))
+(insn 313 312 314 33 (set (reg/f:DI 218)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:171 -1
+     (nil))
+(insn 314 313 315 33 (set (mem/j:QI (reg/f:DI 218) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 162 [ D.12985 ])) CapabilityCommands.c:171 -1
+     (nil))
+(jump_insn 315 314 316 33 (set (pc)
+        (label_ref 351)) CapabilityCommands.c:174 -1
+     (nil)
+ -> 351)
+(barrier 316 315 317)
+(code_label 317 316 318 34 13 "" [1 uses])
+(note 318 317 319 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 319 318 320 34 (set (reg/f:DI 219)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:177 -1
+     (nil))
+(insn 320 319 321 34 (set (reg:SI 125 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 219)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:177 -1
+     (nil))
+(insn 321 320 322 34 (set (reg:SI 5 di)
+        (reg:SI 125 [ D.12984 ])) CapabilityCommands.c:177 -1
+     (nil))
+(call_insn 322 321 323 34 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleGetType") [flags 0x41]  <function_decl 0x7f30f8af3360 HandleGetType>) [0 HandleGetType S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:177 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 323 322 324 34 (set (reg:QI 126 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:177 -1
+     (nil))
+(insn 324 323 325 34 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 126 [ D.12985 ])
+            (const_int 64 [0x40]))) CapabilityCommands.c:177 -1
+     (nil))
+(jump_insn 325 324 326 34 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 330)
+            (pc))) CapabilityCommands.c:177 -1
+     (nil)
+ -> 330)
+(note 326 325 327 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 327 326 328 35 (set (reg:SI 87 [ D.12983 ])
+        (const_int 708 [0x2c4])) CapabilityCommands.c:178 -1
+     (nil))
+(jump_insn 328 327 329 35 (set (pc)
+        (label_ref 354)) CapabilityCommands.c:178 -1
+     (nil)
+ -> 354)
+(barrier 329 328 330)
+(code_label 330 329 331 36 27 "" [1 uses])
+(note 331 330 332 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 332 331 333 36 (set (reg/f:DI 127 [ D.12989 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 data+0 S8 A64])) CapabilityCommands.c:179 -1
+     (nil))
+(insn 333 332 334 36 (set (reg/f:DI 220)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:179 -1
+     (nil))
+(insn 334 333 335 36 (set (reg:SI 128 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 220)
+                (const_int 8 [0x8])) [0 in_8(D)->propertyCount+0 S4 A32])) CapabilityCommands.c:179 -1
+     (nil))
+(insn 335 334 336 36 (set (reg/f:DI 221)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) CapabilityCommands.c:179 -1
+     (nil))
+(insn 336 335 337 36 (set (reg:SI 129 [ D.12984 ])
+        (mem/j:SI (plus:DI (reg/f:DI 221)
+                (const_int 4 [0x4])) [0 in_8(D)->property+0 S4 A32])) CapabilityCommands.c:179 -1
+     (nil))
+(insn 337 336 338 36 (set (reg:DI 1 dx)
+        (reg/f:DI 127 [ D.12989 ])) CapabilityCommands.c:179 -1
+     (nil))
+(insn 338 337 339 36 (set (reg:SI 4 si)
+        (reg:SI 128 [ D.12984 ])) CapabilityCommands.c:179 -1
+     (nil))
+(insn 339 338 340 36 (set (reg:SI 5 di)
+        (reg:SI 129 [ D.12984 ])) CapabilityCommands.c:179 -1
+     (nil))
+(call_insn 340 339 341 36 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("PermanentHandleGetPolicy") [flags 0x41]  <function_decl 0x7f30f8af35e8 PermanentHandleGetPolicy>) [0 PermanentHandleGetPolicy S1 A8])
+            (const_int 0 [0]))) CapabilityCommands.c:179 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 341 340 342 36 (set (reg:QI 130 [ D.12985 ])
+        (reg:QI 0 ax)) CapabilityCommands.c:179 -1
+     (nil))
+(insn 342 341 343 36 (set (reg/f:DI 222)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) CapabilityCommands.c:179 -1
+     (nil))
+(insn 343 342 344 36 (set (mem/j:QI (reg/f:DI 222) [0 out_5(D)->moreData+0 S1 A32])
+        (reg:QI 130 [ D.12985 ])) CapabilityCommands.c:179 -1
+     (nil))
+(jump_insn 344 343 345 36 (set (pc)
+        (label_ref 351)) CapabilityCommands.c:182 -1
+     (nil)
+ -> 351)
+(barrier 345 344 346)
+(code_label 346 345 347 37 2 "" [1 uses])
+(note 347 346 348 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 348 347 349 37 (set (reg:SI 87 [ D.12983 ])
+        (const_int 452 [0x1c4])) CapabilityCommands.c:187 -1
+     (nil))
+(jump_insn 349 348 350 37 (set (pc)
+        (label_ref 354)) CapabilityCommands.c:187 -1
+     (nil)
+ -> 354)
+(barrier 350 349 351)
+(code_label 351 350 352 38 14 "" [10 uses])
+(note 352 351 353 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 353 352 354 38 (set (reg:SI 87 [ D.12983 ])
+        (const_int 0 [0])) CapabilityCommands.c:190 -1
+     (nil))
+(code_label 354 353 355 39 25 "" [4 uses])
+(note 355 354 356 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 356 355 360 39 (set (reg:SI 163 [ <retval> ])
+        (reg:SI 87 [ D.12983 ])) -1
+     (nil))
+(insn 360 356 361 39 (set (reg/i:SI 0 ax)
+        (reg:SI 163 [ <retval> ])) CapabilityCommands.c:191 -1
+     (nil))
+(insn 361 360 0 39 (use (reg/i:SI 0 ax)) CapabilityCommands.c:191 -1
+     (nil))
+
+;; Function TPM2_TestParms (TPM2_TestParms, funcdef_no=3, decl_uid=12893, cgraph_uid=3, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 10.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) CapabilityCommands.c:200 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 9 2 (set (reg:SI 87 [ D.12997 ])
+        (const_int 0 [0])) CapabilityCommands.c:205 -1
+     (nil))
+(insn 9 6 13 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.12997 ])) CapabilityCommands.c:205 -1
+     (nil))
+(insn 13 9 14 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) CapabilityCommands.c:206 -1
+     (nil))
+(insn 14 13 0 2 (use (reg/i:SI 0 ax)) CapabilityCommands.c:206 -1
+     (nil))

@@ -1,0 +1,4111 @@
+
+;; Function main (main, funcdef_no=2, decl_uid=5219, cgraph_uid=2, symbol_order=3)
+
+Partition 9: size 2056 align 16
+	in
+Partition 10: size 130 align 16
+	out
+Partition 6: size 8 align 8
+	keyPassword_26
+Partition 5: size 8 align 8
+	hmacFilename_23
+Partition 4: size 8 align 8
+	inString_20
+Partition 3: size 8 align 8
+	inFilename_17
+Partition 22: size 8 align 8
+	num
+Partition 21: size 8 align 8
+	submsg
+Partition 20: size 8 align 8
+	msg
+Partition 19: size 8 align 8
+	buffer
+Partition 18: size 8 align 8
+	length
+Partition 8: size 8 align 8
+	tssContext
+Partition 7: size 4 align 4
+	rc1_312
+Partition 1: size 4 align 4
+	i_11
+Partition 0: size 4 align 4
+	rc_1
+Partition 17: size 4 align 4
+	sessionAttributes2
+Partition 16: size 4 align 4
+	sessionHandle2
+Partition 15: size 4 align 4
+	sessionAttributes1
+Partition 14: size 4 align 4
+	sessionHandle1
+Partition 13: size 4 align 4
+	sessionAttributes0
+Partition 12: size 4 align 4
+	sessionHandle0
+Partition 11: size 4 align 4
+	keyHandle
+Partition 2: size 2 align 2
+	halg_13
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+;; Generating RTL for gimple basic block 38
+
+;; Generating RTL for gimple basic block 39
+
+;; Generating RTL for gimple basic block 40
+
+;; Generating RTL for gimple basic block 41
+
+;; Generating RTL for gimple basic block 42
+
+;; Generating RTL for gimple basic block 43
+
+;; Generating RTL for gimple basic block 44
+
+;; Generating RTL for gimple basic block 45
+
+;; Generating RTL for gimple basic block 46
+
+;; Generating RTL for gimple basic block 47
+
+;; Generating RTL for gimple basic block 48
+
+;; Generating RTL for gimple basic block 49
+
+;; Generating RTL for gimple basic block 50
+
+;; Generating RTL for gimple basic block 51
+
+;; Generating RTL for gimple basic block 52
+
+;; Generating RTL for gimple basic block 53
+
+;; Generating RTL for gimple basic block 54
+
+;; Generating RTL for gimple basic block 55
+
+;; Generating RTL for gimple basic block 56
+
+;; Generating RTL for gimple basic block 57
+
+;; Generating RTL for gimple basic block 58
+
+;; Generating RTL for gimple basic block 59
+
+;; Generating RTL for gimple basic block 60
+
+;; Generating RTL for gimple basic block 61
+
+;; Generating RTL for gimple basic block 62
+
+;; Generating RTL for gimple basic block 63
+
+;; Generating RTL for gimple basic block 64
+
+;; Generating RTL for gimple basic block 65
+
+;; Generating RTL for gimple basic block 66
+
+;; Generating RTL for gimple basic block 67
+
+;; Generating RTL for gimple basic block 68
+
+;; Generating RTL for gimple basic block 69
+
+;; Generating RTL for gimple basic block 70
+
+;; Generating RTL for gimple basic block 71
+
+;; Generating RTL for gimple basic block 72
+
+;; Generating RTL for gimple basic block 73
+
+;; Generating RTL for gimple basic block 74
+
+;; Generating RTL for gimple basic block 75
+
+;; Generating RTL for gimple basic block 76
+
+;; Generating RTL for gimple basic block 77
+
+;; Generating RTL for gimple basic block 78
+
+;; Generating RTL for gimple basic block 79
+
+;; Generating RTL for gimple basic block 80
+
+;; Generating RTL for gimple basic block 81
+
+;; Generating RTL for gimple basic block 82
+
+;; Generating RTL for gimple basic block 83
+
+;; Generating RTL for gimple basic block 84
+
+;; Generating RTL for gimple basic block 85
+
+;; Generating RTL for gimple basic block 86
+
+;; Generating RTL for gimple basic block 87
+
+;; Generating RTL for gimple basic block 88
+
+;; Generating RTL for gimple basic block 89
+
+;; Generating RTL for gimple basic block 90
+
+;; Generating RTL for gimple basic block 91
+
+;; Generating RTL for gimple basic block 92
+
+;; Generating RTL for gimple basic block 93
+
+;; Generating RTL for gimple basic block 94
+
+;; Generating RTL for gimple basic block 95
+
+;; Generating RTL for gimple basic block 96
+
+;; Generating RTL for gimple basic block 97
+
+;; Generating RTL for gimple basic block 98
+
+;; Generating RTL for gimple basic block 99
+
+;; Generating RTL for gimple basic block 100
+
+;; Generating RTL for gimple basic block 101
+
+;; Generating RTL for gimple basic block 102
+
+;; Generating RTL for gimple basic block 103
+
+;; Generating RTL for gimple basic block 104
+
+;; Generating RTL for gimple basic block 105
+
+;; Generating RTL for gimple basic block 106
+
+;; Generating RTL for gimple basic block 107
+
+;; Generating RTL for gimple basic block 108
+
+;; Generating RTL for gimple basic block 109
+
+;; Generating RTL for gimple basic block 110
+
+;; Generating RTL for gimple basic block 111
+
+;; Generating RTL for gimple basic block 112
+
+;; Generating RTL for gimple basic block 113
+
+;; Generating RTL for gimple basic block 114
+
+;; Generating RTL for gimple basic block 115
+
+;; Generating RTL for gimple basic block 116
+
+;; Generating RTL for gimple basic block 117
+
+;; Generating RTL for gimple basic block 118
+
+;; Generating RTL for gimple basic block 119
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 68 from 8 to 76.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Redirecting jump 106 from 13 to 76.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+Redirecting jump 151 from 23 to 76.
+Redirecting jump 169 from 23 to 76.
+Redirecting jump 187 from 23 to 76.
+Merging block 23 into block 22...
+Merged blocks 22 and 23.
+Merged 22 and 23 without moving.
+Redirecting jump 196 from 25 to 76.
+Merging block 25 into block 24...
+Merged blocks 24 and 25.
+Merged 24 and 25 without moving.
+Redirecting jump 234 from 30 to 76.
+Merging block 30 into block 29...
+Merged blocks 29 and 30.
+Merged 29 and 30 without moving.
+Redirecting jump 272 from 35 to 76.
+Merging block 35 into block 34...
+Merged blocks 34 and 35.
+Merged 34 and 35 without moving.
+Redirecting jump 310 from 40 to 76.
+Merging block 40 into block 39...
+Merged blocks 39 and 40.
+Merged 39 and 40 without moving.
+Edge 46->48 redirected to 76
+Merging block 48 into block 47...
+Merged blocks 47 and 48.
+Merged 47 and 48 without moving.
+Redirecting jump 388 from 50 to 76.
+Merging block 50 into block 49...
+Merged blocks 49 and 50.
+Merged 49 and 50 without moving.
+Edge 56->58 redirected to 76
+Merging block 58 into block 57...
+Merged blocks 57 and 58.
+Merged 57 and 58 without moving.
+Redirecting jump 466 from 60 to 76.
+Merging block 60 into block 59...
+Merged blocks 59 and 60.
+Merged 59 and 60 without moving.
+Edge 66->68 redirected to 76
+Merging block 68 into block 67...
+Merged blocks 67 and 68.
+Merged 67 and 68 without moving.
+Redirecting jump 544 from 70 to 76.
+Merging block 70 into block 69...
+Merged blocks 69 and 70.
+Merged 69 and 70 without moving.
+Edge 115->117 redirected to 119
+Merging block 117 into block 116...
+Merged blocks 116 and 117.
+Merged 116 and 117 without moving.
+Merging block 120 into block 119...
+Merged blocks 119 and 120.
+Merged 119 and 120 without moving.
+Removing jump 884.
+Merging block 121 into block 119...
+Merged blocks 119 and 121.
+Merged 119 and 121 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) hmac.c:59 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) hmac.c:59 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.5553+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:59 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) hmac.c:60 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2288 [0xfffffffffffff710])) [0 tssContext+0 S8 A64])
+        (const_int 0 [0])) hmac.c:62 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2328 [0xfffffffffffff6e8])) [0 keyHandle+0 S4 A64])
+        (const_int 0 [0])) hmac.c:65 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2330 [0xfffffffffffff6e6])) [0 halg+0 S2 A16])
+        (const_int 11 [0xb])) hmac.c:66 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2240 [0xfffffffffffff740])) [0 inFilename+0 S8 A64])
+        (const_int 0 [0])) hmac.c:67 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2232 [0xfffffffffffff748])) [0 inString+0 S8 A64])
+        (const_int 0 [0])) hmac.c:68 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 hmacFilename+0 S8 A64])
+        (const_int 0 [0])) hmac.c:69 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2216 [0xfffffffffffff758])) [0 keyPassword+0 S8 A64])
+        (const_int 0 [0])) hmac.c:70 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2324 [0xfffffffffffff6ec])) [0 sessionHandle0+0 S4 A32])
+        (const_int 1073741833 [0x40000009])) hmac.c:71 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2320 [0xfffffffffffff6f0])) [0 sessionAttributes0+0 S4 A64])
+        (const_int 0 [0])) hmac.c:72 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2316 [0xfffffffffffff6f4])) [0 sessionHandle1+0 S4 A32])
+        (const_int 1073741831 [0x40000007])) hmac.c:73 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2312 [0xfffffffffffff6f8])) [0 sessionAttributes1+0 S4 A64])
+        (const_int 0 [0])) hmac.c:74 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2308 [0xfffffffffffff6fc])) [0 sessionHandle2+0 S4 A32])
+        (const_int 1073741831 [0x40000007])) hmac.c:75 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2304 [0xfffffffffffff700])) [0 sessionAttributes2+0 S4 A64])
+        (const_int 0 [0])) hmac.c:76 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 length+0 S8 A64])
+        (const_int 0 [0])) hmac.c:78 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2272 [0xfffffffffffff720])) [0 buffer+0 S8 A64])
+        (const_int 0 [0])) hmac.c:79 -1
+     (nil))
+(insn 24 23 25 2 (set (reg/f:DI 87 [ D.5543 ])
+        (mem/f/c:DI (symbol_ref:DI ("stdout") [flags 0x40]  <var_decl 0x7f16171d25a0 stdout>) [0 stdout+0 S8 A64])) hmac.c:81 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 2 cx)
+        (const_int 0 [0])) hmac.c:81 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) hmac.c:81 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) hmac.c:81 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.5543 ])) hmac.c:81 -1
+     (nil))
+(call_insn 29 28 30 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("setvbuf") [flags 0x41]  <function_decl 0x7f16172121b0 setvbuf>) [0 setvbuf S1 A8])
+            (const_int 0 [0]))) hmac.c:81 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 30 29 31 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f1616ce9750 *.LC0>)) hmac.c:82 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) hmac.c:82 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) hmac.c:82 -1
+     (nil))
+(call_insn 33 32 34 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7f1617086000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) hmac.c:82 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 34 33 35 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) hmac.c:84 -1
+     (nil))
+(jump_insn 35 34 36 2 (set (pc)
+        (label_ref 611)) hmac.c:84 -1
+     (nil)
+ -> 611)
+(barrier 36 35 617)
+(code_label 617 36 37 4 47 "" [1 uses])
+(note 37 617 38 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 4 (set (reg:SI 237)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:85 -1
+     (nil))
+(insn 39 38 40 4 (set (reg:DI 88 [ D.5544 ])
+        (sign_extend:DI (reg:SI 237))) hmac.c:85 -1
+     (nil))
+(insn 40 39 41 4 (parallel [
+            (set (reg:DI 89 [ D.5544 ])
+                (ashift:DI (reg:DI 88 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:85 -1
+     (nil))
+(insn 41 40 42 4 (set (reg/f:DI 238)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:85 -1
+     (nil))
+(insn 42 41 43 4 (parallel [
+            (set (reg/f:DI 90 [ D.5545 ])
+                (plus:DI (reg:DI 89 [ D.5544 ])
+                    (reg/f:DI 238)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:85 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 89 [ D.5544 ]))
+        (nil)))
+(insn 43 42 44 4 (set (reg/f:DI 91 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 90 [ D.5545 ]) [0 *_87+0 S8 A64])) hmac.c:85 -1
+     (nil))
+(insn 44 43 45 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f1616ce97e0 *.LC1>)) hmac.c:85 -1
+     (nil))
+(insn 45 44 46 4 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ D.5546 ])) hmac.c:85 -1
+     (nil))
+(call_insn/i 46 45 47 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:85 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 47 46 48 4 (set (reg:SI 92 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:85 -1
+     (nil))
+(insn 48 47 49 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:85 -1
+     (nil))
+(jump_insn 49 48 50 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 79)
+            (pc))) hmac.c:85 -1
+     (nil)
+ -> 79)
+(note 50 49 51 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 51 50 52 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:86 -1
+     (nil))
+(insn 52 51 53 5 (set (reg:SI 239)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:87 -1
+     (nil))
+(insn 53 52 54 5 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 239)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:87 -1
+     (nil))
+(jump_insn 54 53 55 5 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 70)
+            (pc))) hmac.c:87 -1
+     (nil)
+ -> 70)
+(note 55 54 56 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 57 6 (set (reg:SI 240)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:88 -1
+     (nil))
+(insn 57 56 58 6 (set (reg:DI 93 [ D.5544 ])
+        (sign_extend:DI (reg:SI 240))) hmac.c:88 -1
+     (nil))
+(insn 58 57 59 6 (parallel [
+            (set (reg:DI 94 [ D.5544 ])
+                (ashift:DI (reg:DI 93 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:88 -1
+     (nil))
+(insn 59 58 60 6 (set (reg/f:DI 241)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:88 -1
+     (nil))
+(insn 60 59 61 6 (parallel [
+            (set (reg/f:DI 95 [ D.5545 ])
+                (plus:DI (reg:DI 94 [ D.5544 ])
+                    (reg/f:DI 241)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:88 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 94 [ D.5544 ]))
+        (nil)))
+(insn 61 60 62 6 (set (reg/f:DI 96 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 95 [ D.5545 ]) [0 *_93+0 S8 A64])) hmac.c:88 -1
+     (nil))
+(insn 62 61 63 6 (parallel [
+            (set (reg:DI 242)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2328 [0xfffffffffffff6e8])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:88 -1
+     (nil))
+(insn 63 62 64 6 (set (reg:DI 1 dx)
+        (reg:DI 242)) hmac.c:88 -1
+     (nil))
+(insn 64 63 65 6 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f1616ce9870 *.LC2>)) hmac.c:88 -1
+     (nil))
+(insn 65 64 66 6 (set (reg:DI 5 di)
+        (reg/f:DI 96 [ D.5546 ])) hmac.c:88 -1
+     (nil))
+(insn 66 65 67 6 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:88 -1
+     (nil))
+(call_insn 67 66 68 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f1617123ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) hmac.c:88 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 68 67 69 6 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 69 68 70)
+(code_label 70 69 71 7 4 "" [1 uses])
+(note 71 70 72 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f1616ce9900 *.LC3>)) hmac.c:91 -1
+     (nil))
+(call_insn 73 72 74 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:91 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 74 73 77 7 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:92 -1
+     (nil)
+    (nil))
+(jump_insn 77 74 78 7 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 78 77 79)
+(code_label 79 78 80 9 3 "" [1 uses])
+(note 80 79 81 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 81 80 82 9 (set (reg:SI 243)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:95 -1
+     (nil))
+(insn 82 81 83 9 (set (reg:DI 97 [ D.5544 ])
+        (sign_extend:DI (reg:SI 243))) hmac.c:95 -1
+     (nil))
+(insn 83 82 84 9 (parallel [
+            (set (reg:DI 98 [ D.5544 ])
+                (ashift:DI (reg:DI 97 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:95 -1
+     (nil))
+(insn 84 83 85 9 (set (reg/f:DI 244)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:95 -1
+     (nil))
+(insn 85 84 86 9 (parallel [
+            (set (reg/f:DI 99 [ D.5545 ])
+                (plus:DI (reg:DI 98 [ D.5544 ])
+                    (reg/f:DI 244)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:95 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 98 [ D.5544 ]))
+        (nil)))
+(insn 86 85 87 9 (set (reg/f:DI 100 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 99 [ D.5545 ]) [0 *_100+0 S8 A64])) hmac.c:95 -1
+     (nil))
+(insn 87 86 88 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f1616ce9990 *.LC4>)) hmac.c:95 -1
+     (nil))
+(insn 88 87 89 9 (set (reg:DI 5 di)
+        (reg/f:DI 100 [ D.5546 ])) hmac.c:95 -1
+     (nil))
+(call_insn/i 89 88 90 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:95 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 90 89 91 9 (set (reg:SI 101 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:95 -1
+     (nil))
+(insn 91 90 92 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:95 -1
+     (nil))
+(jump_insn 92 91 93 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 117)
+            (pc))) hmac.c:95 -1
+     (nil)
+ -> 117)
+(note 93 92 94 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 94 93 95 10 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:96 -1
+     (nil))
+(insn 95 94 96 10 (set (reg:SI 245)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:97 -1
+     (nil))
+(insn 96 95 97 10 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 245)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:97 -1
+     (nil))
+(jump_insn 97 96 98 10 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 108)
+            (pc))) hmac.c:97 -1
+     (nil)
+ -> 108)
+(note 98 97 99 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 99 98 100 11 (set (reg:SI 246)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:98 -1
+     (nil))
+(insn 100 99 101 11 (set (reg:DI 102 [ D.5544 ])
+        (sign_extend:DI (reg:SI 246))) hmac.c:98 -1
+     (nil))
+(insn 101 100 102 11 (parallel [
+            (set (reg:DI 103 [ D.5544 ])
+                (ashift:DI (reg:DI 102 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:98 -1
+     (nil))
+(insn 102 101 103 11 (set (reg/f:DI 247)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:98 -1
+     (nil))
+(insn 103 102 104 11 (parallel [
+            (set (reg/f:DI 104 [ D.5545 ])
+                (plus:DI (reg:DI 103 [ D.5544 ])
+                    (reg/f:DI 247)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:98 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 103 [ D.5544 ]))
+        (nil)))
+(insn 104 103 105 11 (set (reg/f:DI 248)
+        (mem/f:DI (reg/f:DI 104 [ D.5545 ]) [0 *_106+0 S8 A64])) hmac.c:98 -1
+     (nil))
+(insn 105 104 106 11 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2216 [0xfffffffffffff758])) [0 keyPassword+0 S8 A64])
+        (reg/f:DI 248)) hmac.c:98 -1
+     (nil))
+(jump_insn 106 105 107 11 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 107 106 108)
+(code_label 108 107 109 12 8 "" [1 uses])
+(note 109 108 110 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 110 109 111 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f1616ce9a20 *.LC5>)) hmac.c:101 -1
+     (nil))
+(call_insn 111 110 112 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:101 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 112 111 115 12 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:102 -1
+     (nil)
+    (nil))
+(jump_insn 115 112 116 12 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 116 115 117)
+(code_label 117 116 118 14 7 "" [1 uses])
+(note 118 117 119 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 119 118 120 14 (set (reg:SI 249)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:105 -1
+     (nil))
+(insn 120 119 121 14 (set (reg:DI 105 [ D.5544 ])
+        (sign_extend:DI (reg:SI 249))) hmac.c:105 -1
+     (nil))
+(insn 121 120 122 14 (parallel [
+            (set (reg:DI 106 [ D.5544 ])
+                (ashift:DI (reg:DI 105 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:105 -1
+     (nil))
+(insn 122 121 123 14 (set (reg/f:DI 250)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:105 -1
+     (nil))
+(insn 123 122 124 14 (parallel [
+            (set (reg/f:DI 107 [ D.5545 ])
+                (plus:DI (reg:DI 106 [ D.5544 ])
+                    (reg/f:DI 250)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:105 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 106 [ D.5544 ]))
+        (nil)))
+(insn 124 123 125 14 (set (reg/f:DI 108 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 107 [ D.5545 ]) [0 *_112+0 S8 A64])) hmac.c:105 -1
+     (nil))
+(insn 125 124 126 14 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f1616ce9ab0 *.LC6>)) hmac.c:105 -1
+     (nil))
+(insn 126 125 127 14 (set (reg:DI 5 di)
+        (reg/f:DI 108 [ D.5546 ])) hmac.c:105 -1
+     (nil))
+(call_insn/i 127 126 128 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:105 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 128 127 129 14 (set (reg:SI 109 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:105 -1
+     (nil))
+(insn 129 128 130 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 109 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:105 -1
+     (nil))
+(jump_insn 130 129 131 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 207)
+            (pc))) hmac.c:105 -1
+     (nil)
+ -> 207)
+(note 131 130 132 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 132 131 133 15 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:106 -1
+     (nil))
+(insn 133 132 134 15 (set (reg:SI 251)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:107 -1
+     (nil))
+(insn 134 133 135 15 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 251)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:107 -1
+     (nil))
+(jump_insn 135 134 136 15 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 198)
+            (pc))) hmac.c:107 -1
+     (nil)
+ -> 198)
+(note 136 135 137 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 137 136 138 16 (set (reg:SI 252)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:108 -1
+     (nil))
+(insn 138 137 139 16 (set (reg:DI 110 [ D.5544 ])
+        (sign_extend:DI (reg:SI 252))) hmac.c:108 -1
+     (nil))
+(insn 139 138 140 16 (parallel [
+            (set (reg:DI 111 [ D.5544 ])
+                (ashift:DI (reg:DI 110 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:108 -1
+     (nil))
+(insn 140 139 141 16 (set (reg/f:DI 253)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:108 -1
+     (nil))
+(insn 141 140 142 16 (parallel [
+            (set (reg/f:DI 112 [ D.5545 ])
+                (plus:DI (reg:DI 111 [ D.5544 ])
+                    (reg/f:DI 253)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:108 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 111 [ D.5544 ]))
+        (nil)))
+(insn 142 141 143 16 (set (reg/f:DI 113 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 112 [ D.5545 ]) [0 *_118+0 S8 A64])) hmac.c:108 -1
+     (nil))
+(insn 143 142 144 16 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f1616ce9b40 *.LC7>)) hmac.c:108 -1
+     (nil))
+(insn 144 143 145 16 (set (reg:DI 5 di)
+        (reg/f:DI 113 [ D.5546 ])) hmac.c:108 -1
+     (nil))
+(call_insn/i 145 144 146 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:108 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 146 145 147 16 (set (reg:SI 114 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:108 -1
+     (nil))
+(insn 147 146 148 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 114 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:108 -1
+     (nil))
+(jump_insn 148 147 149 16 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 153)
+            (pc))) hmac.c:108 -1
+     (nil)
+ -> 153)
+(note 149 148 150 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 150 149 151 17 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2330 [0xfffffffffffff6e6])) [0 halg+0 S2 A16])
+        (const_int 4 [0x4])) hmac.c:109 -1
+     (nil))
+(jump_insn 151 150 152 17 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 152 151 153)
+(code_label 153 152 154 18 12 "" [1 uses])
+(note 154 153 155 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 155 154 156 18 (set (reg:SI 254)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:111 -1
+     (nil))
+(insn 156 155 157 18 (set (reg:DI 115 [ D.5544 ])
+        (sign_extend:DI (reg:SI 254))) hmac.c:111 -1
+     (nil))
+(insn 157 156 158 18 (parallel [
+            (set (reg:DI 116 [ D.5544 ])
+                (ashift:DI (reg:DI 115 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:111 -1
+     (nil))
+(insn 158 157 159 18 (set (reg/f:DI 255)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:111 -1
+     (nil))
+(insn 159 158 160 18 (parallel [
+            (set (reg/f:DI 117 [ D.5545 ])
+                (plus:DI (reg:DI 116 [ D.5544 ])
+                    (reg/f:DI 255)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:111 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 116 [ D.5544 ]))
+        (nil)))
+(insn 160 159 161 18 (set (reg/f:DI 118 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 117 [ D.5545 ]) [0 *_124+0 S8 A64])) hmac.c:111 -1
+     (nil))
+(insn 161 160 162 18 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f1616ce9bd0 *.LC8>)) hmac.c:111 -1
+     (nil))
+(insn 162 161 163 18 (set (reg:DI 5 di)
+        (reg/f:DI 118 [ D.5546 ])) hmac.c:111 -1
+     (nil))
+(call_insn/i 163 162 164 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:111 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 164 163 165 18 (set (reg:SI 119 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:111 -1
+     (nil))
+(insn 165 164 166 18 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 119 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:111 -1
+     (nil))
+(jump_insn 166 165 167 18 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 171)
+            (pc))) hmac.c:111 -1
+     (nil)
+ -> 171)
+(note 167 166 168 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 168 167 169 19 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2330 [0xfffffffffffff6e6])) [0 halg+0 S2 A16])
+        (const_int 11 [0xb])) hmac.c:112 -1
+     (nil))
+(jump_insn 169 168 170 19 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 170 169 171)
+(code_label 171 170 172 20 14 "" [1 uses])
+(note 172 171 173 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 173 172 174 20 (set (reg:SI 256)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:114 -1
+     (nil))
+(insn 174 173 175 20 (set (reg:DI 120 [ D.5544 ])
+        (sign_extend:DI (reg:SI 256))) hmac.c:114 -1
+     (nil))
+(insn 175 174 176 20 (parallel [
+            (set (reg:DI 121 [ D.5544 ])
+                (ashift:DI (reg:DI 120 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:114 -1
+     (nil))
+(insn 176 175 177 20 (set (reg/f:DI 257)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:114 -1
+     (nil))
+(insn 177 176 178 20 (parallel [
+            (set (reg/f:DI 122 [ D.5545 ])
+                (plus:DI (reg:DI 121 [ D.5544 ])
+                    (reg/f:DI 257)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:114 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 121 [ D.5544 ]))
+        (nil)))
+(insn 178 177 179 20 (set (reg/f:DI 123 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 122 [ D.5545 ]) [0 *_130+0 S8 A64])) hmac.c:114 -1
+     (nil))
+(insn 179 178 180 20 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f1616ce9c60 *.LC9>)) hmac.c:114 -1
+     (nil))
+(insn 180 179 181 20 (set (reg:DI 5 di)
+        (reg/f:DI 123 [ D.5546 ])) hmac.c:114 -1
+     (nil))
+(call_insn/i 181 180 182 20 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:114 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 182 181 183 20 (set (reg:SI 124 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:114 -1
+     (nil))
+(insn 183 182 184 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 124 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:114 -1
+     (nil))
+(jump_insn 184 183 185 20 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 189)
+            (pc))) hmac.c:114 -1
+     (nil)
+ -> 189)
+(note 185 184 186 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 186 185 187 21 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2330 [0xfffffffffffff6e6])) [0 halg+0 S2 A16])
+        (const_int 12 [0xc])) hmac.c:115 -1
+     (nil))
+(jump_insn 187 186 188 21 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 188 187 189)
+(code_label 189 188 190 22 15 "" [1 uses])
+(note 190 189 191 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 191 190 192 22 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f1616ce9cf0 *.LC10>)) hmac.c:118 -1
+     (nil))
+(call_insn 192 191 193 22 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:118 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 193 192 196 22 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:119 -1
+     (nil)
+    (nil))
+(jump_insn 196 193 197 22 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 197 196 198)
+(code_label 198 197 199 24 11 "" [1 uses])
+(note 199 198 200 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 200 199 201 24 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f1616ce9d80 *.LC11>)) hmac.c:123 -1
+     (nil))
+(call_insn 201 200 202 24 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:123 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 202 201 205 24 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:124 -1
+     (nil)
+    (nil))
+(jump_insn 205 202 206 24 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 206 205 207)
+(code_label 207 206 208 26 10 "" [1 uses])
+(note 208 207 209 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 209 208 210 26 (set (reg:SI 258)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:127 -1
+     (nil))
+(insn 210 209 211 26 (set (reg:DI 125 [ D.5544 ])
+        (sign_extend:DI (reg:SI 258))) hmac.c:127 -1
+     (nil))
+(insn 211 210 212 26 (parallel [
+            (set (reg:DI 126 [ D.5544 ])
+                (ashift:DI (reg:DI 125 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:127 -1
+     (nil))
+(insn 212 211 213 26 (set (reg/f:DI 259)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:127 -1
+     (nil))
+(insn 213 212 214 26 (parallel [
+            (set (reg/f:DI 127 [ D.5545 ])
+                (plus:DI (reg:DI 126 [ D.5544 ])
+                    (reg/f:DI 259)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:127 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 126 [ D.5544 ]))
+        (nil)))
+(insn 214 213 215 26 (set (reg/f:DI 128 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 127 [ D.5545 ]) [0 *_140+0 S8 A64])) hmac.c:127 -1
+     (nil))
+(insn 215 214 216 26 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7f1616ce9e10 *.LC12>)) hmac.c:127 -1
+     (nil))
+(insn 216 215 217 26 (set (reg:DI 5 di)
+        (reg/f:DI 128 [ D.5546 ])) hmac.c:127 -1
+     (nil))
+(call_insn/i 217 216 218 26 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:127 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 218 217 219 26 (set (reg:SI 129 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:127 -1
+     (nil))
+(insn 219 218 220 26 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 129 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:127 -1
+     (nil))
+(jump_insn 220 219 221 26 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 245)
+            (pc))) hmac.c:127 -1
+     (nil)
+ -> 245)
+(note 221 220 222 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 222 221 223 27 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:128 -1
+     (nil))
+(insn 223 222 224 27 (set (reg:SI 260)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:129 -1
+     (nil))
+(insn 224 223 225 27 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 260)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:129 -1
+     (nil))
+(jump_insn 225 224 226 27 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 236)
+            (pc))) hmac.c:129 -1
+     (nil)
+ -> 236)
+(note 226 225 227 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 227 226 228 28 (set (reg:SI 261)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:130 -1
+     (nil))
+(insn 228 227 229 28 (set (reg:DI 130 [ D.5544 ])
+        (sign_extend:DI (reg:SI 261))) hmac.c:130 -1
+     (nil))
+(insn 229 228 230 28 (parallel [
+            (set (reg:DI 131 [ D.5544 ])
+                (ashift:DI (reg:DI 130 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:130 -1
+     (nil))
+(insn 230 229 231 28 (set (reg/f:DI 262)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:130 -1
+     (nil))
+(insn 231 230 232 28 (parallel [
+            (set (reg/f:DI 132 [ D.5545 ])
+                (plus:DI (reg:DI 131 [ D.5544 ])
+                    (reg/f:DI 262)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:130 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 131 [ D.5544 ]))
+        (nil)))
+(insn 232 231 233 28 (set (reg/f:DI 263)
+        (mem/f:DI (reg/f:DI 132 [ D.5545 ]) [0 *_146+0 S8 A64])) hmac.c:130 -1
+     (nil))
+(insn 233 232 234 28 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2232 [0xfffffffffffff748])) [0 inString+0 S8 A64])
+        (reg/f:DI 263)) hmac.c:130 -1
+     (nil))
+(jump_insn 234 233 235 28 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 235 234 236)
+(code_label 236 235 237 29 18 "" [1 uses])
+(note 237 236 238 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 238 237 239 29 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7f1616ce9ea0 *.LC13>)) hmac.c:133 -1
+     (nil))
+(call_insn 239 238 240 29 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:133 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 240 239 243 29 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:134 -1
+     (nil)
+    (nil))
+(jump_insn 243 240 244 29 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 244 243 245)
+(code_label 245 244 246 31 17 "" [1 uses])
+(note 246 245 247 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 247 246 248 31 (set (reg:SI 264)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:137 -1
+     (nil))
+(insn 248 247 249 31 (set (reg:DI 133 [ D.5544 ])
+        (sign_extend:DI (reg:SI 264))) hmac.c:137 -1
+     (nil))
+(insn 249 248 250 31 (parallel [
+            (set (reg:DI 134 [ D.5544 ])
+                (ashift:DI (reg:DI 133 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:137 -1
+     (nil))
+(insn 250 249 251 31 (set (reg/f:DI 265)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:137 -1
+     (nil))
+(insn 251 250 252 31 (parallel [
+            (set (reg/f:DI 135 [ D.5545 ])
+                (plus:DI (reg:DI 134 [ D.5544 ])
+                    (reg/f:DI 265)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:137 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 134 [ D.5544 ]))
+        (nil)))
+(insn 252 251 253 31 (set (reg/f:DI 136 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 135 [ D.5545 ]) [0 *_152+0 S8 A64])) hmac.c:137 -1
+     (nil))
+(insn 253 252 254 31 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f1616ce9f30 *.LC14>)) hmac.c:137 -1
+     (nil))
+(insn 254 253 255 31 (set (reg:DI 5 di)
+        (reg/f:DI 136 [ D.5546 ])) hmac.c:137 -1
+     (nil))
+(call_insn/i 255 254 256 31 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:137 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 256 255 257 31 (set (reg:SI 137 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:137 -1
+     (nil))
+(insn 257 256 258 31 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 137 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:137 -1
+     (nil))
+(jump_insn 258 257 259 31 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 283)
+            (pc))) hmac.c:137 -1
+     (nil)
+ -> 283)
+(note 259 258 260 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 260 259 261 32 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:138 -1
+     (nil))
+(insn 261 260 262 32 (set (reg:SI 266)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:139 -1
+     (nil))
+(insn 262 261 263 32 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 266)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:139 -1
+     (nil))
+(jump_insn 263 262 264 32 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 274)
+            (pc))) hmac.c:139 -1
+     (nil)
+ -> 274)
+(note 264 263 265 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 265 264 266 33 (set (reg:SI 267)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:140 -1
+     (nil))
+(insn 266 265 267 33 (set (reg:DI 138 [ D.5544 ])
+        (sign_extend:DI (reg:SI 267))) hmac.c:140 -1
+     (nil))
+(insn 267 266 268 33 (parallel [
+            (set (reg:DI 139 [ D.5544 ])
+                (ashift:DI (reg:DI 138 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:140 -1
+     (nil))
+(insn 268 267 269 33 (set (reg/f:DI 268)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:140 -1
+     (nil))
+(insn 269 268 270 33 (parallel [
+            (set (reg/f:DI 140 [ D.5545 ])
+                (plus:DI (reg:DI 139 [ D.5544 ])
+                    (reg/f:DI 268)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:140 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 139 [ D.5544 ]))
+        (nil)))
+(insn 270 269 271 33 (set (reg/f:DI 269)
+        (mem/f:DI (reg/f:DI 140 [ D.5545 ]) [0 *_158+0 S8 A64])) hmac.c:140 -1
+     (nil))
+(insn 271 270 272 33 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2240 [0xfffffffffffff740])) [0 inFilename+0 S8 A64])
+        (reg/f:DI 269)) hmac.c:140 -1
+     (nil))
+(jump_insn 272 271 273 33 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 273 272 274)
+(code_label 274 273 275 34 21 "" [1 uses])
+(note 275 274 276 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 276 275 277 34 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7f1616ce9000 *.LC15>)) hmac.c:143 -1
+     (nil))
+(call_insn 277 276 278 34 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:143 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 278 277 281 34 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:144 -1
+     (nil)
+    (nil))
+(jump_insn 281 278 282 34 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 282 281 283)
+(code_label 283 282 284 36 20 "" [1 uses])
+(note 284 283 285 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 285 284 286 36 (set (reg:SI 270)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:147 -1
+     (nil))
+(insn 286 285 287 36 (set (reg:DI 141 [ D.5544 ])
+        (sign_extend:DI (reg:SI 270))) hmac.c:147 -1
+     (nil))
+(insn 287 286 288 36 (parallel [
+            (set (reg:DI 142 [ D.5544 ])
+                (ashift:DI (reg:DI 141 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:147 -1
+     (nil))
+(insn 288 287 289 36 (set (reg/f:DI 271)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:147 -1
+     (nil))
+(insn 289 288 290 36 (parallel [
+            (set (reg/f:DI 143 [ D.5545 ])
+                (plus:DI (reg:DI 142 [ D.5544 ])
+                    (reg/f:DI 271)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:147 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 142 [ D.5544 ]))
+        (nil)))
+(insn 290 289 291 36 (set (reg/f:DI 144 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 143 [ D.5545 ]) [0 *_164+0 S8 A64])) hmac.c:147 -1
+     (nil))
+(insn 291 290 292 36 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7f1616cd1f30 *.LC16>)) hmac.c:147 -1
+     (nil))
+(insn 292 291 293 36 (set (reg:DI 5 di)
+        (reg/f:DI 144 [ D.5546 ])) hmac.c:147 -1
+     (nil))
+(call_insn/i 293 292 294 36 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:147 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 294 293 295 36 (set (reg:SI 145 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:147 -1
+     (nil))
+(insn 295 294 296 36 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 145 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:147 -1
+     (nil))
+(jump_insn 296 295 297 36 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 321)
+            (pc))) hmac.c:147 -1
+     (nil)
+ -> 321)
+(note 297 296 298 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 298 297 299 37 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:148 -1
+     (nil))
+(insn 299 298 300 37 (set (reg:SI 272)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:149 -1
+     (nil))
+(insn 300 299 301 37 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 272)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:149 -1
+     (nil))
+(jump_insn 301 300 302 37 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 312)
+            (pc))) hmac.c:149 -1
+     (nil)
+ -> 312)
+(note 302 301 303 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 303 302 304 38 (set (reg:SI 273)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:150 -1
+     (nil))
+(insn 304 303 305 38 (set (reg:DI 146 [ D.5544 ])
+        (sign_extend:DI (reg:SI 273))) hmac.c:150 -1
+     (nil))
+(insn 305 304 306 38 (parallel [
+            (set (reg:DI 147 [ D.5544 ])
+                (ashift:DI (reg:DI 146 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:150 -1
+     (nil))
+(insn 306 305 307 38 (set (reg/f:DI 274)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:150 -1
+     (nil))
+(insn 307 306 308 38 (parallel [
+            (set (reg/f:DI 148 [ D.5545 ])
+                (plus:DI (reg:DI 147 [ D.5544 ])
+                    (reg/f:DI 274)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:150 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 147 [ D.5544 ]))
+        (nil)))
+(insn 308 307 309 38 (set (reg/f:DI 275)
+        (mem/f:DI (reg/f:DI 148 [ D.5545 ]) [0 *_170+0 S8 A64])) hmac.c:150 -1
+     (nil))
+(insn 309 308 310 38 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 hmacFilename+0 S8 A64])
+        (reg/f:DI 275)) hmac.c:150 -1
+     (nil))
+(jump_insn 310 309 311 38 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 311 310 312)
+(code_label 312 311 313 39 24 "" [1 uses])
+(note 313 312 314 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 314 313 315 39 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7f1616cfa000 *.LC17>)) hmac.c:153 -1
+     (nil))
+(call_insn 315 314 316 39 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:153 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 316 315 319 39 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:154 -1
+     (nil)
+    (nil))
+(jump_insn 319 316 320 39 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 320 319 321)
+(code_label 321 320 322 41 23 "" [1 uses])
+(note 322 321 323 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 323 322 324 41 (set (reg:SI 276)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:157 -1
+     (nil))
+(insn 324 323 325 41 (set (reg:DI 149 [ D.5544 ])
+        (sign_extend:DI (reg:SI 276))) hmac.c:157 -1
+     (nil))
+(insn 325 324 326 41 (parallel [
+            (set (reg:DI 150 [ D.5544 ])
+                (ashift:DI (reg:DI 149 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:157 -1
+     (nil))
+(insn 326 325 327 41 (set (reg/f:DI 277)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:157 -1
+     (nil))
+(insn 327 326 328 41 (parallel [
+            (set (reg/f:DI 151 [ D.5545 ])
+                (plus:DI (reg:DI 150 [ D.5544 ])
+                    (reg/f:DI 277)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:157 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 150 [ D.5544 ]))
+        (nil)))
+(insn 328 327 329 41 (set (reg/f:DI 152 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 151 [ D.5545 ]) [0 *_176+0 S8 A64])) hmac.c:157 -1
+     (nil))
+(insn 329 328 330 41 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7f1616cfa090 *.LC18>)) hmac.c:157 -1
+     (nil))
+(insn 330 329 331 41 (set (reg:DI 5 di)
+        (reg/f:DI 152 [ D.5546 ])) hmac.c:157 -1
+     (nil))
+(call_insn/i 331 330 332 41 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:157 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 332 331 333 41 (set (reg:SI 153 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:157 -1
+     (nil))
+(insn 333 332 334 41 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 153 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:157 -1
+     (nil))
+(jump_insn 334 333 335 41 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 399)
+            (pc))) hmac.c:157 -1
+     (nil)
+ -> 399)
+(note 335 334 336 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 336 335 337 42 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:158 -1
+     (nil))
+(insn 337 336 338 42 (set (reg:SI 278)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:159 -1
+     (nil))
+(insn 338 337 339 42 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 278)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:159 -1
+     (nil))
+(jump_insn 339 338 340 42 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 355)
+            (pc))) hmac.c:159 -1
+     (nil)
+ -> 355)
+(note 340 339 341 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(insn 341 340 342 43 (set (reg:SI 279)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:160 -1
+     (nil))
+(insn 342 341 343 43 (set (reg:DI 154 [ D.5544 ])
+        (sign_extend:DI (reg:SI 279))) hmac.c:160 -1
+     (nil))
+(insn 343 342 344 43 (parallel [
+            (set (reg:DI 155 [ D.5544 ])
+                (ashift:DI (reg:DI 154 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:160 -1
+     (nil))
+(insn 344 343 345 43 (set (reg/f:DI 280)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:160 -1
+     (nil))
+(insn 345 344 346 43 (parallel [
+            (set (reg/f:DI 156 [ D.5545 ])
+                (plus:DI (reg:DI 155 [ D.5544 ])
+                    (reg/f:DI 280)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:160 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 155 [ D.5544 ]))
+        (nil)))
+(insn 346 345 347 43 (set (reg/f:DI 157 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 156 [ D.5545 ]) [0 *_182+0 S8 A64])) hmac.c:160 -1
+     (nil))
+(insn 347 346 348 43 (parallel [
+            (set (reg:DI 281)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2324 [0xfffffffffffff6ec])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:160 -1
+     (nil))
+(insn 348 347 349 43 (set (reg:DI 1 dx)
+        (reg:DI 281)) hmac.c:160 -1
+     (nil))
+(insn 349 348 350 43 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f1616ce9870 *.LC2>)) hmac.c:160 -1
+     (nil))
+(insn 350 349 351 43 (set (reg:DI 5 di)
+        (reg/f:DI 157 [ D.5546 ])) hmac.c:160 -1
+     (nil))
+(insn 351 350 352 43 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:160 -1
+     (nil))
+(call_insn 352 351 353 43 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f1617123ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) hmac.c:160 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 353 352 354 43 (set (pc)
+        (label_ref 360)) -1
+     (nil)
+ -> 360)
+(barrier 354 353 355)
+(code_label 355 354 356 44 27 "" [1 uses])
+(note 356 355 357 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(insn 357 356 358 44 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7f1616cfa120 *.LC19>)) hmac.c:163 -1
+     (nil))
+(call_insn 358 357 359 44 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:163 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 359 358 360 44 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:164 -1
+     (nil)
+    (nil))
+(code_label 360 359 361 45 28 "" [1 uses])
+(note 361 360 362 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 362 361 363 45 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:166 -1
+     (nil))
+(insn 363 362 364 45 (set (reg:SI 282)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:167 -1
+     (nil))
+(insn 364 363 365 45 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 282)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:167 -1
+     (nil))
+(jump_insn 365 364 366 45 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 390)
+            (pc))) hmac.c:167 -1
+     (nil)
+ -> 390)
+(note 366 365 367 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(insn 367 366 368 46 (set (reg:SI 283)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:168 -1
+     (nil))
+(insn 368 367 369 46 (set (reg:DI 158 [ D.5544 ])
+        (sign_extend:DI (reg:SI 283))) hmac.c:168 -1
+     (nil))
+(insn 369 368 370 46 (parallel [
+            (set (reg:DI 159 [ D.5544 ])
+                (ashift:DI (reg:DI 158 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:168 -1
+     (nil))
+(insn 370 369 371 46 (set (reg/f:DI 284)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:168 -1
+     (nil))
+(insn 371 370 372 46 (parallel [
+            (set (reg/f:DI 160 [ D.5545 ])
+                (plus:DI (reg:DI 159 [ D.5544 ])
+                    (reg/f:DI 284)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:168 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 159 [ D.5544 ]))
+        (nil)))
+(insn 372 371 373 46 (set (reg/f:DI 161 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 160 [ D.5545 ]) [0 *_190+0 S8 A64])) hmac.c:168 -1
+     (nil))
+(insn 373 372 374 46 (parallel [
+            (set (reg:DI 285)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2320 [0xfffffffffffff6f0])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:168 -1
+     (nil))
+(insn 374 373 375 46 (set (reg:DI 1 dx)
+        (reg:DI 285)) hmac.c:168 -1
+     (nil))
+(insn 375 374 376 46 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f1616ce9870 *.LC2>)) hmac.c:168 -1
+     (nil))
+(insn 376 375 377 46 (set (reg:DI 5 di)
+        (reg/f:DI 161 [ D.5546 ])) hmac.c:168 -1
+     (nil))
+(insn 377 376 378 46 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:168 -1
+     (nil))
+(call_insn 378 377 379 46 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f1617123ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) hmac.c:168 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 379 378 380 46 (set (reg:SI 162 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2320 [0xfffffffffffff6f0])) [0 sessionAttributes0+0 S4 A64])) hmac.c:169 -1
+     (nil))
+(insn 380 379 381 46 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 162 [ D.5548 ])
+            (const_int 255 [0xff]))) hmac.c:169 -1
+     (nil))
+(jump_insn 381 380 382 46 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 608)
+            (pc))) hmac.c:169 612 {*jcc_1}
+     (nil)
+ -> 608)
+(note 382 381 383 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(insn 383 382 384 47 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC20") [flags 0x2]  <var_decl 0x7f1616cfa1b0 *.LC20>)) hmac.c:170 -1
+     (nil))
+(call_insn 384 383 385 47 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:170 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 385 384 388 47 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:171 -1
+     (nil)
+    (nil))
+(jump_insn 388 385 389 47 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 389 388 390)
+(code_label 390 389 391 49 29 "" [1 uses])
+(note 391 390 392 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(insn 392 391 393 49 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7f1616cfa120 *.LC19>)) hmac.c:175 -1
+     (nil))
+(call_insn 393 392 394 49 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:175 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 394 393 397 49 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:176 -1
+     (nil)
+    (nil))
+(jump_insn 397 394 398 49 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 398 397 399)
+(code_label 399 398 400 51 26 "" [1 uses])
+(note 400 399 401 51 [bb 51] NOTE_INSN_BASIC_BLOCK)
+(insn 401 400 402 51 (set (reg:SI 286)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:179 -1
+     (nil))
+(insn 402 401 403 51 (set (reg:DI 163 [ D.5544 ])
+        (sign_extend:DI (reg:SI 286))) hmac.c:179 -1
+     (nil))
+(insn 403 402 404 51 (parallel [
+            (set (reg:DI 164 [ D.5544 ])
+                (ashift:DI (reg:DI 163 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:179 -1
+     (nil))
+(insn 404 403 405 51 (set (reg/f:DI 287)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:179 -1
+     (nil))
+(insn 405 404 406 51 (parallel [
+            (set (reg/f:DI 165 [ D.5545 ])
+                (plus:DI (reg:DI 164 [ D.5544 ])
+                    (reg/f:DI 287)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:179 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 164 [ D.5544 ]))
+        (nil)))
+(insn 406 405 407 51 (set (reg/f:DI 166 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 165 [ D.5545 ]) [0 *_200+0 S8 A64])) hmac.c:179 -1
+     (nil))
+(insn 407 406 408 51 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC21") [flags 0x2]  <var_decl 0x7f1616cfa240 *.LC21>)) hmac.c:179 -1
+     (nil))
+(insn 408 407 409 51 (set (reg:DI 5 di)
+        (reg/f:DI 166 [ D.5546 ])) hmac.c:179 -1
+     (nil))
+(call_insn/i 409 408 410 51 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:179 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 410 409 411 51 (set (reg:SI 167 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:179 -1
+     (nil))
+(insn 411 410 412 51 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 167 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:179 -1
+     (nil))
+(jump_insn 412 411 413 51 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 477)
+            (pc))) hmac.c:179 -1
+     (nil)
+ -> 477)
+(note 413 412 414 52 [bb 52] NOTE_INSN_BASIC_BLOCK)
+(insn 414 413 415 52 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:180 -1
+     (nil))
+(insn 415 414 416 52 (set (reg:SI 288)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:181 -1
+     (nil))
+(insn 416 415 417 52 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 288)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:181 -1
+     (nil))
+(jump_insn 417 416 418 52 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 433)
+            (pc))) hmac.c:181 -1
+     (nil)
+ -> 433)
+(note 418 417 419 53 [bb 53] NOTE_INSN_BASIC_BLOCK)
+(insn 419 418 420 53 (set (reg:SI 289)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:182 -1
+     (nil))
+(insn 420 419 421 53 (set (reg:DI 168 [ D.5544 ])
+        (sign_extend:DI (reg:SI 289))) hmac.c:182 -1
+     (nil))
+(insn 421 420 422 53 (parallel [
+            (set (reg:DI 169 [ D.5544 ])
+                (ashift:DI (reg:DI 168 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:182 -1
+     (nil))
+(insn 422 421 423 53 (set (reg/f:DI 290)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:182 -1
+     (nil))
+(insn 423 422 424 53 (parallel [
+            (set (reg/f:DI 170 [ D.5545 ])
+                (plus:DI (reg:DI 169 [ D.5544 ])
+                    (reg/f:DI 290)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:182 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 169 [ D.5544 ]))
+        (nil)))
+(insn 424 423 425 53 (set (reg/f:DI 171 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 170 [ D.5545 ]) [0 *_206+0 S8 A64])) hmac.c:182 -1
+     (nil))
+(insn 425 424 426 53 (parallel [
+            (set (reg:DI 291)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2316 [0xfffffffffffff6f4])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:182 -1
+     (nil))
+(insn 426 425 427 53 (set (reg:DI 1 dx)
+        (reg:DI 291)) hmac.c:182 -1
+     (nil))
+(insn 427 426 428 53 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f1616ce9870 *.LC2>)) hmac.c:182 -1
+     (nil))
+(insn 428 427 429 53 (set (reg:DI 5 di)
+        (reg/f:DI 171 [ D.5546 ])) hmac.c:182 -1
+     (nil))
+(insn 429 428 430 53 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:182 -1
+     (nil))
+(call_insn 430 429 431 53 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f1617123ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) hmac.c:182 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 431 430 432 53 (set (pc)
+        (label_ref 438)) -1
+     (nil)
+ -> 438)
+(barrier 432 431 433)
+(code_label 433 432 434 54 33 "" [1 uses])
+(note 434 433 435 54 [bb 54] NOTE_INSN_BASIC_BLOCK)
+(insn 435 434 436 54 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC22") [flags 0x2]  <var_decl 0x7f1616cfa2d0 *.LC22>)) hmac.c:185 -1
+     (nil))
+(call_insn 436 435 437 54 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:185 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 437 436 438 54 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:186 -1
+     (nil)
+    (nil))
+(code_label 438 437 439 55 34 "" [1 uses])
+(note 439 438 440 55 [bb 55] NOTE_INSN_BASIC_BLOCK)
+(insn 440 439 441 55 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:188 -1
+     (nil))
+(insn 441 440 442 55 (set (reg:SI 292)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:189 -1
+     (nil))
+(insn 442 441 443 55 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 292)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:189 -1
+     (nil))
+(jump_insn 443 442 444 55 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 468)
+            (pc))) hmac.c:189 -1
+     (nil)
+ -> 468)
+(note 444 443 445 56 [bb 56] NOTE_INSN_BASIC_BLOCK)
+(insn 445 444 446 56 (set (reg:SI 293)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:190 -1
+     (nil))
+(insn 446 445 447 56 (set (reg:DI 172 [ D.5544 ])
+        (sign_extend:DI (reg:SI 293))) hmac.c:190 -1
+     (nil))
+(insn 447 446 448 56 (parallel [
+            (set (reg:DI 173 [ D.5544 ])
+                (ashift:DI (reg:DI 172 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:190 -1
+     (nil))
+(insn 448 447 449 56 (set (reg/f:DI 294)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:190 -1
+     (nil))
+(insn 449 448 450 56 (parallel [
+            (set (reg/f:DI 174 [ D.5545 ])
+                (plus:DI (reg:DI 173 [ D.5544 ])
+                    (reg/f:DI 294)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:190 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 173 [ D.5544 ]))
+        (nil)))
+(insn 450 449 451 56 (set (reg/f:DI 175 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 174 [ D.5545 ]) [0 *_214+0 S8 A64])) hmac.c:190 -1
+     (nil))
+(insn 451 450 452 56 (parallel [
+            (set (reg:DI 295)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2312 [0xfffffffffffff6f8])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:190 -1
+     (nil))
+(insn 452 451 453 56 (set (reg:DI 1 dx)
+        (reg:DI 295)) hmac.c:190 -1
+     (nil))
+(insn 453 452 454 56 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f1616ce9870 *.LC2>)) hmac.c:190 -1
+     (nil))
+(insn 454 453 455 56 (set (reg:DI 5 di)
+        (reg/f:DI 175 [ D.5546 ])) hmac.c:190 -1
+     (nil))
+(insn 455 454 456 56 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:190 -1
+     (nil))
+(call_insn 456 455 457 56 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f1617123ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) hmac.c:190 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 457 456 458 56 (set (reg:SI 176 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2312 [0xfffffffffffff6f8])) [0 sessionAttributes1+0 S4 A64])) hmac.c:191 -1
+     (nil))
+(insn 458 457 459 56 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 176 [ D.5548 ])
+            (const_int 255 [0xff]))) hmac.c:191 -1
+     (nil))
+(jump_insn 459 458 460 56 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 608)
+            (pc))) hmac.c:191 612 {*jcc_1}
+     (nil)
+ -> 608)
+(note 460 459 461 57 [bb 57] NOTE_INSN_BASIC_BLOCK)
+(insn 461 460 462 57 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC23") [flags 0x2]  <var_decl 0x7f1616cfa360 *.LC23>)) hmac.c:192 -1
+     (nil))
+(call_insn 462 461 463 57 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:192 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 463 462 466 57 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:193 -1
+     (nil)
+    (nil))
+(jump_insn 466 463 467 57 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 467 466 468)
+(code_label 468 467 469 59 35 "" [1 uses])
+(note 469 468 470 59 [bb 59] NOTE_INSN_BASIC_BLOCK)
+(insn 470 469 471 59 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC22") [flags 0x2]  <var_decl 0x7f1616cfa2d0 *.LC22>)) hmac.c:197 -1
+     (nil))
+(call_insn 471 470 472 59 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:197 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 472 471 475 59 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:198 -1
+     (nil)
+    (nil))
+(jump_insn 475 472 476 59 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 476 475 477)
+(code_label 477 476 478 61 32 "" [1 uses])
+(note 478 477 479 61 [bb 61] NOTE_INSN_BASIC_BLOCK)
+(insn 479 478 480 61 (set (reg:SI 296)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:201 -1
+     (nil))
+(insn 480 479 481 61 (set (reg:DI 177 [ D.5544 ])
+        (sign_extend:DI (reg:SI 296))) hmac.c:201 -1
+     (nil))
+(insn 481 480 482 61 (parallel [
+            (set (reg:DI 178 [ D.5544 ])
+                (ashift:DI (reg:DI 177 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:201 -1
+     (nil))
+(insn 482 481 483 61 (set (reg/f:DI 297)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:201 -1
+     (nil))
+(insn 483 482 484 61 (parallel [
+            (set (reg/f:DI 179 [ D.5545 ])
+                (plus:DI (reg:DI 178 [ D.5544 ])
+                    (reg/f:DI 297)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:201 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 178 [ D.5544 ]))
+        (nil)))
+(insn 484 483 485 61 (set (reg/f:DI 180 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 179 [ D.5545 ]) [0 *_224+0 S8 A64])) hmac.c:201 -1
+     (nil))
+(insn 485 484 486 61 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC24") [flags 0x2]  <var_decl 0x7f1616cfa3f0 *.LC24>)) hmac.c:201 -1
+     (nil))
+(insn 486 485 487 61 (set (reg:DI 5 di)
+        (reg/f:DI 180 [ D.5546 ])) hmac.c:201 -1
+     (nil))
+(call_insn/i 487 486 488 61 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:201 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 488 487 489 61 (set (reg:SI 181 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:201 -1
+     (nil))
+(insn 489 488 490 61 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 181 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:201 -1
+     (nil))
+(jump_insn 490 489 491 61 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 555)
+            (pc))) hmac.c:201 -1
+     (nil)
+ -> 555)
+(note 491 490 492 62 [bb 62] NOTE_INSN_BASIC_BLOCK)
+(insn 492 491 493 62 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:202 -1
+     (nil))
+(insn 493 492 494 62 (set (reg:SI 298)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:203 -1
+     (nil))
+(insn 494 493 495 62 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 298)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:203 -1
+     (nil))
+(jump_insn 495 494 496 62 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 511)
+            (pc))) hmac.c:203 -1
+     (nil)
+ -> 511)
+(note 496 495 497 63 [bb 63] NOTE_INSN_BASIC_BLOCK)
+(insn 497 496 498 63 (set (reg:SI 299)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:204 -1
+     (nil))
+(insn 498 497 499 63 (set (reg:DI 182 [ D.5544 ])
+        (sign_extend:DI (reg:SI 299))) hmac.c:204 -1
+     (nil))
+(insn 499 498 500 63 (parallel [
+            (set (reg:DI 183 [ D.5544 ])
+                (ashift:DI (reg:DI 182 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:204 -1
+     (nil))
+(insn 500 499 501 63 (set (reg/f:DI 300)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:204 -1
+     (nil))
+(insn 501 500 502 63 (parallel [
+            (set (reg/f:DI 184 [ D.5545 ])
+                (plus:DI (reg:DI 183 [ D.5544 ])
+                    (reg/f:DI 300)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:204 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 183 [ D.5544 ]))
+        (nil)))
+(insn 502 501 503 63 (set (reg/f:DI 185 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 184 [ D.5545 ]) [0 *_230+0 S8 A64])) hmac.c:204 -1
+     (nil))
+(insn 503 502 504 63 (parallel [
+            (set (reg:DI 301)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2308 [0xfffffffffffff6fc])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:204 -1
+     (nil))
+(insn 504 503 505 63 (set (reg:DI 1 dx)
+        (reg:DI 301)) hmac.c:204 -1
+     (nil))
+(insn 505 504 506 63 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f1616ce9870 *.LC2>)) hmac.c:204 -1
+     (nil))
+(insn 506 505 507 63 (set (reg:DI 5 di)
+        (reg/f:DI 185 [ D.5546 ])) hmac.c:204 -1
+     (nil))
+(insn 507 506 508 63 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:204 -1
+     (nil))
+(call_insn 508 507 509 63 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f1617123ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) hmac.c:204 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 509 508 510 63 (set (pc)
+        (label_ref 516)) -1
+     (nil)
+ -> 516)
+(barrier 510 509 511)
+(code_label 511 510 512 64 39 "" [1 uses])
+(note 512 511 513 64 [bb 64] NOTE_INSN_BASIC_BLOCK)
+(insn 513 512 514 64 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC25") [flags 0x2]  <var_decl 0x7f1616cfa480 *.LC25>)) hmac.c:207 -1
+     (nil))
+(call_insn 514 513 515 64 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:207 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 515 514 516 64 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:208 -1
+     (nil)
+    (nil))
+(code_label 516 515 517 65 40 "" [1 uses])
+(note 517 516 518 65 [bb 65] NOTE_INSN_BASIC_BLOCK)
+(insn 518 517 519 65 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:210 -1
+     (nil))
+(insn 519 518 520 65 (set (reg:SI 302)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:211 -1
+     (nil))
+(insn 520 519 521 65 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 302)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:211 -1
+     (nil))
+(jump_insn 521 520 522 65 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 546)
+            (pc))) hmac.c:211 -1
+     (nil)
+ -> 546)
+(note 522 521 523 66 [bb 66] NOTE_INSN_BASIC_BLOCK)
+(insn 523 522 524 66 (set (reg:SI 303)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:212 -1
+     (nil))
+(insn 524 523 525 66 (set (reg:DI 186 [ D.5544 ])
+        (sign_extend:DI (reg:SI 303))) hmac.c:212 -1
+     (nil))
+(insn 525 524 526 66 (parallel [
+            (set (reg:DI 187 [ D.5544 ])
+                (ashift:DI (reg:DI 186 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:212 -1
+     (nil))
+(insn 526 525 527 66 (set (reg/f:DI 304)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:212 -1
+     (nil))
+(insn 527 526 528 66 (parallel [
+            (set (reg/f:DI 188 [ D.5545 ])
+                (plus:DI (reg:DI 187 [ D.5544 ])
+                    (reg/f:DI 304)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:212 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 187 [ D.5544 ]))
+        (nil)))
+(insn 528 527 529 66 (set (reg/f:DI 189 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 188 [ D.5545 ]) [0 *_238+0 S8 A64])) hmac.c:212 -1
+     (nil))
+(insn 529 528 530 66 (parallel [
+            (set (reg:DI 305)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2304 [0xfffffffffffff700])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:212 -1
+     (nil))
+(insn 530 529 531 66 (set (reg:DI 1 dx)
+        (reg:DI 305)) hmac.c:212 -1
+     (nil))
+(insn 531 530 532 66 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f1616ce9870 *.LC2>)) hmac.c:212 -1
+     (nil))
+(insn 532 531 533 66 (set (reg:DI 5 di)
+        (reg/f:DI 189 [ D.5546 ])) hmac.c:212 -1
+     (nil))
+(insn 533 532 534 66 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:212 -1
+     (nil))
+(call_insn 534 533 535 66 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f1617123ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) hmac.c:212 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 535 534 536 66 (set (reg:SI 190 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2304 [0xfffffffffffff700])) [0 sessionAttributes2+0 S4 A64])) hmac.c:213 -1
+     (nil))
+(insn 536 535 537 66 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 190 [ D.5548 ])
+            (const_int 255 [0xff]))) hmac.c:213 -1
+     (nil))
+(jump_insn 537 536 538 66 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 608)
+            (pc))) hmac.c:213 612 {*jcc_1}
+     (nil)
+ -> 608)
+(note 538 537 539 67 [bb 67] NOTE_INSN_BASIC_BLOCK)
+(insn 539 538 540 67 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC26") [flags 0x2]  <var_decl 0x7f1616cfa510 *.LC26>)) hmac.c:214 -1
+     (nil))
+(call_insn 540 539 541 67 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:214 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 541 540 544 67 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:215 -1
+     (nil)
+    (nil))
+(jump_insn 544 541 545 67 (set (pc)
+        (label_ref:DI 608)) 654 {jump}
+     (nil)
+ -> 608)
+(barrier 545 544 546)
+(code_label 546 545 547 69 41 "" [1 uses])
+(note 547 546 548 69 [bb 69] NOTE_INSN_BASIC_BLOCK)
+(insn 548 547 549 69 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC25") [flags 0x2]  <var_decl 0x7f1616cfa480 *.LC25>)) hmac.c:219 -1
+     (nil))
+(call_insn 549 548 550 69 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:219 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 550 549 553 69 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:220 -1
+     (nil)
+    (nil))
+(jump_insn 553 550 554 69 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 554 553 555)
+(code_label 555 554 556 71 38 "" [1 uses])
+(note 556 555 557 71 [bb 71] NOTE_INSN_BASIC_BLOCK)
+(insn 557 556 558 71 (set (reg:SI 306)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:223 -1
+     (nil))
+(insn 558 557 559 71 (set (reg:DI 191 [ D.5544 ])
+        (sign_extend:DI (reg:SI 306))) hmac.c:223 -1
+     (nil))
+(insn 559 558 560 71 (parallel [
+            (set (reg:DI 192 [ D.5544 ])
+                (ashift:DI (reg:DI 191 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:223 -1
+     (nil))
+(insn 560 559 561 71 (set (reg/f:DI 307)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:223 -1
+     (nil))
+(insn 561 560 562 71 (parallel [
+            (set (reg/f:DI 193 [ D.5545 ])
+                (plus:DI (reg:DI 192 [ D.5544 ])
+                    (reg/f:DI 307)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:223 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 192 [ D.5544 ]))
+        (nil)))
+(insn 562 561 563 71 (set (reg/f:DI 194 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 193 [ D.5545 ]) [0 *_248+0 S8 A64])) hmac.c:223 -1
+     (nil))
+(insn 563 562 564 71 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC27") [flags 0x2]  <var_decl 0x7f1616cfa5a0 *.LC27>)) hmac.c:223 -1
+     (nil))
+(insn 564 563 565 71 (set (reg:DI 5 di)
+        (reg/f:DI 194 [ D.5546 ])) hmac.c:223 -1
+     (nil))
+(call_insn/i 565 564 566 71 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:223 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 566 565 567 71 (set (reg:SI 195 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:223 -1
+     (nil))
+(insn 567 566 568 71 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 195 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:223 -1
+     (nil))
+(jump_insn 568 567 569 71 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 573)
+            (pc))) hmac.c:223 -1
+     (nil)
+ -> 573)
+(note 569 568 570 72 [bb 72] NOTE_INSN_BASIC_BLOCK)
+(call_insn 570 569 571 72 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:224 -1
+     (nil)
+    (nil))
+(jump_insn 571 570 572 72 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 572 571 573)
+(code_label 573 572 574 73 44 "" [1 uses])
+(note 574 573 575 73 [bb 73] NOTE_INSN_BASIC_BLOCK)
+(insn 575 574 576 73 (set (reg:SI 308)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:226 -1
+     (nil))
+(insn 576 575 577 73 (set (reg:DI 196 [ D.5544 ])
+        (sign_extend:DI (reg:SI 308))) hmac.c:226 -1
+     (nil))
+(insn 577 576 578 73 (parallel [
+            (set (reg:DI 197 [ D.5544 ])
+                (ashift:DI (reg:DI 196 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:226 -1
+     (nil))
+(insn 578 577 579 73 (set (reg/f:DI 309)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:226 -1
+     (nil))
+(insn 579 578 580 73 (parallel [
+            (set (reg/f:DI 198 [ D.5545 ])
+                (plus:DI (reg:DI 197 [ D.5544 ])
+                    (reg/f:DI 309)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:226 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 197 [ D.5544 ]))
+        (nil)))
+(insn 580 579 581 73 (set (reg/f:DI 199 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 198 [ D.5545 ]) [0 *_254+0 S8 A64])) hmac.c:226 -1
+     (nil))
+(insn 581 580 582 73 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC28") [flags 0x2]  <var_decl 0x7f1616cfa630 *.LC28>)) hmac.c:226 -1
+     (nil))
+(insn 582 581 583 73 (set (reg:DI 5 di)
+        (reg/f:DI 199 [ D.5546 ])) hmac.c:226 -1
+     (nil))
+(call_insn/i 583 582 584 73 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f161711a0d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) hmac.c:226 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 584 583 585 73 (set (reg:SI 200 [ D.5547 ])
+        (reg:SI 0 ax)) hmac.c:226 -1
+     (nil))
+(insn 585 584 586 73 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 200 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:226 -1
+     (nil))
+(jump_insn 586 585 587 73 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 595)
+            (pc))) hmac.c:226 -1
+     (nil)
+ -> 595)
+(note 587 586 588 74 [bb 74] NOTE_INSN_BASIC_BLOCK)
+(insn 588 587 589 74 (set (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f1616ee2090 verbose>) [0 verbose+0 S4 A32])
+        (const_int 1 [0x1])) hmac.c:227 -1
+     (nil))
+(insn 589 588 590 74 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC29") [flags 0x2]  <var_decl 0x7f1616cfa6c0 *.LC29>)) hmac.c:228 -1
+     (nil))
+(insn 590 589 591 74 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) hmac.c:228 -1
+     (nil))
+(insn 591 590 592 74 (set (reg:DI 5 di)
+        (const_int 0 [0])) hmac.c:228 -1
+     (nil))
+(call_insn 592 591 593 74 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7f1617086000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) hmac.c:228 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(jump_insn 593 592 594 74 (set (pc)
+        (label_ref 608)) -1
+     (nil)
+ -> 608)
+(barrier 594 593 595)
+(code_label 595 594 596 75 45 "" [1 uses])
+(note 596 595 597 75 [bb 75] NOTE_INSN_BASIC_BLOCK)
+(insn 597 596 598 75 (set (reg:SI 310)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:231 -1
+     (nil))
+(insn 598 597 599 75 (set (reg:DI 201 [ D.5544 ])
+        (sign_extend:DI (reg:SI 310))) hmac.c:231 -1
+     (nil))
+(insn 599 598 600 75 (parallel [
+            (set (reg:DI 202 [ D.5544 ])
+                (ashift:DI (reg:DI 201 [ D.5544 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:231 -1
+     (nil))
+(insn 600 599 601 75 (set (reg/f:DI 311)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])) hmac.c:231 -1
+     (nil))
+(insn 601 600 602 75 (parallel [
+            (set (reg/f:DI 203 [ D.5545 ])
+                (plus:DI (reg:DI 202 [ D.5544 ])
+                    (reg/f:DI 311)))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:231 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2352 [0xfffffffffffff6d0])) [0 argv+0 S8 A64])
+            (reg:DI 202 [ D.5544 ]))
+        (nil)))
+(insn 602 601 603 75 (set (reg/f:DI 204 [ D.5546 ])
+        (mem/f:DI (reg/f:DI 203 [ D.5545 ]) [0 *_261+0 S8 A64])) hmac.c:231 -1
+     (nil))
+(insn 603 602 604 75 (set (reg:DI 4 si)
+        (reg/f:DI 204 [ D.5546 ])) hmac.c:231 -1
+     (nil))
+(insn 604 603 605 75 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC30") [flags 0x2]  <var_decl 0x7f1616cfa750 *.LC30>)) hmac.c:231 -1
+     (nil))
+(insn 605 604 606 75 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:231 -1
+     (nil))
+(call_insn 606 605 607 75 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f1617120ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) hmac.c:231 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(call_insn 607 606 608 75 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:232 -1
+     (nil)
+    (nil))
+(code_label 608 607 609 76 6 "" [26 uses])
+(note 609 608 610 76 [bb 76] NOTE_INSN_BASIC_BLOCK)
+(insn 610 609 611 76 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:84 -1
+     (nil))
+(code_label 611 610 612 77 2 "" [1 uses])
+(note 612 611 613 77 [bb 77] NOTE_INSN_BASIC_BLOCK)
+(insn 613 612 614 77 (set (reg:SI 312)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2296 [0xfffffffffffff708])) [0 i+0 S4 A32])) hmac.c:84 -1
+     (nil))
+(insn 614 613 615 77 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 312)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2340 [0xfffffffffffff6dc])) [0 argc+0 S4 A32]))) hmac.c:84 -1
+     (nil))
+(jump_insn 615 614 616 77 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 620)
+            (pc))) hmac.c:84 -1
+     (nil)
+ -> 620)
+(note 616 615 618 78 [bb 78] NOTE_INSN_BASIC_BLOCK)
+(insn 618 616 619 78 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:84 -1
+     (nil))
+(jump_insn 619 618 620 78 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 617)
+            (pc))) hmac.c:84 -1
+     (nil)
+ -> 617)
+(code_label 620 619 621 79 46 "" [1 uses])
+(note 621 620 622 79 [bb 79] NOTE_INSN_BASIC_BLOCK)
+(insn 622 621 623 79 (set (reg:SI 205 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2328 [0xfffffffffffff6e8])) [0 keyHandle+0 S4 A64])) hmac.c:235 -1
+     (nil))
+(insn 623 622 624 79 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 205 [ D.5548 ])
+            (const_int 0 [0]))) hmac.c:235 -1
+     (nil))
+(jump_insn 624 623 625 79 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 629)
+            (pc))) hmac.c:235 -1
+     (nil)
+ -> 629)
+(note 625 624 626 80 [bb 80] NOTE_INSN_BASIC_BLOCK)
+(insn 626 625 627 80 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC31") [flags 0x2]  <var_decl 0x7f1616cfa7e0 *.LC31>)) hmac.c:236 -1
+     (nil))
+(call_insn 627 626 628 80 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:236 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 628 627 629 80 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:237 -1
+     (nil)
+    (nil))
+(code_label 629 628 630 81 48 "" [1 uses])
+(note 630 629 631 81 [bb 81] NOTE_INSN_BASIC_BLOCK)
+(insn 631 630 632 81 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2240 [0xfffffffffffff740])) [0 inFilename+0 S8 A64])
+            (const_int 0 [0]))) hmac.c:239 -1
+     (nil))
+(jump_insn 632 631 633 81 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 640)
+            (pc))) hmac.c:239 -1
+     (nil)
+ -> 640)
+(note 633 632 634 82 [bb 82] NOTE_INSN_BASIC_BLOCK)
+(insn 634 633 635 82 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2232 [0xfffffffffffff748])) [0 inString+0 S8 A64])
+            (const_int 0 [0]))) hmac.c:239 -1
+     (nil))
+(jump_insn 635 634 636 82 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 640)
+            (pc))) hmac.c:239 -1
+     (nil)
+ -> 640)
+(note 636 635 637 83 [bb 83] NOTE_INSN_BASIC_BLOCK)
+(insn 637 636 638 83 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC32") [flags 0x2]  <var_decl 0x7f1616cfa870 *.LC32>)) hmac.c:240 -1
+     (nil))
+(call_insn 638 637 639 83 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:240 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 639 638 640 83 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:241 -1
+     (nil)
+    (nil))
+(code_label 640 639 641 84 49 "" [2 uses])
+(note 641 640 642 84 [bb 84] NOTE_INSN_BASIC_BLOCK)
+(insn 642 641 643 84 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2240 [0xfffffffffffff740])) [0 inFilename+0 S8 A64])
+            (const_int 0 [0]))) hmac.c:243 -1
+     (nil))
+(jump_insn 643 642 644 84 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 651)
+            (pc))) hmac.c:243 -1
+     (nil)
+ -> 651)
+(note 644 643 645 85 [bb 85] NOTE_INSN_BASIC_BLOCK)
+(insn 645 644 646 85 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2232 [0xfffffffffffff748])) [0 inString+0 S8 A64])
+            (const_int 0 [0]))) hmac.c:243 -1
+     (nil))
+(jump_insn 646 645 647 85 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 651)
+            (pc))) hmac.c:243 -1
+     (nil)
+ -> 651)
+(note 647 646 648 86 [bb 86] NOTE_INSN_BASIC_BLOCK)
+(insn 648 647 649 86 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC33") [flags 0x2]  <var_decl 0x7f1616cfa900 *.LC33>)) hmac.c:244 -1
+     (nil))
+(call_insn 649 648 650 86 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:244 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 650 649 651 86 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f161708f000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) hmac.c:245 -1
+     (nil)
+    (nil))
+(code_label 651 650 652 87 50 "" [2 uses])
+(note 652 651 653 87 [bb 87] NOTE_INSN_BASIC_BLOCK)
+(insn 653 652 654 87 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2240 [0xfffffffffffff740])) [0 inFilename+0 S8 A64])
+            (const_int 0 [0]))) hmac.c:247 -1
+     (nil))
+(jump_insn 654 653 655 87 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 699)
+            (pc))) hmac.c:247 -1
+     (nil)
+ -> 699)
+(note 655 654 656 88 [bb 88] NOTE_INSN_BASIC_BLOCK)
+(insn 656 655 657 88 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:248 -1
+     (nil))
+(jump_insn 657 656 658 88 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 668)
+            (pc))) hmac.c:248 -1
+     (nil)
+ -> 668)
+(note 658 657 659 89 [bb 89] NOTE_INSN_BASIC_BLOCK)
+(insn 659 658 660 89 (set (reg:DI 313)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2240 [0xfffffffffffff740])) [0 inFilename+0 S8 A64])) hmac.c:249 -1
+     (nil))
+(insn 660 659 661 89 (parallel [
+            (set (reg:DI 314)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2280 [0xfffffffffffff718])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:249 -1
+     (nil))
+(insn 661 660 662 89 (parallel [
+            (set (reg:DI 315)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2272 [0xfffffffffffff720])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:249 -1
+     (nil))
+(insn 662 661 663 89 (set (reg:DI 1 dx)
+        (reg:DI 313)) hmac.c:249 -1
+     (nil))
+(insn 663 662 664 89 (set (reg:DI 4 si)
+        (reg:DI 314)) hmac.c:249 -1
+     (nil))
+(insn 664 663 665 89 (set (reg:DI 5 di)
+        (reg:DI 315)) hmac.c:249 -1
+     (nil))
+(call_insn 665 664 666 89 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_ReadBinaryFile") [flags 0x41]  <function_decl 0x7f1617086948 TSS_File_ReadBinaryFile>) [0 TSS_File_ReadBinaryFile S1 A8])
+            (const_int 0 [0]))) hmac.c:249 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 666 665 667 89 (set (reg:SI 316)
+        (reg:SI 0 ax)) hmac.c:249 -1
+     (nil))
+(insn 667 666 668 89 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+        (reg:SI 316)) hmac.c:249 -1
+     (nil))
+(code_label 668 667 669 90 52 "" [1 uses])
+(note 669 668 670 90 [bb 90] NOTE_INSN_BASIC_BLOCK)
+(insn 670 669 671 90 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:253 -1
+     (nil))
+(jump_insn 671 670 672 90 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 683)
+            (pc))) hmac.c:253 -1
+     (nil)
+ -> 683)
+(note 672 671 673 91 [bb 91] NOTE_INSN_BASIC_BLOCK)
+(insn 673 672 674 91 (set (reg:DI 206 [ D.5544 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 length+0 S8 A64])) hmac.c:254 -1
+     (nil))
+(insn 674 673 675 91 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 206 [ D.5544 ])
+            (const_int 2048 [0x800]))) hmac.c:254 -1
+     (nil))
+(jump_insn 675 674 676 91 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 683)
+            (pc))) hmac.c:254 -1
+     (nil)
+ -> 683)
+(note 676 675 677 92 [bb 92] NOTE_INSN_BASIC_BLOCK)
+(insn 677 676 678 92 (set (reg:DI 207 [ D.5544 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 length+0 S8 A64])) hmac.c:255 -1
+     (nil))
+(insn 678 677 679 92 (set (reg:DI 4 si)
+        (reg:DI 207 [ D.5544 ])) hmac.c:255 -1
+     (nil))
+(insn 679 678 680 92 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC34") [flags 0x2]  <var_decl 0x7f1616cfa990 *.LC34>)) hmac.c:255 -1
+     (nil))
+(insn 680 679 681 92 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:255 -1
+     (nil))
+(call_insn 681 680 682 92 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f1617120ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) hmac.c:255 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(insn 682 681 683 92 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+        (const_int 720900 [0xb0004])) hmac.c:256 -1
+     (nil))
+(code_label 683 682 684 93 53 "" [2 uses])
+(note 684 683 685 93 [bb 93] NOTE_INSN_BASIC_BLOCK)
+(insn 685 684 686 93 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:259 -1
+     (nil))
+(jump_insn 686 685 687 93 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 699)
+            (pc))) hmac.c:259 -1
+     (nil)
+ -> 699)
+(note 687 686 688 94 [bb 94] NOTE_INSN_BASIC_BLOCK)
+(insn 688 687 689 94 (set (reg:DI 208 [ D.5544 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 length+0 S8 A64])) hmac.c:261 -1
+     (nil))
+(insn 689 688 690 94 (set (reg:HI 209 [ D.5549 ])
+        (subreg:HI (reg:DI 208 [ D.5544 ]) 0)) hmac.c:261 -1
+     (nil))
+(insn 690 689 691 94 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2060 [0xfffffffffffff7f4])) [0 in.buffer.t.size+0 S2 A32])
+        (reg:HI 209 [ D.5549 ])) hmac.c:261 -1
+     (nil))
+(insn 691 690 692 94 (set (reg:DI 210 [ D.5544 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 length+0 S8 A64])) hmac.c:262 -1
+     (nil))
+(insn 692 691 693 94 (set (reg/f:DI 211 [ D.5550 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2272 [0xfffffffffffff720])) [0 buffer+0 S8 A64])) hmac.c:262 -1
+     (nil))
+(insn 693 692 694 94 (parallel [
+            (set (reg:DI 317)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:262 -1
+     (nil))
+(insn 694 693 695 94 (parallel [
+            (set (reg:DI 318)
+                (plus:DI (reg:DI 317)
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:262 -1
+     (nil))
+(insn 695 694 696 94 (set (reg:DI 1 dx)
+        (reg:DI 210 [ D.5544 ])) hmac.c:262 -1
+     (nil))
+(insn 696 695 697 94 (set (reg:DI 4 si)
+        (reg/f:DI 211 [ D.5550 ])) hmac.c:262 -1
+     (nil))
+(insn 697 696 698 94 (set (reg:DI 5 di)
+        (reg:DI 318)) hmac.c:262 -1
+     (nil))
+(call_insn 698 697 699 94 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f1617116e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) hmac.c:262 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(code_label 699 698 700 95 51 "" [2 uses])
+(note 700 699 701 95 [bb 95] NOTE_INSN_BASIC_BLOCK)
+(insn 701 700 702 95 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2232 [0xfffffffffffff748])) [0 inString+0 S8 A64])
+            (const_int 0 [0]))) hmac.c:265 -1
+     (nil))
+(jump_insn 702 701 703 95 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 738)
+            (pc))) hmac.c:265 -1
+     (nil)
+ -> 738)
+(note 703 702 704 96 [bb 96] NOTE_INSN_BASIC_BLOCK)
+(insn 704 703 705 96 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:266 -1
+     (nil))
+(jump_insn 705 704 706 96 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 722)
+            (pc))) hmac.c:266 -1
+     (nil)
+ -> 722)
+(note 706 705 707 97 [bb 97] NOTE_INSN_BASIC_BLOCK)
+(insn 707 706 708 97 (set (reg:DI 319)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2232 [0xfffffffffffff748])) [0 inString+0 S8 A64])) hmac.c:267 -1
+     (nil))
+(insn 708 707 709 97 (set (reg:DI 5 di)
+        (reg:DI 319)) hmac.c:267 -1
+     (nil))
+(call_insn/i 709 708 710 97 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x7f161711a948 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) hmac.c:267 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 710 709 711 97 (set (reg:DI 212 [ D.5544 ])
+        (reg:DI 0 ax)) hmac.c:267 -1
+     (nil))
+(insn 711 710 712 97 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 length+0 S8 A64])
+        (reg:DI 212 [ D.5544 ])) hmac.c:267 -1
+     (nil))
+(insn 712 711 713 97 (set (reg:DI 213 [ D.5544 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 length+0 S8 A64])) hmac.c:268 -1
+     (nil))
+(insn 713 712 714 97 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 213 [ D.5544 ])
+            (const_int 2048 [0x800]))) hmac.c:268 -1
+     (nil))
+(jump_insn 714 713 715 97 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 722)
+            (pc))) hmac.c:268 -1
+     (nil)
+ -> 722)
+(note 715 714 716 98 [bb 98] NOTE_INSN_BASIC_BLOCK)
+(insn 716 715 717 98 (set (reg:DI 214 [ D.5544 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 length+0 S8 A64])) hmac.c:269 -1
+     (nil))
+(insn 717 716 718 98 (set (reg:DI 4 si)
+        (reg:DI 214 [ D.5544 ])) hmac.c:269 -1
+     (nil))
+(insn 718 717 719 98 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC34") [flags 0x2]  <var_decl 0x7f1616cfa990 *.LC34>)) hmac.c:269 -1
+     (nil))
+(insn 719 718 720 98 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:269 -1
+     (nil))
+(call_insn 720 719 721 98 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f1617120ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) hmac.c:269 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(insn 721 720 722 98 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+        (const_int 720900 [0xb0004])) hmac.c:270 -1
+     (nil))
+(code_label 722 721 723 99 55 "" [2 uses])
+(note 723 722 724 99 [bb 99] NOTE_INSN_BASIC_BLOCK)
+(insn 724 723 725 99 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:273 -1
+     (nil))
+(jump_insn 725 724 726 99 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 738)
+            (pc))) hmac.c:273 -1
+     (nil)
+ -> 738)
+(note 726 725 727 100 [bb 100] NOTE_INSN_BASIC_BLOCK)
+(insn 727 726 728 100 (set (reg:DI 215 [ D.5544 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 length+0 S8 A64])) hmac.c:275 -1
+     (nil))
+(insn 728 727 729 100 (set (reg:HI 216 [ D.5549 ])
+        (subreg:HI (reg:DI 215 [ D.5544 ]) 0)) hmac.c:275 -1
+     (nil))
+(insn 729 728 730 100 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2060 [0xfffffffffffff7f4])) [0 in.buffer.t.size+0 S2 A32])
+        (reg:HI 216 [ D.5549 ])) hmac.c:275 -1
+     (nil))
+(insn 730 729 731 100 (set (reg:DI 217 [ D.5544 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 length+0 S8 A64])) hmac.c:276 -1
+     (nil))
+(insn 731 730 732 100 (set (reg:DI 320)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2232 [0xfffffffffffff748])) [0 inString+0 S8 A64])) hmac.c:276 -1
+     (nil))
+(insn 732 731 733 100 (parallel [
+            (set (reg:DI 321)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:276 -1
+     (nil))
+(insn 733 732 734 100 (parallel [
+            (set (reg:DI 322)
+                (plus:DI (reg:DI 321)
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:276 -1
+     (nil))
+(insn 734 733 735 100 (set (reg:DI 1 dx)
+        (reg:DI 217 [ D.5544 ])) hmac.c:276 -1
+     (nil))
+(insn 735 734 736 100 (set (reg:DI 4 si)
+        (reg:DI 320)) hmac.c:276 -1
+     (nil))
+(insn 736 735 737 100 (set (reg:DI 5 di)
+        (reg:DI 322)) hmac.c:276 -1
+     (nil))
+(call_insn 737 736 738 100 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f1617116e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) hmac.c:276 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(code_label 738 737 739 101 54 "" [2 uses])
+(note 739 738 740 101 [bb 101] NOTE_INSN_BASIC_BLOCK)
+(insn 740 739 741 101 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:279 -1
+     (nil))
+(jump_insn 741 740 742 101 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 747)
+            (pc))) hmac.c:279 -1
+     (nil)
+ -> 747)
+(note 742 741 743 102 [bb 102] NOTE_INSN_BASIC_BLOCK)
+(insn 743 742 744 102 (set (reg:SI 218 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2328 [0xfffffffffffff6e8])) [0 keyHandle+0 S4 A64])) hmac.c:281 -1
+     (nil))
+(insn 744 743 745 102 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2064 [0xfffffffffffff7f0])) [0 in.handle+0 S4 A64])
+        (reg:SI 218 [ D.5548 ])) hmac.c:281 -1
+     (nil))
+(insn 745 744 746 102 (set (reg:HI 323)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2330 [0xfffffffffffff6e6])) [0 halg+0 S2 A16])) hmac.c:283 -1
+     (nil))
+(insn 746 745 747 102 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [0 in.hashAlg+0 S2 A16])
+        (reg:HI 323)) hmac.c:283 -1
+     (nil))
+(code_label 747 746 748 103 56 "" [1 uses])
+(note 748 747 749 103 [bb 103] NOTE_INSN_BASIC_BLOCK)
+(insn 749 748 750 103 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:286 -1
+     (nil))
+(jump_insn 750 749 751 103 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 757)
+            (pc))) hmac.c:286 -1
+     (nil)
+ -> 757)
+(note 751 750 752 104 [bb 104] NOTE_INSN_BASIC_BLOCK)
+(insn 752 751 753 104 (parallel [
+            (set (reg:DI 324)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2288 [0xfffffffffffff710])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:287 -1
+     (nil))
+(insn 753 752 754 104 (set (reg:DI 5 di)
+        (reg:DI 324)) hmac.c:287 -1
+     (nil))
+(call_insn 754 753 755 104 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Create") [flags 0x41]  <function_decl 0x7f161707eca8 TSS_Create>) [0 TSS_Create S1 A8])
+            (const_int 0 [0]))) hmac.c:287 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 755 754 756 104 (set (reg:SI 325)
+        (reg:SI 0 ax)) hmac.c:287 -1
+     (nil))
+(insn 756 755 757 104 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+        (reg:SI 325)) hmac.c:287 -1
+     (nil))
+(code_label 757 756 758 105 57 "" [1 uses])
+(note 758 757 759 105 [bb 105] NOTE_INSN_BASIC_BLOCK)
+(insn 759 758 760 105 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:290 -1
+     (nil))
+(jump_insn 760 759 761 105 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 794)
+            (pc))) hmac.c:290 -1
+     (nil)
+ -> 794)
+(note 761 760 762 106 [bb 106] NOTE_INSN_BASIC_BLOCK)
+(insn 762 761 763 106 (set (reg:SI 219 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2304 [0xfffffffffffff700])) [0 sessionAttributes2+0 S4 A64])) hmac.c:291 -1
+     (nil))
+(insn 763 762 764 106 (set (reg:SI 220 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2308 [0xfffffffffffff6fc])) [0 sessionHandle2+0 S4 A32])) hmac.c:291 -1
+     (nil))
+(insn 764 763 765 106 (set (reg:SI 221 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2312 [0xfffffffffffff6f8])) [0 sessionAttributes1+0 S4 A64])) hmac.c:291 -1
+     (nil))
+(insn 765 764 766 106 (set (reg:SI 222 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2316 [0xfffffffffffff6f4])) [0 sessionHandle1+0 S4 A32])) hmac.c:291 -1
+     (nil))
+(insn 766 765 767 106 (set (reg:SI 223 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2320 [0xfffffffffffff6f0])) [0 sessionAttributes0+0 S4 A64])) hmac.c:291 -1
+     (nil))
+(insn 767 766 768 106 (set (reg:SI 224 [ D.5548 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2324 [0xfffffffffffff6ec])) [0 sessionHandle0+0 S4 A32])) hmac.c:291 -1
+     (nil))
+(insn 768 767 769 106 (set (reg/f:DI 225 [ D.5551 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2288 [0xfffffffffffff710])) [0 tssContext+0 S8 A64])) hmac.c:291 -1
+     (nil))
+(insn 769 768 770 106 (parallel [
+            (set (reg:DI 326)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:291 -1
+     (nil))
+(insn 770 769 771 106 (parallel [
+            (set (reg:DI 327)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2208 [0xfffffffffffff760])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:291 -1
+     (nil))
+(insn 771 770 772 106 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 772 771 773 106 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 0 [0])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 773 772 774 106 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 774 773 775 106 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 1073741831 [0x40000007])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(insn 775 774 776 106 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 219 [ D.5548 ])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 40 [0x28])
+        (nil)))
+(insn 776 775 777 106 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 48 [0x30])
+        (nil)))
+(insn 777 776 778 106 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 220 [ D.5548 ])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 56 [0x38])
+        (nil)))
+(insn 778 777 779 106 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 221 [ D.5548 ])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 64 [0x40])
+        (nil)))
+(insn 779 778 780 106 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 72 [0x48])
+        (nil)))
+(insn 780 779 781 106 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 222 [ D.5548 ])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 80 [0x50])
+        (nil)))
+(insn 781 780 782 106 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 223 [ D.5548 ])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 88 [0x58])
+        (nil)))
+(insn 782 781 783 106 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2216 [0xfffffffffffff758])) [0 keyPassword+0 S8 A64])) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 96 [0x60])
+        (nil)))
+(insn 783 782 784 106 (set (reg:SI 38 r9)
+        (reg:SI 224 [ D.5548 ])) hmac.c:291 -1
+     (nil))
+(insn 784 783 785 106 (set (reg:SI 37 r8)
+        (const_int 341 [0x155])) hmac.c:291 -1
+     (nil))
+(insn 785 784 786 106 (set (reg:DI 2 cx)
+        (const_int 0 [0])) hmac.c:291 -1
+     (nil))
+(insn 786 785 787 106 (set (reg:DI 1 dx)
+        (reg:DI 326)) hmac.c:291 -1
+     (nil))
+(insn 787 786 788 106 (set (reg:DI 4 si)
+        (reg:DI 327)) hmac.c:291 -1
+     (nil))
+(insn 788 787 789 106 (set (reg:DI 5 di)
+        (reg/f:DI 225 [ D.5551 ])) hmac.c:291 -1
+     (nil))
+(insn 789 788 790 106 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:291 -1
+     (nil))
+(call_insn 790 789 791 106 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Execute") [flags 0x41]  <function_decl 0x7f161707ee58 TSS_Execute>) [0 TSS_Execute S1 A8])
+            (const_int 96 [0x60]))) hmac.c:291 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (expr_list:SI (use (reg:SI 37 r8))
+                            (expr_list:SI (use (reg:SI 38 r9))
+                                (nil)))))))))
+(insn 791 790 792 106 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 96 [0x60])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:291 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 792 791 793 106 (set (reg:SI 328)
+        (reg:SI 0 ax)) hmac.c:291 -1
+     (nil))
+(insn 793 792 794 106 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+        (reg:SI 328)) hmac.c:291 -1
+     (nil))
+(code_label 794 793 795 107 58 "" [1 uses])
+(note 795 794 796 107 [bb 107] NOTE_INSN_BASIC_BLOCK)
+(insn 796 795 797 107 (set (reg/f:DI 226 [ D.5551 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2288 [0xfffffffffffff710])) [0 tssContext+0 S8 A64])) hmac.c:302 -1
+     (nil))
+(insn 797 796 798 107 (set (reg:DI 5 di)
+        (reg/f:DI 226 [ D.5551 ])) hmac.c:302 -1
+     (nil))
+(call_insn 798 797 799 107 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Delete") [flags 0x41]  <function_decl 0x7f161707ed80 TSS_Delete>) [0 TSS_Delete S1 A8])
+            (const_int 0 [0]))) hmac.c:302 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 799 798 800 107 (set (reg:SI 329)
+        (reg:SI 0 ax)) hmac.c:302 -1
+     (nil))
+(insn 800 799 801 107 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2292 [0xfffffffffffff70c])) [0 rc1+0 S4 A32])
+        (reg:SI 329)) hmac.c:302 -1
+     (nil))
+(insn 801 800 802 107 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:303 -1
+     (nil))
+(jump_insn 802 801 803 107 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 806)
+            (pc))) hmac.c:303 -1
+     (nil)
+ -> 806)
+(note 803 802 804 108 [bb 108] NOTE_INSN_BASIC_BLOCK)
+(insn 804 803 805 108 (set (reg:SI 330)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2292 [0xfffffffffffff70c])) [0 rc1+0 S4 A32])) hmac.c:304 -1
+     (nil))
+(insn 805 804 806 108 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+        (reg:SI 330)) hmac.c:304 -1
+     (nil))
+(code_label 806 805 807 109 59 "" [1 uses])
+(note 807 806 808 109 [bb 109] NOTE_INSN_BASIC_BLOCK)
+(insn 808 807 809 109 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:307 -1
+     (nil))
+(jump_insn 809 808 810 109 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 825)
+            (pc))) hmac.c:307 -1
+     (nil)
+ -> 825)
+(note 810 809 811 110 [bb 110] NOTE_INSN_BASIC_BLOCK)
+(insn 811 810 812 110 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 hmacFilename+0 S8 A64])
+            (const_int 0 [0]))) hmac.c:307 -1
+     (nil))
+(jump_insn 812 811 813 110 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 825)
+            (pc))) hmac.c:307 -1
+     (nil)
+ -> 825)
+(note 813 812 814 111 [bb 111] NOTE_INSN_BASIC_BLOCK)
+(insn 814 813 815 111 (set (reg:HI 227 [ D.5549 ])
+        (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2208 [0xfffffffffffff760])) [0 out.outHMAC.t.size+0 S2 A64])) hmac.c:309 -1
+     (nil))
+(insn 815 814 816 111 (set (reg:DI 228 [ D.5544 ])
+        (zero_extend:DI (reg:HI 227 [ D.5549 ]))) hmac.c:308 -1
+     (nil))
+(insn 816 815 817 111 (set (reg:DI 331)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 hmacFilename+0 S8 A64])) hmac.c:308 -1
+     (nil))
+(insn 817 816 818 111 (parallel [
+            (set (reg:DI 332)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2208 [0xfffffffffffff760])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:308 -1
+     (nil))
+(insn 818 817 819 111 (parallel [
+            (set (reg:DI 333)
+                (plus:DI (reg:DI 332)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:308 -1
+     (nil))
+(insn 819 818 820 111 (set (reg:DI 1 dx)
+        (reg:DI 331)) hmac.c:308 -1
+     (nil))
+(insn 820 819 821 111 (set (reg:DI 4 si)
+        (reg:DI 228 [ D.5544 ])) hmac.c:308 -1
+     (nil))
+(insn 821 820 822 111 (set (reg:DI 5 di)
+        (reg:DI 333)) hmac.c:308 -1
+     (nil))
+(call_insn 822 821 823 111 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_WriteBinaryFile") [flags 0x41]  <function_decl 0x7f1617086a20 TSS_File_WriteBinaryFile>) [0 TSS_File_WriteBinaryFile S1 A8])
+            (const_int 0 [0]))) hmac.c:308 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 823 822 824 111 (set (reg:SI 334)
+        (reg:SI 0 ax)) hmac.c:308 -1
+     (nil))
+(insn 824 823 825 111 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+        (reg:SI 334)) hmac.c:308 -1
+     (nil))
+(code_label 825 824 826 112 60 "" [2 uses])
+(note 826 825 827 112 [bb 112] NOTE_INSN_BASIC_BLOCK)
+(insn 827 826 828 112 (set (reg/f:DI 229 [ D.5550 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2272 [0xfffffffffffff720])) [0 buffer+0 S8 A64])) hmac.c:312 -1
+     (nil))
+(insn 828 827 829 112 (set (reg:DI 5 di)
+        (reg/f:DI 229 [ D.5550 ])) hmac.c:312 -1
+     (nil))
+(call_insn 829 828 830 112 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f1617136e58 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) hmac.c:312 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 830 829 831 112 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) hmac.c:313 -1
+     (nil))
+(jump_insn 831 830 832 112 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 852)
+            (pc))) hmac.c:313 -1
+     (nil)
+ -> 852)
+(note 832 831 833 113 [bb 113] NOTE_INSN_BASIC_BLOCK)
+(insn 833 832 834 113 (set (reg:SI 230 [ D.5547 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f1616ee2090 verbose>) [0 verbose+0 S4 A32])) hmac.c:314 -1
+     (nil))
+(insn 834 833 835 113 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 230 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:314 -1
+     (nil))
+(jump_insn 835 834 836 113 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 840)
+            (pc))) hmac.c:314 -1
+     (nil)
+ -> 840)
+(note 836 835 837 114 [bb 114] NOTE_INSN_BASIC_BLOCK)
+(insn 837 836 838 114 (parallel [
+            (set (reg:DI 335)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2208 [0xfffffffffffff760])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:314 -1
+     (nil))
+(insn 838 837 839 114 (set (reg:DI 5 di)
+        (reg:DI 335)) hmac.c:314 -1
+     (nil))
+(call_insn 839 838 840 114 (call (mem:QI (symbol_ref:DI ("printHmac") [flags 0x3]  <function_decl 0x7f161708f0d8 printHmac>) [0 printHmac S1 A8])
+        (const_int 0 [0])) hmac.c:314 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 840 839 841 115 62 "" [1 uses])
+(note 841 840 842 115 [bb 115] NOTE_INSN_BASIC_BLOCK)
+(insn 842 841 843 115 (set (reg:SI 231 [ D.5547 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f1616ee2090 verbose>) [0 verbose+0 S4 A32])) hmac.c:315 -1
+     (nil))
+(insn 843 842 844 115 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 231 [ D.5547 ])
+            (const_int 0 [0]))) hmac.c:315 -1
+     (nil))
+(jump_insn 844 843 845 115 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 878)
+            (pc))) hmac.c:315 612 {*jcc_1}
+     (nil)
+ -> 878)
+(note 845 844 846 116 [bb 116] NOTE_INSN_BASIC_BLOCK)
+(insn 846 845 847 116 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC35") [flags 0x2]  <var_decl 0x7f1616cfaa20 *.LC35>)) hmac.c:315 -1
+     (nil))
+(call_insn 847 846 850 116 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:315 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 850 847 851 116 (set (pc)
+        (label_ref 878)) -1
+     (nil)
+ -> 878)
+(barrier 851 850 852)
+(code_label 852 851 853 118 61 "" [1 uses])
+(note 853 852 854 118 [bb 118] NOTE_INSN_BASIC_BLOCK)
+(insn 854 853 855 118 (set (reg:SI 336)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])) hmac.c:321 -1
+     (nil))
+(insn 855 854 856 118 (set (reg:SI 4 si)
+        (reg:SI 336)) hmac.c:321 -1
+     (nil))
+(insn 856 855 857 118 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC36") [flags 0x2]  <var_decl 0x7f1616cfaab0 *.LC36>)) hmac.c:321 -1
+     (nil))
+(insn 857 856 858 118 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:321 -1
+     (nil))
+(call_insn 858 857 859 118 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f1617120ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) hmac.c:321 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 859 858 860 118 (set (reg:SI 337)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])) hmac.c:322 -1
+     (nil))
+(insn 860 859 861 118 (parallel [
+            (set (reg:DI 338)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2248 [0xfffffffffffff738])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:322 -1
+     (nil))
+(insn 861 860 862 118 (parallel [
+            (set (reg:DI 339)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2256 [0xfffffffffffff730])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:322 -1
+     (nil))
+(insn 862 861 863 118 (parallel [
+            (set (reg:DI 340)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2264 [0xfffffffffffff728])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:322 -1
+     (nil))
+(insn 863 862 864 118 (set (reg:SI 2 cx)
+        (reg:SI 337)) hmac.c:322 -1
+     (nil))
+(insn 864 863 865 118 (set (reg:DI 1 dx)
+        (reg:DI 338)) hmac.c:322 -1
+     (nil))
+(insn 865 864 866 118 (set (reg:DI 4 si)
+        (reg:DI 339)) hmac.c:322 -1
+     (nil))
+(insn 866 865 867 118 (set (reg:DI 5 di)
+        (reg:DI 340)) hmac.c:322 -1
+     (nil))
+(call_insn 867 866 868 118 (call (mem:QI (symbol_ref:DI ("TSS_ResponseCode_toString") [flags 0x41]  <function_decl 0x7f1617086e58 TSS_ResponseCode_toString>) [0 TSS_ResponseCode_toString S1 A8])
+        (const_int 0 [0])) hmac.c:322 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 868 867 869 118 (set (reg/f:DI 232 [ D.5552 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2248 [0xfffffffffffff738])) [0 num+0 S8 A64])) hmac.c:323 -1
+     (nil))
+(insn 869 868 870 118 (set (reg/f:DI 233 [ D.5552 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2256 [0xfffffffffffff730])) [0 submsg+0 S8 A64])) hmac.c:323 -1
+     (nil))
+(insn 870 869 871 118 (set (reg/f:DI 234 [ D.5552 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2264 [0xfffffffffffff728])) [0 msg+0 S8 A64])) hmac.c:323 -1
+     (nil))
+(insn 871 870 872 118 (set (reg:DI 2 cx)
+        (reg/f:DI 232 [ D.5552 ])) hmac.c:323 -1
+     (nil))
+(insn 872 871 873 118 (set (reg:DI 1 dx)
+        (reg/f:DI 233 [ D.5552 ])) hmac.c:323 -1
+     (nil))
+(insn 873 872 874 118 (set (reg:DI 4 si)
+        (reg/f:DI 234 [ D.5552 ])) hmac.c:323 -1
+     (nil))
+(insn 874 873 875 118 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC37") [flags 0x2]  <var_decl 0x7f1616cfab40 *.LC37>)) hmac.c:323 -1
+     (nil))
+(insn 875 874 876 118 (set (reg:QI 0 ax)
+        (const_int 0 [0])) hmac.c:323 -1
+     (nil))
+(call_insn 876 875 877 118 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f1617120ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) hmac.c:323 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (nil)))))))
+(insn 877 876 878 118 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])
+        (const_int 1 [0x1])) hmac.c:324 -1
+     (nil))
+(code_label 878 877 879 119 64 "" [2 uses])
+(note 879 878 880 119 [bb 119] NOTE_INSN_BASIC_BLOCK)
+(insn 880 879 883 119 (set (reg:SI 235 [ D.5547 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2300 [0xfffffffffffff704])) [0 rc+0 S4 A32])) hmac.c:326 -1
+     (nil))
+(insn 883 880 887 119 (set (reg:SI 236 [ <retval> ])
+        (reg:SI 235 [ D.5547 ])) -1
+     (nil))
+(insn 887 883 888 119 (set (reg/i:SI 0 ax)
+        (reg:SI 236 [ <retval> ])) hmac.c:327 -1
+     (nil))
+(insn 888 887 889 119 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.5553+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) hmac.c:327 -1
+     (nil))
+(jump_insn 889 888 895 119 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 892)
+            (pc))) hmac.c:327 -1
+     (nil)
+ -> 892)
+(note 895 889 890 122 [bb 122] NOTE_INSN_BASIC_BLOCK)
+(call_insn 890 895 891 122 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f161708f510 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) hmac.c:327 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 891 890 892)
+(code_label 892 891 896 123 66 "" [1 uses])
+(note 896 892 893 123 [bb 123] NOTE_INSN_BASIC_BLOCK)
+(insn 893 896 0 123 (use (reg/i:SI 0 ax)) hmac.c:327 -1
+     (nil))
+
+;; Function printHmac (printHmac, funcdef_no=3, decl_uid=5215, cgraph_uid=3, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 out+0 S8 A64])
+        (reg:DI 5 di [ out ])) hmac.c:330 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 out+0 S8 A64])) hmac.c:331 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:HI 87 [ D.5594 ])
+        (mem/j:HI (reg/f:DI 90) [0 out_2(D)->outHMAC.t.size+0 S2 A16])) hmac.c:331 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 88 [ D.5595 ])
+        (zero_extend:SI (reg:HI 87 [ D.5594 ]))) hmac.c:331 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 out+0 S8 A64])) hmac.c:331 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg/f:DI 89 [ D.5596 ])
+                (plus:DI (reg/f:DI 91)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) hmac.c:331 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 out+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 11 10 12 2 (set (reg:SI 1 dx)
+        (reg:SI 88 [ D.5595 ])) hmac.c:331 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 4 si)
+        (reg/f:DI 89 [ D.5596 ])) hmac.c:331 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC38") [flags 0x2]  <var_decl 0x7f1616d26990 *.LC38>)) hmac.c:331 -1
+     (nil))
+(call_insn 14 13 17 2 (call (mem:QI (symbol_ref:DI ("TSS_PrintAll") [flags 0x41]  <function_decl 0x7f161704d948 TSS_PrintAll>) [0 TSS_PrintAll S1 A8])
+        (const_int 0 [0])) hmac.c:331 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 17 14 0 2 (const_int 0 [0]) hmac.c:332 -1
+     (nil))
+
+;; Function printUsage (printUsage, funcdef_no=4, decl_uid=5213, cgraph_uid=4, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) hmac.c:336 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f1617123000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) hmac.c:336 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC39") [flags 0x2]  <var_decl 0x7f1616d26cf0 *.LC39>)) hmac.c:337 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:337 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) hmac.c:338 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f1617123000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) hmac.c:338 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC40") [flags 0x2]  <var_decl 0x7f1616d26d80 *.LC40>)) hmac.c:339 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:339 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) hmac.c:340 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f1617123000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) hmac.c:340 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC41") [flags 0x2]  <var_decl 0x7f1616d26e10 *.LC41>)) hmac.c:341 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:341 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC42") [flags 0x2]  <var_decl 0x7f1616d26ea0 *.LC42>)) hmac.c:342 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:342 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC43") [flags 0x2]  <var_decl 0x7f1616d26f30 *.LC43>)) hmac.c:343 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:343 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC44") [flags 0x2]  <var_decl 0x7f1616d2e000 *.LC44>)) hmac.c:344 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:344 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 23 22 24 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC45") [flags 0x2]  <var_decl 0x7f1616d2e090 *.LC45>)) hmac.c:345 -1
+     (nil))
+(call_insn 24 23 25 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:345 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC46") [flags 0x2]  <var_decl 0x7f1616d2e120 *.LC46>)) hmac.c:346 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:346 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 27 26 28 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) hmac.c:347 -1
+     (nil))
+(call_insn 28 27 29 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f1617123000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) hmac.c:347 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 29 28 30 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC47") [flags 0x2]  <var_decl 0x7f1616d2e1b0 *.LC47>)) hmac.c:348 -1
+     (nil))
+(call_insn 30 29 31 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:348 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 31 30 32 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC48") [flags 0x2]  <var_decl 0x7f1616d2e240 *.LC48>)) hmac.c:349 -1
+     (nil))
+(call_insn 32 31 33 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:349 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 33 32 34 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC49") [flags 0x2]  <var_decl 0x7f1616d2e2d0 *.LC49>)) hmac.c:350 -1
+     (nil))
+(call_insn 34 33 35 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:350 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 35 34 36 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC50") [flags 0x2]  <var_decl 0x7f1616d2e360 *.LC50>)) hmac.c:351 -1
+     (nil))
+(call_insn 36 35 37 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f1617123360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) hmac.c:351 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 37 36 38 2 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) hmac.c:352 -1
+     (nil))
+(call_insn 38 37 39 2 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7f1617136000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) hmac.c:352 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 39 38 0)

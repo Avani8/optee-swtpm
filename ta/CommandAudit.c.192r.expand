@@ -1,0 +1,1237 @@
+
+;; Function CommandAuditPreInstall_Init (CommandAuditPreInstall_Init, funcdef_no=2, decl_uid=11913, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 1 dx)
+        (const_int 15 [0xf])) CommandAudit.c:79 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 4 si)
+        (const_int 0 [0])) CommandAudit.c:79 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                (const_int 890 [0x37a])))) CommandAudit.c:79 -1
+     (nil))
+(call_insn 8 7 9 2 (call (mem:QI (symbol_ref:DI ("MemorySet") [flags 0x41]  <function_decl 0x7fbe78197870 MemorySet>) [0 MemorySet S1 A8])
+        (const_int 0 [0])) CommandAudit.c:79 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 320 [0x140])) CommandAudit.c:81 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CommandAuditSet") [flags 0x3]  <function_decl 0x7fbe7818ebd0 CommandAuditSet>) [0 CommandAuditSet S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:81 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                    (const_int 906 [0x38a]))) [0 gp.auditHashAlg+0 S2 A16])
+        (const_int 12 [0xc])) CommandAudit.c:84 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                    (const_int 912 [0x390]))) [0 gp.auditCounter+0 S8 A64])
+        (const_int 0 [0])) CommandAudit.c:86 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                (const_int 890 [0x37a])))) CommandAudit.c:88 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 4 si)
+        (const_int 15 [0xf])) CommandAudit.c:88 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 5 di)
+        (const_int 890 [0x37a])) CommandAudit.c:88 -1
+     (nil))
+(call_insn 16 15 17 2 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fbe780e3bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) CommandAudit.c:88 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 17 16 18 2 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                (const_int 906 [0x38a])))) CommandAudit.c:89 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 4 si)
+        (const_int 2 [0x2])) CommandAudit.c:89 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 5 di)
+        (const_int 906 [0x38a])) CommandAudit.c:89 -1
+     (nil))
+(call_insn 20 19 21 2 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fbe780e3bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) CommandAudit.c:89 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 21 20 22 2 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                (const_int 912 [0x390])))) CommandAudit.c:90 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 4 si)
+        (const_int 8 [0x8])) CommandAudit.c:90 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 5 di)
+        (const_int 912 [0x390])) CommandAudit.c:90 -1
+     (nil))
+(call_insn 24 23 29 2 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fbe780e3bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) CommandAudit.c:90 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 29 24 0 2 (const_int 0 [0]) CommandAudit.c:91 -1
+     (nil))
+
+;; Function CommandAuditStartup (CommandAuditStartup, funcdef_no=3, decl_uid=11915, cgraph_uid=3, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->6 redirected to 7
+Edge 4->6 redirected to 7
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 type+0 S4 A32])
+        (reg:SI 5 di [ type ])) CommandAudit.c:99 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 type+0 S4 A32])
+            (const_int 1 [0x1]))) CommandAudit.c:100 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 15)
+            (pc))) CommandAudit.c:100 612 {*jcc_1}
+     (nil)
+ -> 15)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 type+0 S4 A32])
+            (const_int 2 [0x2]))) CommandAudit.c:100 -1
+     (nil))
+(jump_insn 10 9 11 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 15)
+            (pc))) CommandAudit.c:100 612 {*jcc_1}
+     (nil)
+ -> 15)
+(note 11 10 12 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 12 11 15 5 (set (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fbe780bc090 gr>)
+                    (const_int 216 [0xd8]))) [0 gr.commandAuditDigest.t.size+0 S2 A64])
+        (const_int 0 [0])) CommandAudit.c:103 -1
+     (nil))
+(code_label 15 12 16 7 3 "" [2 uses])
+(note 16 15 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function CommandAuditSet (CommandAuditSet, funcdef_no=4, decl_uid=11917, cgraph_uid=4, symbol_order=4)
+
+Partition 0: size 2 align 2
+	commandIndex_7
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 40.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])
+        (reg:SI 5 di [ commandCode ])) CommandAudit.c:120 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 92)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])) CommandAudit.c:121 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 5 di)
+        (reg:SI 92)) CommandAudit.c:121 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CommandCodeToCommandIndex") [flags 0x41]  <function_decl 0x7fbe780fca20 CommandCodeToCommandIndex>) [0 CommandCodeToCommandIndex S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:121 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:HI 93)
+        (reg:HI 0 ax)) CommandAudit.c:121 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16])
+        (reg:HI 93)) CommandAudit.c:121 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16])
+            (const_int -1 [0xffffffffffffffff]))) CommandAudit.c:123 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) CommandAudit.c:123 -1
+     (nil)
+ -> 34)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])
+            (const_int 325 [0x145]))) CommandAudit.c:126 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) CommandAudit.c:126 -1
+     (nil)
+ -> 34)
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 5 (set (reg:SI 88 [ D.12962 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16]))) CommandAudit.c:128 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:SI 1 dx)
+        (const_int 15 [0xf])) CommandAudit.c:128 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:DI 4 si)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                (const_int 890 [0x37a])))) CommandAudit.c:128 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.12962 ])) CommandAudit.c:128 -1
+     (nil))
+(call_insn 21 20 22 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TestBit") [flags 0x41]  <function_decl 0x7fbe78193bd0 TestBit>) [0 TestBit S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:128 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 22 21 23 5 (set (reg:SI 89 [ D.12963 ])
+        (reg:SI 0 ax)) CommandAudit.c:128 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.12963 ])
+            (const_int 0 [0]))) CommandAudit.c:128 -1
+     (nil))
+(jump_insn 24 23 25 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) CommandAudit.c:128 -1
+     (nil)
+ -> 34)
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 6 (set (reg:SI 90 [ D.12962 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16]))) CommandAudit.c:131 -1
+     (nil))
+(insn 27 26 28 6 (set (reg:SI 1 dx)
+        (const_int 15 [0xf])) CommandAudit.c:131 -1
+     (nil))
+(insn 28 27 29 6 (set (reg:DI 4 si)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                (const_int 890 [0x37a])))) CommandAudit.c:131 -1
+     (nil))
+(insn 29 28 30 6 (set (reg:SI 5 di)
+        (reg:SI 90 [ D.12962 ])) CommandAudit.c:131 -1
+     (nil))
+(call_insn 30 29 31 6 (call (mem:QI (symbol_ref:DI ("SetBit") [flags 0x41]  <function_decl 0x7fbe78193ca8 SetBit>) [0 SetBit S1 A8])
+        (const_int 0 [0])) CommandAudit.c:131 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 31 30 32 6 (set (reg:SI 87 [ D.12961 ])
+        (const_int 1 [0x1])) CommandAudit.c:132 -1
+     (nil))
+(jump_insn 32 31 33 6 (set (pc)
+        (label_ref 37)) CommandAudit.c:132 -1
+     (nil)
+ -> 37)
+(barrier 33 32 34)
+(code_label 34 33 35 7 7 "" [3 uses])
+(note 35 34 36 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 7 (set (reg:SI 87 [ D.12961 ])
+        (const_int 0 [0])) CommandAudit.c:137 -1
+     (nil))
+(code_label 37 36 38 8 8 "" [1 uses])
+(note 38 37 39 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 43 8 (set (reg:SI 91 [ <retval> ])
+        (reg:SI 87 [ D.12961 ])) -1
+     (nil))
+(insn 43 39 44 8 (set (reg/i:SI 0 ax)
+        (reg:SI 91 [ <retval> ])) CommandAudit.c:138 -1
+     (nil))
+(insn 44 43 0 8 (use (reg/i:SI 0 ax)) CommandAudit.c:138 -1
+     (nil))
+
+;; Function CommandAuditClear (CommandAuditClear, funcdef_no=5, decl_uid=11919, cgraph_uid=5, symbol_order=5)
+
+Partition 0: size 2 align 2
+	commandIndex_7
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 40.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])
+        (reg:SI 5 di [ commandCode ])) CommandAudit.c:152 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 92)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])) CommandAudit.c:153 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 5 di)
+        (reg:SI 92)) CommandAudit.c:153 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CommandCodeToCommandIndex") [flags 0x41]  <function_decl 0x7fbe780fca20 CommandCodeToCommandIndex>) [0 CommandCodeToCommandIndex S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:153 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:HI 93)
+        (reg:HI 0 ax)) CommandAudit.c:153 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16])
+        (reg:HI 93)) CommandAudit.c:153 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16])
+            (const_int -1 [0xffffffffffffffff]))) CommandAudit.c:155 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) CommandAudit.c:155 -1
+     (nil)
+ -> 34)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])
+            (const_int 320 [0x140]))) CommandAudit.c:159 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) CommandAudit.c:159 -1
+     (nil)
+ -> 34)
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 5 (set (reg:SI 88 [ D.12965 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16]))) CommandAudit.c:161 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:SI 1 dx)
+        (const_int 15 [0xf])) CommandAudit.c:161 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:DI 4 si)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                (const_int 890 [0x37a])))) CommandAudit.c:161 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.12965 ])) CommandAudit.c:161 -1
+     (nil))
+(call_insn 21 20 22 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TestBit") [flags 0x41]  <function_decl 0x7fbe78193bd0 TestBit>) [0 TestBit S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:161 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 22 21 23 5 (set (reg:SI 89 [ D.12966 ])
+        (reg:SI 0 ax)) CommandAudit.c:161 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.12966 ])
+            (const_int 0 [0]))) CommandAudit.c:161 -1
+     (nil))
+(jump_insn 24 23 25 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) CommandAudit.c:161 -1
+     (nil)
+ -> 34)
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 6 (set (reg:SI 90 [ D.12965 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16]))) CommandAudit.c:164 -1
+     (nil))
+(insn 27 26 28 6 (set (reg:SI 1 dx)
+        (const_int 15 [0xf])) CommandAudit.c:164 -1
+     (nil))
+(insn 28 27 29 6 (set (reg:DI 4 si)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                (const_int 890 [0x37a])))) CommandAudit.c:164 -1
+     (nil))
+(insn 29 28 30 6 (set (reg:SI 5 di)
+        (reg:SI 90 [ D.12965 ])) CommandAudit.c:164 -1
+     (nil))
+(call_insn 30 29 31 6 (call (mem:QI (symbol_ref:DI ("ClearBit") [flags 0x41]  <function_decl 0x7fbe78193d80 ClearBit>) [0 ClearBit S1 A8])
+        (const_int 0 [0])) CommandAudit.c:164 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 31 30 32 6 (set (reg:SI 87 [ D.12964 ])
+        (const_int 1 [0x1])) CommandAudit.c:165 -1
+     (nil))
+(jump_insn 32 31 33 6 (set (pc)
+        (label_ref 37)) CommandAudit.c:165 -1
+     (nil)
+ -> 37)
+(barrier 33 32 34)
+(code_label 34 33 35 7 10 "" [3 uses])
+(note 35 34 36 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 7 (set (reg:SI 87 [ D.12964 ])
+        (const_int 0 [0])) CommandAudit.c:170 -1
+     (nil))
+(code_label 37 36 38 8 11 "" [1 uses])
+(note 38 37 39 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 43 8 (set (reg:SI 91 [ <retval> ])
+        (reg:SI 87 [ D.12964 ])) -1
+     (nil))
+(insn 43 39 44 8 (set (reg/i:SI 0 ax)
+        (reg:SI 91 [ <retval> ])) CommandAudit.c:171 -1
+     (nil))
+(insn 44 43 0 8 (use (reg/i:SI 0 ax)) CommandAudit.c:171 -1
+     (nil))
+
+;; Function CommandAuditIsRequired (CommandAuditIsRequired, funcdef_no=6, decl_uid=11921, cgraph_uid=6, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 16.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 90)
+        (reg:SI 5 di [ commandIndex ])) CommandAudit.c:181 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 90) 0)) CommandAudit.c:181 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.12967 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandAudit.c:183 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 1 dx)
+        (const_int 15 [0xf])) CommandAudit.c:183 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                (const_int 890 [0x37a])))) CommandAudit.c:183 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (reg:SI 87 [ D.12967 ])) CommandAudit.c:183 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TestBit") [flags 0x41]  <function_decl 0x7fbe78193bd0 TestBit>) [0 TestBit S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:183 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 12 11 15 2 (set (reg:SI 88 [ D.12968 ])
+        (reg:SI 0 ax)) CommandAudit.c:183 -1
+     (nil))
+(insn 15 12 19 2 (set (reg:SI 89 [ <retval> ])
+        (reg:SI 88 [ D.12968 ])) CommandAudit.c:183 -1
+     (nil))
+(insn 19 15 20 2 (set (reg/i:SI 0 ax)
+        (reg:SI 89 [ <retval> ])) CommandAudit.c:184 -1
+     (nil))
+(insn 20 19 0 2 (use (reg/i:SI 0 ax)) CommandAudit.c:184 -1
+     (nil))
+
+;; Function CommandAuditCapGetCCList (CommandAuditCapGetCCList, funcdef_no=7, decl_uid=11925, cgraph_uid=7, symbol_order=7)
+
+Partition 2: size 4 align 4
+	cc_4
+Partition 1: size 2 align 2
+	commandIndex_3
+Partition 0: size 1 align 1
+	more_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 15 into block 14...
+Merged blocks 14 and 15.
+Merged 14 and 15 without moving.
+Removing jump 88.
+Merging block 16 into block 14...
+Merged blocks 14 and 16.
+Merged 14 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])
+        (reg:SI 5 di [ commandCode ])) CommandAudit.c:197 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 count+0 S4 A32])
+        (reg:SI 4 si [ count ])) CommandAudit.c:197 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])
+        (reg:DI 1 dx [ commandList ])) CommandAudit.c:197 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -7 [0xfffffffffffffff9])) [0 more+0 S1 A8])
+        (const_int 0 [0])) CommandAudit.c:198 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandAudit.c:201 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/j:SI (reg/f:DI 101) [0 commandList_10(D)->count+0 S4 A32])
+        (const_int 0 [0])) CommandAudit.c:201 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 count+0 S4 A32])
+            (const_int 254 [0xfe]))) CommandAudit.c:203 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 15)
+            (pc))) CommandAudit.c:203 -1
+     (nil)
+ -> 15)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 count+0 S4 A32])
+        (const_int 254 [0xfe])) CommandAudit.c:203 -1
+     (nil))
+(code_label 15 14 16 5 15 "" [1 uses])
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 5 (set (reg:SI 102)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])) CommandAudit.c:207 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:SI 5 di)
+        (reg:SI 102)) CommandAudit.c:207 -1
+     (nil))
+(call_insn 19 18 20 5 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("GetClosestCommandIndex") [flags 0x41]  <function_decl 0x7fbe780fc948 GetClosestCommandIndex>) [0 GetClosestCommandIndex S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:207 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 20 19 21 5 (set (reg:HI 103)
+        (reg:HI 0 ax)) CommandAudit.c:207 -1
+     (nil))
+(insn 21 20 22 5 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -6 [0xfffffffffffffffa])) [0 commandIndex+0 S2 A16])
+        (reg:HI 103)) CommandAudit.c:207 -1
+     (nil))
+(jump_insn 22 21 23 5 (set (pc)
+        (label_ref 77)) CommandAudit.c:207 -1
+     (nil)
+ -> 77)
+(barrier 23 22 79)
+(code_label 79 23 24 6 21 "" [1 uses])
+(note 24 79 25 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 26 6 (set (reg:SI 87 [ D.12969 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [0 commandIndex+0 S2 A16]))) CommandAudit.c:211 -1
+     (nil))
+(insn 26 25 27 6 (set (reg:SI 5 di)
+        (reg:SI 87 [ D.12969 ])) CommandAudit.c:211 -1
+     (nil))
+(call_insn 27 26 28 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CommandAuditIsRequired") [flags 0x3]  <function_decl 0x7fbe7818ed80 CommandAuditIsRequired>) [0 CommandAuditIsRequired S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:211 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 28 27 29 6 (set (reg:SI 88 [ D.12969 ])
+        (reg:SI 0 ax)) CommandAudit.c:211 -1
+     (nil))
+(insn 29 28 30 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.12969 ])
+            (const_int 0 [0]))) CommandAudit.c:211 -1
+     (nil))
+(jump_insn 30 29 31 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 70)
+            (pc))) CommandAudit.c:211 -1
+     (nil)
+ -> 70)
+(note 31 30 32 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 7 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandAudit.c:213 -1
+     (nil))
+(insn 33 32 34 7 (set (reg:SI 90 [ D.12970 ])
+        (mem/j:SI (reg/f:DI 104) [0 commandList_10(D)->count+0 S4 A32])) CommandAudit.c:213 -1
+     (nil))
+(insn 34 33 35 7 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 90 [ D.12970 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 count+0 S4 A32]))) CommandAudit.c:213 -1
+     (nil))
+(jump_insn 35 34 36 7 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 65)
+            (pc))) CommandAudit.c:213 -1
+     (nil)
+ -> 65)
+(note 36 35 37 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 8 (set (reg:SI 91 [ D.12969 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [0 commandIndex+0 S2 A16]))) CommandAudit.c:217 -1
+     (nil))
+(insn 38 37 39 8 (set (reg:DI 105)
+        (sign_extend:DI (reg:SI 91 [ D.12969 ]))) CommandAudit.c:217 -1
+     (nil))
+(insn 39 38 40 8 (set (reg:SI 92 [ D.12970 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 105)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x40]  <var_decl 0x7fbe780bcd80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandAudit.c:217 -1
+     (nil))
+(insn 40 39 41 8 (parallel [
+            (set (reg:SI 106)
+                (and:SI (reg:SI 92 [ D.12970 ])
+                    (const_int 65535 [0xffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandAudit.c:217 -1
+     (nil))
+(insn 41 40 42 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 cc+0 S4 A32])
+        (reg:SI 106)) CommandAudit.c:217 -1
+     (nil))
+(insn 42 41 43 8 (set (reg:SI 93 [ D.12969 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [0 commandIndex+0 S2 A16]))) CommandAudit.c:219 -1
+     (nil))
+(insn 43 42 44 8 (set (reg:DI 107)
+        (sign_extend:DI (reg:SI 93 [ D.12969 ]))) CommandAudit.c:219 -1
+     (nil))
+(insn 44 43 45 8 (set (reg:SI 94 [ D.12970 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 107)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x40]  <var_decl 0x7fbe780bcd80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandAudit.c:219 -1
+     (nil))
+(insn 45 44 46 8 (parallel [
+            (set (reg:SI 95 [ D.12970 ])
+                (and:SI (reg:SI 94 [ D.12970 ])
+                    (const_int 536870912 [0x20000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandAudit.c:219 -1
+     (nil))
+(insn 46 45 47 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 95 [ D.12970 ])
+            (const_int 0 [0]))) CommandAudit.c:219 -1
+     (nil))
+(jump_insn 47 46 48 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 50)
+            (pc))) CommandAudit.c:219 -1
+     (nil)
+ -> 50)
+(note 48 47 49 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 9 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 cc+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 cc+0 S4 A32])
+                    (const_int 536870912 [0x20000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandAudit.c:220 -1
+     (nil))
+(code_label 50 49 51 10 19 "" [1 uses])
+(note 51 50 52 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 10 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandAudit.c:221 -1
+     (nil))
+(insn 53 52 54 10 (set (reg:SI 96 [ D.12970 ])
+        (mem/j:SI (reg/f:DI 108) [0 commandList_10(D)->count+0 S4 A32])) CommandAudit.c:221 -1
+     (nil))
+(insn 54 53 55 10 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandAudit.c:221 -1
+     (nil))
+(insn 55 54 56 10 (set (reg:DI 110)
+        (zero_extend:DI (reg:SI 96 [ D.12970 ]))) CommandAudit.c:221 -1
+     (nil))
+(insn 56 55 57 10 (set (reg:SI 111)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 cc+0 S4 A32])) CommandAudit.c:221 -1
+     (nil))
+(insn 57 56 58 10 (set (mem/j:SI (plus:DI (plus:DI (mult:DI (reg:DI 110)
+                        (const_int 4 [0x4]))
+                    (reg/f:DI 109))
+                (const_int 4 [0x4])) [0 commandList_10(D)->commandCodes S4 A32])
+        (reg:SI 111)) CommandAudit.c:221 -1
+     (nil))
+(insn 58 57 59 10 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandAudit.c:222 -1
+     (nil))
+(insn 59 58 60 10 (set (reg:SI 97 [ D.12970 ])
+        (mem/j:SI (reg/f:DI 112) [0 commandList_10(D)->count+0 S4 A32])) CommandAudit.c:222 -1
+     (nil))
+(insn 60 59 61 10 (parallel [
+            (set (reg:SI 98 [ D.12970 ])
+                (plus:SI (reg:SI 97 [ D.12970 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandAudit.c:222 -1
+     (nil))
+(insn 61 60 62 10 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandAudit.c:222 -1
+     (nil))
+(insn 62 61 63 10 (set (mem/j:SI (reg/f:DI 113) [0 commandList_10(D)->count+0 S4 A32])
+        (reg:SI 98 [ D.12970 ])) CommandAudit.c:222 -1
+     (nil))
+(jump_insn 63 62 64 10 (set (pc)
+        (label_ref 70)) -1
+     (nil)
+ -> 70)
+(barrier 64 63 65)
+(code_label 65 64 66 11 18 "" [1 uses])
+(note 66 65 67 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 67 66 68 11 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -7 [0xfffffffffffffff9])) [0 more+0 S1 A8])
+        (const_int 1 [0x1])) CommandAudit.c:228 -1
+     (nil))
+(jump_insn 68 67 69 11 (set (pc)
+        (label_ref 82)) CommandAudit.c:229 -1
+     (nil)
+ -> 82)
+(barrier 69 68 70)
+(code_label 70 69 71 12 17 "" [2 uses])
+(note 71 70 72 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 12 (set (reg:SI 89 [ D.12969 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [0 commandIndex+0 S2 A16]))) CommandAudit.c:209 -1
+     (nil))
+(insn 73 72 74 12 (set (reg:SI 5 di)
+        (reg:SI 89 [ D.12969 ])) CommandAudit.c:209 -1
+     (nil))
+(call_insn 74 73 75 12 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("GetNextCommandIndex") [flags 0x41]  <function_decl 0x7fbe780fcaf8 GetNextCommandIndex>) [0 GetNextCommandIndex S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:209 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 75 74 76 12 (set (reg:HI 114)
+        (reg:HI 0 ax)) CommandAudit.c:209 -1
+     (nil))
+(insn 76 75 77 12 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -6 [0xfffffffffffffffa])) [0 commandIndex+0 S2 A16])
+        (reg:HI 114)) CommandAudit.c:209 -1
+     (nil))
+(code_label 77 76 78 13 16 "" [1 uses])
+(note 78 77 80 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 80 78 81 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [0 commandIndex+0 S2 A16])
+            (const_int -1 [0xffffffffffffffff]))) CommandAudit.c:207 -1
+     (nil))
+(jump_insn 81 80 82 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 79)
+            (pc))) CommandAudit.c:207 -1
+     (nil)
+ -> 79)
+(code_label 82 81 83 14 20 "" [1 uses])
+(note 83 82 84 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 84 83 87 14 (set (reg:QI 99 [ D.12971 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -7 [0xfffffffffffffff9])) [0 more+0 S1 A8])) CommandAudit.c:233 -1
+     (nil))
+(insn 87 84 91 14 (set (reg:QI 100 [ <retval> ])
+        (reg:QI 99 [ D.12971 ])) CommandAudit.c:233 -1
+     (nil))
+(insn 91 87 92 14 (set (reg/i:QI 0 ax)
+        (reg:QI 100 [ <retval> ])) CommandAudit.c:234 -1
+     (nil))
+(insn 92 91 0 14 (use (reg/i:QI 0 ax)) CommandAudit.c:234 -1
+     (nil))
+
+;; Function CommandAuditGetDigest (CommandAuditGetDigest, funcdef_no=8, decl_uid=11927, cgraph_uid=8, symbol_order=8)
+
+Partition 2: size 232 align 16
+	hashState
+Partition 1: size 4 align 4
+	commandCode_17
+Partition 0: size 2 align 2
+	commandIndex_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+Merging block 10 into block 8...
+Merged blocks 8 and 10.
+Merged 8 and 10 without moving.
+Merging block 11 into block 8...
+Merged blocks 8 and 11.
+Merged 8 and 11 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -264 [0xfffffffffffffef8])) [0 digest+0 S8 A64])
+        (reg:DI 5 di [ digest ])) CommandAudit.c:243 -1
+     (nil))
+(note 3 2 4 2 NOTE_INSN_FUNCTION_BEG)
+(insn 4 3 7 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.12976+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) CommandAudit.c:243 -1
+     (nil))
+(insn 7 4 8 2 (set (reg:HI 87 [ D.12972 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fbe7807aea0 gp>)
+                    (const_int 906 [0x38a]))) [0 gp.auditHashAlg+0 S2 A16])) CommandAudit.c:248 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 88 [ D.12973 ])
+        (zero_extend:SI (reg:HI 87 [ D.12972 ]))) CommandAudit.c:248 -1
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg:DI 96)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandAudit.c:248 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 4 si)
+        (reg:SI 88 [ D.12973 ])) CommandAudit.c:248 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 96)) CommandAudit.c:248 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHashStart") [flags 0x41]  <function_decl 0x7fbe781b6510 CryptHashStart>) [0 CryptHashStart S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:248 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 13 12 14 2 (set (reg:HI 89 [ D.12972 ])
+        (reg:HI 0 ax)) CommandAudit.c:248 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -264 [0xfffffffffffffef8])) [0 digest+0 S8 A64])) CommandAudit.c:248 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/j:HI (reg/f:DI 97) [0 digest_9(D)->t.size+0 S2 A16])
+        (reg:HI 89 [ D.12972 ])) CommandAudit.c:248 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -246 [0xffffffffffffff0a])) [0 commandIndex+0 S2 A16])
+        (const_int 0 [0])) CommandAudit.c:250 -1
+     (nil))
+(jump_insn 17 16 18 2 (set (pc)
+        (label_ref 43)) CommandAudit.c:250 -1
+     (nil)
+ -> 43)
+(barrier 18 17 45)
+(code_label 45 18 19 4 26 "" [1 uses])
+(note 19 45 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 4 (set (reg:SI 90 [ D.12973 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -246 [0xffffffffffffff0a])) [0 commandIndex+0 S2 A16]))) CommandAudit.c:252 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 5 di)
+        (reg:SI 90 [ D.12973 ])) CommandAudit.c:252 -1
+     (nil))
+(call_insn 22 21 23 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CommandAuditIsRequired") [flags 0x3]  <function_decl 0x7fbe7818ed80 CommandAuditIsRequired>) [0 CommandAuditIsRequired S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:252 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 23 22 24 4 (set (reg:SI 91 [ D.12973 ])
+        (reg:SI 0 ax)) CommandAudit.c:252 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.12973 ])
+            (const_int 0 [0]))) CommandAudit.c:252 -1
+     (nil))
+(jump_insn 25 24 26 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 38)
+            (pc))) CommandAudit.c:252 -1
+     (nil)
+ -> 38)
+(note 26 25 27 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 5 (set (reg:SI 92 [ D.12973 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -246 [0xffffffffffffff0a])) [0 commandIndex+0 S2 A16]))) CommandAudit.c:254 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:SI 5 di)
+        (reg:SI 92 [ D.12973 ])) CommandAudit.c:254 -1
+     (nil))
+(call_insn 29 28 30 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("GetCommandCode") [flags 0x41]  <function_decl 0x7fbe780fcbd0 GetCommandCode>) [0 GetCommandCode S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:254 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 30 29 31 5 (set (reg:SI 98)
+        (reg:SI 0 ax)) CommandAudit.c:254 -1
+     (nil))
+(insn 31 30 32 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -244 [0xffffffffffffff0c])) [0 commandCode+0 S4 A32])
+        (reg:SI 98)) CommandAudit.c:254 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:DI 93 [ D.12974 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -244 [0xffffffffffffff0c])) [0 commandCode+0 S4 A32]))) CommandAudit.c:255 -1
+     (nil))
+(insn 33 32 34 5 (parallel [
+            (set (reg:DI 99)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandAudit.c:255 -1
+     (nil))
+(insn 34 33 35 5 (set (reg:DI 1 dx)
+        (reg:DI 93 [ D.12974 ])) CommandAudit.c:255 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:SI 4 si)
+        (const_int 4 [0x4])) CommandAudit.c:255 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:DI 5 di)
+        (reg:DI 99)) CommandAudit.c:255 -1
+     (nil))
+(call_insn 37 36 38 5 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdateInt") [flags 0x41]  <function_decl 0x7fbe781b6a20 CryptDigestUpdateInt>) [0 CryptDigestUpdateInt S1 A8])
+        (const_int 0 [0])) CommandAudit.c:255 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(code_label 38 37 39 6 25 "" [1 uses])
+(note 39 38 40 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 6 (set (reg:HI 94 [ D.12972 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -246 [0xffffffffffffff0a])) [0 commandIndex+0 S2 A16])) CommandAudit.c:250 -1
+     (nil))
+(insn 41 40 42 6 (parallel [
+            (set (reg:HI 100)
+                (plus:HI (reg:HI 94 [ D.12972 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandAudit.c:250 -1
+     (nil))
+(insn 42 41 43 6 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -246 [0xffffffffffffff0a])) [0 commandIndex+0 S2 A16])
+        (reg:HI 100)) CommandAudit.c:250 -1
+     (nil))
+(code_label 43 42 44 7 24 "" [1 uses])
+(note 44 43 46 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 46 44 47 7 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -246 [0xffffffffffffff0a])) [0 commandIndex+0 S2 A16])
+            (const_int 112 [0x70]))) CommandAudit.c:250 -1
+     (nil))
+(jump_insn 47 46 48 7 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) CommandAudit.c:250 -1
+     (nil)
+ -> 45)
+(note 48 47 49 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 8 (set (reg/f:DI 95 [ D.12975 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -264 [0xfffffffffffffef8])) [0 digest+0 S8 A64])) CommandAudit.c:259 -1
+     (nil))
+(insn 50 49 51 8 (parallel [
+            (set (reg:DI 101)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandAudit.c:259 -1
+     (nil))
+(insn 51 50 52 8 (set (reg:DI 4 si)
+        (reg/f:DI 95 [ D.12975 ])) CommandAudit.c:259 -1
+     (nil))
+(insn 52 51 53 8 (set (reg:DI 5 di)
+        (reg:DI 101)) CommandAudit.c:259 -1
+     (nil))
+(call_insn 53 52 66 8 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHashEnd2B") [flags 0x41]  <function_decl 0x7fbe781b6948 CryptHashEnd2B>) [0 CryptHashEnd2B S1 A8])
+            (const_int 0 [0]))) CommandAudit.c:259 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 66 53 58 8 (const_int 0 [0]) CommandAudit.c:260 -1
+     (nil))
+(insn 58 66 59 8 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.12976+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) CommandAudit.c:261 -1
+     (nil))
+(jump_insn 59 58 64 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) CommandAudit.c:261 -1
+     (nil)
+ -> 62)
+(note 64 59 60 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(call_insn 60 64 61 12 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7fbe781fcca8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) CommandAudit.c:261 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 61 60 62)
+(code_label 62 61 65 13 28 "" [1 uses])
+(note 65 62 0 13 [bb 13] NOTE_INSN_BASIC_BLOCK)

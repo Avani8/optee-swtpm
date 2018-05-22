@@ -1,0 +1,4284 @@
+
+;; Function main (main, funcdef_no=2, decl_uid=15073, cgraph_uid=2, symbol_order=3)
+
+Partition 16: size 2050 align 16
+	out	out
+Partition 15: size 12 align 16
+	in
+Partition 8: size 8 align 8
+	readBuffer_32
+Partition 7: size 8 align 8
+	nvPassword_29
+Partition 6: size 8 align 8
+	datafilename_26
+Partition 29: size 8 align 16
+	num	in
+Partition 28: size 8 align 8
+	submsg
+Partition 27: size 8 align 8
+	msg
+Partition 14: size 8 align 8
+	tssContext
+Partition 13: size 4 align 4
+	rc1_342
+Partition 11: size 4 align 4
+	nvType_283
+Partition 10: size 4 align 4
+	done_35
+Partition 4: size 4 align 4
+	readLengthSet_20
+Partition 1: size 4 align 4
+	i_10
+Partition 0: size 4 align 4
+	rc_1
+Partition 24: size 4 align 4
+	nvBufferMax
+Partition 23: size 4 align 4
+	sessionAttributes2
+Partition 22: size 4 align 4
+	sessionHandle2
+Partition 21: size 4 align 4
+	sessionAttributes1
+Partition 20: size 4 align 4
+	sessionHandle1
+Partition 19: size 4 align 4
+	sessionAttributes0
+Partition 18: size 4 align 4
+	sessionHandle0
+Partition 17: size 4 align 4
+	nvIndex
+Partition 12: size 2 align 2
+	nameAlg_286
+Partition 9: size 2 align 2
+	bytesRead_33
+Partition 3: size 2 align 2
+	readLength_15
+Partition 2: size 2 align 2
+	offset_12
+Partition 5: size 1 align 1
+	hierarchyAuthChar_23
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+;; Generating RTL for gimple basic block 38
+
+;; Generating RTL for gimple basic block 39
+
+;; Generating RTL for gimple basic block 40
+
+;; Generating RTL for gimple basic block 41
+
+;; Generating RTL for gimple basic block 42
+
+;; Generating RTL for gimple basic block 43
+
+;; Generating RTL for gimple basic block 44
+
+;; Generating RTL for gimple basic block 45
+
+;; Generating RTL for gimple basic block 46
+
+;; Generating RTL for gimple basic block 47
+
+;; Generating RTL for gimple basic block 48
+
+;; Generating RTL for gimple basic block 49
+
+;; Generating RTL for gimple basic block 50
+
+;; Generating RTL for gimple basic block 51
+
+;; Generating RTL for gimple basic block 52
+
+;; Generating RTL for gimple basic block 53
+
+;; Generating RTL for gimple basic block 54
+
+;; Generating RTL for gimple basic block 55
+
+;; Generating RTL for gimple basic block 56
+
+;; Generating RTL for gimple basic block 57
+
+;; Generating RTL for gimple basic block 58
+
+;; Generating RTL for gimple basic block 59
+
+;; Generating RTL for gimple basic block 60
+
+;; Generating RTL for gimple basic block 61
+
+;; Generating RTL for gimple basic block 62
+
+;; Generating RTL for gimple basic block 63
+
+;; Generating RTL for gimple basic block 64
+
+;; Generating RTL for gimple basic block 65
+
+;; Generating RTL for gimple basic block 66
+
+;; Generating RTL for gimple basic block 67
+
+;; Generating RTL for gimple basic block 68
+
+;; Generating RTL for gimple basic block 69
+
+;; Generating RTL for gimple basic block 70
+
+;; Generating RTL for gimple basic block 71
+
+;; Generating RTL for gimple basic block 72
+
+;; Generating RTL for gimple basic block 73
+
+;; Generating RTL for gimple basic block 74
+
+;; Generating RTL for gimple basic block 75
+
+;; Generating RTL for gimple basic block 76
+
+;; Generating RTL for gimple basic block 77
+
+;; Generating RTL for gimple basic block 78
+
+;; Generating RTL for gimple basic block 79
+
+;; Generating RTL for gimple basic block 80
+
+;; Generating RTL for gimple basic block 81
+
+;; Generating RTL for gimple basic block 82
+
+;; Generating RTL for gimple basic block 83
+
+;; Generating RTL for gimple basic block 84
+
+;; Generating RTL for gimple basic block 85
+
+;; Generating RTL for gimple basic block 86
+
+;; Generating RTL for gimple basic block 87
+
+;; Generating RTL for gimple basic block 88
+
+;; Generating RTL for gimple basic block 89
+
+;; Generating RTL for gimple basic block 90
+
+;; Generating RTL for gimple basic block 91
+
+;; Generating RTL for gimple basic block 92
+
+;; Generating RTL for gimple basic block 93
+
+;; Generating RTL for gimple basic block 94
+
+;; Generating RTL for gimple basic block 95
+
+;; Generating RTL for gimple basic block 96
+
+;; Generating RTL for gimple basic block 97
+
+;; Generating RTL for gimple basic block 98
+
+;; Generating RTL for gimple basic block 99
+
+;; Generating RTL for gimple basic block 100
+
+;; Generating RTL for gimple basic block 101
+
+;; Generating RTL for gimple basic block 102
+
+;; Generating RTL for gimple basic block 103
+
+;; Generating RTL for gimple basic block 104
+
+;; Generating RTL for gimple basic block 105
+
+;; Generating RTL for gimple basic block 106
+
+;; Generating RTL for gimple basic block 107
+
+;; Generating RTL for gimple basic block 108
+
+;; Generating RTL for gimple basic block 109
+
+;; Generating RTL for gimple basic block 110
+
+;; Generating RTL for gimple basic block 111
+
+;; Generating RTL for gimple basic block 112
+
+;; Generating RTL for gimple basic block 113
+
+;; Generating RTL for gimple basic block 114
+
+;; Generating RTL for gimple basic block 115
+
+;; Generating RTL for gimple basic block 116
+
+;; Generating RTL for gimple basic block 117
+
+;; Generating RTL for gimple basic block 118
+
+;; Generating RTL for gimple basic block 119
+
+;; Generating RTL for gimple basic block 120
+
+;; Generating RTL for gimple basic block 121
+
+;; Generating RTL for gimple basic block 122
+
+;; Generating RTL for gimple basic block 123
+
+;; Generating RTL for gimple basic block 124
+
+;; Generating RTL for gimple basic block 125
+
+;; Generating RTL for gimple basic block 126
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 64 from 8 to 69.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Redirecting jump 103 from 13 to 69.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+Redirecting jump 146 from 18 to 69.
+Merging block 18 into block 17...
+Merged blocks 17 and 18.
+Merged 17 and 18 without moving.
+Redirecting jump 184 from 23 to 69.
+Merging block 23 into block 22...
+Merged blocks 22 and 23.
+Merged 22 and 23 without moving.
+Redirecting jump 225 from 28 to 69.
+Merging block 28 into block 27...
+Merged blocks 27 and 28.
+Merged 27 and 28 without moving.
+Redirecting jump 267 from 33 to 69.
+Merging block 33 into block 32...
+Merged blocks 32 and 33.
+Merged 32 and 33 without moving.
+Edge 39->41 redirected to 69
+Merging block 41 into block 40...
+Merged blocks 40 and 41.
+Merged 40 and 41 without moving.
+Redirecting jump 345 from 43 to 69.
+Merging block 43 into block 42...
+Merged blocks 42 and 43.
+Merged 42 and 43 without moving.
+Edge 49->51 redirected to 69
+Merging block 51 into block 50...
+Merged blocks 50 and 51.
+Merged 50 and 51 without moving.
+Redirecting jump 423 from 53 to 69.
+Merging block 53 into block 52...
+Merged blocks 52 and 53.
+Merged 52 and 53 without moving.
+Edge 59->61 redirected to 69
+Merging block 61 into block 60...
+Merged blocks 60 and 61.
+Merged 60 and 61 without moving.
+Redirecting jump 501 from 63 to 69.
+Merging block 63 into block 62...
+Merged blocks 62 and 63.
+Merged 62 and 63 without moving.
+Edge 87->93 redirected to 94
+Edge 88->93 redirected to 94
+Edge 89->93 redirected to 94
+Redirecting jump 682 from 93 to 94.
+Redirecting jump 687 from 93 to 94.
+Merging block 93 into block 92...
+Merged blocks 92 and 93.
+Merged 92 and 93 without moving.
+Merging block 128 into block 127...
+Merged blocks 127 and 128.
+Merged 127 and 128 without moving.
+Removing jump 944.
+Merging block 129 into block 127...
+Merged blocks 127 and 129.
+Merged 127 and 129 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) nvread.c:60 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) nvread.c:60 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.15427+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:60 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) nvread.c:61 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2136 [0xfffffffffffff7a8])) [0 tssContext+0 S8 A64])
+        (const_int 0 [0])) nvread.c:63 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2200 [0xfffffffffffff768])) [0 offset+0 S2 A16])
+        (const_int 0 [0])) nvread.c:66 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16])
+        (const_int 0 [0])) nvread.c:67 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2152 [0xfffffffffffff798])) [0 readLengthSet+0 S4 A32])
+        (const_int 0 [0])) nvread.c:68 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2201 [0xfffffffffffff767])) [0 hierarchyAuthChar+0 S1 A8])
+        (const_int 0 [0])) nvread.c:69 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2104 [0xfffffffffffff7c8])) [0 datafilename+0 S8 A64])
+        (const_int 0 [0])) nvread.c:70 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2192 [0xfffffffffffff770])) [0 nvIndex+0 S4 A64])
+        (const_int 0 [0])) nvread.c:71 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2096 [0xfffffffffffff7d0])) [0 nvPassword+0 S8 A64])
+        (const_int 0 [0])) nvread.c:72 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2188 [0xfffffffffffff774])) [0 sessionHandle0+0 S4 A32])
+        (const_int 1073741833 [0x40000009])) nvread.c:73 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2184 [0xfffffffffffff778])) [0 sessionAttributes0+0 S4 A64])
+        (const_int 0 [0])) nvread.c:74 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2180 [0xfffffffffffff77c])) [0 sessionHandle1+0 S4 A32])
+        (const_int 1073741831 [0x40000007])) nvread.c:75 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2176 [0xfffffffffffff780])) [0 sessionAttributes1+0 S4 A64])
+        (const_int 0 [0])) nvread.c:76 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2172 [0xfffffffffffff784])) [0 sessionHandle2+0 S4 A32])
+        (const_int 1073741831 [0x40000007])) nvread.c:77 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2168 [0xfffffffffffff788])) [0 sessionAttributes2+0 S4 A64])
+        (const_int 0 [0])) nvread.c:78 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2088 [0xfffffffffffff7d8])) [0 readBuffer+0 S8 A64])
+        (const_int 0 [0])) nvread.c:79 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2148 [0xfffffffffffff79c])) [0 done+0 S4 A32])
+        (const_int 0 [0])) nvread.c:82 -1
+     (nil))
+(insn 25 24 26 2 (set (reg/f:DI 87 [ D.15415 ])
+        (mem/f/c:DI (symbol_ref:DI ("stdout") [flags 0x40]  <var_decl 0x7f3b660215a0 stdout>) [0 stdout+0 S8 A64])) nvread.c:84 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 2 cx)
+        (const_int 0 [0])) nvread.c:84 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) nvread.c:84 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) nvread.c:84 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.15415 ])) nvread.c:84 -1
+     (nil))
+(call_insn 30 29 31 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("setvbuf") [flags 0x41]  <function_decl 0x7f3b660611b0 setvbuf>) [0 setvbuf S1 A8])
+            (const_int 0 [0]))) nvread.c:84 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 31 30 32 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f3b65608360 *.LC0>)) nvread.c:85 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) nvread.c:85 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) nvread.c:85 -1
+     (nil))
+(call_insn 34 33 35 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7f3b65ed5000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) nvread.c:85 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 35 34 36 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) nvread.c:87 -1
+     (nil))
+(jump_insn 36 35 37 2 (set (pc)
+        (label_ref 568)) nvread.c:87 -1
+     (nil)
+ -> 568)
+(barrier 37 36 574)
+(code_label 574 37 38 4 43 "" [1 uses])
+(note 38 574 39 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 40 4 (set (reg:SI 243)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:88 -1
+     (nil))
+(insn 40 39 41 4 (set (reg:DI 88 [ D.15416 ])
+        (sign_extend:DI (reg:SI 243))) nvread.c:88 -1
+     (nil))
+(insn 41 40 42 4 (parallel [
+            (set (reg:DI 89 [ D.15416 ])
+                (ashift:DI (reg:DI 88 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:88 -1
+     (nil))
+(insn 42 41 43 4 (set (reg/f:DI 244)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:88 -1
+     (nil))
+(insn 43 42 44 4 (parallel [
+            (set (reg/f:DI 90 [ D.15417 ])
+                (plus:DI (reg:DI 89 [ D.15416 ])
+                    (reg/f:DI 244)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:88 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 89 [ D.15416 ]))
+        (nil)))
+(insn 44 43 45 4 (set (reg/f:DI 91 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 90 [ D.15417 ]) [0 *_95+0 S8 A64])) nvread.c:88 -1
+     (nil))
+(insn 45 44 46 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f3b656083f0 *.LC1>)) nvread.c:88 -1
+     (nil))
+(insn 46 45 47 4 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ D.15418 ])) nvread.c:88 -1
+     (nil))
+(call_insn/i 47 46 48 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:88 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 48 47 49 4 (set (reg:SI 92 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:88 -1
+     (nil))
+(insn 49 48 50 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:88 -1
+     (nil))
+(jump_insn 50 49 51 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 75)
+            (pc))) nvread.c:88 -1
+     (nil)
+ -> 75)
+(note 51 50 52 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:89 -1
+     (nil))
+(insn 53 52 54 5 (set (reg:SI 245)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:90 -1
+     (nil))
+(insn 54 53 55 5 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 245)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:90 -1
+     (nil))
+(jump_insn 55 54 56 5 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 66)
+            (pc))) nvread.c:90 -1
+     (nil)
+ -> 66)
+(note 56 55 57 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 57 56 58 6 (set (reg:SI 246)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:91 -1
+     (nil))
+(insn 58 57 59 6 (set (reg:DI 93 [ D.15416 ])
+        (sign_extend:DI (reg:SI 246))) nvread.c:91 -1
+     (nil))
+(insn 59 58 60 6 (parallel [
+            (set (reg:DI 94 [ D.15416 ])
+                (ashift:DI (reg:DI 93 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:91 -1
+     (nil))
+(insn 60 59 61 6 (set (reg/f:DI 247)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:91 -1
+     (nil))
+(insn 61 60 62 6 (parallel [
+            (set (reg/f:DI 95 [ D.15417 ])
+                (plus:DI (reg:DI 94 [ D.15416 ])
+                    (reg/f:DI 247)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:91 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 94 [ D.15416 ]))
+        (nil)))
+(insn 62 61 63 6 (set (reg/f:DI 248)
+        (mem/f:DI (reg/f:DI 95 [ D.15417 ]) [0 *_101+0 S8 A64])) nvread.c:91 -1
+     (nil))
+(insn 63 62 64 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2096 [0xfffffffffffff7d0])) [0 nvPassword+0 S8 A64])
+        (reg/f:DI 248)) nvread.c:91 -1
+     (nil))
+(jump_insn 64 63 65 6 (set (pc)
+        (label_ref:DI 565)) 654 {jump}
+     (nil)
+ -> 565)
+(barrier 65 64 66)
+(code_label 66 65 67 7 4 "" [1 uses])
+(note 67 66 68 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 68 67 69 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f3b65608480 *.LC2>)) nvread.c:94 -1
+     (nil))
+(call_insn 69 68 70 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:94 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 70 69 73 7 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:95 -1
+     (nil)
+    (nil))
+(jump_insn 73 70 74 7 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 74 73 75)
+(code_label 75 74 76 9 3 "" [1 uses])
+(note 76 75 77 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 77 76 78 9 (set (reg:SI 249)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:98 -1
+     (nil))
+(insn 78 77 79 9 (set (reg:DI 96 [ D.15416 ])
+        (sign_extend:DI (reg:SI 249))) nvread.c:98 -1
+     (nil))
+(insn 79 78 80 9 (parallel [
+            (set (reg:DI 97 [ D.15416 ])
+                (ashift:DI (reg:DI 96 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:98 -1
+     (nil))
+(insn 80 79 81 9 (set (reg/f:DI 250)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:98 -1
+     (nil))
+(insn 81 80 82 9 (parallel [
+            (set (reg/f:DI 98 [ D.15417 ])
+                (plus:DI (reg:DI 97 [ D.15416 ])
+                    (reg/f:DI 250)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:98 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 97 [ D.15416 ]))
+        (nil)))
+(insn 82 81 83 9 (set (reg/f:DI 99 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 98 [ D.15417 ]) [0 *_107+0 S8 A64])) nvread.c:98 -1
+     (nil))
+(insn 83 82 84 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f3b65608510 *.LC3>)) nvread.c:98 -1
+     (nil))
+(insn 84 83 85 9 (set (reg:DI 5 di)
+        (reg/f:DI 99 [ D.15418 ])) nvread.c:98 -1
+     (nil))
+(call_insn/i 85 84 86 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:98 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 86 85 87 9 (set (reg:SI 100 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:98 -1
+     (nil))
+(insn 87 86 88 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 100 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:98 -1
+     (nil))
+(jump_insn 88 87 89 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 114)
+            (pc))) nvread.c:98 -1
+     (nil)
+ -> 114)
+(note 89 88 90 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 90 89 91 10 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:99 -1
+     (nil))
+(insn 91 90 92 10 (set (reg:SI 251)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:100 -1
+     (nil))
+(insn 92 91 93 10 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 251)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:100 -1
+     (nil))
+(jump_insn 93 92 94 10 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 105)
+            (pc))) nvread.c:100 -1
+     (nil)
+ -> 105)
+(note 94 93 95 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 95 94 96 11 (set (reg:SI 252)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:101 -1
+     (nil))
+(insn 96 95 97 11 (set (reg:DI 101 [ D.15416 ])
+        (sign_extend:DI (reg:SI 252))) nvread.c:101 -1
+     (nil))
+(insn 97 96 98 11 (parallel [
+            (set (reg:DI 102 [ D.15416 ])
+                (ashift:DI (reg:DI 101 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:101 -1
+     (nil))
+(insn 98 97 99 11 (set (reg/f:DI 253)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:101 -1
+     (nil))
+(insn 99 98 100 11 (parallel [
+            (set (reg/f:DI 103 [ D.15417 ])
+                (plus:DI (reg:DI 102 [ D.15416 ])
+                    (reg/f:DI 253)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:101 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 102 [ D.15416 ]))
+        (nil)))
+(insn 100 99 101 11 (set (reg/f:DI 104 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 103 [ D.15417 ]) [0 *_113+0 S8 A64])) nvread.c:101 -1
+     (nil))
+(insn 101 100 102 11 (set (reg:QI 254)
+        (mem:QI (reg/f:DI 104 [ D.15418 ]) [0 *_114+0 S1 A8])) nvread.c:101 -1
+     (nil))
+(insn 102 101 103 11 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2201 [0xfffffffffffff767])) [0 hierarchyAuthChar+0 S1 A8])
+        (reg:QI 254)) nvread.c:101 -1
+     (nil))
+(jump_insn 103 102 104 11 (set (pc)
+        (label_ref:DI 565)) 654 {jump}
+     (nil)
+ -> 565)
+(barrier 104 103 105)
+(code_label 105 104 106 12 8 "" [1 uses])
+(note 106 105 107 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 107 106 108 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f3b656085a0 *.LC4>)) nvread.c:104 -1
+     (nil))
+(call_insn 108 107 109 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:104 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 109 108 112 12 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:105 -1
+     (nil)
+    (nil))
+(jump_insn 112 109 113 12 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 113 112 114)
+(code_label 114 113 115 14 7 "" [1 uses])
+(note 115 114 116 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 116 115 117 14 (set (reg:SI 255)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:108 -1
+     (nil))
+(insn 117 116 118 14 (set (reg:DI 105 [ D.15416 ])
+        (sign_extend:DI (reg:SI 255))) nvread.c:108 -1
+     (nil))
+(insn 118 117 119 14 (parallel [
+            (set (reg:DI 106 [ D.15416 ])
+                (ashift:DI (reg:DI 105 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:108 -1
+     (nil))
+(insn 119 118 120 14 (set (reg/f:DI 256)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:108 -1
+     (nil))
+(insn 120 119 121 14 (parallel [
+            (set (reg/f:DI 107 [ D.15417 ])
+                (plus:DI (reg:DI 106 [ D.15416 ])
+                    (reg/f:DI 256)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:108 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 106 [ D.15416 ]))
+        (nil)))
+(insn 121 120 122 14 (set (reg/f:DI 108 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 107 [ D.15417 ]) [0 *_120+0 S8 A64])) nvread.c:108 -1
+     (nil))
+(insn 122 121 123 14 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f3b65608630 *.LC5>)) nvread.c:108 -1
+     (nil))
+(insn 123 122 124 14 (set (reg:DI 5 di)
+        (reg/f:DI 108 [ D.15418 ])) nvread.c:108 -1
+     (nil))
+(call_insn/i 124 123 125 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:108 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 125 124 126 14 (set (reg:SI 109 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:108 -1
+     (nil))
+(insn 126 125 127 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 109 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:108 -1
+     (nil))
+(jump_insn 127 126 128 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 157)
+            (pc))) nvread.c:108 -1
+     (nil)
+ -> 157)
+(note 128 127 129 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 129 128 130 15 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:109 -1
+     (nil))
+(insn 130 129 131 15 (set (reg:SI 257)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:110 -1
+     (nil))
+(insn 131 130 132 15 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 257)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:110 -1
+     (nil))
+(jump_insn 132 131 133 15 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 148)
+            (pc))) nvread.c:110 -1
+     (nil)
+ -> 148)
+(note 133 132 134 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 134 133 135 16 (set (reg:SI 258)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:111 -1
+     (nil))
+(insn 135 134 136 16 (set (reg:DI 110 [ D.15416 ])
+        (sign_extend:DI (reg:SI 258))) nvread.c:111 -1
+     (nil))
+(insn 136 135 137 16 (parallel [
+            (set (reg:DI 111 [ D.15416 ])
+                (ashift:DI (reg:DI 110 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:111 -1
+     (nil))
+(insn 137 136 138 16 (set (reg/f:DI 259)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:111 -1
+     (nil))
+(insn 138 137 139 16 (parallel [
+            (set (reg/f:DI 112 [ D.15417 ])
+                (plus:DI (reg:DI 111 [ D.15416 ])
+                    (reg/f:DI 259)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:111 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 111 [ D.15416 ]))
+        (nil)))
+(insn 139 138 140 16 (set (reg/f:DI 113 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 112 [ D.15417 ]) [0 *_126+0 S8 A64])) nvread.c:111 -1
+     (nil))
+(insn 140 139 141 16 (parallel [
+            (set (reg:DI 260)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2192 [0xfffffffffffff770])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:111 -1
+     (nil))
+(insn 141 140 142 16 (set (reg:DI 1 dx)
+        (reg:DI 260)) nvread.c:111 -1
+     (nil))
+(insn 142 141 143 16 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f3b656086c0 *.LC6>)) nvread.c:111 -1
+     (nil))
+(insn 143 142 144 16 (set (reg:DI 5 di)
+        (reg/f:DI 113 [ D.15418 ])) nvread.c:111 -1
+     (nil))
+(insn 144 143 145 16 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:111 -1
+     (nil))
+(call_insn 145 144 146 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3b65f72ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) nvread.c:111 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 146 145 147 16 (set (pc)
+        (label_ref:DI 565)) 654 {jump}
+     (nil)
+ -> 565)
+(barrier 147 146 148)
+(code_label 148 147 149 17 11 "" [1 uses])
+(note 149 148 150 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 150 149 151 17 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f3b65608750 *.LC7>)) nvread.c:114 -1
+     (nil))
+(call_insn 151 150 152 17 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:114 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 152 151 155 17 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:115 -1
+     (nil)
+    (nil))
+(jump_insn 155 152 156 17 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 156 155 157)
+(code_label 157 156 158 19 10 "" [1 uses])
+(note 158 157 159 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 159 158 160 19 (set (reg:SI 261)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:118 -1
+     (nil))
+(insn 160 159 161 19 (set (reg:DI 114 [ D.15416 ])
+        (sign_extend:DI (reg:SI 261))) nvread.c:118 -1
+     (nil))
+(insn 161 160 162 19 (parallel [
+            (set (reg:DI 115 [ D.15416 ])
+                (ashift:DI (reg:DI 114 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:118 -1
+     (nil))
+(insn 162 161 163 19 (set (reg/f:DI 262)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:118 -1
+     (nil))
+(insn 163 162 164 19 (parallel [
+            (set (reg/f:DI 116 [ D.15417 ])
+                (plus:DI (reg:DI 115 [ D.15416 ])
+                    (reg/f:DI 262)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:118 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 115 [ D.15416 ]))
+        (nil)))
+(insn 164 163 165 19 (set (reg/f:DI 117 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 116 [ D.15417 ]) [0 *_133+0 S8 A64])) nvread.c:118 -1
+     (nil))
+(insn 165 164 166 19 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f3b656087e0 *.LC8>)) nvread.c:118 -1
+     (nil))
+(insn 166 165 167 19 (set (reg:DI 5 di)
+        (reg/f:DI 117 [ D.15418 ])) nvread.c:118 -1
+     (nil))
+(call_insn/i 167 166 168 19 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:118 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 168 167 169 19 (set (reg:SI 118 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:118 -1
+     (nil))
+(insn 169 168 170 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 118 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:118 -1
+     (nil))
+(jump_insn 170 169 171 19 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 195)
+            (pc))) nvread.c:118 -1
+     (nil)
+ -> 195)
+(note 171 170 172 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 172 171 173 20 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:119 -1
+     (nil))
+(insn 173 172 174 20 (set (reg:SI 263)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:120 -1
+     (nil))
+(insn 174 173 175 20 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 263)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:120 -1
+     (nil))
+(jump_insn 175 174 176 20 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 186)
+            (pc))) nvread.c:120 -1
+     (nil)
+ -> 186)
+(note 176 175 177 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 177 176 178 21 (set (reg:SI 264)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:121 -1
+     (nil))
+(insn 178 177 179 21 (set (reg:DI 119 [ D.15416 ])
+        (sign_extend:DI (reg:SI 264))) nvread.c:121 -1
+     (nil))
+(insn 179 178 180 21 (parallel [
+            (set (reg:DI 120 [ D.15416 ])
+                (ashift:DI (reg:DI 119 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:121 -1
+     (nil))
+(insn 180 179 181 21 (set (reg/f:DI 265)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:121 -1
+     (nil))
+(insn 181 180 182 21 (parallel [
+            (set (reg/f:DI 121 [ D.15417 ])
+                (plus:DI (reg:DI 120 [ D.15416 ])
+                    (reg/f:DI 265)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:121 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 120 [ D.15416 ]))
+        (nil)))
+(insn 182 181 183 21 (set (reg/f:DI 266)
+        (mem/f:DI (reg/f:DI 121 [ D.15417 ]) [0 *_139+0 S8 A64])) nvread.c:121 -1
+     (nil))
+(insn 183 182 184 21 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2104 [0xfffffffffffff7c8])) [0 datafilename+0 S8 A64])
+        (reg/f:DI 266)) nvread.c:121 -1
+     (nil))
+(jump_insn 184 183 185 21 (set (pc)
+        (label_ref:DI 565)) 654 {jump}
+     (nil)
+ -> 565)
+(barrier 185 184 186)
+(code_label 186 185 187 22 14 "" [1 uses])
+(note 187 186 188 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 188 187 189 22 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f3b65608870 *.LC9>)) nvread.c:123 -1
+     (nil))
+(call_insn 189 188 190 22 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:123 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 190 189 193 22 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:124 -1
+     (nil)
+    (nil))
+(jump_insn 193 190 194 22 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 194 193 195)
+(code_label 195 194 196 24 13 "" [1 uses])
+(note 196 195 197 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 197 196 198 24 (set (reg:SI 267)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:127 -1
+     (nil))
+(insn 198 197 199 24 (set (reg:DI 122 [ D.15416 ])
+        (sign_extend:DI (reg:SI 267))) nvread.c:127 -1
+     (nil))
+(insn 199 198 200 24 (parallel [
+            (set (reg:DI 123 [ D.15416 ])
+                (ashift:DI (reg:DI 122 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:127 -1
+     (nil))
+(insn 200 199 201 24 (set (reg/f:DI 268)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:127 -1
+     (nil))
+(insn 201 200 202 24 (parallel [
+            (set (reg/f:DI 124 [ D.15417 ])
+                (plus:DI (reg:DI 123 [ D.15416 ])
+                    (reg/f:DI 268)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:127 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 123 [ D.15416 ]))
+        (nil)))
+(insn 202 201 203 24 (set (reg/f:DI 125 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 124 [ D.15417 ]) [0 *_145+0 S8 A64])) nvread.c:127 -1
+     (nil))
+(insn 203 202 204 24 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f3b65608900 *.LC10>)) nvread.c:127 -1
+     (nil))
+(insn 204 203 205 24 (set (reg:DI 5 di)
+        (reg/f:DI 125 [ D.15418 ])) nvread.c:127 -1
+     (nil))
+(call_insn/i 205 204 206 24 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:127 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 206 205 207 24 (set (reg:SI 126 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:127 -1
+     (nil))
+(insn 207 206 208 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 126 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:127 -1
+     (nil))
+(jump_insn 208 207 209 24 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 236)
+            (pc))) nvread.c:127 -1
+     (nil)
+ -> 236)
+(note 209 208 210 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 210 209 211 25 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:128 -1
+     (nil))
+(insn 211 210 212 25 (set (reg:SI 269)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:129 -1
+     (nil))
+(insn 212 211 213 25 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 269)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:129 -1
+     (nil))
+(jump_insn 213 212 214 25 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 227)
+            (pc))) nvread.c:129 -1
+     (nil)
+ -> 227)
+(note 214 213 215 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 215 214 216 26 (set (reg:SI 270)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:130 -1
+     (nil))
+(insn 216 215 217 26 (set (reg:DI 127 [ D.15416 ])
+        (sign_extend:DI (reg:SI 270))) nvread.c:130 -1
+     (nil))
+(insn 217 216 218 26 (parallel [
+            (set (reg:DI 128 [ D.15416 ])
+                (ashift:DI (reg:DI 127 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:130 -1
+     (nil))
+(insn 218 217 219 26 (set (reg/f:DI 271)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:130 -1
+     (nil))
+(insn 219 218 220 26 (parallel [
+            (set (reg/f:DI 129 [ D.15417 ])
+                (plus:DI (reg:DI 128 [ D.15416 ])
+                    (reg/f:DI 271)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:130 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 128 [ D.15416 ]))
+        (nil)))
+(insn 220 219 221 26 (set (reg/f:DI 130 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 129 [ D.15417 ]) [0 *_151+0 S8 A64])) nvread.c:130 -1
+     (nil))
+(insn 221 220 222 26 (set (reg:DI 5 di)
+        (reg/f:DI 130 [ D.15418 ])) nvread.c:130 -1
+     (nil))
+(call_insn/i 222 221 223 26 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("atoi") [flags 0x41]  <function_decl 0x7f3b660910d8 atoi>) [0 atoi S1 A8])
+            (const_int 0 [0]))) nvread.c:130 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 223 222 224 26 (set (reg:SI 131 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:130 -1
+     (nil))
+(insn 224 223 225 26 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2200 [0xfffffffffffff768])) [0 offset+0 S2 A16])
+        (subreg:HI (reg:SI 131 [ D.15419 ]) 0)) nvread.c:130 -1
+     (nil))
+(jump_insn 225 224 226 26 (set (pc)
+        (label_ref:DI 565)) 654 {jump}
+     (nil)
+ -> 565)
+(barrier 226 225 227)
+(code_label 227 226 228 27 17 "" [1 uses])
+(note 228 227 229 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 229 228 230 27 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f3b65608990 *.LC11>)) nvread.c:134 -1
+     (nil))
+(call_insn 230 229 231 27 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:134 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 231 230 234 27 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:135 -1
+     (nil)
+    (nil))
+(jump_insn 234 231 235 27 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 235 234 236)
+(code_label 236 235 237 29 16 "" [1 uses])
+(note 237 236 238 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 238 237 239 29 (set (reg:SI 272)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:138 -1
+     (nil))
+(insn 239 238 240 29 (set (reg:DI 132 [ D.15416 ])
+        (sign_extend:DI (reg:SI 272))) nvread.c:138 -1
+     (nil))
+(insn 240 239 241 29 (parallel [
+            (set (reg:DI 133 [ D.15416 ])
+                (ashift:DI (reg:DI 132 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:138 -1
+     (nil))
+(insn 241 240 242 29 (set (reg/f:DI 273)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:138 -1
+     (nil))
+(insn 242 241 243 29 (parallel [
+            (set (reg/f:DI 134 [ D.15417 ])
+                (plus:DI (reg:DI 133 [ D.15416 ])
+                    (reg/f:DI 273)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:138 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 133 [ D.15416 ]))
+        (nil)))
+(insn 243 242 244 29 (set (reg/f:DI 135 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 134 [ D.15417 ]) [0 *_159+0 S8 A64])) nvread.c:138 -1
+     (nil))
+(insn 244 243 245 29 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7f3b65608a20 *.LC12>)) nvread.c:138 -1
+     (nil))
+(insn 245 244 246 29 (set (reg:DI 5 di)
+        (reg/f:DI 135 [ D.15418 ])) nvread.c:138 -1
+     (nil))
+(call_insn/i 246 245 247 29 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:138 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 247 246 248 29 (set (reg:SI 136 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:138 -1
+     (nil))
+(insn 248 247 249 29 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 136 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:138 -1
+     (nil))
+(jump_insn 249 248 250 29 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 278)
+            (pc))) nvread.c:138 -1
+     (nil)
+ -> 278)
+(note 250 249 251 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 251 250 252 30 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:139 -1
+     (nil))
+(insn 252 251 253 30 (set (reg:SI 274)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:140 -1
+     (nil))
+(insn 253 252 254 30 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 274)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:140 -1
+     (nil))
+(jump_insn 254 253 255 30 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 269)
+            (pc))) nvread.c:140 -1
+     (nil)
+ -> 269)
+(note 255 254 256 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 256 255 257 31 (set (reg:SI 275)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:141 -1
+     (nil))
+(insn 257 256 258 31 (set (reg:DI 137 [ D.15416 ])
+        (sign_extend:DI (reg:SI 275))) nvread.c:141 -1
+     (nil))
+(insn 258 257 259 31 (parallel [
+            (set (reg:DI 138 [ D.15416 ])
+                (ashift:DI (reg:DI 137 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:141 -1
+     (nil))
+(insn 259 258 260 31 (set (reg/f:DI 276)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:141 -1
+     (nil))
+(insn 260 259 261 31 (parallel [
+            (set (reg/f:DI 139 [ D.15417 ])
+                (plus:DI (reg:DI 138 [ D.15416 ])
+                    (reg/f:DI 276)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:141 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 138 [ D.15416 ]))
+        (nil)))
+(insn 261 260 262 31 (set (reg/f:DI 140 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 139 [ D.15417 ]) [0 *_165+0 S8 A64])) nvread.c:141 -1
+     (nil))
+(insn 262 261 263 31 (set (reg:DI 5 di)
+        (reg/f:DI 140 [ D.15418 ])) nvread.c:141 -1
+     (nil))
+(call_insn/i 263 262 264 31 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("atoi") [flags 0x41]  <function_decl 0x7f3b660910d8 atoi>) [0 atoi S1 A8])
+            (const_int 0 [0]))) nvread.c:141 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 264 263 265 31 (set (reg:SI 141 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:141 -1
+     (nil))
+(insn 265 264 266 31 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16])
+        (subreg:HI (reg:SI 141 [ D.15419 ]) 0)) nvread.c:141 -1
+     (nil))
+(insn 266 265 267 31 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2152 [0xfffffffffffff798])) [0 readLengthSet+0 S4 A32])
+        (const_int 1 [0x1])) nvread.c:142 -1
+     (nil))
+(jump_insn 267 266 268 31 (set (pc)
+        (label_ref:DI 565)) 654 {jump}
+     (nil)
+ -> 565)
+(barrier 268 267 269)
+(code_label 269 268 270 32 20 "" [1 uses])
+(note 270 269 271 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 271 270 272 32 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7f3b65608ab0 *.LC13>)) nvread.c:145 -1
+     (nil))
+(call_insn 272 271 273 32 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:145 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 273 272 276 32 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:146 -1
+     (nil)
+    (nil))
+(jump_insn 276 273 277 32 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 277 276 278)
+(code_label 278 277 279 34 19 "" [1 uses])
+(note 279 278 280 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 280 279 281 34 (set (reg:SI 277)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:149 -1
+     (nil))
+(insn 281 280 282 34 (set (reg:DI 142 [ D.15416 ])
+        (sign_extend:DI (reg:SI 277))) nvread.c:149 -1
+     (nil))
+(insn 282 281 283 34 (parallel [
+            (set (reg:DI 143 [ D.15416 ])
+                (ashift:DI (reg:DI 142 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:149 -1
+     (nil))
+(insn 283 282 284 34 (set (reg/f:DI 278)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:149 -1
+     (nil))
+(insn 284 283 285 34 (parallel [
+            (set (reg/f:DI 144 [ D.15417 ])
+                (plus:DI (reg:DI 143 [ D.15416 ])
+                    (reg/f:DI 278)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:149 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 143 [ D.15416 ]))
+        (nil)))
+(insn 285 284 286 34 (set (reg/f:DI 145 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 144 [ D.15417 ]) [0 *_174+0 S8 A64])) nvread.c:149 -1
+     (nil))
+(insn 286 285 287 34 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f3b65608b40 *.LC14>)) nvread.c:149 -1
+     (nil))
+(insn 287 286 288 34 (set (reg:DI 5 di)
+        (reg/f:DI 145 [ D.15418 ])) nvread.c:149 -1
+     (nil))
+(call_insn/i 288 287 289 34 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:149 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 289 288 290 34 (set (reg:SI 146 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:149 -1
+     (nil))
+(insn 290 289 291 34 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 146 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:149 -1
+     (nil))
+(jump_insn 291 290 292 34 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 356)
+            (pc))) nvread.c:149 -1
+     (nil)
+ -> 356)
+(note 292 291 293 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 293 292 294 35 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:150 -1
+     (nil))
+(insn 294 293 295 35 (set (reg:SI 279)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:151 -1
+     (nil))
+(insn 295 294 296 35 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 279)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:151 -1
+     (nil))
+(jump_insn 296 295 297 35 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 312)
+            (pc))) nvread.c:151 -1
+     (nil)
+ -> 312)
+(note 297 296 298 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 298 297 299 36 (set (reg:SI 280)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:152 -1
+     (nil))
+(insn 299 298 300 36 (set (reg:DI 147 [ D.15416 ])
+        (sign_extend:DI (reg:SI 280))) nvread.c:152 -1
+     (nil))
+(insn 300 299 301 36 (parallel [
+            (set (reg:DI 148 [ D.15416 ])
+                (ashift:DI (reg:DI 147 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:152 -1
+     (nil))
+(insn 301 300 302 36 (set (reg/f:DI 281)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:152 -1
+     (nil))
+(insn 302 301 303 36 (parallel [
+            (set (reg/f:DI 149 [ D.15417 ])
+                (plus:DI (reg:DI 148 [ D.15416 ])
+                    (reg/f:DI 281)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:152 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 148 [ D.15416 ]))
+        (nil)))
+(insn 303 302 304 36 (set (reg/f:DI 150 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 149 [ D.15417 ]) [0 *_180+0 S8 A64])) nvread.c:152 -1
+     (nil))
+(insn 304 303 305 36 (parallel [
+            (set (reg:DI 282)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2188 [0xfffffffffffff774])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:152 -1
+     (nil))
+(insn 305 304 306 36 (set (reg:DI 1 dx)
+        (reg:DI 282)) nvread.c:152 -1
+     (nil))
+(insn 306 305 307 36 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f3b656086c0 *.LC6>)) nvread.c:152 -1
+     (nil))
+(insn 307 306 308 36 (set (reg:DI 5 di)
+        (reg/f:DI 150 [ D.15418 ])) nvread.c:152 -1
+     (nil))
+(insn 308 307 309 36 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:152 -1
+     (nil))
+(call_insn 309 308 310 36 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3b65f72ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) nvread.c:152 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 310 309 311 36 (set (pc)
+        (label_ref 317)) -1
+     (nil)
+ -> 317)
+(barrier 311 310 312)
+(code_label 312 311 313 37 23 "" [1 uses])
+(note 313 312 314 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 314 313 315 37 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7f3b65608bd0 *.LC15>)) nvread.c:155 -1
+     (nil))
+(call_insn 315 314 316 37 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:155 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 316 315 317 37 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:156 -1
+     (nil)
+    (nil))
+(code_label 317 316 318 38 24 "" [1 uses])
+(note 318 317 319 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 319 318 320 38 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:158 -1
+     (nil))
+(insn 320 319 321 38 (set (reg:SI 283)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:159 -1
+     (nil))
+(insn 321 320 322 38 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 283)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:159 -1
+     (nil))
+(jump_insn 322 321 323 38 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 347)
+            (pc))) nvread.c:159 -1
+     (nil)
+ -> 347)
+(note 323 322 324 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 324 323 325 39 (set (reg:SI 284)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:160 -1
+     (nil))
+(insn 325 324 326 39 (set (reg:DI 151 [ D.15416 ])
+        (sign_extend:DI (reg:SI 284))) nvread.c:160 -1
+     (nil))
+(insn 326 325 327 39 (parallel [
+            (set (reg:DI 152 [ D.15416 ])
+                (ashift:DI (reg:DI 151 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:160 -1
+     (nil))
+(insn 327 326 328 39 (set (reg/f:DI 285)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:160 -1
+     (nil))
+(insn 328 327 329 39 (parallel [
+            (set (reg/f:DI 153 [ D.15417 ])
+                (plus:DI (reg:DI 152 [ D.15416 ])
+                    (reg/f:DI 285)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:160 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 152 [ D.15416 ]))
+        (nil)))
+(insn 329 328 330 39 (set (reg/f:DI 154 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 153 [ D.15417 ]) [0 *_188+0 S8 A64])) nvread.c:160 -1
+     (nil))
+(insn 330 329 331 39 (parallel [
+            (set (reg:DI 286)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2184 [0xfffffffffffff778])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:160 -1
+     (nil))
+(insn 331 330 332 39 (set (reg:DI 1 dx)
+        (reg:DI 286)) nvread.c:160 -1
+     (nil))
+(insn 332 331 333 39 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f3b656086c0 *.LC6>)) nvread.c:160 -1
+     (nil))
+(insn 333 332 334 39 (set (reg:DI 5 di)
+        (reg/f:DI 154 [ D.15418 ])) nvread.c:160 -1
+     (nil))
+(insn 334 333 335 39 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:160 -1
+     (nil))
+(call_insn 335 334 336 39 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3b65f72ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) nvread.c:160 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 336 335 337 39 (set (reg:SI 155 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2184 [0xfffffffffffff778])) [0 sessionAttributes0+0 S4 A64])) nvread.c:161 -1
+     (nil))
+(insn 337 336 338 39 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 155 [ D.15420 ])
+            (const_int 255 [0xff]))) nvread.c:161 -1
+     (nil))
+(jump_insn 338 337 339 39 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 565)
+            (pc))) nvread.c:161 612 {*jcc_1}
+     (nil)
+ -> 565)
+(note 339 338 340 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(insn 340 339 341 40 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7f3b65608c60 *.LC16>)) nvread.c:162 -1
+     (nil))
+(call_insn 341 340 342 40 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:162 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 342 341 345 40 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:163 -1
+     (nil)
+    (nil))
+(jump_insn 345 342 346 40 (set (pc)
+        (label_ref:DI 565)) 654 {jump}
+     (nil)
+ -> 565)
+(barrier 346 345 347)
+(code_label 347 346 348 42 25 "" [1 uses])
+(note 348 347 349 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 349 348 350 42 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7f3b65608bd0 *.LC15>)) nvread.c:167 -1
+     (nil))
+(call_insn 350 349 351 42 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:167 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 351 350 354 42 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:168 -1
+     (nil)
+    (nil))
+(jump_insn 354 351 355 42 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 355 354 356)
+(code_label 356 355 357 44 22 "" [1 uses])
+(note 357 356 358 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(insn 358 357 359 44 (set (reg:SI 287)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:171 -1
+     (nil))
+(insn 359 358 360 44 (set (reg:DI 156 [ D.15416 ])
+        (sign_extend:DI (reg:SI 287))) nvread.c:171 -1
+     (nil))
+(insn 360 359 361 44 (parallel [
+            (set (reg:DI 157 [ D.15416 ])
+                (ashift:DI (reg:DI 156 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:171 -1
+     (nil))
+(insn 361 360 362 44 (set (reg/f:DI 288)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:171 -1
+     (nil))
+(insn 362 361 363 44 (parallel [
+            (set (reg/f:DI 158 [ D.15417 ])
+                (plus:DI (reg:DI 157 [ D.15416 ])
+                    (reg/f:DI 288)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:171 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 157 [ D.15416 ]))
+        (nil)))
+(insn 363 362 364 44 (set (reg/f:DI 159 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 158 [ D.15417 ]) [0 *_198+0 S8 A64])) nvread.c:171 -1
+     (nil))
+(insn 364 363 365 44 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7f3b65608cf0 *.LC17>)) nvread.c:171 -1
+     (nil))
+(insn 365 364 366 44 (set (reg:DI 5 di)
+        (reg/f:DI 159 [ D.15418 ])) nvread.c:171 -1
+     (nil))
+(call_insn/i 366 365 367 44 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:171 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 367 366 368 44 (set (reg:SI 160 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:171 -1
+     (nil))
+(insn 368 367 369 44 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 160 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:171 -1
+     (nil))
+(jump_insn 369 368 370 44 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 434)
+            (pc))) nvread.c:171 -1
+     (nil)
+ -> 434)
+(note 370 369 371 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 371 370 372 45 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:172 -1
+     (nil))
+(insn 372 371 373 45 (set (reg:SI 289)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:173 -1
+     (nil))
+(insn 373 372 374 45 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 289)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:173 -1
+     (nil))
+(jump_insn 374 373 375 45 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 390)
+            (pc))) nvread.c:173 -1
+     (nil)
+ -> 390)
+(note 375 374 376 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(insn 376 375 377 46 (set (reg:SI 290)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:174 -1
+     (nil))
+(insn 377 376 378 46 (set (reg:DI 161 [ D.15416 ])
+        (sign_extend:DI (reg:SI 290))) nvread.c:174 -1
+     (nil))
+(insn 378 377 379 46 (parallel [
+            (set (reg:DI 162 [ D.15416 ])
+                (ashift:DI (reg:DI 161 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:174 -1
+     (nil))
+(insn 379 378 380 46 (set (reg/f:DI 291)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:174 -1
+     (nil))
+(insn 380 379 381 46 (parallel [
+            (set (reg/f:DI 163 [ D.15417 ])
+                (plus:DI (reg:DI 162 [ D.15416 ])
+                    (reg/f:DI 291)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:174 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 162 [ D.15416 ]))
+        (nil)))
+(insn 381 380 382 46 (set (reg/f:DI 164 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 163 [ D.15417 ]) [0 *_204+0 S8 A64])) nvread.c:174 -1
+     (nil))
+(insn 382 381 383 46 (parallel [
+            (set (reg:DI 292)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2180 [0xfffffffffffff77c])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:174 -1
+     (nil))
+(insn 383 382 384 46 (set (reg:DI 1 dx)
+        (reg:DI 292)) nvread.c:174 -1
+     (nil))
+(insn 384 383 385 46 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f3b656086c0 *.LC6>)) nvread.c:174 -1
+     (nil))
+(insn 385 384 386 46 (set (reg:DI 5 di)
+        (reg/f:DI 164 [ D.15418 ])) nvread.c:174 -1
+     (nil))
+(insn 386 385 387 46 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:174 -1
+     (nil))
+(call_insn 387 386 388 46 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3b65f72ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) nvread.c:174 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 388 387 389 46 (set (pc)
+        (label_ref 395)) -1
+     (nil)
+ -> 395)
+(barrier 389 388 390)
+(code_label 390 389 391 47 29 "" [1 uses])
+(note 391 390 392 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(insn 392 391 393 47 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7f3b65608d80 *.LC18>)) nvread.c:177 -1
+     (nil))
+(call_insn 393 392 394 47 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:177 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 394 393 395 47 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:178 -1
+     (nil)
+    (nil))
+(code_label 395 394 396 48 30 "" [1 uses])
+(note 396 395 397 48 [bb 48] NOTE_INSN_BASIC_BLOCK)
+(insn 397 396 398 48 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:180 -1
+     (nil))
+(insn 398 397 399 48 (set (reg:SI 293)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:181 -1
+     (nil))
+(insn 399 398 400 48 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 293)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:181 -1
+     (nil))
+(jump_insn 400 399 401 48 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 425)
+            (pc))) nvread.c:181 -1
+     (nil)
+ -> 425)
+(note 401 400 402 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(insn 402 401 403 49 (set (reg:SI 294)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:182 -1
+     (nil))
+(insn 403 402 404 49 (set (reg:DI 165 [ D.15416 ])
+        (sign_extend:DI (reg:SI 294))) nvread.c:182 -1
+     (nil))
+(insn 404 403 405 49 (parallel [
+            (set (reg:DI 166 [ D.15416 ])
+                (ashift:DI (reg:DI 165 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:182 -1
+     (nil))
+(insn 405 404 406 49 (set (reg/f:DI 295)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:182 -1
+     (nil))
+(insn 406 405 407 49 (parallel [
+            (set (reg/f:DI 167 [ D.15417 ])
+                (plus:DI (reg:DI 166 [ D.15416 ])
+                    (reg/f:DI 295)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:182 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 166 [ D.15416 ]))
+        (nil)))
+(insn 407 406 408 49 (set (reg/f:DI 168 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 167 [ D.15417 ]) [0 *_212+0 S8 A64])) nvread.c:182 -1
+     (nil))
+(insn 408 407 409 49 (parallel [
+            (set (reg:DI 296)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2176 [0xfffffffffffff780])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:182 -1
+     (nil))
+(insn 409 408 410 49 (set (reg:DI 1 dx)
+        (reg:DI 296)) nvread.c:182 -1
+     (nil))
+(insn 410 409 411 49 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f3b656086c0 *.LC6>)) nvread.c:182 -1
+     (nil))
+(insn 411 410 412 49 (set (reg:DI 5 di)
+        (reg/f:DI 168 [ D.15418 ])) nvread.c:182 -1
+     (nil))
+(insn 412 411 413 49 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:182 -1
+     (nil))
+(call_insn 413 412 414 49 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3b65f72ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) nvread.c:182 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 414 413 415 49 (set (reg:SI 169 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2176 [0xfffffffffffff780])) [0 sessionAttributes1+0 S4 A64])) nvread.c:183 -1
+     (nil))
+(insn 415 414 416 49 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 169 [ D.15420 ])
+            (const_int 255 [0xff]))) nvread.c:183 -1
+     (nil))
+(jump_insn 416 415 417 49 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 565)
+            (pc))) nvread.c:183 612 {*jcc_1}
+     (nil)
+ -> 565)
+(note 417 416 418 50 [bb 50] NOTE_INSN_BASIC_BLOCK)
+(insn 418 417 419 50 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7f3b65608e10 *.LC19>)) nvread.c:184 -1
+     (nil))
+(call_insn 419 418 420 50 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:184 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 420 419 423 50 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:185 -1
+     (nil)
+    (nil))
+(jump_insn 423 420 424 50 (set (pc)
+        (label_ref:DI 565)) 654 {jump}
+     (nil)
+ -> 565)
+(barrier 424 423 425)
+(code_label 425 424 426 52 31 "" [1 uses])
+(note 426 425 427 52 [bb 52] NOTE_INSN_BASIC_BLOCK)
+(insn 427 426 428 52 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7f3b65608d80 *.LC18>)) nvread.c:189 -1
+     (nil))
+(call_insn 428 427 429 52 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:189 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 429 428 432 52 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:190 -1
+     (nil)
+    (nil))
+(jump_insn 432 429 433 52 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 433 432 434)
+(code_label 434 433 435 54 28 "" [1 uses])
+(note 435 434 436 54 [bb 54] NOTE_INSN_BASIC_BLOCK)
+(insn 436 435 437 54 (set (reg:SI 297)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:193 -1
+     (nil))
+(insn 437 436 438 54 (set (reg:DI 170 [ D.15416 ])
+        (sign_extend:DI (reg:SI 297))) nvread.c:193 -1
+     (nil))
+(insn 438 437 439 54 (parallel [
+            (set (reg:DI 171 [ D.15416 ])
+                (ashift:DI (reg:DI 170 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:193 -1
+     (nil))
+(insn 439 438 440 54 (set (reg/f:DI 298)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:193 -1
+     (nil))
+(insn 440 439 441 54 (parallel [
+            (set (reg/f:DI 172 [ D.15417 ])
+                (plus:DI (reg:DI 171 [ D.15416 ])
+                    (reg/f:DI 298)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:193 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 171 [ D.15416 ]))
+        (nil)))
+(insn 441 440 442 54 (set (reg/f:DI 173 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 172 [ D.15417 ]) [0 *_222+0 S8 A64])) nvread.c:193 -1
+     (nil))
+(insn 442 441 443 54 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC20") [flags 0x2]  <var_decl 0x7f3b65608ea0 *.LC20>)) nvread.c:193 -1
+     (nil))
+(insn 443 442 444 54 (set (reg:DI 5 di)
+        (reg/f:DI 173 [ D.15418 ])) nvread.c:193 -1
+     (nil))
+(call_insn/i 444 443 445 54 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:193 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 445 444 446 54 (set (reg:SI 174 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:193 -1
+     (nil))
+(insn 446 445 447 54 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 174 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:193 -1
+     (nil))
+(jump_insn 447 446 448 54 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 512)
+            (pc))) nvread.c:193 -1
+     (nil)
+ -> 512)
+(note 448 447 449 55 [bb 55] NOTE_INSN_BASIC_BLOCK)
+(insn 449 448 450 55 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:194 -1
+     (nil))
+(insn 450 449 451 55 (set (reg:SI 299)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:195 -1
+     (nil))
+(insn 451 450 452 55 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 299)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:195 -1
+     (nil))
+(jump_insn 452 451 453 55 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 468)
+            (pc))) nvread.c:195 -1
+     (nil)
+ -> 468)
+(note 453 452 454 56 [bb 56] NOTE_INSN_BASIC_BLOCK)
+(insn 454 453 455 56 (set (reg:SI 300)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:196 -1
+     (nil))
+(insn 455 454 456 56 (set (reg:DI 175 [ D.15416 ])
+        (sign_extend:DI (reg:SI 300))) nvread.c:196 -1
+     (nil))
+(insn 456 455 457 56 (parallel [
+            (set (reg:DI 176 [ D.15416 ])
+                (ashift:DI (reg:DI 175 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:196 -1
+     (nil))
+(insn 457 456 458 56 (set (reg/f:DI 301)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:196 -1
+     (nil))
+(insn 458 457 459 56 (parallel [
+            (set (reg/f:DI 177 [ D.15417 ])
+                (plus:DI (reg:DI 176 [ D.15416 ])
+                    (reg/f:DI 301)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:196 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 176 [ D.15416 ]))
+        (nil)))
+(insn 459 458 460 56 (set (reg/f:DI 178 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 177 [ D.15417 ]) [0 *_228+0 S8 A64])) nvread.c:196 -1
+     (nil))
+(insn 460 459 461 56 (parallel [
+            (set (reg:DI 302)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2172 [0xfffffffffffff784])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:196 -1
+     (nil))
+(insn 461 460 462 56 (set (reg:DI 1 dx)
+        (reg:DI 302)) nvread.c:196 -1
+     (nil))
+(insn 462 461 463 56 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f3b656086c0 *.LC6>)) nvread.c:196 -1
+     (nil))
+(insn 463 462 464 56 (set (reg:DI 5 di)
+        (reg/f:DI 178 [ D.15418 ])) nvread.c:196 -1
+     (nil))
+(insn 464 463 465 56 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:196 -1
+     (nil))
+(call_insn 465 464 466 56 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3b65f72ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) nvread.c:196 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 466 465 467 56 (set (pc)
+        (label_ref 473)) -1
+     (nil)
+ -> 473)
+(barrier 467 466 468)
+(code_label 468 467 469 57 35 "" [1 uses])
+(note 469 468 470 57 [bb 57] NOTE_INSN_BASIC_BLOCK)
+(insn 470 469 471 57 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC21") [flags 0x2]  <var_decl 0x7f3b65608f30 *.LC21>)) nvread.c:199 -1
+     (nil))
+(call_insn 471 470 472 57 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:199 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 472 471 473 57 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:200 -1
+     (nil)
+    (nil))
+(code_label 473 472 474 58 36 "" [1 uses])
+(note 474 473 475 58 [bb 58] NOTE_INSN_BASIC_BLOCK)
+(insn 475 474 476 58 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:202 -1
+     (nil))
+(insn 476 475 477 58 (set (reg:SI 303)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:203 -1
+     (nil))
+(insn 477 476 478 58 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 303)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:203 -1
+     (nil))
+(jump_insn 478 477 479 58 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 503)
+            (pc))) nvread.c:203 -1
+     (nil)
+ -> 503)
+(note 479 478 480 59 [bb 59] NOTE_INSN_BASIC_BLOCK)
+(insn 480 479 481 59 (set (reg:SI 304)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:204 -1
+     (nil))
+(insn 481 480 482 59 (set (reg:DI 179 [ D.15416 ])
+        (sign_extend:DI (reg:SI 304))) nvread.c:204 -1
+     (nil))
+(insn 482 481 483 59 (parallel [
+            (set (reg:DI 180 [ D.15416 ])
+                (ashift:DI (reg:DI 179 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:204 -1
+     (nil))
+(insn 483 482 484 59 (set (reg/f:DI 305)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:204 -1
+     (nil))
+(insn 484 483 485 59 (parallel [
+            (set (reg/f:DI 181 [ D.15417 ])
+                (plus:DI (reg:DI 180 [ D.15416 ])
+                    (reg/f:DI 305)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:204 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 180 [ D.15416 ]))
+        (nil)))
+(insn 485 484 486 59 (set (reg/f:DI 182 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 181 [ D.15417 ]) [0 *_236+0 S8 A64])) nvread.c:204 -1
+     (nil))
+(insn 486 485 487 59 (parallel [
+            (set (reg:DI 306)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2168 [0xfffffffffffff788])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:204 -1
+     (nil))
+(insn 487 486 488 59 (set (reg:DI 1 dx)
+        (reg:DI 306)) nvread.c:204 -1
+     (nil))
+(insn 488 487 489 59 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f3b656086c0 *.LC6>)) nvread.c:204 -1
+     (nil))
+(insn 489 488 490 59 (set (reg:DI 5 di)
+        (reg/f:DI 182 [ D.15418 ])) nvread.c:204 -1
+     (nil))
+(insn 490 489 491 59 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:204 -1
+     (nil))
+(call_insn 491 490 492 59 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3b65f72ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) nvread.c:204 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 492 491 493 59 (set (reg:SI 183 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2168 [0xfffffffffffff788])) [0 sessionAttributes2+0 S4 A64])) nvread.c:205 -1
+     (nil))
+(insn 493 492 494 59 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 183 [ D.15420 ])
+            (const_int 255 [0xff]))) nvread.c:205 -1
+     (nil))
+(jump_insn 494 493 495 59 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 565)
+            (pc))) nvread.c:205 612 {*jcc_1}
+     (nil)
+ -> 565)
+(note 495 494 496 60 [bb 60] NOTE_INSN_BASIC_BLOCK)
+(insn 496 495 497 60 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC22") [flags 0x2]  <var_decl 0x7f3b65622000 *.LC22>)) nvread.c:206 -1
+     (nil))
+(call_insn 497 496 498 60 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:206 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 498 497 501 60 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:207 -1
+     (nil)
+    (nil))
+(jump_insn 501 498 502 60 (set (pc)
+        (label_ref:DI 565)) 654 {jump}
+     (nil)
+ -> 565)
+(barrier 502 501 503)
+(code_label 503 502 504 62 37 "" [1 uses])
+(note 504 503 505 62 [bb 62] NOTE_INSN_BASIC_BLOCK)
+(insn 505 504 506 62 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC21") [flags 0x2]  <var_decl 0x7f3b65608f30 *.LC21>)) nvread.c:211 -1
+     (nil))
+(call_insn 506 505 507 62 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:211 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 507 506 510 62 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:212 -1
+     (nil)
+    (nil))
+(jump_insn 510 507 511 62 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 511 510 512)
+(code_label 512 511 513 64 34 "" [1 uses])
+(note 513 512 514 64 [bb 64] NOTE_INSN_BASIC_BLOCK)
+(insn 514 513 515 64 (set (reg:SI 307)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:215 -1
+     (nil))
+(insn 515 514 516 64 (set (reg:DI 184 [ D.15416 ])
+        (sign_extend:DI (reg:SI 307))) nvread.c:215 -1
+     (nil))
+(insn 516 515 517 64 (parallel [
+            (set (reg:DI 185 [ D.15416 ])
+                (ashift:DI (reg:DI 184 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:215 -1
+     (nil))
+(insn 517 516 518 64 (set (reg/f:DI 308)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:215 -1
+     (nil))
+(insn 518 517 519 64 (parallel [
+            (set (reg/f:DI 186 [ D.15417 ])
+                (plus:DI (reg:DI 185 [ D.15416 ])
+                    (reg/f:DI 308)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:215 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 185 [ D.15416 ]))
+        (nil)))
+(insn 519 518 520 64 (set (reg/f:DI 187 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 186 [ D.15417 ]) [0 *_246+0 S8 A64])) nvread.c:215 -1
+     (nil))
+(insn 520 519 521 64 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC23") [flags 0x2]  <var_decl 0x7f3b65622090 *.LC23>)) nvread.c:215 -1
+     (nil))
+(insn 521 520 522 64 (set (reg:DI 5 di)
+        (reg/f:DI 187 [ D.15418 ])) nvread.c:215 -1
+     (nil))
+(call_insn/i 522 521 523 64 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:215 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 523 522 524 64 (set (reg:SI 188 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:215 -1
+     (nil))
+(insn 524 523 525 64 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 188 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:215 -1
+     (nil))
+(jump_insn 525 524 526 64 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 530)
+            (pc))) nvread.c:215 -1
+     (nil)
+ -> 530)
+(note 526 525 527 65 [bb 65] NOTE_INSN_BASIC_BLOCK)
+(call_insn 527 526 528 65 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:216 -1
+     (nil)
+    (nil))
+(jump_insn 528 527 529 65 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 529 528 530)
+(code_label 530 529 531 66 40 "" [1 uses])
+(note 531 530 532 66 [bb 66] NOTE_INSN_BASIC_BLOCK)
+(insn 532 531 533 66 (set (reg:SI 309)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:218 -1
+     (nil))
+(insn 533 532 534 66 (set (reg:DI 189 [ D.15416 ])
+        (sign_extend:DI (reg:SI 309))) nvread.c:218 -1
+     (nil))
+(insn 534 533 535 66 (parallel [
+            (set (reg:DI 190 [ D.15416 ])
+                (ashift:DI (reg:DI 189 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:218 -1
+     (nil))
+(insn 535 534 536 66 (set (reg/f:DI 310)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:218 -1
+     (nil))
+(insn 536 535 537 66 (parallel [
+            (set (reg/f:DI 191 [ D.15417 ])
+                (plus:DI (reg:DI 190 [ D.15416 ])
+                    (reg/f:DI 310)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:218 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 190 [ D.15416 ]))
+        (nil)))
+(insn 537 536 538 66 (set (reg/f:DI 192 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 191 [ D.15417 ]) [0 *_252+0 S8 A64])) nvread.c:218 -1
+     (nil))
+(insn 538 537 539 66 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC24") [flags 0x2]  <var_decl 0x7f3b65622120 *.LC24>)) nvread.c:218 -1
+     (nil))
+(insn 539 538 540 66 (set (reg:DI 5 di)
+        (reg/f:DI 192 [ D.15418 ])) nvread.c:218 -1
+     (nil))
+(call_insn/i 540 539 541 66 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f3b65f690d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) nvread.c:218 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 541 540 542 66 (set (reg:SI 193 [ D.15419 ])
+        (reg:SI 0 ax)) nvread.c:218 -1
+     (nil))
+(insn 542 541 543 66 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 193 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:218 -1
+     (nil))
+(jump_insn 543 542 544 66 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 552)
+            (pc))) nvread.c:218 -1
+     (nil)
+ -> 552)
+(note 544 543 545 67 [bb 67] NOTE_INSN_BASIC_BLOCK)
+(insn 545 544 546 67 (set (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f3b6555e900 verbose>) [0 verbose+0 S4 A32])
+        (const_int 1 [0x1])) nvread.c:219 -1
+     (nil))
+(insn 546 545 547 67 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC25") [flags 0x2]  <var_decl 0x7f3b656221b0 *.LC25>)) nvread.c:220 -1
+     (nil))
+(insn 547 546 548 67 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) nvread.c:220 -1
+     (nil))
+(insn 548 547 549 67 (set (reg:DI 5 di)
+        (const_int 0 [0])) nvread.c:220 -1
+     (nil))
+(call_insn 549 548 550 67 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7f3b65ed5000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) nvread.c:220 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(jump_insn 550 549 551 67 (set (pc)
+        (label_ref 565)) -1
+     (nil)
+ -> 565)
+(barrier 551 550 552)
+(code_label 552 551 553 68 41 "" [1 uses])
+(note 553 552 554 68 [bb 68] NOTE_INSN_BASIC_BLOCK)
+(insn 554 553 555 68 (set (reg:SI 311)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:223 -1
+     (nil))
+(insn 555 554 556 68 (set (reg:DI 194 [ D.15416 ])
+        (sign_extend:DI (reg:SI 311))) nvread.c:223 -1
+     (nil))
+(insn 556 555 557 68 (parallel [
+            (set (reg:DI 195 [ D.15416 ])
+                (ashift:DI (reg:DI 194 [ D.15416 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:223 -1
+     (nil))
+(insn 557 556 558 68 (set (reg/f:DI 312)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])) nvread.c:223 -1
+     (nil))
+(insn 558 557 559 68 (parallel [
+            (set (reg/f:DI 196 [ D.15417 ])
+                (plus:DI (reg:DI 195 [ D.15416 ])
+                    (reg/f:DI 312)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:223 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])) [0 argv+0 S8 A64])
+            (reg:DI 195 [ D.15416 ]))
+        (nil)))
+(insn 559 558 560 68 (set (reg/f:DI 197 [ D.15418 ])
+        (mem/f:DI (reg/f:DI 196 [ D.15417 ]) [0 *_259+0 S8 A64])) nvread.c:223 -1
+     (nil))
+(insn 560 559 561 68 (set (reg:DI 4 si)
+        (reg/f:DI 197 [ D.15418 ])) nvread.c:223 -1
+     (nil))
+(insn 561 560 562 68 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC26") [flags 0x2]  <var_decl 0x7f3b65622240 *.LC26>)) nvread.c:223 -1
+     (nil))
+(insn 562 561 563 68 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:223 -1
+     (nil))
+(call_insn 563 562 564 68 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f3b65f6fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) nvread.c:223 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(call_insn 564 563 565 68 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:224 -1
+     (nil)
+    (nil))
+(code_label 565 564 566 69 6 "" [23 uses])
+(note 566 565 567 69 [bb 69] NOTE_INSN_BASIC_BLOCK)
+(insn 567 566 568 69 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:87 -1
+     (nil))
+(code_label 568 567 569 70 2 "" [1 uses])
+(note 569 568 570 70 [bb 70] NOTE_INSN_BASIC_BLOCK)
+(insn 570 569 571 70 (set (reg:SI 313)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2156 [0xfffffffffffff794])) [0 i+0 S4 A32])) nvread.c:87 -1
+     (nil))
+(insn 571 570 572 70 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 313)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2212 [0xfffffffffffff75c])) [0 argc+0 S4 A32]))) nvread.c:87 -1
+     (nil))
+(jump_insn 572 571 573 70 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 577)
+            (pc))) nvread.c:87 -1
+     (nil)
+ -> 577)
+(note 573 572 575 71 [bb 71] NOTE_INSN_BASIC_BLOCK)
+(insn 575 573 576 71 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:87 -1
+     (nil))
+(jump_insn 576 575 577 71 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 574)
+            (pc))) nvread.c:87 -1
+     (nil)
+ -> 574)
+(code_label 577 576 578 72 42 "" [1 uses])
+(note 578 577 579 72 [bb 72] NOTE_INSN_BASIC_BLOCK)
+(insn 579 578 580 72 (set (reg:SI 198 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2192 [0xfffffffffffff770])) [0 nvIndex+0 S4 A64])) nvread.c:227 -1
+     (nil))
+(insn 580 579 581 72 (parallel [
+            (set (reg:SI 199 [ D.15420 ])
+                (lshiftrt:SI (reg:SI 198 [ D.15420 ])
+                    (const_int 24 [0x18])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:227 -1
+     (nil))
+(insn 581 580 582 72 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 199 [ D.15420 ])
+            (const_int 1 [0x1]))) nvread.c:227 -1
+     (nil))
+(jump_insn 582 581 583 72 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 587)
+            (pc))) nvread.c:227 -1
+     (nil)
+ -> 587)
+(note 583 582 584 73 [bb 73] NOTE_INSN_BASIC_BLOCK)
+(insn 584 583 585 73 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC27") [flags 0x2]  <var_decl 0x7f3b656222d0 *.LC27>)) nvread.c:228 -1
+     (nil))
+(call_insn 585 584 586 73 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:228 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 586 585 587 73 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:229 -1
+     (nil)
+    (nil))
+(code_label 587 586 588 74 44 "" [1 uses])
+(note 588 587 589 74 [bb 74] NOTE_INSN_BASIC_BLOCK)
+(insn 589 588 590 74 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:232 -1
+     (nil))
+(jump_insn 590 589 591 74 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 620)
+            (pc))) nvread.c:232 -1
+     (nil)
+ -> 620)
+(note 591 590 592 75 [bb 75] NOTE_INSN_BASIC_BLOCK)
+(insn 592 591 593 75 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2201 [0xfffffffffffff767])) [0 hierarchyAuthChar+0 S1 A8])
+            (const_int 111 [0x6f]))) nvread.c:233 -1
+     (nil))
+(jump_insn 593 592 594 75 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 598)
+            (pc))) nvread.c:233 -1
+     (nil)
+ -> 598)
+(note 594 593 595 76 [bb 76] NOTE_INSN_BASIC_BLOCK)
+(insn 595 594 596 76 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2080 [0xfffffffffffff7e0])) [0 in.authHandle+0 S4 A64])
+        (const_int 1073741825 [0x40000001])) nvread.c:234 -1
+     (nil))
+(jump_insn 596 595 597 76 (set (pc)
+        (label_ref 620)) -1
+     (nil)
+ -> 620)
+(barrier 597 596 598)
+(code_label 598 597 599 77 46 "" [1 uses])
+(note 599 598 600 77 [bb 77] NOTE_INSN_BASIC_BLOCK)
+(insn 600 599 601 77 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2201 [0xfffffffffffff767])) [0 hierarchyAuthChar+0 S1 A8])
+            (const_int 112 [0x70]))) nvread.c:236 -1
+     (nil))
+(jump_insn 601 600 602 77 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 606)
+            (pc))) nvread.c:236 -1
+     (nil)
+ -> 606)
+(note 602 601 603 78 [bb 78] NOTE_INSN_BASIC_BLOCK)
+(insn 603 602 604 78 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2080 [0xfffffffffffff7e0])) [0 in.authHandle+0 S4 A64])
+        (const_int 1073741836 [0x4000000c])) nvread.c:237 -1
+     (nil))
+(jump_insn 604 603 605 78 (set (pc)
+        (label_ref 620)) -1
+     (nil)
+ -> 620)
+(barrier 605 604 606)
+(code_label 606 605 607 79 47 "" [1 uses])
+(note 607 606 608 79 [bb 79] NOTE_INSN_BASIC_BLOCK)
+(insn 608 607 609 79 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2201 [0xfffffffffffff767])) [0 hierarchyAuthChar+0 S1 A8])
+            (const_int 0 [0]))) nvread.c:239 -1
+     (nil))
+(jump_insn 609 608 610 79 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 615)
+            (pc))) nvread.c:239 -1
+     (nil)
+ -> 615)
+(note 610 609 611 80 [bb 80] NOTE_INSN_BASIC_BLOCK)
+(insn 611 610 612 80 (set (reg:SI 200 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2192 [0xfffffffffffff770])) [0 nvIndex+0 S4 A64])) nvread.c:240 -1
+     (nil))
+(insn 612 611 613 80 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2080 [0xfffffffffffff7e0])) [0 in.authHandle+0 S4 A64])
+        (reg:SI 200 [ D.15420 ])) nvread.c:240 -1
+     (nil))
+(jump_insn 613 612 614 80 (set (pc)
+        (label_ref 620)) -1
+     (nil)
+ -> 620)
+(barrier 614 613 615)
+(code_label 615 614 616 81 48 "" [1 uses])
+(note 616 615 617 81 [bb 81] NOTE_INSN_BASIC_BLOCK)
+(insn 617 616 618 81 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) nvread.c:243 -1
+     (nil))
+(call_insn 618 617 619 81 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3b65f72000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) nvread.c:243 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(call_insn 619 618 620 81 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f3b655a5438 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) nvread.c:244 -1
+     (nil)
+    (nil))
+(code_label 620 619 621 82 45 "" [4 uses])
+(note 621 620 622 82 [bb 82] NOTE_INSN_BASIC_BLOCK)
+(insn 622 621 623 82 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:248 -1
+     (nil))
+(jump_insn 623 622 624 82 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 630)
+            (pc))) nvread.c:248 -1
+     (nil)
+ -> 630)
+(note 624 623 625 83 [bb 83] NOTE_INSN_BASIC_BLOCK)
+(insn 625 624 626 83 (parallel [
+            (set (reg:DI 314)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2136 [0xfffffffffffff7a8])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:249 -1
+     (nil))
+(insn 626 625 627 83 (set (reg:DI 5 di)
+        (reg:DI 314)) nvread.c:249 -1
+     (nil))
+(call_insn 627 626 628 83 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Create") [flags 0x41]  <function_decl 0x7f3b65ecdca8 TSS_Create>) [0 TSS_Create S1 A8])
+            (const_int 0 [0]))) nvread.c:249 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 628 627 629 83 (set (reg:SI 315)
+        (reg:SI 0 ax)) nvread.c:249 -1
+     (nil))
+(insn 629 628 630 83 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+        (reg:SI 315)) nvread.c:249 -1
+     (nil))
+(code_label 630 629 631 84 49 "" [1 uses])
+(note 631 630 632 84 [bb 84] NOTE_INSN_BASIC_BLOCK)
+(insn 632 631 633 84 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2152 [0xfffffffffffff798])) [0 readLengthSet+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:253 -1
+     (nil))
+(jump_insn 633 632 634 84 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 700)
+            (pc))) nvread.c:253 -1
+     (nil)
+ -> 700)
+(note 634 633 635 85 [bb 85] NOTE_INSN_BASIC_BLOCK)
+(insn 635 634 636 85 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:256 -1
+     (nil))
+(jump_insn 636 635 637 85 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 656)
+            (pc))) nvread.c:256 -1
+     (nil)
+ -> 656)
+(note 637 636 638 86 [bb 86] NOTE_INSN_BASIC_BLOCK)
+(insn 638 637 639 86 (set (reg:SI 201 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2192 [0xfffffffffffff770])) [0 nvIndex+0 S4 A64])) nvread.c:257 -1
+     (nil))
+(insn 639 638 640 86 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2112 [0xfffffffffffff7c0])) [0 in.nvIndex+0 S4 A64])
+        (reg:SI 201 [ D.15420 ])) nvread.c:257 -1
+     (nil))
+(insn 640 639 641 86 (set (reg/f:DI 202 [ D.15421 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2136 [0xfffffffffffff7a8])) [0 tssContext+0 S8 A64])) nvread.c:258 -1
+     (nil))
+(insn 641 640 642 86 (parallel [
+            (set (reg:DI 316)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2112 [0xfffffffffffff7c0])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:258 -1
+     (nil))
+(insn 642 641 643 86 (parallel [
+            (set (reg:DI 317)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:258 -1
+     (nil))
+(insn 643 642 644 86 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 0 [0])) nvread.c:258 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 644 643 645 86 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) nvread.c:258 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 645 644 646 86 (set (reg:SI 38 r9)
+        (const_int 1073741831 [0x40000007])) nvread.c:258 -1
+     (nil))
+(insn 646 645 647 86 (set (reg:SI 37 r8)
+        (const_int 361 [0x169])) nvread.c:258 -1
+     (nil))
+(insn 647 646 648 86 (set (reg:DI 2 cx)
+        (const_int 0 [0])) nvread.c:258 -1
+     (nil))
+(insn 648 647 649 86 (set (reg:DI 1 dx)
+        (reg:DI 316)) nvread.c:258 -1
+     (nil))
+(insn 649 648 650 86 (set (reg:DI 4 si)
+        (reg:DI 317)) nvread.c:258 -1
+     (nil))
+(insn 650 649 651 86 (set (reg:DI 5 di)
+        (reg/f:DI 202 [ D.15421 ])) nvread.c:258 -1
+     (nil))
+(insn 651 650 652 86 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:258 -1
+     (nil))
+(call_insn 652 651 653 86 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Execute") [flags 0x41]  <function_decl 0x7f3b65ecde58 TSS_Execute>) [0 TSS_Execute S1 A8])
+            (const_int 16 [0x10]))) nvread.c:258 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (expr_list:SI (use (reg:SI 37 r8))
+                            (expr_list:SI (use (reg:SI 38 r9))
+                                (nil)))))))))
+(insn 653 652 654 86 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:258 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 654 653 655 86 (set (reg:SI 318)
+        (reg:SI 0 ax)) nvread.c:258 -1
+     (nil))
+(insn 655 654 656 86 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+        (reg:SI 318)) nvread.c:258 -1
+     (nil))
+(code_label 656 655 657 87 51 "" [1 uses])
+(note 657 656 658 87 [bb 87] NOTE_INSN_BASIC_BLOCK)
+(insn 658 657 659 87 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:265 -1
+     (nil))
+(jump_insn 659 658 660 87 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 700)
+            (pc))) nvread.c:265 612 {*jcc_1}
+     (nil)
+ -> 700)
+(note 660 659 661 88 [bb 88] NOTE_INSN_BASIC_BLOCK)
+(insn 661 660 662 88 (set (reg:SI 203 [ D.15420 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2052 [0xfffffffffffff7fc])) [0 out.nvPublic.nvPublic.attributes.val+0 S4 A32])) nvread.c:267 -1
+     (nil))
+(insn 662 661 663 88 (parallel [
+            (set (reg:SI 204 [ D.15420 ])
+                (and:SI (reg:SI 203 [ D.15420 ])
+                    (const_int 240 [0xf0])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:267 -1
+     (nil))
+(insn 663 662 664 88 (parallel [
+            (set (reg:SI 319)
+                (lshiftrt:SI (reg:SI 204 [ D.15420 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:267 -1
+     (nil))
+(insn 664 663 665 88 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2144 [0xfffffffffffff7a0])) [0 nvType+0 S4 A32])
+        (reg:SI 319)) nvread.c:267 -1
+     (nil))
+(insn 665 664 666 88 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2144 [0xfffffffffffff7a0])) [0 nvType+0 S4 A32])
+            (const_int 9 [0x9]))) nvread.c:268 -1
+     (nil))
+(jump_insn 666 665 955 88 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 700)
+            (pc))) nvread.c:268 612 {*jcc_1}
+     (nil)
+ -> 700)
+(note 955 666 667 89 [bb 89] NOTE_INSN_BASIC_BLOCK)
+(insn 667 955 668 89 (set (reg:DI 320)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2144 [0xfffffffffffff7a0])) [0 nvType+0 S4 A32]))) nvread.c:268 -1
+     (nil))
+(insn 668 667 669 89 (parallel [
+            (set (reg:DI 321)
+                (ashift:DI (reg:DI 320)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:268 -1
+     (nil))
+(insn 669 668 670 89 (set (reg:DI 322)
+        (label_ref:DI 675)) nvread.c:268 -1
+     (insn_list:REG_LABEL_OPERAND 675 (nil)))
+(insn 670 669 671 89 (set (reg:SI 323)
+        (mem/u/c:SI (plus:DI (reg:DI 321)
+                (reg:DI 322)) [0  S4 A8])) nvread.c:268 -1
+     (nil))
+(insn 671 670 672 89 (set (reg:DI 324)
+        (sign_extend:DI (reg:SI 323))) nvread.c:268 -1
+     (nil))
+(insn 672 671 673 89 (set (reg:DI 326)
+        (label_ref:DI 675)) nvread.c:268 -1
+     (insn_list:REG_LABEL_OPERAND 675 (nil)))
+(insn 673 672 674 89 (parallel [
+            (set (reg:DI 325)
+                (plus:DI (reg:DI 324)
+                    (reg:DI 326)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:268 -1
+     (nil))
+(jump_insn 674 673 675 89 (parallel [
+            (set (pc)
+                (reg:DI 325))
+            (use (label_ref 675))
+        ]) nvread.c:268 -1
+     (nil)
+ -> 675)
+(code_label 675 674 676 54 "" [3 uses])
+(jump_table_data 676 675 677 (addr_diff_vec:SI (label_ref:DI 675)
+         [
+            (label_ref:DI 678)
+            (label_ref:DI 684)
+            (label_ref:DI 684)
+            (label_ref:DI 700)
+            (label_ref:DI 689)
+            (label_ref:DI 700)
+            (label_ref:DI 700)
+            (label_ref:DI 700)
+            (label_ref:DI 684)
+            (label_ref:DI 684)
+        ]
+        (const_int 0 [0])
+        (const_int 0 [0])))
+(barrier 677 676 678)
+(code_label 678 677 679 90 53 "" [1 uses])
+(note 679 678 680 90 [bb 90] NOTE_INSN_BASIC_BLOCK)
+(insn 680 679 681 90 (set (reg:HI 327)
+        (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -1918 [0xfffffffffffff882])) [0 out.nvPublic.nvPublic.dataSize+0 S2 A16])) nvread.c:270 -1
+     (nil))
+(insn 681 680 682 90 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16])
+        (reg:HI 327)) nvread.c:270 -1
+     (nil))
+(jump_insn 682 681 683 90 (set (pc)
+        (label_ref:DI 700)) nvread.c:271 654 {jump}
+     (nil)
+ -> 700)
+(barrier 683 682 684)
+(code_label 684 683 685 91 55 "" [4 uses])
+(note 685 684 686 91 [bb 91] NOTE_INSN_BASIC_BLOCK)
+(insn 686 685 687 91 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16])
+        (const_int 8 [0x8])) nvread.c:276 -1
+     (nil))
+(jump_insn 687 686 688 91 (set (pc)
+        (label_ref:DI 700)) nvread.c:277 654 {jump}
+     (nil)
+ -> 700)
+(barrier 688 687 689)
+(code_label 689 688 690 92 56 "" [1 uses])
+(note 690 689 691 92 [bb 92] NOTE_INSN_BASIC_BLOCK)
+(insn 691 690 692 92 (set (reg:HI 328)
+        (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2056 [0xfffffffffffff7f8])) [0 out.nvPublic.nvPublic.nameAlg+0 S2 A64])) nvread.c:279 -1
+     (nil))
+(insn 692 691 693 92 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2194 [0xfffffffffffff76e])) [0 nameAlg+0 S2 A16])
+        (reg:HI 328)) nvread.c:279 -1
+     (nil))
+(insn 693 692 694 92 (set (reg:SI 205 [ D.15419 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2194 [0xfffffffffffff76e])) [0 nameAlg+0 S2 A16]))) nvread.c:280 -1
+     (nil))
+(insn 694 693 695 92 (set (reg:SI 5 di)
+        (reg:SI 205 [ D.15419 ])) nvread.c:280 -1
+     (nil))
+(call_insn 695 694 696 92 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_GetDigestSize") [flags 0x41]  <function_decl 0x7f3b65ed50d8 TSS_GetDigestSize>) [0 TSS_GetDigestSize S1 A8])
+            (const_int 0 [0]))) nvread.c:280 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 696 695 697 92 (set (reg:HI 329)
+        (reg:HI 0 ax)) nvread.c:280 -1
+     (nil))
+(insn 697 696 958 92 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16])
+        (reg:HI 329)) nvread.c:280 -1
+     (nil))
+(insn 958 697 700 92 (const_int 0 [0]) nvread.c:281 -1
+     (nil))
+(code_label 700 958 701 94 50 "" [9 uses])
+(note 701 700 702 94 [bb 94] NOTE_INSN_BASIC_BLOCK)
+(insn 702 701 703 94 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:285 -1
+     (nil))
+(jump_insn 703 702 704 94 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 727)
+            (pc))) nvread.c:285 -1
+     (nil)
+ -> 727)
+(note 704 703 705 95 [bb 95] NOTE_INSN_BASIC_BLOCK)
+(insn 705 704 706 95 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16])
+            (const_int 0 [0]))) nvread.c:286 -1
+     (nil))
+(jump_insn 706 705 707 95 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 724)
+            (pc))) nvread.c:286 -1
+     (nil)
+ -> 724)
+(note 707 706 708 96 [bb 96] NOTE_INSN_BASIC_BLOCK)
+(insn 708 707 709 96 (set (reg:DI 206 [ D.15416 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16]))) nvread.c:287 -1
+     (nil))
+(insn 709 708 710 96 (set (reg:DI 5 di)
+        (reg:DI 206 [ D.15416 ])) nvread.c:287 -1
+     (nil))
+(call_insn 710 709 711 96 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7f3b65f8f360 malloc>) [0 __builtin_malloc S1 A8])
+            (const_int 0 [0]))) nvread.c:287 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 711 710 712 96 (set (reg/f:DI 330)
+        (reg:DI 0 ax)) nvread.c:287 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 330)
+        (nil)))
+(insn 712 711 713 96 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2088 [0xfffffffffffff7d8])) [0 readBuffer+0 S8 A64])
+        (reg/f:DI 330)) nvread.c:287 -1
+     (nil))
+(insn 713 712 714 96 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2088 [0xfffffffffffff7d8])) [0 readBuffer+0 S8 A64])
+            (const_int 0 [0]))) nvread.c:288 -1
+     (nil))
+(jump_insn 714 713 715 96 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 727)
+            (pc))) nvread.c:288 -1
+     (nil)
+ -> 727)
+(note 715 714 716 97 [bb 97] NOTE_INSN_BASIC_BLOCK)
+(insn 716 715 717 97 (set (reg:SI 207 [ D.15419 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16]))) nvread.c:289 -1
+     (nil))
+(insn 717 716 718 97 (set (reg:SI 4 si)
+        (reg:SI 207 [ D.15419 ])) nvread.c:289 -1
+     (nil))
+(insn 718 717 719 97 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC28") [flags 0x2]  <var_decl 0x7f3b65622360 *.LC28>)) nvread.c:289 -1
+     (nil))
+(insn 719 718 720 97 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:289 -1
+     (nil))
+(call_insn 720 719 721 97 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f3b65f6fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) nvread.c:289 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 721 720 722 97 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) nvread.c:290 -1
+     (nil))
+(call_insn 722 721 723 97 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7f3b65f85000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) nvread.c:290 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 723 722 724)
+(code_label 724 723 725 98 58 "" [1 uses])
+(note 725 724 726 98 [bb 98] NOTE_INSN_BASIC_BLOCK)
+(insn 726 725 727 98 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2088 [0xfffffffffffff7d8])) [0 readBuffer+0 S8 A64])
+        (const_int 0 [0])) nvread.c:294 -1
+     (nil))
+(code_label 727 726 728 99 57 "" [2 uses])
+(note 728 727 729 99 [bb 99] NOTE_INSN_BASIC_BLOCK)
+(insn 729 728 730 99 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:298 -1
+     (nil))
+(jump_insn 730 729 731 99 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 739)
+            (pc))) nvread.c:298 -1
+     (nil)
+ -> 739)
+(note 731 730 732 100 [bb 100] NOTE_INSN_BASIC_BLOCK)
+(insn 732 731 733 100 (set (reg/f:DI 208 [ D.15421 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2136 [0xfffffffffffff7a8])) [0 tssContext+0 S8 A64])) nvread.c:299 -1
+     (nil))
+(insn 733 732 734 100 (parallel [
+            (set (reg:DI 331)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2164 [0xfffffffffffff78c])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:299 -1
+     (nil))
+(insn 734 733 735 100 (set (reg:DI 4 si)
+        (reg:DI 331)) nvread.c:299 -1
+     (nil))
+(insn 735 734 736 100 (set (reg:DI 5 di)
+        (reg/f:DI 208 [ D.15421 ])) nvread.c:299 -1
+     (nil))
+(call_insn 736 735 737 100 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("readNvBufferMax") [flags 0x41]  <function_decl 0x7f3b6558f0d8 readNvBufferMax>) [0 readNvBufferMax S1 A8])
+            (const_int 0 [0]))) nvread.c:299 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 737 736 738 100 (set (reg:SI 332)
+        (reg:SI 0 ax)) nvread.c:299 -1
+     (nil))
+(insn 738 737 739 100 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+        (reg:SI 332)) nvread.c:299 -1
+     (nil))
+(code_label 739 738 740 101 59 "" [1 uses])
+(note 740 739 741 101 [bb 101] NOTE_INSN_BASIC_BLOCK)
+(insn 741 740 742 101 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:302 -1
+     (nil))
+(jump_insn 742 741 743 101 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 749)
+            (pc))) nvread.c:302 -1
+     (nil)
+ -> 749)
+(note 743 742 744 102 [bb 102] NOTE_INSN_BASIC_BLOCK)
+(insn 744 743 745 102 (set (reg:SI 209 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2192 [0xfffffffffffff770])) [0 nvIndex+0 S4 A64])) nvread.c:303 -1
+     (nil))
+(insn 745 744 746 102 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2076 [0xfffffffffffff7e4])) [0 in.nvIndex+0 S4 A32])
+        (reg:SI 209 [ D.15420 ])) nvread.c:303 -1
+     (nil))
+(insn 746 745 747 102 (set (reg:HI 333)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2200 [0xfffffffffffff768])) [0 offset+0 S2 A16])) nvread.c:304 -1
+     (nil))
+(insn 747 746 748 102 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2070 [0xfffffffffffff7ea])) [0 in.offset+0 S2 A16])
+        (reg:HI 333)) nvread.c:304 -1
+     (nil))
+(insn 748 747 749 102 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2196 [0xfffffffffffff76c])) [0 bytesRead+0 S2 A16])
+        (const_int 0 [0])) nvread.c:305 -1
+     (nil))
+(code_label 749 748 750 103 60 "" [1 uses])
+(note 750 749 751 103 [bb 103] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 751 750 752 103 (set (pc)
+        (label_ref 851)) nvread.c:308 -1
+     (nil)
+ -> 851)
+(barrier 752 751 856)
+(code_label 856 752 753 104 67 "" [1 uses])
+(note 753 856 754 104 [bb 104] NOTE_INSN_BASIC_BLOCK)
+(insn 754 753 755 104 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:309 -1
+     (nil))
+(jump_insn 755 754 756 104 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 779)
+            (pc))) nvread.c:309 -1
+     (nil)
+ -> 779)
+(note 756 755 757 105 [bb 105] NOTE_INSN_BASIC_BLOCK)
+(insn 757 756 758 105 (set (reg:HI 334)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2200 [0xfffffffffffff768])) [0 offset+0 S2 A16])) nvread.c:311 -1
+     (nil))
+(insn 758 757 759 105 (set (reg:HI 335)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2196 [0xfffffffffffff76c])) [0 bytesRead+0 S2 A16])) nvread.c:311 -1
+     (nil))
+(insn 759 758 760 105 (parallel [
+            (set (reg:HI 210 [ D.15422 ])
+                (plus:HI (reg:HI 334)
+                    (reg:HI 335)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:311 -1
+     (expr_list:REG_EQUAL (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2200 [0xfffffffffffff768])) [0 offset+0 S2 A16])
+            (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2196 [0xfffffffffffff76c])) [0 bytesRead+0 S2 A16]))
+        (nil)))
+(insn 760 759 761 105 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2070 [0xfffffffffffff7ea])) [0 in.offset+0 S2 A16])
+        (reg:HI 210 [ D.15422 ])) nvread.c:311 -1
+     (nil))
+(insn 761 760 762 105 (set (reg:SI 211 [ D.15419 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16]))) nvread.c:312 -1
+     (nil))
+(insn 762 761 763 105 (set (reg:SI 212 [ D.15419 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2196 [0xfffffffffffff76c])) [0 bytesRead+0 S2 A16]))) nvread.c:312 -1
+     (nil))
+(insn 763 762 764 105 (parallel [
+            (set (reg:SI 213 [ D.15419 ])
+                (minus:SI (reg:SI 211 [ D.15419 ])
+                    (reg:SI 212 [ D.15419 ])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:312 -1
+     (nil))
+(insn 764 763 765 105 (set (reg:SI 214 [ D.15420 ])
+        (reg:SI 213 [ D.15419 ])) nvread.c:312 -1
+     (nil))
+(insn 765 764 766 105 (set (reg:SI 215 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2164 [0xfffffffffffff78c])) [0 nvBufferMax+0 S4 A32])) nvread.c:312 -1
+     (nil))
+(insn 766 765 767 105 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 214 [ D.15420 ])
+            (reg:SI 215 [ D.15420 ]))) nvread.c:312 -1
+     (nil))
+(jump_insn 767 766 768 105 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 774)
+            (pc))) nvread.c:312 -1
+     (nil)
+ -> 774)
+(note 768 767 769 106 [bb 106] NOTE_INSN_BASIC_BLOCK)
+(insn 769 768 770 106 (set (reg:HI 336)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16])) nvread.c:313 -1
+     (nil))
+(insn 770 769 771 106 (parallel [
+            (set (reg:HI 216 [ D.15422 ])
+                (minus:HI (reg:HI 336)
+                    (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2196 [0xfffffffffffff76c])) [0 bytesRead+0 S2 A16])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:313 -1
+     (expr_list:REG_EQUAL (minus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16])
+            (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2196 [0xfffffffffffff76c])) [0 bytesRead+0 S2 A16]))
+        (nil)))
+(insn 771 770 772 106 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2072 [0xfffffffffffff7e8])) [0 in.size+0 S2 A64])
+        (reg:HI 216 [ D.15422 ])) nvread.c:313 -1
+     (nil))
+(jump_insn 772 771 773 106 (set (pc)
+        (label_ref 779)) -1
+     (nil)
+ -> 779)
+(barrier 773 772 774)
+(code_label 774 773 775 107 63 "" [1 uses])
+(note 775 774 776 107 [bb 107] NOTE_INSN_BASIC_BLOCK)
+(insn 776 775 777 107 (set (reg:SI 217 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2164 [0xfffffffffffff78c])) [0 nvBufferMax+0 S4 A32])) nvread.c:316 -1
+     (nil))
+(insn 777 776 778 107 (set (reg:HI 218 [ D.15422 ])
+        (subreg:HI (reg:SI 217 [ D.15420 ]) 0)) nvread.c:316 -1
+     (nil))
+(insn 778 777 779 107 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2072 [0xfffffffffffff7e8])) [0 in.size+0 S2 A64])
+        (reg:HI 218 [ D.15422 ])) nvread.c:316 -1
+     (nil))
+(code_label 779 778 780 108 62 "" [2 uses])
+(note 780 779 781 108 [bb 108] NOTE_INSN_BASIC_BLOCK)
+(insn 781 780 782 108 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:319 -1
+     (nil))
+(jump_insn 782 781 783 108 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 828)
+            (pc))) nvread.c:319 -1
+     (nil)
+ -> 828)
+(note 783 782 784 109 [bb 109] NOTE_INSN_BASIC_BLOCK)
+(insn 784 783 785 109 (set (reg:SI 219 [ D.15419 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f3b6555e900 verbose>) [0 verbose+0 S4 A32])) nvread.c:320 -1
+     (nil))
+(insn 785 784 786 109 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 219 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:320 -1
+     (nil))
+(jump_insn 786 785 787 109 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 794)
+            (pc))) nvread.c:320 -1
+     (nil)
+ -> 794)
+(note 787 786 788 110 [bb 110] NOTE_INSN_BASIC_BLOCK)
+(insn 788 787 789 110 (set (reg:HI 220 [ D.15422 ])
+        (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2072 [0xfffffffffffff7e8])) [0 in.size+0 S2 A64])) nvread.c:320 -1
+     (nil))
+(insn 789 788 790 110 (set (reg:SI 221 [ D.15419 ])
+        (zero_extend:SI (reg:HI 220 [ D.15422 ]))) nvread.c:320 -1
+     (nil))
+(insn 790 789 791 110 (set (reg:SI 4 si)
+        (reg:SI 221 [ D.15419 ])) nvread.c:320 -1
+     (nil))
+(insn 791 790 792 110 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC29") [flags 0x2]  <var_decl 0x7f3b656223f0 *.LC29>)) nvread.c:320 -1
+     (nil))
+(insn 792 791 793 110 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:320 -1
+     (nil))
+(call_insn 793 792 794 110 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f3b65f6fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) nvread.c:320 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(code_label 794 793 795 111 65 "" [1 uses])
+(note 795 794 796 111 [bb 111] NOTE_INSN_BASIC_BLOCK)
+(insn 796 795 797 111 (set (reg:SI 222 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2168 [0xfffffffffffff788])) [0 sessionAttributes2+0 S4 A64])) nvread.c:321 -1
+     (nil))
+(insn 797 796 798 111 (set (reg:SI 223 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2172 [0xfffffffffffff784])) [0 sessionHandle2+0 S4 A32])) nvread.c:321 -1
+     (nil))
+(insn 798 797 799 111 (set (reg:SI 224 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2176 [0xfffffffffffff780])) [0 sessionAttributes1+0 S4 A64])) nvread.c:321 -1
+     (nil))
+(insn 799 798 800 111 (set (reg:SI 225 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2180 [0xfffffffffffff77c])) [0 sessionHandle1+0 S4 A32])) nvread.c:321 -1
+     (nil))
+(insn 800 799 801 111 (set (reg:SI 226 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2184 [0xfffffffffffff778])) [0 sessionAttributes0+0 S4 A64])) nvread.c:321 -1
+     (nil))
+(insn 801 800 802 111 (set (reg:SI 227 [ D.15420 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2188 [0xfffffffffffff774])) [0 sessionHandle0+0 S4 A32])) nvread.c:321 -1
+     (nil))
+(insn 802 801 803 111 (set (reg/f:DI 228 [ D.15421 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2136 [0xfffffffffffff7a8])) [0 tssContext+0 S8 A64])) nvread.c:321 -1
+     (nil))
+(insn 803 802 804 111 (parallel [
+            (set (reg:DI 337)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2080 [0xfffffffffffff7e0])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:321 -1
+     (nil))
+(insn 804 803 805 111 (parallel [
+            (set (reg:DI 338)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:321 -1
+     (nil))
+(insn 805 804 806 111 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 806 805 807 111 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 0 [0])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 807 806 808 111 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 808 807 809 111 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 1073741831 [0x40000007])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(insn 809 808 810 111 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 222 [ D.15420 ])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 40 [0x28])
+        (nil)))
+(insn 810 809 811 111 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 48 [0x30])
+        (nil)))
+(insn 811 810 812 111 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 223 [ D.15420 ])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 56 [0x38])
+        (nil)))
+(insn 812 811 813 111 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 224 [ D.15420 ])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 64 [0x40])
+        (nil)))
+(insn 813 812 814 111 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 72 [0x48])
+        (nil)))
+(insn 814 813 815 111 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 225 [ D.15420 ])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 80 [0x50])
+        (nil)))
+(insn 815 814 816 111 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 226 [ D.15420 ])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 88 [0x58])
+        (nil)))
+(insn 816 815 817 111 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2096 [0xfffffffffffff7d0])) [0 nvPassword+0 S8 A64])) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 96 [0x60])
+        (nil)))
+(insn 817 816 818 111 (set (reg:SI 38 r9)
+        (reg:SI 227 [ D.15420 ])) nvread.c:321 -1
+     (nil))
+(insn 818 817 819 111 (set (reg:SI 37 r8)
+        (const_int 334 [0x14e])) nvread.c:321 -1
+     (nil))
+(insn 819 818 820 111 (set (reg:DI 2 cx)
+        (const_int 0 [0])) nvread.c:321 -1
+     (nil))
+(insn 820 819 821 111 (set (reg:DI 1 dx)
+        (reg:DI 337)) nvread.c:321 -1
+     (nil))
+(insn 821 820 822 111 (set (reg:DI 4 si)
+        (reg:DI 338)) nvread.c:321 -1
+     (nil))
+(insn 822 821 823 111 (set (reg:DI 5 di)
+        (reg/f:DI 228 [ D.15421 ])) nvread.c:321 -1
+     (nil))
+(insn 823 822 824 111 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:321 -1
+     (nil))
+(call_insn 824 823 825 111 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Execute") [flags 0x41]  <function_decl 0x7f3b65ecde58 TSS_Execute>) [0 TSS_Execute S1 A8])
+            (const_int 96 [0x60]))) nvread.c:321 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (expr_list:SI (use (reg:SI 37 r8))
+                            (expr_list:SI (use (reg:SI 38 r9))
+                                (nil)))))))))
+(insn 825 824 826 111 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 96 [0x60])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:321 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 826 825 827 111 (set (reg:SI 339)
+        (reg:SI 0 ax)) nvread.c:321 -1
+     (nil))
+(insn 827 826 828 111 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+        (reg:SI 339)) nvread.c:321 -1
+     (nil))
+(code_label 828 827 829 112 64 "" [1 uses])
+(note 829 828 830 112 [bb 112] NOTE_INSN_BASIC_BLOCK)
+(insn 830 829 831 112 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:332 -1
+     (nil))
+(jump_insn 831 830 832 112 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 851)
+            (pc))) nvread.c:332 -1
+     (nil)
+ -> 851)
+(note 832 831 833 113 [bb 113] NOTE_INSN_BASIC_BLOCK)
+(insn 833 832 834 113 (set (reg:HI 229 [ D.15422 ])
+        (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2064 [0xfffffffffffff7f0])) [0 out.data.b.size+0 S2 A64])) nvread.c:333 -1
+     (nil))
+(insn 834 833 835 113 (set (reg:DI 230 [ D.15416 ])
+        (zero_extend:DI (reg:HI 229 [ D.15422 ]))) nvread.c:333 -1
+     (nil))
+(insn 835 834 836 113 (set (reg:DI 231 [ D.15423 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2196 [0xfffffffffffff76c])) [0 bytesRead+0 S2 A16]))) nvread.c:333 -1
+     (nil))
+(insn 836 835 837 113 (set (reg/f:DI 340)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2088 [0xfffffffffffff7d8])) [0 readBuffer+0 S8 A64])) nvread.c:333 -1
+     (nil))
+(insn 837 836 838 113 (parallel [
+            (set (reg/f:DI 232 [ D.15424 ])
+                (plus:DI (reg:DI 231 [ D.15423 ])
+                    (reg/f:DI 340)))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:333 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2088 [0xfffffffffffff7d8])) [0 readBuffer+0 S8 A64])
+            (reg:DI 231 [ D.15423 ]))
+        (nil)))
+(insn 838 837 839 113 (parallel [
+            (set (reg:DI 341)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:333 -1
+     (nil))
+(insn 839 838 840 113 (parallel [
+            (set (reg:DI 342)
+                (plus:DI (reg:DI 341)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:333 -1
+     (nil))
+(insn 840 839 841 113 (set (reg:DI 1 dx)
+        (reg:DI 230 [ D.15416 ])) nvread.c:333 -1
+     (nil))
+(insn 841 840 842 113 (set (reg:DI 4 si)
+        (reg:DI 342)) nvread.c:333 -1
+     (nil))
+(insn 842 841 843 113 (set (reg:DI 5 di)
+        (reg/f:DI 232 [ D.15424 ])) nvread.c:333 -1
+     (nil))
+(call_insn 843 842 844 113 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f3b65f65e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) nvread.c:333 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 844 843 845 113 (set (reg:HI 233 [ D.15422 ])
+        (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2064 [0xfffffffffffff7f0])) [0 out.data.b.size+0 S2 A64])) nvread.c:334 -1
+     (nil))
+(insn 845 844 846 113 (parallel [
+            (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2196 [0xfffffffffffff76c])) [0 bytesRead+0 S2 A16])
+                (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2196 [0xfffffffffffff76c])) [0 bytesRead+0 S2 A16])
+                    (reg:HI 233 [ D.15422 ])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:334 -1
+     (nil))
+(insn 846 845 847 113 (set (reg:HI 343)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2196 [0xfffffffffffff76c])) [0 bytesRead+0 S2 A16])) nvread.c:335 -1
+     (nil))
+(insn 847 846 848 113 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 343)
+            (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16]))) nvread.c:335 -1
+     (nil))
+(jump_insn 848 847 849 113 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 851)
+            (pc))) nvread.c:335 -1
+     (nil)
+ -> 851)
+(note 849 848 850 114 [bb 114] NOTE_INSN_BASIC_BLOCK)
+(insn 850 849 851 114 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2148 [0xfffffffffffff79c])) [0 done+0 S4 A32])
+        (const_int 1 [0x1])) nvread.c:336 -1
+     (nil))
+(code_label 851 850 852 115 61 "" [3 uses])
+(note 852 851 853 115 [bb 115] NOTE_INSN_BASIC_BLOCK)
+(insn 853 852 854 115 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:308 -1
+     (nil))
+(jump_insn 854 853 855 115 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 859)
+            (pc))) nvread.c:308 -1
+     (nil)
+ -> 859)
+(note 855 854 857 116 [bb 116] NOTE_INSN_BASIC_BLOCK)
+(insn 857 855 858 116 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2148 [0xfffffffffffff79c])) [0 done+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:308 -1
+     (nil))
+(jump_insn 858 857 859 116 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 856)
+            (pc))) nvread.c:308 -1
+     (nil)
+ -> 856)
+(code_label 859 858 860 117 66 "" [1 uses])
+(note 860 859 861 117 [bb 117] NOTE_INSN_BASIC_BLOCK)
+(insn 861 860 862 117 (set (reg/f:DI 234 [ D.15421 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2136 [0xfffffffffffff7a8])) [0 tssContext+0 S8 A64])) nvread.c:341 -1
+     (nil))
+(insn 862 861 863 117 (set (reg:DI 5 di)
+        (reg/f:DI 234 [ D.15421 ])) nvread.c:341 -1
+     (nil))
+(call_insn 863 862 864 117 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Delete") [flags 0x41]  <function_decl 0x7f3b65ecdd80 TSS_Delete>) [0 TSS_Delete S1 A8])
+            (const_int 0 [0]))) nvread.c:341 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 864 863 865 117 (set (reg:SI 344)
+        (reg:SI 0 ax)) nvread.c:341 -1
+     (nil))
+(insn 865 864 866 117 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2140 [0xfffffffffffff7a4])) [0 rc1+0 S4 A32])
+        (reg:SI 344)) nvread.c:341 -1
+     (nil))
+(insn 866 865 867 117 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:342 -1
+     (nil))
+(jump_insn 867 866 868 117 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 871)
+            (pc))) nvread.c:342 -1
+     (nil)
+ -> 871)
+(note 868 867 869 118 [bb 118] NOTE_INSN_BASIC_BLOCK)
+(insn 869 868 870 118 (set (reg:SI 345)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2140 [0xfffffffffffff7a4])) [0 rc1+0 S4 A32])) nvread.c:343 -1
+     (nil))
+(insn 870 869 871 118 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+        (reg:SI 345)) nvread.c:343 -1
+     (nil))
+(code_label 871 870 872 119 68 "" [1 uses])
+(note 872 871 873 119 [bb 119] NOTE_INSN_BASIC_BLOCK)
+(insn 873 872 874 119 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:346 -1
+     (nil))
+(jump_insn 874 873 875 119 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 888)
+            (pc))) nvread.c:346 -1
+     (nil)
+ -> 888)
+(note 875 874 876 120 [bb 120] NOTE_INSN_BASIC_BLOCK)
+(insn 876 875 877 120 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2104 [0xfffffffffffff7c8])) [0 datafilename+0 S8 A64])
+            (const_int 0 [0]))) nvread.c:346 -1
+     (nil))
+(jump_insn 877 876 878 120 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 888)
+            (pc))) nvread.c:346 -1
+     (nil)
+ -> 888)
+(note 878 877 879 121 [bb 121] NOTE_INSN_BASIC_BLOCK)
+(insn 879 878 880 121 (set (reg:DI 235 [ D.15416 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16]))) nvread.c:347 -1
+     (nil))
+(insn 880 879 881 121 (set (reg:DI 346)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2104 [0xfffffffffffff7c8])) [0 datafilename+0 S8 A64])) nvread.c:347 -1
+     (nil))
+(insn 881 880 882 121 (set (reg:DI 347)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2088 [0xfffffffffffff7d8])) [0 readBuffer+0 S8 A64])) nvread.c:347 -1
+     (nil))
+(insn 882 881 883 121 (set (reg:DI 1 dx)
+        (reg:DI 346)) nvread.c:347 -1
+     (nil))
+(insn 883 882 884 121 (set (reg:DI 4 si)
+        (reg:DI 235 [ D.15416 ])) nvread.c:347 -1
+     (nil))
+(insn 884 883 885 121 (set (reg:DI 5 di)
+        (reg:DI 347)) nvread.c:347 -1
+     (nil))
+(call_insn 885 884 886 121 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_WriteBinaryFile") [flags 0x41]  <function_decl 0x7f3b65ede1b0 TSS_File_WriteBinaryFile>) [0 TSS_File_WriteBinaryFile S1 A8])
+            (const_int 0 [0]))) nvread.c:347 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 886 885 887 121 (set (reg:SI 348)
+        (reg:SI 0 ax)) nvread.c:347 -1
+     (nil))
+(insn 887 886 888 121 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+        (reg:SI 348)) nvread.c:347 -1
+     (nil))
+(code_label 888 887 889 122 69 "" [2 uses])
+(note 889 888 890 122 [bb 122] NOTE_INSN_BASIC_BLOCK)
+(insn 890 889 891 122 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) nvread.c:349 -1
+     (nil))
+(jump_insn 891 890 892 122 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 909)
+            (pc))) nvread.c:349 -1
+     (nil)
+ -> 909)
+(note 892 891 893 123 [bb 123] NOTE_INSN_BASIC_BLOCK)
+(insn 893 892 894 123 (set (reg:SI 236 [ D.15419 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f3b6555e900 verbose>) [0 verbose+0 S4 A32])) nvread.c:350 -1
+     (nil))
+(insn 894 893 895 123 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 236 [ D.15419 ])
+            (const_int 0 [0]))) nvread.c:350 -1
+     (nil))
+(jump_insn 895 894 896 123 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 899)
+            (pc))) nvread.c:350 -1
+     (nil)
+ -> 899)
+(note 896 895 897 124 [bb 124] NOTE_INSN_BASIC_BLOCK)
+(insn 897 896 898 124 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC30") [flags 0x2]  <var_decl 0x7f3b65622480 *.LC30>)) nvread.c:350 -1
+     (nil))
+(call_insn 898 897 899 124 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:350 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 899 898 900 125 71 "" [1 uses])
+(note 900 899 901 125 [bb 125] NOTE_INSN_BASIC_BLOCK)
+(insn 901 900 902 125 (set (reg:SI 237 [ D.15420 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2198 [0xfffffffffffff76a])) [0 readLength+0 S2 A16]))) nvread.c:351 -1
+     (nil))
+(insn 902 901 903 125 (set (reg:DI 349)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2088 [0xfffffffffffff7d8])) [0 readBuffer+0 S8 A64])) nvread.c:351 -1
+     (nil))
+(insn 903 902 904 125 (set (reg:SI 1 dx)
+        (reg:SI 237 [ D.15420 ])) nvread.c:351 -1
+     (nil))
+(insn 904 903 905 125 (set (reg:DI 4 si)
+        (reg:DI 349)) nvread.c:351 -1
+     (nil))
+(insn 905 904 906 125 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC31") [flags 0x2]  <var_decl 0x7f3b65622510 *.LC31>)) nvread.c:351 -1
+     (nil))
+(call_insn 906 905 907 125 (call (mem:QI (symbol_ref:DI ("TSS_PrintAll") [flags 0x41]  <function_decl 0x7f3b65e9c948 TSS_PrintAll>) [0 TSS_PrintAll S1 A8])
+        (const_int 0 [0])) nvread.c:351 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(jump_insn 907 906 908 125 (set (pc)
+        (label_ref 935)) -1
+     (nil)
+ -> 935)
+(barrier 908 907 909)
+(code_label 909 908 910 126 70 "" [1 uses])
+(note 910 909 911 126 [bb 126] NOTE_INSN_BASIC_BLOCK)
+(insn 911 910 912 126 (set (reg:SI 350)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])) nvread.c:357 -1
+     (nil))
+(insn 912 911 913 126 (set (reg:SI 4 si)
+        (reg:SI 350)) nvread.c:357 -1
+     (nil))
+(insn 913 912 914 126 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC32") [flags 0x2]  <var_decl 0x7f3b656225a0 *.LC32>)) nvread.c:357 -1
+     (nil))
+(insn 914 913 915 126 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:357 -1
+     (nil))
+(call_insn 915 914 916 126 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f3b65f6fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) nvread.c:357 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 916 915 917 126 (set (reg:SI 351)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])) nvread.c:358 -1
+     (nil))
+(insn 917 916 918 126 (parallel [
+            (set (reg:DI 352)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2112 [0xfffffffffffff7c0])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:358 -1
+     (nil))
+(insn 918 917 919 126 (parallel [
+            (set (reg:DI 353)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2120 [0xfffffffffffff7b8])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:358 -1
+     (nil))
+(insn 919 918 920 126 (parallel [
+            (set (reg:DI 354)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2128 [0xfffffffffffff7b0])))
+            (clobber (reg:CC 17 flags))
+        ]) nvread.c:358 -1
+     (nil))
+(insn 920 919 921 126 (set (reg:SI 2 cx)
+        (reg:SI 351)) nvread.c:358 -1
+     (nil))
+(insn 921 920 922 126 (set (reg:DI 1 dx)
+        (reg:DI 352)) nvread.c:358 -1
+     (nil))
+(insn 922 921 923 126 (set (reg:DI 4 si)
+        (reg:DI 353)) nvread.c:358 -1
+     (nil))
+(insn 923 922 924 126 (set (reg:DI 5 di)
+        (reg:DI 354)) nvread.c:358 -1
+     (nil))
+(call_insn 924 923 925 126 (call (mem:QI (symbol_ref:DI ("TSS_ResponseCode_toString") [flags 0x41]  <function_decl 0x7f3b65ede5e8 TSS_ResponseCode_toString>) [0 TSS_ResponseCode_toString S1 A8])
+        (const_int 0 [0])) nvread.c:358 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 925 924 926 126 (set (reg/f:DI 238 [ D.15425 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2112 [0xfffffffffffff7c0])) [0 num+0 S8 A64])) nvread.c:359 -1
+     (nil))
+(insn 926 925 927 126 (set (reg/f:DI 239 [ D.15425 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2120 [0xfffffffffffff7b8])) [0 submsg+0 S8 A64])) nvread.c:359 -1
+     (nil))
+(insn 927 926 928 126 (set (reg/f:DI 240 [ D.15425 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2128 [0xfffffffffffff7b0])) [0 msg+0 S8 A64])) nvread.c:359 -1
+     (nil))
+(insn 928 927 929 126 (set (reg:DI 2 cx)
+        (reg/f:DI 238 [ D.15425 ])) nvread.c:359 -1
+     (nil))
+(insn 929 928 930 126 (set (reg:DI 1 dx)
+        (reg/f:DI 239 [ D.15425 ])) nvread.c:359 -1
+     (nil))
+(insn 930 929 931 126 (set (reg:DI 4 si)
+        (reg/f:DI 240 [ D.15425 ])) nvread.c:359 -1
+     (nil))
+(insn 931 930 932 126 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC33") [flags 0x2]  <var_decl 0x7f3b65622630 *.LC33>)) nvread.c:359 -1
+     (nil))
+(insn 932 931 933 126 (set (reg:QI 0 ax)
+        (const_int 0 [0])) nvread.c:359 -1
+     (nil))
+(call_insn 933 932 934 126 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f3b65f6fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) nvread.c:359 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (nil)))))))
+(insn 934 933 935 126 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])
+        (const_int 1 [0x1])) nvread.c:360 -1
+     (nil))
+(code_label 935 934 936 127 72 "" [1 uses])
+(note 936 935 937 127 [bb 127] NOTE_INSN_BASIC_BLOCK)
+(insn 937 936 938 127 (set (reg:DI 355)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2088 [0xfffffffffffff7d8])) [0 readBuffer+0 S8 A64])) nvread.c:362 -1
+     (nil))
+(insn 938 937 939 127 (set (reg:DI 5 di)
+        (reg:DI 355)) nvread.c:362 -1
+     (nil))
+(call_insn 939 938 940 127 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f3b65f85e58 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) nvread.c:362 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 940 939 943 127 (set (reg:SI 241 [ D.15419 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2160 [0xfffffffffffff790])) [0 rc+0 S4 A32])) nvread.c:363 -1
+     (nil))
+(insn 943 940 947 127 (set (reg:SI 242 [ <retval> ])
+        (reg:SI 241 [ D.15419 ])) -1
+     (nil))
+(insn 947 943 948 127 (set (reg/i:SI 0 ax)
+        (reg:SI 242 [ <retval> ])) nvread.c:364 -1
+     (nil))
+(insn 948 947 949 127 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.15427+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) nvread.c:364 -1
+     (nil))
+(jump_insn 949 948 956 127 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 952)
+            (pc))) nvread.c:364 -1
+     (nil)
+ -> 952)
+(note 956 949 950 130 [bb 130] NOTE_INSN_BASIC_BLOCK)
+(call_insn 950 956 951 130 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f3b655a55e8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) nvread.c:364 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 951 950 952)
+(code_label 952 951 957 131 74 "" [1 uses])
+(note 957 952 953 131 [bb 131] NOTE_INSN_BASIC_BLOCK)
+(insn 953 957 0 131 (use (reg/i:SI 0 ax)) nvread.c:364 -1
+     (nil))
+
+;; Function printUsage (printUsage, funcdef_no=3, decl_uid=15069, cgraph_uid=3, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) nvread.c:368 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3b65f72000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) nvread.c:368 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC34") [flags 0x2]  <var_decl 0x7f3b65648ab0 *.LC34>)) nvread.c:369 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:369 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) nvread.c:370 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3b65f72000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) nvread.c:370 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC35") [flags 0x2]  <var_decl 0x7f3b65648b40 *.LC35>)) nvread.c:371 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:371 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) nvread.c:372 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3b65f72000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) nvread.c:372 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC36") [flags 0x2]  <var_decl 0x7f3b65648bd0 *.LC36>)) nvread.c:373 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:373 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC37") [flags 0x2]  <var_decl 0x7f3b65648c60 *.LC37>)) nvread.c:374 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:374 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC38") [flags 0x2]  <var_decl 0x7f3b65648cf0 *.LC38>)) nvread.c:375 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:375 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC39") [flags 0x2]  <var_decl 0x7f3b65648d80 *.LC39>)) nvread.c:376 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:376 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 23 22 24 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC40") [flags 0x2]  <var_decl 0x7f3b65648e10 *.LC40>)) nvread.c:377 -1
+     (nil))
+(call_insn 24 23 25 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:377 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC41") [flags 0x2]  <var_decl 0x7f3b65648ea0 *.LC41>)) nvread.c:378 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:378 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 27 26 28 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC42") [flags 0x2]  <var_decl 0x7f3b65648f30 *.LC42>)) nvread.c:379 -1
+     (nil))
+(call_insn 28 27 29 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:379 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 29 28 30 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) nvread.c:380 -1
+     (nil))
+(call_insn 30 29 31 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3b65f72000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) nvread.c:380 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 31 30 32 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC43") [flags 0x2]  <var_decl 0x7f3b65651000 *.LC43>)) nvread.c:381 -1
+     (nil))
+(call_insn 32 31 33 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:381 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 33 32 34 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC44") [flags 0x2]  <var_decl 0x7f3b65651090 *.LC44>)) nvread.c:382 -1
+     (nil))
+(call_insn 34 33 35 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:382 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 35 34 36 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC45") [flags 0x2]  <var_decl 0x7f3b65651120 *.LC45>)) nvread.c:383 -1
+     (nil))
+(call_insn 36 35 37 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3b65f72360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) nvread.c:383 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 37 36 38 2 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) nvread.c:384 -1
+     (nil))
+(call_insn 38 37 39 2 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7f3b65f85000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) nvread.c:384 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 39 38 0)

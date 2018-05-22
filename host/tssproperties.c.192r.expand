@@ -1,0 +1,3265 @@
+
+;; Function TSS_GlobalProperties_Init (TSS_GlobalProperties_Init, funcdef_no=2, decl_uid=9837, cgraph_uid=2, symbol_order=5)
+
+Partition 1: size 8 align 8
+	value_6
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 24.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:126 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:130 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) tssproperties.c:130 -1
+     (nil)
+ -> 18)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 4 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f344397ebd0 *.LC0>)) tssproperties.c:131 -1
+     (nil))
+(call_insn 10 9 11 4 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getenv") [flags 0x41]  <function_decl 0x7f3443f77798 getenv>) [0 getenv S1 A8])
+            (const_int 0 [0]))) tssproperties.c:131 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 11 10 12 4 (set (reg:DI 89)
+        (reg:DI 0 ax)) tssproperties.c:131 -1
+     (nil))
+(insn 12 11 13 4 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])
+        (reg:DI 89)) tssproperties.c:131 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])) tssproperties.c:132 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:DI 5 di)
+        (reg:DI 90)) tssproperties.c:132 -1
+     (nil))
+(call_insn 15 14 16 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetTraceLevel") [flags 0x3]  <function_decl 0x7f3443942af8 TSS_SetTraceLevel>) [0 TSS_SetTraceLevel S1 A8])
+            (const_int 0 [0]))) tssproperties.c:132 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 16 15 17 4 (set (reg:SI 91)
+        (reg:SI 0 ax)) tssproperties.c:132 -1
+     (nil))
+(insn 17 16 18 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (reg:SI 91)) tssproperties.c:132 -1
+     (nil))
+(code_label 18 17 19 5 2 "" [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 23 5 (set (reg:SI 87 [ D.10108 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])) tssproperties.c:134 -1
+     (nil))
+(insn 23 20 27 5 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.10108 ])) tssproperties.c:134 -1
+     (nil))
+(insn 27 23 28 5 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tssproperties.c:135 -1
+     (nil))
+(insn 28 27 0 5 (use (reg/i:SI 0 ax)) tssproperties.c:135 -1
+     (nil))
+
+;; Function TSS_Properties_Init (TSS_Properties_Init, funcdef_no=3, decl_uid=9839, cgraph_uid=3, symbol_order=6)
+
+Partition 1: size 8 align 8
+	value_28
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 22 into block 21...
+Merged blocks 21 and 22.
+Merged 21 and 22 without moving.
+Removing jump 156.
+Merging block 23 into block 21...
+Merged blocks 21 and 23.
+Merged 21 and 23 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssproperties.c:143 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:144 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:147 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) tssproperties.c:147 -1
+     (nil)
+ -> 22)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 11 4 (set (reg/f:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:148 -1
+     (nil))
+(insn 11 10 12 4 (set (mem/f/j:DI (reg/f:DI 89) [0 tssContext_20(D)->tssAuthContext+0 S8 A64])
+        (const_int 0 [0])) tssproperties.c:148 -1
+     (nil))
+(insn 12 11 13 4 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:149 -1
+     (nil))
+(insn 13 12 14 4 (set (mem/j:SI (plus:DI (reg/f:DI 90)
+                (const_int 80 [0x50])) [0 tssContext_20(D)->tssFirstTransmit+0 S4 A64])
+        (const_int 1 [0x1])) tssproperties.c:149 -1
+     (nil))
+(insn 14 13 15 4 (set (reg/f:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:155 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/j:SI (plus:DI (reg/f:DI 91)
+                (const_int 84 [0x54])) [0 tssContext_20(D)->sock_fd+0 S4 A32])
+        (const_int -1 [0xffffffffffffffff])) tssproperties.c:155 -1
+     (nil))
+(insn 16 15 17 4 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:158 -1
+     (nil))
+(insn 17 16 18 4 (set (mem/j:SI (plus:DI (reg/f:DI 92)
+                (const_int 88 [0x58])) [0 tssContext_20(D)->dev_fd+0 S4 A64])
+        (const_int -1 [0xffffffffffffffff])) tssproperties.c:158 -1
+     (nil))
+(insn 18 17 19 4 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:165 -1
+     (nil))
+(insn 19 18 20 4 (set (mem/f/j:DI (plus:DI (reg/f:DI 93)
+                (const_int 24 [0x18])) [0 tssContext_20(D)->tssSessionEncKey+0 S8 A64])
+        (const_int 0 [0])) tssproperties.c:165 -1
+     (nil))
+(insn 20 19 21 4 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:166 -1
+     (nil))
+(insn 21 20 22 4 (set (mem/f/j:DI (plus:DI (reg/f:DI 94)
+                (const_int 32 [0x20])) [0 tssContext_20(D)->tssSessionDecKey+0 S8 A64])
+        (const_int 0 [0])) tssproperties.c:166 -1
+     (nil))
+(code_label 22 21 23 5 5 "" [1 uses])
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:187 -1
+     (nil))
+(jump_insn 25 24 26 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 38)
+            (pc))) tssproperties.c:187 -1
+     (nil)
+ -> 38)
+(note 26 25 27 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 6 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f34439991b0 *.LC1>)) tssproperties.c:188 -1
+     (nil))
+(call_insn 28 27 29 6 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getenv") [flags 0x41]  <function_decl 0x7f3443f77798 getenv>) [0 getenv S1 A8])
+            (const_int 0 [0]))) tssproperties.c:188 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 29 28 30 6 (set (reg:DI 95)
+        (reg:DI 0 ax)) tssproperties.c:188 -1
+     (nil))
+(insn 30 29 31 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])
+        (reg:DI 95)) tssproperties.c:188 -1
+     (nil))
+(insn 31 30 32 6 (set (reg:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])) tssproperties.c:189 -1
+     (nil))
+(insn 32 31 33 6 (set (reg:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:189 -1
+     (nil))
+(insn 33 32 34 6 (set (reg:DI 4 si)
+        (reg:DI 96)) tssproperties.c:189 -1
+     (nil))
+(insn 34 33 35 6 (set (reg:DI 5 di)
+        (reg:DI 97)) tssproperties.c:189 -1
+     (nil))
+(call_insn 35 34 36 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetDataDirectory") [flags 0x3]  <function_decl 0x7f3443942bd0 TSS_SetDataDirectory>) [0 TSS_SetDataDirectory S1 A8])
+            (const_int 0 [0]))) tssproperties.c:189 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 36 35 37 6 (set (reg:SI 98)
+        (reg:SI 0 ax)) tssproperties.c:189 -1
+     (nil))
+(insn 37 36 38 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (reg:SI 98)) tssproperties.c:189 -1
+     (nil))
+(code_label 38 37 39 7 6 "" [1 uses])
+(note 39 38 40 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:192 -1
+     (nil))
+(jump_insn 41 40 42 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) tssproperties.c:192 -1
+     (nil)
+ -> 54)
+(note 42 41 43 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 43 42 44 8 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f3443999240 *.LC2>)) tssproperties.c:193 -1
+     (nil))
+(call_insn 44 43 45 8 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getenv") [flags 0x41]  <function_decl 0x7f3443f77798 getenv>) [0 getenv S1 A8])
+            (const_int 0 [0]))) tssproperties.c:193 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 45 44 46 8 (set (reg:DI 99)
+        (reg:DI 0 ax)) tssproperties.c:193 -1
+     (nil))
+(insn 46 45 47 8 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])
+        (reg:DI 99)) tssproperties.c:193 -1
+     (nil))
+(insn 47 46 48 8 (set (reg:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])) tssproperties.c:194 -1
+     (nil))
+(insn 48 47 49 8 (set (reg:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:194 -1
+     (nil))
+(insn 49 48 50 8 (set (reg:DI 4 si)
+        (reg:DI 100)) tssproperties.c:194 -1
+     (nil))
+(insn 50 49 51 8 (set (reg:DI 5 di)
+        (reg:DI 101)) tssproperties.c:194 -1
+     (nil))
+(call_insn 51 50 52 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetEncryptSessions") [flags 0x3]  <function_decl 0x7f344394d288 TSS_SetEncryptSessions>) [0 TSS_SetEncryptSessions S1 A8])
+            (const_int 0 [0]))) tssproperties.c:194 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 52 51 53 8 (set (reg:SI 102)
+        (reg:SI 0 ax)) tssproperties.c:194 -1
+     (nil))
+(insn 53 52 54 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (reg:SI 102)) tssproperties.c:194 -1
+     (nil))
+(code_label 54 53 55 9 7 "" [1 uses])
+(note 55 54 56 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 57 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:197 -1
+     (nil))
+(jump_insn 57 56 58 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 70)
+            (pc))) tssproperties.c:197 -1
+     (nil)
+ -> 70)
+(note 58 57 59 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 60 10 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f34439992d0 *.LC3>)) tssproperties.c:198 -1
+     (nil))
+(call_insn 60 59 61 10 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getenv") [flags 0x41]  <function_decl 0x7f3443f77798 getenv>) [0 getenv S1 A8])
+            (const_int 0 [0]))) tssproperties.c:198 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 61 60 62 10 (set (reg:DI 103)
+        (reg:DI 0 ax)) tssproperties.c:198 -1
+     (nil))
+(insn 62 61 63 10 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])
+        (reg:DI 103)) tssproperties.c:198 -1
+     (nil))
+(insn 63 62 64 10 (set (reg:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])) tssproperties.c:199 -1
+     (nil))
+(insn 64 63 65 10 (set (reg:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:199 -1
+     (nil))
+(insn 65 64 66 10 (set (reg:DI 4 si)
+        (reg:DI 104)) tssproperties.c:199 -1
+     (nil))
+(insn 66 65 67 10 (set (reg:DI 5 di)
+        (reg:DI 105)) tssproperties.c:199 -1
+     (nil))
+(call_insn 67 66 68 10 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetCommandPort") [flags 0x3]  <function_decl 0x7f3443942ca8 TSS_SetCommandPort>) [0 TSS_SetCommandPort S1 A8])
+            (const_int 0 [0]))) tssproperties.c:199 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 68 67 69 10 (set (reg:SI 106)
+        (reg:SI 0 ax)) tssproperties.c:199 -1
+     (nil))
+(insn 69 68 70 10 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (reg:SI 106)) tssproperties.c:199 -1
+     (nil))
+(code_label 70 69 71 11 8 "" [1 uses])
+(note 71 70 72 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:202 -1
+     (nil))
+(jump_insn 73 72 74 11 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 86)
+            (pc))) tssproperties.c:202 -1
+     (nil)
+ -> 86)
+(note 74 73 75 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 75 74 76 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f3443999360 *.LC4>)) tssproperties.c:203 -1
+     (nil))
+(call_insn 76 75 77 12 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getenv") [flags 0x41]  <function_decl 0x7f3443f77798 getenv>) [0 getenv S1 A8])
+            (const_int 0 [0]))) tssproperties.c:203 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 77 76 78 12 (set (reg:DI 107)
+        (reg:DI 0 ax)) tssproperties.c:203 -1
+     (nil))
+(insn 78 77 79 12 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])
+        (reg:DI 107)) tssproperties.c:203 -1
+     (nil))
+(insn 79 78 80 12 (set (reg:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])) tssproperties.c:204 -1
+     (nil))
+(insn 80 79 81 12 (set (reg:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:204 -1
+     (nil))
+(insn 81 80 82 12 (set (reg:DI 4 si)
+        (reg:DI 108)) tssproperties.c:204 -1
+     (nil))
+(insn 82 81 83 12 (set (reg:DI 5 di)
+        (reg:DI 109)) tssproperties.c:204 -1
+     (nil))
+(call_insn 83 82 84 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetPlatformPort") [flags 0x3]  <function_decl 0x7f3443942d80 TSS_SetPlatformPort>) [0 TSS_SetPlatformPort S1 A8])
+            (const_int 0 [0]))) tssproperties.c:204 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 84 83 85 12 (set (reg:SI 110)
+        (reg:SI 0 ax)) tssproperties.c:204 -1
+     (nil))
+(insn 85 84 86 12 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (reg:SI 110)) tssproperties.c:204 -1
+     (nil))
+(code_label 86 85 87 13 9 "" [1 uses])
+(note 87 86 88 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 89 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:207 -1
+     (nil))
+(jump_insn 89 88 90 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 102)
+            (pc))) tssproperties.c:207 -1
+     (nil)
+ -> 102)
+(note 90 89 91 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 91 90 92 14 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f34439993f0 *.LC5>)) tssproperties.c:208 -1
+     (nil))
+(call_insn 92 91 93 14 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getenv") [flags 0x41]  <function_decl 0x7f3443f77798 getenv>) [0 getenv S1 A8])
+            (const_int 0 [0]))) tssproperties.c:208 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 93 92 94 14 (set (reg:DI 111)
+        (reg:DI 0 ax)) tssproperties.c:208 -1
+     (nil))
+(insn 94 93 95 14 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])
+        (reg:DI 111)) tssproperties.c:208 -1
+     (nil))
+(insn 95 94 96 14 (set (reg:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])) tssproperties.c:209 -1
+     (nil))
+(insn 96 95 97 14 (set (reg:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:209 -1
+     (nil))
+(insn 97 96 98 14 (set (reg:DI 4 si)
+        (reg:DI 112)) tssproperties.c:209 -1
+     (nil))
+(insn 98 97 99 14 (set (reg:DI 5 di)
+        (reg:DI 113)) tssproperties.c:209 -1
+     (nil))
+(call_insn 99 98 100 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetServerName") [flags 0x3]  <function_decl 0x7f3443942e58 TSS_SetServerName>) [0 TSS_SetServerName S1 A8])
+            (const_int 0 [0]))) tssproperties.c:209 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 100 99 101 14 (set (reg:SI 114)
+        (reg:SI 0 ax)) tssproperties.c:209 -1
+     (nil))
+(insn 101 100 102 14 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (reg:SI 114)) tssproperties.c:209 -1
+     (nil))
+(code_label 102 101 103 15 10 "" [1 uses])
+(note 103 102 104 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 104 103 105 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:212 -1
+     (nil))
+(jump_insn 105 104 106 15 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 118)
+            (pc))) tssproperties.c:212 -1
+     (nil)
+ -> 118)
+(note 106 105 107 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 107 106 108 16 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f3443999480 *.LC6>)) tssproperties.c:213 -1
+     (nil))
+(call_insn 108 107 109 16 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getenv") [flags 0x41]  <function_decl 0x7f3443f77798 getenv>) [0 getenv S1 A8])
+            (const_int 0 [0]))) tssproperties.c:213 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 109 108 110 16 (set (reg:DI 115)
+        (reg:DI 0 ax)) tssproperties.c:213 -1
+     (nil))
+(insn 110 109 111 16 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])
+        (reg:DI 115)) tssproperties.c:213 -1
+     (nil))
+(insn 111 110 112 16 (set (reg:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])) tssproperties.c:214 -1
+     (nil))
+(insn 112 111 113 16 (set (reg:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:214 -1
+     (nil))
+(insn 113 112 114 16 (set (reg:DI 4 si)
+        (reg:DI 116)) tssproperties.c:214 -1
+     (nil))
+(insn 114 113 115 16 (set (reg:DI 5 di)
+        (reg:DI 117)) tssproperties.c:214 -1
+     (nil))
+(call_insn 115 114 116 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetServerType") [flags 0x3]  <function_decl 0x7f344394d000 TSS_SetServerType>) [0 TSS_SetServerType S1 A8])
+            (const_int 0 [0]))) tssproperties.c:214 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 116 115 117 16 (set (reg:SI 118)
+        (reg:SI 0 ax)) tssproperties.c:214 -1
+     (nil))
+(insn 117 116 118 16 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (reg:SI 118)) tssproperties.c:214 -1
+     (nil))
+(code_label 118 117 119 17 11 "" [1 uses])
+(note 119 118 120 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 120 119 121 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:217 -1
+     (nil))
+(jump_insn 121 120 122 17 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 134)
+            (pc))) tssproperties.c:217 -1
+     (nil)
+ -> 134)
+(note 122 121 123 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 123 122 124 18 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f3443999510 *.LC7>)) tssproperties.c:218 -1
+     (nil))
+(call_insn 124 123 125 18 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getenv") [flags 0x41]  <function_decl 0x7f3443f77798 getenv>) [0 getenv S1 A8])
+            (const_int 0 [0]))) tssproperties.c:218 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 125 124 126 18 (set (reg:DI 119)
+        (reg:DI 0 ax)) tssproperties.c:218 -1
+     (nil))
+(insn 126 125 127 18 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])
+        (reg:DI 119)) tssproperties.c:218 -1
+     (nil))
+(insn 127 126 128 18 (set (reg:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])) tssproperties.c:219 -1
+     (nil))
+(insn 128 127 129 18 (set (reg:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:219 -1
+     (nil))
+(insn 129 128 130 18 (set (reg:DI 4 si)
+        (reg:DI 120)) tssproperties.c:219 -1
+     (nil))
+(insn 130 129 131 18 (set (reg:DI 5 di)
+        (reg:DI 121)) tssproperties.c:219 -1
+     (nil))
+(call_insn 131 130 132 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetInterfaceType") [flags 0x3]  <function_decl 0x7f344394d0d8 TSS_SetInterfaceType>) [0 TSS_SetInterfaceType S1 A8])
+            (const_int 0 [0]))) tssproperties.c:219 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 132 131 133 18 (set (reg:SI 122)
+        (reg:SI 0 ax)) tssproperties.c:219 -1
+     (nil))
+(insn 133 132 134 18 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (reg:SI 122)) tssproperties.c:219 -1
+     (nil))
+(code_label 134 133 135 19 12 "" [1 uses])
+(note 135 134 136 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 136 135 137 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:222 -1
+     (nil))
+(jump_insn 137 136 138 19 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 150)
+            (pc))) tssproperties.c:222 -1
+     (nil)
+ -> 150)
+(note 138 137 139 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 139 138 140 20 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f34439995a0 *.LC8>)) tssproperties.c:223 -1
+     (nil))
+(call_insn 140 139 141 20 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("getenv") [flags 0x41]  <function_decl 0x7f3443f77798 getenv>) [0 getenv S1 A8])
+            (const_int 0 [0]))) tssproperties.c:223 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 141 140 142 20 (set (reg:DI 123)
+        (reg:DI 0 ax)) tssproperties.c:223 -1
+     (nil))
+(insn 142 141 143 20 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])
+        (reg:DI 123)) tssproperties.c:223 -1
+     (nil))
+(insn 143 142 144 20 (set (reg:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 value+0 S8 A64])) tssproperties.c:224 -1
+     (nil))
+(insn 144 143 145 20 (set (reg:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:224 -1
+     (nil))
+(insn 145 144 146 20 (set (reg:DI 4 si)
+        (reg:DI 124)) tssproperties.c:224 -1
+     (nil))
+(insn 146 145 147 20 (set (reg:DI 5 di)
+        (reg:DI 125)) tssproperties.c:224 -1
+     (nil))
+(call_insn 147 146 148 20 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetDevice") [flags 0x3]  <function_decl 0x7f344394d1b0 TSS_SetDevice>) [0 TSS_SetDevice S1 A8])
+            (const_int 0 [0]))) tssproperties.c:224 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 148 147 149 20 (set (reg:SI 126)
+        (reg:SI 0 ax)) tssproperties.c:224 -1
+     (nil))
+(insn 149 148 150 20 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])
+        (reg:SI 126)) tssproperties.c:224 -1
+     (nil))
+(code_label 150 149 151 21 13 "" [1 uses])
+(note 151 150 152 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 152 151 155 21 (set (reg:SI 87 [ D.10110 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 rc+0 S4 A32])) tssproperties.c:226 -1
+     (nil))
+(insn 155 152 159 21 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.10110 ])) tssproperties.c:226 -1
+     (nil))
+(insn 159 155 160 21 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tssproperties.c:227 -1
+     (nil))
+(insn 160 159 0 21 (use (reg/i:SI 0 ax)) tssproperties.c:227 -1
+     (nil))
+
+;; Function TSS_SetProperty (TSS_SetProperty, funcdef_no=4, decl_uid=5138, cgraph_uid=4, symbol_order=7)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 23 into block 22...
+Merged blocks 22 and 23.
+Merged 22 and 23 without moving.
+Removing jump 156.
+Merging block 24 into block 22...
+Merged blocks 22 and 24.
+Merged 22 and 24 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssproperties.c:239 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 property+0 S4 A32])
+        (reg:SI 4 si [ property ])) tssproperties.c:239 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])
+        (reg:DI 1 dx [ value ])) tssproperties.c:239 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:240 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:DI 90)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssFirstCall")  <var_decl 0x7f344393b240 tssFirstCall>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:243 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 87 [ D.10119 ])
+        (mem/c:SI (reg/f:DI 90) [0 tssFirstCall+0 S4 A32])) tssproperties.c:243 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.10119 ])
+            (const_int 0 [0]))) tssproperties.c:243 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) tssproperties.c:243 -1
+     (nil)
+ -> 32)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:246 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) tssproperties.c:246 -1
+     (nil)
+ -> 20)
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 17 16 18 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Crypto_Init") [flags 0x41]  <function_decl 0x7f34438de438 TSS_Crypto_Init>) [0 TSS_Crypto_Init S1 A8])
+            (const_int 0 [0]))) tssproperties.c:247 -1
+     (nil)
+    (nil))
+(insn 18 17 19 5 (set (reg:SI 91)
+        (reg:SI 0 ax)) tssproperties.c:247 -1
+     (nil))
+(insn 19 18 20 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 91)) tssproperties.c:247 -1
+     (nil))
+(code_label 20 19 21 6 17 "" [1 uses])
+(note 21 20 22 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:250 -1
+     (nil))
+(jump_insn 23 22 24 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) tssproperties.c:250 -1
+     (nil)
+ -> 28)
+(note 24 23 25 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(call_insn 25 24 26 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_GlobalProperties_Init") [flags 0x1]  <function_decl 0x7f3443942948 TSS_GlobalProperties_Init>) [0 TSS_GlobalProperties_Init S1 A8])
+            (const_int 0 [0]))) tssproperties.c:251 -1
+     (nil)
+    (nil))
+(insn 26 25 27 7 (set (reg:SI 92)
+        (reg:SI 0 ax)) tssproperties.c:251 -1
+     (nil))
+(insn 27 26 28 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 92)) tssproperties.c:251 -1
+     (nil))
+(code_label 28 27 29 8 18 "" [1 uses])
+(note 29 28 30 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 8 (set (reg/f:DI 93)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssFirstCall")  <var_decl 0x7f344393b240 tssFirstCall>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:253 -1
+     (nil))
+(insn 31 30 32 8 (set (mem/c:SI (reg/f:DI 93) [0 tssFirstCall+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:253 -1
+     (nil))
+(code_label 32 31 33 9 16 "" [1 uses])
+(note 33 32 34 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:255 -1
+     (nil))
+(jump_insn 35 34 36 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 150)
+            (pc))) tssproperties.c:255 -1
+     (nil)
+ -> 150)
+(note 36 35 37 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 10 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -28 [0xffffffffffffffe4])) [0 property+0 S4 A32])
+            (const_int 9 [0x9]))) tssproperties.c:256 -1
+     (nil))
+(jump_insn 38 37 162 10 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 147)
+            (pc))) tssproperties.c:256 -1
+     (nil)
+ -> 147)
+(note 162 38 39 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 39 162 40 11 (set (reg:DI 94)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -28 [0xffffffffffffffe4])) [0 property+0 S4 A32]))) tssproperties.c:256 -1
+     (nil))
+(insn 40 39 41 11 (parallel [
+            (set (reg:DI 95)
+                (ashift:DI (reg:DI 94)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tssproperties.c:256 -1
+     (nil))
+(insn 41 40 42 11 (set (reg:DI 96)
+        (label_ref:DI 47)) tssproperties.c:256 -1
+     (insn_list:REG_LABEL_OPERAND 47 (nil)))
+(insn 42 41 43 11 (set (reg:SI 97)
+        (mem/u/c:SI (plus:DI (reg:DI 95)
+                (reg:DI 96)) [0  S4 A8])) tssproperties.c:256 -1
+     (nil))
+(insn 43 42 44 11 (set (reg:DI 98)
+        (sign_extend:DI (reg:SI 97))) tssproperties.c:256 -1
+     (nil))
+(insn 44 43 45 11 (set (reg:DI 100)
+        (label_ref:DI 47)) tssproperties.c:256 -1
+     (insn_list:REG_LABEL_OPERAND 47 (nil)))
+(insn 45 44 46 11 (parallel [
+            (set (reg:DI 99)
+                (plus:DI (reg:DI 98)
+                    (reg:DI 100)))
+            (clobber (reg:CC 17 flags))
+        ]) tssproperties.c:256 -1
+     (nil))
+(jump_insn 46 45 47 11 (parallel [
+            (set (pc)
+                (reg:DI 99))
+            (use (label_ref 47))
+        ]) tssproperties.c:256 -1
+     (nil)
+ -> 47)
+(code_label 47 46 48 22 "" [3 uses])
+(jump_table_data 48 47 49 (addr_diff_vec:SI (label_ref:DI 47)
+         [
+            (label_ref:DI 147)
+            (label_ref:DI 50)
+            (label_ref:DI 59)
+            (label_ref:DI 70)
+            (label_ref:DI 81)
+            (label_ref:DI 92)
+            (label_ref:DI 114)
+            (label_ref:DI 125)
+            (label_ref:DI 136)
+            (label_ref:DI 103)
+        ]
+        (const_int 0 [0])
+        (const_int 0 [0])))
+(barrier 49 48 50)
+(code_label 50 49 51 12 21 "" [1 uses])
+(note 51 50 52 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 12 (set (reg:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])) tssproperties.c:258 -1
+     (nil))
+(insn 53 52 54 12 (set (reg:DI 5 di)
+        (reg:DI 101)) tssproperties.c:258 -1
+     (nil))
+(call_insn 54 53 55 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetTraceLevel") [flags 0x3]  <function_decl 0x7f3443942af8 TSS_SetTraceLevel>) [0 TSS_SetTraceLevel S1 A8])
+            (const_int 0 [0]))) tssproperties.c:258 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 55 54 56 12 (set (reg:SI 102)
+        (reg:SI 0 ax)) tssproperties.c:258 -1
+     (nil))
+(insn 56 55 57 12 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 102)) tssproperties.c:258 -1
+     (nil))
+(jump_insn 57 56 58 12 (set (pc)
+        (label_ref 150)) tssproperties.c:259 -1
+     (nil)
+ -> 150)
+(barrier 58 57 59)
+(code_label 59 58 60 13 23 "" [1 uses])
+(note 60 59 61 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 61 60 62 13 (set (reg:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])) tssproperties.c:261 -1
+     (nil))
+(insn 62 61 63 13 (set (reg:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:261 -1
+     (nil))
+(insn 63 62 64 13 (set (reg:DI 4 si)
+        (reg:DI 103)) tssproperties.c:261 -1
+     (nil))
+(insn 64 63 65 13 (set (reg:DI 5 di)
+        (reg:DI 104)) tssproperties.c:261 -1
+     (nil))
+(call_insn 65 64 66 13 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetDataDirectory") [flags 0x3]  <function_decl 0x7f3443942bd0 TSS_SetDataDirectory>) [0 TSS_SetDataDirectory S1 A8])
+            (const_int 0 [0]))) tssproperties.c:261 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 66 65 67 13 (set (reg:SI 105)
+        (reg:SI 0 ax)) tssproperties.c:261 -1
+     (nil))
+(insn 67 66 68 13 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 105)) tssproperties.c:261 -1
+     (nil))
+(jump_insn 68 67 69 13 (set (pc)
+        (label_ref 150)) tssproperties.c:262 -1
+     (nil)
+ -> 150)
+(barrier 69 68 70)
+(code_label 70 69 71 14 24 "" [1 uses])
+(note 71 70 72 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 14 (set (reg:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])) tssproperties.c:264 -1
+     (nil))
+(insn 73 72 74 14 (set (reg:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:264 -1
+     (nil))
+(insn 74 73 75 14 (set (reg:DI 4 si)
+        (reg:DI 106)) tssproperties.c:264 -1
+     (nil))
+(insn 75 74 76 14 (set (reg:DI 5 di)
+        (reg:DI 107)) tssproperties.c:264 -1
+     (nil))
+(call_insn 76 75 77 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetCommandPort") [flags 0x3]  <function_decl 0x7f3443942ca8 TSS_SetCommandPort>) [0 TSS_SetCommandPort S1 A8])
+            (const_int 0 [0]))) tssproperties.c:264 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 77 76 78 14 (set (reg:SI 108)
+        (reg:SI 0 ax)) tssproperties.c:264 -1
+     (nil))
+(insn 78 77 79 14 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 108)) tssproperties.c:264 -1
+     (nil))
+(jump_insn 79 78 80 14 (set (pc)
+        (label_ref 150)) tssproperties.c:265 -1
+     (nil)
+ -> 150)
+(barrier 80 79 81)
+(code_label 81 80 82 15 25 "" [1 uses])
+(note 82 81 83 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 15 (set (reg:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])) tssproperties.c:267 -1
+     (nil))
+(insn 84 83 85 15 (set (reg:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:267 -1
+     (nil))
+(insn 85 84 86 15 (set (reg:DI 4 si)
+        (reg:DI 109)) tssproperties.c:267 -1
+     (nil))
+(insn 86 85 87 15 (set (reg:DI 5 di)
+        (reg:DI 110)) tssproperties.c:267 -1
+     (nil))
+(call_insn 87 86 88 15 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetPlatformPort") [flags 0x3]  <function_decl 0x7f3443942d80 TSS_SetPlatformPort>) [0 TSS_SetPlatformPort S1 A8])
+            (const_int 0 [0]))) tssproperties.c:267 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 88 87 89 15 (set (reg:SI 111)
+        (reg:SI 0 ax)) tssproperties.c:267 -1
+     (nil))
+(insn 89 88 90 15 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 111)) tssproperties.c:267 -1
+     (nil))
+(jump_insn 90 89 91 15 (set (pc)
+        (label_ref 150)) tssproperties.c:268 -1
+     (nil)
+ -> 150)
+(barrier 91 90 92)
+(code_label 92 91 93 16 26 "" [1 uses])
+(note 93 92 94 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 94 93 95 16 (set (reg:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])) tssproperties.c:270 -1
+     (nil))
+(insn 95 94 96 16 (set (reg:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:270 -1
+     (nil))
+(insn 96 95 97 16 (set (reg:DI 4 si)
+        (reg:DI 112)) tssproperties.c:270 -1
+     (nil))
+(insn 97 96 98 16 (set (reg:DI 5 di)
+        (reg:DI 113)) tssproperties.c:270 -1
+     (nil))
+(call_insn 98 97 99 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetServerName") [flags 0x3]  <function_decl 0x7f3443942e58 TSS_SetServerName>) [0 TSS_SetServerName S1 A8])
+            (const_int 0 [0]))) tssproperties.c:270 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 99 98 100 16 (set (reg:SI 114)
+        (reg:SI 0 ax)) tssproperties.c:270 -1
+     (nil))
+(insn 100 99 101 16 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 114)) tssproperties.c:270 -1
+     (nil))
+(jump_insn 101 100 102 16 (set (pc)
+        (label_ref 150)) tssproperties.c:271 -1
+     (nil)
+ -> 150)
+(barrier 102 101 103)
+(code_label 103 102 104 17 30 "" [1 uses])
+(note 104 103 105 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 105 104 106 17 (set (reg:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])) tssproperties.c:273 -1
+     (nil))
+(insn 106 105 107 17 (set (reg:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:273 -1
+     (nil))
+(insn 107 106 108 17 (set (reg:DI 4 si)
+        (reg:DI 115)) tssproperties.c:273 -1
+     (nil))
+(insn 108 107 109 17 (set (reg:DI 5 di)
+        (reg:DI 116)) tssproperties.c:273 -1
+     (nil))
+(call_insn 109 108 110 17 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetServerType") [flags 0x3]  <function_decl 0x7f344394d000 TSS_SetServerType>) [0 TSS_SetServerType S1 A8])
+            (const_int 0 [0]))) tssproperties.c:273 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 110 109 111 17 (set (reg:SI 117)
+        (reg:SI 0 ax)) tssproperties.c:273 -1
+     (nil))
+(insn 111 110 112 17 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 117)) tssproperties.c:273 -1
+     (nil))
+(jump_insn 112 111 113 17 (set (pc)
+        (label_ref 150)) tssproperties.c:274 -1
+     (nil)
+ -> 150)
+(barrier 113 112 114)
+(code_label 114 113 115 18 27 "" [1 uses])
+(note 115 114 116 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 116 115 117 18 (set (reg:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])) tssproperties.c:276 -1
+     (nil))
+(insn 117 116 118 18 (set (reg:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:276 -1
+     (nil))
+(insn 118 117 119 18 (set (reg:DI 4 si)
+        (reg:DI 118)) tssproperties.c:276 -1
+     (nil))
+(insn 119 118 120 18 (set (reg:DI 5 di)
+        (reg:DI 119)) tssproperties.c:276 -1
+     (nil))
+(call_insn 120 119 121 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetInterfaceType") [flags 0x3]  <function_decl 0x7f344394d0d8 TSS_SetInterfaceType>) [0 TSS_SetInterfaceType S1 A8])
+            (const_int 0 [0]))) tssproperties.c:276 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 121 120 122 18 (set (reg:SI 120)
+        (reg:SI 0 ax)) tssproperties.c:276 -1
+     (nil))
+(insn 122 121 123 18 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 120)) tssproperties.c:276 -1
+     (nil))
+(jump_insn 123 122 124 18 (set (pc)
+        (label_ref 150)) tssproperties.c:277 -1
+     (nil)
+ -> 150)
+(barrier 124 123 125)
+(code_label 125 124 126 19 28 "" [1 uses])
+(note 126 125 127 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 127 126 128 19 (set (reg:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])) tssproperties.c:279 -1
+     (nil))
+(insn 128 127 129 19 (set (reg:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:279 -1
+     (nil))
+(insn 129 128 130 19 (set (reg:DI 4 si)
+        (reg:DI 121)) tssproperties.c:279 -1
+     (nil))
+(insn 130 129 131 19 (set (reg:DI 5 di)
+        (reg:DI 122)) tssproperties.c:279 -1
+     (nil))
+(call_insn 131 130 132 19 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetDevice") [flags 0x3]  <function_decl 0x7f344394d1b0 TSS_SetDevice>) [0 TSS_SetDevice S1 A8])
+            (const_int 0 [0]))) tssproperties.c:279 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 132 131 133 19 (set (reg:SI 123)
+        (reg:SI 0 ax)) tssproperties.c:279 -1
+     (nil))
+(insn 133 132 134 19 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 123)) tssproperties.c:279 -1
+     (nil))
+(jump_insn 134 133 135 19 (set (pc)
+        (label_ref 150)) tssproperties.c:280 -1
+     (nil)
+ -> 150)
+(barrier 135 134 136)
+(code_label 136 135 137 20 29 "" [1 uses])
+(note 137 136 138 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 138 137 139 20 (set (reg:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])) tssproperties.c:282 -1
+     (nil))
+(insn 139 138 140 20 (set (reg:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:282 -1
+     (nil))
+(insn 140 139 141 20 (set (reg:DI 4 si)
+        (reg:DI 124)) tssproperties.c:282 -1
+     (nil))
+(insn 141 140 142 20 (set (reg:DI 5 di)
+        (reg:DI 125)) tssproperties.c:282 -1
+     (nil))
+(call_insn 142 141 143 20 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetEncryptSessions") [flags 0x3]  <function_decl 0x7f344394d288 TSS_SetEncryptSessions>) [0 TSS_SetEncryptSessions S1 A8])
+            (const_int 0 [0]))) tssproperties.c:282 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 143 142 144 20 (set (reg:SI 126)
+        (reg:SI 0 ax)) tssproperties.c:282 -1
+     (nil))
+(insn 144 143 145 20 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 126)) tssproperties.c:282 -1
+     (nil))
+(jump_insn 145 144 146 20 (set (pc)
+        (label_ref 150)) tssproperties.c:283 -1
+     (nil)
+ -> 150)
+(barrier 146 145 147)
+(code_label 147 146 148 21 20 "" [2 uses])
+(note 148 147 149 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 149 148 150 21 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 720901 [0xb0005])) tssproperties.c:285 -1
+     (nil))
+(code_label 150 149 151 22 19 "" [10 uses])
+(note 151 150 152 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 152 151 155 22 (set (reg:SI 88 [ D.10120 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssproperties.c:288 -1
+     (nil))
+(insn 155 152 159 22 (set (reg:SI 89 [ <retval> ])
+        (reg:SI 88 [ D.10120 ])) tssproperties.c:288 -1
+     (nil))
+(insn 159 155 160 22 (set (reg/i:SI 0 ax)
+        (reg:SI 89 [ <retval> ])) tssproperties.c:289 -1
+     (nil))
+(insn 160 159 0 22 (use (reg/i:SI 0 ax)) tssproperties.c:289 -1
+     (nil))
+
+;; Function TSS_SetTraceLevel (TSS_SetTraceLevel, funcdef_no=5, decl_uid=9841, cgraph_uid=5, symbol_order=8)
+
+Partition 1: size 4 align 4
+	irc_11
+Partition 0: size 4 align 4
+	rc_2
+Partition 2: size 4 align 4
+	level
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+Purged edges from bb 20
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 13->14 to 17 failed.
+Merging block 19 into block 18...
+Merged blocks 18 and 19.
+Merged 18 and 19 without moving.
+Removing jump 84.
+Merging block 20 into block 18...
+Merged blocks 18 and 20.
+Merged 18 and 20 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 13->14 to 17 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])
+        (reg:DI 5 di [ value ])) tssproperties.c:299 -1
+     (nil))
+(note 3 2 4 2 NOTE_INSN_FUNCTION_BEG)
+(insn 4 3 5 2 (set (reg/f:DI 91)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f34439ae870 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:299 -1
+     (nil))
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.10123+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) tssproperties.c:299 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:300 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:304 -1
+     (nil))
+(jump_insn 10 9 11 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) tssproperties.c:304 -1
+     (nil)
+ -> 17)
+(note 11 10 12 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 12 11 13 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])
+            (const_int 0 [0]))) tssproperties.c:305 -1
+     (nil))
+(jump_insn 13 12 14 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) tssproperties.c:305 -1
+     (nil)
+ -> 17)
+(note 14 13 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 5 (set (reg/f:DI 92)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f34439ae900 *.LC9>)) tssproperties.c:306 -1
+     (nil))
+(insn 16 15 17 5 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])
+        (reg/f:DI 92)) tssproperties.c:306 -1
+     (nil))
+(code_label 17 16 18 6 33 "" [2 uses])
+(note 18 17 19 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:309 -1
+     (nil))
+(jump_insn 20 19 21 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 44)
+            (pc))) tssproperties.c:309 -1
+     (nil)
+ -> 44)
+(note 21 20 22 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 7 (parallel [
+            (set (reg:DI 93)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])))
+            (clobber (reg:CC 17 flags))
+        ]) tssproperties.c:310 -1
+     (nil))
+(insn 23 22 24 7 (set (reg:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 value+0 S8 A64])) tssproperties.c:310 -1
+     (nil))
+(insn 24 23 25 7 (set (reg:DI 1 dx)
+        (reg:DI 93)) tssproperties.c:310 -1
+     (nil))
+(insn 25 24 26 7 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f34439ae990 *.LC10>)) tssproperties.c:310 -1
+     (nil))
+(insn 26 25 27 7 (set (reg:DI 5 di)
+        (reg:DI 94)) tssproperties.c:310 -1
+     (nil))
+(insn 27 26 28 7 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssproperties.c:310 -1
+     (nil))
+(call_insn 28 27 29 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3443e65ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) tssproperties.c:310 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 29 28 30 7 (set (reg:SI 95)
+        (reg:SI 0 ax)) tssproperties.c:310 -1
+     (nil))
+(insn 30 29 31 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 irc+0 S4 A32])
+        (reg:SI 95)) tssproperties.c:310 -1
+     (nil))
+(insn 31 30 32 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 irc+0 S4 A32])
+            (const_int 1 [0x1]))) tssproperties.c:311 -1
+     (nil))
+(jump_insn 32 31 33 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 44)
+            (pc))) tssproperties.c:311 -1
+     (nil)
+ -> 44)
+(note 33 32 34 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 8 (set (reg/f:DI 96)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose")  <var_decl 0x7f344393b120 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:312 -1
+     (nil))
+(insn 35 34 36 8 (set (reg:SI 87 [ D.10121 ])
+        (mem/c:SI (reg/f:DI 96) [0 tssVerbose+0 S4 A32])) tssproperties.c:312 -1
+     (nil))
+(insn 36 35 37 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.10121 ])
+            (const_int 0 [0]))) tssproperties.c:312 -1
+     (nil))
+(jump_insn 37 36 38 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 41)
+            (pc))) tssproperties.c:312 -1
+     (nil)
+ -> 41)
+(note 38 37 39 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 40 9 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f34439aea20 *.LC11>)) tssproperties.c:312 -1
+     (nil))
+(call_insn 40 39 41 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3443e65360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tssproperties.c:312 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 41 40 42 10 35 "" [1 uses])
+(note 42 41 43 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 43 42 44 10 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+        (const_int 720902 [0xb0006])) tssproperties.c:313 -1
+     (nil))
+(code_label 44 43 45 11 34 "" [2 uses])
+(note 45 44 46 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:316 -1
+     (nil))
+(jump_insn 47 46 48 11 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 78)
+            (pc))) tssproperties.c:316 -1
+     (nil)
+ -> 78)
+(note 48 47 49 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 12 (set (reg:SI 88 [ D.10121 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 level+0 S4 A32])) tssproperties.c:317 -1
+     (nil))
+(insn 50 49 51 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.10121 ])
+            (const_int 0 [0]))) tssproperties.c:317 -1
+     (nil))
+(jump_insn 51 50 96 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 56)
+            (pc))) tssproperties.c:317 -1
+     (nil)
+ -> 56)
+(note 96 51 52 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 52 96 53 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.10121 ])
+            (const_int 1 [0x1]))) tssproperties.c:317 -1
+     (nil))
+(jump_insn 53 52 97 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 64)
+            (pc))) tssproperties.c:317 -1
+     (nil)
+ -> 64)
+(note 97 53 54 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 54 97 55 14 (set (pc)
+        (label_ref 72)) tssproperties.c:317 -1
+     (nil)
+ -> 72)
+(barrier 55 54 56)
+(code_label 56 55 57 15 38 "" [1 uses])
+(note 57 56 58 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 59 15 (set (reg/f:DI 97)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose")  <var_decl 0x7f344393b120 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:319 -1
+     (nil))
+(insn 59 58 60 15 (set (mem/c:SI (reg/f:DI 97) [0 tssVerbose+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:319 -1
+     (nil))
+(insn 60 59 61 15 (set (reg/f:DI 98)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVverbose")  <var_decl 0x7f344393b1b0 tssVverbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:320 -1
+     (nil))
+(insn 61 60 62 15 (set (mem/c:SI (reg/f:DI 98) [0 tssVverbose+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:320 -1
+     (nil))
+(jump_insn 62 61 63 15 (set (pc)
+        (label_ref 78)) tssproperties.c:321 -1
+     (nil)
+ -> 78)
+(barrier 63 62 64)
+(code_label 64 63 65 16 39 "" [1 uses])
+(note 65 64 66 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 16 (set (reg/f:DI 99)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose")  <var_decl 0x7f344393b120 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:323 -1
+     (nil))
+(insn 67 66 68 16 (set (mem/c:SI (reg/f:DI 99) [0 tssVerbose+0 S4 A32])
+        (const_int 1 [0x1])) tssproperties.c:323 -1
+     (nil))
+(insn 68 67 69 16 (set (reg/f:DI 100)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVverbose")  <var_decl 0x7f344393b1b0 tssVverbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:324 -1
+     (nil))
+(insn 69 68 70 16 (set (mem/c:SI (reg/f:DI 100) [0 tssVverbose+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:324 -1
+     (nil))
+(jump_insn 70 69 71 16 (set (pc)
+        (label_ref 78)) tssproperties.c:325 -1
+     (nil)
+ -> 78)
+(barrier 71 70 72)
+(code_label 72 71 73 17 37 "" [1 uses])
+(note 73 72 74 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 74 73 75 17 (set (reg/f:DI 101)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose")  <var_decl 0x7f344393b120 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:327 -1
+     (nil))
+(insn 75 74 76 17 (set (mem/c:SI (reg/f:DI 101) [0 tssVerbose+0 S4 A32])
+        (const_int 1 [0x1])) tssproperties.c:327 -1
+     (nil))
+(insn 76 75 77 17 (set (reg/f:DI 102)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVverbose")  <var_decl 0x7f344393b1b0 tssVverbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:328 -1
+     (nil))
+(insn 77 76 78 17 (set (mem/c:SI (reg/f:DI 102) [0 tssVverbose+0 S4 A32])
+        (const_int 1 [0x1])) tssproperties.c:328 -1
+     (nil))
+(code_label 78 77 79 18 36 "" [3 uses])
+(note 79 78 80 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 80 79 83 18 (set (reg:SI 89 [ D.10122 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])) tssproperties.c:332 -1
+     (nil))
+(insn 83 80 87 18 (set (reg:SI 90 [ <retval> ])
+        (reg:SI 89 [ D.10122 ])) tssproperties.c:332 -1
+     (nil))
+(insn 87 83 88 18 (set (reg/i:SI 0 ax)
+        (reg:SI 90 [ <retval> ])) tssproperties.c:333 -1
+     (nil))
+(insn 88 87 89 18 (set (reg/f:DI 104)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f34439ae870 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:333 -1
+     (nil))
+(insn 89 88 90 18 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.10123+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) tssproperties.c:333 -1
+     (nil))
+(jump_insn 90 89 98 18 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 93)
+            (pc))) tssproperties.c:333 -1
+     (nil)
+ -> 93)
+(note 98 90 91 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(call_insn 91 98 92 21 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f3443994510 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) tssproperties.c:333 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 92 91 93)
+(code_label 93 92 99 22 41 "" [1 uses])
+(note 99 93 94 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 94 99 0 22 (use (reg/i:SI 0 ax)) tssproperties.c:333 -1
+     (nil))
+
+;; Function TSS_SetDataDirectory (TSS_SetDataDirectory, funcdef_no=6, decl_uid=9844, cgraph_uid=6, symbol_order=9)
+
+Partition 0: size 4 align 4
+	rc_3
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+Removing jump 30.
+Merging block 10 into block 8...
+Merged blocks 8 and 10.
+Merged 8 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssproperties.c:336 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg:DI 4 si [ value ])) tssproperties.c:336 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:337 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:339 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tssproperties.c:339 -1
+     (nil)
+ -> 16)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+            (const_int 0 [0]))) tssproperties.c:340 -1
+     (nil))
+(jump_insn 12 11 13 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tssproperties.c:340 -1
+     (nil)
+ -> 16)
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 5 (set (reg/f:DI 89)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7f34439b9750 *.LC12>)) tssproperties.c:341 -1
+     (nil))
+(insn 15 14 16 5 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg/f:DI 89)) tssproperties.c:341 -1
+     (nil))
+(code_label 16 15 17 6 44 "" [2 uses])
+(note 17 16 18 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:344 -1
+     (nil))
+(jump_insn 19 18 20 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) tssproperties.c:344 -1
+     (nil)
+ -> 24)
+(note 20 19 21 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 7 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:345 -1
+     (nil))
+(insn 22 21 23 7 (set (reg/f:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) tssproperties.c:345 -1
+     (nil))
+(insn 23 22 24 7 (set (mem/f/j:DI (plus:DI (reg/f:DI 90)
+                (const_int 8 [0x8])) [0 tssContext_7(D)->tssDataDirectory+0 S8 A64])
+        (reg/f:DI 91)) tssproperties.c:345 -1
+     (nil))
+(code_label 24 23 25 8 45 "" [1 uses])
+(note 25 24 26 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 29 8 (set (reg:SI 87 [ D.10129 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssproperties.c:348 -1
+     (nil))
+(insn 29 26 33 8 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.10129 ])) tssproperties.c:348 -1
+     (nil))
+(insn 33 29 34 8 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tssproperties.c:349 -1
+     (nil))
+(insn 34 33 0 8 (use (reg/i:SI 0 ax)) tssproperties.c:349 -1
+     (nil))
+
+;; Function TSS_SetCommandPort (TSS_SetCommandPort, funcdef_no=7, decl_uid=9847, cgraph_uid=7, symbol_order=10)
+
+Partition 1: size 4 align 4
+	irc_16
+Partition 0: size 4 align 4
+	rc_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+Removing jump 60.
+Merging block 15 into block 13...
+Merged blocks 13 and 15.
+Merged 13 and 15 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssproperties.c:352 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg:DI 4 si [ value ])) tssproperties.c:352 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:354 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:357 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tssproperties.c:357 -1
+     (nil)
+ -> 16)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:358 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 5 di)
+        (reg:DI 91)) tssproperties.c:358 -1
+     (nil))
+(call_insn 13 12 14 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Close") [flags 0x41]  <function_decl 0x7f3443dcd360 TSS_Close>) [0 TSS_Close S1 A8])
+            (const_int 0 [0]))) tssproperties.c:358 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 14 13 15 4 (set (reg:SI 92)
+        (reg:SI 0 ax)) tssproperties.c:358 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+        (reg:SI 92)) tssproperties.c:358 -1
+     (nil))
+(code_label 16 15 17 5 48 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:360 -1
+     (nil))
+(jump_insn 19 18 20 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:360 -1
+     (nil)
+ -> 26)
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+            (const_int 0 [0]))) tssproperties.c:361 -1
+     (nil))
+(jump_insn 22 21 23 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:361 -1
+     (nil)
+ -> 26)
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 7 (set (reg/f:DI 93)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7f34439b9e10 *.LC13>)) tssproperties.c:362 -1
+     (nil))
+(insn 25 24 26 7 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg/f:DI 93)) tssproperties.c:362 -1
+     (nil))
+(code_label 26 25 27 8 49 "" [2 uses])
+(note 27 26 28 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:365 -1
+     (nil))
+(jump_insn 29 28 30 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) tssproperties.c:365 -1
+     (nil)
+ -> 54)
+(note 30 29 31 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 9 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:366 -1
+     (nil))
+(insn 32 31 33 9 (parallel [
+            (set (reg/f:DI 87 [ D.10131 ])
+                (plus:DI (reg/f:DI 94)
+                    (const_int 40 [0x28])))
+            (clobber (reg:CC 17 flags))
+        ]) tssproperties.c:366 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+            (const_int 40 [0x28]))
+        (nil)))
+(insn 33 32 34 9 (set (reg:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) tssproperties.c:366 -1
+     (nil))
+(insn 34 33 35 9 (set (reg:DI 1 dx)
+        (reg/f:DI 87 [ D.10131 ])) tssproperties.c:366 -1
+     (nil))
+(insn 35 34 36 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f34439b9ea0 *.LC14>)) tssproperties.c:366 -1
+     (nil))
+(insn 36 35 37 9 (set (reg:DI 5 di)
+        (reg:DI 95)) tssproperties.c:366 -1
+     (nil))
+(insn 37 36 38 9 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssproperties.c:366 -1
+     (nil))
+(call_insn 38 37 39 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3443e65ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) tssproperties.c:366 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 39 38 40 9 (set (reg:SI 96)
+        (reg:SI 0 ax)) tssproperties.c:366 -1
+     (nil))
+(insn 40 39 41 9 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 irc+0 S4 A32])
+        (reg:SI 96)) tssproperties.c:366 -1
+     (nil))
+(insn 41 40 42 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 irc+0 S4 A32])
+            (const_int 1 [0x1]))) tssproperties.c:367 -1
+     (nil))
+(jump_insn 42 41 43 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) tssproperties.c:367 -1
+     (nil)
+ -> 54)
+(note 43 42 44 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 10 (set (reg/f:DI 97)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose")  <var_decl 0x7f344393b120 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:368 -1
+     (nil))
+(insn 45 44 46 10 (set (reg:SI 88 [ D.10132 ])
+        (mem/c:SI (reg/f:DI 97) [0 tssVerbose+0 S4 A32])) tssproperties.c:368 -1
+     (nil))
+(insn 46 45 47 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.10132 ])
+            (const_int 0 [0]))) tssproperties.c:368 -1
+     (nil))
+(jump_insn 47 46 48 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) tssproperties.c:368 -1
+     (nil)
+ -> 51)
+(note 48 47 49 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 11 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7f34439b9f30 *.LC15>)) tssproperties.c:368 -1
+     (nil))
+(call_insn 50 49 51 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3443e65360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tssproperties.c:368 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 51 50 52 12 51 "" [1 uses])
+(note 52 51 53 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 12 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+        (const_int 720902 [0xb0006])) tssproperties.c:369 -1
+     (nil))
+(code_label 54 53 55 13 50 "" [2 uses])
+(note 55 54 56 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 59 13 (set (reg:SI 89 [ D.10133 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])) tssproperties.c:372 -1
+     (nil))
+(insn 59 56 63 13 (set (reg:SI 90 [ <retval> ])
+        (reg:SI 89 [ D.10133 ])) tssproperties.c:372 -1
+     (nil))
+(insn 63 59 64 13 (set (reg/i:SI 0 ax)
+        (reg:SI 90 [ <retval> ])) tssproperties.c:373 -1
+     (nil))
+(insn 64 63 0 13 (use (reg/i:SI 0 ax)) tssproperties.c:373 -1
+     (nil))
+
+;; Function TSS_SetPlatformPort (TSS_SetPlatformPort, funcdef_no=8, decl_uid=9850, cgraph_uid=8, symbol_order=11)
+
+Partition 1: size 4 align 4
+	irc_16
+Partition 0: size 4 align 4
+	rc_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+Removing jump 60.
+Merging block 15 into block 13...
+Merged blocks 13 and 15.
+Merged 13 and 15 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssproperties.c:376 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg:DI 4 si [ value ])) tssproperties.c:376 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:377 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:381 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tssproperties.c:381 -1
+     (nil)
+ -> 16)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:382 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 5 di)
+        (reg:DI 91)) tssproperties.c:382 -1
+     (nil))
+(call_insn 13 12 14 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Close") [flags 0x41]  <function_decl 0x7f3443dcd360 TSS_Close>) [0 TSS_Close S1 A8])
+            (const_int 0 [0]))) tssproperties.c:382 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 14 13 15 4 (set (reg:SI 92)
+        (reg:SI 0 ax)) tssproperties.c:382 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+        (reg:SI 92)) tssproperties.c:382 -1
+     (nil))
+(code_label 16 15 17 5 54 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:384 -1
+     (nil))
+(jump_insn 19 18 20 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:384 -1
+     (nil)
+ -> 26)
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+            (const_int 0 [0]))) tssproperties.c:385 -1
+     (nil))
+(jump_insn 22 21 23 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:385 -1
+     (nil)
+ -> 26)
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 7 (set (reg/f:DI 93)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7f34439c2900 *.LC16>)) tssproperties.c:386 -1
+     (nil))
+(insn 25 24 26 7 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg/f:DI 93)) tssproperties.c:386 -1
+     (nil))
+(code_label 26 25 27 8 55 "" [2 uses])
+(note 27 26 28 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:389 -1
+     (nil))
+(jump_insn 29 28 30 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) tssproperties.c:389 -1
+     (nil)
+ -> 54)
+(note 30 29 31 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 9 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:390 -1
+     (nil))
+(insn 32 31 33 9 (parallel [
+            (set (reg/f:DI 87 [ D.10137 ])
+                (plus:DI (reg/f:DI 94)
+                    (const_int 42 [0x2a])))
+            (clobber (reg:CC 17 flags))
+        ]) tssproperties.c:390 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+            (const_int 42 [0x2a]))
+        (nil)))
+(insn 33 32 34 9 (set (reg:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) tssproperties.c:390 -1
+     (nil))
+(insn 34 33 35 9 (set (reg:DI 1 dx)
+        (reg/f:DI 87 [ D.10137 ])) tssproperties.c:390 -1
+     (nil))
+(insn 35 34 36 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f34439b9ea0 *.LC14>)) tssproperties.c:390 -1
+     (nil))
+(insn 36 35 37 9 (set (reg:DI 5 di)
+        (reg:DI 95)) tssproperties.c:390 -1
+     (nil))
+(insn 37 36 38 9 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssproperties.c:390 -1
+     (nil))
+(call_insn 38 37 39 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3443e65ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) tssproperties.c:390 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 39 38 40 9 (set (reg:SI 96)
+        (reg:SI 0 ax)) tssproperties.c:390 -1
+     (nil))
+(insn 40 39 41 9 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 irc+0 S4 A32])
+        (reg:SI 96)) tssproperties.c:390 -1
+     (nil))
+(insn 41 40 42 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 irc+0 S4 A32])
+            (const_int 1 [0x1]))) tssproperties.c:391 -1
+     (nil))
+(jump_insn 42 41 43 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) tssproperties.c:391 -1
+     (nil)
+ -> 54)
+(note 43 42 44 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 10 (set (reg/f:DI 97)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose")  <var_decl 0x7f344393b120 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:392 -1
+     (nil))
+(insn 45 44 46 10 (set (reg:SI 88 [ D.10138 ])
+        (mem/c:SI (reg/f:DI 97) [0 tssVerbose+0 S4 A32])) tssproperties.c:392 -1
+     (nil))
+(insn 46 45 47 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.10138 ])
+            (const_int 0 [0]))) tssproperties.c:392 -1
+     (nil))
+(jump_insn 47 46 48 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) tssproperties.c:392 -1
+     (nil)
+ -> 51)
+(note 48 47 49 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 11 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7f34439c2990 *.LC17>)) tssproperties.c:392 -1
+     (nil))
+(call_insn 50 49 51 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3443e65360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tssproperties.c:392 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 51 50 52 12 57 "" [1 uses])
+(note 52 51 53 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 12 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+        (const_int 720902 [0xb0006])) tssproperties.c:393 -1
+     (nil))
+(code_label 54 53 55 13 56 "" [2 uses])
+(note 55 54 56 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 59 13 (set (reg:SI 89 [ D.10139 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])) tssproperties.c:396 -1
+     (nil))
+(insn 59 56 63 13 (set (reg:SI 90 [ <retval> ])
+        (reg:SI 89 [ D.10139 ])) tssproperties.c:396 -1
+     (nil))
+(insn 63 59 64 13 (set (reg/i:SI 0 ax)
+        (reg:SI 90 [ <retval> ])) tssproperties.c:397 -1
+     (nil))
+(insn 64 63 0 13 (use (reg/i:SI 0 ax)) tssproperties.c:397 -1
+     (nil))
+
+;; Function TSS_SetServerName (TSS_SetServerName, funcdef_no=9, decl_uid=9853, cgraph_uid=9, symbol_order=12)
+
+Partition 0: size 4 align 4
+	rc_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+Removing jump 40.
+Merging block 12 into block 10...
+Merged blocks 10 and 12.
+Merged 10 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssproperties.c:400 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg:DI 4 si [ value ])) tssproperties.c:400 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:401 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:404 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tssproperties.c:404 -1
+     (nil)
+ -> 16)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:405 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 5 di)
+        (reg:DI 89)) tssproperties.c:405 -1
+     (nil))
+(call_insn 13 12 14 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Close") [flags 0x41]  <function_decl 0x7f3443dcd360 TSS_Close>) [0 TSS_Close S1 A8])
+            (const_int 0 [0]))) tssproperties.c:405 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 14 13 15 4 (set (reg:SI 90)
+        (reg:SI 0 ax)) tssproperties.c:405 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 90)) tssproperties.c:405 -1
+     (nil))
+(code_label 16 15 17 5 60 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:407 -1
+     (nil))
+(jump_insn 19 18 20 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:407 -1
+     (nil)
+ -> 26)
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+            (const_int 0 [0]))) tssproperties.c:408 -1
+     (nil))
+(jump_insn 22 21 23 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:408 -1
+     (nil)
+ -> 26)
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 7 (set (reg/f:DI 91)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7f34439c8240 *.LC18>)) tssproperties.c:409 -1
+     (nil))
+(insn 25 24 26 7 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg/f:DI 91)) tssproperties.c:409 -1
+     (nil))
+(code_label 26 25 27 8 61 "" [2 uses])
+(note 27 26 28 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:412 -1
+     (nil))
+(jump_insn 29 28 30 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) tssproperties.c:412 -1
+     (nil)
+ -> 34)
+(note 30 29 31 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 9 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:413 -1
+     (nil))
+(insn 32 31 33 9 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) tssproperties.c:413 -1
+     (nil))
+(insn 33 32 34 9 (set (mem/f/j:DI (plus:DI (reg/f:DI 92)
+                (const_int 48 [0x30])) [0 tssContext_7(D)->tssServerName+0 S8 A64])
+        (reg/f:DI 93)) tssproperties.c:413 -1
+     (nil))
+(code_label 34 33 35 10 62 "" [1 uses])
+(note 35 34 36 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 39 10 (set (reg:SI 87 [ D.10142 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssproperties.c:415 -1
+     (nil))
+(insn 39 36 43 10 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.10142 ])) tssproperties.c:415 -1
+     (nil))
+(insn 43 39 44 10 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tssproperties.c:416 -1
+     (nil))
+(insn 44 43 0 10 (use (reg/i:SI 0 ax)) tssproperties.c:416 -1
+     (nil))
+
+;; Function TSS_SetServerType (TSS_SetServerType, funcdef_no=10, decl_uid=9856, cgraph_uid=10, symbol_order=13)
+
+Partition 0: size 4 align 4
+	rc_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+Removing jump 40.
+Merging block 12 into block 10...
+Merged blocks 10 and 12.
+Merged 10 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssproperties.c:419 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg:DI 4 si [ value ])) tssproperties.c:419 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:420 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:423 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tssproperties.c:423 -1
+     (nil)
+ -> 16)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:424 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 5 di)
+        (reg:DI 89)) tssproperties.c:424 -1
+     (nil))
+(call_insn 13 12 14 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Close") [flags 0x41]  <function_decl 0x7f3443dcd360 TSS_Close>) [0 TSS_Close S1 A8])
+            (const_int 0 [0]))) tssproperties.c:424 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 14 13 15 4 (set (reg:SI 90)
+        (reg:SI 0 ax)) tssproperties.c:424 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 90)) tssproperties.c:424 -1
+     (nil))
+(code_label 16 15 17 5 65 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:426 -1
+     (nil))
+(jump_insn 19 18 20 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:426 -1
+     (nil)
+ -> 26)
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+            (const_int 0 [0]))) tssproperties.c:427 -1
+     (nil))
+(jump_insn 22 21 23 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:427 -1
+     (nil)
+ -> 26)
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 7 (set (reg/f:DI 91)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7f34439c8990 *.LC19>)) tssproperties.c:428 -1
+     (nil))
+(insn 25 24 26 7 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg/f:DI 91)) tssproperties.c:428 -1
+     (nil))
+(code_label 26 25 27 8 66 "" [2 uses])
+(note 27 26 28 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:431 -1
+     (nil))
+(jump_insn 29 28 30 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) tssproperties.c:431 -1
+     (nil)
+ -> 34)
+(note 30 29 31 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 9 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:432 -1
+     (nil))
+(insn 32 31 33 9 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) tssproperties.c:432 -1
+     (nil))
+(insn 33 32 34 9 (set (mem/f/j:DI (plus:DI (reg/f:DI 92)
+                (const_int 56 [0x38])) [0 tssContext_7(D)->tssServerType+0 S8 A64])
+        (reg/f:DI 93)) tssproperties.c:432 -1
+     (nil))
+(code_label 34 33 35 10 67 "" [1 uses])
+(note 35 34 36 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 39 10 (set (reg:SI 87 [ D.10144 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssproperties.c:434 -1
+     (nil))
+(insn 39 36 43 10 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.10144 ])) tssproperties.c:434 -1
+     (nil))
+(insn 43 39 44 10 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tssproperties.c:435 -1
+     (nil))
+(insn 44 43 0 10 (use (reg/i:SI 0 ax)) tssproperties.c:435 -1
+     (nil))
+
+;; Function TSS_SetInterfaceType (TSS_SetInterfaceType, funcdef_no=11, decl_uid=9859, cgraph_uid=11, symbol_order=14)
+
+Partition 0: size 4 align 4
+	rc_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+Removing jump 40.
+Merging block 12 into block 10...
+Merged blocks 10 and 12.
+Merged 10 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssproperties.c:438 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg:DI 4 si [ value ])) tssproperties.c:438 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:439 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:442 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tssproperties.c:442 -1
+     (nil)
+ -> 16)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:443 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 5 di)
+        (reg:DI 89)) tssproperties.c:443 -1
+     (nil))
+(call_insn 13 12 14 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Close") [flags 0x41]  <function_decl 0x7f3443dcd360 TSS_Close>) [0 TSS_Close S1 A8])
+            (const_int 0 [0]))) tssproperties.c:443 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 14 13 15 4 (set (reg:SI 90)
+        (reg:SI 0 ax)) tssproperties.c:443 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 90)) tssproperties.c:443 -1
+     (nil))
+(code_label 16 15 17 5 70 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:445 -1
+     (nil))
+(jump_insn 19 18 20 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:445 -1
+     (nil)
+ -> 26)
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+            (const_int 0 [0]))) tssproperties.c:446 -1
+     (nil))
+(jump_insn 22 21 23 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:446 -1
+     (nil)
+ -> 26)
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 7 (set (reg/f:DI 91)
+        (symbol_ref/f:DI ("*.LC20") [flags 0x2]  <var_decl 0x7f34435d21b0 *.LC20>)) tssproperties.c:447 -1
+     (nil))
+(insn 25 24 26 7 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg/f:DI 91)) tssproperties.c:447 -1
+     (nil))
+(code_label 26 25 27 8 71 "" [2 uses])
+(note 27 26 28 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:450 -1
+     (nil))
+(jump_insn 29 28 30 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) tssproperties.c:450 -1
+     (nil)
+ -> 34)
+(note 30 29 31 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 9 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:451 -1
+     (nil))
+(insn 32 31 33 9 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) tssproperties.c:451 -1
+     (nil))
+(insn 33 32 34 9 (set (mem/f/j:DI (plus:DI (reg/f:DI 92)
+                (const_int 64 [0x40])) [0 tssContext_7(D)->tssInterfaceType+0 S8 A64])
+        (reg/f:DI 93)) tssproperties.c:451 -1
+     (nil))
+(code_label 34 33 35 10 72 "" [1 uses])
+(note 35 34 36 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 39 10 (set (reg:SI 87 [ D.10146 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssproperties.c:453 -1
+     (nil))
+(insn 39 36 43 10 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.10146 ])) tssproperties.c:453 -1
+     (nil))
+(insn 43 39 44 10 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tssproperties.c:454 -1
+     (nil))
+(insn 44 43 0 10 (use (reg/i:SI 0 ax)) tssproperties.c:454 -1
+     (nil))
+
+;; Function TSS_SetDevice (TSS_SetDevice, funcdef_no=12, decl_uid=9862, cgraph_uid=12, symbol_order=15)
+
+Partition 0: size 4 align 4
+	rc_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+Removing jump 40.
+Merging block 12 into block 10...
+Merged blocks 10 and 12.
+Merged 10 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssproperties.c:457 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg:DI 4 si [ value ])) tssproperties.c:457 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:458 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:461 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tssproperties.c:461 -1
+     (nil)
+ -> 16)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:462 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 5 di)
+        (reg:DI 89)) tssproperties.c:462 -1
+     (nil))
+(call_insn 13 12 14 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Close") [flags 0x41]  <function_decl 0x7f3443dcd360 TSS_Close>) [0 TSS_Close S1 A8])
+            (const_int 0 [0]))) tssproperties.c:462 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 14 13 15 4 (set (reg:SI 90)
+        (reg:SI 0 ax)) tssproperties.c:462 -1
+     (nil))
+(insn 15 14 16 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 90)) tssproperties.c:462 -1
+     (nil))
+(code_label 16 15 17 5 75 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:464 -1
+     (nil))
+(jump_insn 19 18 20 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:464 -1
+     (nil)
+ -> 26)
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+            (const_int 0 [0]))) tssproperties.c:465 -1
+     (nil))
+(jump_insn 22 21 23 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssproperties.c:465 -1
+     (nil)
+ -> 26)
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 7 (set (reg/f:DI 91)
+        (symbol_ref/f:DI ("*.LC21") [flags 0x2]  <var_decl 0x7f34435d2900 *.LC21>)) tssproperties.c:466 -1
+     (nil))
+(insn 25 24 26 7 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg/f:DI 91)) tssproperties.c:466 -1
+     (nil))
+(code_label 26 25 27 8 76 "" [2 uses])
+(note 27 26 28 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:469 -1
+     (nil))
+(jump_insn 29 28 30 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) tssproperties.c:469 -1
+     (nil)
+ -> 34)
+(note 30 29 31 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 9 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:470 -1
+     (nil))
+(insn 32 31 33 9 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) tssproperties.c:470 -1
+     (nil))
+(insn 33 32 34 9 (set (mem/f/j:DI (plus:DI (reg/f:DI 92)
+                (const_int 72 [0x48])) [0 tssContext_7(D)->tssDevice+0 S8 A64])
+        (reg/f:DI 93)) tssproperties.c:470 -1
+     (nil))
+(code_label 34 33 35 10 77 "" [1 uses])
+(note 35 34 36 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 39 10 (set (reg:SI 87 [ D.10148 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssproperties.c:472 -1
+     (nil))
+(insn 39 36 43 10 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.10148 ])) tssproperties.c:472 -1
+     (nil))
+(insn 43 39 44 10 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tssproperties.c:473 -1
+     (nil))
+(insn 44 43 0 10 (use (reg/i:SI 0 ax)) tssproperties.c:473 -1
+     (nil))
+
+;; Function TSS_SetEncryptSessions (TSS_SetEncryptSessions, funcdef_no=13, decl_uid=9865, cgraph_uid=13, symbol_order=16)
+
+Partition 1: size 4 align 4
+	irc_12
+Partition 0: size 4 align 4
+	rc_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+Removing jump 50.
+Merging block 13 into block 11...
+Merged blocks 11 and 13.
+Merged 11 and 13 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssproperties.c:476 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg:DI 4 si [ value ])) tssproperties.c:476 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssproperties.c:477 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:480 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tssproperties.c:480 -1
+     (nil)
+ -> 16)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+            (const_int 0 [0]))) tssproperties.c:481 -1
+     (nil))
+(jump_insn 12 11 13 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tssproperties.c:481 -1
+     (nil)
+ -> 16)
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 5 (set (reg/f:DI 91)
+        (symbol_ref/f:DI ("*.LC22") [flags 0x2]  <var_decl 0x7f34435df1b0 *.LC22>)) tssproperties.c:482 -1
+     (nil))
+(insn 15 14 16 5 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg/f:DI 91)) tssproperties.c:482 -1
+     (nil))
+(code_label 16 15 17 6 80 "" [2 uses])
+(note 17 16 18 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssproperties.c:485 -1
+     (nil))
+(jump_insn 19 18 20 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 44)
+            (pc))) tssproperties.c:485 -1
+     (nil)
+ -> 44)
+(note 20 19 21 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 7 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssproperties.c:486 -1
+     (nil))
+(insn 22 21 23 7 (parallel [
+            (set (reg/f:DI 87 [ D.10150 ])
+                (plus:DI (reg/f:DI 92)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) tssproperties.c:486 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 23 22 24 7 (set (reg:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) tssproperties.c:486 -1
+     (nil))
+(insn 24 23 25 7 (set (reg:DI 1 dx)
+        (reg/f:DI 87 [ D.10150 ])) tssproperties.c:486 -1
+     (nil))
+(insn 25 24 26 7 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f34439ae990 *.LC10>)) tssproperties.c:486 -1
+     (nil))
+(insn 26 25 27 7 (set (reg:DI 5 di)
+        (reg:DI 93)) tssproperties.c:486 -1
+     (nil))
+(insn 27 26 28 7 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssproperties.c:486 -1
+     (nil))
+(call_insn 28 27 29 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3443e65ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) tssproperties.c:486 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 29 28 30 7 (set (reg:SI 94)
+        (reg:SI 0 ax)) tssproperties.c:486 -1
+     (nil))
+(insn 30 29 31 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 irc+0 S4 A32])
+        (reg:SI 94)) tssproperties.c:486 -1
+     (nil))
+(insn 31 30 32 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 irc+0 S4 A32])
+            (const_int 1 [0x1]))) tssproperties.c:487 -1
+     (nil))
+(jump_insn 32 31 33 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 44)
+            (pc))) tssproperties.c:487 -1
+     (nil)
+ -> 44)
+(note 33 32 34 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 8 (set (reg/f:DI 95)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose")  <var_decl 0x7f344393b120 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssproperties.c:488 -1
+     (nil))
+(insn 35 34 36 8 (set (reg:SI 88 [ D.10151 ])
+        (mem/c:SI (reg/f:DI 95) [0 tssVerbose+0 S4 A32])) tssproperties.c:488 -1
+     (nil))
+(insn 36 35 37 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.10151 ])
+            (const_int 0 [0]))) tssproperties.c:488 -1
+     (nil))
+(jump_insn 37 36 38 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 41)
+            (pc))) tssproperties.c:488 -1
+     (nil)
+ -> 41)
+(note 38 37 39 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 40 9 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC23") [flags 0x2]  <var_decl 0x7f34435df240 *.LC23>)) tssproperties.c:488 -1
+     (nil))
+(call_insn 40 39 41 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3443e65360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tssproperties.c:488 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 41 40 42 10 82 "" [1 uses])
+(note 42 41 43 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 43 42 44 10 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+        (const_int 720902 [0xb0006])) tssproperties.c:489 -1
+     (nil))
+(code_label 44 43 45 11 81 "" [2 uses])
+(note 45 44 46 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 49 11 (set (reg:SI 89 [ D.10152 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])) tssproperties.c:492 -1
+     (nil))
+(insn 49 46 53 11 (set (reg:SI 90 [ <retval> ])
+        (reg:SI 89 [ D.10152 ])) tssproperties.c:492 -1
+     (nil))
+(insn 53 49 54 11 (set (reg/i:SI 0 ax)
+        (reg:SI 90 [ <retval> ])) tssproperties.c:493 -1
+     (nil))
+(insn 54 53 0 11 (use (reg/i:SI 0 ax)) tssproperties.c:493 -1
+     (nil))

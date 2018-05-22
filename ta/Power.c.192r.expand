@@ -1,0 +1,120 @@
+
+;; Function TPMInit (TPMInit, funcdef_no=2, decl_uid=11947, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 10 2 (set (mem/c:SI (symbol_ref:DI ("g_initialized") [flags 0x40]  <var_decl 0x7f9a42aa9990 g_initialized>) [0 g_initialized+0 S4 A32])
+        (const_int 0 [0])) Power.c:78 -1
+     (nil))
+(insn 10 5 0 2 (const_int 0 [0]) Power.c:79 -1
+     (nil))
+
+;; Function TPMRegisterStartup (TPMRegisterStartup, funcdef_no=3, decl_uid=11949, cgraph_uid=3, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 10 2 (set (mem/c:SI (symbol_ref:DI ("g_initialized") [flags 0x40]  <var_decl 0x7f9a42aa9990 g_initialized>) [0 g_initialized+0 S4 A32])
+        (const_int 1 [0x1])) Power.c:91 -1
+     (nil))
+(insn 10 5 0 2 (const_int 0 [0]) Power.c:92 -1
+     (nil))
+
+;; Function TPMIsStarted (TPMIsStarted, funcdef_no=4, decl_uid=11951, cgraph_uid=4, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 9.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 8 2 (set (reg:SI 87 [ D.12867 ])
+        (mem/c:SI (symbol_ref:DI ("g_initialized") [flags 0x40]  <var_decl 0x7f9a42aa9990 g_initialized>) [0 g_initialized+0 S4 A32])) Power.c:107 -1
+     (nil))
+(insn 8 5 12 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.12867 ])) Power.c:107 -1
+     (nil))
+(insn 12 8 13 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) Power.c:108 -1
+     (nil))
+(insn 13 12 0 2 (use (reg/i:SI 0 ax)) Power.c:108 -1
+     (nil))

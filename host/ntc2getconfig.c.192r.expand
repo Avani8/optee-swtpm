@@ -1,0 +1,2040 @@
+
+;; Function main (main, funcdef_no=2, decl_uid=6083, cgraph_uid=2, symbol_order=3)
+
+Partition 9: size 18 align 16
+	preConfig
+Partition 8: size 18 align 16
+	out
+Partition 12: size 8 align 8
+	num
+Partition 11: size 8 align 8
+	submsg
+Partition 10: size 8 align 8
+	msg
+Partition 7: size 8 align 8
+	tssContext
+Partition 6: size 4 align 4
+	rc1_95
+Partition 5: size 4 align 4
+	p9_13
+Partition 4: size 4 align 4
+	p8_11
+Partition 3: size 4 align 4
+	verifyLocked_9
+Partition 2: size 4 align 4
+	verify_7
+Partition 1: size 4 align 4
+	i_6
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+;; Generating RTL for gimple basic block 38
+
+;; Generating RTL for gimple basic block 39
+
+;; Generating RTL for gimple basic block 40
+
+;; Generating RTL for gimple basic block 41
+
+;; Generating RTL for gimple basic block 42
+
+;; Generating RTL for gimple basic block 43
+
+;; Generating RTL for gimple basic block 44
+
+;; Generating RTL for gimple basic block 45
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 41->43 redirected to 45
+Merging block 43 into block 42...
+Merged blocks 42 and 43.
+Merged 42 and 43 without moving.
+Merging block 46 into block 45...
+Merged blocks 45 and 46.
+Merged 45 and 46 without moving.
+Removing jump 313.
+Merging block 47 into block 45...
+Merged blocks 45 and 47.
+Merged 45 and 47 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -132 [0xffffffffffffff7c])) [0 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) ntc2getconfig.c:62 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) ntc2getconfig.c:62 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.6247+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:62 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) ntc2getconfig.c:63 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 tssContext+0 S8 A64])
+        (const_int 0 [0])) ntc2getconfig.c:65 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -116 [0xffffffffffffff8c])) [0 verify+0 S4 A32])
+        (const_int 0 [0])) ntc2getconfig.c:67 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 verifyLocked+0 S4 A32])
+        (const_int 0 [0])) ntc2getconfig.c:68 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -108 [0xffffffffffffff94])) [0 p8+0 S4 A32])
+        (const_int 0 [0])) ntc2getconfig.c:69 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 p9+0 S4 A32])
+        (const_int 0 [0])) ntc2getconfig.c:70 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 87 [ D.6240 ])
+        (mem/f/c:DI (symbol_ref:DI ("stdout") [flags 0x40]  <var_decl 0x7fa5cc3195a0 stdout>) [0 stdout+0 S8 A64])) ntc2getconfig.c:72 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 2 cx)
+        (const_int 0 [0])) ntc2getconfig.c:72 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) ntc2getconfig.c:72 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) ntc2getconfig.c:72 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.6240 ])) ntc2getconfig.c:72 -1
+     (nil))
+(call_insn 19 18 20 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("setvbuf") [flags 0x41]  <function_decl 0x7fa5cc3591b0 setvbuf>) [0 setvbuf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:72 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 20 19 21 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7fa5cbe4bc60 *.LC0>)) ntc2getconfig.c:73 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) ntc2getconfig.c:73 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) ntc2getconfig.c:73 -1
+     (nil))
+(call_insn 23 22 24 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7fa5cc1cd000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:73 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 24 23 25 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) ntc2getconfig.c:76 -1
+     (nil))
+(jump_insn 25 24 26 2 (set (pc)
+        (label_ref 155)) ntc2getconfig.c:76 -1
+     (nil)
+ -> 155)
+(barrier 26 25 161)
+(code_label 161 26 27 4 11 "" [1 uses])
+(note 27 161 28 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 4 (set (reg:SI 130)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])) ntc2getconfig.c:77 -1
+     (nil))
+(insn 29 28 30 4 (set (reg:DI 88 [ D.6241 ])
+        (sign_extend:DI (reg:SI 130))) ntc2getconfig.c:77 -1
+     (nil))
+(insn 30 29 31 4 (parallel [
+            (set (reg:DI 89 [ D.6241 ])
+                (ashift:DI (reg:DI 88 [ D.6241 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:77 -1
+     (nil))
+(insn 31 30 32 4 (set (reg/f:DI 131)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])) ntc2getconfig.c:77 -1
+     (nil))
+(insn 32 31 33 4 (parallel [
+            (set (reg/f:DI 90 [ D.6242 ])
+                (plus:DI (reg:DI 89 [ D.6241 ])
+                    (reg/f:DI 131)))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:77 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])
+            (reg:DI 89 [ D.6241 ]))
+        (nil)))
+(insn 33 32 34 4 (set (reg/f:DI 91 [ D.6243 ])
+        (mem/f:DI (reg/f:DI 90 [ D.6242 ]) [0 *_41+0 S8 A64])) ntc2getconfig.c:77 -1
+     (nil))
+(insn 34 33 35 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7fa5cbe4bcf0 *.LC1>)) ntc2getconfig.c:77 -1
+     (nil))
+(insn 35 34 36 4 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ D.6243 ])) ntc2getconfig.c:77 -1
+     (nil))
+(call_insn/i 36 35 37 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fa5cc2610d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:77 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 37 36 38 4 (set (reg:SI 92 [ D.6244 ])
+        (reg:SI 0 ax)) ntc2getconfig.c:77 -1
+     (nil))
+(insn 38 37 39 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.6244 ])
+            (const_int 0 [0]))) ntc2getconfig.c:77 -1
+     (nil))
+(jump_insn 39 38 40 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 44)
+            (pc))) ntc2getconfig.c:77 -1
+     (nil)
+ -> 44)
+(note 40 39 41 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -116 [0xffffffffffffff8c])) [0 verify+0 S4 A32])
+        (const_int 1 [0x1])) ntc2getconfig.c:78 -1
+     (nil))
+(jump_insn 42 41 43 5 (set (pc)
+        (label_ref 152)) -1
+     (nil)
+ -> 152)
+(barrier 43 42 44)
+(code_label 44 43 45 6 3 "" [1 uses])
+(note 45 44 46 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 6 (set (reg:SI 132)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])) ntc2getconfig.c:80 -1
+     (nil))
+(insn 47 46 48 6 (set (reg:DI 93 [ D.6241 ])
+        (sign_extend:DI (reg:SI 132))) ntc2getconfig.c:80 -1
+     (nil))
+(insn 48 47 49 6 (parallel [
+            (set (reg:DI 94 [ D.6241 ])
+                (ashift:DI (reg:DI 93 [ D.6241 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:80 -1
+     (nil))
+(insn 49 48 50 6 (set (reg/f:DI 133)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])) ntc2getconfig.c:80 -1
+     (nil))
+(insn 50 49 51 6 (parallel [
+            (set (reg/f:DI 95 [ D.6242 ])
+                (plus:DI (reg:DI 94 [ D.6241 ])
+                    (reg/f:DI 133)))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:80 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])
+            (reg:DI 94 [ D.6241 ]))
+        (nil)))
+(insn 51 50 52 6 (set (reg/f:DI 96 [ D.6243 ])
+        (mem/f:DI (reg/f:DI 95 [ D.6242 ]) [0 *_47+0 S8 A64])) ntc2getconfig.c:80 -1
+     (nil))
+(insn 52 51 53 6 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7fa5cbe4bd80 *.LC2>)) ntc2getconfig.c:80 -1
+     (nil))
+(insn 53 52 54 6 (set (reg:DI 5 di)
+        (reg/f:DI 96 [ D.6243 ])) ntc2getconfig.c:80 -1
+     (nil))
+(call_insn/i 54 53 55 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fa5cc2610d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:80 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 55 54 56 6 (set (reg:SI 97 [ D.6244 ])
+        (reg:SI 0 ax)) ntc2getconfig.c:80 -1
+     (nil))
+(insn 56 55 57 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 97 [ D.6244 ])
+            (const_int 0 [0]))) ntc2getconfig.c:80 -1
+     (nil))
+(jump_insn 57 56 58 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 63)
+            (pc))) ntc2getconfig.c:80 -1
+     (nil)
+ -> 63)
+(note 58 57 59 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 60 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -116 [0xffffffffffffff8c])) [0 verify+0 S4 A32])
+        (const_int 1 [0x1])) ntc2getconfig.c:81 -1
+     (nil))
+(insn 60 59 61 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 verifyLocked+0 S4 A32])
+        (const_int 1 [0x1])) ntc2getconfig.c:82 -1
+     (nil))
+(jump_insn 61 60 62 7 (set (pc)
+        (label_ref 152)) -1
+     (nil)
+ -> 152)
+(barrier 62 61 63)
+(code_label 63 62 64 8 5 "" [1 uses])
+(note 64 63 65 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 65 64 66 8 (set (reg:SI 134)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])) ntc2getconfig.c:84 -1
+     (nil))
+(insn 66 65 67 8 (set (reg:DI 98 [ D.6241 ])
+        (sign_extend:DI (reg:SI 134))) ntc2getconfig.c:84 -1
+     (nil))
+(insn 67 66 68 8 (parallel [
+            (set (reg:DI 99 [ D.6241 ])
+                (ashift:DI (reg:DI 98 [ D.6241 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:84 -1
+     (nil))
+(insn 68 67 69 8 (set (reg/f:DI 135)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])) ntc2getconfig.c:84 -1
+     (nil))
+(insn 69 68 70 8 (parallel [
+            (set (reg/f:DI 100 [ D.6242 ])
+                (plus:DI (reg:DI 99 [ D.6241 ])
+                    (reg/f:DI 135)))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:84 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])
+            (reg:DI 99 [ D.6241 ]))
+        (nil)))
+(insn 70 69 71 8 (set (reg/f:DI 101 [ D.6243 ])
+        (mem/f:DI (reg/f:DI 100 [ D.6242 ]) [0 *_54+0 S8 A64])) ntc2getconfig.c:84 -1
+     (nil))
+(insn 71 70 72 8 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7fa5cbe4be10 *.LC3>)) ntc2getconfig.c:84 -1
+     (nil))
+(insn 72 71 73 8 (set (reg:DI 5 di)
+        (reg/f:DI 101 [ D.6243 ])) ntc2getconfig.c:84 -1
+     (nil))
+(call_insn/i 73 72 74 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fa5cc2610d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:84 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 74 73 75 8 (set (reg:SI 102 [ D.6244 ])
+        (reg:SI 0 ax)) ntc2getconfig.c:84 -1
+     (nil))
+(insn 75 74 76 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 102 [ D.6244 ])
+            (const_int 0 [0]))) ntc2getconfig.c:84 -1
+     (nil))
+(jump_insn 76 75 77 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 81)
+            (pc))) ntc2getconfig.c:84 -1
+     (nil)
+ -> 81)
+(note 77 76 78 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 78 77 79 9 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -108 [0xffffffffffffff94])) [0 p8+0 S4 A32])
+        (const_int 1 [0x1])) ntc2getconfig.c:85 -1
+     (nil))
+(jump_insn 79 78 80 9 (set (pc)
+        (label_ref 152)) -1
+     (nil)
+ -> 152)
+(barrier 80 79 81)
+(code_label 81 80 82 10 6 "" [1 uses])
+(note 82 81 83 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 10 (set (reg:SI 136)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])) ntc2getconfig.c:87 -1
+     (nil))
+(insn 84 83 85 10 (set (reg:DI 103 [ D.6241 ])
+        (sign_extend:DI (reg:SI 136))) ntc2getconfig.c:87 -1
+     (nil))
+(insn 85 84 86 10 (parallel [
+            (set (reg:DI 104 [ D.6241 ])
+                (ashift:DI (reg:DI 103 [ D.6241 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:87 -1
+     (nil))
+(insn 86 85 87 10 (set (reg/f:DI 137)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])) ntc2getconfig.c:87 -1
+     (nil))
+(insn 87 86 88 10 (parallel [
+            (set (reg/f:DI 105 [ D.6242 ])
+                (plus:DI (reg:DI 104 [ D.6241 ])
+                    (reg/f:DI 137)))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:87 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])
+            (reg:DI 104 [ D.6241 ]))
+        (nil)))
+(insn 88 87 89 10 (set (reg/f:DI 106 [ D.6243 ])
+        (mem/f:DI (reg/f:DI 105 [ D.6242 ]) [0 *_60+0 S8 A64])) ntc2getconfig.c:87 -1
+     (nil))
+(insn 89 88 90 10 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7fa5cbe4bea0 *.LC4>)) ntc2getconfig.c:87 -1
+     (nil))
+(insn 90 89 91 10 (set (reg:DI 5 di)
+        (reg/f:DI 106 [ D.6243 ])) ntc2getconfig.c:87 -1
+     (nil))
+(call_insn/i 91 90 92 10 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fa5cc2610d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:87 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 92 91 93 10 (set (reg:SI 107 [ D.6244 ])
+        (reg:SI 0 ax)) ntc2getconfig.c:87 -1
+     (nil))
+(insn 93 92 94 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 107 [ D.6244 ])
+            (const_int 0 [0]))) ntc2getconfig.c:87 -1
+     (nil))
+(jump_insn 94 93 95 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 99)
+            (pc))) ntc2getconfig.c:87 -1
+     (nil)
+ -> 99)
+(note 95 94 96 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 96 95 97 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 p9+0 S4 A32])
+        (const_int 1 [0x1])) ntc2getconfig.c:88 -1
+     (nil))
+(jump_insn 97 96 98 11 (set (pc)
+        (label_ref 152)) -1
+     (nil)
+ -> 152)
+(barrier 98 97 99)
+(code_label 99 98 100 12 7 "" [1 uses])
+(note 100 99 101 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 101 100 102 12 (set (reg:SI 138)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])) ntc2getconfig.c:90 -1
+     (nil))
+(insn 102 101 103 12 (set (reg:DI 108 [ D.6241 ])
+        (sign_extend:DI (reg:SI 138))) ntc2getconfig.c:90 -1
+     (nil))
+(insn 103 102 104 12 (parallel [
+            (set (reg:DI 109 [ D.6241 ])
+                (ashift:DI (reg:DI 108 [ D.6241 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:90 -1
+     (nil))
+(insn 104 103 105 12 (set (reg/f:DI 139)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])) ntc2getconfig.c:90 -1
+     (nil))
+(insn 105 104 106 12 (parallel [
+            (set (reg/f:DI 110 [ D.6242 ])
+                (plus:DI (reg:DI 109 [ D.6241 ])
+                    (reg/f:DI 139)))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:90 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])
+            (reg:DI 109 [ D.6241 ]))
+        (nil)))
+(insn 106 105 107 12 (set (reg/f:DI 111 [ D.6243 ])
+        (mem/f:DI (reg/f:DI 110 [ D.6242 ]) [0 *_66+0 S8 A64])) ntc2getconfig.c:90 -1
+     (nil))
+(insn 107 106 108 12 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7fa5cbe4bf30 *.LC5>)) ntc2getconfig.c:90 -1
+     (nil))
+(insn 108 107 109 12 (set (reg:DI 5 di)
+        (reg/f:DI 111 [ D.6243 ])) ntc2getconfig.c:90 -1
+     (nil))
+(call_insn/i 109 108 110 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fa5cc2610d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:90 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 110 109 111 12 (set (reg:SI 112 [ D.6244 ])
+        (reg:SI 0 ax)) ntc2getconfig.c:90 -1
+     (nil))
+(insn 111 110 112 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 112 [ D.6244 ])
+            (const_int 0 [0]))) ntc2getconfig.c:90 -1
+     (nil))
+(jump_insn 112 111 113 12 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 117)
+            (pc))) ntc2getconfig.c:90 -1
+     (nil)
+ -> 117)
+(note 113 112 114 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(call_insn 114 113 115 13 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fa5cbe27288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) ntc2getconfig.c:91 -1
+     (nil)
+    (nil))
+(jump_insn 115 114 116 13 (set (pc)
+        (label_ref 152)) -1
+     (nil)
+ -> 152)
+(barrier 116 115 117)
+(code_label 117 116 118 14 8 "" [1 uses])
+(note 118 117 119 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 119 118 120 14 (set (reg:SI 140)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])) ntc2getconfig.c:93 -1
+     (nil))
+(insn 120 119 121 14 (set (reg:DI 113 [ D.6241 ])
+        (sign_extend:DI (reg:SI 140))) ntc2getconfig.c:93 -1
+     (nil))
+(insn 121 120 122 14 (parallel [
+            (set (reg:DI 114 [ D.6241 ])
+                (ashift:DI (reg:DI 113 [ D.6241 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:93 -1
+     (nil))
+(insn 122 121 123 14 (set (reg/f:DI 141)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])) ntc2getconfig.c:93 -1
+     (nil))
+(insn 123 122 124 14 (parallel [
+            (set (reg/f:DI 115 [ D.6242 ])
+                (plus:DI (reg:DI 114 [ D.6241 ])
+                    (reg/f:DI 141)))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:93 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])
+            (reg:DI 114 [ D.6241 ]))
+        (nil)))
+(insn 124 123 125 14 (set (reg/f:DI 116 [ D.6243 ])
+        (mem/f:DI (reg/f:DI 115 [ D.6242 ]) [0 *_72+0 S8 A64])) ntc2getconfig.c:93 -1
+     (nil))
+(insn 125 124 126 14 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7fa5cbe61000 *.LC6>)) ntc2getconfig.c:93 -1
+     (nil))
+(insn 126 125 127 14 (set (reg:DI 5 di)
+        (reg/f:DI 116 [ D.6243 ])) ntc2getconfig.c:93 -1
+     (nil))
+(call_insn/i 127 126 128 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7fa5cc2610d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:93 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 128 127 129 14 (set (reg:SI 117 [ D.6244 ])
+        (reg:SI 0 ax)) ntc2getconfig.c:93 -1
+     (nil))
+(insn 129 128 130 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 117 [ D.6244 ])
+            (const_int 0 [0]))) ntc2getconfig.c:93 -1
+     (nil))
+(jump_insn 130 129 131 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 139)
+            (pc))) ntc2getconfig.c:93 -1
+     (nil)
+ -> 139)
+(note 131 130 132 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 132 131 133 15 (set (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7fa5cc029090 verbose>) [0 verbose+0 S4 A32])
+        (const_int 1 [0x1])) ntc2getconfig.c:94 -1
+     (nil))
+(insn 133 132 134 15 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7fa5cbe61090 *.LC7>)) ntc2getconfig.c:95 -1
+     (nil))
+(insn 134 133 135 15 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) ntc2getconfig.c:95 -1
+     (nil))
+(insn 135 134 136 15 (set (reg:DI 5 di)
+        (const_int 0 [0])) ntc2getconfig.c:95 -1
+     (nil))
+(call_insn 136 135 137 15 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7fa5cc1cd000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:95 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(jump_insn 137 136 138 15 (set (pc)
+        (label_ref 152)) -1
+     (nil)
+ -> 152)
+(barrier 138 137 139)
+(code_label 139 138 140 16 9 "" [1 uses])
+(note 140 139 141 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 141 140 142 16 (set (reg:SI 142)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])) ntc2getconfig.c:98 -1
+     (nil))
+(insn 142 141 143 16 (set (reg:DI 118 [ D.6241 ])
+        (sign_extend:DI (reg:SI 142))) ntc2getconfig.c:98 -1
+     (nil))
+(insn 143 142 144 16 (parallel [
+            (set (reg:DI 119 [ D.6241 ])
+                (ashift:DI (reg:DI 118 [ D.6241 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:98 -1
+     (nil))
+(insn 144 143 145 16 (set (reg/f:DI 143)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])) ntc2getconfig.c:98 -1
+     (nil))
+(insn 145 144 146 16 (parallel [
+            (set (reg/f:DI 120 [ D.6242 ])
+                (plus:DI (reg:DI 119 [ D.6241 ])
+                    (reg/f:DI 143)))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:98 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])) [0 argv+0 S8 A64])
+            (reg:DI 119 [ D.6241 ]))
+        (nil)))
+(insn 146 145 147 16 (set (reg/f:DI 121 [ D.6243 ])
+        (mem/f:DI (reg/f:DI 120 [ D.6242 ]) [0 *_79+0 S8 A64])) ntc2getconfig.c:98 -1
+     (nil))
+(insn 147 146 148 16 (set (reg:DI 4 si)
+        (reg/f:DI 121 [ D.6243 ])) ntc2getconfig.c:98 -1
+     (nil))
+(insn 148 147 149 16 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7fa5cbe61120 *.LC8>)) ntc2getconfig.c:98 -1
+     (nil))
+(insn 149 148 150 16 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:98 -1
+     (nil))
+(call_insn 150 149 151 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:98 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(call_insn 151 150 152 16 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fa5cbe27288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) ntc2getconfig.c:99 -1
+     (nil)
+    (nil))
+(code_label 152 151 153 17 4 "" [6 uses])
+(note 153 152 154 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 154 153 155 17 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:76 -1
+     (nil))
+(code_label 155 154 156 18 2 "" [1 uses])
+(note 156 155 157 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 157 156 158 18 (set (reg:SI 144)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 i+0 S4 A32])) ntc2getconfig.c:76 -1
+     (nil))
+(insn 158 157 159 18 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 144)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -132 [0xffffffffffffff7c])) [0 argc+0 S4 A32]))) ntc2getconfig.c:76 -1
+     (nil))
+(jump_insn 159 158 160 18 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 164)
+            (pc))) ntc2getconfig.c:76 -1
+     (nil)
+ -> 164)
+(note 160 159 162 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 162 160 163 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:76 -1
+     (nil))
+(jump_insn 163 162 164 19 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 161)
+            (pc))) ntc2getconfig.c:76 -1
+     (nil)
+ -> 161)
+(code_label 164 163 165 20 10 "" [1 uses])
+(note 165 164 166 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 166 165 167 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -116 [0xffffffffffffff8c])) [0 verify+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:102 -1
+     (nil))
+(jump_insn 167 166 168 20 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 189)
+            (pc))) ntc2getconfig.c:102 -1
+     (nil)
+ -> 189)
+(note 168 167 169 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 169 168 170 21 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -108 [0xffffffffffffff94])) [0 p8+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:103 -1
+     (nil))
+(jump_insn 170 169 171 21 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 178)
+            (pc))) ntc2getconfig.c:103 -1
+     (nil)
+ -> 178)
+(note 171 170 172 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 172 171 173 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -104 [0xffffffffffffff98])) [0 p9+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:103 -1
+     (nil))
+(jump_insn 173 172 174 22 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 178)
+            (pc))) ntc2getconfig.c:103 -1
+     (nil)
+ -> 178)
+(note 174 173 175 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 175 174 176 23 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7fa5cbe611b0 *.LC9>)) ntc2getconfig.c:104 -1
+     (nil))
+(call_insn 176 175 177 23 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa5cc26a360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:104 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 177 176 178 23 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fa5cbe27288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) ntc2getconfig.c:105 -1
+     (nil)
+    (nil))
+(code_label 178 177 179 24 13 "" [2 uses])
+(note 179 178 180 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 180 179 181 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -108 [0xffffffffffffff94])) [0 p8+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:107 -1
+     (nil))
+(jump_insn 181 180 182 24 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 189)
+            (pc))) ntc2getconfig.c:107 -1
+     (nil)
+ -> 189)
+(note 182 181 183 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 183 182 184 25 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -104 [0xffffffffffffff98])) [0 p9+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:107 -1
+     (nil))
+(jump_insn 184 183 185 25 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 189)
+            (pc))) ntc2getconfig.c:107 -1
+     (nil)
+ -> 189)
+(note 185 184 186 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 186 185 187 26 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7fa5cbe61240 *.LC10>)) ntc2getconfig.c:108 -1
+     (nil))
+(call_insn 187 186 188 26 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa5cc26a360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:108 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 188 187 189 26 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7fa5cbe27288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) ntc2getconfig.c:109 -1
+     (nil)
+    (nil))
+(code_label 189 188 190 27 12 "" [3 uses])
+(note 190 189 191 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 191 190 192 27 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:113 -1
+     (nil))
+(jump_insn 192 191 193 27 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 199)
+            (pc))) ntc2getconfig.c:113 -1
+     (nil)
+ -> 199)
+(note 193 192 194 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 194 193 195 28 (parallel [
+            (set (reg:DI 145)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -96 [0xffffffffffffffa0])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:114 -1
+     (nil))
+(insn 195 194 196 28 (set (reg:DI 5 di)
+        (reg:DI 145)) ntc2getconfig.c:114 -1
+     (nil))
+(call_insn 196 195 197 28 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Create") [flags 0x41]  <function_decl 0x7fa5cc1c5ca8 TSS_Create>) [0 TSS_Create S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:114 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 197 196 198 28 (set (reg:SI 146)
+        (reg:SI 0 ax)) ntc2getconfig.c:114 -1
+     (nil))
+(insn 198 197 199 28 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+        (reg:SI 146)) ntc2getconfig.c:114 -1
+     (nil))
+(code_label 199 198 200 29 14 "" [1 uses])
+(note 200 199 201 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 201 200 202 29 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:117 -1
+     (nil))
+(jump_insn 202 201 203 29 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 219)
+            (pc))) ntc2getconfig.c:117 -1
+     (nil)
+ -> 219)
+(note 203 202 204 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 204 203 205 30 (set (reg/f:DI 122 [ D.6245 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 tssContext+0 S8 A64])) ntc2getconfig.c:118 -1
+     (nil))
+(insn 205 204 206 30 (parallel [
+            (set (reg:DI 147)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -64 [0xffffffffffffffc0])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:118 -1
+     (nil))
+(insn 206 205 207 30 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 0 [0])) ntc2getconfig.c:118 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 207 206 208 30 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) ntc2getconfig.c:118 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 208 207 209 30 (set (reg:SI 38 r9)
+        (const_int 1073741831 [0x40000007])) ntc2getconfig.c:118 -1
+     (nil))
+(insn 209 208 210 30 (set (reg:SI 37 r8)
+        (const_int 536871443 [0x20000213])) ntc2getconfig.c:118 -1
+     (nil))
+(insn 210 209 211 30 (set (reg:DI 2 cx)
+        (const_int 0 [0])) ntc2getconfig.c:118 -1
+     (nil))
+(insn 211 210 212 30 (set (reg:DI 1 dx)
+        (const_int 0 [0])) ntc2getconfig.c:118 -1
+     (nil))
+(insn 212 211 213 30 (set (reg:DI 4 si)
+        (reg:DI 147)) ntc2getconfig.c:118 -1
+     (nil))
+(insn 213 212 214 30 (set (reg:DI 5 di)
+        (reg/f:DI 122 [ D.6245 ])) ntc2getconfig.c:118 -1
+     (nil))
+(insn 214 213 215 30 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:118 -1
+     (nil))
+(call_insn 215 214 216 30 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Execute") [flags 0x41]  <function_decl 0x7fa5cc1c5e58 TSS_Execute>) [0 TSS_Execute S1 A8])
+            (const_int 16 [0x10]))) ntc2getconfig.c:118 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (expr_list:SI (use (reg:SI 37 r8))
+                            (expr_list:SI (use (reg:SI 38 r9))
+                                (nil)))))))))
+(insn 216 215 217 30 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:118 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 217 216 218 30 (set (reg:SI 148)
+        (reg:SI 0 ax)) ntc2getconfig.c:118 -1
+     (nil))
+(insn 218 217 219 30 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+        (reg:SI 148)) ntc2getconfig.c:118 -1
+     (nil))
+(code_label 219 218 220 31 15 "" [1 uses])
+(note 220 219 221 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 221 220 222 31 (set (reg/f:DI 123 [ D.6245 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 tssContext+0 S8 A64])) ntc2getconfig.c:126 -1
+     (nil))
+(insn 222 221 223 31 (set (reg:DI 5 di)
+        (reg/f:DI 123 [ D.6245 ])) ntc2getconfig.c:126 -1
+     (nil))
+(call_insn 223 222 224 31 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Delete") [flags 0x41]  <function_decl 0x7fa5cc1c5d80 TSS_Delete>) [0 TSS_Delete S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:126 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 224 223 225 31 (set (reg:SI 149)
+        (reg:SI 0 ax)) ntc2getconfig.c:126 -1
+     (nil))
+(insn 225 224 226 31 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -100 [0xffffffffffffff9c])) [0 rc1+0 S4 A32])
+        (reg:SI 149)) ntc2getconfig.c:126 -1
+     (nil))
+(insn 226 225 227 31 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:127 -1
+     (nil))
+(jump_insn 227 226 228 31 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 231)
+            (pc))) ntc2getconfig.c:127 -1
+     (nil)
+ -> 231)
+(note 228 227 229 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 229 228 230 32 (set (reg:SI 150)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -100 [0xffffffffffffff9c])) [0 rc1+0 S4 A32])) ntc2getconfig.c:128 -1
+     (nil))
+(insn 230 229 231 32 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+        (reg:SI 150)) ntc2getconfig.c:128 -1
+     (nil))
+(code_label 231 230 232 33 16 "" [1 uses])
+(note 232 231 233 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 233 232 234 33 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:131 -1
+     (nil))
+(jump_insn 234 233 235 33 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 239)
+            (pc))) ntc2getconfig.c:131 -1
+     (nil)
+ -> 239)
+(note 235 234 236 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 236 235 237 34 (parallel [
+            (set (reg:DI 151)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -64 [0xffffffffffffffc0])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:132 -1
+     (nil))
+(insn 237 236 238 34 (set (reg:DI 5 di)
+        (reg:DI 151)) ntc2getconfig.c:132 -1
+     (nil))
+(call_insn 238 237 239 34 (call (mem:QI (symbol_ref:DI ("printHexResponse") [flags 0x3]  <function_decl 0x7fa5cbe27360 printHexResponse>) [0 printHexResponse S1 A8])
+        (const_int 0 [0])) ntc2getconfig.c:132 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 239 238 240 35 17 "" [1 uses])
+(note 240 239 241 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 241 240 242 35 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -116 [0xffffffffffffff8c])) [0 verify+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:136 -1
+     (nil))
+(jump_insn 242 241 243 35 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 266)
+            (pc))) ntc2getconfig.c:136 -1
+     (nil)
+ -> 266)
+(note 243 242 244 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 244 243 245 36 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:137 -1
+     (nil))
+(jump_insn 245 244 246 36 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 252)
+            (pc))) ntc2getconfig.c:137 -1
+     (nil)
+ -> 252)
+(note 246 245 247 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 247 246 248 37 (set (reg:SI 152)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 p9+0 S4 A32])) ntc2getconfig.c:138 -1
+     (nil))
+(insn 248 247 249 37 (parallel [
+            (set (reg:DI 153)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:138 -1
+     (nil))
+(insn 249 248 250 37 (set (reg:SI 4 si)
+        (reg:SI 152)) ntc2getconfig.c:138 -1
+     (nil))
+(insn 250 249 251 37 (set (reg:DI 5 di)
+        (reg:DI 153)) ntc2getconfig.c:138 -1
+     (nil))
+(call_insn 251 250 252 37 (call (mem:QI (symbol_ref:DI ("requiredConfig") [flags 0x41]  <function_decl 0x7fa5cbe271b0 requiredConfig>) [0 requiredConfig S1 A8])
+        (const_int 0 [0])) ntc2getconfig.c:138 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(code_label 252 251 253 38 19 "" [1 uses])
+(note 253 252 254 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 254 253 255 38 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:140 -1
+     (nil))
+(jump_insn 255 254 256 38 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 266)
+            (pc))) ntc2getconfig.c:140 -1
+     (nil)
+ -> 266)
+(note 256 255 257 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 257 256 258 39 (set (reg:SI 154)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 verifyLocked+0 S4 A32])) ntc2getconfig.c:141 -1
+     (nil))
+(insn 258 257 259 39 (parallel [
+            (set (reg:DI 155)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -64 [0xffffffffffffffc0])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:141 -1
+     (nil))
+(insn 259 258 260 39 (parallel [
+            (set (reg:DI 156)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:141 -1
+     (nil))
+(insn 260 259 261 39 (set (reg:SI 1 dx)
+        (reg:SI 154)) ntc2getconfig.c:141 -1
+     (nil))
+(insn 261 260 262 39 (set (reg:DI 4 si)
+        (reg:DI 155)) ntc2getconfig.c:141 -1
+     (nil))
+(insn 262 261 263 39 (set (reg:DI 5 di)
+        (reg:DI 156)) ntc2getconfig.c:141 -1
+     (nil))
+(call_insn 263 262 264 39 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("verifyConfig") [flags 0x41]  <function_decl 0x7fa5cbe270d8 verifyConfig>) [0 verifyConfig S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:141 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 264 263 265 39 (set (reg:SI 157)
+        (reg:SI 0 ax)) ntc2getconfig.c:141 -1
+     (nil))
+(insn 265 264 266 39 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+        (reg:SI 157)) ntc2getconfig.c:141 -1
+     (nil))
+(code_label 266 265 267 40 18 "" [2 uses])
+(note 267 266 268 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(insn 268 267 269 40 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) ntc2getconfig.c:146 -1
+     (nil))
+(jump_insn 269 268 270 40 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 281)
+            (pc))) ntc2getconfig.c:146 -1
+     (nil)
+ -> 281)
+(note 270 269 271 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 271 270 272 41 (set (reg:SI 124 [ D.6244 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7fa5cc029090 verbose>) [0 verbose+0 S4 A32])) ntc2getconfig.c:147 -1
+     (nil))
+(insn 272 271 273 41 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 124 [ D.6244 ])
+            (const_int 0 [0]))) ntc2getconfig.c:147 -1
+     (nil))
+(jump_insn 273 272 274 41 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 307)
+            (pc))) ntc2getconfig.c:147 612 {*jcc_1}
+     (nil)
+ -> 307)
+(note 274 273 275 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 275 274 276 42 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7fa5cbe612d0 *.LC11>)) ntc2getconfig.c:147 -1
+     (nil))
+(call_insn 276 275 279 42 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa5cc26a360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:147 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 279 276 280 42 (set (pc)
+        (label_ref 307)) -1
+     (nil)
+ -> 307)
+(barrier 280 279 281)
+(code_label 281 280 282 44 20 "" [1 uses])
+(note 282 281 283 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(insn 283 282 284 44 (set (reg:SI 158)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])) ntc2getconfig.c:153 -1
+     (nil))
+(insn 284 283 285 44 (set (reg:SI 4 si)
+        (reg:SI 158)) ntc2getconfig.c:153 -1
+     (nil))
+(insn 285 284 286 44 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7fa5cbe61360 *.LC12>)) ntc2getconfig.c:153 -1
+     (nil))
+(insn 286 285 287 44 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:153 -1
+     (nil))
+(call_insn 287 286 288 44 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:153 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 288 287 289 44 (set (reg:SI 159)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])) ntc2getconfig.c:154 -1
+     (nil))
+(insn 289 288 290 44 (parallel [
+            (set (reg:DI 160)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -72 [0xffffffffffffffb8])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:154 -1
+     (nil))
+(insn 290 289 291 44 (parallel [
+            (set (reg:DI 161)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -80 [0xffffffffffffffb0])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:154 -1
+     (nil))
+(insn 291 290 292 44 (parallel [
+            (set (reg:DI 162)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -88 [0xffffffffffffffa8])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2getconfig.c:154 -1
+     (nil))
+(insn 292 291 293 44 (set (reg:SI 2 cx)
+        (reg:SI 159)) ntc2getconfig.c:154 -1
+     (nil))
+(insn 293 292 294 44 (set (reg:DI 1 dx)
+        (reg:DI 160)) ntc2getconfig.c:154 -1
+     (nil))
+(insn 294 293 295 44 (set (reg:DI 4 si)
+        (reg:DI 161)) ntc2getconfig.c:154 -1
+     (nil))
+(insn 295 294 296 44 (set (reg:DI 5 di)
+        (reg:DI 162)) ntc2getconfig.c:154 -1
+     (nil))
+(call_insn 296 295 297 44 (call (mem:QI (symbol_ref:DI ("TSS_ResponseCode_toString") [flags 0x41]  <function_decl 0x7fa5cc1cde58 TSS_ResponseCode_toString>) [0 TSS_ResponseCode_toString S1 A8])
+        (const_int 0 [0])) ntc2getconfig.c:154 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 297 296 298 44 (set (reg/f:DI 125 [ D.6246 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 num+0 S8 A64])) ntc2getconfig.c:155 -1
+     (nil))
+(insn 298 297 299 44 (set (reg/f:DI 126 [ D.6246 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 submsg+0 S8 A64])) ntc2getconfig.c:155 -1
+     (nil))
+(insn 299 298 300 44 (set (reg/f:DI 127 [ D.6246 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 msg+0 S8 A64])) ntc2getconfig.c:155 -1
+     (nil))
+(insn 300 299 301 44 (set (reg:DI 2 cx)
+        (reg/f:DI 125 [ D.6246 ])) ntc2getconfig.c:155 -1
+     (nil))
+(insn 301 300 302 44 (set (reg:DI 1 dx)
+        (reg/f:DI 126 [ D.6246 ])) ntc2getconfig.c:155 -1
+     (nil))
+(insn 302 301 303 44 (set (reg:DI 4 si)
+        (reg/f:DI 127 [ D.6246 ])) ntc2getconfig.c:155 -1
+     (nil))
+(insn 303 302 304 44 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7fa5cbe613f0 *.LC13>)) ntc2getconfig.c:155 -1
+     (nil))
+(insn 304 303 305 44 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:155 -1
+     (nil))
+(call_insn 305 304 306 44 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:155 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (nil)))))))
+(insn 306 305 307 44 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])
+        (const_int 1 [0x1])) ntc2getconfig.c:156 -1
+     (nil))
+(code_label 307 306 308 45 22 "" [2 uses])
+(note 308 307 309 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 309 308 312 45 (set (reg:SI 128 [ D.6244 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 rc+0 S4 A32])) ntc2getconfig.c:158 -1
+     (nil))
+(insn 312 309 316 45 (set (reg:SI 129 [ <retval> ])
+        (reg:SI 128 [ D.6244 ])) -1
+     (nil))
+(insn 316 312 317 45 (set (reg/i:SI 0 ax)
+        (reg:SI 129 [ <retval> ])) ntc2getconfig.c:159 -1
+     (nil))
+(insn 317 316 318 45 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.6247+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) ntc2getconfig.c:159 -1
+     (nil))
+(jump_insn 318 317 324 45 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 321)
+            (pc))) ntc2getconfig.c:159 -1
+     (nil)
+ -> 321)
+(note 324 318 319 48 [bb 48] NOTE_INSN_BASIC_BLOCK)
+(call_insn 319 324 320 48 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7fa5cbe275e8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) ntc2getconfig.c:159 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 320 319 321)
+(code_label 321 320 325 49 24 "" [1 uses])
+(note 325 321 322 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(insn 322 325 0 49 (use (reg/i:SI 0 ax)) ntc2getconfig.c:159 -1
+     (nil))
+
+;; Function printHexResponse (printHexResponse, funcdef_no=3, decl_uid=6079, cgraph_uid=3, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])
+        (reg:DI 5 di [ preConfig ])) ntc2getconfig.c:164 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:165 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:QI 87 [ D.6264 ])
+        (mem/j:QI (reg/f:DI 123) [0 preConfig_2(D)->i2cLoc1_2+0 S1 A8])) ntc2getconfig.c:165 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 88 [ D.6265 ])
+        (zero_extend:SI (reg:QI 87 [ D.6264 ]))) ntc2getconfig.c:165 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 4 si)
+        (reg:SI 88 [ D.6265 ])) ntc2getconfig.c:165 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7fa5cbe74090 *.LC14>)) ntc2getconfig.c:165 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:165 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:165 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 13 12 14 2 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:166 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:QI 89 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 124)
+                (const_int 1 [0x1])) [0 preConfig_2(D)->i2cLoc3_4+0 S1 A8])) ntc2getconfig.c:166 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 90 [ D.6265 ])
+        (zero_extend:SI (reg:QI 89 [ D.6264 ]))) ntc2getconfig.c:166 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 4 si)
+        (reg:SI 90 [ D.6265 ])) ntc2getconfig.c:166 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7fa5cbe74120 *.LC15>)) ntc2getconfig.c:166 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:166 -1
+     (nil))
+(call_insn 19 18 20 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:166 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 20 19 21 2 (set (reg/f:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:167 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:QI 91 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 125)
+                (const_int 2 [0x2])) [0 preConfig_2(D)->AltCfg+0 S1 A8])) ntc2getconfig.c:167 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 92 [ D.6265 ])
+        (zero_extend:SI (reg:QI 91 [ D.6264 ]))) ntc2getconfig.c:167 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 4 si)
+        (reg:SI 92 [ D.6265 ])) ntc2getconfig.c:167 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7fa5cbe741b0 *.LC16>)) ntc2getconfig.c:167 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:167 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:167 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 27 26 28 2 (set (reg/f:DI 126)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:168 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:QI 93 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 126)
+                (const_int 3 [0x3])) [0 preConfig_2(D)->Direction+0 S1 A8])) ntc2getconfig.c:168 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 94 [ D.6265 ])
+        (zero_extend:SI (reg:QI 93 [ D.6264 ]))) ntc2getconfig.c:168 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:SI 4 si)
+        (reg:SI 94 [ D.6265 ])) ntc2getconfig.c:168 -1
+     (nil))
+(insn 31 30 32 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7fa5cbe74240 *.LC17>)) ntc2getconfig.c:168 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:168 -1
+     (nil))
+(call_insn 33 32 34 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:168 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 34 33 35 2 (set (reg/f:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:169 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:QI 95 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 127)
+                (const_int 4 [0x4])) [0 preConfig_2(D)->PullUp+0 S1 A8])) ntc2getconfig.c:169 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:SI 96 [ D.6265 ])
+        (zero_extend:SI (reg:QI 95 [ D.6264 ]))) ntc2getconfig.c:169 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:SI 4 si)
+        (reg:SI 96 [ D.6265 ])) ntc2getconfig.c:169 -1
+     (nil))
+(insn 38 37 39 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7fa5cbe742d0 *.LC18>)) ntc2getconfig.c:169 -1
+     (nil))
+(insn 39 38 40 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:169 -1
+     (nil))
+(call_insn 40 39 41 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:169 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 41 40 42 2 (set (reg/f:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:170 -1
+     (nil))
+(insn 42 41 43 2 (set (reg:QI 97 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 128)
+                (const_int 5 [0x5])) [0 preConfig_2(D)->PushPull+0 S1 A8])) ntc2getconfig.c:170 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:SI 98 [ D.6265 ])
+        (zero_extend:SI (reg:QI 97 [ D.6264 ]))) ntc2getconfig.c:170 -1
+     (nil))
+(insn 44 43 45 2 (set (reg:SI 4 si)
+        (reg:SI 98 [ D.6265 ])) ntc2getconfig.c:170 -1
+     (nil))
+(insn 45 44 46 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7fa5cbe74360 *.LC19>)) ntc2getconfig.c:170 -1
+     (nil))
+(insn 46 45 47 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:170 -1
+     (nil))
+(call_insn 47 46 48 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:170 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 48 47 49 2 (set (reg/f:DI 129)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:171 -1
+     (nil))
+(insn 49 48 50 2 (set (reg:QI 99 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 129)
+                (const_int 6 [0x6])) [0 preConfig_2(D)->CFG_A+0 S1 A8])) ntc2getconfig.c:171 -1
+     (nil))
+(insn 50 49 51 2 (set (reg:SI 100 [ D.6265 ])
+        (zero_extend:SI (reg:QI 99 [ D.6264 ]))) ntc2getconfig.c:171 -1
+     (nil))
+(insn 51 50 52 2 (set (reg:SI 4 si)
+        (reg:SI 100 [ D.6265 ])) ntc2getconfig.c:171 -1
+     (nil))
+(insn 52 51 53 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC20") [flags 0x2]  <var_decl 0x7fa5cbe743f0 *.LC20>)) ntc2getconfig.c:171 -1
+     (nil))
+(insn 53 52 54 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:171 -1
+     (nil))
+(call_insn 54 53 55 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:171 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 55 54 56 2 (set (reg/f:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:172 -1
+     (nil))
+(insn 56 55 57 2 (set (reg:QI 101 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 130)
+                (const_int 7 [0x7])) [0 preConfig_2(D)->CFG_B+0 S1 A8])) ntc2getconfig.c:172 -1
+     (nil))
+(insn 57 56 58 2 (set (reg:SI 102 [ D.6265 ])
+        (zero_extend:SI (reg:QI 101 [ D.6264 ]))) ntc2getconfig.c:172 -1
+     (nil))
+(insn 58 57 59 2 (set (reg:SI 4 si)
+        (reg:SI 102 [ D.6265 ])) ntc2getconfig.c:172 -1
+     (nil))
+(insn 59 58 60 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC21") [flags 0x2]  <var_decl 0x7fa5cbe74480 *.LC21>)) ntc2getconfig.c:172 -1
+     (nil))
+(insn 60 59 61 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:172 -1
+     (nil))
+(call_insn 61 60 62 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:172 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 62 61 63 2 (set (reg/f:DI 131)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:173 -1
+     (nil))
+(insn 63 62 64 2 (set (reg:QI 103 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 131)
+                (const_int 8 [0x8])) [0 preConfig_2(D)->CFG_C+0 S1 A8])) ntc2getconfig.c:173 -1
+     (nil))
+(insn 64 63 65 2 (set (reg:SI 104 [ D.6265 ])
+        (zero_extend:SI (reg:QI 103 [ D.6264 ]))) ntc2getconfig.c:173 -1
+     (nil))
+(insn 65 64 66 2 (set (reg:SI 4 si)
+        (reg:SI 104 [ D.6265 ])) ntc2getconfig.c:173 -1
+     (nil))
+(insn 66 65 67 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC22") [flags 0x2]  <var_decl 0x7fa5cbe74510 *.LC22>)) ntc2getconfig.c:173 -1
+     (nil))
+(insn 67 66 68 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:173 -1
+     (nil))
+(call_insn 68 67 69 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:173 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 69 68 70 2 (set (reg/f:DI 132)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:174 -1
+     (nil))
+(insn 70 69 71 2 (set (reg:QI 105 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 132)
+                (const_int 9 [0x9])) [0 preConfig_2(D)->CFG_D+0 S1 A8])) ntc2getconfig.c:174 -1
+     (nil))
+(insn 71 70 72 2 (set (reg:SI 106 [ D.6265 ])
+        (zero_extend:SI (reg:QI 105 [ D.6264 ]))) ntc2getconfig.c:174 -1
+     (nil))
+(insn 72 71 73 2 (set (reg:SI 4 si)
+        (reg:SI 106 [ D.6265 ])) ntc2getconfig.c:174 -1
+     (nil))
+(insn 73 72 74 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC23") [flags 0x2]  <var_decl 0x7fa5cbe745a0 *.LC23>)) ntc2getconfig.c:174 -1
+     (nil))
+(insn 74 73 75 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:174 -1
+     (nil))
+(call_insn 75 74 76 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:174 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 76 75 77 2 (set (reg/f:DI 133)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:175 -1
+     (nil))
+(insn 77 76 78 2 (set (reg:QI 107 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 133)
+                (const_int 10 [0xa])) [0 preConfig_2(D)->CFG_E+0 S1 A8])) ntc2getconfig.c:175 -1
+     (nil))
+(insn 78 77 79 2 (set (reg:SI 108 [ D.6265 ])
+        (zero_extend:SI (reg:QI 107 [ D.6264 ]))) ntc2getconfig.c:175 -1
+     (nil))
+(insn 79 78 80 2 (set (reg:SI 4 si)
+        (reg:SI 108 [ D.6265 ])) ntc2getconfig.c:175 -1
+     (nil))
+(insn 80 79 81 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC24") [flags 0x2]  <var_decl 0x7fa5cbe74630 *.LC24>)) ntc2getconfig.c:175 -1
+     (nil))
+(insn 81 80 82 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:175 -1
+     (nil))
+(call_insn 82 81 83 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:175 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 83 82 84 2 (set (reg/f:DI 134)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:176 -1
+     (nil))
+(insn 84 83 85 2 (set (reg:QI 109 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 134)
+                (const_int 11 [0xb])) [0 preConfig_2(D)->CFG_F+0 S1 A8])) ntc2getconfig.c:176 -1
+     (nil))
+(insn 85 84 86 2 (set (reg:SI 110 [ D.6265 ])
+        (zero_extend:SI (reg:QI 109 [ D.6264 ]))) ntc2getconfig.c:176 -1
+     (nil))
+(insn 86 85 87 2 (set (reg:SI 4 si)
+        (reg:SI 110 [ D.6265 ])) ntc2getconfig.c:176 -1
+     (nil))
+(insn 87 86 88 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC25") [flags 0x2]  <var_decl 0x7fa5cbe746c0 *.LC25>)) ntc2getconfig.c:176 -1
+     (nil))
+(insn 88 87 89 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:176 -1
+     (nil))
+(call_insn 89 88 90 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:176 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 90 89 91 2 (set (reg/f:DI 135)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:177 -1
+     (nil))
+(insn 91 90 92 2 (set (reg:QI 111 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 135)
+                (const_int 12 [0xc])) [0 preConfig_2(D)->CFG_G+0 S1 A8])) ntc2getconfig.c:177 -1
+     (nil))
+(insn 92 91 93 2 (set (reg:SI 112 [ D.6265 ])
+        (zero_extend:SI (reg:QI 111 [ D.6264 ]))) ntc2getconfig.c:177 -1
+     (nil))
+(insn 93 92 94 2 (set (reg:SI 4 si)
+        (reg:SI 112 [ D.6265 ])) ntc2getconfig.c:177 -1
+     (nil))
+(insn 94 93 95 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC26") [flags 0x2]  <var_decl 0x7fa5cbe74750 *.LC26>)) ntc2getconfig.c:177 -1
+     (nil))
+(insn 95 94 96 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:177 -1
+     (nil))
+(call_insn 96 95 97 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:177 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 97 96 98 2 (set (reg/f:DI 136)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:178 -1
+     (nil))
+(insn 98 97 99 2 (set (reg:QI 113 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 136)
+                (const_int 13 [0xd])) [0 preConfig_2(D)->CFG_H+0 S1 A8])) ntc2getconfig.c:178 -1
+     (nil))
+(insn 99 98 100 2 (set (reg:SI 114 [ D.6265 ])
+        (zero_extend:SI (reg:QI 113 [ D.6264 ]))) ntc2getconfig.c:178 -1
+     (nil))
+(insn 100 99 101 2 (set (reg:SI 4 si)
+        (reg:SI 114 [ D.6265 ])) ntc2getconfig.c:178 -1
+     (nil))
+(insn 101 100 102 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC27") [flags 0x2]  <var_decl 0x7fa5cbe747e0 *.LC27>)) ntc2getconfig.c:178 -1
+     (nil))
+(insn 102 101 103 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:178 -1
+     (nil))
+(call_insn 103 102 104 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:178 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 104 103 105 2 (set (reg/f:DI 137)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:179 -1
+     (nil))
+(insn 105 104 106 2 (set (reg:QI 115 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 137)
+                (const_int 14 [0xe])) [0 preConfig_2(D)->CFG_I+0 S1 A8])) ntc2getconfig.c:179 -1
+     (nil))
+(insn 106 105 107 2 (set (reg:SI 116 [ D.6265 ])
+        (zero_extend:SI (reg:QI 115 [ D.6264 ]))) ntc2getconfig.c:179 -1
+     (nil))
+(insn 107 106 108 2 (set (reg:SI 4 si)
+        (reg:SI 116 [ D.6265 ])) ntc2getconfig.c:179 -1
+     (nil))
+(insn 108 107 109 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC28") [flags 0x2]  <var_decl 0x7fa5cbe74870 *.LC28>)) ntc2getconfig.c:179 -1
+     (nil))
+(insn 109 108 110 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:179 -1
+     (nil))
+(call_insn 110 109 111 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:179 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 111 110 112 2 (set (reg/f:DI 138)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:180 -1
+     (nil))
+(insn 112 111 113 2 (set (reg:QI 117 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 138)
+                (const_int 15 [0xf])) [0 preConfig_2(D)->CFG_J+0 S1 A8])) ntc2getconfig.c:180 -1
+     (nil))
+(insn 113 112 114 2 (set (reg:SI 118 [ D.6265 ])
+        (zero_extend:SI (reg:QI 117 [ D.6264 ]))) ntc2getconfig.c:180 -1
+     (nil))
+(insn 114 113 115 2 (set (reg:SI 4 si)
+        (reg:SI 118 [ D.6265 ])) ntc2getconfig.c:180 -1
+     (nil))
+(insn 115 114 116 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC29") [flags 0x2]  <var_decl 0x7fa5cbe74900 *.LC29>)) ntc2getconfig.c:180 -1
+     (nil))
+(insn 116 115 117 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:180 -1
+     (nil))
+(call_insn 117 116 118 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:180 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 118 117 119 2 (set (reg/f:DI 139)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:181 -1
+     (nil))
+(insn 119 118 120 2 (set (reg:QI 119 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 139)
+                (const_int 16 [0x10])) [0 preConfig_2(D)->IsValid+0 S1 A8])) ntc2getconfig.c:181 -1
+     (nil))
+(insn 120 119 121 2 (set (reg:SI 120 [ D.6265 ])
+        (zero_extend:SI (reg:QI 119 [ D.6264 ]))) ntc2getconfig.c:181 -1
+     (nil))
+(insn 121 120 122 2 (set (reg:SI 4 si)
+        (reg:SI 120 [ D.6265 ])) ntc2getconfig.c:181 -1
+     (nil))
+(insn 122 121 123 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC30") [flags 0x2]  <var_decl 0x7fa5cbe74990 *.LC30>)) ntc2getconfig.c:181 -1
+     (nil))
+(insn 123 122 124 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:181 -1
+     (nil))
+(call_insn 124 123 125 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:181 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 125 124 126 2 (set (reg/f:DI 140)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 preConfig+0 S8 A64])) ntc2getconfig.c:182 -1
+     (nil))
+(insn 126 125 127 2 (set (reg:QI 121 [ D.6264 ])
+        (mem/j:QI (plus:DI (reg/f:DI 140)
+                (const_int 17 [0x11])) [0 preConfig_2(D)->IsLocked+0 S1 A8])) ntc2getconfig.c:182 -1
+     (nil))
+(insn 127 126 128 2 (set (reg:SI 122 [ D.6265 ])
+        (zero_extend:SI (reg:QI 121 [ D.6264 ]))) ntc2getconfig.c:182 -1
+     (nil))
+(insn 128 127 129 2 (set (reg:SI 4 si)
+        (reg:SI 122 [ D.6265 ])) ntc2getconfig.c:182 -1
+     (nil))
+(insn 129 128 130 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC31") [flags 0x2]  <var_decl 0x7fa5cbe74a20 *.LC31>)) ntc2getconfig.c:182 -1
+     (nil))
+(insn 130 129 131 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:182 -1
+     (nil))
+(call_insn 131 130 136 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:182 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 136 131 0 2 (const_int 0 [0]) ntc2getconfig.c:183 -1
+     (nil))
+
+;; Function printUsage (printUsage, funcdef_no=4, decl_uid=6077, cgraph_uid=4, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) ntc2getconfig.c:188 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7fa5cc26a000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:188 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC32") [flags 0x2]  <var_decl 0x7fa5cbe74d80 *.LC32>)) ntc2getconfig.c:189 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa5cc26a360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:189 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) ntc2getconfig.c:190 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7fa5cc26a000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:190 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC33") [flags 0x2]  <var_decl 0x7fa5cbe74e10 *.LC33>)) ntc2getconfig.c:191 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa5cc26a360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:191 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) ntc2getconfig.c:192 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7fa5cc26a000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:192 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC34") [flags 0x2]  <var_decl 0x7fa5cbe74ea0 *.LC34>)) ntc2getconfig.c:193 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa5cc26a360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:193 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC35") [flags 0x2]  <var_decl 0x7fa5cbe74f30 *.LC35>)) ntc2getconfig.c:194 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa5cc26a360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:194 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC36") [flags 0x2]  <var_decl 0x7fa5cbe82000 *.LC36>)) ntc2getconfig.c:196 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) ntc2getconfig.c:196 -1
+     (nil))
+(call_insn 21 20 22 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa5cc267ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:196 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (nil))))
+(insn 22 21 23 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) ntc2getconfig.c:197 -1
+     (nil))
+(call_insn 23 22 24 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7fa5cc26a000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) ntc2getconfig.c:197 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 24 23 25 2 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) ntc2getconfig.c:198 -1
+     (nil))
+(call_insn 25 24 26 2 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7fa5cc27d000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) ntc2getconfig.c:198 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 26 25 0)

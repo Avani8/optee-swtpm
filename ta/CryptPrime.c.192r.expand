@@ -1,0 +1,3114 @@
+
+;; Function Root2 (Root2, funcdef_no=2, decl_uid=12856, cgraph_uid=2, symbol_order=2)
+
+Partition 3: size 4 align 4
+	diff_21
+Partition 2: size 4 align 4
+	stop_5
+Partition 1: size 4 align 4
+	next_3
+Partition 0: size 4 align 4
+	last_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 19 into block 18...
+Merged blocks 18 and 19.
+Merged 18 and 19 without moving.
+Removing jump 113.
+Merging block 20 into block 18...
+Merged blocks 18 and 20.
+Merged 18 and 20 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+        (reg:SI 5 di [ n ])) CryptPrime.c:79 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 107)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:80 -1
+     (nil))
+(insn 7 6 8 2 (parallel [
+            (set (reg:SI 87 [ D.13135 ])
+                (lshiftrt:SI (reg:SI 107)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:80 -1
+     (expr_list:REG_EQUAL (lshiftrt:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 8 7 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 last+0 S4 A32])
+        (reg:SI 87 [ D.13135 ])) CryptPrime.c:80 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 108)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:81 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:SI 88 [ D.13135 ])
+                (lshiftrt:SI (reg:SI 108)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:81 -1
+     (expr_list:REG_EQUAL (lshiftrt:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 11 10 12 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])
+        (reg:SI 88 [ D.13135 ])) CryptPrime.c:81 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 stop+0 S4 A32])
+        (const_int 10 [0xa])) CryptPrime.c:83 -1
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (label_ref 18)) CryptPrime.c:86 -1
+     (nil)
+ -> 18)
+(barrier 14 13 20)
+(code_label 20 14 15 4 3 "" [1 uses])
+(note 15 20 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -16 [0xfffffffffffffff0])) [0 last+0 S4 A32])
+                (ashiftrt:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -16 [0xfffffffffffffff0])) [0 last+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:86 -1
+     (nil))
+(insn 17 16 18 4 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])
+                (ashiftrt:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:86 -1
+     (nil))
+(code_label 18 17 19 5 2 "" [1 uses])
+(note 19 18 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 21 19 22 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])
+            (const_int 0 [0]))) CryptPrime.c:86 -1
+     (nil))
+(jump_insn 22 21 23 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) CryptPrime.c:86 -1
+     (nil)
+ -> 20)
+(note 23 22 24 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 55 6 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -16 [0xfffffffffffffff0])) [0 last+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -16 [0xfffffffffffffff0])) [0 last+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:87 -1
+     (nil))
+(code_label 55 24 25 7 5 "" [2 uses])
+(note 25 55 26 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 7 (set (reg:SI 89 [ D.13135 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 last+0 S4 A32])) CryptPrime.c:90 -1
+     (nil))
+(insn 27 26 28 7 (set (reg:SI 111)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:90 -1
+     (nil))
+(insn 28 27 29 7 (parallel [
+            (set (reg:SI 109)
+                (udiv:SI (reg:SI 111)
+                    (reg:SI 89 [ D.13135 ])))
+            (set (reg:SI 110)
+                (umod:SI (reg:SI 111)
+                    (reg:SI 89 [ D.13135 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:90 -1
+     (nil))
+(insn 29 28 30 7 (set (reg:SI 90 [ D.13135 ])
+        (reg:SI 109)) CryptPrime.c:90 -1
+     (nil))
+(insn 30 29 31 7 (set (reg:SI 91 [ D.13135 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 last+0 S4 A32])) CryptPrime.c:90 -1
+     (nil))
+(insn 31 30 32 7 (parallel [
+            (set (reg:SI 92 [ D.13135 ])
+                (plus:SI (reg:SI 90 [ D.13135 ])
+                    (reg:SI 91 [ D.13135 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:90 -1
+     (nil))
+(insn 32 31 33 7 (parallel [
+            (set (reg:SI 93 [ D.13135 ])
+                (lshiftrt:SI (reg:SI 92 [ D.13135 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:90 -1
+     (nil))
+(insn 33 32 37 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])
+        (reg:SI 93 [ D.13135 ])) CryptPrime.c:90 -1
+     (nil))
+(insn 37 33 38 7 (set (reg:SI 115)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])) CryptPrime.c:91 -1
+     (nil))
+(insn 38 37 39 7 (parallel [
+            (set (reg:SI 114)
+                (minus:SI (reg:SI 115)
+                    (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -16 [0xfffffffffffffff0])) [0 last+0 S4 A32])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:91 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 last+0 S4 A32]))
+        (nil)))
+(insn 39 38 40 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 diff+0 S4 A32])
+        (reg:SI 114)) CryptPrime.c:91 -1
+     (nil))
+(insn 40 39 41 7 (set (reg:SI 116)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])) CryptPrime.c:92 -1
+     (nil))
+(insn 41 40 42 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 last+0 S4 A32])
+        (reg:SI 116)) CryptPrime.c:92 -1
+     (nil))
+(insn 42 41 43 7 (set (reg:SI 94 [ D.13136 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 stop+0 S4 A32])) CryptPrime.c:93 -1
+     (nil))
+(insn 43 42 44 7 (parallel [
+            (set (reg:SI 117)
+                (plus:SI (reg:SI 94 [ D.13136 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:93 -1
+     (nil))
+(insn 44 43 45 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 stop+0 S4 A32])
+        (reg:SI 117)) CryptPrime.c:93 -1
+     (nil))
+(insn 45 44 46 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 94 [ D.13136 ])
+            (const_int 0 [0]))) CryptPrime.c:93 -1
+     (nil))
+(jump_insn 46 45 47 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 53)
+            (pc))) CryptPrime.c:93 -1
+     (nil)
+ -> 53)
+(note 47 46 48 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 8 (set (reg:SI 1 dx)
+        (const_int 3 [0x3])) CryptPrime.c:94 -1
+     (nil))
+(insn 49 48 50 8 (set (reg:SI 4 si)
+        (const_int 94 [0x5e])) CryptPrime.c:94 -1
+     (nil))
+(insn 50 49 51 8 (set (reg:DI 5 di)
+        (const_int 0 [0])) CryptPrime.c:94 -1
+     (nil))
+(call_insn 51 50 52 8 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fe2931230d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CryptPrime.c:94 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 52 51 53)
+(code_label 53 52 54 9 4 "" [1 uses])
+(note 54 53 56 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 56 54 57 9 (set (reg:CCGC 17 flags)
+        (compare:CCGC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 diff+0 S4 A32])
+            (const_int -1 [0xffffffffffffffff]))) CryptPrime.c:95 -1
+     (nil))
+(jump_insn 57 56 58 9 (set (pc)
+        (if_then_else (lt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 55)
+            (pc))) CryptPrime.c:95 -1
+     (nil)
+ -> 55)
+(note 58 57 59 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 60 10 (set (reg:CCGC 17 flags)
+        (compare:CCGC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 diff+0 S4 A32])
+            (const_int 1 [0x1]))) CryptPrime.c:95 -1
+     (nil))
+(jump_insn 60 59 61 10 (set (pc)
+        (if_then_else (gt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 55)
+            (pc))) CryptPrime.c:95 -1
+     (nil)
+ -> 55)
+(note 61 60 62 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 62 61 63 11 (set (reg:SI 95 [ D.13135 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])) CryptPrime.c:96 -1
+     (nil))
+(insn 63 62 64 11 (set (reg:SI 120)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:96 -1
+     (nil))
+(insn 64 63 65 11 (parallel [
+            (set (reg:SI 118)
+                (udiv:SI (reg:SI 120)
+                    (reg:SI 95 [ D.13135 ])))
+            (set (reg:SI 119)
+                (umod:SI (reg:SI 120)
+                    (reg:SI 95 [ D.13135 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:96 -1
+     (nil))
+(insn 65 64 66 11 (set (reg:SI 96 [ D.13135 ])
+        (reg:SI 118)) CryptPrime.c:96 -1
+     (nil))
+(insn 66 65 67 11 (set (reg:SI 97 [ D.13135 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])) CryptPrime.c:96 -1
+     (nil))
+(insn 67 66 68 11 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 96 [ D.13135 ])
+            (reg:SI 97 [ D.13135 ]))) CryptPrime.c:96 -1
+     (nil))
+(jump_insn 68 67 69 11 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) CryptPrime.c:96 -1
+     (nil)
+ -> 71)
+(note 69 68 70 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 70 69 71 12 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:97 -1
+     (nil))
+(code_label 71 70 72 13 6 "" [1 uses])
+(note 72 71 73 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 73 72 74 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])
+            (const_int 0 [0]))) CryptPrime.c:98 -1
+     (nil))
+(jump_insn 74 73 75 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 81)
+            (pc))) CryptPrime.c:98 -1
+     (nil)
+ -> 81)
+(note 75 74 76 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 76 75 77 14 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) CryptPrime.c:98 -1
+     (nil))
+(insn 77 76 78 14 (set (reg:SI 4 si)
+        (const_int 98 [0x62])) CryptPrime.c:98 -1
+     (nil))
+(insn 78 77 79 14 (set (reg:DI 5 di)
+        (const_int 0 [0])) CryptPrime.c:98 -1
+     (nil))
+(call_insn 79 78 80 14 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fe2931230d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CryptPrime.c:98 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 80 79 81)
+(code_label 81 80 82 15 7 "" [1 uses])
+(note 82 81 83 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 15 (set (reg:SI 98 [ D.13135 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])) CryptPrime.c:99 -1
+     (nil))
+(insn 84 83 85 15 (set (reg:SI 123)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:99 -1
+     (nil))
+(insn 85 84 86 15 (parallel [
+            (set (reg:SI 121)
+                (udiv:SI (reg:SI 123)
+                    (reg:SI 98 [ D.13135 ])))
+            (set (reg:SI 122)
+                (umod:SI (reg:SI 123)
+                    (reg:SI 98 [ D.13135 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:99 -1
+     (nil))
+(insn 86 85 87 15 (set (reg:SI 99 [ D.13135 ])
+        (reg:SI 121)) CryptPrime.c:99 -1
+     (nil))
+(insn 87 86 88 15 (set (reg:SI 100 [ D.13135 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])) CryptPrime.c:99 -1
+     (nil))
+(insn 88 87 89 15 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 99 [ D.13135 ])
+            (reg:SI 100 [ D.13135 ]))) CryptPrime.c:99 -1
+     (nil))
+(jump_insn 89 88 90 15 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 100)
+            (pc))) CryptPrime.c:99 -1
+     (nil)
+ -> 100)
+(note 90 89 91 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 91 90 92 16 (set (reg:SI 124)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])) CryptPrime.c:99 -1
+     (nil))
+(insn 92 91 93 16 (parallel [
+            (set (reg:SI 101 [ D.13136 ])
+                (plus:SI (reg:SI 124)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:99 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 93 92 94 16 (set (reg:SI 102 [ D.13135 ])
+        (reg:SI 101 [ D.13136 ])) CryptPrime.c:99 -1
+     (nil))
+(insn 94 93 95 16 (set (reg:SI 127)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:99 -1
+     (nil))
+(insn 95 94 96 16 (parallel [
+            (set (reg:SI 125)
+                (udiv:SI (reg:SI 127)
+                    (reg:SI 102 [ D.13135 ])))
+            (set (reg:SI 126)
+                (umod:SI (reg:SI 127)
+                    (reg:SI 102 [ D.13135 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:99 -1
+     (nil))
+(insn 96 95 97 16 (set (reg:SI 103 [ D.13135 ])
+        (reg:SI 125)) CryptPrime.c:99 -1
+     (nil))
+(insn 97 96 98 16 (set (reg:SI 104 [ D.13135 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])) CryptPrime.c:99 -1
+     (nil))
+(insn 98 97 99 16 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 103 [ D.13135 ])
+            (reg:SI 104 [ D.13135 ]))) CryptPrime.c:99 -1
+     (nil))
+(jump_insn 99 98 100 16 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 107)
+            (pc))) CryptPrime.c:99 -1
+     (nil)
+ -> 107)
+(code_label 100 99 101 17 8 "" [1 uses])
+(note 101 100 102 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 102 101 103 17 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) CryptPrime.c:99 -1
+     (nil))
+(insn 103 102 104 17 (set (reg:SI 4 si)
+        (const_int 99 [0x63])) CryptPrime.c:99 -1
+     (nil))
+(insn 104 103 105 17 (set (reg:DI 5 di)
+        (const_int 0 [0])) CryptPrime.c:99 -1
+     (nil))
+(call_insn 105 104 106 17 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fe2931230d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CryptPrime.c:99 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 106 105 107)
+(code_label 107 106 108 18 9 "" [1 uses])
+(note 108 107 109 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 109 108 112 18 (set (reg:SI 105 [ D.13137 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 next+0 S4 A32])) CryptPrime.c:100 -1
+     (nil))
+(insn 112 109 116 18 (set (reg:SI 106 [ <retval> ])
+        (reg:SI 105 [ D.13137 ])) CryptPrime.c:100 -1
+     (nil))
+(insn 116 112 117 18 (set (reg/i:SI 0 ax)
+        (reg:SI 106 [ <retval> ])) CryptPrime.c:101 -1
+     (nil))
+(insn 117 116 0 18 (use (reg/i:SI 0 ax)) CryptPrime.c:101 -1
+     (nil))
+
+;; Function IsPrimeInt (IsPrimeInt, funcdef_no=3, decl_uid=12408, cgraph_uid=3, symbol_order=3)
+
+Partition 1: size 4 align 4
+	stop_17
+Partition 0: size 4 align 4
+	i_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 88.
+Merging block 16 into block 15...
+Merged blocks 15 and 16.
+Merged 15 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+        (reg:SI 5 di [ n ])) CryptPrime.c:108 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+            (const_int 2 [0x2]))) CryptPrime.c:111 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 13)
+            (pc))) CryptPrime.c:111 -1
+     (nil)
+ -> 13)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 4 (set (reg:SI 107)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:111 -1
+     (nil))
+(insn 10 9 11 4 (parallel [
+            (set (reg:SI 88 [ D.13139 ])
+                (and:SI (reg:SI 107)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:111 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 11 10 12 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.13139 ])
+            (const_int 0 [0]))) CryptPrime.c:111 -1
+     (nil))
+(jump_insn 12 11 13 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) CryptPrime.c:111 -1
+     (nil)
+ -> 20)
+(code_label 13 12 14 5 12 "" [1 uses])
+(note 14 13 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+            (const_int 2 [0x2]))) CryptPrime.c:112 -1
+     (nil))
+(insn 16 15 17 5 (set (reg:QI 105 [ D.13142 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) CryptPrime.c:112 -1
+     (nil))
+(insn 17 16 18 5 (set (reg:SI 87 [ D.13138 ])
+        (zero_extend:SI (reg:QI 105 [ D.13142 ]))) CryptPrime.c:112 -1
+     (nil))
+(jump_insn 18 17 19 5 (set (pc)
+        (label_ref 85)) CryptPrime.c:112 -1
+     (nil)
+ -> 85)
+(barrier 19 18 20)
+(code_label 20 19 21 6 13 "" [1 uses])
+(note 21 20 22 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 6 (set (reg:SI 89 [ D.13139 ])
+        (mem/u/c:SI (symbol_ref:DI ("s_LastPrimeInTable") [flags 0x40]  <var_decl 0x7fe2930e3ea0 s_LastPrimeInTable>) [0 s_LastPrimeInTable+0 S4 A32])) CryptPrime.c:113 -1
+     (nil))
+(insn 23 22 24 6 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+            (reg:SI 89 [ D.13139 ]))) CryptPrime.c:113 -1
+     (nil))
+(jump_insn 24 23 25 6 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 38)
+            (pc))) CryptPrime.c:113 -1
+     (nil)
+ -> 38)
+(note 25 24 26 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 7 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+                (lshiftrt:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:115 -1
+     (nil))
+(insn 27 26 28 7 (set (reg:SI 108)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:116 -1
+     (nil))
+(insn 28 27 29 7 (parallel [
+            (set (reg:SI 90 [ D.13139 ])
+                (lshiftrt:SI (reg:SI 108)
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:116 -1
+     (expr_list:REG_EQUAL (lshiftrt:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 29 28 30 7 (set (reg:DI 109)
+        (zero_extend:DI (reg:SI 90 [ D.13139 ]))) CryptPrime.c:116 -1
+     (nil))
+(insn 30 29 31 7 (set (reg:QI 91 [ D.13140 ])
+        (mem/u/j:QI (plus:DI (reg:DI 109)
+                (symbol_ref:DI ("s_PrimeTable") [flags 0x40]  <var_decl 0x7fe293210090 s_PrimeTable>)) [0 s_PrimeTable S1 A8])) CryptPrime.c:116 -1
+     (nil))
+(insn 31 30 32 7 (set (reg:SI 92 [ D.13141 ])
+        (zero_extend:SI (reg:QI 91 [ D.13140 ]))) CryptPrime.c:116 -1
+     (nil))
+(insn 32 31 33 7 (set (reg:SI 110)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:116 -1
+     (nil))
+(insn 33 32 34 7 (parallel [
+            (set (reg:SI 93 [ D.13139 ])
+                (and:SI (reg:SI 110)
+                    (const_int 7 [0x7])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:116 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])
+            (const_int 7 [0x7]))
+        (nil)))
+(insn 34 33 35 7 (parallel [
+            (set (reg:SI 94 [ D.13141 ])
+                (ashiftrt:SI (reg:SI 92 [ D.13141 ])
+                    (subreg:QI (reg:SI 93 [ D.13139 ]) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:116 -1
+     (nil))
+(insn 35 34 36 7 (parallel [
+            (set (reg:SI 87 [ D.13138 ])
+                (and:SI (reg:SI 94 [ D.13141 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:116 -1
+     (nil))
+(jump_insn 36 35 37 7 (set (pc)
+        (label_ref 85)) CryptPrime.c:116 -1
+     (nil)
+ -> 85)
+(barrier 37 36 38)
+(code_label 38 37 39 8 15 "" [1 uses])
+(note 39 38 40 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 8 (set (reg:SI 111)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:119 -1
+     (nil))
+(insn 41 40 42 8 (set (reg:SI 5 di)
+        (reg:SI 111)) CryptPrime.c:119 -1
+     (nil))
+(call_insn 42 41 43 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("Root2") [flags 0x3]  <function_decl 0x7fe29320dd80 Root2>) [0 Root2 S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:119 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 43 42 44 8 (set (reg:SI 95 [ D.13139 ])
+        (reg:SI 0 ax)) CryptPrime.c:119 -1
+     (nil))
+(insn 44 43 45 8 (parallel [
+            (set (reg:SI 112)
+                (lshiftrt:SI (reg:SI 95 [ D.13139 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:119 -1
+     (nil))
+(insn 45 44 46 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 stop+0 S4 A32])
+        (reg:SI 112)) CryptPrime.c:119 -1
+     (nil))
+(insn 46 45 47 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) CryptPrime.c:121 -1
+     (nil))
+(jump_insn 47 46 48 8 (set (pc)
+        (label_ref 77)) CryptPrime.c:121 -1
+     (nil)
+ -> 77)
+(barrier 48 47 79)
+(code_label 79 48 49 9 18 "" [1 uses])
+(note 49 79 50 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 9 (set (reg:SI 113)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])) CryptPrime.c:123 -1
+     (nil))
+(insn 51 50 52 9 (parallel [
+            (set (reg:SI 96 [ D.13139 ])
+                (lshiftrt:SI (reg:SI 113)
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:123 -1
+     (expr_list:REG_EQUAL (lshiftrt:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 52 51 53 9 (set (reg:DI 114)
+        (zero_extend:DI (reg:SI 96 [ D.13139 ]))) CryptPrime.c:123 -1
+     (nil))
+(insn 53 52 54 9 (set (reg:QI 97 [ D.13140 ])
+        (mem/u/j:QI (plus:DI (reg:DI 114)
+                (symbol_ref:DI ("s_PrimeTable") [flags 0x40]  <var_decl 0x7fe293210090 s_PrimeTable>)) [0 s_PrimeTable S1 A8])) CryptPrime.c:123 -1
+     (nil))
+(insn 54 53 55 9 (set (reg:SI 98 [ D.13141 ])
+        (zero_extend:SI (reg:QI 97 [ D.13140 ]))) CryptPrime.c:123 -1
+     (nil))
+(insn 55 54 56 9 (set (reg:SI 115)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])) CryptPrime.c:123 -1
+     (nil))
+(insn 56 55 57 9 (parallel [
+            (set (reg:SI 99 [ D.13139 ])
+                (and:SI (reg:SI 115)
+                    (const_int 7 [0x7])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:123 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+            (const_int 7 [0x7]))
+        (nil)))
+(insn 57 56 58 9 (parallel [
+            (set (reg:SI 100 [ D.13141 ])
+                (ashiftrt:SI (reg:SI 98 [ D.13141 ])
+                    (subreg:QI (reg:SI 99 [ D.13139 ]) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:123 -1
+     (nil))
+(insn 58 57 59 9 (parallel [
+            (set (reg:SI 101 [ D.13141 ])
+                (and:SI (reg:SI 100 [ D.13141 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:123 -1
+     (nil))
+(insn 59 58 60 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ D.13141 ])
+            (const_int 0 [0]))) CryptPrime.c:123 -1
+     (nil))
+(jump_insn 60 59 61 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 74)
+            (pc))) CryptPrime.c:123 -1
+     (nil)
+ -> 74)
+(note 61 60 62 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 62 61 63 10 (set (reg:SI 116)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])) CryptPrime.c:125 -1
+     (nil))
+(insn 63 62 64 10 (parallel [
+            (set (reg:SI 102 [ D.13139 ])
+                (ashift:SI (reg:SI 116)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:125 -1
+     (expr_list:REG_EQUAL (ashift:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 64 63 65 10 (parallel [
+            (set (reg:SI 103 [ D.13139 ])
+                (plus:SI (reg:SI 102 [ D.13139 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:125 -1
+     (nil))
+(insn 65 64 66 10 (set (reg:SI 117)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 n+0 S4 A32])) CryptPrime.c:125 -1
+     (nil))
+(insn 66 65 67 10 (parallel [
+            (set (reg:SI 119)
+                (udiv:SI (reg:SI 117)
+                    (reg:SI 103 [ D.13139 ])))
+            (set (reg:SI 118)
+                (umod:SI (reg:SI 117)
+                    (reg:SI 103 [ D.13139 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:125 -1
+     (nil))
+(insn 67 66 68 10 (set (reg:SI 104 [ D.13139 ])
+        (reg:SI 118)) CryptPrime.c:125 -1
+     (nil))
+(insn 68 67 69 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 104 [ D.13139 ])
+            (const_int 0 [0]))) CryptPrime.c:125 -1
+     (nil))
+(jump_insn 69 68 70 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 74)
+            (pc))) CryptPrime.c:125 -1
+     (nil)
+ -> 74)
+(note 70 69 71 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 71 70 72 11 (set (reg:SI 87 [ D.13138 ])
+        (const_int 0 [0])) CryptPrime.c:126 -1
+     (nil))
+(jump_insn 72 71 73 11 (set (pc)
+        (label_ref 85)) CryptPrime.c:126 -1
+     (nil)
+ -> 85)
+(barrier 73 72 74)
+(code_label 74 73 75 12 17 "" [2 uses])
+(note 75 74 76 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 76 75 77 12 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:121 -1
+     (nil))
+(code_label 77 76 78 13 16 "" [1 uses])
+(note 78 77 80 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 80 78 81 13 (set (reg:SI 120)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])) CryptPrime.c:121 -1
+     (nil))
+(insn 81 80 82 13 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 120)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 stop+0 S4 A32]))) CryptPrime.c:121 -1
+     (nil))
+(jump_insn 82 81 83 13 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 79)
+            (pc))) CryptPrime.c:121 -1
+     (nil)
+ -> 79)
+(note 83 82 84 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 84 83 85 14 (set (reg:SI 87 [ D.13138 ])
+        (const_int 1 [0x1])) CryptPrime.c:128 -1
+     (nil))
+(code_label 85 84 86 15 14 "" [3 uses])
+(note 86 85 87 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 87 86 91 15 (set (reg:SI 106 [ <retval> ])
+        (reg:SI 87 [ D.13138 ])) -1
+     (nil))
+(insn 91 87 92 15 (set (reg/i:SI 0 ax)
+        (reg:SI 106 [ <retval> ])) CryptPrime.c:129 -1
+     (nil))
+(insn 92 91 0 15 (use (reg/i:SI 0 ax)) CryptPrime.c:129 -1
+     (nil))
+
+;; Function BnIsProbablyPrime (BnIsProbablyPrime, funcdef_no=4, decl_uid=12411, cgraph_uid=4, symbol_order=4)
+
+Partition 2: size 280 align 16
+	_n
+Partition 1: size 8 align 8
+	n_28
+Partition 0: size 8 align 8
+	temp_19
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 102.
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [0 prime+0 S8 A64])
+        (reg:DI 5 di [ prime ])) CryptPrime.c:140 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [0 rand+0 S8 A64])
+        (reg:DI 4 si [ rand ])) CryptPrime.c:140 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13149+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:140 -1
+     (nil))
+(insn 8 5 9 2 (set (reg:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [0 prime+0 S8 A64])) CryptPrime.c:142 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (const_int 4294967295 [0xffffffff])) CryptPrime.c:142 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg:DI 107)) CryptPrime.c:142 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnUnsignedCmpWord") [flags 0x41]  <function_decl 0x7fe2931c5af8 BnUnsignedCmpWord>) [0 BnUnsignedCmpWord S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:142 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 12 11 13 2 (set (reg:SI 88 [ D.13144 ])
+        (reg:SI 0 ax)) CryptPrime.c:142 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:CCNO 17 flags)
+        (compare:CCNO (reg:SI 88 [ D.13144 ])
+            (const_int 0 [0]))) CryptPrime.c:142 -1
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (gt (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) CryptPrime.c:142 -1
+     (nil)
+ -> 24)
+(note 15 14 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [0 prime+0 S8 A64])) CryptPrime.c:146 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:DI 89 [ D.13145 ])
+        (mem/j:DI (plus:DI (reg/f:DI 108)
+                (const_int 16 [0x10])) [0 prime_4(D)->d+0 S8 A64])) CryptPrime.c:146 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 90 [ D.13146 ])
+        (subreg:SI (reg:DI 89 [ D.13145 ]) 0)) CryptPrime.c:146 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 5 di)
+        (reg:SI 90 [ D.13146 ])) CryptPrime.c:146 -1
+     (nil))
+(call_insn 20 19 21 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("IsPrimeInt") [flags 0x3]  <function_decl 0x7fe2931e2948 IsPrimeInt>) [0 IsPrimeInt S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:146 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 21 20 22 4 (set (reg:SI 87 [ D.13143 ])
+        (reg:SI 0 ax)) CryptPrime.c:146 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (label_ref 99)) CryptPrime.c:146 -1
+     (nil)
+ -> 99)
+(barrier 23 22 24)
+(code_label 24 23 25 5 20 "" [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 5 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [0 prime+0 S8 A64])) CryptPrime.c:147 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:DI 91 [ D.13145 ])
+        (mem/j:DI (plus:DI (reg/f:DI 109)
+                (const_int 16 [0x10])) [0 prime_4(D)->d+0 S8 A64])) CryptPrime.c:147 -1
+     (nil))
+(insn 28 27 29 5 (parallel [
+            (set (reg:DI 92 [ D.13145 ])
+                (and:DI (reg:DI 91 [ D.13145 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:147 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 92 [ D.13145 ])
+            (const_int 0 [0]))) CryptPrime.c:147 -1
+     (nil))
+(jump_insn 30 29 31 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 35)
+            (pc))) CryptPrime.c:147 -1
+     (nil)
+ -> 35)
+(note 31 30 32 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 6 (set (reg:SI 87 [ D.13143 ])
+        (const_int 0 [0])) CryptPrime.c:148 -1
+     (nil))
+(jump_insn 33 32 34 6 (set (pc)
+        (label_ref 99)) CryptPrime.c:148 -1
+     (nil)
+ -> 99)
+(barrier 34 33 35)
+(code_label 35 34 36 7 22 "" [1 uses])
+(note 36 35 37 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 7 (set (reg:SI 93 [ D.13146 ])
+        (mem/u/c:SI (symbol_ref:DI ("s_LastPrimeInTable") [flags 0x40]  <var_decl 0x7fe2930e3ea0 s_LastPrimeInTable>) [0 s_LastPrimeInTable+0 S4 A32])) CryptPrime.c:149 -1
+     (nil))
+(insn 38 37 39 7 (set (reg:DI 94 [ D.13145 ])
+        (zero_extend:DI (reg:SI 93 [ D.13146 ]))) CryptPrime.c:149 -1
+     (nil))
+(insn 39 38 40 7 (set (reg:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [0 prime+0 S8 A64])) CryptPrime.c:149 -1
+     (nil))
+(insn 40 39 41 7 (set (reg:DI 4 si)
+        (reg:DI 94 [ D.13145 ])) CryptPrime.c:149 -1
+     (nil))
+(insn 41 40 42 7 (set (reg:DI 5 di)
+        (reg:DI 110)) CryptPrime.c:149 -1
+     (nil))
+(call_insn 42 41 43 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnUnsignedCmpWord") [flags 0x41]  <function_decl 0x7fe2931c5af8 BnUnsignedCmpWord>) [0 BnUnsignedCmpWord S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:149 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 43 42 44 7 (set (reg:SI 95 [ D.13144 ])
+        (reg:SI 0 ax)) CryptPrime.c:149 -1
+     (nil))
+(insn 44 43 45 7 (set (reg:CCNO 17 flags)
+        (compare:CCNO (reg:SI 95 [ D.13144 ])
+            (const_int 0 [0]))) CryptPrime.c:149 -1
+     (nil))
+(jump_insn 45 44 46 7 (set (pc)
+        (if_then_else (gt (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) CryptPrime.c:149 -1
+     (nil)
+ -> 62)
+(note 46 45 47 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 8 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [0 prime+0 S8 A64])) CryptPrime.c:151 -1
+     (nil))
+(insn 48 47 49 8 (set (reg:DI 96 [ D.13145 ])
+        (mem/j:DI (plus:DI (reg/f:DI 111)
+                (const_int 16 [0x10])) [0 prime_4(D)->d+0 S8 A64])) CryptPrime.c:151 -1
+     (nil))
+(insn 49 48 50 8 (parallel [
+            (set (reg:DI 112)
+                (lshiftrt:DI (reg:DI 96 [ D.13145 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:151 -1
+     (nil))
+(insn 50 49 51 8 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -304 [0xfffffffffffffed0])) [0 temp+0 S8 A64])
+        (reg:DI 112)) CryptPrime.c:151 -1
+     (nil))
+(insn 51 50 52 8 (set (reg:DI 113)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -304 [0xfffffffffffffed0])) [0 temp+0 S8 A64])) CryptPrime.c:152 -1
+     (nil))
+(insn 52 51 53 8 (parallel [
+            (set (reg:DI 97 [ D.13145 ])
+                (lshiftrt:DI (reg:DI 113)
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:152 -1
+     (expr_list:REG_EQUAL (lshiftrt:DI (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -304 [0xfffffffffffffed0])) [0 temp+0 S8 A64])
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 53 52 54 8 (set (reg:QI 98 [ D.13147 ])
+        (mem/u/j:QI (plus:DI (reg:DI 97 [ D.13145 ])
+                (symbol_ref:DI ("s_PrimeTable") [flags 0x40]  <var_decl 0x7fe293210090 s_PrimeTable>)) [0 s_PrimeTable S1 A8])) CryptPrime.c:152 -1
+     (nil))
+(insn 54 53 55 8 (set (reg:SI 99 [ D.13144 ])
+        (zero_extend:SI (reg:QI 98 [ D.13147 ]))) CryptPrime.c:152 -1
+     (nil))
+(insn 55 54 56 8 (set (reg:DI 114)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -304 [0xfffffffffffffed0])) [0 temp+0 S8 A64])) CryptPrime.c:152 -1
+     (nil))
+(insn 56 55 57 8 (set (reg:SI 100 [ D.13146 ])
+        (subreg:SI (reg:DI 114) 0)) CryptPrime.c:152 -1
+     (nil))
+(insn 57 56 58 8 (parallel [
+            (set (reg:SI 101 [ D.13146 ])
+                (and:SI (reg:SI 100 [ D.13146 ])
+                    (const_int 7 [0x7])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:152 -1
+     (nil))
+(insn 58 57 59 8 (parallel [
+            (set (reg:SI 102 [ D.13144 ])
+                (ashiftrt:SI (reg:SI 99 [ D.13144 ])
+                    (subreg:QI (reg:SI 101 [ D.13146 ]) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:152 -1
+     (nil))
+(insn 59 58 60 8 (parallel [
+            (set (reg:SI 87 [ D.13143 ])
+                (and:SI (reg:SI 102 [ D.13144 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:152 -1
+     (nil))
+(jump_insn 60 59 61 8 (set (pc)
+        (label_ref 99)) CryptPrime.c:152 -1
+     (nil)
+ -> 99)
+(barrier 61 60 62)
+(code_label 62 61 63 9 23 "" [1 uses])
+(note 63 62 64 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 65 9 (parallel [
+            (set (reg:DI 115)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -288 [0xfffffffffffffee0])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:155 -1
+     (nil))
+(insn 65 64 66 9 (set (reg:DI 4 si)
+        (const_int 33 [0x21])) CryptPrime.c:155 -1
+     (nil))
+(insn 66 65 67 9 (set (reg:DI 5 di)
+        (reg:DI 115)) CryptPrime.c:155 -1
+     (nil))
+(call_insn 67 66 68 9 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnInit") [flags 0x41]  <function_decl 0x7fe2931c8870 BnInit>) [0 BnInit S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:155 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 68 67 69 9 (set (reg:DI 116)
+        (reg:DI 0 ax)) CryptPrime.c:155 -1
+     (nil))
+(insn 69 68 70 9 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -296 [0xfffffffffffffed8])) [0 n+0 S8 A64])
+        (reg:DI 116)) CryptPrime.c:155 -1
+     (nil))
+(insn 70 69 71 9 (set (reg/f:DI 103 [ D.13148 ])
+        (mem/f/c:DI (symbol_ref:DI ("s_CompositeOfSmallPrimes") [flags 0x40]  <var_decl 0x7fe293210120 s_CompositeOfSmallPrimes>) [0 s_CompositeOfSmallPrimes+0 S8 A64])) CryptPrime.c:156 -1
+     (nil))
+(insn 71 70 72 9 (set (reg:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [0 prime+0 S8 A64])) CryptPrime.c:156 -1
+     (nil))
+(insn 72 71 73 9 (set (reg:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -296 [0xfffffffffffffed8])) [0 n+0 S8 A64])) CryptPrime.c:156 -1
+     (nil))
+(insn 73 72 74 9 (set (reg:DI 1 dx)
+        (reg/f:DI 103 [ D.13148 ])) CryptPrime.c:156 -1
+     (nil))
+(insn 74 73 75 9 (set (reg:DI 4 si)
+        (reg:DI 117)) CryptPrime.c:156 -1
+     (nil))
+(insn 75 74 76 9 (set (reg:DI 5 di)
+        (reg:DI 118)) CryptPrime.c:156 -1
+     (nil))
+(call_insn 76 75 77 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnGcd") [flags 0x41]  <function_decl 0x7fe293201948 BnGcd>) [0 BnGcd S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:156 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 77 76 78 9 (set (reg/f:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -296 [0xfffffffffffffed8])) [0 n+0 S8 A64])) CryptPrime.c:157 -1
+     (nil))
+(insn 78 77 79 9 (set (reg:DI 104 [ D.13145 ])
+        (mem/j:DI (plus:DI (reg/f:DI 119)
+                (const_int 8 [0x8])) [0 n_28->size+0 S8 A64])) CryptPrime.c:157 -1
+     (nil))
+(insn 79 78 80 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 104 [ D.13145 ])
+            (const_int 1 [0x1]))) CryptPrime.c:157 -1
+     (nil))
+(jump_insn 80 79 81 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 86)
+            (pc))) CryptPrime.c:157 -1
+     (nil)
+ -> 86)
+(note 81 80 82 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 82 81 83 10 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -296 [0xfffffffffffffed8])) [0 n+0 S8 A64])) CryptPrime.c:157 -1
+     (nil))
+(insn 83 82 84 10 (set (reg:DI 105 [ D.13145 ])
+        (mem/j:DI (plus:DI (reg/f:DI 120)
+                (const_int 16 [0x10])) [0 n_28->d+0 S8 A64])) CryptPrime.c:157 -1
+     (nil))
+(insn 84 83 85 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 105 [ D.13145 ])
+            (const_int 1 [0x1]))) CryptPrime.c:157 -1
+     (nil))
+(jump_insn 85 84 86 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 91)
+            (pc))) CryptPrime.c:157 -1
+     (nil)
+ -> 91)
+(code_label 86 85 87 11 24 "" [1 uses])
+(note 87 86 88 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 89 11 (set (reg:SI 87 [ D.13143 ])
+        (const_int 0 [0])) CryptPrime.c:158 -1
+     (nil))
+(jump_insn 89 88 90 11 (set (pc)
+        (label_ref 99)) CryptPrime.c:158 -1
+     (nil)
+ -> 99)
+(barrier 90 89 91)
+(code_label 91 90 92 12 25 "" [1 uses])
+(note 92 91 93 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 93 92 94 12 (set (reg:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -320 [0xfffffffffffffec0])) [0 rand+0 S8 A64])) CryptPrime.c:160 -1
+     (nil))
+(insn 94 93 95 12 (set (reg:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -312 [0xfffffffffffffec8])) [0 prime+0 S8 A64])) CryptPrime.c:160 -1
+     (nil))
+(insn 95 94 96 12 (set (reg:DI 4 si)
+        (reg:DI 121)) CryptPrime.c:160 -1
+     (nil))
+(insn 96 95 97 12 (set (reg:DI 5 di)
+        (reg:DI 122)) CryptPrime.c:160 -1
+     (nil))
+(call_insn 97 96 98 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("MillerRabin") [flags 0x3]  <function_decl 0x7fe2931e2bd0 MillerRabin>) [0 MillerRabin S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:160 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 98 97 99 12 (set (reg:SI 87 [ D.13143 ])
+        (reg:SI 0 ax)) CryptPrime.c:160 -1
+     (nil))
+(code_label 99 98 100 13 21 "" [4 uses])
+(note 100 99 101 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 101 100 105 13 (set (reg:SI 106 [ <retval> ])
+        (reg:SI 87 [ D.13143 ])) -1
+     (nil))
+(insn 105 101 106 13 (set (reg/i:SI 0 ax)
+        (reg:SI 106 [ <retval> ])) CryptPrime.c:161 -1
+     (nil))
+(insn 106 105 107 13 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13149+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) CryptPrime.c:161 -1
+     (nil))
+(jump_insn 107 106 113 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 110)
+            (pc))) CryptPrime.c:161 -1
+     (nil)
+ -> 110)
+(note 113 107 108 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(call_insn 108 113 109 15 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7fe29321de58 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) CryptPrime.c:161 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 109 108 110)
+(code_label 110 109 114 16 26 "" [1 uses])
+(note 114 110 111 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 111 114 0 16 (use (reg/i:SI 0 ax)) CryptPrime.c:161 -1
+     (nil))
+
+;; Function MillerRabinRounds (MillerRabinRounds, funcdef_no=5, decl_uid=12413, cgraph_uid=5, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 26.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 bits+0 S4 A32])
+        (reg:SI 5 di [ bits ])) CryptPrime.c:169 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 bits+0 S4 A32])
+            (const_int 510 [0x1fe]))) CryptPrime.c:170 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 12)
+            (pc))) CryptPrime.c:170 -1
+     (nil)
+ -> 12)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 4 (set (reg:SI 87 [ D.13152 ])
+        (const_int 8 [0x8])) CryptPrime.c:170 -1
+     (nil))
+(jump_insn 10 9 11 4 (set (pc)
+        (label_ref 23)) CryptPrime.c:170 -1
+     (nil)
+ -> 23)
+(barrier 11 10 12)
+(code_label 12 11 13 5 28 "" [1 uses])
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 5 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 bits+0 S4 A32])
+            (const_int 1535 [0x5ff]))) CryptPrime.c:171 -1
+     (nil))
+(jump_insn 15 14 16 5 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) CryptPrime.c:171 -1
+     (nil)
+ -> 20)
+(note 16 15 17 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 6 (set (reg:SI 87 [ D.13152 ])
+        (const_int 5 [0x5])) CryptPrime.c:171 -1
+     (nil))
+(jump_insn 18 17 19 6 (set (pc)
+        (label_ref 23)) CryptPrime.c:171 -1
+     (nil)
+ -> 23)
+(barrier 19 18 20)
+(code_label 20 19 21 7 30 "" [1 uses])
+(note 21 20 22 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 7 (set (reg:SI 87 [ D.13152 ])
+        (const_int 4 [0x4])) CryptPrime.c:172 -1
+     (nil))
+(code_label 23 22 24 8 29 "" [2 uses])
+(note 24 23 25 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 29 8 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.13152 ])) -1
+     (nil))
+(insn 29 25 30 8 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) CryptPrime.c:173 -1
+     (nil))
+(insn 30 29 0 8 (use (reg/i:SI 0 ax)) CryptPrime.c:173 -1
+     (nil))
+
+;; Function MillerRabin (MillerRabin, funcdef_no=6, decl_uid=12416, cgraph_uid=6, symbol_order=6)
+
+Partition 10: size 280 align 16
+	_bnWm1
+Partition 13: size 152 align 16
+	_bnZ
+Partition 12: size 152 align 16
+	_bnB
+Partition 11: size 152 align 16
+	_bnM
+Partition 7: size 8 align 8
+	bnZ_21
+Partition 6: size 8 align 8
+	bnB_19
+Partition 5: size 8 align 8
+	bnM_17
+Partition 4: size 8 align 8
+	bnWm1_15
+Partition 9: size 4 align 4
+	wLen_46
+Partition 8: size 4 align 4
+	iterations_28
+Partition 3: size 4 align 4
+	i_4
+Partition 2: size 4 align 4
+	j_3
+Partition 1: size 4 align 4
+	a_2
+Partition 0: size 4 align 4
+	ret_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 17->18 to 25 failed.
+Forwarding edge 20->21 to 24 failed.
+Forwarding edge 23->24 to 28 failed.
+Merging block 29 into block 28...
+Merged blocks 28 and 29.
+Merged 28 and 29 without moving.
+Removing jump 236.
+Merging block 30 into block 28...
+Merged blocks 28 and 30.
+Merged 28 and 30 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 17->18 to 25 failed.
+Forwarding edge 20->21 to 24 failed.
+Forwarding edge 23->24 to 28 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -840 [0xfffffffffffffcb8])) [0 bnW+0 S8 A64])
+        (reg:DI 5 di [ bnW ])) CryptPrime.c:185 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -848 [0xfffffffffffffcb0])) [0 rand+0 S8 A64])
+        (reg:DI 4 si [ rand ])) CryptPrime.c:185 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13158+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:185 -1
+     (nil))
+(insn 8 5 9 2 (parallel [
+            (set (reg:DI 109)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -288 [0xfffffffffffffee0])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:186 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (const_int 33 [0x21])) CryptPrime.c:186 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg:DI 109)) CryptPrime.c:186 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnInit") [flags 0x41]  <function_decl 0x7fe2931c8870 BnInit>) [0 BnInit S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:186 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 12 11 13 2 (set (reg:DI 110)
+        (reg:DI 0 ax)) CryptPrime.c:186 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 bnWm1+0 S8 A64])
+        (reg:DI 110)) CryptPrime.c:186 -1
+     (nil))
+(insn 14 13 15 2 (parallel [
+            (set (reg:DI 111)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -768 [0xfffffffffffffd00])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:187 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 4 si)
+        (const_int 17 [0x11])) CryptPrime.c:187 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 5 di)
+        (reg:DI 111)) CryptPrime.c:187 -1
+     (nil))
+(call_insn 17 16 18 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnInit") [flags 0x41]  <function_decl 0x7fe2931c8870 BnInit>) [0 BnInit S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:187 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 18 17 19 2 (set (reg:DI 112)
+        (reg:DI 0 ax)) CryptPrime.c:187 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -792 [0xfffffffffffffce8])) [0 bnM+0 S8 A64])
+        (reg:DI 112)) CryptPrime.c:187 -1
+     (nil))
+(insn 20 19 21 2 (parallel [
+            (set (reg:DI 113)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -608 [0xfffffffffffffda0])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:188 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 4 si)
+        (const_int 17 [0x11])) CryptPrime.c:188 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 5 di)
+        (reg:DI 113)) CryptPrime.c:188 -1
+     (nil))
+(call_insn 23 22 24 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnInit") [flags 0x41]  <function_decl 0x7fe2931c8870 BnInit>) [0 BnInit S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:188 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 24 23 25 2 (set (reg:DI 114)
+        (reg:DI 0 ax)) CryptPrime.c:188 -1
+     (nil))
+(insn 25 24 26 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -784 [0xfffffffffffffcf0])) [0 bnB+0 S8 A64])
+        (reg:DI 114)) CryptPrime.c:188 -1
+     (nil))
+(insn 26 25 27 2 (parallel [
+            (set (reg:DI 115)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -448 [0xfffffffffffffe40])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:189 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:DI 4 si)
+        (const_int 17 [0x11])) CryptPrime.c:189 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:DI 5 di)
+        (reg:DI 115)) CryptPrime.c:189 -1
+     (nil))
+(call_insn 29 28 30 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnInit") [flags 0x41]  <function_decl 0x7fe2931c8870 BnInit>) [0 BnInit S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:189 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 30 29 31 2 (set (reg:DI 116)
+        (reg:DI 0 ax)) CryptPrime.c:189 -1
+     (nil))
+(insn 31 30 32 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 bnZ+0 S8 A64])
+        (reg:DI 116)) CryptPrime.c:189 -1
+     (nil))
+(insn 32 31 33 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -824 [0xfffffffffffffcc8])) [0 ret+0 S4 A32])
+        (const_int 0 [0])) CryptPrime.c:190 -1
+     (nil))
+(insn 33 32 34 2 (set (reg:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -840 [0xfffffffffffffcb8])) [0 bnW+0 S8 A64])) CryptPrime.c:195 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:DI 5 di)
+        (reg:DI 117)) CryptPrime.c:195 -1
+     (nil))
+(call_insn 35 34 36 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnSizeInBits") [flags 0x41]  <function_decl 0x7fe2931c5e58 BnSizeInBits>) [0 BnSizeInBits S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:195 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 36 35 37 2 (set (reg:SI 87 [ D.13153 ])
+        (reg:SI 0 ax)) CryptPrime.c:195 -1
+     (nil))
+(insn 37 36 38 2 (set (reg:SI 5 di)
+        (reg:SI 87 [ D.13153 ])) CryptPrime.c:195 -1
+     (nil))
+(call_insn 38 37 39 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("MillerRabinRounds") [flags 0x3]  <function_decl 0x7fe2931e2af8 MillerRabinRounds>) [0 MillerRabinRounds S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:195 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 39 38 40 2 (set (reg:SI 88 [ D.13153 ])
+        (reg:SI 0 ax)) CryptPrime.c:195 -1
+     (nil))
+(insn 40 39 41 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -808 [0xfffffffffffffcd8])) [0 iterations+0 S4 A32])
+        (reg:SI 88 [ D.13153 ])) CryptPrime.c:195 -1
+     (nil))
+(insn 41 40 42 2 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -840 [0xfffffffffffffcb8])) [0 bnW+0 S8 A64])) CryptPrime.c:198 -1
+     (nil))
+(insn 42 41 43 2 (set (reg:DI 89 [ D.13154 ])
+        (mem/j:DI (plus:DI (reg/f:DI 118)
+                (const_int 8 [0x8])) [0 bnW_23(D)->size+0 S8 A64])) CryptPrime.c:198 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 89 [ D.13154 ])
+            (const_int 1 [0x1]))) CryptPrime.c:198 -1
+     (nil))
+(jump_insn 44 43 45 2 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) CryptPrime.c:198 -1
+     (nil)
+ -> 51)
+(note 45 44 46 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 4 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) CryptPrime.c:198 -1
+     (nil))
+(insn 47 46 48 4 (set (reg:SI 4 si)
+        (const_int 198 [0xc6])) CryptPrime.c:198 -1
+     (nil))
+(insn 48 47 49 4 (set (reg:DI 5 di)
+        (const_int 0 [0])) CryptPrime.c:198 -1
+     (nil))
+(call_insn 49 48 50 4 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fe2931230d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CryptPrime.c:198 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 50 49 51)
+(code_label 51 50 52 5 32 "" [1 uses])
+(note 52 51 53 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 5 (set (reg:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -840 [0xfffffffffffffcb8])) [0 bnW+0 S8 A64])) CryptPrime.c:200 -1
+     (nil))
+(insn 54 53 55 5 (set (reg:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 bnWm1+0 S8 A64])) CryptPrime.c:200 -1
+     (nil))
+(insn 55 54 56 5 (set (reg:DI 1 dx)
+        (const_int 1 [0x1])) CryptPrime.c:200 -1
+     (nil))
+(insn 56 55 57 5 (set (reg:DI 4 si)
+        (reg:DI 119)) CryptPrime.c:200 -1
+     (nil))
+(insn 57 56 58 5 (set (reg:DI 5 di)
+        (reg:DI 120)) CryptPrime.c:200 -1
+     (nil))
+(call_insn 58 57 59 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnSubWord") [flags 0x41]  <function_decl 0x7fe2931c5948 BnSubWord>) [0 BnSubWord S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:200 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 59 58 60 5 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 bnWm1+0 S8 A64])) CryptPrime.c:201 -1
+     (nil))
+(insn 60 59 61 5 (set (reg:DI 90 [ D.13154 ])
+        (mem/j:DI (plus:DI (reg/f:DI 121)
+                (const_int 8 [0x8])) [0 bnWm1_15->size+0 S8 A64])) CryptPrime.c:201 -1
+     (nil))
+(insn 61 60 62 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 90 [ D.13154 ])
+            (const_int 0 [0]))) CryptPrime.c:201 -1
+     (nil))
+(jump_insn 62 61 63 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 69)
+            (pc))) CryptPrime.c:201 -1
+     (nil)
+ -> 69)
+(note 63 62 64 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 65 6 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) CryptPrime.c:201 -1
+     (nil))
+(insn 65 64 66 6 (set (reg:SI 4 si)
+        (const_int 201 [0xc9])) CryptPrime.c:201 -1
+     (nil))
+(insn 66 65 67 6 (set (reg:DI 5 di)
+        (const_int 0 [0])) CryptPrime.c:201 -1
+     (nil))
+(call_insn 67 66 68 6 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fe2931230d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CryptPrime.c:201 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 68 67 69)
+(code_label 69 68 70 7 33 "" [1 uses])
+(note 70 69 71 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 71 70 72 7 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 bnWm1+0 S8 A64])) CryptPrime.c:205 -1
+     (nil))
+(insn 72 71 73 7 (set (reg:DI 91 [ D.13154 ])
+        (mem/j:DI (plus:DI (reg/f:DI 122)
+                (const_int 8 [0x8])) [0 bnWm1_15->size+0 S8 A64])) CryptPrime.c:205 -1
+     (nil))
+(insn 73 72 74 7 (set (reg:SI 92 [ D.13155 ])
+        (subreg:SI (reg:DI 91 [ D.13154 ]) 0)) CryptPrime.c:205 -1
+     (nil))
+(insn 74 73 75 7 (parallel [
+            (set (reg:SI 93 [ D.13155 ])
+                (ashift:SI (reg:SI 92 [ D.13155 ])
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:205 -1
+     (nil))
+(insn 75 74 76 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -812 [0xfffffffffffffcd4])) [0 i+0 S4 A32])
+        (reg:SI 93 [ D.13155 ])) CryptPrime.c:205 -1
+     (nil))
+(insn 76 75 77 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -820 [0xfffffffffffffccc])) [0 a+0 S4 A32])
+        (const_int 1 [0x1])) CryptPrime.c:207 -1
+     (nil))
+(jump_insn 77 76 78 7 (set (pc)
+        (label_ref 81)) CryptPrime.c:207 -1
+     (nil)
+ -> 81)
+(barrier 78 77 96)
+(code_label 96 78 79 8 36 "" [1 uses])
+(note 79 96 80 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 80 79 81 8 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -820 [0xfffffffffffffccc])) [0 a+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -820 [0xfffffffffffffccc])) [0 a+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:210 -1
+     (nil))
+(code_label 81 80 82 9 34 "" [1 uses])
+(note 82 81 83 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 9 (set (reg:DI 94 [ D.13154 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -820 [0xfffffffffffffccc])) [0 a+0 S4 A32]))) CryptPrime.c:208 -1
+     (nil))
+(insn 84 83 85 9 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 bnWm1+0 S8 A64])) CryptPrime.c:208 -1
+     (nil))
+(insn 85 84 86 9 (set (reg:DI 95 [ D.13154 ])
+        (mem/j:DI (plus:DI (reg/f:DI 123)
+                (const_int 8 [0x8])) [0 bnWm1_15->size+0 S8 A64])) CryptPrime.c:208 -1
+     (nil))
+(insn 86 85 87 9 (parallel [
+            (set (reg:DI 96 [ D.13154 ])
+                (ashift:DI (reg:DI 95 [ D.13154 ])
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:208 -1
+     (nil))
+(insn 87 86 88 9 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 94 [ D.13154 ])
+            (reg:DI 96 [ D.13154 ]))) CryptPrime.c:207 -1
+     (nil))
+(jump_insn 88 87 89 9 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 99)
+            (pc))) CryptPrime.c:207 -1
+     (nil)
+ -> 99)
+(note 89 88 90 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 90 89 91 10 (set (reg:SI 124)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -820 [0xfffffffffffffccc])) [0 a+0 S4 A32])) CryptPrime.c:209 -1
+     (nil))
+(insn 91 90 92 10 (set (reg:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 bnWm1+0 S8 A64])) CryptPrime.c:209 -1
+     (nil))
+(insn 92 91 93 10 (set (reg:SI 4 si)
+        (reg:SI 124)) CryptPrime.c:209 -1
+     (nil))
+(insn 93 92 94 10 (set (reg:DI 5 di)
+        (reg:DI 125)) CryptPrime.c:209 -1
+     (nil))
+(call_insn 94 93 95 10 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnTestBit") [flags 0x41]  <function_decl 0x7fe2931c81b0 BnTestBit>) [0 BnTestBit S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:209 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 95 94 97 10 (set (reg:SI 97 [ D.13156 ])
+        (reg:SI 0 ax)) CryptPrime.c:209 -1
+     (nil))
+(insn 97 95 98 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 97 [ D.13156 ])
+            (const_int 0 [0]))) CryptPrime.c:208 -1
+     (nil))
+(jump_insn 98 97 99 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 96)
+            (pc))) CryptPrime.c:208 -1
+     (nil)
+ -> 96)
+(code_label 99 98 100 11 35 "" [1 uses])
+(note 100 99 101 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 101 100 102 11 (set (reg:SI 126)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -820 [0xfffffffffffffccc])) [0 a+0 S4 A32])) CryptPrime.c:212 -1
+     (nil))
+(insn 102 101 103 11 (set (reg:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 bnWm1+0 S8 A64])) CryptPrime.c:212 -1
+     (nil))
+(insn 103 102 104 11 (set (reg:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -792 [0xfffffffffffffce8])) [0 bnM+0 S8 A64])) CryptPrime.c:212 -1
+     (nil))
+(insn 104 103 105 11 (set (reg:SI 1 dx)
+        (reg:SI 126)) CryptPrime.c:212 -1
+     (nil))
+(insn 105 104 106 11 (set (reg:DI 4 si)
+        (reg:DI 127)) CryptPrime.c:212 -1
+     (nil))
+(insn 106 105 107 11 (set (reg:DI 5 di)
+        (reg:DI 128)) CryptPrime.c:212 -1
+     (nil))
+(call_insn 107 106 108 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnShiftRight") [flags 0x41]  <function_decl 0x7fe2931c8360 BnShiftRight>) [0 BnShiftRight S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:212 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 108 107 109 11 (set (reg:DI 129)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -840 [0xfffffffffffffcb8])) [0 bnW+0 S8 A64])) CryptPrime.c:214 -1
+     (nil))
+(insn 109 108 110 11 (set (reg:DI 5 di)
+        (reg:DI 129)) CryptPrime.c:214 -1
+     (nil))
+(call_insn 110 109 111 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnSizeInBits") [flags 0x41]  <function_decl 0x7fe2931c5e58 BnSizeInBits>) [0 BnSizeInBits S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:214 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 111 110 112 11 (set (reg:SI 98 [ D.13153 ])
+        (reg:SI 0 ax)) CryptPrime.c:214 -1
+     (nil))
+(insn 112 111 113 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -804 [0xfffffffffffffcdc])) [0 wLen+0 S4 A32])
+        (reg:SI 98 [ D.13153 ])) CryptPrime.c:214 -1
+     (nil))
+(insn 113 112 114 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -812 [0xfffffffffffffcd4])) [0 i+0 S4 A32])
+        (const_int 0 [0])) CryptPrime.c:216 -1
+     (nil))
+(jump_insn 114 113 115 11 (set (pc)
+        (label_ref 223)) CryptPrime.c:216 -1
+     (nil)
+ -> 223)
+(barrier 115 114 130)
+(code_label 130 115 116 12 38 "" [3 uses])
+(note 116 130 117 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 117 116 118 12 (set (reg:SI 130)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -804 [0xfffffffffffffcdc])) [0 wLen+0 S4 A32])) CryptPrime.c:222 -1
+     (nil))
+(insn 118 117 119 12 (set (reg:DI 99 [ D.13154 ])
+        (sign_extend:DI (reg:SI 130))) CryptPrime.c:222 -1
+     (nil))
+(insn 119 118 120 12 (set (reg:DI 131)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -848 [0xfffffffffffffcb0])) [0 rand+0 S8 A64])) CryptPrime.c:222 -1
+     (nil))
+(insn 120 119 121 12 (set (reg:DI 132)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -784 [0xfffffffffffffcf0])) [0 bnB+0 S8 A64])) CryptPrime.c:222 -1
+     (nil))
+(insn 121 120 122 12 (set (reg:DI 1 dx)
+        (reg:DI 131)) CryptPrime.c:222 -1
+     (nil))
+(insn 122 121 123 12 (set (reg:DI 4 si)
+        (reg:DI 99 [ D.13154 ])) CryptPrime.c:222 -1
+     (nil))
+(insn 123 122 124 12 (set (reg:DI 5 di)
+        (reg:DI 132)) CryptPrime.c:222 -1
+     (nil))
+(call_insn 124 123 125 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnGetRandomBits") [flags 0x41]  <function_decl 0x7fe2931c8438 BnGetRandomBits>) [0 BnGetRandomBits S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:222 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 125 124 126 12 (set (reg:DI 133)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -784 [0xfffffffffffffcf0])) [0 bnB+0 S8 A64])) CryptPrime.c:224 -1
+     (nil))
+(insn 126 125 127 12 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) CryptPrime.c:224 -1
+     (nil))
+(insn 127 126 128 12 (set (reg:DI 5 di)
+        (reg:DI 133)) CryptPrime.c:224 -1
+     (nil))
+(call_insn 128 127 129 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnUnsignedCmpWord") [flags 0x41]  <function_decl 0x7fe2931c5af8 BnUnsignedCmpWord>) [0 BnUnsignedCmpWord S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:224 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 129 128 131 12 (set (reg:SI 100 [ D.13156 ])
+        (reg:SI 0 ax)) CryptPrime.c:224 -1
+     (nil))
+(insn 131 129 132 12 (set (reg:CCNO 17 flags)
+        (compare:CCNO (reg:SI 100 [ D.13156 ])
+            (const_int 0 [0]))) CryptPrime.c:225 -1
+     (nil))
+(jump_insn 132 131 133 12 (set (pc)
+        (if_then_else (le (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 130)
+            (pc))) CryptPrime.c:225 -1
+     (nil)
+ -> 130)
+(note 133 132 134 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 134 133 135 13 (set (reg:DI 134)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 bnWm1+0 S8 A64])) CryptPrime.c:225 -1
+     (nil))
+(insn 135 134 136 13 (set (reg:DI 135)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -784 [0xfffffffffffffcf0])) [0 bnB+0 S8 A64])) CryptPrime.c:225 -1
+     (nil))
+(insn 136 135 137 13 (set (reg:DI 4 si)
+        (reg:DI 134)) CryptPrime.c:225 -1
+     (nil))
+(insn 137 136 138 13 (set (reg:DI 5 di)
+        (reg:DI 135)) CryptPrime.c:225 -1
+     (nil))
+(call_insn 138 137 139 13 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnUnsignedCmp") [flags 0x41]  <function_decl 0x7fe2931c5a20 BnUnsignedCmp>) [0 BnUnsignedCmp S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:225 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 139 138 140 13 (set (reg:SI 101 [ D.13156 ])
+        (reg:SI 0 ax)) CryptPrime.c:225 -1
+     (nil))
+(insn 140 139 141 13 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (reg:SI 101 [ D.13156 ])
+            (const_int 0 [0]))) CryptPrime.c:225 -1
+     (nil))
+(jump_insn 141 140 142 13 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 130)
+            (pc))) CryptPrime.c:225 -1
+     (nil)
+ -> 130)
+(note 142 141 143 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 143 142 144 14 (set (reg:DI 136)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -840 [0xfffffffffffffcb8])) [0 bnW+0 S8 A64])) CryptPrime.c:229 -1
+     (nil))
+(insn 144 143 145 14 (set (reg:DI 137)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -792 [0xfffffffffffffce8])) [0 bnM+0 S8 A64])) CryptPrime.c:229 -1
+     (nil))
+(insn 145 144 146 14 (set (reg:DI 138)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -784 [0xfffffffffffffcf0])) [0 bnB+0 S8 A64])) CryptPrime.c:229 -1
+     (nil))
+(insn 146 145 147 14 (set (reg:DI 139)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 bnZ+0 S8 A64])) CryptPrime.c:229 -1
+     (nil))
+(insn 147 146 148 14 (set (reg:DI 2 cx)
+        (reg:DI 136)) CryptPrime.c:229 -1
+     (nil))
+(insn 148 147 149 14 (set (reg:DI 1 dx)
+        (reg:DI 137)) CryptPrime.c:229 -1
+     (nil))
+(insn 149 148 150 14 (set (reg:DI 4 si)
+        (reg:DI 138)) CryptPrime.c:229 -1
+     (nil))
+(insn 150 149 151 14 (set (reg:DI 5 di)
+        (reg:DI 139)) CryptPrime.c:229 -1
+     (nil))
+(call_insn 151 150 152 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnModExp") [flags 0x41]  <function_decl 0x7fe293201a20 BnModExp>) [0 BnModExp S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:229 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 152 151 153 14 (set (reg:DI 140)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 bnZ+0 S8 A64])) CryptPrime.c:231 -1
+     (nil))
+(insn 153 152 154 14 (set (reg:DI 4 si)
+        (const_int 1 [0x1])) CryptPrime.c:231 -1
+     (nil))
+(insn 154 153 155 14 (set (reg:DI 5 di)
+        (reg:DI 140)) CryptPrime.c:231 -1
+     (nil))
+(call_insn 155 154 156 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnUnsignedCmpWord") [flags 0x41]  <function_decl 0x7fe2931c5af8 BnUnsignedCmpWord>) [0 BnUnsignedCmpWord S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:231 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 156 155 157 14 (set (reg:SI 102 [ D.13156 ])
+        (reg:SI 0 ax)) CryptPrime.c:231 -1
+     (nil))
+(insn 157 156 158 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 102 [ D.13156 ])
+            (const_int 0 [0]))) CryptPrime.c:231 -1
+     (nil))
+(jump_insn 158 157 159 14 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 220)
+            (pc))) CryptPrime.c:231 -1
+     (nil)
+ -> 220)
+(note 159 158 160 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 160 159 161 15 (set (reg:DI 141)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 bnWm1+0 S8 A64])) CryptPrime.c:232 -1
+     (nil))
+(insn 161 160 162 15 (set (reg:DI 142)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 bnZ+0 S8 A64])) CryptPrime.c:232 -1
+     (nil))
+(insn 162 161 163 15 (set (reg:DI 4 si)
+        (reg:DI 141)) CryptPrime.c:232 -1
+     (nil))
+(insn 163 162 164 15 (set (reg:DI 5 di)
+        (reg:DI 142)) CryptPrime.c:232 -1
+     (nil))
+(call_insn 164 163 165 15 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnUnsignedCmp") [flags 0x41]  <function_decl 0x7fe2931c5a20 BnUnsignedCmp>) [0 BnUnsignedCmp S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:232 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 165 164 166 15 (set (reg:SI 103 [ D.13156 ])
+        (reg:SI 0 ax)) CryptPrime.c:232 -1
+     (nil))
+(insn 166 165 167 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 103 [ D.13156 ])
+            (const_int 0 [0]))) CryptPrime.c:232 -1
+     (nil))
+(jump_insn 167 166 168 15 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 220)
+            (pc))) CryptPrime.c:232 -1
+     (nil)
+ -> 220)
+(note 168 167 169 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 169 168 170 16 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -816 [0xfffffffffffffcd0])) [0 j+0 S4 A32])
+        (const_int 1 [0x1])) CryptPrime.c:235 -1
+     (nil))
+(jump_insn 170 169 171 16 (set (pc)
+        (label_ref 210)) CryptPrime.c:235 -1
+     (nil)
+ -> 210)
+(barrier 171 170 212)
+(code_label 212 171 172 17 44 "" [1 uses])
+(note 172 212 173 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 173 172 174 17 (set (reg:DI 143)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -840 [0xfffffffffffffcb8])) [0 bnW+0 S8 A64])) CryptPrime.c:238 -1
+     (nil))
+(insn 174 173 175 17 (set (reg:DI 144)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 bnZ+0 S8 A64])) CryptPrime.c:238 -1
+     (nil))
+(insn 175 174 176 17 (set (reg:DI 145)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 bnZ+0 S8 A64])) CryptPrime.c:238 -1
+     (nil))
+(insn 176 175 177 17 (set (reg:DI 146)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 bnZ+0 S8 A64])) CryptPrime.c:238 -1
+     (nil))
+(insn 177 176 178 17 (set (reg:DI 2 cx)
+        (reg:DI 143)) CryptPrime.c:238 -1
+     (nil))
+(insn 178 177 179 17 (set (reg:DI 1 dx)
+        (reg:DI 144)) CryptPrime.c:238 -1
+     (nil))
+(insn 179 178 180 17 (set (reg:DI 4 si)
+        (reg:DI 145)) CryptPrime.c:238 -1
+     (nil))
+(insn 180 179 181 17 (set (reg:DI 5 di)
+        (reg:DI 146)) CryptPrime.c:238 -1
+     (nil))
+(call_insn 181 180 182 17 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnModMult") [flags 0x41]  <function_decl 0x7fe2932016c0 BnModMult>) [0 BnModMult S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:238 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 182 181 183 17 (set (reg:DI 147)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -800 [0xfffffffffffffce0])) [0 bnWm1+0 S8 A64])) CryptPrime.c:240 -1
+     (nil))
+(insn 183 182 184 17 (set (reg:DI 148)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 bnZ+0 S8 A64])) CryptPrime.c:240 -1
+     (nil))
+(insn 184 183 185 17 (set (reg:DI 4 si)
+        (reg:DI 147)) CryptPrime.c:240 -1
+     (nil))
+(insn 185 184 186 17 (set (reg:DI 5 di)
+        (reg:DI 148)) CryptPrime.c:240 -1
+     (nil))
+(call_insn 186 185 187 17 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnUnsignedCmp") [flags 0x41]  <function_decl 0x7fe2931c5a20 BnUnsignedCmp>) [0 BnUnsignedCmp S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:240 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 187 186 188 17 (set (reg:SI 104 [ D.13156 ])
+        (reg:SI 0 ax)) CryptPrime.c:240 -1
+     (nil))
+(insn 188 187 189 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 104 [ D.13156 ])
+            (const_int 0 [0]))) CryptPrime.c:240 -1
+     (nil))
+(jump_insn 189 188 190 17 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 193)
+            (pc))) CryptPrime.c:240 -1
+     (nil)
+ -> 193)
+(note 190 189 191 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 191 190 192 18 (set (pc)
+        (label_ref 220)) CryptPrime.c:241 -1
+     (nil)
+ -> 220)
+(barrier 192 191 193)
+(code_label 193 192 194 19 41 "" [1 uses])
+(note 194 193 195 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 195 194 196 19 (set (reg/f:DI 149)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 bnZ+0 S8 A64])) CryptPrime.c:243 -1
+     (nil))
+(insn 196 195 197 19 (set (reg:DI 105 [ D.13154 ])
+        (mem/j:DI (plus:DI (reg/f:DI 149)
+                (const_int 8 [0x8])) [0 bnZ_21->size+0 S8 A64])) CryptPrime.c:243 -1
+     (nil))
+(insn 197 196 198 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 105 [ D.13154 ])
+            (const_int 1 [0x1]))) CryptPrime.c:243 -1
+     (nil))
+(jump_insn 198 197 199 19 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 207)
+            (pc))) CryptPrime.c:243 -1
+     (nil)
+ -> 207)
+(note 199 198 200 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 200 199 201 20 (set (reg/f:DI 150)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -776 [0xfffffffffffffcf8])) [0 bnZ+0 S8 A64])) CryptPrime.c:243 -1
+     (nil))
+(insn 201 200 202 20 (set (reg:DI 106 [ D.13154 ])
+        (mem/j:DI (plus:DI (reg/f:DI 150)
+                (const_int 16 [0x10])) [0 bnZ_21->d+0 S8 A64])) CryptPrime.c:243 -1
+     (nil))
+(insn 202 201 203 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 106 [ D.13154 ])
+            (const_int 1 [0x1]))) CryptPrime.c:243 -1
+     (nil))
+(jump_insn 203 202 204 20 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 207)
+            (pc))) CryptPrime.c:243 -1
+     (nil)
+ -> 207)
+(note 204 203 205 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 205 204 206 21 (set (pc)
+        (label_ref 216)) CryptPrime.c:244 -1
+     (nil)
+ -> 216)
+(barrier 206 205 207)
+(code_label 207 206 208 22 42 "" [2 uses])
+(note 208 207 209 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 209 208 210 22 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -816 [0xfffffffffffffcd0])) [0 j+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -816 [0xfffffffffffffcd0])) [0 j+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:235 -1
+     (nil))
+(code_label 210 209 211 23 40 "" [1 uses])
+(note 211 210 213 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 213 211 214 23 (set (reg:SI 151)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -816 [0xfffffffffffffcd0])) [0 j+0 S4 A32])) CryptPrime.c:235 -1
+     (nil))
+(insn 214 213 215 23 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 151)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -820 [0xfffffffffffffccc])) [0 a+0 S4 A32]))) CryptPrime.c:235 -1
+     (nil))
+(jump_insn 215 214 216 23 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 212)
+            (pc))) CryptPrime.c:235 -1
+     (nil)
+ -> 212)
+(code_label 216 215 217 24 43 ("step4point6") [1 uses])
+(note 217 216 218 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 218 217 219 24 (set (pc)
+        (label_ref 230)) CryptPrime.c:249 -1
+     (nil)
+ -> 230)
+(barrier 219 218 220)
+(code_label 220 219 221 25 39 ("step4point7") [3 uses])
+(note 221 220 222 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 222 221 223 25 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -812 [0xfffffffffffffcd4])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -812 [0xfffffffffffffcd4])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:216 -1
+     (nil))
+(code_label 223 222 224 26 37 "" [1 uses])
+(note 224 223 225 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 225 224 226 26 (set (reg:SI 152)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -812 [0xfffffffffffffcd4])) [0 i+0 S4 A32])) CryptPrime.c:216 -1
+     (nil))
+(insn 226 225 227 26 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 152)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -808 [0xfffffffffffffcd8])) [0 iterations+0 S4 A32]))) CryptPrime.c:216 -1
+     (nil))
+(jump_insn 227 226 228 26 (set (pc)
+        (if_then_else (lt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 130)
+            (pc))) CryptPrime.c:216 -1
+     (nil)
+ -> 130)
+(note 228 227 229 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 229 228 230 27 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -824 [0xfffffffffffffcc8])) [0 ret+0 S4 A32])
+        (const_int 1 [0x1])) CryptPrime.c:255 -1
+     (nil))
+(code_label 230 229 231 28 45 ("end") [1 uses])
+(note 231 230 232 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 232 231 235 28 (set (reg:SI 107 [ D.13157 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -824 [0xfffffffffffffcc8])) [0 ret+0 S4 A32])) CryptPrime.c:257 -1
+     (nil))
+(insn 235 232 239 28 (set (reg:SI 108 [ <retval> ])
+        (reg:SI 107 [ D.13157 ])) CryptPrime.c:257 -1
+     (nil))
+(insn 239 235 240 28 (set (reg/i:SI 0 ax)
+        (reg:SI 108 [ <retval> ])) CryptPrime.c:258 -1
+     (nil))
+(insn 240 239 241 28 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13158+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) CryptPrime.c:258 -1
+     (nil))
+(jump_insn 241 240 247 28 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 244)
+            (pc))) CryptPrime.c:258 -1
+     (nil)
+ -> 244)
+(note 247 241 242 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(call_insn 242 247 243 31 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7fe29321de58 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) CryptPrime.c:258 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 243 242 244)
+(code_label 244 243 248 32 47 "" [1 uses])
+(note 248 244 245 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 245 248 0 32 (use (reg/i:SI 0 ax)) CryptPrime.c:258 -1
+     (nil))
+
+;; Function RsaCheckPrime (RsaCheckPrime, funcdef_no=7, decl_uid=12420, cgraph_uid=7, symbol_order=7)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 19.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 prime+0 S8 A64])
+        (reg:DI 5 di [ prime ])) CryptPrime.c:273 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 exponent+0 S4 A32])
+        (reg:SI 4 si [ exponent ])) CryptPrime.c:273 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 rand+0 S8 A64])
+        (reg:DI 1 dx [ rand ])) CryptPrime.c:273 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 rand+0 S8 A64])) CryptPrime.c:292 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 90)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 exponent+0 S4 A32])) CryptPrime.c:292 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 prime+0 S8 A64])) CryptPrime.c:292 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 1 dx)
+        (reg:DI 89)) CryptPrime.c:292 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 4 si)
+        (reg:SI 90)) CryptPrime.c:292 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 5 di)
+        (reg:DI 91)) CryptPrime.c:292 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("PrimeSelectWithSieve") [flags 0x41]  <function_decl 0x7fe2931f65e8 PrimeSelectWithSieve>) [0 PrimeSelectWithSieve S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:292 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 15 14 18 2 (set (reg:SI 87 [ D.13159 ])
+        (reg:SI 0 ax)) CryptPrime.c:292 -1
+     (nil))
+(insn 18 15 22 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.13159 ])) CryptPrime.c:292 -1
+     (nil))
+(insn 22 18 23 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) CryptPrime.c:294 -1
+     (nil))
+(insn 23 22 0 2 (use (reg/i:SI 0 ax)) CryptPrime.c:294 -1
+     (nil))
+
+;; Function RsaAdjustPrimeCandidate (RsaAdjustPrimeCandidate, funcdef_no=8, decl_uid=12422, cgraph_uid=8, symbol_order=8)
+
+Partition 0: size 8 align 8
+	msw_5
+Partition 1: size 2 align 2
+	highBytes_8
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])
+        (reg:DI 5 di [ prime ])) CryptPrime.c:308 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])) CryptPrime.c:310 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 87 [ D.13160 ])
+        (mem/j:DI (plus:DI (reg/f:DI 101)
+                (const_int 8 [0x8])) [0 prime_2(D)->size+0 S8 A64])) CryptPrime.c:310 -1
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg:DI 88 [ D.13160 ])
+                (plus:DI (reg:DI 87 [ D.13160 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:310 -1
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg:DI 102)
+                (plus:DI (reg:DI 88 [ D.13160 ])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:310 -1
+     (nil))
+(insn 10 9 14 2 (parallel [
+            (set (reg:DI 103)
+                (ashift:DI (reg:DI 102)
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:310 -1
+     (nil))
+(insn 14 10 15 2 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])) CryptPrime.c:310 -1
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg:DI 106)
+                (plus:DI (reg:DI 103)
+                    (reg/f:DI 107)))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:310 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])
+            (reg:DI 103))
+        (nil)))
+(insn 16 15 17 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 msw+0 S8 A64])
+        (reg:DI 106)) CryptPrime.c:310 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 msw+0 S8 A64])) CryptPrime.c:312 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 89 [ D.13160 ])
+        (mem:DI (reg/f:DI 108) [0 *msw_5+0 S8 A64])) CryptPrime.c:312 -1
+     (nil))
+(insn 19 18 20 2 (parallel [
+            (set (reg:DI 90 [ D.13160 ])
+                (lshiftrt:DI (reg:DI 89 [ D.13160 ])
+                    (const_int 48 [0x30])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:312 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [0 highBytes+0 S2 A16])
+        (subreg:HI (reg:DI 90 [ D.13160 ]) 0)) CryptPrime.c:312 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 91 [ D.13161 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])) [0 highBytes+0 S2 A16]))) CryptPrime.c:314 -1
+     (nil))
+(insn 22 21 23 2 (parallel [
+            (set (reg:SI 92 [ D.13161 ])
+                (mult:SI (reg:SI 91 [ D.13161 ])
+                    (const_int 19195 [0x4afb])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:314 -1
+     (nil))
+(insn 23 22 24 2 (parallel [
+            (set (reg:SI 93 [ D.13161 ])
+                (lshiftrt:SI (reg:SI 92 [ D.13161 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:314 -1
+     (nil))
+(insn 24 23 25 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [0 highBytes+0 S2 A16])
+        (subreg:HI (reg:SI 93 [ D.13161 ]) 0)) CryptPrime.c:314 -1
+     (nil))
+(insn 25 24 26 2 (parallel [
+            (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -10 [0xfffffffffffffff6])) [0 highBytes+0 S2 A16])
+                (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -10 [0xfffffffffffffff6])) [0 highBytes+0 S2 A16])
+                    (const_int -19195 [0xffffffffffffb505])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:315 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:DI 94 [ D.13160 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])) [0 highBytes+0 S2 A16]))) CryptPrime.c:316 -1
+     (nil))
+(insn 27 26 28 2 (parallel [
+            (set (reg:DI 95 [ D.13160 ])
+                (ashift:DI (reg:DI 94 [ D.13160 ])
+                    (const_int 48 [0x30])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:316 -1
+     (nil))
+(insn 28 27 29 2 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 msw+0 S8 A64])) CryptPrime.c:316 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:DI 96 [ D.13160 ])
+        (mem:DI (reg/f:DI 109) [0 *msw_5+0 S8 A64])) CryptPrime.c:316 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:DI 97 [ D.13160 ])
+        (zero_extend:DI (subreg:HI (reg:DI 96 [ D.13160 ]) 0))) CryptPrime.c:316 -1
+     (nil))
+(insn 31 30 32 2 (parallel [
+            (set (reg:DI 98 [ D.13160 ])
+                (plus:DI (reg:DI 95 [ D.13160 ])
+                    (reg:DI 97 [ D.13160 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:316 -1
+     (nil))
+(insn 32 31 33 2 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 msw+0 S8 A64])) CryptPrime.c:316 -1
+     (nil))
+(insn 33 32 34 2 (set (mem:DI (reg/f:DI 110) [0 *msw_5+0 S8 A64])
+        (reg:DI 98 [ D.13160 ])) CryptPrime.c:316 -1
+     (nil))
+(insn 34 33 35 2 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])) CryptPrime.c:317 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:DI 99 [ D.13160 ])
+        (mem/j:DI (plus:DI (reg/f:DI 111)
+                (const_int 16 [0x10])) [0 prime_2(D)->d+0 S8 A64])) CryptPrime.c:317 -1
+     (nil))
+(insn 36 35 37 2 (parallel [
+            (set (reg:DI 100 [ D.13160 ])
+                (ior:DI (reg:DI 99 [ D.13160 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:317 -1
+     (nil))
+(insn 37 36 38 2 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])) CryptPrime.c:317 -1
+     (nil))
+(insn 38 37 41 2 (set (mem/j:DI (plus:DI (reg/f:DI 112)
+                (const_int 16 [0x10])) [0 prime_2(D)->d+0 S8 A64])
+        (reg:DI 100 [ D.13160 ])) CryptPrime.c:317 -1
+     (nil))
+(insn 41 38 0 2 (const_int 0 [0]) CryptPrime.c:318 -1
+     (nil))
+
+;; Function BnGeneratePrimeForRSA (BnGeneratePrimeForRSA, funcdef_no=9, decl_uid=12427, cgraph_uid=9, symbol_order=9)
+
+Partition 0: size 4 align 4
+	found_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 9->10 to 11 failed.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])
+        (reg:DI 5 di [ prime ])) CryptPrime.c:328 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 bits+0 S4 A32])
+        (reg:SI 4 si [ bits ])) CryptPrime.c:328 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 exponent+0 S4 A32])
+        (reg:SI 1 dx [ exponent ])) CryptPrime.c:328 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 rand+0 S8 A64])
+        (reg:DI 2 cx [ rand ])) CryptPrime.c:328 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 found+0 S4 A32])
+        (const_int 0 [0])) CryptPrime.c:329 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])) CryptPrime.c:332 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 87 [ D.13162 ])
+        (mem/j:DI (reg/f:DI 102) [0 prime_5(D)->allocated+0 S8 A64])) CryptPrime.c:332 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 103)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 bits+0 S4 A32])) CryptPrime.c:332 -1
+     (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg:SI 88 [ D.13163 ])
+                (plus:SI (reg:SI 103)
+                    (const_int 63 [0x3f])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:332 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -28 [0xffffffffffffffe4])) [0 bits+0 S4 A32])
+            (const_int 63 [0x3f]))
+        (nil)))
+(insn 14 13 15 2 (parallel [
+            (set (reg:SI 89 [ D.13163 ])
+                (lshiftrt:SI (reg:SI 88 [ D.13163 ])
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:332 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 90 [ D.13162 ])
+        (zero_extend:DI (reg:SI 89 [ D.13163 ]))) CryptPrime.c:332 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 87 [ D.13162 ])
+            (reg:DI 90 [ D.13162 ]))) CryptPrime.c:332 -1
+     (nil))
+(jump_insn 17 16 18 2 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) CryptPrime.c:332 -1
+     (nil)
+ -> 24)
+(note 18 17 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) CryptPrime.c:332 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:SI 4 si)
+        (const_int 332 [0x14c])) CryptPrime.c:332 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:DI 5 di)
+        (const_int 0 [0])) CryptPrime.c:332 -1
+     (nil))
+(call_insn 22 21 23 4 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fe2931230d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CryptPrime.c:332 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 23 22 24)
+(code_label 24 23 25 5 55 "" [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 5 (set (reg:SI 104)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 bits+0 S4 A32])) CryptPrime.c:334 -1
+     (nil))
+(insn 27 26 28 5 (parallel [
+            (set (reg:SI 91 [ D.13163 ])
+                (and:SI (reg:SI 104)
+                    (const_int 31 [0x1f])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:334 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -28 [0xffffffffffffffe4])) [0 bits+0 S4 A32])
+            (const_int 31 [0x1f]))
+        (nil)))
+(insn 28 27 29 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13163 ])
+            (const_int 0 [0]))) CryptPrime.c:334 -1
+     (nil))
+(jump_insn 29 28 30 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 36)
+            (pc))) CryptPrime.c:334 -1
+     (nil)
+ -> 36)
+(note 30 29 31 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 6 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) CryptPrime.c:334 -1
+     (nil))
+(insn 32 31 33 6 (set (reg:SI 4 si)
+        (const_int 334 [0x14e])) CryptPrime.c:334 -1
+     (nil))
+(insn 33 32 34 6 (set (reg:DI 5 di)
+        (const_int 0 [0])) CryptPrime.c:334 -1
+     (nil))
+(call_insn 34 33 35 6 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fe2931230d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CryptPrime.c:334 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 35 34 36)
+(code_label 36 35 37 7 56 "" [1 uses])
+(note 37 36 38 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 7 (set (reg:SI 105)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 bits+0 S4 A32])) CryptPrime.c:335 -1
+     (nil))
+(insn 39 38 40 7 (parallel [
+            (set (reg:SI 92 [ D.13163 ])
+                (plus:SI (reg:SI 105)
+                    (const_int 63 [0x3f])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:335 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -28 [0xffffffffffffffe4])) [0 bits+0 S4 A32])
+            (const_int 63 [0x3f]))
+        (nil)))
+(insn 40 39 41 7 (parallel [
+            (set (reg:SI 93 [ D.13163 ])
+                (lshiftrt:SI (reg:SI 92 [ D.13163 ])
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:335 -1
+     (nil))
+(insn 41 40 42 7 (set (reg:DI 94 [ D.13162 ])
+        (zero_extend:DI (reg:SI 93 [ D.13163 ]))) CryptPrime.c:335 -1
+     (nil))
+(insn 42 41 43 7 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])) CryptPrime.c:335 -1
+     (nil))
+(insn 43 42 44 7 (set (mem/j:DI (plus:DI (reg/f:DI 106)
+                (const_int 8 [0x8])) [0 prime_5(D)->size+0 S8 A64])
+        (reg:DI 94 [ D.13162 ])) CryptPrime.c:335 -1
+     (nil))
+(jump_insn 44 43 45 7 (set (pc)
+        (label_ref 74)) CryptPrime.c:336 -1
+     (nil)
+ -> 74)
+(barrier 45 44 76)
+(code_label 76 45 46 8 58 "" [1 uses])
+(note 46 76 47 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 8 (set (reg:SI 107)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 bits+0 S4 A32])) CryptPrime.c:338 -1
+     (nil))
+(insn 48 47 49 8 (parallel [
+            (set (reg:SI 95 [ D.13163 ])
+                (plus:SI (reg:SI 107)
+                    (const_int 7 [0x7])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:338 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -28 [0xffffffffffffffe4])) [0 bits+0 S4 A32])
+            (const_int 7 [0x7]))
+        (nil)))
+(insn 49 48 50 8 (parallel [
+            (set (reg:SI 96 [ D.13163 ])
+                (lshiftrt:SI (reg:SI 95 [ D.13163 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:338 -1
+     (nil))
+(insn 50 49 51 8 (set (reg:SI 97 [ D.13164 ])
+        (reg:SI 96 [ D.13163 ])) CryptPrime.c:338 -1
+     (nil))
+(insn 51 50 52 8 (set (reg:SI 98 [ D.13164 ])
+        (zero_extend:SI (subreg:HI (reg:SI 97 [ D.13164 ]) 0))) CryptPrime.c:338 -1
+     (nil))
+(insn 52 51 53 8 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])) CryptPrime.c:338 -1
+     (nil))
+(insn 53 52 54 8 (parallel [
+            (set (reg/f:DI 99 [ D.13165 ])
+                (plus:DI (reg/f:DI 108)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrime.c:338 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])
+            (const_int 16 [0x10]))
+        (nil)))
+(insn 54 53 55 8 (set (reg:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 rand+0 S8 A64])) CryptPrime.c:338 -1
+     (nil))
+(insn 55 54 56 8 (set (reg:SI 1 dx)
+        (reg:SI 98 [ D.13164 ])) CryptPrime.c:338 -1
+     (nil))
+(insn 56 55 57 8 (set (reg:DI 4 si)
+        (reg/f:DI 99 [ D.13165 ])) CryptPrime.c:338 -1
+     (nil))
+(insn 57 56 58 8 (set (reg:DI 5 di)
+        (reg:DI 109)) CryptPrime.c:338 -1
+     (nil))
+(call_insn 58 57 59 8 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("DRBG_Generate") [flags 0x41]  <function_decl 0x7fe2931e9af8 DRBG_Generate>) [0 DRBG_Generate S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:338 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 59 58 60 8 (set (reg:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])) CryptPrime.c:339 -1
+     (nil))
+(insn 60 59 61 8 (set (reg:DI 5 di)
+        (reg:DI 110)) CryptPrime.c:339 -1
+     (nil))
+(call_insn 61 60 62 8 (call (mem:QI (symbol_ref:DI ("RsaAdjustPrimeCandidate") [flags 0x3]  <function_decl 0x7fe2931e2d80 RsaAdjustPrimeCandidate>) [0 RsaAdjustPrimeCandidate S1 A8])
+        (const_int 0 [0])) CryptPrime.c:339 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 62 61 63 8 (set (reg:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 rand+0 S8 A64])) CryptPrime.c:340 -1
+     (nil))
+(insn 63 62 64 8 (set (reg:SI 112)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 exponent+0 S4 A32])) CryptPrime.c:340 -1
+     (nil))
+(insn 64 63 65 8 (set (reg:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 prime+0 S8 A64])) CryptPrime.c:340 -1
+     (nil))
+(insn 65 64 66 8 (set (reg:DI 1 dx)
+        (reg:DI 111)) CryptPrime.c:340 -1
+     (nil))
+(insn 66 65 67 8 (set (reg:SI 4 si)
+        (reg:SI 112)) CryptPrime.c:340 -1
+     (nil))
+(insn 67 66 68 8 (set (reg:DI 5 di)
+        (reg:DI 113)) CryptPrime.c:340 -1
+     (nil))
+(call_insn 68 67 69 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("RsaCheckPrime") [flags 0x3]  <function_decl 0x7fe2931e2ca8 RsaCheckPrime>) [0 RsaCheckPrime S1 A8])
+            (const_int 0 [0]))) CryptPrime.c:340 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 69 68 70 8 (set (reg:SI 100 [ D.13163 ])
+        (reg:SI 0 ax)) CryptPrime.c:340 -1
+     (nil))
+(insn 70 69 71 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 100 [ D.13163 ])
+            (const_int 0 [0]))) CryptPrime.c:340 -1
+     (nil))
+(insn 71 70 72 8 (set (reg:QI 101 [ D.13166 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) CryptPrime.c:340 -1
+     (nil))
+(insn 72 71 73 8 (set (reg:SI 114)
+        (zero_extend:SI (reg:QI 101 [ D.13166 ]))) CryptPrime.c:340 -1
+     (nil))
+(insn 73 72 74 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 found+0 S4 A32])
+        (reg:SI 114)) CryptPrime.c:340 -1
+     (nil))
+(code_label 74 73 75 9 57 "" [1 uses])
+(note 75 74 77 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 77 75 78 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 found+0 S4 A32])
+            (const_int 0 [0]))) CryptPrime.c:336 -1
+     (nil))
+(jump_insn 78 77 79 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 76)
+            (pc))) CryptPrime.c:336 -1
+     (nil)
+ -> 76)
+(note 79 78 82 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 82 79 0 10 (const_int 0 [0]) CryptPrime.c:342 -1
+     (nil))

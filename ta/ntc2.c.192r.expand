@@ -1,0 +1,235 @@
+
+;; Function NTC2_PreConfig (NTC2_PreConfig, funcdef_no=0, decl_uid=2659, cgraph_uid=0, symbol_order=1)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 28.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) ntc2.c:70 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:QI 88 [ D.2688 ])
+        (mem/j/c:QI (const:DI (plus:DI (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>)
+                    (const_int 17 [0x11]))) [0 ntc2state.IsLocked+0 S1 A8])) ntc2.c:72 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 88 [ D.2688 ])
+            (const_int -86 [0xffffffffffffffaa]))) ntc2.c:72 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 13)
+            (pc))) ntc2.c:72 -1
+     (nil)
+ -> 13)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 11 4 (set (reg:SI 87 [ D.2687 ])
+        (const_int 288 [0x120])) ntc2.c:73 -1
+     (nil))
+(jump_insn 11 10 12 4 (set (pc)
+        (label_ref 25)) ntc2.c:73 -1
+     (nil)
+ -> 25)
+(barrier 12 11 13)
+(code_label 13 12 14 5 2 "" [1 uses])
+(note 14 13 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 5 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) ntc2.c:75 -1
+     (nil))
+(insn 16 15 17 5 (set (reg:DI 91)
+        (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>)) ntc2.c:75 -1
+     (nil))
+(insn 17 16 18 5 (set (reg:DI 92)
+        (mem/j:DI (reg/f:DI 90) [0 in_6(D)->preConfig+0 S8 A8])) ntc2.c:75 -1
+     (nil))
+(insn 18 17 19 5 (set (mem/c:DI (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>) [0 ntc2state+0 S8 A128])
+        (reg:DI 92)) ntc2.c:75 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:DI 93)
+        (mem/j:DI (plus:DI (reg/f:DI 90)
+                (const_int 8 [0x8])) [0 in_6(D)->preConfig+8 S8 A8])) ntc2.c:75 -1
+     (nil))
+(insn 20 19 21 5 (set (mem/c:DI (const:DI (plus:DI (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>)
+                    (const_int 8 [0x8]))) [0 ntc2state+8 S8 A64])
+        (reg:DI 93)) ntc2.c:75 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:HI 94)
+        (mem/j:HI (plus:DI (reg/f:DI 90)
+                (const_int 16 [0x10])) [0 in_6(D)->preConfig+16 S2 A8])) ntc2.c:75 -1
+     (nil))
+(insn 22 21 23 5 (set (mem/c:HI (const:DI (plus:DI (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>)
+                    (const_int 16 [0x10]))) [0 ntc2state+16 S2 A128])
+        (reg:HI 94)) ntc2.c:75 -1
+     (nil))
+(insn 23 22 24 5 (set (mem/j/c:QI (const:DI (plus:DI (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>)
+                    (const_int 17 [0x11]))) [0 ntc2state.IsLocked+0 S1 A8])
+        (const_int -1 [0xffffffffffffffff])) ntc2.c:76 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 87 [ D.2687 ])
+        (const_int 0 [0])) ntc2.c:77 -1
+     (nil))
+(code_label 25 24 26 6 3 "" [1 uses])
+(note 26 25 27 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 31 6 (set (reg:SI 89 [ <retval> ])
+        (reg:SI 87 [ D.2687 ])) -1
+     (nil))
+(insn 31 27 32 6 (set (reg/i:SI 0 ax)
+        (reg:SI 89 [ <retval> ])) ntc2.c:78 -1
+     (nil))
+(insn 32 31 0 6 (use (reg/i:SI 0 ax)) ntc2.c:78 -1
+     (nil))
+
+;; Function NTC2_LockPreConfig (NTC2_LockPreConfig, funcdef_no=1, decl_uid=2661, cgraph_uid=1, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 10.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/j/c:QI (const:DI (plus:DI (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>)
+                    (const_int 17 [0x11]))) [0 ntc2state.IsLocked+0 S1 A8])
+        (const_int -86 [0xffffffffffffffaa])) ntc2.c:83 -1
+     (nil))
+(insn 6 5 9 2 (set (reg:SI 87 [ D.2689 ])
+        (const_int 0 [0])) ntc2.c:84 -1
+     (nil))
+(insn 9 6 13 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.2689 ])) ntc2.c:84 -1
+     (nil))
+(insn 13 9 14 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) ntc2.c:85 -1
+     (nil))
+(insn 14 13 0 2 (use (reg/i:SI 0 ax)) ntc2.c:85 -1
+     (nil))
+
+;; Function NTC2_GetConfig (NTC2_GetConfig, funcdef_no=2, decl_uid=2663, cgraph_uid=2, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 18.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 out+0 S8 A64])
+        (reg:DI 5 di [ out ])) ntc2.c:89 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 out+0 S8 A64])) ntc2.c:90 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 90)
+        (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>)) ntc2.c:90 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 91)
+        (mem/c:DI (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>) [0 ntc2state+0 S8 A128])) ntc2.c:90 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/j:DI (reg/f:DI 89) [0 out_2(D)->preConfig+0 S8 A8])
+        (reg:DI 91)) ntc2.c:90 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 92)
+        (mem/c:DI (const:DI (plus:DI (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>)
+                    (const_int 8 [0x8]))) [0 ntc2state+8 S8 A64])) ntc2.c:90 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/j:DI (plus:DI (reg/f:DI 89)
+                (const_int 8 [0x8])) [0 out_2(D)->preConfig+8 S8 A8])
+        (reg:DI 92)) ntc2.c:90 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:HI 93)
+        (mem/c:HI (const:DI (plus:DI (symbol_ref:DI ("ntc2state") [flags 0x2]  <var_decl 0x7f3fd5ad9750 ntc2state>)
+                    (const_int 16 [0x10]))) [0 ntc2state+16 S2 A128])) ntc2.c:90 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/j:HI (plus:DI (reg/f:DI 89)
+                (const_int 16 [0x10])) [0 out_2(D)->preConfig+16 S2 A8])
+        (reg:HI 93)) ntc2.c:90 -1
+     (nil))
+(insn 14 13 17 2 (set (reg:SI 87 [ D.2690 ])
+        (const_int 0 [0])) ntc2.c:91 -1
+     (nil))
+(insn 17 14 21 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.2690 ])) ntc2.c:91 -1
+     (nil))
+(insn 21 17 22 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) ntc2.c:92 -1
+     (nil))
+(insn 22 21 0 2 (use (reg/i:SI 0 ax)) ntc2.c:92 -1
+     (nil))

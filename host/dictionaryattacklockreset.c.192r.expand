@@ -1,0 +1,2225 @@
+
+;; Function main (main, funcdef_no=2, decl_uid=5217, cgraph_uid=2, symbol_order=3)
+
+Partition 2: size 8 align 8
+	password_7
+Partition 14: size 8 align 8
+	num
+Partition 13: size 8 align 8
+	submsg
+Partition 12: size 8 align 8
+	msg
+Partition 4: size 8 align 8
+	tssContext
+Partition 3: size 4 align 4
+	rc1_161
+Partition 1: size 4 align 4
+	i_5
+Partition 0: size 4 align 4
+	rc_1
+Partition 11: size 4 align 4
+	sessionAttributes2
+Partition 10: size 4 align 4
+	sessionHandle2
+Partition 9: size 4 align 4
+	sessionAttributes1
+Partition 8: size 4 align 4
+	sessionHandle1
+Partition 7: size 4 align 4
+	sessionAttributes0
+Partition 6: size 4 align 4
+	sessionHandle0
+Partition 5: size 4 align 16
+	in
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+;; Generating RTL for gimple basic block 38
+
+;; Generating RTL for gimple basic block 39
+
+;; Generating RTL for gimple basic block 40
+
+;; Generating RTL for gimple basic block 41
+
+;; Generating RTL for gimple basic block 42
+
+;; Generating RTL for gimple basic block 43
+
+;; Generating RTL for gimple basic block 44
+
+;; Generating RTL for gimple basic block 45
+
+;; Generating RTL for gimple basic block 46
+
+;; Generating RTL for gimple basic block 47
+
+;; Generating RTL for gimple basic block 48
+
+;; Generating RTL for gimple basic block 49
+
+;; Generating RTL for gimple basic block 50
+
+;; Generating RTL for gimple basic block 51
+
+;; Generating RTL for gimple basic block 52
+
+;; Generating RTL for gimple basic block 53
+
+;; Generating RTL for gimple basic block 54
+
+;; Generating RTL for gimple basic block 55
+
+;; Generating RTL for gimple basic block 56
+
+;; Generating RTL for gimple basic block 57
+
+;; Generating RTL for gimple basic block 58
+
+;; Generating RTL for gimple basic block 59
+
+;; Generating RTL for gimple basic block 60
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 56 from 8 to 44.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Edge 14->16 redirected to 44
+Merging block 16 into block 15...
+Merged blocks 15 and 16.
+Merged 15 and 16 without moving.
+Redirecting jump 134 from 18 to 44.
+Merging block 18 into block 17...
+Merged blocks 17 and 18.
+Merged 17 and 18 without moving.
+Edge 24->26 redirected to 44
+Merging block 26 into block 25...
+Merged blocks 25 and 26.
+Merged 25 and 26 without moving.
+Redirecting jump 212 from 28 to 44.
+Merging block 28 into block 27...
+Merged blocks 27 and 28.
+Merged 27 and 28 without moving.
+Edge 34->36 redirected to 44
+Merging block 36 into block 35...
+Merged blocks 35 and 36.
+Merged 35 and 36 without moving.
+Redirecting jump 290 from 38 to 44.
+Merging block 38 into block 37...
+Merged blocks 37 and 38.
+Merged 37 and 38 without moving.
+Edge 56->58 redirected to 60
+Merging block 58 into block 57...
+Merged blocks 57 and 58.
+Merged 57 and 58 without moving.
+Merging block 61 into block 60...
+Merged blocks 60 and 61.
+Merged 60 and 61 without moving.
+Removing jump 477.
+Merging block 62 into block 60...
+Merged blocks 60 and 62.
+Merged 60 and 62 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -100 [0xffffffffffffff9c])) [0 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) dictionaryattacklockreset.c:58 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) dictionaryattacklockreset.c:58 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.5390+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:58 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) dictionaryattacklockreset.c:59 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 tssContext+0 S8 A64])
+        (const_int 0 [0])) dictionaryattacklockreset.c:61 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 password+0 S8 A64])
+        (const_int 0 [0])) dictionaryattacklockreset.c:63 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -84 [0xffffffffffffffac])) [0 sessionHandle0+0 S4 A32])
+        (const_int 1073741833 [0x40000009])) dictionaryattacklockreset.c:64 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 sessionAttributes0+0 S4 A64])
+        (const_int 0 [0])) dictionaryattacklockreset.c:65 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -76 [0xffffffffffffffb4])) [0 sessionHandle1+0 S4 A32])
+        (const_int 1073741831 [0x40000007])) dictionaryattacklockreset.c:66 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 sessionAttributes1+0 S4 A64])
+        (const_int 0 [0])) dictionaryattacklockreset.c:67 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -68 [0xffffffffffffffbc])) [0 sessionHandle2+0 S4 A32])
+        (const_int 1073741831 [0x40000007])) dictionaryattacklockreset.c:68 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -64 [0xffffffffffffffc0])) [0 sessionAttributes2+0 S4 A64])
+        (const_int 0 [0])) dictionaryattacklockreset.c:69 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:DI 87 [ D.5382 ])
+        (mem/f/c:DI (symbol_ref:DI ("stdout") [flags 0x40]  <var_decl 0x7f38632e15a0 stdout>) [0 stdout+0 S8 A64])) dictionaryattacklockreset.c:71 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 2 cx)
+        (const_int 0 [0])) dictionaryattacklockreset.c:71 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) dictionaryattacklockreset.c:71 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) dictionaryattacklockreset.c:71 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.5382 ])) dictionaryattacklockreset.c:71 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("setvbuf") [flags 0x41]  <function_decl 0x7f38633211b0 setvbuf>) [0 setvbuf S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:71 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 23 22 24 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f3862dc2cf0 *.LC0>)) dictionaryattacklockreset.c:72 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) dictionaryattacklockreset.c:72 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) dictionaryattacklockreset.c:72 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7f3863195000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:72 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 27 26 28 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) dictionaryattacklockreset.c:75 -1
+     (nil))
+(jump_insn 28 27 29 2 (set (pc)
+        (label_ref 357)) dictionaryattacklockreset.c:75 -1
+     (nil)
+ -> 357)
+(barrier 29 28 363)
+(code_label 363 29 30 4 28 "" [1 uses])
+(note 30 363 31 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 4 (set (reg:SI 166)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:76 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:DI 88 [ D.5383 ])
+        (sign_extend:DI (reg:SI 166))) dictionaryattacklockreset.c:76 -1
+     (nil))
+(insn 33 32 34 4 (parallel [
+            (set (reg:DI 89 [ D.5383 ])
+                (ashift:DI (reg:DI 88 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:76 -1
+     (nil))
+(insn 34 33 35 4 (set (reg/f:DI 167)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:76 -1
+     (nil))
+(insn 35 34 36 4 (parallel [
+            (set (reg/f:DI 90 [ D.5384 ])
+                (plus:DI (reg:DI 89 [ D.5383 ])
+                    (reg/f:DI 167)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:76 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 89 [ D.5383 ]))
+        (nil)))
+(insn 36 35 37 4 (set (reg/f:DI 91 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 90 [ D.5384 ]) [0 *_45+0 S8 A64])) dictionaryattacklockreset.c:76 -1
+     (nil))
+(insn 37 36 38 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f3862dc2d80 *.LC1>)) dictionaryattacklockreset.c:76 -1
+     (nil))
+(insn 38 37 39 4 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ D.5385 ])) dictionaryattacklockreset.c:76 -1
+     (nil))
+(call_insn/i 39 38 40 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f38632290d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:76 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 40 39 41 4 (set (reg:SI 92 [ D.5386 ])
+        (reg:SI 0 ax)) dictionaryattacklockreset.c:76 -1
+     (nil))
+(insn 41 40 42 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.5386 ])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:76 -1
+     (nil))
+(jump_insn 42 41 43 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 67)
+            (pc))) dictionaryattacklockreset.c:76 -1
+     (nil)
+ -> 67)
+(note 43 42 44 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:77 -1
+     (nil))
+(insn 45 44 46 5 (set (reg:SI 168)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:78 -1
+     (nil))
+(insn 46 45 47 5 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 168)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 argc+0 S4 A32]))) dictionaryattacklockreset.c:78 -1
+     (nil))
+(jump_insn 47 46 48 5 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 58)
+            (pc))) dictionaryattacklockreset.c:78 -1
+     (nil)
+ -> 58)
+(note 48 47 49 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 6 (set (reg:SI 169)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:79 -1
+     (nil))
+(insn 50 49 51 6 (set (reg:DI 93 [ D.5383 ])
+        (sign_extend:DI (reg:SI 169))) dictionaryattacklockreset.c:79 -1
+     (nil))
+(insn 51 50 52 6 (parallel [
+            (set (reg:DI 94 [ D.5383 ])
+                (ashift:DI (reg:DI 93 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:79 -1
+     (nil))
+(insn 52 51 53 6 (set (reg/f:DI 170)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:79 -1
+     (nil))
+(insn 53 52 54 6 (parallel [
+            (set (reg/f:DI 95 [ D.5384 ])
+                (plus:DI (reg:DI 94 [ D.5383 ])
+                    (reg/f:DI 170)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:79 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 94 [ D.5383 ]))
+        (nil)))
+(insn 54 53 55 6 (set (reg/f:DI 171)
+        (mem/f:DI (reg/f:DI 95 [ D.5384 ]) [0 *_51+0 S8 A64])) dictionaryattacklockreset.c:79 -1
+     (nil))
+(insn 55 54 56 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 password+0 S8 A64])
+        (reg/f:DI 171)) dictionaryattacklockreset.c:79 -1
+     (nil))
+(jump_insn 56 55 57 6 (set (pc)
+        (label_ref:DI 354)) 654 {jump}
+     (nil)
+ -> 354)
+(barrier 57 56 58)
+(code_label 58 57 59 7 4 "" [1 uses])
+(note 59 58 60 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f3862dc2e10 *.LC2>)) dictionaryattacklockreset.c:82 -1
+     (nil))
+(call_insn 61 60 62 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:82 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 62 61 65 7 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:83 -1
+     (nil)
+    (nil))
+(jump_insn 65 62 66 7 (set (pc)
+        (label_ref 354)) -1
+     (nil)
+ -> 354)
+(barrier 66 65 67)
+(code_label 67 66 68 9 3 "" [1 uses])
+(note 68 67 69 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 69 68 70 9 (set (reg:SI 172)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:86 -1
+     (nil))
+(insn 70 69 71 9 (set (reg:DI 96 [ D.5383 ])
+        (sign_extend:DI (reg:SI 172))) dictionaryattacklockreset.c:86 -1
+     (nil))
+(insn 71 70 72 9 (parallel [
+            (set (reg:DI 97 [ D.5383 ])
+                (ashift:DI (reg:DI 96 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:86 -1
+     (nil))
+(insn 72 71 73 9 (set (reg/f:DI 173)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:86 -1
+     (nil))
+(insn 73 72 74 9 (parallel [
+            (set (reg/f:DI 98 [ D.5384 ])
+                (plus:DI (reg:DI 97 [ D.5383 ])
+                    (reg/f:DI 173)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:86 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 97 [ D.5383 ]))
+        (nil)))
+(insn 74 73 75 9 (set (reg/f:DI 99 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 98 [ D.5384 ]) [0 *_57+0 S8 A64])) dictionaryattacklockreset.c:86 -1
+     (nil))
+(insn 75 74 76 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f3862dc2ea0 *.LC3>)) dictionaryattacklockreset.c:86 -1
+     (nil))
+(insn 76 75 77 9 (set (reg:DI 5 di)
+        (reg/f:DI 99 [ D.5385 ])) dictionaryattacklockreset.c:86 -1
+     (nil))
+(call_insn/i 77 76 78 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f38632290d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:86 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 78 77 79 9 (set (reg:SI 100 [ D.5386 ])
+        (reg:SI 0 ax)) dictionaryattacklockreset.c:86 -1
+     (nil))
+(insn 79 78 80 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 100 [ D.5386 ])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:86 -1
+     (nil))
+(jump_insn 80 79 81 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 145)
+            (pc))) dictionaryattacklockreset.c:86 -1
+     (nil)
+ -> 145)
+(note 81 80 82 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 82 81 83 10 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:87 -1
+     (nil))
+(insn 83 82 84 10 (set (reg:SI 174)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:88 -1
+     (nil))
+(insn 84 83 85 10 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 174)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 argc+0 S4 A32]))) dictionaryattacklockreset.c:88 -1
+     (nil))
+(jump_insn 85 84 86 10 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 101)
+            (pc))) dictionaryattacklockreset.c:88 -1
+     (nil)
+ -> 101)
+(note 86 85 87 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 87 86 88 11 (set (reg:SI 175)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:89 -1
+     (nil))
+(insn 88 87 89 11 (set (reg:DI 101 [ D.5383 ])
+        (sign_extend:DI (reg:SI 175))) dictionaryattacklockreset.c:89 -1
+     (nil))
+(insn 89 88 90 11 (parallel [
+            (set (reg:DI 102 [ D.5383 ])
+                (ashift:DI (reg:DI 101 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:89 -1
+     (nil))
+(insn 90 89 91 11 (set (reg/f:DI 176)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:89 -1
+     (nil))
+(insn 91 90 92 11 (parallel [
+            (set (reg/f:DI 103 [ D.5384 ])
+                (plus:DI (reg:DI 102 [ D.5383 ])
+                    (reg/f:DI 176)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:89 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 102 [ D.5383 ]))
+        (nil)))
+(insn 92 91 93 11 (set (reg/f:DI 104 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 103 [ D.5384 ]) [0 *_63+0 S8 A64])) dictionaryattacklockreset.c:89 -1
+     (nil))
+(insn 93 92 94 11 (parallel [
+            (set (reg:DI 177)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -84 [0xffffffffffffffac])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:89 -1
+     (nil))
+(insn 94 93 95 11 (set (reg:DI 1 dx)
+        (reg:DI 177)) dictionaryattacklockreset.c:89 -1
+     (nil))
+(insn 95 94 96 11 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f3862dc2f30 *.LC4>)) dictionaryattacklockreset.c:89 -1
+     (nil))
+(insn 96 95 97 11 (set (reg:DI 5 di)
+        (reg/f:DI 104 [ D.5385 ])) dictionaryattacklockreset.c:89 -1
+     (nil))
+(insn 97 96 98 11 (set (reg:QI 0 ax)
+        (const_int 0 [0])) dictionaryattacklockreset.c:89 -1
+     (nil))
+(call_insn 98 97 99 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3863232ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:89 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 99 98 100 11 (set (pc)
+        (label_ref 106)) -1
+     (nil)
+ -> 106)
+(barrier 100 99 101)
+(code_label 101 100 102 12 8 "" [1 uses])
+(note 102 101 103 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 103 102 104 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f3862dd6000 *.LC5>)) dictionaryattacklockreset.c:92 -1
+     (nil))
+(call_insn 104 103 105 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:92 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 105 104 106 12 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:93 -1
+     (nil)
+    (nil))
+(code_label 106 105 107 13 9 "" [1 uses])
+(note 107 106 108 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 108 107 109 13 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:95 -1
+     (nil))
+(insn 109 108 110 13 (set (reg:SI 178)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:96 -1
+     (nil))
+(insn 110 109 111 13 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 178)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 argc+0 S4 A32]))) dictionaryattacklockreset.c:96 -1
+     (nil))
+(jump_insn 111 110 112 13 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 136)
+            (pc))) dictionaryattacklockreset.c:96 -1
+     (nil)
+ -> 136)
+(note 112 111 113 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 113 112 114 14 (set (reg:SI 179)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:97 -1
+     (nil))
+(insn 114 113 115 14 (set (reg:DI 105 [ D.5383 ])
+        (sign_extend:DI (reg:SI 179))) dictionaryattacklockreset.c:97 -1
+     (nil))
+(insn 115 114 116 14 (parallel [
+            (set (reg:DI 106 [ D.5383 ])
+                (ashift:DI (reg:DI 105 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:97 -1
+     (nil))
+(insn 116 115 117 14 (set (reg/f:DI 180)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:97 -1
+     (nil))
+(insn 117 116 118 14 (parallel [
+            (set (reg/f:DI 107 [ D.5384 ])
+                (plus:DI (reg:DI 106 [ D.5383 ])
+                    (reg/f:DI 180)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:97 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 106 [ D.5383 ]))
+        (nil)))
+(insn 118 117 119 14 (set (reg/f:DI 108 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 107 [ D.5384 ]) [0 *_71+0 S8 A64])) dictionaryattacklockreset.c:97 -1
+     (nil))
+(insn 119 118 120 14 (parallel [
+            (set (reg:DI 181)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -80 [0xffffffffffffffb0])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:97 -1
+     (nil))
+(insn 120 119 121 14 (set (reg:DI 1 dx)
+        (reg:DI 181)) dictionaryattacklockreset.c:97 -1
+     (nil))
+(insn 121 120 122 14 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f3862dc2f30 *.LC4>)) dictionaryattacklockreset.c:97 -1
+     (nil))
+(insn 122 121 123 14 (set (reg:DI 5 di)
+        (reg/f:DI 108 [ D.5385 ])) dictionaryattacklockreset.c:97 -1
+     (nil))
+(insn 123 122 124 14 (set (reg:QI 0 ax)
+        (const_int 0 [0])) dictionaryattacklockreset.c:97 -1
+     (nil))
+(call_insn 124 123 125 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3863232ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:97 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 125 124 126 14 (set (reg:SI 109 [ D.5387 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 sessionAttributes0+0 S4 A64])) dictionaryattacklockreset.c:98 -1
+     (nil))
+(insn 126 125 127 14 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 109 [ D.5387 ])
+            (const_int 255 [0xff]))) dictionaryattacklockreset.c:98 -1
+     (nil))
+(jump_insn 127 126 128 14 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 354)
+            (pc))) dictionaryattacklockreset.c:98 612 {*jcc_1}
+     (nil)
+ -> 354)
+(note 128 127 129 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 129 128 130 15 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f3862dd6090 *.LC6>)) dictionaryattacklockreset.c:99 -1
+     (nil))
+(call_insn 130 129 131 15 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:99 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 131 130 134 15 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:100 -1
+     (nil)
+    (nil))
+(jump_insn 134 131 135 15 (set (pc)
+        (label_ref:DI 354)) 654 {jump}
+     (nil)
+ -> 354)
+(barrier 135 134 136)
+(code_label 136 135 137 17 10 "" [1 uses])
+(note 137 136 138 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 138 137 139 17 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f3862dd6000 *.LC5>)) dictionaryattacklockreset.c:104 -1
+     (nil))
+(call_insn 139 138 140 17 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:104 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 140 139 143 17 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:105 -1
+     (nil)
+    (nil))
+(jump_insn 143 140 144 17 (set (pc)
+        (label_ref 354)) -1
+     (nil)
+ -> 354)
+(barrier 144 143 145)
+(code_label 145 144 146 19 7 "" [1 uses])
+(note 146 145 147 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 147 146 148 19 (set (reg:SI 182)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:108 -1
+     (nil))
+(insn 148 147 149 19 (set (reg:DI 110 [ D.5383 ])
+        (sign_extend:DI (reg:SI 182))) dictionaryattacklockreset.c:108 -1
+     (nil))
+(insn 149 148 150 19 (parallel [
+            (set (reg:DI 111 [ D.5383 ])
+                (ashift:DI (reg:DI 110 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:108 -1
+     (nil))
+(insn 150 149 151 19 (set (reg/f:DI 183)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:108 -1
+     (nil))
+(insn 151 150 152 19 (parallel [
+            (set (reg/f:DI 112 [ D.5384 ])
+                (plus:DI (reg:DI 111 [ D.5383 ])
+                    (reg/f:DI 183)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:108 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 111 [ D.5383 ]))
+        (nil)))
+(insn 152 151 153 19 (set (reg/f:DI 113 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 112 [ D.5384 ]) [0 *_81+0 S8 A64])) dictionaryattacklockreset.c:108 -1
+     (nil))
+(insn 153 152 154 19 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f3862dd6120 *.LC7>)) dictionaryattacklockreset.c:108 -1
+     (nil))
+(insn 154 153 155 19 (set (reg:DI 5 di)
+        (reg/f:DI 113 [ D.5385 ])) dictionaryattacklockreset.c:108 -1
+     (nil))
+(call_insn/i 155 154 156 19 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f38632290d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:108 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 156 155 157 19 (set (reg:SI 114 [ D.5386 ])
+        (reg:SI 0 ax)) dictionaryattacklockreset.c:108 -1
+     (nil))
+(insn 157 156 158 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 114 [ D.5386 ])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:108 -1
+     (nil))
+(jump_insn 158 157 159 19 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 223)
+            (pc))) dictionaryattacklockreset.c:108 -1
+     (nil)
+ -> 223)
+(note 159 158 160 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 160 159 161 20 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:109 -1
+     (nil))
+(insn 161 160 162 20 (set (reg:SI 184)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:110 -1
+     (nil))
+(insn 162 161 163 20 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 184)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 argc+0 S4 A32]))) dictionaryattacklockreset.c:110 -1
+     (nil))
+(jump_insn 163 162 164 20 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 179)
+            (pc))) dictionaryattacklockreset.c:110 -1
+     (nil)
+ -> 179)
+(note 164 163 165 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 165 164 166 21 (set (reg:SI 185)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:111 -1
+     (nil))
+(insn 166 165 167 21 (set (reg:DI 115 [ D.5383 ])
+        (sign_extend:DI (reg:SI 185))) dictionaryattacklockreset.c:111 -1
+     (nil))
+(insn 167 166 168 21 (parallel [
+            (set (reg:DI 116 [ D.5383 ])
+                (ashift:DI (reg:DI 115 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:111 -1
+     (nil))
+(insn 168 167 169 21 (set (reg/f:DI 186)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:111 -1
+     (nil))
+(insn 169 168 170 21 (parallel [
+            (set (reg/f:DI 117 [ D.5384 ])
+                (plus:DI (reg:DI 116 [ D.5383 ])
+                    (reg/f:DI 186)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:111 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 116 [ D.5383 ]))
+        (nil)))
+(insn 170 169 171 21 (set (reg/f:DI 118 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 117 [ D.5384 ]) [0 *_87+0 S8 A64])) dictionaryattacklockreset.c:111 -1
+     (nil))
+(insn 171 170 172 21 (parallel [
+            (set (reg:DI 187)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -76 [0xffffffffffffffb4])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:111 -1
+     (nil))
+(insn 172 171 173 21 (set (reg:DI 1 dx)
+        (reg:DI 187)) dictionaryattacklockreset.c:111 -1
+     (nil))
+(insn 173 172 174 21 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f3862dc2f30 *.LC4>)) dictionaryattacklockreset.c:111 -1
+     (nil))
+(insn 174 173 175 21 (set (reg:DI 5 di)
+        (reg/f:DI 118 [ D.5385 ])) dictionaryattacklockreset.c:111 -1
+     (nil))
+(insn 175 174 176 21 (set (reg:QI 0 ax)
+        (const_int 0 [0])) dictionaryattacklockreset.c:111 -1
+     (nil))
+(call_insn 176 175 177 21 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3863232ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:111 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 177 176 178 21 (set (pc)
+        (label_ref 184)) -1
+     (nil)
+ -> 184)
+(barrier 178 177 179)
+(code_label 179 178 180 22 14 "" [1 uses])
+(note 180 179 181 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 181 180 182 22 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f3862dd61b0 *.LC8>)) dictionaryattacklockreset.c:114 -1
+     (nil))
+(call_insn 182 181 183 22 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:114 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 183 182 184 22 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:115 -1
+     (nil)
+    (nil))
+(code_label 184 183 185 23 15 "" [1 uses])
+(note 185 184 186 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 186 185 187 23 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:117 -1
+     (nil))
+(insn 187 186 188 23 (set (reg:SI 188)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:118 -1
+     (nil))
+(insn 188 187 189 23 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 188)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 argc+0 S4 A32]))) dictionaryattacklockreset.c:118 -1
+     (nil))
+(jump_insn 189 188 190 23 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 214)
+            (pc))) dictionaryattacklockreset.c:118 -1
+     (nil)
+ -> 214)
+(note 190 189 191 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 191 190 192 24 (set (reg:SI 189)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:119 -1
+     (nil))
+(insn 192 191 193 24 (set (reg:DI 119 [ D.5383 ])
+        (sign_extend:DI (reg:SI 189))) dictionaryattacklockreset.c:119 -1
+     (nil))
+(insn 193 192 194 24 (parallel [
+            (set (reg:DI 120 [ D.5383 ])
+                (ashift:DI (reg:DI 119 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:119 -1
+     (nil))
+(insn 194 193 195 24 (set (reg/f:DI 190)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:119 -1
+     (nil))
+(insn 195 194 196 24 (parallel [
+            (set (reg/f:DI 121 [ D.5384 ])
+                (plus:DI (reg:DI 120 [ D.5383 ])
+                    (reg/f:DI 190)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:119 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 120 [ D.5383 ]))
+        (nil)))
+(insn 196 195 197 24 (set (reg/f:DI 122 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 121 [ D.5384 ]) [0 *_95+0 S8 A64])) dictionaryattacklockreset.c:119 -1
+     (nil))
+(insn 197 196 198 24 (parallel [
+            (set (reg:DI 191)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -72 [0xffffffffffffffb8])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:119 -1
+     (nil))
+(insn 198 197 199 24 (set (reg:DI 1 dx)
+        (reg:DI 191)) dictionaryattacklockreset.c:119 -1
+     (nil))
+(insn 199 198 200 24 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f3862dc2f30 *.LC4>)) dictionaryattacklockreset.c:119 -1
+     (nil))
+(insn 200 199 201 24 (set (reg:DI 5 di)
+        (reg/f:DI 122 [ D.5385 ])) dictionaryattacklockreset.c:119 -1
+     (nil))
+(insn 201 200 202 24 (set (reg:QI 0 ax)
+        (const_int 0 [0])) dictionaryattacklockreset.c:119 -1
+     (nil))
+(call_insn 202 201 203 24 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3863232ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:119 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 203 202 204 24 (set (reg:SI 123 [ D.5387 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 sessionAttributes1+0 S4 A64])) dictionaryattacklockreset.c:120 -1
+     (nil))
+(insn 204 203 205 24 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 123 [ D.5387 ])
+            (const_int 255 [0xff]))) dictionaryattacklockreset.c:120 -1
+     (nil))
+(jump_insn 205 204 206 24 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 354)
+            (pc))) dictionaryattacklockreset.c:120 612 {*jcc_1}
+     (nil)
+ -> 354)
+(note 206 205 207 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 207 206 208 25 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f3862dd6240 *.LC9>)) dictionaryattacklockreset.c:121 -1
+     (nil))
+(call_insn 208 207 209 25 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:121 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 209 208 212 25 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:122 -1
+     (nil)
+    (nil))
+(jump_insn 212 209 213 25 (set (pc)
+        (label_ref:DI 354)) 654 {jump}
+     (nil)
+ -> 354)
+(barrier 213 212 214)
+(code_label 214 213 215 27 16 "" [1 uses])
+(note 215 214 216 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 216 215 217 27 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f3862dd61b0 *.LC8>)) dictionaryattacklockreset.c:126 -1
+     (nil))
+(call_insn 217 216 218 27 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:126 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 218 217 221 27 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:127 -1
+     (nil)
+    (nil))
+(jump_insn 221 218 222 27 (set (pc)
+        (label_ref 354)) -1
+     (nil)
+ -> 354)
+(barrier 222 221 223)
+(code_label 223 222 224 29 13 "" [1 uses])
+(note 224 223 225 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 225 224 226 29 (set (reg:SI 192)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:130 -1
+     (nil))
+(insn 226 225 227 29 (set (reg:DI 124 [ D.5383 ])
+        (sign_extend:DI (reg:SI 192))) dictionaryattacklockreset.c:130 -1
+     (nil))
+(insn 227 226 228 29 (parallel [
+            (set (reg:DI 125 [ D.5383 ])
+                (ashift:DI (reg:DI 124 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:130 -1
+     (nil))
+(insn 228 227 229 29 (set (reg/f:DI 193)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:130 -1
+     (nil))
+(insn 229 228 230 29 (parallel [
+            (set (reg/f:DI 126 [ D.5384 ])
+                (plus:DI (reg:DI 125 [ D.5383 ])
+                    (reg/f:DI 193)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:130 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 125 [ D.5383 ]))
+        (nil)))
+(insn 230 229 231 29 (set (reg/f:DI 127 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 126 [ D.5384 ]) [0 *_105+0 S8 A64])) dictionaryattacklockreset.c:130 -1
+     (nil))
+(insn 231 230 232 29 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f3862dd62d0 *.LC10>)) dictionaryattacklockreset.c:130 -1
+     (nil))
+(insn 232 231 233 29 (set (reg:DI 5 di)
+        (reg/f:DI 127 [ D.5385 ])) dictionaryattacklockreset.c:130 -1
+     (nil))
+(call_insn/i 233 232 234 29 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f38632290d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:130 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 234 233 235 29 (set (reg:SI 128 [ D.5386 ])
+        (reg:SI 0 ax)) dictionaryattacklockreset.c:130 -1
+     (nil))
+(insn 235 234 236 29 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 128 [ D.5386 ])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:130 -1
+     (nil))
+(jump_insn 236 235 237 29 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 301)
+            (pc))) dictionaryattacklockreset.c:130 -1
+     (nil)
+ -> 301)
+(note 237 236 238 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 238 237 239 30 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:131 -1
+     (nil))
+(insn 239 238 240 30 (set (reg:SI 194)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:132 -1
+     (nil))
+(insn 240 239 241 30 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 194)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 argc+0 S4 A32]))) dictionaryattacklockreset.c:132 -1
+     (nil))
+(jump_insn 241 240 242 30 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 257)
+            (pc))) dictionaryattacklockreset.c:132 -1
+     (nil)
+ -> 257)
+(note 242 241 243 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 243 242 244 31 (set (reg:SI 195)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:133 -1
+     (nil))
+(insn 244 243 245 31 (set (reg:DI 129 [ D.5383 ])
+        (sign_extend:DI (reg:SI 195))) dictionaryattacklockreset.c:133 -1
+     (nil))
+(insn 245 244 246 31 (parallel [
+            (set (reg:DI 130 [ D.5383 ])
+                (ashift:DI (reg:DI 129 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:133 -1
+     (nil))
+(insn 246 245 247 31 (set (reg/f:DI 196)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:133 -1
+     (nil))
+(insn 247 246 248 31 (parallel [
+            (set (reg/f:DI 131 [ D.5384 ])
+                (plus:DI (reg:DI 130 [ D.5383 ])
+                    (reg/f:DI 196)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:133 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 130 [ D.5383 ]))
+        (nil)))
+(insn 248 247 249 31 (set (reg/f:DI 132 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 131 [ D.5384 ]) [0 *_111+0 S8 A64])) dictionaryattacklockreset.c:133 -1
+     (nil))
+(insn 249 248 250 31 (parallel [
+            (set (reg:DI 197)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -68 [0xffffffffffffffbc])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:133 -1
+     (nil))
+(insn 250 249 251 31 (set (reg:DI 1 dx)
+        (reg:DI 197)) dictionaryattacklockreset.c:133 -1
+     (nil))
+(insn 251 250 252 31 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f3862dc2f30 *.LC4>)) dictionaryattacklockreset.c:133 -1
+     (nil))
+(insn 252 251 253 31 (set (reg:DI 5 di)
+        (reg/f:DI 132 [ D.5385 ])) dictionaryattacklockreset.c:133 -1
+     (nil))
+(insn 253 252 254 31 (set (reg:QI 0 ax)
+        (const_int 0 [0])) dictionaryattacklockreset.c:133 -1
+     (nil))
+(call_insn 254 253 255 31 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3863232ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:133 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(jump_insn 255 254 256 31 (set (pc)
+        (label_ref 262)) -1
+     (nil)
+ -> 262)
+(barrier 256 255 257)
+(code_label 257 256 258 32 20 "" [1 uses])
+(note 258 257 259 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 259 258 260 32 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f3862dd6360 *.LC11>)) dictionaryattacklockreset.c:136 -1
+     (nil))
+(call_insn 260 259 261 32 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:136 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 261 260 262 32 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:137 -1
+     (nil)
+    (nil))
+(code_label 262 261 263 33 21 "" [1 uses])
+(note 263 262 264 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 264 263 265 33 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:139 -1
+     (nil))
+(insn 265 264 266 33 (set (reg:SI 198)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:140 -1
+     (nil))
+(insn 266 265 267 33 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 198)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 argc+0 S4 A32]))) dictionaryattacklockreset.c:140 -1
+     (nil))
+(jump_insn 267 266 268 33 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 292)
+            (pc))) dictionaryattacklockreset.c:140 -1
+     (nil)
+ -> 292)
+(note 268 267 269 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 269 268 270 34 (set (reg:SI 199)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:141 -1
+     (nil))
+(insn 270 269 271 34 (set (reg:DI 133 [ D.5383 ])
+        (sign_extend:DI (reg:SI 199))) dictionaryattacklockreset.c:141 -1
+     (nil))
+(insn 271 270 272 34 (parallel [
+            (set (reg:DI 134 [ D.5383 ])
+                (ashift:DI (reg:DI 133 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:141 -1
+     (nil))
+(insn 272 271 273 34 (set (reg/f:DI 200)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:141 -1
+     (nil))
+(insn 273 272 274 34 (parallel [
+            (set (reg/f:DI 135 [ D.5384 ])
+                (plus:DI (reg:DI 134 [ D.5383 ])
+                    (reg/f:DI 200)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:141 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 134 [ D.5383 ]))
+        (nil)))
+(insn 274 273 275 34 (set (reg/f:DI 136 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 135 [ D.5384 ]) [0 *_119+0 S8 A64])) dictionaryattacklockreset.c:141 -1
+     (nil))
+(insn 275 274 276 34 (parallel [
+            (set (reg:DI 201)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -64 [0xffffffffffffffc0])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:141 -1
+     (nil))
+(insn 276 275 277 34 (set (reg:DI 1 dx)
+        (reg:DI 201)) dictionaryattacklockreset.c:141 -1
+     (nil))
+(insn 277 276 278 34 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f3862dc2f30 *.LC4>)) dictionaryattacklockreset.c:141 -1
+     (nil))
+(insn 278 277 279 34 (set (reg:DI 5 di)
+        (reg/f:DI 136 [ D.5385 ])) dictionaryattacklockreset.c:141 -1
+     (nil))
+(insn 279 278 280 34 (set (reg:QI 0 ax)
+        (const_int 0 [0])) dictionaryattacklockreset.c:141 -1
+     (nil))
+(call_insn 280 279 281 34 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("*__isoc99_sscanf") [flags 0x41]  <function_decl 0x7f3863232ca8 sscanf>) [0 __builtin_sscanf S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:141 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 281 280 282 34 (set (reg:SI 137 [ D.5387 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -64 [0xffffffffffffffc0])) [0 sessionAttributes2+0 S4 A64])) dictionaryattacklockreset.c:142 -1
+     (nil))
+(insn 282 281 283 34 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 137 [ D.5387 ])
+            (const_int 255 [0xff]))) dictionaryattacklockreset.c:142 -1
+     (nil))
+(jump_insn 283 282 284 34 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 354)
+            (pc))) dictionaryattacklockreset.c:142 612 {*jcc_1}
+     (nil)
+ -> 354)
+(note 284 283 285 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 285 284 286 35 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7f3862dd63f0 *.LC12>)) dictionaryattacklockreset.c:143 -1
+     (nil))
+(call_insn 286 285 287 35 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:143 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 287 286 290 35 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:144 -1
+     (nil)
+    (nil))
+(jump_insn 290 287 291 35 (set (pc)
+        (label_ref:DI 354)) 654 {jump}
+     (nil)
+ -> 354)
+(barrier 291 290 292)
+(code_label 292 291 293 37 22 "" [1 uses])
+(note 293 292 294 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 294 293 295 37 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f3862dd6360 *.LC11>)) dictionaryattacklockreset.c:148 -1
+     (nil))
+(call_insn 295 294 296 37 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:148 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 296 295 299 37 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:149 -1
+     (nil)
+    (nil))
+(jump_insn 299 296 300 37 (set (pc)
+        (label_ref 354)) -1
+     (nil)
+ -> 354)
+(barrier 300 299 301)
+(code_label 301 300 302 39 19 "" [1 uses])
+(note 302 301 303 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 303 302 304 39 (set (reg:SI 202)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:152 -1
+     (nil))
+(insn 304 303 305 39 (set (reg:DI 138 [ D.5383 ])
+        (sign_extend:DI (reg:SI 202))) dictionaryattacklockreset.c:152 -1
+     (nil))
+(insn 305 304 306 39 (parallel [
+            (set (reg:DI 139 [ D.5383 ])
+                (ashift:DI (reg:DI 138 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:152 -1
+     (nil))
+(insn 306 305 307 39 (set (reg/f:DI 203)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:152 -1
+     (nil))
+(insn 307 306 308 39 (parallel [
+            (set (reg/f:DI 140 [ D.5384 ])
+                (plus:DI (reg:DI 139 [ D.5383 ])
+                    (reg/f:DI 203)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:152 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 139 [ D.5383 ]))
+        (nil)))
+(insn 308 307 309 39 (set (reg/f:DI 141 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 140 [ D.5384 ]) [0 *_129+0 S8 A64])) dictionaryattacklockreset.c:152 -1
+     (nil))
+(insn 309 308 310 39 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7f3862dd6480 *.LC13>)) dictionaryattacklockreset.c:152 -1
+     (nil))
+(insn 310 309 311 39 (set (reg:DI 5 di)
+        (reg/f:DI 141 [ D.5385 ])) dictionaryattacklockreset.c:152 -1
+     (nil))
+(call_insn/i 311 310 312 39 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f38632290d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:152 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 312 311 313 39 (set (reg:SI 142 [ D.5386 ])
+        (reg:SI 0 ax)) dictionaryattacklockreset.c:152 -1
+     (nil))
+(insn 313 312 314 39 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 142 [ D.5386 ])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:152 -1
+     (nil))
+(jump_insn 314 313 315 39 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 319)
+            (pc))) dictionaryattacklockreset.c:152 -1
+     (nil)
+ -> 319)
+(note 315 314 316 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(call_insn 316 315 317 40 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:153 -1
+     (nil)
+    (nil))
+(jump_insn 317 316 318 40 (set (pc)
+        (label_ref 354)) -1
+     (nil)
+ -> 354)
+(barrier 318 317 319)
+(code_label 319 318 320 41 25 "" [1 uses])
+(note 320 319 321 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 321 320 322 41 (set (reg:SI 204)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:155 -1
+     (nil))
+(insn 322 321 323 41 (set (reg:DI 143 [ D.5383 ])
+        (sign_extend:DI (reg:SI 204))) dictionaryattacklockreset.c:155 -1
+     (nil))
+(insn 323 322 324 41 (parallel [
+            (set (reg:DI 144 [ D.5383 ])
+                (ashift:DI (reg:DI 143 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:155 -1
+     (nil))
+(insn 324 323 325 41 (set (reg/f:DI 205)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:155 -1
+     (nil))
+(insn 325 324 326 41 (parallel [
+            (set (reg/f:DI 145 [ D.5384 ])
+                (plus:DI (reg:DI 144 [ D.5383 ])
+                    (reg/f:DI 205)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:155 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 144 [ D.5383 ]))
+        (nil)))
+(insn 326 325 327 41 (set (reg/f:DI 146 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 145 [ D.5384 ]) [0 *_135+0 S8 A64])) dictionaryattacklockreset.c:155 -1
+     (nil))
+(insn 327 326 328 41 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f3862dd6510 *.LC14>)) dictionaryattacklockreset.c:155 -1
+     (nil))
+(insn 328 327 329 41 (set (reg:DI 5 di)
+        (reg/f:DI 146 [ D.5385 ])) dictionaryattacklockreset.c:155 -1
+     (nil))
+(call_insn/i 329 328 330 41 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f38632290d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:155 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 330 329 331 41 (set (reg:SI 147 [ D.5386 ])
+        (reg:SI 0 ax)) dictionaryattacklockreset.c:155 -1
+     (nil))
+(insn 331 330 332 41 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 147 [ D.5386 ])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:155 -1
+     (nil))
+(jump_insn 332 331 333 41 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 341)
+            (pc))) dictionaryattacklockreset.c:155 -1
+     (nil)
+ -> 341)
+(note 333 332 334 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 334 333 335 42 (set (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f3862ff1090 verbose>) [0 verbose+0 S4 A32])
+        (const_int 1 [0x1])) dictionaryattacklockreset.c:156 -1
+     (nil))
+(insn 335 334 336 42 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7f3862dd65a0 *.LC15>)) dictionaryattacklockreset.c:157 -1
+     (nil))
+(insn 336 335 337 42 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) dictionaryattacklockreset.c:157 -1
+     (nil))
+(insn 337 336 338 42 (set (reg:DI 5 di)
+        (const_int 0 [0])) dictionaryattacklockreset.c:157 -1
+     (nil))
+(call_insn 338 337 339 42 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7f3863195000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:157 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(jump_insn 339 338 340 42 (set (pc)
+        (label_ref 354)) -1
+     (nil)
+ -> 354)
+(barrier 340 339 341)
+(code_label 341 340 342 43 26 "" [1 uses])
+(note 342 341 343 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(insn 343 342 344 43 (set (reg:SI 206)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:160 -1
+     (nil))
+(insn 344 343 345 43 (set (reg:DI 148 [ D.5383 ])
+        (sign_extend:DI (reg:SI 206))) dictionaryattacklockreset.c:160 -1
+     (nil))
+(insn 345 344 346 43 (parallel [
+            (set (reg:DI 149 [ D.5383 ])
+                (ashift:DI (reg:DI 148 [ D.5383 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:160 -1
+     (nil))
+(insn 346 345 347 43 (set (reg/f:DI 207)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])) dictionaryattacklockreset.c:160 -1
+     (nil))
+(insn 347 346 348 43 (parallel [
+            (set (reg/f:DI 150 [ D.5384 ])
+                (plus:DI (reg:DI 149 [ D.5383 ])
+                    (reg/f:DI 207)))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:160 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 argv+0 S8 A64])
+            (reg:DI 149 [ D.5383 ]))
+        (nil)))
+(insn 348 347 349 43 (set (reg/f:DI 151 [ D.5385 ])
+        (mem/f:DI (reg/f:DI 150 [ D.5384 ]) [0 *_142+0 S8 A64])) dictionaryattacklockreset.c:160 -1
+     (nil))
+(insn 349 348 350 43 (set (reg:DI 4 si)
+        (reg/f:DI 151 [ D.5385 ])) dictionaryattacklockreset.c:160 -1
+     (nil))
+(insn 350 349 351 43 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7f3862dd6630 *.LC16>)) dictionaryattacklockreset.c:160 -1
+     (nil))
+(insn 351 350 352 43 (set (reg:QI 0 ax)
+        (const_int 0 [0])) dictionaryattacklockreset.c:160 -1
+     (nil))
+(call_insn 352 351 353 43 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f386322fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:160 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(call_insn 353 352 354 43 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f386319e000 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:161 -1
+     (nil)
+    (nil))
+(code_label 354 353 355 44 6 "" [13 uses])
+(note 355 354 356 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(insn 356 355 357 44 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:75 -1
+     (nil))
+(code_label 357 356 358 45 2 "" [1 uses])
+(note 358 357 359 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 359 358 360 45 (set (reg:SI 208)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 i+0 S4 A32])) dictionaryattacklockreset.c:75 -1
+     (nil))
+(insn 360 359 361 45 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 208)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 argc+0 S4 A32]))) dictionaryattacklockreset.c:75 -1
+     (nil))
+(jump_insn 361 360 362 45 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 366)
+            (pc))) dictionaryattacklockreset.c:75 -1
+     (nil)
+ -> 366)
+(note 362 361 364 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(insn 364 362 365 46 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:75 -1
+     (nil))
+(jump_insn 365 364 366 46 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 363)
+            (pc))) dictionaryattacklockreset.c:75 -1
+     (nil)
+ -> 363)
+(code_label 366 365 367 47 27 "" [1 uses])
+(note 367 366 368 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(insn 368 367 369 47 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:164 -1
+     (nil))
+(jump_insn 369 368 370 47 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 372)
+            (pc))) dictionaryattacklockreset.c:164 -1
+     (nil)
+ -> 372)
+(note 370 369 371 48 [bb 48] NOTE_INSN_BASIC_BLOCK)
+(insn 371 370 372 48 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 in.lockHandle+0 S4 A64])
+        (const_int 1073741834 [0x4000000a])) dictionaryattacklockreset.c:165 -1
+     (nil))
+(code_label 372 371 373 49 29 "" [1 uses])
+(note 373 372 374 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(insn 374 373 375 49 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:168 -1
+     (nil))
+(jump_insn 375 374 376 49 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 382)
+            (pc))) dictionaryattacklockreset.c:168 -1
+     (nil)
+ -> 382)
+(note 376 375 377 50 [bb 50] NOTE_INSN_BASIC_BLOCK)
+(insn 377 376 378 50 (parallel [
+            (set (reg:DI 209)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:169 -1
+     (nil))
+(insn 378 377 379 50 (set (reg:DI 5 di)
+        (reg:DI 209)) dictionaryattacklockreset.c:169 -1
+     (nil))
+(call_insn 379 378 380 50 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Create") [flags 0x41]  <function_decl 0x7f386318dca8 TSS_Create>) [0 TSS_Create S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:169 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 380 379 381 50 (set (reg:SI 210)
+        (reg:SI 0 ax)) dictionaryattacklockreset.c:169 -1
+     (nil))
+(insn 381 380 382 50 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+        (reg:SI 210)) dictionaryattacklockreset.c:169 -1
+     (nil))
+(code_label 382 381 383 51 30 "" [1 uses])
+(note 383 382 384 51 [bb 51] NOTE_INSN_BASIC_BLOCK)
+(insn 384 383 385 51 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:172 -1
+     (nil))
+(jump_insn 385 384 386 51 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 418)
+            (pc))) dictionaryattacklockreset.c:172 -1
+     (nil)
+ -> 418)
+(note 386 385 387 52 [bb 52] NOTE_INSN_BASIC_BLOCK)
+(insn 387 386 388 52 (set (reg:SI 152 [ D.5387 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -64 [0xffffffffffffffc0])) [0 sessionAttributes2+0 S4 A64])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 388 387 389 52 (set (reg:SI 153 [ D.5387 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -68 [0xffffffffffffffbc])) [0 sessionHandle2+0 S4 A32])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 389 388 390 52 (set (reg:SI 154 [ D.5387 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 sessionAttributes1+0 S4 A64])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 390 389 391 52 (set (reg:SI 155 [ D.5387 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -76 [0xffffffffffffffb4])) [0 sessionHandle1+0 S4 A32])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 391 390 392 52 (set (reg:SI 156 [ D.5387 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 sessionAttributes0+0 S4 A64])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 392 391 393 52 (set (reg:SI 157 [ D.5387 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -84 [0xffffffffffffffac])) [0 sessionHandle0+0 S4 A32])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 393 392 394 52 (set (reg/f:DI 158 [ D.5388 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 tssContext+0 S8 A64])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 394 393 395 52 (parallel [
+            (set (reg:DI 211)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -96 [0xffffffffffffffa0])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 395 394 396 52 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 396 395 397 52 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 0 [0])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 397 396 398 52 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 398 397 399 52 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 1073741831 [0x40000007])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(insn 399 398 400 52 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 152 [ D.5387 ])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 40 [0x28])
+        (nil)))
+(insn 400 399 401 52 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 48 [0x30])
+        (nil)))
+(insn 401 400 402 52 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 153 [ D.5387 ])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 56 [0x38])
+        (nil)))
+(insn 402 401 403 52 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 154 [ D.5387 ])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 64 [0x40])
+        (nil)))
+(insn 403 402 404 52 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 72 [0x48])
+        (nil)))
+(insn 404 403 405 52 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 155 [ D.5387 ])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 80 [0x50])
+        (nil)))
+(insn 405 404 406 52 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 156 [ D.5387 ])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 88 [0x58])
+        (nil)))
+(insn 406 405 407 52 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 password+0 S8 A64])) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 96 [0x60])
+        (nil)))
+(insn 407 406 408 52 (set (reg:SI 38 r9)
+        (reg:SI 157 [ D.5387 ])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 408 407 409 52 (set (reg:SI 37 r8)
+        (const_int 313 [0x139])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 409 408 410 52 (set (reg:DI 2 cx)
+        (const_int 0 [0])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 410 409 411 52 (set (reg:DI 1 dx)
+        (reg:DI 211)) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 411 410 412 52 (set (reg:DI 4 si)
+        (const_int 0 [0])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 412 411 413 52 (set (reg:DI 5 di)
+        (reg/f:DI 158 [ D.5388 ])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 413 412 414 52 (set (reg:QI 0 ax)
+        (const_int 0 [0])) dictionaryattacklockreset.c:173 -1
+     (nil))
+(call_insn 414 413 415 52 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Execute") [flags 0x41]  <function_decl 0x7f386318de58 TSS_Execute>) [0 TSS_Execute S1 A8])
+            (const_int 96 [0x60]))) dictionaryattacklockreset.c:173 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (expr_list:SI (use (reg:SI 37 r8))
+                            (expr_list:SI (use (reg:SI 38 r9))
+                                (nil)))))))))
+(insn 415 414 416 52 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 96 [0x60])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 416 415 417 52 (set (reg:SI 212)
+        (reg:SI 0 ax)) dictionaryattacklockreset.c:173 -1
+     (nil))
+(insn 417 416 418 52 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+        (reg:SI 212)) dictionaryattacklockreset.c:173 -1
+     (nil))
+(code_label 418 417 419 53 31 "" [1 uses])
+(note 419 418 420 53 [bb 53] NOTE_INSN_BASIC_BLOCK)
+(insn 420 419 421 53 (set (reg/f:DI 159 [ D.5388 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 tssContext+0 S8 A64])) dictionaryattacklockreset.c:184 -1
+     (nil))
+(insn 421 420 422 53 (set (reg:DI 5 di)
+        (reg/f:DI 159 [ D.5388 ])) dictionaryattacklockreset.c:184 -1
+     (nil))
+(call_insn 422 421 423 53 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Delete") [flags 0x41]  <function_decl 0x7f386318dd80 TSS_Delete>) [0 TSS_Delete S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:184 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 423 422 424 53 (set (reg:SI 213)
+        (reg:SI 0 ax)) dictionaryattacklockreset.c:184 -1
+     (nil))
+(insn 424 423 425 53 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -52 [0xffffffffffffffcc])) [0 rc1+0 S4 A32])
+        (reg:SI 213)) dictionaryattacklockreset.c:184 -1
+     (nil))
+(insn 425 424 426 53 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:185 -1
+     (nil))
+(jump_insn 426 425 427 53 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 430)
+            (pc))) dictionaryattacklockreset.c:185 -1
+     (nil)
+ -> 430)
+(note 427 426 428 54 [bb 54] NOTE_INSN_BASIC_BLOCK)
+(insn 428 427 429 54 (set (reg:SI 214)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -52 [0xffffffffffffffcc])) [0 rc1+0 S4 A32])) dictionaryattacklockreset.c:186 -1
+     (nil))
+(insn 429 428 430 54 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+        (reg:SI 214)) dictionaryattacklockreset.c:186 -1
+     (nil))
+(code_label 430 429 431 55 32 "" [1 uses])
+(note 431 430 432 55 [bb 55] NOTE_INSN_BASIC_BLOCK)
+(insn 432 431 433 55 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:189 -1
+     (nil))
+(jump_insn 433 432 434 55 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 445)
+            (pc))) dictionaryattacklockreset.c:189 -1
+     (nil)
+ -> 445)
+(note 434 433 435 56 [bb 56] NOTE_INSN_BASIC_BLOCK)
+(insn 435 434 436 56 (set (reg:SI 160 [ D.5386 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f3862ff1090 verbose>) [0 verbose+0 S4 A32])) dictionaryattacklockreset.c:190 -1
+     (nil))
+(insn 436 435 437 56 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 160 [ D.5386 ])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:190 -1
+     (nil))
+(jump_insn 437 436 438 56 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 471)
+            (pc))) dictionaryattacklockreset.c:190 612 {*jcc_1}
+     (nil)
+ -> 471)
+(note 438 437 439 57 [bb 57] NOTE_INSN_BASIC_BLOCK)
+(insn 439 438 440 57 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7f3862dd66c0 *.LC17>)) dictionaryattacklockreset.c:190 -1
+     (nil))
+(call_insn 440 439 443 57 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:190 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 443 440 444 57 (set (pc)
+        (label_ref 471)) -1
+     (nil)
+ -> 471)
+(barrier 444 443 445)
+(code_label 445 444 446 59 33 "" [1 uses])
+(note 446 445 447 59 [bb 59] NOTE_INSN_BASIC_BLOCK)
+(insn 447 446 448 59 (set (reg:SI 215)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])) dictionaryattacklockreset.c:196 -1
+     (nil))
+(insn 448 447 449 59 (set (reg:SI 4 si)
+        (reg:SI 215)) dictionaryattacklockreset.c:196 -1
+     (nil))
+(insn 449 448 450 59 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7f3862dd6750 *.LC18>)) dictionaryattacklockreset.c:196 -1
+     (nil))
+(insn 450 449 451 59 (set (reg:QI 0 ax)
+        (const_int 0 [0])) dictionaryattacklockreset.c:196 -1
+     (nil))
+(call_insn 451 450 452 59 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f386322fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:196 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 452 451 453 59 (set (reg:SI 216)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])) dictionaryattacklockreset.c:197 -1
+     (nil))
+(insn 453 452 454 59 (parallel [
+            (set (reg:DI 217)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:197 -1
+     (nil))
+(insn 454 453 455 59 (parallel [
+            (set (reg:DI 218)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:197 -1
+     (nil))
+(insn 455 454 456 59 (parallel [
+            (set (reg:DI 219)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])))
+            (clobber (reg:CC 17 flags))
+        ]) dictionaryattacklockreset.c:197 -1
+     (nil))
+(insn 456 455 457 59 (set (reg:SI 2 cx)
+        (reg:SI 216)) dictionaryattacklockreset.c:197 -1
+     (nil))
+(insn 457 456 458 59 (set (reg:DI 1 dx)
+        (reg:DI 217)) dictionaryattacklockreset.c:197 -1
+     (nil))
+(insn 458 457 459 59 (set (reg:DI 4 si)
+        (reg:DI 218)) dictionaryattacklockreset.c:197 -1
+     (nil))
+(insn 459 458 460 59 (set (reg:DI 5 di)
+        (reg:DI 219)) dictionaryattacklockreset.c:197 -1
+     (nil))
+(call_insn 460 459 461 59 (call (mem:QI (symbol_ref:DI ("TSS_ResponseCode_toString") [flags 0x41]  <function_decl 0x7f3863195e58 TSS_ResponseCode_toString>) [0 TSS_ResponseCode_toString S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:197 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 461 460 462 59 (set (reg/f:DI 161 [ D.5389 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 num+0 S8 A64])) dictionaryattacklockreset.c:198 -1
+     (nil))
+(insn 462 461 463 59 (set (reg/f:DI 162 [ D.5389 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 submsg+0 S8 A64])) dictionaryattacklockreset.c:198 -1
+     (nil))
+(insn 463 462 464 59 (set (reg/f:DI 163 [ D.5389 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 msg+0 S8 A64])) dictionaryattacklockreset.c:198 -1
+     (nil))
+(insn 464 463 465 59 (set (reg:DI 2 cx)
+        (reg/f:DI 161 [ D.5389 ])) dictionaryattacklockreset.c:198 -1
+     (nil))
+(insn 465 464 466 59 (set (reg:DI 1 dx)
+        (reg/f:DI 162 [ D.5389 ])) dictionaryattacklockreset.c:198 -1
+     (nil))
+(insn 466 465 467 59 (set (reg:DI 4 si)
+        (reg/f:DI 163 [ D.5389 ])) dictionaryattacklockreset.c:198 -1
+     (nil))
+(insn 467 466 468 59 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7f3862dd67e0 *.LC19>)) dictionaryattacklockreset.c:198 -1
+     (nil))
+(insn 468 467 469 59 (set (reg:QI 0 ax)
+        (const_int 0 [0])) dictionaryattacklockreset.c:198 -1
+     (nil))
+(call_insn 469 468 470 59 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f386322fca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:198 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (nil)))))))
+(insn 470 469 471 59 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])
+        (const_int 1 [0x1])) dictionaryattacklockreset.c:199 -1
+     (nil))
+(code_label 471 470 472 60 35 "" [2 uses])
+(note 472 471 473 60 [bb 60] NOTE_INSN_BASIC_BLOCK)
+(insn 473 472 476 60 (set (reg:SI 164 [ D.5386 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 rc+0 S4 A32])) dictionaryattacklockreset.c:201 -1
+     (nil))
+(insn 476 473 480 60 (set (reg:SI 165 [ <retval> ])
+        (reg:SI 164 [ D.5386 ])) -1
+     (nil))
+(insn 480 476 481 60 (set (reg/i:SI 0 ax)
+        (reg:SI 165 [ <retval> ])) dictionaryattacklockreset.c:202 -1
+     (nil))
+(insn 481 480 482 60 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.5390+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) dictionaryattacklockreset.c:202 -1
+     (nil))
+(jump_insn 482 481 488 60 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 485)
+            (pc))) dictionaryattacklockreset.c:202 -1
+     (nil)
+ -> 485)
+(note 488 482 483 63 [bb 63] NOTE_INSN_BASIC_BLOCK)
+(call_insn 483 488 484 63 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f386319ed80 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:202 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 484 483 485)
+(code_label 485 484 489 64 37 "" [1 uses])
+(note 489 485 486 64 [bb 64] NOTE_INSN_BASIC_BLOCK)
+(insn 486 489 0 64 (use (reg/i:SI 0 ax)) dictionaryattacklockreset.c:202 -1
+     (nil))
+
+;; Function printUsage (printUsage, funcdef_no=3, decl_uid=5213, cgraph_uid=3, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) dictionaryattacklockreset.c:206 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3863232000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:206 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC20") [flags 0x2]  <var_decl 0x7f3862dc26c0 *.LC20>)) dictionaryattacklockreset.c:207 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:207 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) dictionaryattacklockreset.c:208 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3863232000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:208 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC21") [flags 0x2]  <var_decl 0x7f3862defb40 *.LC21>)) dictionaryattacklockreset.c:209 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:209 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) dictionaryattacklockreset.c:210 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3863232000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:210 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC22") [flags 0x2]  <var_decl 0x7f3862defbd0 *.LC22>)) dictionaryattacklockreset.c:211 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:211 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) dictionaryattacklockreset.c:212 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f3863232000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:212 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC23") [flags 0x2]  <var_decl 0x7f3862defc60 *.LC23>)) dictionaryattacklockreset.c:213 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:213 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC24") [flags 0x2]  <var_decl 0x7f3862defcf0 *.LC24>)) dictionaryattacklockreset.c:214 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f3863232360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) dictionaryattacklockreset.c:214 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 23 22 24 2 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) dictionaryattacklockreset.c:215 -1
+     (nil))
+(call_insn 24 23 25 2 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7f3863245000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) dictionaryattacklockreset.c:215 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 25 24 0)

@@ -1,0 +1,2529 @@
+
+;; Function PolicyParameterChecks (PolicyParameterChecks, funcdef_no=2, decl_uid=12857, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 109.
+Merging block 22 into block 21...
+Merged blocks 21 and 22.
+Merged 21 and 22 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])
+        (reg:DI 5 di [ session ])) Policy_spt.c:81 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 authTimeout+0 S8 A64])
+        (reg:DI 4 si [ authTimeout ])) Policy_spt.c:81 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 cpHashA+0 S8 A64])
+        (reg:DI 1 dx [ cpHashA ])) Policy_spt.c:81 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 nonce+0 S8 A64])
+        (reg:DI 2 cx [ nonce ])) Policy_spt.c:81 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 blameNonce+0 S4 A32])
+        (reg:SI 37 r8 [ blameNonce ])) Policy_spt.c:81 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 blameCpHash+0 S4 A32])
+        (reg:SI 38 r9 [ blameCpHash ])) Policy_spt.c:81 -1
+     (nil))
+(note 8 7 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 8 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 nonce+0 S8 A64])
+            (const_int 0 [0]))) Policy_spt.c:83 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) Policy_spt.c:83 -1
+     (nil)
+ -> 33)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 nonce+0 S8 A64])) Policy_spt.c:83 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:HI 88 [ D.13144 ])
+        (mem/j:HI (reg/f:DI 104) [0 nonce_5(D)->t.size+0 S2 A16])) Policy_spt.c:83 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 88 [ D.13144 ])
+            (const_int 0 [0]))) Policy_spt.c:83 -1
+     (nil))
+(jump_insn 17 16 18 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) Policy_spt.c:83 -1
+     (nil)
+ -> 33)
+(note 18 17 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 5 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])) Policy_spt.c:85 -1
+     (nil))
+(insn 20 19 21 5 (parallel [
+            (set (reg/f:DI 89 [ D.13145 ])
+                (plus:DI (reg/f:DI 105)
+                    (const_int 92 [0x5c])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:85 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])
+            (const_int 92 [0x5c]))
+        (nil)))
+(insn 21 20 22 5 (set (reg/f:DI 90 [ D.13145 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 nonce+0 S8 A64])) Policy_spt.c:85 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:DI 4 si)
+        (reg/f:DI 89 [ D.13145 ])) Policy_spt.c:85 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:DI 5 di)
+        (reg/f:DI 90 [ D.13145 ])) Policy_spt.c:85 -1
+     (nil))
+(call_insn 24 23 25 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("MemoryEqual2B") [flags 0x41]  <function_decl 0x7fe129481798 MemoryEqual2B>) [0 MemoryEqual2B S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:85 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 25 24 26 5 (set (reg:SI 91 [ D.13146 ])
+        (reg:SI 0 ax)) Policy_spt.c:85 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13146 ])
+            (const_int 0 [0]))) Policy_spt.c:85 -1
+     (nil))
+(jump_insn 27 26 28 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) Policy_spt.c:85 -1
+     (nil)
+ -> 33)
+(note 28 27 29 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 6 (set (reg:SI 106)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 blameNonce+0 S4 A32])) Policy_spt.c:86 -1
+     (nil))
+(insn 30 29 31 6 (parallel [
+            (set (reg:SI 87 [ D.13143 ])
+                (plus:SI (reg:SI 106)
+                    (const_int 143 [0x8f])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:86 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 blameNonce+0 S4 A32])
+            (const_int 143 [0x8f]))
+        (nil)))
+(jump_insn 31 30 32 6 (set (pc)
+        (label_ref 106)) Policy_spt.c:86 -1
+     (nil)
+ -> 106)
+(barrier 32 31 33)
+(code_label 33 32 34 7 2 "" [3 uses])
+(note 34 33 35 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 authTimeout+0 S8 A64])
+            (const_int 0 [0]))) Policy_spt.c:89 -1
+     (nil))
+(jump_insn 36 35 37 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) Policy_spt.c:89 -1
+     (nil)
+ -> 62)
+(note 37 36 38 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 8 (set (reg:SI 92 [ D.13147 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7fe129364cf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) Policy_spt.c:94 -1
+     (nil))
+(insn 39 38 40 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.13147 ])
+            (const_int 0 [0]))) Policy_spt.c:94 -1
+     (nil))
+(jump_insn 40 39 41 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) Policy_spt.c:94 -1
+     (nil)
+ -> 45)
+(note 41 40 42 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 9 (set (reg:SI 87 [ D.13143 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7fe129364cf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) Policy_spt.c:94 -1
+     (nil))
+(jump_insn 43 42 44 9 (set (pc)
+        (label_ref 106)) Policy_spt.c:94 -1
+     (nil)
+ -> 106)
+(barrier 44 43 45)
+(code_label 45 44 46 10 5 "" [1 uses])
+(note 46 45 47 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 10 (set (reg:DI 93 [ D.13148 ])
+        (mem/c:DI (symbol_ref:DI ("g_time") [flags 0x40]  <var_decl 0x7fe129364510 g_time>) [0 g_time+0 S8 A64])) Policy_spt.c:97 -1
+     (nil))
+(insn 48 47 49 10 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 authTimeout+0 S8 A64])
+            (reg:DI 93 [ D.13148 ]))) Policy_spt.c:97 -1
+     (nil))
+(jump_insn 49 48 50 10 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 56)
+            (pc))) Policy_spt.c:97 -1
+     (nil)
+ -> 56)
+(note 50 49 51 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 51 50 52 11 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])) Policy_spt.c:98 -1
+     (nil))
+(insn 52 51 53 11 (set (reg:SI 94 [ D.13147 ])
+        (mem/j:SI (plus:DI (reg/f:DI 107)
+                (const_int 24 [0x18])) [0 session_8(D)->epoch+0 S4 A64])) Policy_spt.c:98 -1
+     (nil))
+(insn 53 52 54 11 (set (reg:SI 95 [ D.13147 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fe129364ea0 gp>)
+                    (const_int 932 [0x3a4]))) [0 gp.timeEpoch+0 S4 A32])) Policy_spt.c:98 -1
+     (nil))
+(insn 54 53 55 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 94 [ D.13147 ])
+            (reg:SI 95 [ D.13147 ]))) Policy_spt.c:98 -1
+     (nil))
+(jump_insn 55 54 56 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) Policy_spt.c:98 -1
+     (nil)
+ -> 62)
+(code_label 56 55 57 12 6 "" [1 uses])
+(note 57 56 58 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 59 12 (set (reg:SI 108)
+        (mem/c:SI (reg/f:DI 81 virtual-incoming-args) [0 blameExpiration+0 S4 A64])) Policy_spt.c:99 -1
+     (nil))
+(insn 59 58 60 12 (parallel [
+            (set (reg:SI 87 [ D.13143 ])
+                (plus:SI (reg:SI 108)
+                    (const_int 163 [0xa3])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:99 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (reg/f:DI 81 virtual-incoming-args) [0 blameExpiration+0 S4 A64])
+            (const_int 163 [0xa3]))
+        (nil)))
+(jump_insn 60 59 61 12 (set (pc)
+        (label_ref 106)) Policy_spt.c:99 -1
+     (nil)
+ -> 106)
+(barrier 61 60 62)
+(code_label 62 61 63 13 4 "" [2 uses])
+(note 63 62 64 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 65 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 cpHashA+0 S8 A64])
+            (const_int 0 [0]))) Policy_spt.c:102 -1
+     (nil))
+(jump_insn 65 64 66 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 103)
+            (pc))) Policy_spt.c:102 -1
+     (nil)
+ -> 103)
+(note 66 65 67 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 67 66 68 14 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 cpHashA+0 S8 A64])) Policy_spt.c:102 -1
+     (nil))
+(insn 68 67 69 14 (set (reg:HI 96 [ D.13144 ])
+        (mem/j:HI (reg/f:DI 109) [0 cpHashA_23(D)->t.size+0 S2 A16])) Policy_spt.c:102 -1
+     (nil))
+(insn 69 68 70 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 96 [ D.13144 ])
+            (const_int 0 [0]))) Policy_spt.c:102 -1
+     (nil))
+(jump_insn 70 69 71 14 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 103)
+            (pc))) Policy_spt.c:102 -1
+     (nil)
+ -> 103)
+(note 71 70 72 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 15 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 cpHashA+0 S8 A64])) Policy_spt.c:105 -1
+     (nil))
+(insn 73 72 74 15 (set (reg:HI 97 [ D.13144 ])
+        (mem/j:HI (reg/f:DI 110) [0 cpHashA_23(D)->t.size+0 S2 A16])) Policy_spt.c:105 -1
+     (nil))
+(insn 74 73 75 15 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])) Policy_spt.c:105 -1
+     (nil))
+(insn 75 74 76 15 (set (reg:HI 98 [ D.13144 ])
+        (mem/j:HI (plus:DI (reg/f:DI 111)
+                (const_int 196 [0xc4])) [0 session_8(D)->u2.policyDigest.t.size+0 S2 A32])) Policy_spt.c:105 -1
+     (nil))
+(insn 76 75 77 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 97 [ D.13144 ])
+            (reg:HI 98 [ D.13144 ]))) Policy_spt.c:105 -1
+     (nil))
+(jump_insn 77 76 78 15 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 83)
+            (pc))) Policy_spt.c:105 -1
+     (nil)
+ -> 83)
+(note 78 77 79 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 79 78 80 16 (set (reg:SI 112)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 blameCpHash+0 S4 A32])) Policy_spt.c:106 -1
+     (nil))
+(insn 80 79 81 16 (parallel [
+            (set (reg:SI 87 [ D.13143 ])
+                (plus:SI (reg:SI 112)
+                    (const_int 149 [0x95])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:106 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 blameCpHash+0 S4 A32])
+            (const_int 149 [0x95]))
+        (nil)))
+(jump_insn 81 80 82 16 (set (pc)
+        (label_ref 106)) Policy_spt.c:106 -1
+     (nil)
+ -> 106)
+(barrier 82 81 83)
+(code_label 83 82 84 17 8 "" [1 uses])
+(note 84 83 85 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 85 84 86 17 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])) Policy_spt.c:109 -1
+     (nil))
+(insn 86 85 87 17 (set (reg:HI 99 [ D.13144 ])
+        (mem/j:HI (plus:DI (reg/f:DI 113)
+                (const_int 142 [0x8e])) [0 session_8(D)->u1.cpHash.b.size+0 S2 A16])) Policy_spt.c:109 -1
+     (nil))
+(insn 87 86 88 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 99 [ D.13144 ])
+            (const_int 0 [0]))) Policy_spt.c:109 -1
+     (nil))
+(jump_insn 88 87 89 17 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 103)
+            (pc))) Policy_spt.c:109 -1
+     (nil)
+ -> 103)
+(note 89 88 90 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 90 89 91 18 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])) Policy_spt.c:110 -1
+     (nil))
+(insn 91 90 92 18 (parallel [
+            (set (reg/f:DI 100 [ D.13145 ])
+                (plus:DI (reg/f:DI 114)
+                    (const_int 142 [0x8e])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:110 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])
+            (const_int 142 [0x8e]))
+        (nil)))
+(insn 92 91 93 18 (set (reg/f:DI 101 [ D.13145 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 cpHashA+0 S8 A64])) Policy_spt.c:110 -1
+     (nil))
+(insn 93 92 94 18 (set (reg:DI 4 si)
+        (reg/f:DI 100 [ D.13145 ])) Policy_spt.c:110 -1
+     (nil))
+(insn 94 93 95 18 (set (reg:DI 5 di)
+        (reg/f:DI 101 [ D.13145 ])) Policy_spt.c:110 -1
+     (nil))
+(call_insn 95 94 96 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("MemoryEqual2B") [flags 0x41]  <function_decl 0x7fe129481798 MemoryEqual2B>) [0 MemoryEqual2B S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:110 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 96 95 97 18 (set (reg:SI 102 [ D.13146 ])
+        (reg:SI 0 ax)) Policy_spt.c:110 -1
+     (nil))
+(insn 97 96 98 18 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 102 [ D.13146 ])
+            (const_int 0 [0]))) Policy_spt.c:110 -1
+     (nil))
+(jump_insn 98 97 99 18 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 103)
+            (pc))) Policy_spt.c:110 -1
+     (nil)
+ -> 103)
+(note 99 98 100 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 100 99 101 19 (set (reg:SI 87 [ D.13143 ])
+        (const_int 337 [0x151])) Policy_spt.c:111 -1
+     (nil))
+(jump_insn 101 100 102 19 (set (pc)
+        (label_ref 106)) Policy_spt.c:111 -1
+     (nil)
+ -> 106)
+(barrier 102 101 103)
+(code_label 103 102 104 20 7 "" [4 uses])
+(note 104 103 105 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 105 104 106 20 (set (reg:SI 87 [ D.13143 ])
+        (const_int 0 [0])) Policy_spt.c:113 -1
+     (nil))
+(code_label 106 105 107 21 3 "" [5 uses])
+(note 107 106 108 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 108 107 112 21 (set (reg:SI 103 [ <retval> ])
+        (reg:SI 87 [ D.13143 ])) -1
+     (nil))
+(insn 112 108 113 21 (set (reg/i:SI 0 ax)
+        (reg:SI 103 [ <retval> ])) Policy_spt.c:114 -1
+     (nil))
+(insn 113 112 0 21 (use (reg/i:SI 0 ax)) Policy_spt.c:114 -1
+     (nil))
+
+;; Function PolicyContextUpdate (PolicyContextUpdate, funcdef_no=3, decl_uid=12864, cgraph_uid=3, symbol_order=3)
+
+Partition 0: size 232 align 16
+	hashState
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 12->16 redirected to 19
+Edge 14->16 redirected to 19
+Merging block 16 into block 15...
+Merged blocks 15 and 16.
+Merged 15 and 16 without moving.
+Merging block 17 into block 15...
+Merged blocks 15 and 17.
+Merged 15 and 17 without moving.
+Merging block 18 into block 15...
+Merged blocks 15 and 18.
+Merged 15 and 18 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 10 NOTE_INSN_DELETED)
+(note 10 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 10 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -244 [0xffffffffffffff0c])) [0 commandCode+0 S4 A32])
+        (reg:SI 5 di [ commandCode ])) Policy_spt.c:127 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -256 [0xffffffffffffff00])) [0 name+0 S8 A64])
+        (reg:DI 4 si [ name ])) Policy_spt.c:127 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -264 [0xfffffffffffffef8])) [0 ref+0 S8 A64])
+        (reg:DI 1 dx [ ref ])) Policy_spt.c:127 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -272 [0xfffffffffffffef0])) [0 cpHash+0 S8 A64])
+        (reg:DI 2 cx [ cpHash ])) Policy_spt.c:127 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -280 [0xfffffffffffffee8])) [0 policyTimeout+0 S8 A64])
+        (reg:DI 37 r8 [ policyTimeout ])) Policy_spt.c:127 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])
+        (reg:DI 38 r9 [ session ])) Policy_spt.c:127 -1
+     (nil))
+(note 8 7 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 8 12 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13153+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:127 -1
+     (nil))
+(insn 12 9 13 2 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:130 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:HI 87 [ D.13149 ])
+        (mem/j:HI (plus:DI (reg/f:DI 105)
+                (const_int 32 [0x20])) [0 session_6(D)->authHashAlg+0 S2 A64])) Policy_spt.c:130 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 88 [ D.13150 ])
+        (zero_extend:SI (reg:HI 87 [ D.13149 ]))) Policy_spt.c:130 -1
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg:DI 106)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:130 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 4 si)
+        (reg:SI 88 [ D.13150 ])) Policy_spt.c:130 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (reg:DI 106)) Policy_spt.c:130 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHashStart") [flags 0x41]  <function_decl 0x7fe1294a0510 CryptHashStart>) [0 CryptHashStart S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:130 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 19 18 20 2 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:132 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:HI 89 [ D.13149 ])
+        (mem/j:HI (plus:DI (reg/f:DI 107)
+                (const_int 196 [0xc4])) [0 session_6(D)->u2.policyDigest.t.size+0 S2 A32])) Policy_spt.c:132 -1
+     (nil))
+(insn 21 20 22 2 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:132 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:HI 90 [ D.13149 ])
+        (mem/j:HI (plus:DI (reg/f:DI 108)
+                (const_int 32 [0x20])) [0 session_6(D)->authHashAlg+0 S2 A64])) Policy_spt.c:132 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 91 [ D.13150 ])
+        (zero_extend:SI (reg:HI 90 [ D.13149 ]))) Policy_spt.c:132 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 5 di)
+        (reg:SI 91 [ D.13150 ])) Policy_spt.c:132 -1
+     (nil))
+(call_insn 25 24 26 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHashGetDigestSize") [flags 0x41]  <function_decl 0x7fe12949be58 CryptHashGetDigestSize>) [0 CryptHashGetDigestSize S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:132 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 26 25 27 2 (set (reg:HI 92 [ D.13149 ])
+        (reg:HI 0 ax)) Policy_spt.c:132 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 89 [ D.13149 ])
+            (reg:HI 92 [ D.13149 ]))) Policy_spt.c:132 -1
+     (nil))
+(jump_insn 28 27 29 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 35)
+            (pc))) Policy_spt.c:132 -1
+     (nil)
+ -> 35)
+(note 29 28 30 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 4 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) Policy_spt.c:132 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 4 si)
+        (const_int 133 [0x85])) Policy_spt.c:132 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:DI 5 di)
+        (const_int 0 [0])) Policy_spt.c:132 -1
+     (nil))
+(call_insn 33 32 34 4 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fe1293e60d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) Policy_spt.c:132 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 34 33 35)
+(code_label 35 34 36 5 10 "" [1 uses])
+(note 36 35 37 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 5 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:135 -1
+     (nil))
+(insn 38 37 39 5 (parallel [
+            (set (reg/f:DI 93 [ D.13151 ])
+                (plus:DI (reg/f:DI 109)
+                    (const_int 196 [0xc4])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:135 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])
+            (const_int 196 [0xc4]))
+        (nil)))
+(insn 39 38 40 5 (parallel [
+            (set (reg:DI 110)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:135 -1
+     (nil))
+(insn 40 39 41 5 (set (reg:DI 4 si)
+        (reg/f:DI 93 [ D.13151 ])) Policy_spt.c:135 -1
+     (nil))
+(insn 41 40 42 5 (set (reg:DI 5 di)
+        (reg:DI 110)) Policy_spt.c:135 -1
+     (nil))
+(call_insn 42 41 43 5 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7fe1294a0870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Policy_spt.c:135 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 43 42 44 5 (set (reg:DI 94 [ D.13152 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -244 [0xffffffffffffff0c])) [0 commandCode+0 S4 A32]))) Policy_spt.c:137 -1
+     (nil))
+(insn 44 43 45 5 (parallel [
+            (set (reg:DI 111)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:137 -1
+     (nil))
+(insn 45 44 46 5 (set (reg:DI 1 dx)
+        (reg:DI 94 [ D.13152 ])) Policy_spt.c:137 -1
+     (nil))
+(insn 46 45 47 5 (set (reg:SI 4 si)
+        (const_int 4 [0x4])) Policy_spt.c:137 -1
+     (nil))
+(insn 47 46 48 5 (set (reg:DI 5 di)
+        (reg:DI 111)) Policy_spt.c:137 -1
+     (nil))
+(call_insn 48 47 49 5 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdateInt") [flags 0x41]  <function_decl 0x7fe1294a0a20 CryptDigestUpdateInt>) [0 CryptDigestUpdateInt S1 A8])
+        (const_int 0 [0])) Policy_spt.c:137 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 49 48 50 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -256 [0xffffffffffffff00])) [0 name+0 S8 A64])
+            (const_int 0 [0]))) Policy_spt.c:139 -1
+     (nil))
+(jump_insn 50 49 51 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 57)
+            (pc))) Policy_spt.c:139 -1
+     (nil)
+ -> 57)
+(note 51 50 52 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 6 (set (reg/f:DI 95 [ D.13151 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -256 [0xffffffffffffff00])) [0 name+0 S8 A64])) Policy_spt.c:140 -1
+     (nil))
+(insn 53 52 54 6 (parallel [
+            (set (reg:DI 112)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:140 -1
+     (nil))
+(insn 54 53 55 6 (set (reg:DI 4 si)
+        (reg/f:DI 95 [ D.13151 ])) Policy_spt.c:140 -1
+     (nil))
+(insn 55 54 56 6 (set (reg:DI 5 di)
+        (reg:DI 112)) Policy_spt.c:140 -1
+     (nil))
+(call_insn 56 55 57 6 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7fe1294a0870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Policy_spt.c:140 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(code_label 57 56 58 7 11 "" [1 uses])
+(note 58 57 59 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 60 7 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:142 -1
+     (nil))
+(insn 60 59 61 7 (parallel [
+            (set (reg/f:DI 96 [ D.13151 ])
+                (plus:DI (reg/f:DI 113)
+                    (const_int 196 [0xc4])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:142 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])
+            (const_int 196 [0xc4]))
+        (nil)))
+(insn 61 60 62 7 (parallel [
+            (set (reg:DI 114)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:142 -1
+     (nil))
+(insn 62 61 63 7 (set (reg:DI 4 si)
+        (reg/f:DI 96 [ D.13151 ])) Policy_spt.c:142 -1
+     (nil))
+(insn 63 62 64 7 (set (reg:DI 5 di)
+        (reg:DI 114)) Policy_spt.c:142 -1
+     (nil))
+(call_insn 64 63 65 7 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHashEnd2B") [flags 0x41]  <function_decl 0x7fe1294a0948 CryptHashEnd2B>) [0 CryptHashEnd2B S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:142 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 65 64 66 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -264 [0xfffffffffffffef8])) [0 ref+0 S8 A64])
+            (const_int 0 [0]))) Policy_spt.c:144 -1
+     (nil))
+(jump_insn 66 65 67 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 92)
+            (pc))) Policy_spt.c:144 -1
+     (nil)
+ -> 92)
+(note 67 66 68 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 68 67 69 8 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:147 -1
+     (nil))
+(insn 69 68 70 8 (set (reg:HI 97 [ D.13149 ])
+        (mem/j:HI (plus:DI (reg/f:DI 115)
+                (const_int 32 [0x20])) [0 session_6(D)->authHashAlg+0 S2 A64])) Policy_spt.c:147 -1
+     (nil))
+(insn 70 69 71 8 (set (reg:SI 98 [ D.13150 ])
+        (zero_extend:SI (reg:HI 97 [ D.13149 ]))) Policy_spt.c:147 -1
+     (nil))
+(insn 71 70 72 8 (parallel [
+            (set (reg:DI 116)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:147 -1
+     (nil))
+(insn 72 71 73 8 (set (reg:SI 4 si)
+        (reg:SI 98 [ D.13150 ])) Policy_spt.c:147 -1
+     (nil))
+(insn 73 72 74 8 (set (reg:DI 5 di)
+        (reg:DI 116)) Policy_spt.c:147 -1
+     (nil))
+(call_insn 74 73 75 8 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHashStart") [flags 0x41]  <function_decl 0x7fe1294a0510 CryptHashStart>) [0 CryptHashStart S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:147 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 75 74 76 8 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:149 -1
+     (nil))
+(insn 76 75 77 8 (parallel [
+            (set (reg/f:DI 99 [ D.13151 ])
+                (plus:DI (reg/f:DI 117)
+                    (const_int 196 [0xc4])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:149 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])
+            (const_int 196 [0xc4]))
+        (nil)))
+(insn 77 76 78 8 (parallel [
+            (set (reg:DI 118)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:149 -1
+     (nil))
+(insn 78 77 79 8 (set (reg:DI 4 si)
+        (reg/f:DI 99 [ D.13151 ])) Policy_spt.c:149 -1
+     (nil))
+(insn 79 78 80 8 (set (reg:DI 5 di)
+        (reg:DI 118)) Policy_spt.c:149 -1
+     (nil))
+(call_insn 80 79 81 8 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7fe1294a0870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Policy_spt.c:149 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 81 80 82 8 (set (reg/f:DI 100 [ D.13151 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -264 [0xfffffffffffffef8])) [0 ref+0 S8 A64])) Policy_spt.c:151 -1
+     (nil))
+(insn 82 81 83 8 (parallel [
+            (set (reg:DI 119)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:151 -1
+     (nil))
+(insn 83 82 84 8 (set (reg:DI 4 si)
+        (reg/f:DI 100 [ D.13151 ])) Policy_spt.c:151 -1
+     (nil))
+(insn 84 83 85 8 (set (reg:DI 5 di)
+        (reg:DI 119)) Policy_spt.c:151 -1
+     (nil))
+(call_insn 85 84 86 8 (call (mem:QI (symbol_ref:DI ("CryptDigestUpdate2B") [flags 0x41]  <function_decl 0x7fe1294a0870 CryptDigestUpdate2B>) [0 CryptDigestUpdate2B S1 A8])
+        (const_int 0 [0])) Policy_spt.c:151 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 86 85 87 8 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:153 -1
+     (nil))
+(insn 87 86 88 8 (parallel [
+            (set (reg/f:DI 101 [ D.13151 ])
+                (plus:DI (reg/f:DI 120)
+                    (const_int 196 [0xc4])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:153 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])
+            (const_int 196 [0xc4]))
+        (nil)))
+(insn 88 87 89 8 (parallel [
+            (set (reg:DI 121)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:153 -1
+     (nil))
+(insn 89 88 90 8 (set (reg:DI 4 si)
+        (reg/f:DI 101 [ D.13151 ])) Policy_spt.c:153 -1
+     (nil))
+(insn 90 89 91 8 (set (reg:DI 5 di)
+        (reg:DI 121)) Policy_spt.c:153 -1
+     (nil))
+(call_insn 91 90 92 8 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHashEnd2B") [flags 0x41]  <function_decl 0x7fe1294a0948 CryptHashEnd2B>) [0 CryptHashEnd2B S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:153 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(code_label 92 91 93 9 12 "" [1 uses])
+(note 93 92 94 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 94 93 95 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -272 [0xfffffffffffffef0])) [0 cpHash+0 S8 A64])
+            (const_int 0 [0]))) Policy_spt.c:159 -1
+     (nil))
+(jump_insn 95 94 96 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 124)
+            (pc))) Policy_spt.c:159 -1
+     (nil)
+ -> 124)
+(note 96 95 97 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 97 96 98 10 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -272 [0xfffffffffffffef0])) [0 cpHash+0 S8 A64])) Policy_spt.c:159 -1
+     (nil))
+(insn 98 97 99 10 (set (reg:HI 102 [ D.13149 ])
+        (mem/j:HI (reg/f:DI 122) [0 cpHash_35(D)->t.size+0 S2 A16])) Policy_spt.c:159 -1
+     (nil))
+(insn 99 98 100 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 102 [ D.13149 ])
+            (const_int 0 [0]))) Policy_spt.c:159 -1
+     (nil))
+(jump_insn 100 99 101 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 124)
+            (pc))) Policy_spt.c:159 -1
+     (nil)
+ -> 124)
+(note 101 100 102 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 102 101 103 11 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:161 -1
+     (nil))
+(insn 103 102 104 11 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -272 [0xfffffffffffffef0])) [0 cpHash+0 S8 A64])) Policy_spt.c:161 -1
+     (nil))
+(insn 104 103 105 11 (set (reg:DI 125)
+        (mem:DI (reg/f:DI 124) [0 *cpHash_35(D)+0 S8 A16])) Policy_spt.c:161 -1
+     (nil))
+(insn 105 104 106 11 (set (mem/j:DI (plus:DI (reg/f:DI 123)
+                (const_int 142 [0x8e])) [0 session_6(D)->u1.cpHash+0 S8 A16])
+        (reg:DI 125)) Policy_spt.c:161 -1
+     (nil))
+(insn 106 105 107 11 (set (reg:DI 126)
+        (mem:DI (plus:DI (reg/f:DI 124)
+                (const_int 8 [0x8])) [0 *cpHash_35(D)+8 S8 A16])) Policy_spt.c:161 -1
+     (nil))
+(insn 107 106 108 11 (set (mem/j:DI (plus:DI (reg/f:DI 123)
+                (const_int 150 [0x96])) [0 session_6(D)->u1.cpHash+8 S8 A16])
+        (reg:DI 126)) Policy_spt.c:161 -1
+     (nil))
+(insn 108 107 109 11 (set (reg:DI 127)
+        (mem:DI (plus:DI (reg/f:DI 124)
+                (const_int 16 [0x10])) [0 *cpHash_35(D)+16 S8 A16])) Policy_spt.c:161 -1
+     (nil))
+(insn 109 108 110 11 (set (mem/j:DI (plus:DI (reg/f:DI 123)
+                (const_int 158 [0x9e])) [0 session_6(D)->u1.cpHash+16 S8 A16])
+        (reg:DI 127)) Policy_spt.c:161 -1
+     (nil))
+(insn 110 109 111 11 (set (reg:DI 128)
+        (mem:DI (plus:DI (reg/f:DI 124)
+                (const_int 24 [0x18])) [0 *cpHash_35(D)+24 S8 A16])) Policy_spt.c:161 -1
+     (nil))
+(insn 111 110 112 11 (set (mem/j:DI (plus:DI (reg/f:DI 123)
+                (const_int 166 [0xa6])) [0 session_6(D)->u1.cpHash+24 S8 A16])
+        (reg:DI 128)) Policy_spt.c:161 -1
+     (nil))
+(insn 112 111 113 11 (set (reg:DI 129)
+        (mem:DI (plus:DI (reg/f:DI 124)
+                (const_int 32 [0x20])) [0 *cpHash_35(D)+32 S8 A16])) Policy_spt.c:161 -1
+     (nil))
+(insn 113 112 114 11 (set (mem/j:DI (plus:DI (reg/f:DI 123)
+                (const_int 174 [0xae])) [0 session_6(D)->u1.cpHash+32 S8 A16])
+        (reg:DI 129)) Policy_spt.c:161 -1
+     (nil))
+(insn 114 113 115 11 (set (reg:DI 130)
+        (mem:DI (plus:DI (reg/f:DI 124)
+                (const_int 40 [0x28])) [0 *cpHash_35(D)+40 S8 A16])) Policy_spt.c:161 -1
+     (nil))
+(insn 115 114 116 11 (set (mem/j:DI (plus:DI (reg/f:DI 123)
+                (const_int 182 [0xb6])) [0 session_6(D)->u1.cpHash+40 S8 A16])
+        (reg:DI 130)) Policy_spt.c:161 -1
+     (nil))
+(insn 116 115 117 11 (set (reg:HI 131)
+        (mem:HI (plus:DI (reg/f:DI 124)
+                (const_int 48 [0x30])) [0 *cpHash_35(D)+48 S2 A16])) Policy_spt.c:161 -1
+     (nil))
+(insn 117 116 118 11 (set (mem/j:HI (plus:DI (reg/f:DI 123)
+                (const_int 190 [0xbe])) [0 session_6(D)->u1.cpHash+48 S2 A16])
+        (reg:HI 131)) Policy_spt.c:161 -1
+     (nil))
+(insn 118 117 121 11 (set (reg/f:DI 132)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:162 -1
+     (nil))
+(insn 121 118 122 11 (set (reg:QI 135)
+        (mem/j:QI (reg/f:DI 132) [0 session_6(D)->attributes.isCpHashDefined+0 S1 A64])) Policy_spt.c:162 -1
+     (nil))
+(insn 122 121 123 11 (parallel [
+            (set (reg:QI 136)
+                (ior:QI (reg:QI 135)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:162 -1
+     (nil))
+(insn 123 122 124 11 (set (mem/j:QI (reg/f:DI 132) [0 session_6(D)->attributes.isCpHashDefined+0 S1 A64])
+        (reg:QI 136)) Policy_spt.c:162 -1
+     (nil))
+(code_label 124 123 125 12 13 "" [2 uses])
+(note 125 124 126 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 126 125 127 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -280 [0xfffffffffffffee8])) [0 policyTimeout+0 S8 A64])
+            (const_int 0 [0]))) Policy_spt.c:165 -1
+     (nil))
+(jump_insn 127 126 128 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 148)
+            (pc))) Policy_spt.c:165 612 {*jcc_1}
+     (nil)
+ -> 148)
+(note 128 127 129 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 129 128 130 13 (set (reg/f:DI 137)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:169 -1
+     (nil))
+(insn 130 129 131 13 (set (reg:DI 103 [ D.13152 ])
+        (mem/j:DI (plus:DI (reg/f:DI 137)
+                (const_int 16 [0x10])) [0 session_6(D)->timeout+0 S8 A64])) Policy_spt.c:169 -1
+     (nil))
+(insn 131 130 132 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 103 [ D.13152 ])
+            (const_int 0 [0]))) Policy_spt.c:169 -1
+     (nil))
+(jump_insn 132 131 133 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 138)
+            (pc))) Policy_spt.c:169 -1
+     (nil)
+ -> 138)
+(note 133 132 134 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 134 133 135 14 (set (reg/f:DI 138)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:169 -1
+     (nil))
+(insn 135 134 136 14 (set (reg:DI 104 [ D.13152 ])
+        (mem/j:DI (plus:DI (reg/f:DI 138)
+                (const_int 16 [0x10])) [0 session_6(D)->timeout+0 S8 A64])) Policy_spt.c:169 -1
+     (nil))
+(insn 136 135 137 14 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 104 [ D.13152 ])
+            (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -280 [0xfffffffffffffee8])) [0 policyTimeout+0 S8 A64]))) Policy_spt.c:169 -1
+     (nil))
+(jump_insn 137 136 138 14 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 148)
+            (pc))) Policy_spt.c:169 612 {*jcc_1}
+     (nil)
+ -> 148)
+(code_label 138 137 139 15 15 "" [1 uses])
+(note 139 138 140 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 140 139 141 15 (set (reg/f:DI 139)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -288 [0xfffffffffffffee0])) [0 session+0 S8 A64])) Policy_spt.c:170 -1
+     (nil))
+(insn 141 140 142 15 (set (reg:DI 140)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -280 [0xfffffffffffffee8])) [0 policyTimeout+0 S8 A64])) Policy_spt.c:170 -1
+     (nil))
+(insn 142 141 157 15 (set (mem/j:DI (plus:DI (reg/f:DI 139)
+                (const_int 16 [0x10])) [0 session_6(D)->timeout+0 S8 A64])
+        (reg:DI 140)) Policy_spt.c:170 -1
+     (nil))
+(insn 157 142 148 15 (const_int 0 [0]) Policy_spt.c:172 -1
+     (nil))
+(code_label 148 157 154 19 9 "" [2 uses])
+(note 154 148 149 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 149 154 150 19 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13153+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) Policy_spt.c:173 -1
+     (nil))
+(jump_insn 150 149 155 19 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 153)
+            (pc))) Policy_spt.c:173 -1
+     (nil)
+ -> 153)
+(note 155 150 151 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(call_insn 151 155 152 20 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7fe1295175e8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) Policy_spt.c:173 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 152 151 153)
+(code_label 153 152 156 21 17 "" [1 uses])
+(note 156 153 0 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+
+;; Function ComputeAuthTimeout (ComputeAuthTimeout, funcdef_no=4, decl_uid=12868, cgraph_uid=4, symbol_order=4)
+
+Partition 0: size 8 align 8
+	policyTime_2
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+Removing jump 56.
+Merging block 12 into block 10...
+Merged blocks 10 and 12.
+Merged 10 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 session+0 S8 A64])
+        (reg:DI 5 di [ session ])) Policy_spt.c:186 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 expiration+0 S4 A32])
+        (reg:SI 4 si [ expiration ])) Policy_spt.c:186 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 nonce+0 S8 A64])
+        (reg:DI 1 dx [ nonce ])) Policy_spt.c:186 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -28 [0xffffffffffffffe4])) [0 expiration+0 S4 A32])
+            (const_int 0 [0]))) Policy_spt.c:189 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 14)
+            (pc))) Policy_spt.c:189 -1
+     (nil)
+ -> 14)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 policyTime+0 S8 A64])
+        (const_int 0 [0])) Policy_spt.c:190 -1
+     (nil))
+(jump_insn 12 11 13 4 (set (pc)
+        (label_ref 50)) -1
+     (nil)
+ -> 50)
+(barrier 13 12 14)
+(code_label 14 13 15 5 20 "" [1 uses])
+(note 15 14 16 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 5 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -28 [0xffffffffffffffe4])) [0 expiration+0 S4 A32])
+            (const_int 0 [0]))) Policy_spt.c:193 -1
+     (nil))
+(jump_insn 17 16 18 5 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) Policy_spt.c:193 -1
+     (nil)
+ -> 20)
+(note 18 17 19 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 6 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -28 [0xffffffffffffffe4])) [0 expiration+0 S4 A32])
+                (neg:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -28 [0xffffffffffffffe4])) [0 expiration+0 S4 A32])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:194 -1
+     (nil))
+(code_label 20 19 21 7 22 "" [1 uses])
+(note 21 20 22 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 7 (set (reg/f:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 nonce+0 S8 A64])) Policy_spt.c:195 -1
+     (nil))
+(insn 23 22 24 7 (set (reg:HI 87 [ D.13156 ])
+        (mem/j:HI (reg/f:DI 97) [0 nonce_7(D)->t.size+0 S2 A16])) Policy_spt.c:195 -1
+     (nil))
+(insn 24 23 25 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 87 [ D.13156 ])
+            (const_int 0 [0]))) Policy_spt.c:195 -1
+     (nil))
+(jump_insn 25 24 26 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 41)
+            (pc))) Policy_spt.c:195 -1
+     (nil)
+ -> 41)
+(note 26 25 27 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 8 (set (reg:SI 98)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 expiration+0 S4 A32])) Policy_spt.c:200 -1
+     (nil))
+(insn 28 27 29 8 (set (reg:DI 88 [ D.13157 ])
+        (sign_extend:DI (reg:SI 98))) Policy_spt.c:200 -1
+     (nil))
+(insn 29 28 30 8 (parallel [
+            (set (reg:DI 89 [ D.13157 ])
+                (mult:DI (reg:DI 88 [ D.13157 ])
+                    (const_int 1000 [0x3e8])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:200 -1
+     (nil))
+(insn 30 29 31 8 (set (reg:DI 90 [ D.13157 ])
+        (mem/c:DI (symbol_ref:DI ("g_time") [flags 0x40]  <var_decl 0x7fe129364510 g_time>) [0 g_time+0 S8 A64])) Policy_spt.c:200 -1
+     (nil))
+(insn 31 30 32 8 (parallel [
+            (set (reg:DI 99)
+                (lshiftrt:DI (reg:DI 90 [ D.13157 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:200 -1
+     (nil))
+(insn 32 31 33 8 (set (reg:DI 101)
+        (const_int 2361183241434822607 [0x20c49ba5e353f7cf])) Policy_spt.c:200 -1
+     (nil))
+(insn 33 32 34 8 (parallel [
+            (set (reg:DI 100)
+                (truncate:DI (lshiftrt:TI (mult:TI (zero_extend:TI (reg:DI 99))
+                            (zero_extend:TI (reg:DI 101)))
+                        (const_int 64 [0x40]))))
+            (clobber (scratch:DI))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:200 -1
+     (nil))
+(insn 34 33 35 8 (parallel [
+            (set (reg:DI 91 [ D.13157 ])
+                (lshiftrt:DI (reg:DI 100)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:200 -1
+     (expr_list:REG_EQUAL (udiv:DI (reg:DI 90 [ D.13157 ])
+            (const_int 1000 [0x3e8]))
+        (nil)))
+(insn 35 34 36 8 (parallel [
+            (set (reg:DI 102)
+                (mult:DI (reg:DI 91 [ D.13157 ])
+                    (const_int 1000 [0x3e8])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:200 -1
+     (nil))
+(insn 36 35 37 8 (parallel [
+            (set (reg:DI 91 [ D.13157 ])
+                (minus:DI (reg:DI 90 [ D.13157 ])
+                    (reg:DI 102)))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:200 -1
+     (nil))
+(insn 37 36 38 8 (parallel [
+            (set (reg:DI 103)
+                (plus:DI (reg:DI 89 [ D.13157 ])
+                    (reg:DI 91 [ D.13157 ])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:200 -1
+     (nil))
+(insn 38 37 39 8 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 policyTime+0 S8 A64])
+        (reg:DI 103)) Policy_spt.c:200 -1
+     (nil))
+(jump_insn 39 38 40 8 (set (pc)
+        (label_ref 50)) -1
+     (nil)
+ -> 50)
+(barrier 40 39 41)
+(code_label 41 40 42 9 23 "" [1 uses])
+(note 42 41 43 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 43 42 44 9 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 session+0 S8 A64])) Policy_spt.c:204 -1
+     (nil))
+(insn 44 43 45 9 (set (reg:DI 92 [ D.13157 ])
+        (mem/j:DI (plus:DI (reg/f:DI 104)
+                (const_int 8 [0x8])) [0 session_14(D)->startTime+0 S8 A64])) Policy_spt.c:204 -1
+     (nil))
+(insn 45 44 46 9 (set (reg:SI 105)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 expiration+0 S4 A32])) Policy_spt.c:204 -1
+     (nil))
+(insn 46 45 47 9 (set (reg:DI 93 [ D.13157 ])
+        (sign_extend:DI (reg:SI 105))) Policy_spt.c:204 -1
+     (nil))
+(insn 47 46 48 9 (parallel [
+            (set (reg:DI 94 [ D.13157 ])
+                (mult:DI (reg:DI 93 [ D.13157 ])
+                    (const_int 1000 [0x3e8])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:204 -1
+     (nil))
+(insn 48 47 49 9 (parallel [
+            (set (reg:DI 106)
+                (plus:DI (reg:DI 92 [ D.13157 ])
+                    (reg:DI 94 [ D.13157 ])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:204 -1
+     (nil))
+(insn 49 48 50 9 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 policyTime+0 S8 A64])
+        (reg:DI 106)) Policy_spt.c:204 -1
+     (nil))
+(code_label 50 49 51 10 21 "" [2 uses])
+(note 51 50 52 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 55 10 (set (reg:DI 95 [ D.13158 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 policyTime+0 S8 A64])) Policy_spt.c:206 -1
+     (nil))
+(insn 55 52 59 10 (set (reg:DI 96 [ <retval> ])
+        (reg:DI 95 [ D.13158 ])) Policy_spt.c:206 -1
+     (nil))
+(insn 59 55 60 10 (set (reg/i:DI 0 ax)
+        (reg:DI 96 [ <retval> ])) Policy_spt.c:207 -1
+     (nil))
+(insn 60 59 0 10 (use (reg/i:DI 0 ax)) Policy_spt.c:207 -1
+     (nil))
+
+;; Function PolicyDigestClear (PolicyDigestClear, funcdef_no=5, decl_uid=12870, cgraph_uid=5, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])
+        (reg:DI 5 di [ session ])) Policy_spt.c:214 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])) Policy_spt.c:215 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:HI 87 [ D.13159 ])
+        (mem/j:HI (plus:DI (reg/f:DI 93)
+                (const_int 32 [0x20])) [0 session_2(D)->authHashAlg+0 S2 A64])) Policy_spt.c:215 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 88 [ D.13160 ])
+        (zero_extend:SI (reg:HI 87 [ D.13159 ]))) Policy_spt.c:215 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13160 ])) Policy_spt.c:215 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHashGetDigestSize") [flags 0x41]  <function_decl 0x7fe12949be58 CryptHashGetDigestSize>) [0 CryptHashGetDigestSize S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:215 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:HI 89 [ D.13159 ])
+        (reg:HI 0 ax)) Policy_spt.c:215 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])) Policy_spt.c:215 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/j:HI (plus:DI (reg/f:DI 94)
+                (const_int 196 [0xc4])) [0 session_2(D)->u2.policyDigest.t.size+0 S2 A32])
+        (reg:HI 89 [ D.13159 ])) Policy_spt.c:215 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])) Policy_spt.c:217 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:HI 90 [ D.13159 ])
+        (mem/j:HI (plus:DI (reg/f:DI 95)
+                (const_int 196 [0xc4])) [0 session_2(D)->u2.policyDigest.t.size+0 S2 A32])) Policy_spt.c:217 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 91 [ D.13161 ])
+        (zero_extend:DI (reg:HI 90 [ D.13159 ]))) Policy_spt.c:216 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])) Policy_spt.c:216 -1
+     (nil))
+(insn 18 17 19 2 (parallel [
+            (set (reg/f:DI 92 [ D.13162 ])
+                (plus:DI (reg/f:DI 96)
+                    (const_int 198 [0xc6])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:216 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 session+0 S8 A64])
+            (const_int 198 [0xc6]))
+        (nil)))
+(insn 19 18 20 2 (set (reg:DI 1 dx)
+        (reg:DI 91 [ D.13161 ])) Policy_spt.c:216 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 4 si)
+        (const_int 0 [0])) Policy_spt.c:216 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (reg/f:DI 92 [ D.13162 ])) Policy_spt.c:216 -1
+     (nil))
+(call_insn 22 21 25 2 (call (mem:QI (symbol_ref:DI ("MemorySet") [flags 0x41]  <function_decl 0x7fe129481870 MemorySet>) [0 MemorySet S1 A8])
+        (const_int 0 [0])) Policy_spt.c:216 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 25 22 0 2 (const_int 0 [0]) Policy_spt.c:218 -1
+     (nil))
+
+;; Function PolicySptCheckCondition (PolicySptCheckCondition, funcdef_no=6, decl_uid=12875, cgraph_uid=6, symbol_order=6)
+
+Partition 1: size 4 align 4
+	i_2
+Partition 0: size 4 align 4
+	i_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 19->20 to 28 failed.
+Forwarding edge 25->26 to 28 failed.
+Removing jump 276.
+Merging block 30 into block 29...
+Merged blocks 29 and 30.
+Merged 29 and 30 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 19->20 to 28 failed.
+Forwarding edge 25->26 to 28 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 4 2 (set (reg:SI 149)
+        (reg:SI 5 di [ operation ])) Policy_spt.c:226 -1
+     (nil))
+(insn 4 2 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])
+        (reg:DI 4 si [ opA ])) Policy_spt.c:226 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])
+        (reg:DI 1 dx [ opB ])) Policy_spt.c:226 -1
+     (nil))
+(insn 6 5 3 2 (set (reg:SI 150)
+        (reg:SI 2 cx [ size ])) Policy_spt.c:226 -1
+     (nil))
+(insn 3 6 7 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 operation+0 S2 A32])
+        (subreg:HI (reg:SI 149) 0)) Policy_spt.c:226 -1
+     (nil))
+(insn 7 3 8 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32])
+        (subreg:HI (reg:SI 150) 0)) Policy_spt.c:226 -1
+     (nil))
+(note 8 7 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 8 12 2 (set (reg:SI 88 [ D.13164 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 operation+0 S2 A32]))) Policy_spt.c:228 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 88 [ D.13164 ])
+            (const_int 11 [0xb]))) Policy_spt.c:228 -1
+     (nil))
+(jump_insn 13 12 282 2 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 263)
+            (pc))) Policy_spt.c:228 -1
+     (nil)
+ -> 263)
+(note 282 13 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 282 15 4 (set (reg:DI 151)
+        (zero_extend:DI (reg:SI 88 [ D.13164 ]))) Policy_spt.c:228 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 152)
+        (mem/u/c:DI (plus:DI (ashift:DI (reg:DI 151)
+                    (const_int 3 [0x3]))
+                (label_ref:DI 18)) [0  S8 A8])) Policy_spt.c:228 -1
+     (insn_list:REG_LABEL_OPERAND 18 (nil)))
+(jump_insn 16 15 17 4 (parallel [
+            (set (pc)
+                (reg:DI 152))
+            (use (label_ref 18))
+        ]) Policy_spt.c:228 -1
+     (nil)
+ -> 18)
+(barrier 17 16 18)
+(code_label 18 17 19 29 "" [2 uses])
+(jump_table_data 19 18 20 (addr_vec:DI [
+            (label_ref:DI 21)
+            (label_ref:DI 38)
+            (label_ref:DI 55)
+            (label_ref:DI 72)
+            (label_ref:DI 89)
+            (label_ref:DI 106)
+            (label_ref:DI 123)
+            (label_ref:DI 141)
+            (label_ref:DI 159)
+            (label_ref:DI 176)
+            (label_ref:DI 193)
+            (label_ref:DI 230)
+        ]))
+(barrier 20 19 21)
+(code_label 21 20 22 5 28 "" [1 uses])
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 5 (set (reg:SI 89 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:232 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 90 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:232 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:DI 153)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:232 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:DI 154)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:232 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:DI 2 cx)
+        (reg:DI 153)) Policy_spt.c:232 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:SI 1 dx)
+        (reg:SI 89 [ D.13165 ])) Policy_spt.c:232 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:DI 4 si)
+        (reg:DI 154)) Policy_spt.c:232 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:SI 5 di)
+        (reg:SI 90 [ D.13165 ])) Policy_spt.c:232 -1
+     (nil))
+(call_insn 31 30 32 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("UnsignedCompareB") [flags 0x41]  <function_decl 0x7fe1294b3288 UnsignedCompareB>) [0 UnsignedCompareB S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:232 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 32 31 33 5 (set (reg:SI 91 [ D.13164 ])
+        (reg:SI 0 ax)) Policy_spt.c:232 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13164 ])
+            (const_int 0 [0]))) Policy_spt.c:232 -1
+     (nil))
+(insn 34 33 35 5 (set (reg:QI 92 [ D.13166 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) Policy_spt.c:232 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:SI 87 [ D.13163 ])
+        (zero_extend:SI (reg:QI 92 [ D.13166 ]))) Policy_spt.c:232 -1
+     (nil))
+(jump_insn 36 35 37 5 (set (pc)
+        (label_ref 273)) Policy_spt.c:232 -1
+     (nil)
+ -> 273)
+(barrier 37 36 38)
+(code_label 38 37 39 6 30 "" [1 uses])
+(note 39 38 40 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 6 (set (reg:SI 93 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:236 -1
+     (nil))
+(insn 41 40 42 6 (set (reg:SI 94 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:236 -1
+     (nil))
+(insn 42 41 43 6 (set (reg:DI 155)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:236 -1
+     (nil))
+(insn 43 42 44 6 (set (reg:DI 156)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:236 -1
+     (nil))
+(insn 44 43 45 6 (set (reg:DI 2 cx)
+        (reg:DI 155)) Policy_spt.c:236 -1
+     (nil))
+(insn 45 44 46 6 (set (reg:SI 1 dx)
+        (reg:SI 93 [ D.13165 ])) Policy_spt.c:236 -1
+     (nil))
+(insn 46 45 47 6 (set (reg:DI 4 si)
+        (reg:DI 156)) Policy_spt.c:236 -1
+     (nil))
+(insn 47 46 48 6 (set (reg:SI 5 di)
+        (reg:SI 94 [ D.13165 ])) Policy_spt.c:236 -1
+     (nil))
+(call_insn 48 47 49 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("UnsignedCompareB") [flags 0x41]  <function_decl 0x7fe1294b3288 UnsignedCompareB>) [0 UnsignedCompareB S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:236 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 49 48 50 6 (set (reg:SI 95 [ D.13164 ])
+        (reg:SI 0 ax)) Policy_spt.c:236 -1
+     (nil))
+(insn 50 49 51 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 95 [ D.13164 ])
+            (const_int 0 [0]))) Policy_spt.c:236 -1
+     (nil))
+(insn 51 50 52 6 (set (reg:QI 96 [ D.13166 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) Policy_spt.c:236 -1
+     (nil))
+(insn 52 51 53 6 (set (reg:SI 87 [ D.13163 ])
+        (zero_extend:SI (reg:QI 96 [ D.13166 ]))) Policy_spt.c:236 -1
+     (nil))
+(jump_insn 53 52 54 6 (set (pc)
+        (label_ref 273)) Policy_spt.c:236 -1
+     (nil)
+ -> 273)
+(barrier 54 53 55)
+(code_label 55 54 56 7 31 "" [1 uses])
+(note 56 55 57 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 57 56 58 7 (set (reg:SI 97 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:240 -1
+     (nil))
+(insn 58 57 59 7 (set (reg:SI 98 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:240 -1
+     (nil))
+(insn 59 58 60 7 (set (reg:DI 157)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:240 -1
+     (nil))
+(insn 60 59 61 7 (set (reg:DI 158)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:240 -1
+     (nil))
+(insn 61 60 62 7 (set (reg:DI 2 cx)
+        (reg:DI 157)) Policy_spt.c:240 -1
+     (nil))
+(insn 62 61 63 7 (set (reg:SI 1 dx)
+        (reg:SI 97 [ D.13165 ])) Policy_spt.c:240 -1
+     (nil))
+(insn 63 62 64 7 (set (reg:DI 4 si)
+        (reg:DI 158)) Policy_spt.c:240 -1
+     (nil))
+(insn 64 63 65 7 (set (reg:SI 5 di)
+        (reg:SI 98 [ D.13165 ])) Policy_spt.c:240 -1
+     (nil))
+(call_insn 65 64 66 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SignedCompareB") [flags 0x41]  <function_decl 0x7fe1294b3360 SignedCompareB>) [0 SignedCompareB S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:240 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 66 65 67 7 (set (reg:SI 99 [ D.13164 ])
+        (reg:SI 0 ax)) Policy_spt.c:240 -1
+     (nil))
+(insn 67 66 68 7 (set (reg:CCNO 17 flags)
+        (compare:CCNO (reg:SI 99 [ D.13164 ])
+            (const_int 0 [0]))) Policy_spt.c:240 -1
+     (nil))
+(insn 68 67 69 7 (set (reg:QI 100 [ D.13166 ])
+        (gt:QI (reg:CCNO 17 flags)
+            (const_int 0 [0]))) Policy_spt.c:240 -1
+     (nil))
+(insn 69 68 70 7 (set (reg:SI 87 [ D.13163 ])
+        (zero_extend:SI (reg:QI 100 [ D.13166 ]))) Policy_spt.c:240 -1
+     (nil))
+(jump_insn 70 69 71 7 (set (pc)
+        (label_ref 273)) Policy_spt.c:240 -1
+     (nil)
+ -> 273)
+(barrier 71 70 72)
+(code_label 72 71 73 8 32 "" [1 uses])
+(note 73 72 74 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 74 73 75 8 (set (reg:SI 101 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:244 -1
+     (nil))
+(insn 75 74 76 8 (set (reg:SI 102 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:244 -1
+     (nil))
+(insn 76 75 77 8 (set (reg:DI 159)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:244 -1
+     (nil))
+(insn 77 76 78 8 (set (reg:DI 160)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:244 -1
+     (nil))
+(insn 78 77 79 8 (set (reg:DI 2 cx)
+        (reg:DI 159)) Policy_spt.c:244 -1
+     (nil))
+(insn 79 78 80 8 (set (reg:SI 1 dx)
+        (reg:SI 101 [ D.13165 ])) Policy_spt.c:244 -1
+     (nil))
+(insn 80 79 81 8 (set (reg:DI 4 si)
+        (reg:DI 160)) Policy_spt.c:244 -1
+     (nil))
+(insn 81 80 82 8 (set (reg:SI 5 di)
+        (reg:SI 102 [ D.13165 ])) Policy_spt.c:244 -1
+     (nil))
+(call_insn 82 81 83 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("UnsignedCompareB") [flags 0x41]  <function_decl 0x7fe1294b3288 UnsignedCompareB>) [0 UnsignedCompareB S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:244 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 83 82 84 8 (set (reg:SI 103 [ D.13164 ])
+        (reg:SI 0 ax)) Policy_spt.c:244 -1
+     (nil))
+(insn 84 83 85 8 (set (reg:CCNO 17 flags)
+        (compare:CCNO (reg:SI 103 [ D.13164 ])
+            (const_int 0 [0]))) Policy_spt.c:244 -1
+     (nil))
+(insn 85 84 86 8 (set (reg:QI 104 [ D.13166 ])
+        (gt:QI (reg:CCNO 17 flags)
+            (const_int 0 [0]))) Policy_spt.c:244 -1
+     (nil))
+(insn 86 85 87 8 (set (reg:SI 87 [ D.13163 ])
+        (zero_extend:SI (reg:QI 104 [ D.13166 ]))) Policy_spt.c:244 -1
+     (nil))
+(jump_insn 87 86 88 8 (set (pc)
+        (label_ref 273)) Policy_spt.c:244 -1
+     (nil)
+ -> 273)
+(barrier 88 87 89)
+(code_label 89 88 90 9 33 "" [1 uses])
+(note 90 89 91 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 91 90 92 9 (set (reg:SI 105 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:248 -1
+     (nil))
+(insn 92 91 93 9 (set (reg:SI 106 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:248 -1
+     (nil))
+(insn 93 92 94 9 (set (reg:DI 161)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:248 -1
+     (nil))
+(insn 94 93 95 9 (set (reg:DI 162)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:248 -1
+     (nil))
+(insn 95 94 96 9 (set (reg:DI 2 cx)
+        (reg:DI 161)) Policy_spt.c:248 -1
+     (nil))
+(insn 96 95 97 9 (set (reg:SI 1 dx)
+        (reg:SI 105 [ D.13165 ])) Policy_spt.c:248 -1
+     (nil))
+(insn 97 96 98 9 (set (reg:DI 4 si)
+        (reg:DI 162)) Policy_spt.c:248 -1
+     (nil))
+(insn 98 97 99 9 (set (reg:SI 5 di)
+        (reg:SI 106 [ D.13165 ])) Policy_spt.c:248 -1
+     (nil))
+(call_insn 99 98 100 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SignedCompareB") [flags 0x41]  <function_decl 0x7fe1294b3360 SignedCompareB>) [0 SignedCompareB S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:248 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 100 99 101 9 (set (reg:SI 107 [ D.13164 ])
+        (reg:SI 0 ax)) Policy_spt.c:248 -1
+     (nil))
+(insn 101 100 102 9 (parallel [
+            (set (reg:SI 163)
+                (lshiftrt:SI (reg:SI 107 [ D.13164 ])
+                    (const_int 31 [0x1f])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:248 -1
+     (nil))
+(insn 102 101 103 9 (set (reg:QI 108 [ D.13166 ])
+        (subreg:QI (reg:SI 163) 0)) Policy_spt.c:248 -1
+     (nil))
+(insn 103 102 104 9 (set (reg:SI 87 [ D.13163 ])
+        (zero_extend:SI (reg:QI 108 [ D.13166 ]))) Policy_spt.c:248 -1
+     (nil))
+(jump_insn 104 103 105 9 (set (pc)
+        (label_ref 273)) Policy_spt.c:248 -1
+     (nil)
+ -> 273)
+(barrier 105 104 106)
+(code_label 106 105 107 10 34 "" [1 uses])
+(note 107 106 108 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 108 107 109 10 (set (reg:SI 109 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:252 -1
+     (nil))
+(insn 109 108 110 10 (set (reg:SI 110 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:252 -1
+     (nil))
+(insn 110 109 111 10 (set (reg:DI 164)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:252 -1
+     (nil))
+(insn 111 110 112 10 (set (reg:DI 165)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:252 -1
+     (nil))
+(insn 112 111 113 10 (set (reg:DI 2 cx)
+        (reg:DI 164)) Policy_spt.c:252 -1
+     (nil))
+(insn 113 112 114 10 (set (reg:SI 1 dx)
+        (reg:SI 109 [ D.13165 ])) Policy_spt.c:252 -1
+     (nil))
+(insn 114 113 115 10 (set (reg:DI 4 si)
+        (reg:DI 165)) Policy_spt.c:252 -1
+     (nil))
+(insn 115 114 116 10 (set (reg:SI 5 di)
+        (reg:SI 110 [ D.13165 ])) Policy_spt.c:252 -1
+     (nil))
+(call_insn 116 115 117 10 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("UnsignedCompareB") [flags 0x41]  <function_decl 0x7fe1294b3288 UnsignedCompareB>) [0 UnsignedCompareB S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:252 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 117 116 118 10 (set (reg:SI 111 [ D.13164 ])
+        (reg:SI 0 ax)) Policy_spt.c:252 -1
+     (nil))
+(insn 118 117 119 10 (parallel [
+            (set (reg:SI 166)
+                (lshiftrt:SI (reg:SI 111 [ D.13164 ])
+                    (const_int 31 [0x1f])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:252 -1
+     (nil))
+(insn 119 118 120 10 (set (reg:QI 112 [ D.13166 ])
+        (subreg:QI (reg:SI 166) 0)) Policy_spt.c:252 -1
+     (nil))
+(insn 120 119 121 10 (set (reg:SI 87 [ D.13163 ])
+        (zero_extend:SI (reg:QI 112 [ D.13166 ]))) Policy_spt.c:252 -1
+     (nil))
+(jump_insn 121 120 122 10 (set (pc)
+        (label_ref 273)) Policy_spt.c:252 -1
+     (nil)
+ -> 273)
+(barrier 122 121 123)
+(code_label 123 122 124 11 35 "" [1 uses])
+(note 124 123 125 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 125 124 126 11 (set (reg:SI 113 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:256 -1
+     (nil))
+(insn 126 125 127 11 (set (reg:SI 114 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:256 -1
+     (nil))
+(insn 127 126 128 11 (set (reg:DI 167)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:256 -1
+     (nil))
+(insn 128 127 129 11 (set (reg:DI 168)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:256 -1
+     (nil))
+(insn 129 128 130 11 (set (reg:DI 2 cx)
+        (reg:DI 167)) Policy_spt.c:256 -1
+     (nil))
+(insn 130 129 131 11 (set (reg:SI 1 dx)
+        (reg:SI 113 [ D.13165 ])) Policy_spt.c:256 -1
+     (nil))
+(insn 131 130 132 11 (set (reg:DI 4 si)
+        (reg:DI 168)) Policy_spt.c:256 -1
+     (nil))
+(insn 132 131 133 11 (set (reg:SI 5 di)
+        (reg:SI 114 [ D.13165 ])) Policy_spt.c:256 -1
+     (nil))
+(call_insn 133 132 134 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SignedCompareB") [flags 0x41]  <function_decl 0x7fe1294b3360 SignedCompareB>) [0 SignedCompareB S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:256 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 134 133 135 11 (set (reg:SI 115 [ D.13164 ])
+        (reg:SI 0 ax)) Policy_spt.c:256 -1
+     (nil))
+(insn 135 134 136 11 (set (reg:SI 169)
+        (not:SI (reg:SI 115 [ D.13164 ]))) Policy_spt.c:256 -1
+     (nil))
+(insn 136 135 137 11 (parallel [
+            (set (reg:SI 170)
+                (lshiftrt:SI (reg:SI 169)
+                    (const_int 31 [0x1f])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:256 -1
+     (nil))
+(insn 137 136 138 11 (set (reg:QI 116 [ D.13166 ])
+        (subreg:QI (reg:SI 170) 0)) Policy_spt.c:256 -1
+     (nil))
+(insn 138 137 139 11 (set (reg:SI 87 [ D.13163 ])
+        (zero_extend:SI (reg:QI 116 [ D.13166 ]))) Policy_spt.c:256 -1
+     (nil))
+(jump_insn 139 138 140 11 (set (pc)
+        (label_ref 273)) Policy_spt.c:256 -1
+     (nil)
+ -> 273)
+(barrier 140 139 141)
+(code_label 141 140 142 12 36 "" [1 uses])
+(note 142 141 143 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 143 142 144 12 (set (reg:SI 117 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:260 -1
+     (nil))
+(insn 144 143 145 12 (set (reg:SI 118 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:260 -1
+     (nil))
+(insn 145 144 146 12 (set (reg:DI 171)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:260 -1
+     (nil))
+(insn 146 145 147 12 (set (reg:DI 172)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:260 -1
+     (nil))
+(insn 147 146 148 12 (set (reg:DI 2 cx)
+        (reg:DI 171)) Policy_spt.c:260 -1
+     (nil))
+(insn 148 147 149 12 (set (reg:SI 1 dx)
+        (reg:SI 117 [ D.13165 ])) Policy_spt.c:260 -1
+     (nil))
+(insn 149 148 150 12 (set (reg:DI 4 si)
+        (reg:DI 172)) Policy_spt.c:260 -1
+     (nil))
+(insn 150 149 151 12 (set (reg:SI 5 di)
+        (reg:SI 118 [ D.13165 ])) Policy_spt.c:260 -1
+     (nil))
+(call_insn 151 150 152 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("UnsignedCompareB") [flags 0x41]  <function_decl 0x7fe1294b3288 UnsignedCompareB>) [0 UnsignedCompareB S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:260 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 152 151 153 12 (set (reg:SI 119 [ D.13164 ])
+        (reg:SI 0 ax)) Policy_spt.c:260 -1
+     (nil))
+(insn 153 152 154 12 (set (reg:SI 173)
+        (not:SI (reg:SI 119 [ D.13164 ]))) Policy_spt.c:260 -1
+     (nil))
+(insn 154 153 155 12 (parallel [
+            (set (reg:SI 174)
+                (lshiftrt:SI (reg:SI 173)
+                    (const_int 31 [0x1f])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:260 -1
+     (nil))
+(insn 155 154 156 12 (set (reg:QI 120 [ D.13166 ])
+        (subreg:QI (reg:SI 174) 0)) Policy_spt.c:260 -1
+     (nil))
+(insn 156 155 157 12 (set (reg:SI 87 [ D.13163 ])
+        (zero_extend:SI (reg:QI 120 [ D.13166 ]))) Policy_spt.c:260 -1
+     (nil))
+(jump_insn 157 156 158 12 (set (pc)
+        (label_ref 273)) Policy_spt.c:260 -1
+     (nil)
+ -> 273)
+(barrier 158 157 159)
+(code_label 159 158 160 13 37 "" [1 uses])
+(note 160 159 161 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 161 160 162 13 (set (reg:SI 121 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:264 -1
+     (nil))
+(insn 162 161 163 13 (set (reg:SI 122 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:264 -1
+     (nil))
+(insn 163 162 164 13 (set (reg:DI 175)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:264 -1
+     (nil))
+(insn 164 163 165 13 (set (reg:DI 176)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:264 -1
+     (nil))
+(insn 165 164 166 13 (set (reg:DI 2 cx)
+        (reg:DI 175)) Policy_spt.c:264 -1
+     (nil))
+(insn 166 165 167 13 (set (reg:SI 1 dx)
+        (reg:SI 121 [ D.13165 ])) Policy_spt.c:264 -1
+     (nil))
+(insn 167 166 168 13 (set (reg:DI 4 si)
+        (reg:DI 176)) Policy_spt.c:264 -1
+     (nil))
+(insn 168 167 169 13 (set (reg:SI 5 di)
+        (reg:SI 122 [ D.13165 ])) Policy_spt.c:264 -1
+     (nil))
+(call_insn 169 168 170 13 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SignedCompareB") [flags 0x41]  <function_decl 0x7fe1294b3360 SignedCompareB>) [0 SignedCompareB S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:264 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 170 169 171 13 (set (reg:SI 123 [ D.13164 ])
+        (reg:SI 0 ax)) Policy_spt.c:264 -1
+     (nil))
+(insn 171 170 172 13 (set (reg:CCNO 17 flags)
+        (compare:CCNO (reg:SI 123 [ D.13164 ])
+            (const_int 0 [0]))) Policy_spt.c:264 -1
+     (nil))
+(insn 172 171 173 13 (set (reg:QI 124 [ D.13166 ])
+        (le:QI (reg:CCNO 17 flags)
+            (const_int 0 [0]))) Policy_spt.c:264 -1
+     (nil))
+(insn 173 172 174 13 (set (reg:SI 87 [ D.13163 ])
+        (zero_extend:SI (reg:QI 124 [ D.13166 ]))) Policy_spt.c:264 -1
+     (nil))
+(jump_insn 174 173 175 13 (set (pc)
+        (label_ref 273)) Policy_spt.c:264 -1
+     (nil)
+ -> 273)
+(barrier 175 174 176)
+(code_label 176 175 177 14 38 "" [1 uses])
+(note 177 176 178 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 178 177 179 14 (set (reg:SI 125 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:268 -1
+     (nil))
+(insn 179 178 180 14 (set (reg:SI 126 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:268 -1
+     (nil))
+(insn 180 179 181 14 (set (reg:DI 177)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:268 -1
+     (nil))
+(insn 181 180 182 14 (set (reg:DI 178)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:268 -1
+     (nil))
+(insn 182 181 183 14 (set (reg:DI 2 cx)
+        (reg:DI 177)) Policy_spt.c:268 -1
+     (nil))
+(insn 183 182 184 14 (set (reg:SI 1 dx)
+        (reg:SI 125 [ D.13165 ])) Policy_spt.c:268 -1
+     (nil))
+(insn 184 183 185 14 (set (reg:DI 4 si)
+        (reg:DI 178)) Policy_spt.c:268 -1
+     (nil))
+(insn 185 184 186 14 (set (reg:SI 5 di)
+        (reg:SI 126 [ D.13165 ])) Policy_spt.c:268 -1
+     (nil))
+(call_insn 186 185 187 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("UnsignedCompareB") [flags 0x41]  <function_decl 0x7fe1294b3288 UnsignedCompareB>) [0 UnsignedCompareB S1 A8])
+            (const_int 0 [0]))) Policy_spt.c:268 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 187 186 188 14 (set (reg:SI 127 [ D.13164 ])
+        (reg:SI 0 ax)) Policy_spt.c:268 -1
+     (nil))
+(insn 188 187 189 14 (set (reg:CCNO 17 flags)
+        (compare:CCNO (reg:SI 127 [ D.13164 ])
+            (const_int 0 [0]))) Policy_spt.c:268 -1
+     (nil))
+(insn 189 188 190 14 (set (reg:QI 128 [ D.13166 ])
+        (le:QI (reg:CCNO 17 flags)
+            (const_int 0 [0]))) Policy_spt.c:268 -1
+     (nil))
+(insn 190 189 191 14 (set (reg:SI 87 [ D.13163 ])
+        (zero_extend:SI (reg:QI 128 [ D.13166 ]))) Policy_spt.c:268 -1
+     (nil))
+(jump_insn 191 190 192 14 (set (pc)
+        (label_ref 273)) Policy_spt.c:268 -1
+     (nil)
+ -> 273)
+(barrier 192 191 193)
+(code_label 193 192 194 15 39 "" [1 uses])
+(note 194 193 195 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 195 194 196 15 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+        (const_int 0 [0])) Policy_spt.c:274 -1
+     (nil))
+(jump_insn 196 195 197 15 (set (pc)
+        (label_ref 221)) Policy_spt.c:274 -1
+     (nil)
+ -> 221)
+(barrier 197 196 224)
+(code_label 224 197 198 16 44 "" [1 uses])
+(note 198 224 199 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 199 198 200 16 (set (reg:DI 130 [ D.13167 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32]))) Policy_spt.c:275 -1
+     (nil))
+(insn 200 199 201 16 (set (reg/f:DI 179)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:275 -1
+     (nil))
+(insn 201 200 202 16 (parallel [
+            (set (reg/f:DI 131 [ D.13168 ])
+                (plus:DI (reg:DI 130 [ D.13167 ])
+                    (reg/f:DI 179)))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:275 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])
+            (reg:DI 130 [ D.13167 ]))
+        (nil)))
+(insn 202 201 203 16 (set (reg:QI 132 [ D.13169 ])
+        (mem:QI (reg/f:DI 131 [ D.13168 ]) [0 *_74+0 S1 A8])) Policy_spt.c:275 -1
+     (nil))
+(insn 203 202 204 16 (set (reg:DI 133 [ D.13167 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32]))) Policy_spt.c:275 -1
+     (nil))
+(insn 204 203 205 16 (set (reg/f:DI 180)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:275 -1
+     (nil))
+(insn 205 204 206 16 (parallel [
+            (set (reg/f:DI 134 [ D.13168 ])
+                (plus:DI (reg:DI 133 [ D.13167 ])
+                    (reg/f:DI 180)))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:275 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])
+            (reg:DI 133 [ D.13167 ]))
+        (nil)))
+(insn 206 205 207 16 (set (reg:QI 135 [ D.13169 ])
+        (mem:QI (reg/f:DI 134 [ D.13168 ]) [0 *_77+0 S1 A8])) Policy_spt.c:275 -1
+     (nil))
+(insn 207 206 208 16 (parallel [
+            (set (reg:QI 136 [ D.13169 ])
+                (and:QI (reg:QI 132 [ D.13169 ])
+                    (reg:QI 135 [ D.13169 ])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:275 -1
+     (nil))
+(insn 208 207 209 16 (set (reg:DI 137 [ D.13167 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32]))) Policy_spt.c:275 -1
+     (nil))
+(insn 209 208 210 16 (set (reg/f:DI 181)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:275 -1
+     (nil))
+(insn 210 209 211 16 (parallel [
+            (set (reg/f:DI 138 [ D.13168 ])
+                (plus:DI (reg:DI 137 [ D.13167 ])
+                    (reg/f:DI 181)))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:275 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])
+            (reg:DI 137 [ D.13167 ]))
+        (nil)))
+(insn 211 210 212 16 (set (reg:QI 139 [ D.13169 ])
+        (mem:QI (reg/f:DI 138 [ D.13168 ]) [0 *_81+0 S1 A8])) Policy_spt.c:275 -1
+     (nil))
+(insn 212 211 213 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 136 [ D.13169 ])
+            (reg:QI 139 [ D.13169 ]))) Policy_spt.c:275 -1
+     (nil))
+(jump_insn 213 212 214 16 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 218)
+            (pc))) Policy_spt.c:275 -1
+     (nil)
+ -> 218)
+(note 214 213 215 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 215 214 216 17 (set (reg:SI 87 [ D.13163 ])
+        (const_int 0 [0])) Policy_spt.c:276 -1
+     (nil))
+(jump_insn 216 215 217 17 (set (pc)
+        (label_ref 273)) Policy_spt.c:276 -1
+     (nil)
+ -> 273)
+(barrier 217 216 218)
+(code_label 218 217 219 18 43 "" [1 uses])
+(note 219 218 220 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 220 219 221 18 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:274 -1
+     (nil))
+(code_label 221 220 222 19 42 "" [1 uses])
+(note 222 221 223 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 223 222 225 19 (set (reg:SI 129 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:274 -1
+     (nil))
+(insn 225 223 226 19 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 129 [ D.13165 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S4 A32]))) Policy_spt.c:274 -1
+     (nil))
+(jump_insn 226 225 227 19 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 224)
+            (pc))) Policy_spt.c:274 -1
+     (nil)
+ -> 224)
+(note 227 226 228 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 228 227 229 20 (set (pc)
+        (label_ref 270)) Policy_spt.c:278 -1
+     (nil)
+ -> 270)
+(barrier 229 228 230)
+(code_label 230 229 231 21 40 "" [1 uses])
+(note 231 230 232 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 232 231 233 21 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+        (const_int 0 [0])) Policy_spt.c:283 -1
+     (nil))
+(jump_insn 233 232 234 21 (set (pc)
+        (label_ref 254)) Policy_spt.c:283 -1
+     (nil)
+ -> 254)
+(barrier 234 233 257)
+(code_label 257 234 235 22 48 "" [1 uses])
+(note 235 257 236 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 236 235 237 22 (set (reg:DI 141 [ D.13167 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32]))) Policy_spt.c:284 -1
+     (nil))
+(insn 237 236 238 22 (set (reg/f:DI 182)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])) Policy_spt.c:284 -1
+     (nil))
+(insn 238 237 239 22 (parallel [
+            (set (reg/f:DI 142 [ D.13168 ])
+                (plus:DI (reg:DI 141 [ D.13167 ])
+                    (reg/f:DI 182)))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:284 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 opA+0 S8 A64])
+            (reg:DI 141 [ D.13167 ]))
+        (nil)))
+(insn 239 238 240 22 (set (reg:QI 143 [ D.13169 ])
+        (mem:QI (reg/f:DI 142 [ D.13168 ]) [0 *_88+0 S1 A8])) Policy_spt.c:284 -1
+     (nil))
+(insn 240 239 241 22 (set (reg:DI 144 [ D.13167 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32]))) Policy_spt.c:284 -1
+     (nil))
+(insn 241 240 242 22 (set (reg/f:DI 183)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])) Policy_spt.c:284 -1
+     (nil))
+(insn 242 241 243 22 (parallel [
+            (set (reg/f:DI 145 [ D.13168 ])
+                (plus:DI (reg:DI 144 [ D.13167 ])
+                    (reg/f:DI 183)))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:284 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 opB+0 S8 A64])
+            (reg:DI 144 [ D.13167 ]))
+        (nil)))
+(insn 243 242 244 22 (set (reg:QI 146 [ D.13169 ])
+        (mem:QI (reg/f:DI 145 [ D.13168 ]) [0 *_91+0 S1 A8])) Policy_spt.c:284 -1
+     (nil))
+(insn 244 243 245 22 (parallel [
+            (set (reg:QI 147 [ D.13169 ])
+                (and:QI (reg:QI 143 [ D.13169 ])
+                    (reg:QI 146 [ D.13169 ])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:284 -1
+     (nil))
+(insn 245 244 246 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 147 [ D.13169 ])
+            (const_int 0 [0]))) Policy_spt.c:284 -1
+     (nil))
+(jump_insn 246 245 247 22 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 251)
+            (pc))) Policy_spt.c:284 -1
+     (nil)
+ -> 251)
+(note 247 246 248 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 248 247 249 23 (set (reg:SI 87 [ D.13163 ])
+        (const_int 0 [0])) Policy_spt.c:285 -1
+     (nil))
+(jump_insn 249 248 250 23 (set (pc)
+        (label_ref 273)) Policy_spt.c:285 -1
+     (nil)
+ -> 273)
+(barrier 250 249 251)
+(code_label 251 250 252 24 47 "" [1 uses])
+(note 252 251 253 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 253 252 254 24 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) Policy_spt.c:283 -1
+     (nil))
+(code_label 254 253 255 25 46 "" [1 uses])
+(note 255 254 256 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 256 255 258 25 (set (reg:SI 140 [ D.13165 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 size+0 S2 A32]))) Policy_spt.c:283 -1
+     (nil))
+(insn 258 256 259 25 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 140 [ D.13165 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 i+0 S4 A32]))) Policy_spt.c:283 -1
+     (nil))
+(jump_insn 259 258 260 25 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 257)
+            (pc))) Policy_spt.c:283 -1
+     (nil)
+ -> 257)
+(note 260 259 261 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 261 260 262 26 (set (pc)
+        (label_ref 270)) Policy_spt.c:287 -1
+     (nil)
+ -> 270)
+(barrier 262 261 263)
+(code_label 263 262 264 27 27 "" [1 uses])
+(note 264 263 265 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 265 264 266 27 (set (reg:SI 1 dx)
+        (const_int 3 [0x3])) Policy_spt.c:289 -1
+     (nil))
+(insn 266 265 267 27 (set (reg:SI 4 si)
+        (const_int 289 [0x121])) Policy_spt.c:289 -1
+     (nil))
+(insn 267 266 268 27 (set (reg:DI 5 di)
+        (const_int 0 [0])) Policy_spt.c:289 -1
+     (nil))
+(call_insn 268 267 269 27 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fe1293e60d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) Policy_spt.c:289 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 269 268 270)
+(code_label 270 269 271 28 45 "" [2 uses])
+(note 271 270 272 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 272 271 273 28 (set (reg:SI 87 [ D.13163 ])
+        (const_int 1 [0x1])) Policy_spt.c:292 -1
+     (nil))
+(code_label 273 272 274 29 41 "" [12 uses])
+(note 274 273 275 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 275 274 279 29 (set (reg:SI 148 [ <retval> ])
+        (reg:SI 87 [ D.13163 ])) -1
+     (nil))
+(insn 279 275 280 29 (set (reg/i:SI 0 ax)
+        (reg:SI 148 [ <retval> ])) Policy_spt.c:293 -1
+     (nil))
+(insn 280 279 0 29 (use (reg/i:SI 0 ax)) Policy_spt.c:293 -1
+     (nil))

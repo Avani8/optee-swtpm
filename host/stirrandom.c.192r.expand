@@ -1,0 +1,1303 @@
+
+;; Function main (main, funcdef_no=2, decl_uid=6074, cgraph_uid=2, symbol_order=3)
+
+Partition 5: size 130 align 16
+	in
+Partition 2: size 8 align 8
+	inputFilename_9
+Partition 10: size 8 align 8
+	num
+Partition 9: size 8 align 8
+	submsg
+Partition 8: size 8 align 8
+	msg
+Partition 7: size 8 align 8
+	length
+Partition 6: size 8 align 8
+	buffer
+Partition 4: size 8 align 8
+	tssContext
+Partition 3: size 4 align 4
+	rc1_92
+Partition 1: size 4 align 4
+	i_7
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 52 from 8 to 14.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Edge 33->35 redirected to 37
+Merging block 35 into block 34...
+Merged blocks 34 and 35.
+Merged 34 and 35 without moving.
+Merging block 38 into block 37...
+Merged blocks 37 and 38.
+Merged 37 and 38 without moving.
+Removing jump 275.
+Merging block 39 into block 37...
+Merged blocks 37 and 39.
+Merged 37 and 39 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -228 [0xffffffffffffff1c])) [0 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) stirrandom.c:59 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) stirrandom.c:59 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.6180+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:59 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) stirrandom.c:60 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 tssContext+0 S8 A64])
+        (const_int 0 [0])) stirrandom.c:62 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -152 [0xffffffffffffff68])) [0 inputFilename+0 S8 A64])
+        (const_int 0 [0])) stirrandom.c:64 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [0 buffer+0 S8 A64])
+        (const_int 0 [0])) stirrandom.c:66 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 length+0 S8 A64])
+        (const_int 0 [0])) stirrandom.c:67 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:DI 87 [ D.6170 ])
+        (mem/f/c:DI (symbol_ref:DI ("stdout") [flags 0x40]  <var_decl 0x7f0018fd85a0 stdout>) [0 stdout+0 S8 A64])) stirrandom.c:69 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 2 cx)
+        (const_int 0 [0])) stirrandom.c:69 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 1 dx)
+        (const_int 2 [0x2])) stirrandom.c:69 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) stirrandom.c:69 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.6170 ])) stirrandom.c:69 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("setvbuf") [flags 0x41]  <function_decl 0x7f00190181b0 setvbuf>) [0 setvbuf S1 A8])
+            (const_int 0 [0]))) stirrandom.c:69 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 19 18 20 2 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f0018b09750 *.LC0>)) stirrandom.c:70 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) stirrandom.c:70 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DI 5 di)
+        (const_int 0 [0])) stirrandom.c:70 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7f0018e8c000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) stirrandom.c:70 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 23 22 24 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) stirrandom.c:73 -1
+     (nil))
+(jump_insn 24 23 25 2 (set (pc)
+        (label_ref 119)) stirrandom.c:73 -1
+     (nil)
+ -> 119)
+(barrier 25 24 125)
+(code_label 125 25 26 4 10 "" [1 uses])
+(note 26 125 27 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 4 (set (reg:SI 126)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])) stirrandom.c:74 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:DI 88 [ D.6171 ])
+        (sign_extend:DI (reg:SI 126))) stirrandom.c:74 -1
+     (nil))
+(insn 29 28 30 4 (parallel [
+            (set (reg:DI 89 [ D.6171 ])
+                (ashift:DI (reg:DI 88 [ D.6171 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:74 -1
+     (nil))
+(insn 30 29 31 4 (set (reg/f:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])) stirrandom.c:74 -1
+     (nil))
+(insn 31 30 32 4 (parallel [
+            (set (reg/f:DI 90 [ D.6172 ])
+                (plus:DI (reg:DI 89 [ D.6171 ])
+                    (reg/f:DI 127)))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:74 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])
+            (reg:DI 89 [ D.6171 ]))
+        (nil)))
+(insn 32 31 33 4 (set (reg/f:DI 91 [ D.6173 ])
+        (mem/f:DI (reg/f:DI 90 [ D.6172 ]) [0 *_37+0 S8 A64])) stirrandom.c:74 -1
+     (nil))
+(insn 33 32 34 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f0018b097e0 *.LC1>)) stirrandom.c:74 -1
+     (nil))
+(insn 34 33 35 4 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ D.6173 ])) stirrandom.c:74 -1
+     (nil))
+(call_insn/i 35 34 36 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f0018f200d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) stirrandom.c:74 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 36 35 37 4 (set (reg:SI 92 [ D.6174 ])
+        (reg:SI 0 ax)) stirrandom.c:74 -1
+     (nil))
+(insn 37 36 38 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.6174 ])
+            (const_int 0 [0]))) stirrandom.c:74 -1
+     (nil))
+(jump_insn 38 37 39 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 63)
+            (pc))) stirrandom.c:74 -1
+     (nil)
+ -> 63)
+(note 39 38 40 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:75 -1
+     (nil))
+(insn 41 40 42 5 (set (reg:SI 128)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])) stirrandom.c:76 -1
+     (nil))
+(insn 42 41 43 5 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 128)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -228 [0xffffffffffffff1c])) [0 argc+0 S4 A32]))) stirrandom.c:76 -1
+     (nil))
+(jump_insn 43 42 44 5 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) stirrandom.c:76 -1
+     (nil)
+ -> 54)
+(note 44 43 45 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 45 44 46 6 (set (reg:SI 129)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])) stirrandom.c:77 -1
+     (nil))
+(insn 46 45 47 6 (set (reg:DI 93 [ D.6171 ])
+        (sign_extend:DI (reg:SI 129))) stirrandom.c:77 -1
+     (nil))
+(insn 47 46 48 6 (parallel [
+            (set (reg:DI 94 [ D.6171 ])
+                (ashift:DI (reg:DI 93 [ D.6171 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:77 -1
+     (nil))
+(insn 48 47 49 6 (set (reg/f:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])) stirrandom.c:77 -1
+     (nil))
+(insn 49 48 50 6 (parallel [
+            (set (reg/f:DI 95 [ D.6172 ])
+                (plus:DI (reg:DI 94 [ D.6171 ])
+                    (reg/f:DI 130)))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:77 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])
+            (reg:DI 94 [ D.6171 ]))
+        (nil)))
+(insn 50 49 51 6 (set (reg/f:DI 131)
+        (mem/f:DI (reg/f:DI 95 [ D.6172 ]) [0 *_43+0 S8 A64])) stirrandom.c:77 -1
+     (nil))
+(insn 51 50 52 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -152 [0xffffffffffffff68])) [0 inputFilename+0 S8 A64])
+        (reg/f:DI 131)) stirrandom.c:77 -1
+     (nil))
+(jump_insn 52 51 53 6 (set (pc)
+        (label_ref:DI 116)) 654 {jump}
+     (nil)
+ -> 116)
+(barrier 53 52 54)
+(code_label 54 53 55 7 4 "" [1 uses])
+(note 55 54 56 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 57 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f0018b09870 *.LC2>)) stirrandom.c:80 -1
+     (nil))
+(call_insn 57 56 58 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f0018f29360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) stirrandom.c:80 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 58 57 61 7 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f0018ae60d8 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) stirrandom.c:81 -1
+     (nil)
+    (nil))
+(jump_insn 61 58 62 7 (set (pc)
+        (label_ref 116)) -1
+     (nil)
+ -> 116)
+(barrier 62 61 63)
+(code_label 63 62 64 9 3 "" [1 uses])
+(note 64 63 65 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 65 64 66 9 (set (reg:SI 132)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])) stirrandom.c:84 -1
+     (nil))
+(insn 66 65 67 9 (set (reg:DI 96 [ D.6171 ])
+        (sign_extend:DI (reg:SI 132))) stirrandom.c:84 -1
+     (nil))
+(insn 67 66 68 9 (parallel [
+            (set (reg:DI 97 [ D.6171 ])
+                (ashift:DI (reg:DI 96 [ D.6171 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:84 -1
+     (nil))
+(insn 68 67 69 9 (set (reg/f:DI 133)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])) stirrandom.c:84 -1
+     (nil))
+(insn 69 68 70 9 (parallel [
+            (set (reg/f:DI 98 [ D.6172 ])
+                (plus:DI (reg:DI 97 [ D.6171 ])
+                    (reg/f:DI 133)))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:84 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])
+            (reg:DI 97 [ D.6171 ]))
+        (nil)))
+(insn 70 69 71 9 (set (reg/f:DI 99 [ D.6173 ])
+        (mem/f:DI (reg/f:DI 98 [ D.6172 ]) [0 *_49+0 S8 A64])) stirrandom.c:84 -1
+     (nil))
+(insn 71 70 72 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f0018b09900 *.LC3>)) stirrandom.c:84 -1
+     (nil))
+(insn 72 71 73 9 (set (reg:DI 5 di)
+        (reg/f:DI 99 [ D.6173 ])) stirrandom.c:84 -1
+     (nil))
+(call_insn/i 73 72 74 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f0018f200d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) stirrandom.c:84 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 74 73 75 9 (set (reg:SI 100 [ D.6174 ])
+        (reg:SI 0 ax)) stirrandom.c:84 -1
+     (nil))
+(insn 75 74 76 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 100 [ D.6174 ])
+            (const_int 0 [0]))) stirrandom.c:84 -1
+     (nil))
+(jump_insn 76 75 77 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 81)
+            (pc))) stirrandom.c:84 -1
+     (nil)
+ -> 81)
+(note 77 76 78 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(call_insn 78 77 79 10 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f0018ae60d8 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) stirrandom.c:85 -1
+     (nil)
+    (nil))
+(jump_insn 79 78 80 10 (set (pc)
+        (label_ref 116)) -1
+     (nil)
+ -> 116)
+(barrier 80 79 81)
+(code_label 81 80 82 11 7 "" [1 uses])
+(note 82 81 83 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 11 (set (reg:SI 134)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])) stirrandom.c:87 -1
+     (nil))
+(insn 84 83 85 11 (set (reg:DI 101 [ D.6171 ])
+        (sign_extend:DI (reg:SI 134))) stirrandom.c:87 -1
+     (nil))
+(insn 85 84 86 11 (parallel [
+            (set (reg:DI 102 [ D.6171 ])
+                (ashift:DI (reg:DI 101 [ D.6171 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:87 -1
+     (nil))
+(insn 86 85 87 11 (set (reg/f:DI 135)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])) stirrandom.c:87 -1
+     (nil))
+(insn 87 86 88 11 (parallel [
+            (set (reg/f:DI 103 [ D.6172 ])
+                (plus:DI (reg:DI 102 [ D.6171 ])
+                    (reg/f:DI 135)))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:87 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])
+            (reg:DI 102 [ D.6171 ]))
+        (nil)))
+(insn 88 87 89 11 (set (reg/f:DI 104 [ D.6173 ])
+        (mem/f:DI (reg/f:DI 103 [ D.6172 ]) [0 *_55+0 S8 A64])) stirrandom.c:87 -1
+     (nil))
+(insn 89 88 90 11 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f0018b09990 *.LC4>)) stirrandom.c:87 -1
+     (nil))
+(insn 90 89 91 11 (set (reg:DI 5 di)
+        (reg/f:DI 104 [ D.6173 ])) stirrandom.c:87 -1
+     (nil))
+(call_insn/i 91 90 92 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f0018f200d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) stirrandom.c:87 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 92 91 93 11 (set (reg:SI 105 [ D.6174 ])
+        (reg:SI 0 ax)) stirrandom.c:87 -1
+     (nil))
+(insn 93 92 94 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 105 [ D.6174 ])
+            (const_int 0 [0]))) stirrandom.c:87 -1
+     (nil))
+(jump_insn 94 93 95 11 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 103)
+            (pc))) stirrandom.c:87 -1
+     (nil)
+ -> 103)
+(note 95 94 96 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 96 95 97 12 (set (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f0018ce8090 verbose>) [0 verbose+0 S4 A32])
+        (const_int 1 [0x1])) stirrandom.c:88 -1
+     (nil))
+(insn 97 96 98 12 (set (reg:DI 1 dx)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f0018b09a20 *.LC5>)) stirrandom.c:89 -1
+     (nil))
+(insn 98 97 99 12 (set (reg:SI 4 si)
+        (const_int 1 [0x1])) stirrandom.c:89 -1
+     (nil))
+(insn 99 98 100 12 (set (reg:DI 5 di)
+        (const_int 0 [0])) stirrandom.c:89 -1
+     (nil))
+(call_insn 100 99 101 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_SetProperty") [flags 0x41]  <function_decl 0x7f0018e8c000 TSS_SetProperty>) [0 TSS_SetProperty S1 A8])
+            (const_int 0 [0]))) stirrandom.c:89 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(jump_insn 101 100 102 12 (set (pc)
+        (label_ref 116)) -1
+     (nil)
+ -> 116)
+(barrier 102 101 103)
+(code_label 103 102 104 13 8 "" [1 uses])
+(note 104 103 105 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 105 104 106 13 (set (reg:SI 136)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])) stirrandom.c:92 -1
+     (nil))
+(insn 106 105 107 13 (set (reg:DI 106 [ D.6171 ])
+        (sign_extend:DI (reg:SI 136))) stirrandom.c:92 -1
+     (nil))
+(insn 107 106 108 13 (parallel [
+            (set (reg:DI 107 [ D.6171 ])
+                (ashift:DI (reg:DI 106 [ D.6171 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:92 -1
+     (nil))
+(insn 108 107 109 13 (set (reg/f:DI 137)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])) stirrandom.c:92 -1
+     (nil))
+(insn 109 108 110 13 (parallel [
+            (set (reg/f:DI 108 [ D.6172 ])
+                (plus:DI (reg:DI 107 [ D.6171 ])
+                    (reg/f:DI 137)))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:92 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -240 [0xffffffffffffff10])) [0 argv+0 S8 A64])
+            (reg:DI 107 [ D.6171 ]))
+        (nil)))
+(insn 110 109 111 13 (set (reg/f:DI 109 [ D.6173 ])
+        (mem/f:DI (reg/f:DI 108 [ D.6172 ]) [0 *_62+0 S8 A64])) stirrandom.c:92 -1
+     (nil))
+(insn 111 110 112 13 (set (reg:DI 4 si)
+        (reg/f:DI 109 [ D.6173 ])) stirrandom.c:92 -1
+     (nil))
+(insn 112 111 113 13 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f0018b09ab0 *.LC6>)) stirrandom.c:92 -1
+     (nil))
+(insn 113 112 114 13 (set (reg:QI 0 ax)
+        (const_int 0 [0])) stirrandom.c:92 -1
+     (nil))
+(call_insn 114 113 115 13 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f0018f26ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) stirrandom.c:92 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(call_insn 115 114 116 13 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f0018ae60d8 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) stirrandom.c:93 -1
+     (nil)
+    (nil))
+(code_label 116 115 117 14 6 "" [4 uses])
+(note 117 116 118 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 118 117 119 14 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:73 -1
+     (nil))
+(code_label 119 118 120 15 2 "" [1 uses])
+(note 120 119 121 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 121 120 122 15 (set (reg:SI 138)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 i+0 S4 A32])) stirrandom.c:73 -1
+     (nil))
+(insn 122 121 123 15 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 138)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -228 [0xffffffffffffff1c])) [0 argc+0 S4 A32]))) stirrandom.c:73 -1
+     (nil))
+(jump_insn 123 122 124 15 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 128)
+            (pc))) stirrandom.c:73 -1
+     (nil)
+ -> 128)
+(note 124 123 126 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 126 124 127 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) stirrandom.c:73 -1
+     (nil))
+(jump_insn 127 126 128 16 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 125)
+            (pc))) stirrandom.c:73 -1
+     (nil)
+ -> 125)
+(code_label 128 127 129 17 9 "" [1 uses])
+(note 129 128 130 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 130 129 131 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -152 [0xffffffffffffff68])) [0 inputFilename+0 S8 A64])
+            (const_int 0 [0]))) stirrandom.c:96 -1
+     (nil))
+(jump_insn 131 130 132 17 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 136)
+            (pc))) stirrandom.c:96 -1
+     (nil)
+ -> 136)
+(note 132 131 133 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 133 132 134 18 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f0018b09b40 *.LC7>)) stirrandom.c:97 -1
+     (nil))
+(call_insn 134 133 135 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f0018f29360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) stirrandom.c:97 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 135 134 136 18 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f0018ae60d8 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) stirrandom.c:98 -1
+     (nil)
+    (nil))
+(code_label 136 135 137 19 11 "" [1 uses])
+(note 137 136 138 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 138 137 139 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) stirrandom.c:100 -1
+     (nil))
+(jump_insn 139 138 140 19 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 150)
+            (pc))) stirrandom.c:100 -1
+     (nil)
+ -> 150)
+(note 140 139 141 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 141 140 142 20 (set (reg:DI 139)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -152 [0xffffffffffffff68])) [0 inputFilename+0 S8 A64])) stirrandom.c:101 -1
+     (nil))
+(insn 142 141 143 20 (parallel [
+            (set (reg:DI 140)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -184 [0xffffffffffffff48])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:101 -1
+     (nil))
+(insn 143 142 144 20 (parallel [
+            (set (reg:DI 141)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -192 [0xffffffffffffff40])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:101 -1
+     (nil))
+(insn 144 143 145 20 (set (reg:DI 1 dx)
+        (reg:DI 139)) stirrandom.c:101 -1
+     (nil))
+(insn 145 144 146 20 (set (reg:DI 4 si)
+        (reg:DI 140)) stirrandom.c:101 -1
+     (nil))
+(insn 146 145 147 20 (set (reg:DI 5 di)
+        (reg:DI 141)) stirrandom.c:101 -1
+     (nil))
+(call_insn 147 146 148 20 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_ReadBinaryFile") [flags 0x41]  <function_decl 0x7f0018e8c948 TSS_File_ReadBinaryFile>) [0 TSS_File_ReadBinaryFile S1 A8])
+            (const_int 0 [0]))) stirrandom.c:101 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 148 147 149 20 (set (reg:SI 142)
+        (reg:SI 0 ax)) stirrandom.c:101 -1
+     (nil))
+(insn 149 148 150 20 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+        (reg:SI 142)) stirrandom.c:101 -1
+     (nil))
+(code_label 150 149 151 21 12 "" [1 uses])
+(note 151 150 152 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 152 151 153 21 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) stirrandom.c:105 -1
+     (nil))
+(jump_insn 153 152 154 21 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 166)
+            (pc))) stirrandom.c:105 -1
+     (nil)
+ -> 166)
+(note 154 153 155 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 155 154 156 22 (set (reg:DI 110 [ D.6171 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 length+0 S8 A64])) stirrandom.c:106 -1
+     (nil))
+(insn 156 155 157 22 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 110 [ D.6171 ])
+            (const_int 128 [0x80]))) stirrandom.c:106 -1
+     (nil))
+(jump_insn 157 156 158 22 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 166)
+            (pc))) stirrandom.c:106 -1
+     (nil)
+ -> 166)
+(note 158 157 159 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 159 158 160 23 (set (reg:DI 111 [ D.6171 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 length+0 S8 A64])) stirrandom.c:107 -1
+     (nil))
+(insn 160 159 161 23 (set (reg:SI 112 [ D.6175 ])
+        (subreg:SI (reg:DI 111 [ D.6171 ]) 0)) stirrandom.c:107 -1
+     (nil))
+(insn 161 160 162 23 (set (reg:SI 4 si)
+        (reg:SI 112 [ D.6175 ])) stirrandom.c:107 -1
+     (nil))
+(insn 162 161 163 23 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f0018b09bd0 *.LC8>)) stirrandom.c:107 -1
+     (nil))
+(insn 163 162 164 23 (set (reg:QI 0 ax)
+        (const_int 0 [0])) stirrandom.c:107 -1
+     (nil))
+(call_insn 164 163 165 23 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f0018f26ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) stirrandom.c:107 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 165 164 166 23 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+        (const_int 720900 [0xb0004])) stirrandom.c:108 -1
+     (nil))
+(code_label 166 165 167 24 13 "" [2 uses])
+(note 167 166 168 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 168 167 169 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) stirrandom.c:111 -1
+     (nil))
+(jump_insn 169 168 170 24 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 182)
+            (pc))) stirrandom.c:111 -1
+     (nil)
+ -> 182)
+(note 170 169 171 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 171 170 172 25 (set (reg:DI 113 [ D.6171 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 length+0 S8 A64])) stirrandom.c:112 -1
+     (nil))
+(insn 172 171 173 25 (set (reg:HI 114 [ D.6176 ])
+        (subreg:HI (reg:DI 113 [ D.6171 ]) 0)) stirrandom.c:112 -1
+     (nil))
+(insn 173 172 174 25 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 in.inData.t.size+0 S2 A64])
+        (reg:HI 114 [ D.6176 ])) stirrandom.c:112 -1
+     (nil))
+(insn 174 173 175 25 (set (reg:DI 115 [ D.6171 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 length+0 S8 A64])) stirrandom.c:113 -1
+     (nil))
+(insn 175 174 176 25 (set (reg/f:DI 116 [ D.6177 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [0 buffer+0 S8 A64])) stirrandom.c:113 -1
+     (nil))
+(insn 176 175 177 25 (parallel [
+            (set (reg:DI 143)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:113 -1
+     (nil))
+(insn 177 176 178 25 (parallel [
+            (set (reg:DI 144)
+                (plus:DI (reg:DI 143)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:113 -1
+     (nil))
+(insn 178 177 179 25 (set (reg:DI 1 dx)
+        (reg:DI 115 [ D.6171 ])) stirrandom.c:113 -1
+     (nil))
+(insn 179 178 180 25 (set (reg:DI 4 si)
+        (reg/f:DI 116 [ D.6177 ])) stirrandom.c:113 -1
+     (nil))
+(insn 180 179 181 25 (set (reg:DI 5 di)
+        (reg:DI 144)) stirrandom.c:113 -1
+     (nil))
+(call_insn 181 180 182 25 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f0018f1ce58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) stirrandom.c:113 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(code_label 182 181 183 26 14 "" [1 uses])
+(note 183 182 184 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 184 183 185 26 (set (reg/f:DI 117 [ D.6177 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [0 buffer+0 S8 A64])) stirrandom.c:115 -1
+     (nil))
+(insn 185 184 186 26 (set (reg:DI 5 di)
+        (reg/f:DI 117 [ D.6177 ])) stirrandom.c:115 -1
+     (nil))
+(call_insn 186 185 187 26 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f0018f3ce58 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) stirrandom.c:115 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 187 186 188 26 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [0 buffer+0 S8 A64])
+        (const_int 0 [0])) stirrandom.c:116 -1
+     (nil))
+(insn 188 187 189 26 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) stirrandom.c:119 -1
+     (nil))
+(jump_insn 189 188 190 26 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 196)
+            (pc))) stirrandom.c:119 -1
+     (nil)
+ -> 196)
+(note 190 189 191 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 191 190 192 27 (parallel [
+            (set (reg:DI 145)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -200 [0xffffffffffffff38])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:120 -1
+     (nil))
+(insn 192 191 193 27 (set (reg:DI 5 di)
+        (reg:DI 145)) stirrandom.c:120 -1
+     (nil))
+(call_insn 193 192 194 27 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Create") [flags 0x41]  <function_decl 0x7f0018e84ca8 TSS_Create>) [0 TSS_Create S1 A8])
+            (const_int 0 [0]))) stirrandom.c:120 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 194 193 195 27 (set (reg:SI 146)
+        (reg:SI 0 ax)) stirrandom.c:120 -1
+     (nil))
+(insn 195 194 196 27 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+        (reg:SI 146)) stirrandom.c:120 -1
+     (nil))
+(code_label 196 195 197 28 15 "" [1 uses])
+(note 197 196 198 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 198 197 199 28 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) stirrandom.c:123 -1
+     (nil))
+(jump_insn 199 198 200 28 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 216)
+            (pc))) stirrandom.c:123 -1
+     (nil)
+ -> 216)
+(note 200 199 201 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 201 200 202 29 (set (reg/f:DI 118 [ D.6178 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 tssContext+0 S8 A64])) stirrandom.c:124 -1
+     (nil))
+(insn 202 201 203 29 (parallel [
+            (set (reg:DI 147)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:124 -1
+     (nil))
+(insn 203 202 204 29 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 0 [0])) stirrandom.c:124 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 204 203 205 29 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) stirrandom.c:124 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 205 204 206 29 (set (reg:SI 38 r9)
+        (const_int 1073741831 [0x40000007])) stirrandom.c:124 -1
+     (nil))
+(insn 206 205 207 29 (set (reg:SI 37 r8)
+        (const_int 326 [0x146])) stirrandom.c:124 -1
+     (nil))
+(insn 207 206 208 29 (set (reg:DI 2 cx)
+        (const_int 0 [0])) stirrandom.c:124 -1
+     (nil))
+(insn 208 207 209 29 (set (reg:DI 1 dx)
+        (reg:DI 147)) stirrandom.c:124 -1
+     (nil))
+(insn 209 208 210 29 (set (reg:DI 4 si)
+        (const_int 0 [0])) stirrandom.c:124 -1
+     (nil))
+(insn 210 209 211 29 (set (reg:DI 5 di)
+        (reg/f:DI 118 [ D.6178 ])) stirrandom.c:124 -1
+     (nil))
+(insn 211 210 212 29 (set (reg:QI 0 ax)
+        (const_int 0 [0])) stirrandom.c:124 -1
+     (nil))
+(call_insn 212 211 213 29 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Execute") [flags 0x41]  <function_decl 0x7f0018e84e58 TSS_Execute>) [0 TSS_Execute S1 A8])
+            (const_int 16 [0x10]))) stirrandom.c:124 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (expr_list:SI (use (reg:SI 37 r8))
+                            (expr_list:SI (use (reg:SI 38 r9))
+                                (nil)))))))))
+(insn 213 212 214 29 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:124 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 214 213 215 29 (set (reg:SI 148)
+        (reg:SI 0 ax)) stirrandom.c:124 -1
+     (nil))
+(insn 215 214 216 29 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+        (reg:SI 148)) stirrandom.c:124 -1
+     (nil))
+(code_label 216 215 217 30 16 "" [1 uses])
+(note 217 216 218 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 218 217 219 30 (set (reg/f:DI 119 [ D.6178 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 tssContext+0 S8 A64])) stirrandom.c:132 -1
+     (nil))
+(insn 219 218 220 30 (set (reg:DI 5 di)
+        (reg/f:DI 119 [ D.6178 ])) stirrandom.c:132 -1
+     (nil))
+(call_insn 220 219 221 30 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Delete") [flags 0x41]  <function_decl 0x7f0018e84d80 TSS_Delete>) [0 TSS_Delete S1 A8])
+            (const_int 0 [0]))) stirrandom.c:132 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 221 220 222 30 (set (reg:SI 149)
+        (reg:SI 0 ax)) stirrandom.c:132 -1
+     (nil))
+(insn 222 221 223 30 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -204 [0xffffffffffffff34])) [0 rc1+0 S4 A32])
+        (reg:SI 149)) stirrandom.c:132 -1
+     (nil))
+(insn 223 222 224 30 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) stirrandom.c:133 -1
+     (nil))
+(jump_insn 224 223 225 30 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 228)
+            (pc))) stirrandom.c:133 -1
+     (nil)
+ -> 228)
+(note 225 224 226 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 226 225 227 31 (set (reg:SI 150)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -204 [0xffffffffffffff34])) [0 rc1+0 S4 A32])) stirrandom.c:134 -1
+     (nil))
+(insn 227 226 228 31 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+        (reg:SI 150)) stirrandom.c:134 -1
+     (nil))
+(code_label 228 227 229 32 17 "" [1 uses])
+(note 229 228 230 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 230 229 231 32 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) stirrandom.c:137 -1
+     (nil))
+(jump_insn 231 230 232 32 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 243)
+            (pc))) stirrandom.c:137 -1
+     (nil)
+ -> 243)
+(note 232 231 233 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 233 232 234 33 (set (reg:SI 120 [ D.6174 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f0018ce8090 verbose>) [0 verbose+0 S4 A32])) stirrandom.c:138 -1
+     (nil))
+(insn 234 233 235 33 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 120 [ D.6174 ])
+            (const_int 0 [0]))) stirrandom.c:138 -1
+     (nil))
+(jump_insn 235 234 236 33 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 269)
+            (pc))) stirrandom.c:138 612 {*jcc_1}
+     (nil)
+ -> 269)
+(note 236 235 237 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 237 236 238 34 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f0018b09c60 *.LC9>)) stirrandom.c:138 -1
+     (nil))
+(call_insn 238 237 241 34 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f0018f29360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) stirrandom.c:138 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 241 238 242 34 (set (pc)
+        (label_ref 269)) -1
+     (nil)
+ -> 269)
+(barrier 242 241 243)
+(code_label 243 242 244 36 18 "" [1 uses])
+(note 244 243 245 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 245 244 246 36 (set (reg:SI 151)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])) stirrandom.c:144 -1
+     (nil))
+(insn 246 245 247 36 (set (reg:SI 4 si)
+        (reg:SI 151)) stirrandom.c:144 -1
+     (nil))
+(insn 247 246 248 36 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f0018b09cf0 *.LC10>)) stirrandom.c:144 -1
+     (nil))
+(insn 248 247 249 36 (set (reg:QI 0 ax)
+        (const_int 0 [0])) stirrandom.c:144 -1
+     (nil))
+(call_insn 249 248 250 36 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f0018f26ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) stirrandom.c:144 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 250 249 251 36 (set (reg:SI 152)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])) stirrandom.c:145 -1
+     (nil))
+(insn 251 250 252 36 (parallel [
+            (set (reg:DI 153)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:145 -1
+     (nil))
+(insn 252 251 253 36 (parallel [
+            (set (reg:DI 154)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -168 [0xffffffffffffff58])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:145 -1
+     (nil))
+(insn 253 252 254 36 (parallel [
+            (set (reg:DI 155)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])))
+            (clobber (reg:CC 17 flags))
+        ]) stirrandom.c:145 -1
+     (nil))
+(insn 254 253 255 36 (set (reg:SI 2 cx)
+        (reg:SI 152)) stirrandom.c:145 -1
+     (nil))
+(insn 255 254 256 36 (set (reg:DI 1 dx)
+        (reg:DI 153)) stirrandom.c:145 -1
+     (nil))
+(insn 256 255 257 36 (set (reg:DI 4 si)
+        (reg:DI 154)) stirrandom.c:145 -1
+     (nil))
+(insn 257 256 258 36 (set (reg:DI 5 di)
+        (reg:DI 155)) stirrandom.c:145 -1
+     (nil))
+(call_insn 258 257 259 36 (call (mem:QI (symbol_ref:DI ("TSS_ResponseCode_toString") [flags 0x41]  <function_decl 0x7f0018e8ce58 TSS_ResponseCode_toString>) [0 TSS_ResponseCode_toString S1 A8])
+        (const_int 0 [0])) stirrandom.c:145 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 259 258 260 36 (set (reg/f:DI 121 [ D.6179 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -160 [0xffffffffffffff60])) [0 num+0 S8 A64])) stirrandom.c:146 -1
+     (nil))
+(insn 260 259 261 36 (set (reg/f:DI 122 [ D.6179 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [0 submsg+0 S8 A64])) stirrandom.c:146 -1
+     (nil))
+(insn 261 260 262 36 (set (reg/f:DI 123 [ D.6179 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 msg+0 S8 A64])) stirrandom.c:146 -1
+     (nil))
+(insn 262 261 263 36 (set (reg:DI 2 cx)
+        (reg/f:DI 121 [ D.6179 ])) stirrandom.c:146 -1
+     (nil))
+(insn 263 262 264 36 (set (reg:DI 1 dx)
+        (reg/f:DI 122 [ D.6179 ])) stirrandom.c:146 -1
+     (nil))
+(insn 264 263 265 36 (set (reg:DI 4 si)
+        (reg/f:DI 123 [ D.6179 ])) stirrandom.c:146 -1
+     (nil))
+(insn 265 264 266 36 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f0018b09d80 *.LC11>)) stirrandom.c:146 -1
+     (nil))
+(insn 266 265 267 36 (set (reg:QI 0 ax)
+        (const_int 0 [0])) stirrandom.c:146 -1
+     (nil))
+(call_insn 267 266 268 36 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f0018f26ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) stirrandom.c:146 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (nil)))))))
+(insn 268 267 269 36 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])
+        (const_int 1 [0x1])) stirrandom.c:147 -1
+     (nil))
+(code_label 269 268 270 37 20 "" [2 uses])
+(note 270 269 271 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 271 270 274 37 (set (reg:SI 124 [ D.6174 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 rc+0 S4 A32])) stirrandom.c:149 -1
+     (nil))
+(insn 274 271 278 37 (set (reg:SI 125 [ <retval> ])
+        (reg:SI 124 [ D.6174 ])) -1
+     (nil))
+(insn 278 274 279 37 (set (reg/i:SI 0 ax)
+        (reg:SI 125 [ <retval> ])) stirrandom.c:150 -1
+     (nil))
+(insn 279 278 280 37 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.6180+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) stirrandom.c:150 -1
+     (nil))
+(jump_insn 280 279 286 37 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 283)
+            (pc))) stirrandom.c:150 -1
+     (nil)
+ -> 283)
+(note 286 280 281 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(call_insn 281 286 282 40 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f0018ae6ca8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) stirrandom.c:150 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 282 281 283)
+(code_label 283 282 287 41 22 "" [1 uses])
+(note 287 283 284 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 284 287 0 41 (use (reg/i:SI 0 ax)) stirrandom.c:150 -1
+     (nil))
+
+;; Function printUsage (printUsage, funcdef_no=3, decl_uid=6070, cgraph_uid=3, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) stirrandom.c:154 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f0018f29000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) stirrandom.c:154 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7f0018b09000 *.LC12>)) stirrandom.c:155 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f0018f29360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) stirrandom.c:155 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) stirrandom.c:156 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f0018f29000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) stirrandom.c:156 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7f0018b1b630 *.LC13>)) stirrandom.c:157 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f0018f29360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) stirrandom.c:157 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) stirrandom.c:158 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f0018f29000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) stirrandom.c:158 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f0018b1b6c0 *.LC14>)) stirrandom.c:159 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f0018f29360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) stirrandom.c:159 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) stirrandom.c:160 -1
+     (nil))
+(call_insn 18 17 19 2 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7f0018f3c000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) stirrandom.c:160 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 19 18 0)

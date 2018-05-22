@@ -1,0 +1,1044 @@
+
+;; Function TimePowerOn (TimePowerOn, funcdef_no=2, decl_uid=11883, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 6 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_plat__TimerRead") [flags 0x41]  <function_decl 0x7f6e00fc7438 _plat__TimerRead>) [0 _plat__TimerRead S1 A8])
+            (const_int 0 [0]))) Time.c:80 -1
+     (nil)
+    (nil))
+(insn 6 5 7 2 (set (reg:DI 87 [ D.12961 ])
+        (reg:DI 0 ax)) Time.c:80 -1
+     (nil))
+(insn 7 6 10 2 (set (mem/c:DI (symbol_ref:DI ("g_time") [flags 0x40]  <var_decl 0x7f6e00e5e510 g_time>) [0 g_time+0 S8 A64])
+        (reg:DI 87 [ D.12961 ])) Time.c:80 -1
+     (nil))
+(insn 10 7 0 2 (const_int 0 [0]) Time.c:81 -1
+     (nil))
+
+;; Function TimeNewEpoch (TimeNewEpoch, funcdef_no=3, decl_uid=12871, cgraph_uid=3, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.12962 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f6e00e5eea0 gp>)
+                    (const_int 932 [0x3a4]))) [0 gp.timeEpoch+0 S4 A32])) Time.c:95 -1
+     (nil))
+(insn 6 5 7 2 (parallel [
+            (set (reg:SI 88 [ D.12962 ])
+                (plus:SI (reg:SI 87 [ D.12962 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:95 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f6e00e5eea0 gp>)
+                    (const_int 932 [0x3a4]))) [0 gp.timeEpoch+0 S4 A32])
+        (reg:SI 88 [ D.12962 ])) Time.c:95 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f6e00e5eea0 gp>)
+                (const_int 932 [0x3a4])))) Time.c:96 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 4 si)
+        (const_int 4 [0x4])) Time.c:96 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (const_int 932 [0x3a4])) Time.c:96 -1
+     (nil))
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7f6e00ec7bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) Time.c:96 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(call_insn 12 11 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_plat__TimerWasStopped") [flags 0x41]  <function_decl 0x7f6e00fc75e8 _plat__TimerWasStopped>) [0 _plat__TimerWasStopped S1 A8])
+            (const_int 0 [0]))) Time.c:99 -1
+     (nil)
+    (nil))
+(insn 15 12 0 2 (const_int 0 [0]) Time.c:100 -1
+     (nil))
+
+;; Function TimeStartup (TimeStartup, funcdef_no=4, decl_uid=11885, cgraph_uid=4, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->5 redirected to 7
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Merging block 6 into block 4...
+Merged blocks 4 and 6.
+Merged 4 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 type+0 S4 A32])
+        (reg:SI 5 di [ type ])) Time.c:112 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:HI 87 [ D.12963 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f6e00e5eea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])) Time.c:116 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:HI 87 [ D.12963 ])
+            (const_int -3 [0xfffffffffffffffd]))) Time.c:116 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 15)
+            (pc))) Time.c:116 612 {*jcc_1}
+     (nil)
+ -> 15)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 17 4 (set (mem/j/c:QI (const:DI (plus:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f6e00e5ef30 go>)
+                    (const_int 8 [0x8]))) [0 go.clockSafe+0 S1 A64])
+        (const_int 0 [0])) Time.c:117 -1
+     (nil))
+(insn 17 10 15 4 (const_int 0 [0]) Time.c:118 -1
+     (nil))
+(code_label 15 17 16 7 3 "" [1 uses])
+(note 16 15 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function TimeClockUpdate (TimeClockUpdate, funcdef_no=5, decl_uid=11887, cgraph_uid=5, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 31 from 8 to 9.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 newTime+0 S8 A64])
+        (reg:DI 5 di [ newTime ])) Time.c:129 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DI 91)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 newTime+0 S8 A64])) Time.c:132 -1
+     (nil))
+(insn 7 6 8 2 (parallel [
+            (set (reg:DI 87 [ D.12964 ])
+                (ior:DI (reg:DI 91)
+                    (const_int 4095 [0xfff])))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:132 -1
+     (expr_list:REG_EQUAL (ior:DI (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 newTime+0 S8 A64])
+            (const_int 4095 [0xfff]))
+        (nil)))
+(insn 8 7 9 2 (set (reg:DI 88 [ D.12965 ])
+        (mem/j/c:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f6e00e5ef30 go>) [0 go.clock+0 S8 A64])) Time.c:132 -1
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg:DI 89 [ D.12964 ])
+                (ior:DI (reg:DI 88 [ D.12965 ])
+                    (const_int 4095 [0xfff])))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:132 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 87 [ D.12964 ])
+            (reg:DI 89 [ D.12964 ]))) Time.c:132 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) Time.c:132 -1
+     (nil)
+ -> 33)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg:SI 90 [ D.12966 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7f6e00e5ecf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) Time.c:134 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.12966 ])
+            (const_int 0 [0]))) Time.c:134 -1
+     (nil))
+(jump_insn 15 14 16 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) Time.c:134 -1
+     (nil)
+ -> 22)
+(note 16 15 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 5 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) Time.c:134 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:SI 4 si)
+        (const_int 134 [0x86])) Time.c:134 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:DI 5 di)
+        (const_int 0 [0])) Time.c:134 -1
+     (nil))
+(call_insn 20 19 21 5 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7f6e00ee00d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) Time.c:134 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 21 20 22)
+(code_label 22 21 23 6 9 "" [1 uses])
+(note 23 22 24 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 6 (set (mem/j/c:QI (const:DI (plus:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f6e00e5ef30 go>)
+                    (const_int 8 [0x8]))) [0 go.clockSafe+0 S1 A64])
+        (const_int 1 [0x1])) Time.c:136 -1
+     (nil))
+(insn 25 24 26 6 (set (reg:DI 92)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 newTime+0 S8 A64])) Time.c:138 -1
+     (nil))
+(insn 26 25 27 6 (set (mem/j/c:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f6e00e5ef30 go>) [0 go.clock+0 S8 A64])
+        (reg:DI 92)) Time.c:138 -1
+     (nil))
+(insn 27 26 28 6 (set (reg:DI 1 dx)
+        (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f6e00e5ef30 go>)) Time.c:139 -1
+     (nil))
+(insn 28 27 29 6 (set (reg:SI 4 si)
+        (const_int 120 [0x78])) Time.c:139 -1
+     (nil))
+(insn 29 28 30 6 (set (reg:SI 5 di)
+        (const_int 3068 [0xbfc])) Time.c:139 -1
+     (nil))
+(call_insn 30 29 31 6 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7f6e00ec7bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) Time.c:139 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(jump_insn 31 30 32 6 (set (pc)
+        (label_ref:DI 39)) 654 {jump}
+     (nil)
+ -> 39)
+(barrier 32 31 33)
+(code_label 33 32 34 7 8 "" [1 uses])
+(note 34 33 35 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 7 (set (reg:DI 93)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 newTime+0 S8 A64])) Time.c:143 -1
+     (nil))
+(insn 36 35 39 7 (set (mem/j/c:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f6e00e5ef30 go>) [0 go.clock+0 S8 A64])
+        (reg:DI 93)) Time.c:143 -1
+     (nil))
+(code_label 39 36 40 9 7 "" [1 uses])
+(note 40 39 0 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+
+;; Function TimeUpdate (TimeUpdate, funcdef_no=6, decl_uid=11889, cgraph_uid=6, symbol_order=6)
+
+Partition 0: size 8 align 8
+	elapsed_9
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 6 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_plat__TimerWasStopped") [flags 0x41]  <function_decl 0x7f6e00fc75e8 _plat__TimerWasStopped>) [0 _plat__TimerWasStopped S1 A8])
+            (const_int 0 [0]))) Time.c:160 -1
+     (nil)
+    (nil))
+(insn 6 5 7 2 (set (reg:SI 87 [ D.12967 ])
+        (reg:SI 0 ax)) Time.c:160 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.12967 ])
+            (const_int 0 [0]))) Time.c:160 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) Time.c:160 -1
+     (nil)
+ -> 11)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(call_insn 10 9 11 4 (call (mem:QI (symbol_ref:DI ("TimeNewEpoch") [flags 0x3]  <function_decl 0x7f6e00fcae58 TimeNewEpoch>) [0 TimeNewEpoch S1 A8])
+        (const_int 0 [0])) Time.c:162 -1
+     (nil)
+    (nil))
+(code_label 11 10 12 5 13 "" [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 13 12 14 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_plat__TimerRead") [flags 0x41]  <function_decl 0x7f6e00fc7438 _plat__TimerRead>) [0 _plat__TimerRead S1 A8])
+            (const_int 0 [0]))) Time.c:166 -1
+     (nil)
+    (nil))
+(insn 14 13 15 5 (set (reg:DI 88 [ D.12968 ])
+        (reg:DI 0 ax)) Time.c:166 -1
+     (nil))
+(insn 15 14 16 5 (set (reg:DI 89 [ D.12968 ])
+        (mem/c:DI (symbol_ref:DI ("g_time") [flags 0x40]  <var_decl 0x7f6e00e5e510 g_time>) [0 g_time+0 S8 A64])) Time.c:166 -1
+     (nil))
+(insn 16 15 17 5 (parallel [
+            (set (reg:DI 94)
+                (minus:DI (reg:DI 88 [ D.12968 ])
+                    (reg:DI 89 [ D.12968 ])))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:166 -1
+     (nil))
+(insn 17 16 18 5 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 elapsed+0 S8 A64])
+        (reg:DI 94)) Time.c:166 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:DI 90 [ D.12968 ])
+        (mem/c:DI (symbol_ref:DI ("g_time") [flags 0x40]  <var_decl 0x7f6e00e5e510 g_time>) [0 g_time+0 S8 A64])) Time.c:168 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:DI 95)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 elapsed+0 S8 A64])) Time.c:168 -1
+     (nil))
+(insn 20 19 21 5 (parallel [
+            (set (reg:DI 91 [ D.12968 ])
+                (plus:DI (reg:DI 90 [ D.12968 ])
+                    (reg:DI 95)))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:168 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 90 [ D.12968 ])
+            (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 elapsed+0 S8 A64]))
+        (nil)))
+(insn 21 20 22 5 (set (mem/c:DI (symbol_ref:DI ("g_time") [flags 0x40]  <var_decl 0x7f6e00e5e510 g_time>) [0 g_time+0 S8 A64])
+        (reg:DI 91 [ D.12968 ])) Time.c:168 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:DI 92 [ D.12968 ])
+        (mem/j/c:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f6e00e5ef30 go>) [0 go.clock+0 S8 A64])) Time.c:171 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:DI 96)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 elapsed+0 S8 A64])) Time.c:171 -1
+     (nil))
+(insn 24 23 25 5 (parallel [
+            (set (reg:DI 93 [ D.12968 ])
+                (plus:DI (reg:DI 92 [ D.12968 ])
+                    (reg:DI 96)))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:171 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 92 [ D.12968 ])
+            (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 elapsed+0 S8 A64]))
+        (nil)))
+(insn 25 24 26 5 (set (reg:DI 5 di)
+        (reg:DI 93 [ D.12968 ])) Time.c:171 -1
+     (nil))
+(call_insn 26 25 27 5 (call (mem:QI (symbol_ref:DI ("TimeClockUpdate") [flags 0x3]  <function_decl 0x7f6e00f72000 TimeClockUpdate>) [0 TimeClockUpdate S1 A8])
+        (const_int 0 [0])) Time.c:171 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 27 26 30 5 (call (mem:QI (symbol_ref:DI ("DASelfHeal") [flags 0x41]  <function_decl 0x7f6e00edbe58 DASelfHeal>) [0 DASelfHeal S1 A8])
+        (const_int 0 [0])) Time.c:173 -1
+     (nil)
+    (nil))
+(insn 30 27 0 5 (const_int 0 [0]) Time.c:174 -1
+     (nil))
+
+;; Function TimeUpdateToCurrent (TimeUpdateToCurrent, funcdef_no=7, decl_uid=11891, cgraph_uid=7, symbol_order=7)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 2->5 redirected to 8
+Forwarding edge 4->5 to 8 failed.
+Deleted label in block 5.
+Redirecting jump 15 from 7 to 8.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 4->5 to 8 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.12969 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7f6e00e5ecf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) Time.c:192 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.12969 ])
+            (const_int 0 [0]))) Time.c:192 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 22)
+            (pc))) Time.c:192 612 {*jcc_1}
+     (nil)
+ -> 22)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(call_insn 9 8 10 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TPMIsStarted") [flags 0x41]  <function_decl 0x7f6e00f77870 TPMIsStarted>) [0 TPMIsStarted S1 A8])
+            (const_int 0 [0]))) Time.c:192 -1
+     (nil)
+    (nil))
+(insn 10 9 11 4 (set (reg:SI 88 [ D.12970 ])
+        (reg:SI 0 ax)) Time.c:192 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.12970 ])
+            (const_int 0 [0]))) Time.c:192 -1
+     (nil))
+(jump_insn 12 11 14 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) Time.c:192 -1
+     (nil)
+ -> 17)
+(note 14 12 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 15 14 16 5 (set (pc)
+        (label_ref:DI 22)) Time.c:193 654 {jump}
+     (nil)
+ -> 22)
+(barrier 16 15 17)
+(code_label 17 16 18 6 16 "" [1 uses])
+(note 18 17 19 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(call_insn 19 18 22 6 (call (mem:QI (symbol_ref:DI ("TimeUpdate") [flags 0x3]  <function_decl 0x7f6e00f720d8 TimeUpdate>) [0 TimeUpdate S1 A8])
+        (const_int 0 [0])) Time.c:194 -1
+     (nil)
+    (nil))
+(code_label 22 19 23 8 14 "" [2 uses])
+(note 23 22 0 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+
+;; Function TimeSetAdjustRate (TimeSetAdjustRate, funcdef_no=8, decl_uid=11893, cgraph_uid=8, symbol_order=8)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 4->11 redirected to 13
+deleting block 11
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+Merging block 15 into block 13...
+Merged blocks 13 and 15.
+Merged 13 and 15 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 88)
+        (reg:SI 5 di [ adjust ])) Time.c:202 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 adjust+0 S1 A32])
+        (subreg:QI (reg:SI 88) 0)) Time.c:202 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.12971 ])
+        (sign_extend:SI (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 adjust+0 S1 A32]))) Time.c:203 -1
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg:SI 89)
+                (plus:SI (reg:SI 87 [ D.12971 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:203 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 89)
+            (const_int 6 [0x6]))) Time.c:203 -1
+     (nil))
+(jump_insn 10 9 71 2 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 58)
+            (pc))) Time.c:203 -1
+     (nil)
+ -> 58)
+(note 71 10 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 71 12 4 (set (reg:DI 90)
+        (zero_extend:DI (reg:SI 89))) Time.c:203 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 91)
+        (mem/u/c:DI (plus:DI (ashift:DI (reg:DI 90)
+                    (const_int 3 [0x3]))
+                (label_ref:DI 15)) [0  S8 A8])) Time.c:203 -1
+     (insn_list:REG_LABEL_OPERAND 15 (nil)))
+(jump_insn 13 12 14 4 (parallel [
+            (set (pc)
+                (reg:DI 91))
+            (use (label_ref 15))
+        ]) Time.c:203 -1
+     (nil)
+ -> 15)
+(barrier 14 13 15)
+(code_label 15 14 16 22 "" [2 uses])
+(jump_table_data 16 15 17 (addr_vec:DI [
+            (label_ref:DI 18)
+            (label_ref:DI 30)
+            (label_ref:DI 42)
+            (label_ref:DI 65)
+            (label_ref:DI 48)
+            (label_ref:DI 36)
+            (label_ref:DI 24)
+        ]))
+(barrier 17 16 18)
+(code_label 18 17 19 5 21 "" [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 5 (set (reg:SI 5 di)
+        (const_int 300 [0x12c])) Time.c:206 -1
+     (nil))
+(call_insn 21 20 22 5 (call (mem:QI (symbol_ref:DI ("_plat__ClockAdjustRate") [flags 0x41]  <function_decl 0x7f6e00fc76c0 _plat__ClockAdjustRate>) [0 _plat__ClockAdjustRate S1 A8])
+        (const_int 0 [0])) Time.c:206 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(jump_insn 22 21 23 5 (set (pc)
+        (label_ref 65)) Time.c:207 -1
+     (nil)
+ -> 65)
+(barrier 23 22 24)
+(code_label 24 23 25 6 28 "" [1 uses])
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 6 (set (reg:SI 5 di)
+        (const_int -300 [0xfffffffffffffed4])) Time.c:209 -1
+     (nil))
+(call_insn 27 26 28 6 (call (mem:QI (symbol_ref:DI ("_plat__ClockAdjustRate") [flags 0x41]  <function_decl 0x7f6e00fc76c0 _plat__ClockAdjustRate>) [0 _plat__ClockAdjustRate S1 A8])
+        (const_int 0 [0])) Time.c:209 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(jump_insn 28 27 29 6 (set (pc)
+        (label_ref 65)) Time.c:210 -1
+     (nil)
+ -> 65)
+(barrier 29 28 30)
+(code_label 30 29 31 7 23 "" [1 uses])
+(note 31 30 32 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 7 (set (reg:SI 5 di)
+        (const_int 30 [0x1e])) Time.c:212 -1
+     (nil))
+(call_insn 33 32 34 7 (call (mem:QI (symbol_ref:DI ("_plat__ClockAdjustRate") [flags 0x41]  <function_decl 0x7f6e00fc76c0 _plat__ClockAdjustRate>) [0 _plat__ClockAdjustRate S1 A8])
+        (const_int 0 [0])) Time.c:212 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(jump_insn 34 33 35 7 (set (pc)
+        (label_ref 65)) Time.c:213 -1
+     (nil)
+ -> 65)
+(barrier 35 34 36)
+(code_label 36 35 37 8 27 "" [1 uses])
+(note 37 36 38 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 8 (set (reg:SI 5 di)
+        (const_int -30 [0xffffffffffffffe2])) Time.c:215 -1
+     (nil))
+(call_insn 39 38 40 8 (call (mem:QI (symbol_ref:DI ("_plat__ClockAdjustRate") [flags 0x41]  <function_decl 0x7f6e00fc76c0 _plat__ClockAdjustRate>) [0 _plat__ClockAdjustRate S1 A8])
+        (const_int 0 [0])) Time.c:215 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(jump_insn 40 39 41 8 (set (pc)
+        (label_ref 65)) Time.c:216 -1
+     (nil)
+ -> 65)
+(barrier 41 40 42)
+(code_label 42 41 43 9 24 "" [1 uses])
+(note 43 42 44 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 9 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) Time.c:218 -1
+     (nil))
+(call_insn 45 44 46 9 (call (mem:QI (symbol_ref:DI ("_plat__ClockAdjustRate") [flags 0x41]  <function_decl 0x7f6e00fc76c0 _plat__ClockAdjustRate>) [0 _plat__ClockAdjustRate S1 A8])
+        (const_int 0 [0])) Time.c:218 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(jump_insn 46 45 47 9 (set (pc)
+        (label_ref 65)) Time.c:219 -1
+     (nil)
+ -> 65)
+(barrier 47 46 48)
+(code_label 48 47 49 10 26 "" [1 uses])
+(note 49 48 50 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 10 (set (reg:SI 5 di)
+        (const_int -1 [0xffffffffffffffff])) Time.c:221 -1
+     (nil))
+(call_insn 51 50 52 10 (call (mem:QI (symbol_ref:DI ("_plat__ClockAdjustRate") [flags 0x41]  <function_decl 0x7f6e00fc76c0 _plat__ClockAdjustRate>) [0 _plat__ClockAdjustRate S1 A8])
+        (const_int 0 [0])) Time.c:221 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(jump_insn 52 51 53 10 (set (pc)
+        (label_ref 65)) Time.c:222 -1
+     (nil)
+ -> 65)
+(barrier 53 52 58)
+(code_label 58 53 59 12 20 "" [1 uses])
+(note 59 58 60 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 12 (set (reg:SI 1 dx)
+        (const_int 3 [0x3])) Time.c:226 -1
+     (nil))
+(insn 61 60 62 12 (set (reg:SI 4 si)
+        (const_int 226 [0xe2])) Time.c:226 -1
+     (nil))
+(insn 62 61 63 12 (set (reg:DI 5 di)
+        (const_int 0 [0])) Time.c:226 -1
+     (nil))
+(call_insn 63 62 64 12 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7f6e00ee00d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) Time.c:226 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 64 63 65)
+(code_label 65 64 66 13 29 "" [7 uses])
+(note 66 65 72 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 72 66 0 13 (const_int 0 [0]) Time.c:229 -1
+     (nil))
+
+;; Function TimeGetMarshaled (TimeGetMarshaled, funcdef_no=9, decl_uid=11895, cgraph_uid=9, symbol_order=9)
+
+Partition 0: size 32 align 16
+	timeInfo
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 23.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 dataBuffer+0 S8 A64])
+        (reg:DI 5 di [ dataBuffer ])) Time.c:239 -1
+     (nil))
+(note 3 2 4 2 NOTE_INSN_FUNCTION_BEG)
+(insn 4 3 7 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.12974+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:239 -1
+     (nil))
+(insn 7 4 8 2 (set (reg:DI 87 [ D.12972 ])
+        (mem/c:DI (symbol_ref:DI ("g_time") [flags 0x40]  <var_decl 0x7f6e00e5e510 g_time>) [0 g_time+0 S8 A64])) Time.c:242 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 timeInfo.time+0 S8 A64])
+        (reg:DI 87 [ D.12972 ])) Time.c:242 -1
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg:DI 90)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:243 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:DI 91)
+                (plus:DI (reg:DI 90)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:243 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 91)) Time.c:243 -1
+     (nil))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:DI ("TimeFillInfo") [flags 0x3]  <function_decl 0x7f6e00f72438 TimeFillInfo>) [0 TimeFillInfo S1 A8])
+        (const_int 0 [0])) Time.c:243 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (parallel [
+            (set (reg:DI 92)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -56 [0xffffffffffffffc8])))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:245 -1
+     (nil))
+(insn 14 13 15 2 (parallel [
+            (set (reg:DI 93)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) Time.c:245 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 1 dx)
+        (const_int 0 [0])) Time.c:245 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 4 si)
+        (reg:DI 92)) Time.c:245 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (reg:DI 93)) Time.c:245 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TPMS_TIME_INFO_Marshal") [flags 0x41]  <function_decl 0x7f6e00f02288 TPMS_TIME_INFO_Marshal>) [0 TPMS_TIME_INFO_Marshal S1 A8])
+            (const_int 0 [0]))) Time.c:245 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 19 18 22 2 (set (reg:HI 88 [ D.12973 ])
+        (reg:HI 0 ax)) Time.c:245 -1
+     (nil))
+(insn 22 19 26 2 (set (reg:HI 89 [ <retval> ])
+        (reg:HI 88 [ D.12973 ])) Time.c:245 -1
+     (nil))
+(insn 26 22 27 2 (set (reg/i:HI 0 ax)
+        (reg:HI 89 [ <retval> ])) Time.c:246 -1
+     (nil))
+(insn 27 26 28 2 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.12974+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) Time.c:246 -1
+     (nil))
+(jump_insn 28 27 34 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 31)
+            (pc))) Time.c:246 -1
+     (nil)
+ -> 31)
+(note 34 28 29 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(call_insn 29 34 30 6 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f6e00ff26c0 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) Time.c:246 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 30 29 31)
+(code_label 31 30 35 7 34 "" [1 uses])
+(note 35 31 32 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 32 35 0 7 (use (reg/i:HI 0 ax)) Time.c:246 -1
+     (nil))
+
+;; Function TimeFillInfo (TimeFillInfo, funcdef_no=10, decl_uid=11897, cgraph_uid=10, symbol_order=10)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 22 from 6 to 8.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 clockInfo+0 S8 A64])
+        (reg:DI 5 di [ clockInfo ])) Time.c:253 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DI 87 [ D.12977 ])
+        (mem/j/c:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f6e00e5ef30 go>) [0 go.clock+0 S8 A64])) Time.c:254 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 clockInfo+0 S8 A64])) Time.c:254 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/j:DI (reg/f:DI 92) [0 clockInfo_4(D)->clock+0 S8 A64])
+        (reg:DI 87 [ D.12977 ])) Time.c:254 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.12978 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f6e00e5eea0 gp>)
+                    (const_int 720 [0x2d0]))) [0 gp.resetCount+0 S4 A64])) Time.c:255 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 clockInfo+0 S8 A64])) Time.c:255 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/j:SI (plus:DI (reg/f:DI 93)
+                (const_int 8 [0x8])) [0 clockInfo_4(D)->resetCount+0 S4 A64])
+        (reg:SI 88 [ D.12978 ])) Time.c:255 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 89 [ D.12978 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7f6e00ea0090 gr>)
+                    (const_int 268 [0x10c]))) [0 gr.restartCount+0 S4 A32])) Time.c:256 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 clockInfo+0 S8 A64])) Time.c:256 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/j:SI (plus:DI (reg/f:DI 94)
+                (const_int 12 [0xc])) [0 clockInfo_4(D)->restartCount+0 S4 A32])
+        (reg:SI 89 [ D.12978 ])) Time.c:256 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 90 [ D.12978 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7f6e00e5ecf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) Time.c:259 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.12978 ])
+            (const_int 0 [0]))) Time.c:259 -1
+     (nil))
+(jump_insn 17 16 18 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) Time.c:259 -1
+     (nil)
+ -> 24)
+(note 18 17 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (set (reg:QI 91 [ D.12979 ])
+        (mem/j/c:QI (const:DI (plus:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f6e00e5ef30 go>)
+                    (const_int 8 [0x8]))) [0 go.clockSafe+0 S1 A64])) Time.c:260 -1
+     (nil))
+(insn 20 19 21 4 (set (reg/f:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 clockInfo+0 S8 A64])) Time.c:260 -1
+     (nil))
+(insn 21 20 22 4 (set (mem/j:QI (plus:DI (reg/f:DI 95)
+                (const_int 16 [0x10])) [0 clockInfo_4(D)->safe+0 S1 A64])
+        (reg:QI 91 [ D.12979 ])) Time.c:260 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (label_ref:DI 32)) 654 {jump}
+     (nil)
+ -> 32)
+(barrier 23 22 24)
+(code_label 24 23 25 5 36 "" [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 5 (set (reg/f:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 clockInfo+0 S8 A64])) Time.c:262 -1
+     (nil))
+(insn 27 26 34 5 (set (mem/j:QI (plus:DI (reg/f:DI 96)
+                (const_int 16 [0x10])) [0 clockInfo_4(D)->safe+0 S1 A64])
+        (const_int 0 [0])) Time.c:262 -1
+     (nil))
+(insn 34 27 32 5 (const_int 0 [0]) Time.c:263 -1
+     (nil))
+(code_label 32 34 33 8 35 "" [1 uses])
+(note 33 32 0 8 [bb 8] NOTE_INSN_BASIC_BLOCK)

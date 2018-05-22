@@ -1,0 +1,2677 @@
+
+;; Function GetClosestCommandIndex (GetClosestCommandIndex, funcdef_no=2, decl_uid=10368, cgraph_uid=2, symbol_order=4)
+
+Partition 8: size 4 align 4
+	vendor_13
+Partition 7: size 4 align 4
+	diff_8
+Partition 3: size 4 align 4
+	diff_4
+Partition 9: size 2 align 2
+	searchIndex_14
+Partition 6: size 2 align 2
+	max_7
+Partition 5: size 2 align 2
+	min_6
+Partition 4: size 2 align 2
+	commandIndex_5
+Partition 2: size 2 align 2
+	max_3
+Partition 1: size 2 align 2
+	min_2
+Partition 0: size 2 align 2
+	commandIndex_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 223.
+Merging block 37 into block 36...
+Merged blocks 36 and 37.
+Merged 36 and 37 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 commandCode+0 S4 A32])
+        (reg:SI 5 di [ commandCode ])) CommandCodeAttributes.c:110 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 125)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 commandCode+0 S4 A32])) CommandCodeAttributes.c:111 -1
+     (nil))
+(insn 7 6 8 2 (parallel [
+            (set (reg:SI 88 [ D.13161 ])
+                (and:SI (reg:SI 125)
+                    (const_int 536870912 [0x20000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:111 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 commandCode+0 S4 A32])
+            (const_int 536870912 [0x20000000]))
+        (nil)))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.13161 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:111 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:QI 89 [ D.13162 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) CommandCodeAttributes.c:111 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 126)
+        (zero_extend:SI (reg:QI 89 [ D.13162 ]))) CommandCodeAttributes.c:111 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 vendor+0 S4 A32])
+        (reg:SI 126)) CommandCodeAttributes.c:111 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 127)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 commandCode+0 S4 A32])) CommandCodeAttributes.c:112 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -14 [0xfffffffffffffff2])) [0 searchIndex+0 S2 A16])
+        (subreg:HI (reg:SI 127) 0)) CommandCodeAttributes.c:112 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 128)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 commandCode+0 S4 A32])) CommandCodeAttributes.c:118 -1
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg:SI 90 [ D.13161 ])
+                (and:SI (reg:SI 128)
+                    (const_int -536870913 [0xffffffffdfffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:118 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 commandCode+0 S4 A32])
+            (const_int -536870913 [0xffffffffdfffffff]))
+        (nil)))
+(insn 16 15 17 2 (set (reg:SI 91 [ D.13161 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -14 [0xfffffffffffffff2])) [0 searchIndex+0 S2 A16]))) CommandCodeAttributes.c:118 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13161 ])
+            (reg:SI 91 [ D.13161 ]))) CommandCodeAttributes.c:118 -1
+     (nil))
+(jump_insn 18 17 19 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 23)
+            (pc))) CommandCodeAttributes.c:118 -1
+     (nil)
+ -> 23)
+(note 19 18 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 4 (set (reg:HI 87 [ D.13160 ])
+        (const_int -1 [0xffffffffffffffff])) CommandCodeAttributes.c:119 -1
+     (nil))
+(jump_insn 21 20 22 4 (set (pc)
+        (label_ref 220)) CommandCodeAttributes.c:119 -1
+     (nil)
+ -> 220)
+(barrier 22 21 23)
+(code_label 23 22 24 5 2 "" [1 uses])
+(note 24 23 25 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 26 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 vendor+0 S4 A32])
+            (const_int 0 [0]))) CommandCodeAttributes.c:123 -1
+     (nil))
+(jump_insn 26 25 27 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 119)
+            (pc))) CommandCodeAttributes.c:123 -1
+     (nil)
+ -> 119)
+(note 27 26 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 6 (set (reg:SI 92 [ D.13161 ])
+        (const_int 536870912 [0x20000000])) CommandCodeAttributes.c:137 -1
+     (nil))
+(insn 29 28 30 6 (set (reg:SI 93 [ D.13161 ])
+        (zero_extend:SI (subreg:HI (reg:SI 92 [ D.13161 ]) 0))) CommandCodeAttributes.c:137 -1
+     (nil))
+(insn 30 29 31 6 (set (reg:SI 94 [ D.13161 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -14 [0xfffffffffffffff2])) [0 searchIndex+0 S2 A16]))) CommandCodeAttributes.c:138 -1
+     (nil))
+(insn 31 30 32 6 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 93 [ D.13161 ])
+            (reg:SI 94 [ D.13161 ]))) CommandCodeAttributes.c:137 -1
+     (nil))
+(jump_insn 32 31 33 6 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 37)
+            (pc))) CommandCodeAttributes.c:137 -1
+     (nil)
+ -> 37)
+(note 33 32 34 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 7 (set (reg:HI 87 [ D.13160 ])
+        (const_int 109 [0x6d])) CommandCodeAttributes.c:142 -1
+     (nil))
+(jump_insn 35 34 36 7 (set (pc)
+        (label_ref 220)) CommandCodeAttributes.c:142 -1
+     (nil)
+ -> 220)
+(barrier 36 35 37)
+(code_label 37 36 38 8 5 "" [1 uses])
+(note 38 37 39 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 40 8 (set (reg:SI 95 [ D.13161 ])
+        (const_int 541065747 [0x20400213])) CommandCodeAttributes.c:145 -1
+     (nil))
+(insn 40 39 41 8 (set (reg:SI 96 [ D.13161 ])
+        (zero_extend:SI (subreg:HI (reg:SI 95 [ D.13161 ]) 0))) CommandCodeAttributes.c:145 -1
+     (nil))
+(insn 41 40 42 8 (set (reg:SI 97 [ D.13161 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -14 [0xfffffffffffffff2])) [0 searchIndex+0 S2 A16]))) CommandCodeAttributes.c:146 -1
+     (nil))
+(insn 42 41 43 8 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 96 [ D.13161 ])
+            (reg:SI 97 [ D.13161 ]))) CommandCodeAttributes.c:145 -1
+     (nil))
+(jump_insn 43 42 44 8 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 48)
+            (pc))) CommandCodeAttributes.c:145 -1
+     (nil)
+ -> 48)
+(note 44 43 45 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 45 44 46 9 (set (reg:HI 87 [ D.13160 ])
+        (const_int -1 [0xffffffffffffffff])) CommandCodeAttributes.c:148 -1
+     (nil))
+(jump_insn 46 45 47 9 (set (pc)
+        (label_ref 220)) CommandCodeAttributes.c:148 -1
+     (nil)
+ -> 220)
+(barrier 47 46 48)
+(code_label 48 47 49 10 6 "" [1 uses])
+(note 49 48 50 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 10 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16])
+        (const_int -1 [0xffffffffffffffff])) CommandCodeAttributes.c:150 -1
+     (nil))
+(insn 51 50 52 10 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 min+0 S2 A16])
+        (const_int 109 [0x6d])) CommandCodeAttributes.c:152 -1
+     (nil))
+(insn 52 51 53 10 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -22 [0xffffffffffffffea])) [0 max+0 S2 A16])
+        (const_int 112 [0x70])) CommandCodeAttributes.c:153 -1
+     (nil))
+(insn 53 52 54 10 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 diff+0 S4 A32])
+        (const_int 1 [0x1])) CommandCodeAttributes.c:154 -1
+     (nil))
+(jump_insn 54 53 55 10 (set (pc)
+        (label_ref 100)) CommandCodeAttributes.c:156 -1
+     (nil)
+ -> 100)
+(barrier 55 54 102)
+(code_label 102 55 56 11 10 "" [1 uses])
+(note 56 102 57 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 57 56 58 11 (set (reg:SI 98 [ D.13163 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 min+0 S2 A16]))) CommandCodeAttributes.c:158 -1
+     (nil))
+(insn 58 57 59 11 (set (reg:SI 99 [ D.13163 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -22 [0xffffffffffffffea])) [0 max+0 S2 A16]))) CommandCodeAttributes.c:158 -1
+     (nil))
+(insn 59 58 60 11 (parallel [
+            (set (reg:SI 100 [ D.13163 ])
+                (plus:SI (reg:SI 98 [ D.13163 ])
+                    (reg:SI 99 [ D.13163 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:158 -1
+     (nil))
+(insn 60 59 61 11 (parallel [
+            (set (reg:SI 101 [ D.13163 ])
+                (plus:SI (reg:SI 100 [ D.13163 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:158 -1
+     (nil))
+(insn 61 60 62 11 (parallel [
+            (set (reg:SI 129)
+                (lshiftrt:SI (reg:SI 101 [ D.13163 ])
+                    (const_int 31 [0x1f])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:158 -1
+     (nil))
+(insn 62 61 63 11 (parallel [
+            (set (reg:SI 130)
+                (plus:SI (reg:SI 129)
+                    (reg:SI 101 [ D.13163 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:158 -1
+     (nil))
+(insn 63 62 64 11 (parallel [
+            (set (reg:SI 131)
+                (ashiftrt:SI (reg:SI 130)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:158 -1
+     (expr_list:REG_EQUAL (div:SI (reg:SI 101 [ D.13163 ])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 64 63 65 11 (set (reg:SI 102 [ D.13163 ])
+        (reg:SI 131)) CommandCodeAttributes.c:158 -1
+     (nil))
+(insn 65 64 66 11 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16])
+        (subreg:HI (reg:SI 102 [ D.13163 ]) 0)) CommandCodeAttributes.c:158 -1
+     (nil))
+(insn 66 65 67 11 (set (reg:SI 103 [ D.13163 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16]))) CommandCodeAttributes.c:159 -1
+     (nil))
+(insn 67 66 68 11 (set (reg:DI 132)
+        (sign_extend:DI (reg:SI 103 [ D.13163 ]))) CommandCodeAttributes.c:159 -1
+     (nil))
+(insn 68 67 69 11 (set (reg:SI 104 [ D.13161 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 132)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:159 -1
+     (nil))
+(insn 69 68 70 11 (set (reg:SI 105 [ D.13161 ])
+        (zero_extend:SI (subreg:HI (reg:SI 104 [ D.13161 ]) 0))) CommandCodeAttributes.c:159 -1
+     (nil))
+(insn 70 69 71 11 (set (reg:SI 106 [ D.13161 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -14 [0xfffffffffffffff2])) [0 searchIndex+0 S2 A16]))) CommandCodeAttributes.c:160 -1
+     (nil))
+(insn 71 70 72 11 (parallel [
+            (set (reg:SI 107 [ D.13161 ])
+                (minus:SI (reg:SI 105 [ D.13161 ])
+                    (reg:SI 106 [ D.13161 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:160 -1
+     (nil))
+(insn 72 71 73 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 diff+0 S4 A32])
+        (reg:SI 107 [ D.13161 ])) CommandCodeAttributes.c:159 -1
+     (nil))
+(insn 73 72 74 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 diff+0 S4 A32])
+            (const_int 0 [0]))) CommandCodeAttributes.c:161 -1
+     (nil))
+(jump_insn 74 73 75 11 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 79)
+            (pc))) CommandCodeAttributes.c:161 -1
+     (nil)
+ -> 79)
+(note 75 74 76 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 76 75 77 12 (set (reg:HI 87 [ D.13160 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:162 -1
+     (nil))
+(jump_insn 77 76 78 12 (set (pc)
+        (label_ref 220)) CommandCodeAttributes.c:162 -1
+     (nil)
+ -> 220)
+(barrier 78 77 79)
+(code_label 79 78 80 13 8 "" [1 uses])
+(note 80 79 81 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 81 80 82 13 (set (reg:CCNO 17 flags)
+        (compare:CCNO (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 diff+0 S4 A32])
+            (const_int 0 [0]))) CommandCodeAttributes.c:163 -1
+     (nil))
+(jump_insn 82 81 83 13 (set (pc)
+        (if_then_else (le (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 92)
+            (pc))) CommandCodeAttributes.c:163 -1
+     (nil)
+ -> 92)
+(note 83 82 87 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 87 83 88 14 (set (reg:HI 136)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:164 -1
+     (nil))
+(insn 88 87 89 14 (parallel [
+            (set (reg:HI 135)
+                (plus:HI (reg:HI 136)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:164 -1
+     (expr_list:REG_EQUAL (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16])
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 89 88 90 14 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -22 [0xffffffffffffffea])) [0 max+0 S2 A16])
+        (reg:HI 135)) CommandCodeAttributes.c:164 -1
+     (nil))
+(jump_insn 90 89 91 14 (set (pc)
+        (label_ref 100)) -1
+     (nil)
+ -> 100)
+(barrier 91 90 92)
+(code_label 92 91 93 15 9 "" [1 uses])
+(note 93 92 97 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 97 93 98 15 (set (reg:HI 140)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:166 -1
+     (nil))
+(insn 98 97 99 15 (parallel [
+            (set (reg:HI 139)
+                (plus:HI (reg:HI 140)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:166 -1
+     (expr_list:REG_EQUAL (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 99 98 100 15 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 min+0 S2 A16])
+        (reg:HI 139)) CommandCodeAttributes.c:166 -1
+     (nil))
+(code_label 100 99 101 16 7 "" [2 uses])
+(note 101 100 103 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 103 101 104 16 (set (reg:HI 141)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 min+0 S2 A16])) CommandCodeAttributes.c:156 -1
+     (nil))
+(insn 104 103 105 16 (set (reg:CC 17 flags)
+        (compare:CC (reg:HI 141)
+            (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -22 [0xffffffffffffffea])) [0 max+0 S2 A16]))) CommandCodeAttributes.c:156 -1
+     (nil))
+(jump_insn 105 104 106 16 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 102)
+            (pc))) CommandCodeAttributes.c:156 -1
+     (nil)
+ -> 102)
+(note 106 105 107 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 107 106 108 17 (set (reg:CCNO 17 flags)
+        (compare:CCNO (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 diff+0 S4 A32])
+            (const_int 0 [0]))) CommandCodeAttributes.c:172 -1
+     (nil))
+(jump_insn 108 107 109 17 (set (pc)
+        (if_then_else (le (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 113)
+            (pc))) CommandCodeAttributes.c:172 -1
+     (nil)
+ -> 113)
+(note 109 108 110 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 110 109 111 18 (set (reg:HI 87 [ D.13160 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:173 -1
+     (nil))
+(jump_insn 111 110 112 18 (set (pc)
+        (label_ref 220)) CommandCodeAttributes.c:173 -1
+     (nil)
+ -> 220)
+(barrier 112 111 113)
+(code_label 113 112 114 19 11 "" [1 uses])
+(note 114 113 115 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 115 114 116 19 (set (reg:HI 142)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:178 -1
+     (nil))
+(insn 116 115 117 19 (parallel [
+            (set (reg:HI 87 [ D.13160 ])
+                (plus:HI (reg:HI 142)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:178 -1
+     (expr_list:REG_EQUAL (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -26 [0xffffffffffffffe6])) [0 commandIndex+0 S2 A16])
+            (const_int 1 [0x1]))
+        (nil)))
+(jump_insn 117 116 118 19 (set (pc)
+        (label_ref 220)) CommandCodeAttributes.c:178 -1
+     (nil)
+ -> 220)
+(barrier 118 117 119)
+(code_label 119 118 120 20 4 "" [1 uses])
+(note 120 119 121 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 121 120 122 20 (set (reg:SI 108 [ D.13161 ])
+        (const_int 33554835 [0x2000193])) CommandCodeAttributes.c:186 -1
+     (nil))
+(insn 122 121 123 20 (set (reg:SI 109 [ D.13161 ])
+        (zero_extend:SI (subreg:HI (reg:SI 108 [ D.13161 ]) 0))) CommandCodeAttributes.c:186 -1
+     (nil))
+(insn 123 122 124 20 (set (reg:SI 110 [ D.13161 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -14 [0xfffffffffffffff2])) [0 searchIndex+0 S2 A16]))) CommandCodeAttributes.c:187 -1
+     (nil))
+(insn 124 123 125 20 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 109 [ D.13161 ])
+            (reg:SI 110 [ D.13161 ]))) CommandCodeAttributes.c:186 -1
+     (nil))
+(jump_insn 125 124 126 20 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 130)
+            (pc))) CommandCodeAttributes.c:186 -1
+     (nil)
+ -> 130)
+(note 126 125 127 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 127 126 128 21 (set (reg:HI 87 [ D.13160 ])
+        (const_int 109 [0x6d])) CommandCodeAttributes.c:198 -1
+     (nil))
+(jump_insn 128 127 129 21 (set (pc)
+        (label_ref 220)) CommandCodeAttributes.c:198 -1
+     (nil)
+ -> 220)
+(barrier 129 128 130)
+(code_label 130 129 131 22 12 "" [1 uses])
+(note 131 130 132 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 132 131 133 22 (set (reg:SI 111 [ D.13161 ])
+        (const_int 71303455 [0x440011f])) CommandCodeAttributes.c:206 -1
+     (nil))
+(insn 133 132 134 22 (set (reg:SI 112 [ D.13161 ])
+        (zero_extend:SI (subreg:HI (reg:SI 111 [ D.13161 ]) 0))) CommandCodeAttributes.c:206 -1
+     (nil))
+(insn 134 133 135 22 (set (reg:SI 113 [ D.13161 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -14 [0xfffffffffffffff2])) [0 searchIndex+0 S2 A16]))) CommandCodeAttributes.c:206 -1
+     (nil))
+(insn 135 134 136 22 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 112 [ D.13161 ])
+            (reg:SI 113 [ D.13161 ]))) CommandCodeAttributes.c:206 -1
+     (nil))
+(jump_insn 136 135 137 22 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 141)
+            (pc))) CommandCodeAttributes.c:206 -1
+     (nil)
+ -> 141)
+(note 137 136 138 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 138 137 139 23 (set (reg:HI 87 [ D.13160 ])
+        (const_int 0 [0])) CommandCodeAttributes.c:208 -1
+     (nil))
+(jump_insn 139 138 140 23 (set (pc)
+        (label_ref 220)) CommandCodeAttributes.c:208 -1
+     (nil)
+ -> 220)
+(barrier 140 139 141)
+(code_label 141 140 142 24 13 "" [1 uses])
+(note 142 141 143 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 143 142 144 24 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16])
+        (const_int -1 [0xffffffffffffffff])) CommandCodeAttributes.c:213 -1
+     (nil))
+(insn 144 143 145 24 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -18 [0xffffffffffffffee])) [0 min+0 S2 A16])
+        (const_int 0 [0])) CommandCodeAttributes.c:214 -1
+     (nil))
+(insn 145 144 146 24 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 max+0 S2 A16])
+        (const_int 108 [0x6c])) CommandCodeAttributes.c:215 -1
+     (nil))
+(insn 146 145 147 24 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 diff+0 S4 A32])
+        (const_int 1 [0x1])) CommandCodeAttributes.c:216 -1
+     (nil))
+(insn 147 146 148 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 max+0 S2 A16])
+            (const_int 108 [0x6c]))) CommandCodeAttributes.c:223 -1
+     (nil))
+(jump_insn 148 147 149 24 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 155)
+            (pc))) CommandCodeAttributes.c:223 -1
+     (nil)
+ -> 155)
+(note 149 148 150 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 150 149 151 25 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) CommandCodeAttributes.c:223 -1
+     (nil))
+(insn 151 150 152 25 (set (reg:SI 4 si)
+        (const_int 224 [0xe0])) CommandCodeAttributes.c:223 -1
+     (nil))
+(insn 152 151 153 25 (set (reg:DI 5 di)
+        (const_int 0 [0])) CommandCodeAttributes.c:223 -1
+     (nil))
+(call_insn 153 152 154 25 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7f2c2f3780d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CommandCodeAttributes.c:223 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 154 153 155)
+(code_label 155 154 156 26 14 "" [1 uses])
+(note 156 155 157 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 157 156 158 26 (set (pc)
+        (label_ref 203)) CommandCodeAttributes.c:225 -1
+     (nil)
+ -> 203)
+(barrier 158 157 205)
+(code_label 205 158 159 27 18 "" [1 uses])
+(note 159 205 160 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 160 159 161 27 (set (reg:SI 114 [ D.13163 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -18 [0xffffffffffffffee])) [0 min+0 S2 A16]))) CommandCodeAttributes.c:227 -1
+     (nil))
+(insn 161 160 162 27 (set (reg:SI 115 [ D.13163 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 max+0 S2 A16]))) CommandCodeAttributes.c:227 -1
+     (nil))
+(insn 162 161 163 27 (parallel [
+            (set (reg:SI 116 [ D.13163 ])
+                (plus:SI (reg:SI 114 [ D.13163 ])
+                    (reg:SI 115 [ D.13163 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:227 -1
+     (nil))
+(insn 163 162 164 27 (parallel [
+            (set (reg:SI 117 [ D.13163 ])
+                (plus:SI (reg:SI 116 [ D.13163 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:227 -1
+     (nil))
+(insn 164 163 165 27 (parallel [
+            (set (reg:SI 143)
+                (lshiftrt:SI (reg:SI 117 [ D.13163 ])
+                    (const_int 31 [0x1f])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:227 -1
+     (nil))
+(insn 165 164 166 27 (parallel [
+            (set (reg:SI 144)
+                (plus:SI (reg:SI 143)
+                    (reg:SI 117 [ D.13163 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:227 -1
+     (nil))
+(insn 166 165 167 27 (parallel [
+            (set (reg:SI 145)
+                (ashiftrt:SI (reg:SI 144)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:227 -1
+     (expr_list:REG_EQUAL (div:SI (reg:SI 117 [ D.13163 ])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 167 166 168 27 (set (reg:SI 118 [ D.13163 ])
+        (reg:SI 145)) CommandCodeAttributes.c:227 -1
+     (nil))
+(insn 168 167 169 27 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16])
+        (subreg:HI (reg:SI 118 [ D.13163 ]) 0)) CommandCodeAttributes.c:227 -1
+     (nil))
+(insn 169 168 170 27 (set (reg:SI 119 [ D.13163 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16]))) CommandCodeAttributes.c:228 -1
+     (nil))
+(insn 170 169 171 27 (set (reg:DI 146)
+        (sign_extend:DI (reg:SI 119 [ D.13163 ]))) CommandCodeAttributes.c:228 -1
+     (nil))
+(insn 171 170 172 27 (set (reg:SI 120 [ D.13161 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 146)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:228 -1
+     (nil))
+(insn 172 171 173 27 (set (reg:SI 121 [ D.13161 ])
+        (zero_extend:SI (subreg:HI (reg:SI 120 [ D.13161 ]) 0))) CommandCodeAttributes.c:228 -1
+     (nil))
+(insn 173 172 174 27 (set (reg:SI 122 [ D.13161 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -14 [0xfffffffffffffff2])) [0 searchIndex+0 S2 A16]))) CommandCodeAttributes.c:229 -1
+     (nil))
+(insn 174 173 175 27 (parallel [
+            (set (reg:SI 123 [ D.13161 ])
+                (minus:SI (reg:SI 121 [ D.13161 ])
+                    (reg:SI 122 [ D.13161 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:229 -1
+     (nil))
+(insn 175 174 176 27 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 diff+0 S4 A32])
+        (reg:SI 123 [ D.13161 ])) CommandCodeAttributes.c:228 -1
+     (nil))
+(insn 176 175 177 27 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 diff+0 S4 A32])
+            (const_int 0 [0]))) CommandCodeAttributes.c:230 -1
+     (nil))
+(jump_insn 177 176 178 27 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 182)
+            (pc))) CommandCodeAttributes.c:230 -1
+     (nil)
+ -> 182)
+(note 178 177 179 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 179 178 180 28 (set (reg:HI 87 [ D.13160 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:231 -1
+     (nil))
+(jump_insn 180 179 181 28 (set (pc)
+        (label_ref 220)) CommandCodeAttributes.c:231 -1
+     (nil)
+ -> 220)
+(barrier 181 180 182)
+(code_label 182 181 183 29 16 "" [1 uses])
+(note 183 182 184 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 184 183 185 29 (set (reg:CCNO 17 flags)
+        (compare:CCNO (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 diff+0 S4 A32])
+            (const_int 0 [0]))) CommandCodeAttributes.c:232 -1
+     (nil))
+(jump_insn 185 184 186 29 (set (pc)
+        (if_then_else (le (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 195)
+            (pc))) CommandCodeAttributes.c:232 -1
+     (nil)
+ -> 195)
+(note 186 185 190 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 190 186 191 30 (set (reg:HI 150)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:233 -1
+     (nil))
+(insn 191 190 192 30 (parallel [
+            (set (reg:HI 149)
+                (plus:HI (reg:HI 150)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:233 -1
+     (expr_list:REG_EQUAL (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16])
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 192 191 193 30 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 max+0 S2 A16])
+        (reg:HI 149)) CommandCodeAttributes.c:233 -1
+     (nil))
+(jump_insn 193 192 194 30 (set (pc)
+        (label_ref 203)) -1
+     (nil)
+ -> 203)
+(barrier 194 193 195)
+(code_label 195 194 196 31 17 "" [1 uses])
+(note 196 195 200 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 200 196 201 31 (set (reg:HI 154)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:235 -1
+     (nil))
+(insn 201 200 202 31 (parallel [
+            (set (reg:HI 153)
+                (plus:HI (reg:HI 154)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:235 -1
+     (expr_list:REG_EQUAL (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 202 201 203 31 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -18 [0xffffffffffffffee])) [0 min+0 S2 A16])
+        (reg:HI 153)) CommandCodeAttributes.c:235 -1
+     (nil))
+(code_label 203 202 204 32 15 "" [2 uses])
+(note 204 203 206 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 206 204 207 32 (set (reg:HI 155)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -18 [0xffffffffffffffee])) [0 min+0 S2 A16])) CommandCodeAttributes.c:225 -1
+     (nil))
+(insn 207 206 208 32 (set (reg:CC 17 flags)
+        (compare:CC (reg:HI 155)
+            (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 max+0 S2 A16]))) CommandCodeAttributes.c:225 -1
+     (nil))
+(jump_insn 208 207 209 32 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 205)
+            (pc))) CommandCodeAttributes.c:225 -1
+     (nil)
+ -> 205)
+(note 209 208 210 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 210 209 211 33 (set (reg:CCNO 17 flags)
+        (compare:CCNO (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 diff+0 S4 A32])
+            (const_int 0 [0]))) CommandCodeAttributes.c:241 -1
+     (nil))
+(jump_insn 211 210 212 33 (set (pc)
+        (if_then_else (le (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 216)
+            (pc))) CommandCodeAttributes.c:241 -1
+     (nil)
+ -> 216)
+(note 212 211 213 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 213 212 214 34 (set (reg:HI 87 [ D.13160 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:242 -1
+     (nil))
+(jump_insn 214 213 215 34 (set (pc)
+        (label_ref 220)) CommandCodeAttributes.c:242 -1
+     (nil)
+ -> 220)
+(barrier 215 214 216)
+(code_label 216 215 217 35 19 "" [1 uses])
+(note 217 216 218 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 218 217 219 35 (set (reg:HI 156)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:247 -1
+     (nil))
+(insn 219 218 220 35 (parallel [
+            (set (reg:HI 87 [ D.13160 ])
+                (plus:HI (reg:HI 156)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:247 -1
+     (expr_list:REG_EQUAL (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A16])
+            (const_int 1 [0x1]))
+        (nil)))
+(code_label 220 219 221 36 3 "" [10 uses])
+(note 221 220 222 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 222 221 226 36 (set (reg:HI 124 [ <retval> ])
+        (reg:HI 87 [ D.13160 ])) -1
+     (nil))
+(insn 226 222 227 36 (set (reg/i:HI 0 ax)
+        (reg:HI 124 [ <retval> ])) CommandCodeAttributes.c:256 -1
+     (nil))
+(insn 227 226 0 36 (use (reg/i:HI 0 ax)) CommandCodeAttributes.c:256 -1
+     (nil))
+
+;; Function CommandCodeToCommandIndex (CommandCodeToCommandIndex, funcdef_no=3, decl_uid=10370, cgraph_uid=3, symbol_order=5)
+
+Partition 2: size 4 align 4
+	vendor_6
+Partition 1: size 2 align 2
+	searchIndex_3
+Partition 0: size 2 align 2
+	commandIndex_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Removing jump 48.
+Merging block 9 into block 7...
+Merged blocks 7 and 9.
+Merged 7 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])
+        (reg:SI 5 di [ commandCode ])) CommandCodeAttributes.c:266 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 100)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])) CommandCodeAttributes.c:267 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -6 [0xfffffffffffffffa])) [0 searchIndex+0 S2 A16])
+        (subreg:HI (reg:SI 100) 0)) CommandCodeAttributes.c:267 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 101)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])) CommandCodeAttributes.c:268 -1
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg:SI 87 [ D.13164 ])
+                (and:SI (reg:SI 101)
+                    (const_int 536870912 [0x20000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:268 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])
+            (const_int 536870912 [0x20000000]))
+        (nil)))
+(insn 10 9 11 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.13164 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:268 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:QI 88 [ D.13165 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) CommandCodeAttributes.c:268 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 102)
+        (zero_extend:SI (reg:QI 88 [ D.13165 ]))) CommandCodeAttributes.c:268 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 vendor+0 S4 A32])
+        (reg:SI 102)) CommandCodeAttributes.c:268 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 103)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])) CommandCodeAttributes.c:286 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 5 di)
+        (reg:SI 103)) CommandCodeAttributes.c:286 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("GetClosestCommandIndex") [flags 0x3]  <function_decl 0x7f2c2f378948 GetClosestCommandIndex>) [0 GetClosestCommandIndex S1 A8])
+            (const_int 0 [0]))) CommandCodeAttributes.c:286 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:HI 104)
+        (reg:HI 0 ax)) CommandCodeAttributes.c:286 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 commandIndex+0 S2 A16])
+        (reg:HI 104)) CommandCodeAttributes.c:286 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 commandIndex+0 S2 A16])
+            (const_int -1 [0xffffffffffffffff]))) CommandCodeAttributes.c:289 -1
+     (nil))
+(jump_insn 20 19 21 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) CommandCodeAttributes.c:289 -1
+     (nil)
+ -> 42)
+(note 21 20 22 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 4 (set (reg:SI 89 [ D.13166 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 commandIndex+0 S2 A16]))) CommandCodeAttributes.c:291 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:DI 105)
+        (sign_extend:DI (reg:SI 89 [ D.13166 ]))) CommandCodeAttributes.c:291 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 90 [ D.13164 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 105)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:291 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 91 [ D.13164 ])
+        (zero_extend:SI (subreg:HI (reg:SI 90 [ D.13164 ]) 0))) CommandCodeAttributes.c:291 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 92 [ D.13164 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -6 [0xfffffffffffffffa])) [0 searchIndex+0 S2 A16]))) CommandCodeAttributes.c:292 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13164 ])
+            (reg:SI 92 [ D.13164 ]))) CommandCodeAttributes.c:291 -1
+     (nil))
+(jump_insn 28 27 29 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) CommandCodeAttributes.c:291 -1
+     (nil)
+ -> 39)
+(note 29 28 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 5 (set (reg:SI 93 [ D.13166 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 commandIndex+0 S2 A16]))) CommandCodeAttributes.c:293 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:DI 106)
+        (sign_extend:DI (reg:SI 93 [ D.13166 ]))) CommandCodeAttributes.c:293 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:SI 94 [ D.13164 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 106)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:293 -1
+     (nil))
+(insn 33 32 34 5 (parallel [
+            (set (reg:SI 95 [ D.13164 ])
+                (and:SI (reg:SI 94 [ D.13164 ])
+                    (const_int 536870912 [0x20000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:293 -1
+     (nil))
+(insn 34 33 35 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 95 [ D.13164 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:293 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:QI 96 [ D.13165 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) CommandCodeAttributes.c:293 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:SI 97 [ D.13166 ])
+        (zero_extend:SI (reg:QI 96 [ D.13165 ]))) CommandCodeAttributes.c:293 -1
+     (nil))
+(insn 37 36 38 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 97 [ D.13166 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 vendor+0 S4 A32]))) CommandCodeAttributes.c:293 -1
+     (nil))
+(jump_insn 38 37 39 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) CommandCodeAttributes.c:293 -1
+     (nil)
+ -> 42)
+(code_label 39 38 40 6 22 "" [1 uses])
+(note 40 39 41 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 6 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 commandIndex+0 S2 A16])
+        (const_int -1 [0xffffffffffffffff])) CommandCodeAttributes.c:294 -1
+     (nil))
+(code_label 42 41 43 7 21 "" [2 uses])
+(note 43 42 44 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 47 7 (set (reg:HI 98 [ D.13167 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 commandIndex+0 S2 A16])) CommandCodeAttributes.c:296 -1
+     (nil))
+(insn 47 44 51 7 (set (reg:HI 99 [ <retval> ])
+        (reg:HI 98 [ D.13167 ])) CommandCodeAttributes.c:296 -1
+     (nil))
+(insn 51 47 52 7 (set (reg/i:HI 0 ax)
+        (reg:HI 99 [ <retval> ])) CommandCodeAttributes.c:297 -1
+     (nil))
+(insn 52 51 0 7 (use (reg/i:HI 0 ax)) CommandCodeAttributes.c:297 -1
+     (nil))
+
+;; Function GetNextCommandIndex (GetNextCommandIndex, funcdef_no=4, decl_uid=10372, cgraph_uid=4, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 20.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 89)
+        (reg:SI 5 di [ commandIndex ])) CommandCodeAttributes.c:307 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 89) 0)) CommandCodeAttributes.c:307 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (parallel [
+            (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+                (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:308 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+            (const_int 112 [0x70]))) CommandCodeAttributes.c:308 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 14)
+            (pc))) CommandCodeAttributes.c:308 -1
+     (nil)
+ -> 14)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:HI 87 [ D.13168 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])) CommandCodeAttributes.c:313 -1
+     (nil))
+(jump_insn 12 11 13 4 (set (pc)
+        (label_ref 17)) CommandCodeAttributes.c:313 -1
+     (nil)
+ -> 17)
+(barrier 13 12 14)
+(code_label 14 13 15 5 25 "" [1 uses])
+(note 15 14 16 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 5 (set (reg:HI 87 [ D.13168 ])
+        (const_int -1 [0xffffffffffffffff])) CommandCodeAttributes.c:315 -1
+     (nil))
+(code_label 17 16 18 6 26 "" [1 uses])
+(note 18 17 19 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 23 6 (set (reg:HI 88 [ <retval> ])
+        (reg:HI 87 [ D.13168 ])) -1
+     (nil))
+(insn 23 19 24 6 (set (reg/i:HI 0 ax)
+        (reg:HI 88 [ <retval> ])) CommandCodeAttributes.c:316 -1
+     (nil))
+(insn 24 23 0 6 (use (reg/i:HI 0 ax)) CommandCodeAttributes.c:316 -1
+     (nil))
+
+;; Function GetCommandCode (GetCommandCode, funcdef_no=5, decl_uid=10374, cgraph_uid=5, symbol_order=7)
+
+Partition 0: size 4 align 4
+	commandCode_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 26.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 94)
+        (reg:SI 5 di [ commandIndex ])) CommandCodeAttributes.c:323 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 94) 0)) CommandCodeAttributes.c:323 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.13169 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:324 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 95)
+        (sign_extend:DI (reg:SI 87 [ D.13169 ]))) CommandCodeAttributes.c:324 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13170 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 95)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:324 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:SI 96)
+                (and:SI (reg:SI 88 [ D.13170 ])
+                    (const_int 65535 [0xffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:324 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandCode+0 S4 A32])
+        (reg:SI 96)) CommandCodeAttributes.c:324 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 89 [ D.13169 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:326 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 97)
+        (sign_extend:DI (reg:SI 89 [ D.13169 ]))) CommandCodeAttributes.c:326 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 90 [ D.13170 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 97)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:326 -1
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg:SI 91 [ D.13170 ])
+                (and:SI (reg:SI 90 [ D.13170 ])
+                    (const_int 536870912 [0x20000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:326 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13170 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:326 -1
+     (nil))
+(jump_insn 17 16 18 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) CommandCodeAttributes.c:326 -1
+     (nil)
+ -> 20)
+(note 18 17 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 commandCode+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 commandCode+0 S4 A32])
+                    (const_int 536870912 [0x20000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:327 -1
+     (nil))
+(code_label 20 19 21 5 28 "" [1 uses])
+(note 21 20 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 25 5 (set (reg:SI 92 [ D.13171 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandCode+0 S4 A32])) CommandCodeAttributes.c:328 -1
+     (nil))
+(insn 25 22 29 5 (set (reg:SI 93 [ <retval> ])
+        (reg:SI 92 [ D.13171 ])) CommandCodeAttributes.c:328 -1
+     (nil))
+(insn 29 25 30 5 (set (reg/i:SI 0 ax)
+        (reg:SI 93 [ <retval> ])) CommandCodeAttributes.c:329 -1
+     (nil))
+(insn 30 29 0 5 (use (reg/i:SI 0 ax)) CommandCodeAttributes.c:329 -1
+     (nil))
+
+;; Function CommandAuthRole (CommandAuthRole, funcdef_no=6, decl_uid=10377, cgraph_uid=6, symbol_order=8)
+
+Partition 0: size 2 align 2
+	properties_6
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 8->10 redirected to 14
+deleting block 10
+Removing jump 69.
+Merging block 16 into block 15...
+Merged blocks 15 and 16.
+Merged 15 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 4 2 (set (reg:SI 100)
+        (reg:SI 5 di [ commandIndex ])) CommandCodeAttributes.c:342 -1
+     (nil))
+(insn 4 2 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 handleIndex+0 S4 A32])
+        (reg:SI 4 si [ handleIndex ])) CommandCodeAttributes.c:342 -1
+     (nil))
+(insn 3 4 5 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 100) 0)) CommandCodeAttributes.c:342 -1
+     (nil))
+(note 5 3 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 handleIndex+0 S4 A32])
+            (const_int 0 [0]))) CommandCodeAttributes.c:343 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 47)
+            (pc))) CommandCodeAttributes.c:343 -1
+     (nil)
+ -> 47)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:SI 88 [ D.13173 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:346 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 101)
+        (sign_extend:DI (reg:SI 88 [ D.13173 ]))) CommandCodeAttributes.c:346 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:HI 102)
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 101)
+                    (const_int 2 [0x2]))
+                (symbol_ref:DI ("s_commandAttributes") [flags 0x2]  <var_decl 0x7f2c2f338e10 s_commandAttributes>)) [0 s_commandAttributes S2 A16])) CommandCodeAttributes.c:346 -1
+     (nil))
+(insn 14 13 15 4 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 properties+0 S2 A16])
+        (reg:HI 102)) CommandCodeAttributes.c:346 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 89 [ D.13173 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 properties+0 S2 A16]))) CommandCodeAttributes.c:347 -1
+     (nil))
+(insn 16 15 17 4 (parallel [
+            (set (reg:SI 90 [ D.13173 ])
+                (and:SI (reg:SI 89 [ D.13173 ])
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:347 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13173 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:347 -1
+     (nil))
+(jump_insn 18 17 19 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 23)
+            (pc))) CommandCodeAttributes.c:347 -1
+     (nil)
+ -> 23)
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 5 (set (reg:SI 87 [ D.13172 ])
+        (const_int 1 [0x1])) CommandCodeAttributes.c:348 -1
+     (nil))
+(jump_insn 21 20 22 5 (set (pc)
+        (label_ref 66)) CommandCodeAttributes.c:348 -1
+     (nil)
+ -> 66)
+(barrier 22 21 23)
+(code_label 23 22 24 6 32 "" [1 uses])
+(note 24 23 25 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 26 6 (set (reg:SI 91 [ D.13173 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 properties+0 S2 A16]))) CommandCodeAttributes.c:349 -1
+     (nil))
+(insn 26 25 27 6 (parallel [
+            (set (reg:SI 92 [ D.13173 ])
+                (and:SI (reg:SI 91 [ D.13173 ])
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:349 -1
+     (nil))
+(insn 27 26 28 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.13173 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:349 -1
+     (nil))
+(jump_insn 28 27 29 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) CommandCodeAttributes.c:349 -1
+     (nil)
+ -> 33)
+(note 29 28 30 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 7 (set (reg:SI 87 [ D.13172 ])
+        (const_int 2 [0x2])) CommandCodeAttributes.c:350 -1
+     (nil))
+(jump_insn 31 30 32 7 (set (pc)
+        (label_ref 66)) CommandCodeAttributes.c:350 -1
+     (nil)
+ -> 66)
+(barrier 32 31 33)
+(code_label 33 32 34 8 34 "" [1 uses])
+(note 34 33 35 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 8 (set (reg:SI 93 [ D.13173 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 properties+0 S2 A16]))) CommandCodeAttributes.c:351 -1
+     (nil))
+(insn 36 35 37 8 (parallel [
+            (set (reg:SI 94 [ D.13173 ])
+                (and:SI (reg:SI 93 [ D.13173 ])
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:351 -1
+     (nil))
+(insn 37 36 38 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 94 [ D.13173 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:351 -1
+     (nil))
+(jump_insn 38 37 39 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 63)
+            (pc))) CommandCodeAttributes.c:351 612 {*jcc_1}
+     (nil)
+ -> 63)
+(note 39 38 40 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 9 (set (reg:SI 87 [ D.13172 ])
+        (const_int 3 [0x3])) CommandCodeAttributes.c:352 -1
+     (nil))
+(jump_insn 41 40 42 9 (set (pc)
+        (label_ref 66)) CommandCodeAttributes.c:352 -1
+     (nil)
+ -> 66)
+(barrier 42 41 47)
+(code_label 47 42 48 11 31 "" [1 uses])
+(note 48 47 49 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 handleIndex+0 S4 A32])
+            (const_int 1 [0x1]))) CommandCodeAttributes.c:354 -1
+     (nil))
+(jump_insn 50 49 51 11 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 63)
+            (pc))) CommandCodeAttributes.c:354 -1
+     (nil)
+ -> 63)
+(note 51 50 52 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 12 (set (reg:SI 95 [ D.13173 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:356 -1
+     (nil))
+(insn 53 52 54 12 (set (reg:DI 103)
+        (sign_extend:DI (reg:SI 95 [ D.13173 ]))) CommandCodeAttributes.c:356 -1
+     (nil))
+(insn 54 53 55 12 (set (reg:HI 96 [ D.13174 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 103)
+                    (const_int 2 [0x2]))
+                (symbol_ref:DI ("s_commandAttributes") [flags 0x2]  <var_decl 0x7f2c2f338e10 s_commandAttributes>)) [0 s_commandAttributes S2 A16])) CommandCodeAttributes.c:356 -1
+     (nil))
+(insn 55 54 56 12 (set (reg:SI 97 [ D.13173 ])
+        (zero_extend:SI (reg:HI 96 [ D.13174 ]))) CommandCodeAttributes.c:356 -1
+     (nil))
+(insn 56 55 57 12 (parallel [
+            (set (reg:SI 98 [ D.13173 ])
+                (and:SI (reg:SI 97 [ D.13173 ])
+                    (const_int 128 [0x80])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:356 -1
+     (nil))
+(insn 57 56 58 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 98 [ D.13173 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:356 -1
+     (nil))
+(jump_insn 58 57 59 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 63)
+            (pc))) CommandCodeAttributes.c:356 -1
+     (nil)
+ -> 63)
+(note 59 58 60 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 13 (set (reg:SI 87 [ D.13172 ])
+        (const_int 1 [0x1])) CommandCodeAttributes.c:357 -1
+     (nil))
+(jump_insn 61 60 62 13 (set (pc)
+        (label_ref 66)) CommandCodeAttributes.c:357 -1
+     (nil)
+ -> 66)
+(barrier 62 61 63)
+(code_label 63 62 64 14 36 "" [3 uses])
+(note 64 63 65 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 65 64 66 14 (set (reg:SI 87 [ D.13172 ])
+        (const_int 0 [0])) CommandCodeAttributes.c:359 -1
+     (nil))
+(code_label 66 65 67 15 33 "" [4 uses])
+(note 67 66 68 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 68 67 72 15 (set (reg:SI 99 [ <retval> ])
+        (reg:SI 87 [ D.13172 ])) -1
+     (nil))
+(insn 72 68 73 15 (set (reg/i:SI 0 ax)
+        (reg:SI 99 [ <retval> ])) CommandCodeAttributes.c:360 -1
+     (nil))
+(insn 73 72 0 15 (use (reg/i:SI 0 ax)) CommandCodeAttributes.c:360 -1
+     (nil))
+
+;; Function EncryptSize (EncryptSize, funcdef_no=7, decl_uid=10379, cgraph_uid=7, symbol_order=9)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 24 from 7 to 10.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Redirecting jump 31 from 9 to 10.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+Removing jump 41.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 97)
+        (reg:SI 5 di [ commandIndex ])) CommandCodeAttributes.c:373 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 97) 0)) CommandCodeAttributes.c:373 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 88 [ D.13175 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:374 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 98)
+        (sign_extend:DI (reg:SI 88 [ D.13175 ]))) CommandCodeAttributes.c:374 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:HI 89 [ D.13176 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 98)
+                    (const_int 2 [0x2]))
+                (symbol_ref:DI ("s_commandAttributes") [flags 0x2]  <var_decl 0x7f2c2f338e10 s_commandAttributes>)) [0 s_commandAttributes S2 A16])) CommandCodeAttributes.c:374 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 90 [ D.13175 ])
+        (zero_extend:SI (reg:HI 89 [ D.13176 ]))) CommandCodeAttributes.c:374 -1
+     (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg:SI 91 [ D.13175 ])
+                (and:SI (reg:SI 90 [ D.13175 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:374 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13175 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:374 -1
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) CommandCodeAttributes.c:374 -1
+     (nil)
+ -> 33)
+(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (reg:SI 92 [ D.13175 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:375 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 99)
+        (sign_extend:DI (reg:SI 92 [ D.13175 ]))) CommandCodeAttributes.c:375 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:HI 93 [ D.13176 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 99)
+                    (const_int 2 [0x2]))
+                (symbol_ref:DI ("s_commandAttributes") [flags 0x2]  <var_decl 0x7f2c2f338e10 s_commandAttributes>)) [0 s_commandAttributes S2 A16])) CommandCodeAttributes.c:375 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 94 [ D.13175 ])
+        (zero_extend:SI (reg:HI 93 [ D.13176 ]))) CommandCodeAttributes.c:375 -1
+     (nil))
+(insn 19 18 20 4 (parallel [
+            (set (reg:SI 95 [ D.13175 ])
+                (and:SI (reg:SI 94 [ D.13175 ])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:375 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 95 [ D.13175 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:375 -1
+     (nil))
+(jump_insn 21 20 22 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) CommandCodeAttributes.c:375 -1
+     (nil)
+ -> 26)
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 5 (set (reg:SI 87 [ D.13175 ])
+        (const_int 4 [0x4])) CommandCodeAttributes.c:375 -1
+     (nil))
+(jump_insn 24 23 25 5 (set (pc)
+        (label_ref:DI 38)) 654 {jump}
+     (nil)
+ -> 38)
+(barrier 25 24 26)
+(code_label 26 25 27 6 39 "" [1 uses])
+(note 27 26 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 31 6 (set (reg:SI 87 [ D.13175 ])
+        (const_int 0 [0])) CommandCodeAttributes.c:375 -1
+     (nil))
+(jump_insn 31 28 32 6 (set (pc)
+        (label_ref:DI 38)) 654 {jump}
+     (nil)
+ -> 38)
+(barrier 32 31 33)
+(code_label 33 32 34 8 38 "" [1 uses])
+(note 34 33 35 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 38 8 (set (reg:SI 87 [ D.13175 ])
+        (const_int 2 [0x2])) CommandCodeAttributes.c:374 -1
+     (nil))
+(code_label 38 35 39 10 42 "" [2 uses])
+(note 39 38 40 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 44 10 (set (reg:SI 96 [ <retval> ])
+        (reg:SI 87 [ D.13175 ])) CommandCodeAttributes.c:374 -1
+     (nil))
+(insn 44 40 45 10 (set (reg/i:SI 0 ax)
+        (reg:SI 96 [ <retval> ])) CommandCodeAttributes.c:376 -1
+     (nil))
+(insn 45 44 0 10 (use (reg/i:SI 0 ax)) CommandCodeAttributes.c:376 -1
+     (nil))
+
+;; Function DecryptSize (DecryptSize, funcdef_no=8, decl_uid=10381, cgraph_uid=8, symbol_order=10)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 24 from 7 to 10.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Redirecting jump 31 from 9 to 10.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+Removing jump 41.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 97)
+        (reg:SI 5 di [ commandIndex ])) CommandCodeAttributes.c:390 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 97) 0)) CommandCodeAttributes.c:390 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 88 [ D.13177 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:391 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 98)
+        (sign_extend:DI (reg:SI 88 [ D.13177 ]))) CommandCodeAttributes.c:391 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:HI 89 [ D.13178 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 98)
+                    (const_int 2 [0x2]))
+                (symbol_ref:DI ("s_commandAttributes") [flags 0x2]  <var_decl 0x7f2c2f338e10 s_commandAttributes>)) [0 s_commandAttributes S2 A16])) CommandCodeAttributes.c:391 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 90 [ D.13177 ])
+        (zero_extend:SI (reg:HI 89 [ D.13178 ]))) CommandCodeAttributes.c:391 -1
+     (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg:SI 91 [ D.13177 ])
+                (and:SI (reg:SI 90 [ D.13177 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:391 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13177 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:391 -1
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) CommandCodeAttributes.c:391 -1
+     (nil)
+ -> 33)
+(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (reg:SI 92 [ D.13177 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:392 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 99)
+        (sign_extend:DI (reg:SI 92 [ D.13177 ]))) CommandCodeAttributes.c:392 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:HI 93 [ D.13178 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 99)
+                    (const_int 2 [0x2]))
+                (symbol_ref:DI ("s_commandAttributes") [flags 0x2]  <var_decl 0x7f2c2f338e10 s_commandAttributes>)) [0 s_commandAttributes S2 A16])) CommandCodeAttributes.c:392 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 94 [ D.13177 ])
+        (zero_extend:SI (reg:HI 93 [ D.13178 ]))) CommandCodeAttributes.c:392 -1
+     (nil))
+(insn 19 18 20 4 (parallel [
+            (set (reg:SI 95 [ D.13177 ])
+                (and:SI (reg:SI 94 [ D.13177 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:392 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 95 [ D.13177 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:392 -1
+     (nil))
+(jump_insn 21 20 22 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) CommandCodeAttributes.c:392 -1
+     (nil)
+ -> 26)
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 5 (set (reg:SI 87 [ D.13177 ])
+        (const_int 4 [0x4])) CommandCodeAttributes.c:392 -1
+     (nil))
+(jump_insn 24 23 25 5 (set (pc)
+        (label_ref:DI 38)) 654 {jump}
+     (nil)
+ -> 38)
+(barrier 25 24 26)
+(code_label 26 25 27 6 45 "" [1 uses])
+(note 27 26 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 31 6 (set (reg:SI 87 [ D.13177 ])
+        (const_int 0 [0])) CommandCodeAttributes.c:392 -1
+     (nil))
+(jump_insn 31 28 32 6 (set (pc)
+        (label_ref:DI 38)) 654 {jump}
+     (nil)
+ -> 38)
+(barrier 32 31 33)
+(code_label 33 32 34 8 44 "" [1 uses])
+(note 34 33 35 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 38 8 (set (reg:SI 87 [ D.13177 ])
+        (const_int 2 [0x2])) CommandCodeAttributes.c:391 -1
+     (nil))
+(code_label 38 35 39 10 48 "" [2 uses])
+(note 39 38 40 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 44 10 (set (reg:SI 96 [ <retval> ])
+        (reg:SI 87 [ D.13177 ])) CommandCodeAttributes.c:391 -1
+     (nil))
+(insn 44 40 45 10 (set (reg/i:SI 0 ax)
+        (reg:SI 96 [ <retval> ])) CommandCodeAttributes.c:393 -1
+     (nil))
+(insn 45 44 0 10 (use (reg/i:SI 0 ax)) CommandCodeAttributes.c:393 -1
+     (nil))
+
+;; Function IsSessionAllowed (IsSessionAllowed, funcdef_no=9, decl_uid=10383, cgraph_uid=9, symbol_order=11)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 18.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 94)
+        (reg:SI 5 di [ commandIndex ])) CommandCodeAttributes.c:406 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 94) 0)) CommandCodeAttributes.c:406 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.13179 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:407 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 95)
+        (sign_extend:DI (reg:SI 87 [ D.13179 ]))) CommandCodeAttributes.c:407 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:HI 88 [ D.13180 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 95)
+                    (const_int 2 [0x2]))
+                (symbol_ref:DI ("s_commandAttributes") [flags 0x2]  <var_decl 0x7f2c2f338e10 s_commandAttributes>)) [0 s_commandAttributes S2 A16])) CommandCodeAttributes.c:407 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 89 [ D.13179 ])
+        (zero_extend:SI (reg:HI 88 [ D.13180 ]))) CommandCodeAttributes.c:407 -1
+     (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg:SI 90 [ D.13179 ])
+                (and:SI (reg:SI 89 [ D.13179 ])
+                    (const_int 1024 [0x400])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:407 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13179 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:407 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:QI 91 [ D.13181 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) CommandCodeAttributes.c:407 -1
+     (nil))
+(insn 14 13 17 2 (set (reg:SI 92 [ D.13182 ])
+        (zero_extend:SI (reg:QI 91 [ D.13181 ]))) CommandCodeAttributes.c:407 -1
+     (nil))
+(insn 17 14 21 2 (set (reg:SI 93 [ <retval> ])
+        (reg:SI 92 [ D.13182 ])) CommandCodeAttributes.c:407 -1
+     (nil))
+(insn 21 17 22 2 (set (reg/i:SI 0 ax)
+        (reg:SI 93 [ <retval> ])) CommandCodeAttributes.c:408 -1
+     (nil))
+(insn 22 21 0 2 (use (reg/i:SI 0 ax)) CommandCodeAttributes.c:408 -1
+     (nil))
+
+;; Function IsHandleInResponse (IsHandleInResponse, funcdef_no=10, decl_uid=10385, cgraph_uid=10, symbol_order=12)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 18.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 94)
+        (reg:SI 5 di [ commandIndex ])) CommandCodeAttributes.c:417 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 94) 0)) CommandCodeAttributes.c:417 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.13183 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:418 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 95)
+        (sign_extend:DI (reg:SI 87 [ D.13183 ]))) CommandCodeAttributes.c:418 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:HI 88 [ D.13184 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 95)
+                    (const_int 2 [0x2]))
+                (symbol_ref:DI ("s_commandAttributes") [flags 0x2]  <var_decl 0x7f2c2f338e10 s_commandAttributes>)) [0 s_commandAttributes S2 A16])) CommandCodeAttributes.c:418 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 89 [ D.13183 ])
+        (zero_extend:SI (reg:HI 88 [ D.13184 ]))) CommandCodeAttributes.c:418 -1
+     (nil))
+(insn 11 10 12 2 (parallel [
+            (set (reg:SI 90 [ D.13183 ])
+                (and:SI (reg:SI 89 [ D.13183 ])
+                    (const_int 8192 [0x2000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:418 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13183 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:418 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:QI 91 [ D.13185 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) CommandCodeAttributes.c:418 -1
+     (nil))
+(insn 14 13 17 2 (set (reg:SI 92 [ D.13186 ])
+        (zero_extend:SI (reg:QI 91 [ D.13185 ]))) CommandCodeAttributes.c:418 -1
+     (nil))
+(insn 17 14 21 2 (set (reg:SI 93 [ <retval> ])
+        (reg:SI 92 [ D.13186 ])) CommandCodeAttributes.c:418 -1
+     (nil))
+(insn 21 17 22 2 (set (reg/i:SI 0 ax)
+        (reg:SI 93 [ <retval> ])) CommandCodeAttributes.c:419 -1
+     (nil))
+(insn 22 21 0 2 (use (reg/i:SI 0 ax)) CommandCodeAttributes.c:419 -1
+     (nil))
+
+;; Function IsWriteOperation (IsWriteOperation, funcdef_no=11, decl_uid=10387, cgraph_uid=11, symbol_order=13)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+Purged edges from bb 11
+deleting block 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 4->7 redirected to 8
+Forwarding edge 4->5 to 6 failed.
+Forwarding edge 4->5 to 6 failed.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+deleting block 7
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 95)
+        (reg:SI 5 di [ commandIndex ])) CommandCodeAttributes.c:428 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 95) 0)) CommandCodeAttributes.c:428 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 88 [ D.13188 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:432 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 96)
+        (sign_extend:DI (reg:SI 88 [ D.13188 ]))) CommandCodeAttributes.c:432 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 89 [ D.13189 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 96)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:432 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:SI 90 [ D.13189 ])
+                (and:SI (reg:SI 89 [ D.13189 ])
+                    (const_int 536870912 [0x20000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:432 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13189 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:432 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) CommandCodeAttributes.c:432 -1
+     (nil)
+ -> 32)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:SI 91 [ D.13188 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:434 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 97)
+        (sign_extend:DI (reg:SI 91 [ D.13188 ]))) CommandCodeAttributes.c:434 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 92 [ D.13189 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 97)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:434 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 93 [ D.13189 ])
+        (zero_extend:SI (subreg:HI (reg:SI 92 [ D.13189 ]) 0))) CommandCodeAttributes.c:434 -1
+     (nil))
+(insn 18 17 19 4 (parallel [
+            (set (reg:SI 98)
+                (plus:SI (reg:SI 93 [ D.13189 ])
+                    (const_int -308 [0xfffffffffffffecc])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:434 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 98)
+            (const_int 4 [0x4]))) CommandCodeAttributes.c:434 -1
+     (nil))
+(jump_insn 20 19 44 4 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 32)
+            (pc))) CommandCodeAttributes.c:434 612 {*jcc_1}
+     (nil)
+ -> 32)
+(note 44 20 27 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 27 44 28 5 (set (reg:SI 87 [ D.13187 ])
+        (const_int 1 [0x1])) CommandCodeAttributes.c:453 -1
+     (nil))
+(jump_insn 28 27 29 5 (set (pc)
+        (label_ref 35)) CommandCodeAttributes.c:453 -1
+     (nil)
+ -> 35)
+(barrier 29 28 32)
+(code_label 32 29 33 8 54 "" [2 uses])
+(note 33 32 34 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 8 (set (reg:SI 87 [ D.13187 ])
+        (const_int 0 [0])) CommandCodeAttributes.c:458 -1
+     (nil))
+(code_label 35 34 36 9 57 "" [1 uses])
+(note 36 35 37 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 41 9 (set (reg:SI 94 [ <retval> ])
+        (reg:SI 87 [ D.13187 ])) -1
+     (nil))
+(insn 41 37 42 9 (set (reg/i:SI 0 ax)
+        (reg:SI 94 [ <retval> ])) CommandCodeAttributes.c:460 -1
+     (nil))
+(insn 42 41 0 9 (use (reg/i:SI 0 ax)) CommandCodeAttributes.c:460 -1
+     (nil))
+
+;; Function IsReadOperation (IsReadOperation, funcdef_no=12, decl_uid=10389, cgraph_uid=12, symbol_order=14)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+Purged edges from bb 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 6->7 to 11 failed.
+Redirecting jump 24 from 11 to 12.
+Forwarding edge 8->9 to 11 failed.
+Redirecting jump 29 from 11 to 12.
+deleting block 11
+Removing jump 44.
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 95)
+        (reg:SI 5 di [ commandIndex ])) CommandCodeAttributes.c:468 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 95) 0)) CommandCodeAttributes.c:468 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 88 [ D.13191 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:472 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 96)
+        (sign_extend:DI (reg:SI 88 [ D.13191 ]))) CommandCodeAttributes.c:472 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 89 [ D.13192 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 96)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:472 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:SI 90 [ D.13192 ])
+                (and:SI (reg:SI 89 [ D.13192 ])
+                    (const_int 536870912 [0x20000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:472 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13192 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:472 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 38)
+            (pc))) CommandCodeAttributes.c:472 -1
+     (nil)
+ -> 38)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:SI 91 [ D.13191 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:474 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 97)
+        (sign_extend:DI (reg:SI 91 [ D.13191 ]))) CommandCodeAttributes.c:474 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:SI 92 [ D.13192 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 97)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:474 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 93 [ D.13192 ])
+        (zero_extend:SI (subreg:HI (reg:SI 92 [ D.13192 ]) 0))) CommandCodeAttributes.c:474 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 93 [ D.13192 ])
+            (const_int 335 [0x14f]))) CommandCodeAttributes.c:474 -1
+     (nil))
+(jump_insn 19 18 50 4 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) CommandCodeAttributes.c:474 -1
+     (nil)
+ -> 26)
+(note 50 19 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 50 21 5 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 93 [ D.13192 ])
+            (const_int 334 [0x14e]))) CommandCodeAttributes.c:474 -1
+     (nil))
+(jump_insn 21 20 51 5 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 31)
+            (pc))) CommandCodeAttributes.c:474 -1
+     (nil)
+ -> 31)
+(note 51 21 22 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 22 51 23 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 93 [ D.13192 ])
+            (const_int 329 [0x149]))) CommandCodeAttributes.c:474 -1
+     (nil))
+(jump_insn 23 22 52 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 31)
+            (pc))) CommandCodeAttributes.c:474 -1
+     (nil)
+ -> 31)
+(note 52 23 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 24 52 25 7 (set (pc)
+        (label_ref:DI 38)) CommandCodeAttributes.c:474 654 {jump}
+     (nil)
+ -> 38)
+(barrier 25 24 26)
+(code_label 26 25 53 8 62 "" [1 uses])
+(note 53 26 27 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 27 53 28 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 93 [ D.13192 ])
+            (const_int 388 [0x184]))) CommandCodeAttributes.c:474 -1
+     (nil))
+(jump_insn 28 27 54 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 31)
+            (pc))) CommandCodeAttributes.c:474 -1
+     (nil)
+ -> 31)
+(note 54 28 29 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 29 54 30 9 (set (pc)
+        (label_ref:DI 38)) CommandCodeAttributes.c:474 654 {jump}
+     (nil)
+ -> 38)
+(barrier 30 29 31)
+(code_label 31 30 32 10 63 "" [3 uses])
+(note 32 31 33 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 10 (set (reg:SI 87 [ D.13190 ])
+        (const_int 1 [0x1])) CommandCodeAttributes.c:483 -1
+     (nil))
+(jump_insn 34 33 35 10 (set (pc)
+        (label_ref 41)) CommandCodeAttributes.c:483 -1
+     (nil)
+ -> 41)
+(barrier 35 34 38)
+(code_label 38 35 39 12 60 "" [3 uses])
+(note 39 38 40 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 12 (set (reg:SI 87 [ D.13190 ])
+        (const_int 0 [0])) CommandCodeAttributes.c:488 -1
+     (nil))
+(code_label 41 40 42 13 64 "" [1 uses])
+(note 42 41 43 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 43 42 47 13 (set (reg:SI 94 [ <retval> ])
+        (reg:SI 87 [ D.13190 ])) -1
+     (nil))
+(insn 47 43 48 13 (set (reg/i:SI 0 ax)
+        (reg:SI 94 [ <retval> ])) CommandCodeAttributes.c:490 -1
+     (nil))
+(insn 48 47 0 13 (use (reg/i:SI 0 ax)) CommandCodeAttributes.c:490 -1
+     (nil))
+
+;; Function CommandCapGetCCList (CommandCapGetCCList, funcdef_no=13, decl_uid=10393, cgraph_uid=13, symbol_order=15)
+
+Partition 1: size 2 align 2
+	commandIndex_2
+Partition 0: size 1 align 1
+	more_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+Removing jump 62.
+Merging block 11 into block 9...
+Merged blocks 9 and 11.
+Merged 9 and 11 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])
+        (reg:SI 5 di [ commandCode ])) CommandCodeAttributes.c:504 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 count+0 S4 A32])
+        (reg:SI 4 si [ count ])) CommandCodeAttributes.c:504 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])
+        (reg:DI 1 dx [ commandList ])) CommandCodeAttributes.c:504 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -3 [0xfffffffffffffffd])) [0 more+0 S1 A8])
+        (const_int 0 [0])) CommandCodeAttributes.c:505 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandCodeAttributes.c:508 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/j:SI (reg/f:DI 96) [0 commandList_6(D)->count+0 S4 A32])
+        (const_int 0 [0])) CommandCodeAttributes.c:508 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 97)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 commandCode+0 S4 A32])) CommandCodeAttributes.c:509 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 5 di)
+        (reg:SI 97)) CommandCodeAttributes.c:509 -1
+     (nil))
+(call_insn 13 12 14 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("GetClosestCommandIndex") [flags 0x3]  <function_decl 0x7f2c2f378948 GetClosestCommandIndex>) [0 GetClosestCommandIndex S1 A8])
+            (const_int 0 [0]))) CommandCodeAttributes.c:509 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 14 13 15 2 (set (reg:HI 98)
+        (reg:HI 0 ax)) CommandCodeAttributes.c:509 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16])
+        (reg:HI 98)) CommandCodeAttributes.c:509 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (label_ref 51)) CommandCodeAttributes.c:509 -1
+     (nil)
+ -> 51)
+(barrier 17 16 53)
+(code_label 53 17 18 4 70 "" [1 uses])
+(note 18 53 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (set (reg/f:DI 99)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandCodeAttributes.c:518 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:SI 87 [ D.13194 ])
+        (mem/j:SI (reg/f:DI 99) [0 commandList_6(D)->count+0 S4 A32])) CommandCodeAttributes.c:518 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 87 [ D.13194 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 count+0 S4 A32]))) CommandCodeAttributes.c:518 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) CommandCodeAttributes.c:518 -1
+     (nil)
+ -> 39)
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 5 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandCodeAttributes.c:521 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 88 [ D.13194 ])
+        (mem/j:SI (reg/f:DI 100) [0 commandList_6(D)->count+0 S4 A32])) CommandCodeAttributes.c:521 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:SI 89 [ D.13195 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16]))) CommandCodeAttributes.c:522 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:DI 101)
+        (sign_extend:DI (reg:SI 89 [ D.13195 ]))) CommandCodeAttributes.c:522 -1
+     (nil))
+(insn 28 27 29 5 (set (reg:SI 90 [ D.13194 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 101)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:522 -1
+     (nil))
+(insn 29 28 30 5 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandCodeAttributes.c:522 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:DI 103)
+        (zero_extend:DI (reg:SI 88 [ D.13194 ]))) CommandCodeAttributes.c:522 -1
+     (nil))
+(insn 31 30 32 5 (set (mem/j:SI (plus:DI (plus:DI (mult:DI (reg:DI 103)
+                        (const_int 4 [0x4]))
+                    (reg/f:DI 102))
+                (const_int 4 [0x4])) [0 commandList_6(D)->commandAttributes S4 A32])
+        (reg:SI 90 [ D.13194 ])) CommandCodeAttributes.c:522 -1
+     (nil))
+(insn 32 31 33 5 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandCodeAttributes.c:523 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:SI 91 [ D.13194 ])
+        (mem/j:SI (reg/f:DI 104) [0 commandList_6(D)->count+0 S4 A32])) CommandCodeAttributes.c:523 -1
+     (nil))
+(insn 34 33 35 5 (parallel [
+            (set (reg:SI 92 [ D.13194 ])
+                (plus:SI (reg:SI 91 [ D.13194 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:523 -1
+     (nil))
+(insn 35 34 36 5 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 commandList+0 S8 A64])) CommandCodeAttributes.c:523 -1
+     (nil))
+(insn 36 35 37 5 (set (mem/j:SI (reg/f:DI 105) [0 commandList_6(D)->count+0 S4 A32])
+        (reg:SI 92 [ D.13194 ])) CommandCodeAttributes.c:523 -1
+     (nil))
+(jump_insn 37 36 38 5 (set (pc)
+        (label_ref 44)) -1
+     (nil)
+ -> 44)
+(barrier 38 37 39)
+(code_label 39 38 40 6 67 "" [1 uses])
+(note 40 39 41 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 6 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -3 [0xfffffffffffffffd])) [0 more+0 S1 A8])
+        (const_int 1 [0x1])) CommandCodeAttributes.c:529 -1
+     (nil))
+(jump_insn 42 41 43 6 (set (pc)
+        (label_ref 56)) CommandCodeAttributes.c:530 -1
+     (nil)
+ -> 56)
+(barrier 43 42 44)
+(code_label 44 43 45 7 68 "" [1 uses])
+(note 45 44 46 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 7 (set (reg:SI 93 [ D.13195 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16]))) CommandCodeAttributes.c:511 -1
+     (nil))
+(insn 47 46 48 7 (set (reg:SI 5 di)
+        (reg:SI 93 [ D.13195 ])) CommandCodeAttributes.c:511 -1
+     (nil))
+(call_insn 48 47 49 7 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("GetNextCommandIndex") [flags 0x3]  <function_decl 0x7f2c2f378af8 GetNextCommandIndex>) [0 GetNextCommandIndex S1 A8])
+            (const_int 0 [0]))) CommandCodeAttributes.c:511 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 49 48 50 7 (set (reg:HI 106)
+        (reg:HI 0 ax)) CommandCodeAttributes.c:511 -1
+     (nil))
+(insn 50 49 51 7 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16])
+        (reg:HI 106)) CommandCodeAttributes.c:511 -1
+     (nil))
+(code_label 51 50 52 8 66 "" [1 uses])
+(note 52 51 54 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 54 52 55 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2 [0xfffffffffffffffe])) [0 commandIndex+0 S2 A16])
+            (const_int -1 [0xffffffffffffffff]))) CommandCodeAttributes.c:509 -1
+     (nil))
+(jump_insn 55 54 56 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 53)
+            (pc))) CommandCodeAttributes.c:509 -1
+     (nil)
+ -> 53)
+(code_label 56 55 57 9 69 "" [1 uses])
+(note 57 56 58 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 61 9 (set (reg:QI 94 [ D.13196 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -3 [0xfffffffffffffffd])) [0 more+0 S1 A8])) CommandCodeAttributes.c:533 -1
+     (nil))
+(insn 61 58 65 9 (set (reg:QI 95 [ <retval> ])
+        (reg:QI 94 [ D.13196 ])) CommandCodeAttributes.c:533 -1
+     (nil))
+(insn 65 61 66 9 (set (reg/i:QI 0 ax)
+        (reg:QI 95 [ <retval> ])) CommandCodeAttributes.c:534 -1
+     (nil))
+(insn 66 65 0 9 (use (reg/i:QI 0 ax)) CommandCodeAttributes.c:534 -1
+     (nil))
+
+;; Function IsVendorCommand (IsVendorCommand, funcdef_no=14, decl_uid=10395, cgraph_uid=14, symbol_order=16)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 17.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 93)
+        (reg:SI 5 di [ commandIndex ])) CommandCodeAttributes.c:545 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32])
+        (subreg:HI (reg:SI 93) 0)) CommandCodeAttributes.c:545 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.13197 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 commandIndex+0 S2 A32]))) CommandCodeAttributes.c:546 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 94)
+        (sign_extend:DI (reg:SI 87 [ D.13197 ]))) CommandCodeAttributes.c:546 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13198 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 94)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_ccAttr") [flags 0x2]  <var_decl 0x7f2c2f338d80 s_ccAttr>)) [0 s_ccAttr S4 A32])) CommandCodeAttributes.c:546 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:SI 89 [ D.13198 ])
+                (and:SI (reg:SI 88 [ D.13198 ])
+                    (const_int 536870912 [0x20000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CommandCodeAttributes.c:546 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.13198 ])
+            (const_int 0 [0]))) CommandCodeAttributes.c:546 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:QI 90 [ D.13199 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) CommandCodeAttributes.c:546 -1
+     (nil))
+(insn 13 12 16 2 (set (reg:SI 91 [ D.13200 ])
+        (zero_extend:SI (reg:QI 90 [ D.13199 ]))) CommandCodeAttributes.c:546 -1
+     (nil))
+(insn 16 13 20 2 (set (reg:SI 92 [ <retval> ])
+        (reg:SI 91 [ D.13200 ])) CommandCodeAttributes.c:546 -1
+     (nil))
+(insn 20 16 21 2 (set (reg/i:SI 0 ax)
+        (reg:SI 92 [ <retval> ])) CommandCodeAttributes.c:547 -1
+     (nil))
+(insn 21 20 0 2 (use (reg/i:SI 0 ax)) CommandCodeAttributes.c:547 -1
+     (nil))

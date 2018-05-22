@@ -1,0 +1,915 @@
+
+;; Function TPM2_VerifySignature (TPM2_VerifySignature, funcdef_no=2, decl_uid=12860, cgraph_uid=2, symbol_order=2)
+
+Partition 0: size 8 align 8
+	signObject_8
+Partition 2: size 4 align 4
+	hierarchy_21
+Partition 1: size 4 align 4
+	result_16
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 90.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) SigningCommands.c:70 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) SigningCommands.c:70 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) SigningCommands.c:72 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 88 [ D.12961 ])
+        (mem/j:SI (reg/f:DI 100) [0 in_5(D)->keyHandle+0 S4 A32])) SigningCommands.c:72 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.12961 ])) SigningCommands.c:72 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f980b9c80d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) SigningCommands.c:72 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 101)
+        (reg:DI 0 ax)) SigningCommands.c:72 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 signObject+0 S8 A64])
+        (reg:DI 101)) SigningCommands.c:72 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 signObject+0 S8 A64])) SigningCommands.c:76 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 89 [ D.12961 ])
+        (mem/j:SI (plus:DI (reg/f:DI 102)
+                (const_int 8 [0x8])) [0 signObject_8->publicArea.objectAttributes+0 S4 A64])) SigningCommands.c:76 -1
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg:SI 90 [ D.12961 ])
+                (and:SI (reg:SI 89 [ D.12961 ])
+                    (const_int 262144 [0x40000])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:76 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.12961 ])
+            (const_int 0 [0]))) SigningCommands.c:76 -1
+     (nil))
+(jump_insn 17 16 18 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) SigningCommands.c:76 -1
+     (nil)
+ -> 22)
+(note 18 17 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (set (reg:SI 87 [ D.12960 ])
+        (const_int 386 [0x182])) SigningCommands.c:77 -1
+     (nil))
+(jump_insn 20 19 21 4 (set (pc)
+        (label_ref 87)) SigningCommands.c:77 -1
+     (nil)
+ -> 87)
+(barrier 21 20 22)
+(code_label 22 21 23 5 2 "" [1 uses])
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 5 (set (reg/f:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) SigningCommands.c:80 -1
+     (nil))
+(insn 25 24 26 5 (parallel [
+            (set (reg/f:DI 91 [ D.12962 ])
+                (plus:DI (reg/f:DI 103)
+                    (const_int 54 [0x36])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:80 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])
+            (const_int 54 [0x36]))
+        (nil)))
+(insn 26 25 27 5 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) SigningCommands.c:80 -1
+     (nil))
+(insn 27 26 28 5 (parallel [
+            (set (reg/f:DI 92 [ D.12963 ])
+                (plus:DI (reg/f:DI 104)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:80 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 28 27 29 5 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) SigningCommands.c:80 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:SI 93 [ D.12961 ])
+        (mem/j:SI (reg/f:DI 105) [0 in_5(D)->keyHandle+0 S4 A32])) SigningCommands.c:80 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:DI 1 dx)
+        (reg/f:DI 91 [ D.12962 ])) SigningCommands.c:80 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:DI 4 si)
+        (reg/f:DI 92 [ D.12963 ])) SigningCommands.c:80 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:SI 5 di)
+        (reg:SI 93 [ D.12961 ])) SigningCommands.c:80 -1
+     (nil))
+(call_insn 33 32 34 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptValidateSignature") [flags 0x41]  <function_decl 0x7f980bab01b0 CryptValidateSignature>) [0 CryptValidateSignature S1 A8])
+            (const_int 0 [0]))) SigningCommands.c:80 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 34 33 35 5 (set (reg:SI 106)
+        (reg:SI 0 ax)) SigningCommands.c:80 -1
+     (nil))
+(insn 35 34 36 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 result+0 S4 A32])
+        (reg:SI 106)) SigningCommands.c:80 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 result+0 S4 A32])
+            (const_int 0 [0]))) SigningCommands.c:81 -1
+     (nil))
+(jump_insn 37 36 38 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 46)
+            (pc))) SigningCommands.c:81 -1
+     (nil)
+ -> 46)
+(note 38 37 39 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 40 6 (set (reg:SI 107)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 result+0 S4 A32])) SigningCommands.c:82 -1
+     (nil))
+(insn 40 39 41 6 (set (reg:SI 4 si)
+        (const_int 576 [0x240])) SigningCommands.c:82 -1
+     (nil))
+(insn 41 40 42 6 (set (reg:SI 5 di)
+        (reg:SI 107)) SigningCommands.c:82 -1
+     (nil))
+(call_insn 42 41 43 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("RcSafeAddToResult") [flags 0x41]  <function_decl 0x7f980ba9d000 RcSafeAddToResult>) [0 RcSafeAddToResult S1 A8])
+            (const_int 0 [0]))) SigningCommands.c:82 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 43 42 44 6 (set (reg:SI 87 [ D.12960 ])
+        (reg:SI 0 ax)) SigningCommands.c:82 -1
+     (nil))
+(jump_insn 44 43 45 6 (set (pc)
+        (label_ref 87)) SigningCommands.c:82 -1
+     (nil)
+ -> 87)
+(barrier 45 44 46)
+(code_label 46 45 47 7 4 "" [1 uses])
+(note 47 46 48 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 7 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) SigningCommands.c:84 -1
+     (nil))
+(insn 49 48 50 7 (set (reg:SI 94 [ D.12961 ])
+        (mem/j:SI (reg/f:DI 108) [0 in_5(D)->keyHandle+0 S4 A32])) SigningCommands.c:84 -1
+     (nil))
+(insn 50 49 51 7 (set (reg:SI 5 di)
+        (reg:SI 94 [ D.12961 ])) SigningCommands.c:84 -1
+     (nil))
+(call_insn 51 50 52 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("GetHeriarchy") [flags 0x41]  <function_decl 0x7f980b9c8510 GetHeriarchy>) [0 GetHeriarchy S1 A8])
+            (const_int 0 [0]))) SigningCommands.c:84 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 52 51 53 7 (set (reg:SI 109)
+        (reg:SI 0 ax)) SigningCommands.c:84 -1
+     (nil))
+(insn 53 52 54 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 hierarchy+0 S4 A32])
+        (reg:SI 109)) SigningCommands.c:84 -1
+     (nil))
+(insn 54 53 55 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 hierarchy+0 S4 A32])
+            (const_int 1073741831 [0x40000007]))) SigningCommands.c:85 -1
+     (nil))
+(jump_insn 55 54 56 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 61)
+            (pc))) SigningCommands.c:85 -1
+     (nil)
+ -> 61)
+(note 56 55 57 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 57 56 58 8 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 signObject+0 S8 A64])) SigningCommands.c:86 -1
+     (nil))
+(insn 58 57 59 8 (set (reg:HI 95 [ D.12964 ])
+        (mem/j:HI (plus:DI (reg/f:DI 110)
+                (const_int 6 [0x6])) [0 signObject_8->publicArea.nameAlg+0 S2 A16])) SigningCommands.c:86 -1
+     (nil))
+(insn 59 58 60 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 95 [ D.12964 ])
+            (const_int 16 [0x10]))) SigningCommands.c:86 -1
+     (nil))
+(jump_insn 60 59 61 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) SigningCommands.c:86 -1
+     (nil)
+ -> 71)
+(code_label 61 60 62 9 5 "" [1 uses])
+(note 62 61 63 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 63 62 64 9 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) SigningCommands.c:90 -1
+     (nil))
+(insn 64 63 65 9 (set (mem/j:HI (reg/f:DI 111) [0 out_23(D)->validation.tag+0 S2 A32])
+        (const_int -32734 [0xffffffffffff8022])) SigningCommands.c:90 -1
+     (nil))
+(insn 65 64 66 9 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) SigningCommands.c:91 -1
+     (nil))
+(insn 66 65 67 9 (set (mem/j:SI (plus:DI (reg/f:DI 112)
+                (const_int 4 [0x4])) [0 out_23(D)->validation.hierarchy+0 S4 A32])
+        (const_int 1073741831 [0x40000007])) SigningCommands.c:91 -1
+     (nil))
+(insn 67 66 68 9 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) SigningCommands.c:92 -1
+     (nil))
+(insn 68 67 69 9 (set (mem/j:HI (plus:DI (reg/f:DI 113)
+                (const_int 8 [0x8])) [0 out_23(D)->validation.digest.t.size+0 S2 A32])
+        (const_int 0 [0])) SigningCommands.c:92 -1
+     (nil))
+(jump_insn 69 68 70 9 (set (pc)
+        (label_ref 84)) SigningCommands.c:92 -1
+     (nil)
+ -> 84)
+(barrier 70 69 71)
+(code_label 71 70 72 10 6 "" [1 uses])
+(note 72 71 73 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 73 72 74 10 (set (reg/f:DI 96 [ D.12965 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) SigningCommands.c:97 -1
+     (nil))
+(insn 74 73 75 10 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 signObject+0 S8 A64])) SigningCommands.c:97 -1
+     (nil))
+(insn 75 74 76 10 (parallel [
+            (set (reg/f:DI 97 [ D.12966 ])
+                (plus:DI (reg/f:DI 114)
+                    (const_int 1756 [0x6dc])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:97 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 signObject+0 S8 A64])
+            (const_int 1756 [0x6dc]))
+        (nil)))
+(insn 76 75 77 10 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) SigningCommands.c:97 -1
+     (nil))
+(insn 77 76 78 10 (parallel [
+            (set (reg/f:DI 98 [ D.12963 ])
+                (plus:DI (reg/f:DI 115)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:97 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 78 77 79 10 (set (reg:SI 116)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 hierarchy+0 S4 A32])) SigningCommands.c:97 -1
+     (nil))
+(insn 79 78 80 10 (set (reg:DI 2 cx)
+        (reg/f:DI 96 [ D.12965 ])) SigningCommands.c:97 -1
+     (nil))
+(insn 80 79 81 10 (set (reg:DI 1 dx)
+        (reg/f:DI 97 [ D.12966 ])) SigningCommands.c:97 -1
+     (nil))
+(insn 81 80 82 10 (set (reg:DI 4 si)
+        (reg/f:DI 98 [ D.12963 ])) SigningCommands.c:97 -1
+     (nil))
+(insn 82 81 83 10 (set (reg:SI 5 di)
+        (reg:SI 116)) SigningCommands.c:97 -1
+     (nil))
+(call_insn 83 82 84 10 (call (mem:QI (symbol_ref:DI ("TicketComputeVerified") [flags 0x41]  <function_decl 0x7f980baa0ca8 TicketComputeVerified>) [0 TicketComputeVerified S1 A8])
+        (const_int 0 [0])) SigningCommands.c:97 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(code_label 84 83 85 11 7 "" [1 uses])
+(note 85 84 86 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 86 85 87 11 (set (reg:SI 87 [ D.12960 ])
+        (const_int 0 [0])) SigningCommands.c:100 -1
+     (nil))
+(code_label 87 86 88 12 3 "" [2 uses])
+(note 88 87 89 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 89 88 93 12 (set (reg:SI 99 [ <retval> ])
+        (reg:SI 87 [ D.12960 ])) -1
+     (nil))
+(insn 93 89 94 12 (set (reg/i:SI 0 ax)
+        (reg:SI 99 [ <retval> ])) SigningCommands.c:101 -1
+     (nil))
+(insn 94 93 0 12 (use (reg/i:SI 0 ax)) SigningCommands.c:101 -1
+     (nil))
+
+;; Function TPM2_Sign (TPM2_Sign, funcdef_no=3, decl_uid=12879, cgraph_uid=3, symbol_order=3)
+
+Partition 2: size 60 align 16
+	ticket
+Partition 0: size 8 align 8
+	signObject_8
+Partition 1: size 4 align 4
+	result_39
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 22 from 15 to 16.
+Redirecting jump 37 from 15 to 16.
+Edge 9->11 redirected to 14
+Redirecting jump 78 from 15 to 16.
+deleting block 11
+Redirecting jump 98 from 15 to 16.
+Merging block 15 into block 14...
+Merged blocks 14 and 15.
+Merged 14 and 15 without moving.
+Removing jump 121.
+Merging block 17 into block 16...
+Merged blocks 16 and 17.
+Merged 16 and 17 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) SigningCommands.c:112 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) SigningCommands.c:112 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.12975+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:112 -1
+     (nil))
+(insn 8 5 9 2 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:115 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.12968 ])
+        (mem/j:SI (reg/f:DI 109) [0 in_5(D)->keyHandle+0 S4 A32])) SigningCommands.c:115 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.12968 ])) SigningCommands.c:115 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f980b9c80d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) SigningCommands.c:115 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 12 11 13 2 (set (reg:DI 110)
+        (reg:DI 0 ax)) SigningCommands.c:115 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 signObject+0 S8 A64])
+        (reg:DI 110)) SigningCommands.c:115 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 signObject+0 S8 A64])) SigningCommands.c:118 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (reg:DI 111)) SigningCommands.c:118 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("IsSigningObject") [flags 0x41]  <function_decl 0x7f980baf21b0 IsSigningObject>) [0 IsSigningObject S1 A8])
+            (const_int 0 [0]))) SigningCommands.c:118 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 89 [ D.12969 ])
+        (reg:SI 0 ax)) SigningCommands.c:118 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.12969 ])
+            (const_int 0 [0]))) SigningCommands.c:118 -1
+     (nil))
+(jump_insn 19 18 20 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) SigningCommands.c:118 -1
+     (nil)
+ -> 24)
+(note 20 19 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 4 (set (reg:SI 87 [ D.12967 ])
+        (const_int 412 [0x19c])) SigningCommands.c:119 -1
+     (nil))
+(jump_insn 22 21 23 4 (set (pc)
+        (label_ref:DI 118)) SigningCommands.c:119 654 {jump}
+     (nil)
+ -> 118)
+(barrier 23 22 24)
+(code_label 24 23 25 5 9 "" [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 5 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:122 -1
+     (nil))
+(insn 27 26 28 5 (parallel [
+            (set (reg/f:DI 90 [ D.12970 ])
+                (plus:DI (reg/f:DI 112)
+                    (const_int 54 [0x36])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:122 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])
+            (const_int 54 [0x36]))
+        (nil)))
+(insn 28 27 29 5 (set (reg:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 signObject+0 S8 A64])) SigningCommands.c:122 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:DI 4 si)
+        (reg/f:DI 90 [ D.12970 ])) SigningCommands.c:122 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:DI 5 di)
+        (reg:DI 113)) SigningCommands.c:122 -1
+     (nil))
+(call_insn 31 30 32 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptSelectSignScheme") [flags 0x41]  <function_decl 0x7f980bab0000 CryptSelectSignScheme>) [0 CryptSelectSignScheme S1 A8])
+            (const_int 0 [0]))) SigningCommands.c:122 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 32 31 33 5 (set (reg:SI 91 [ D.12969 ])
+        (reg:SI 0 ax)) SigningCommands.c:122 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.12969 ])
+            (const_int 0 [0]))) SigningCommands.c:122 -1
+     (nil))
+(jump_insn 34 33 35 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) SigningCommands.c:122 -1
+     (nil)
+ -> 39)
+(note 35 34 36 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 6 (set (reg:SI 87 [ D.12967 ])
+        (const_int 722 [0x2d2])) SigningCommands.c:123 -1
+     (nil))
+(jump_insn 37 36 38 6 (set (pc)
+        (label_ref:DI 118)) SigningCommands.c:123 654 {jump}
+     (nil)
+ -> 118)
+(barrier 38 37 39)
+(code_label 39 38 40 7 11 "" [1 uses])
+(note 40 39 41 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 7 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:125 -1
+     (nil))
+(insn 42 41 43 7 (set (reg:HI 92 [ D.12971 ])
+        (mem/j:HI (plus:DI (reg/f:DI 114)
+                (const_int 68 [0x44])) [0 in_5(D)->validation.digest.t.size+0 S2 A32])) SigningCommands.c:125 -1
+     (nil))
+(insn 43 42 44 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 92 [ D.12971 ])
+            (const_int 0 [0]))) SigningCommands.c:125 -1
+     (nil))
+(jump_insn 44 43 45 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) SigningCommands.c:125 -1
+     (nil)
+ -> 51)
+(note 45 44 46 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 8 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 signObject+0 S8 A64])) SigningCommands.c:126 -1
+     (nil))
+(insn 47 46 48 8 (set (reg:SI 93 [ D.12968 ])
+        (mem/j:SI (plus:DI (reg/f:DI 115)
+                (const_int 8 [0x8])) [0 signObject_8->publicArea.objectAttributes+0 S4 A64])) SigningCommands.c:126 -1
+     (nil))
+(insn 48 47 49 8 (parallel [
+            (set (reg:SI 94 [ D.12968 ])
+                (and:SI (reg:SI 93 [ D.12968 ])
+                    (const_int 65536 [0x10000])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:126 -1
+     (nil))
+(insn 49 48 50 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 94 [ D.12968 ])
+            (const_int 0 [0]))) SigningCommands.c:126 -1
+     (nil))
+(jump_insn 50 49 51 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 84)
+            (pc))) SigningCommands.c:126 -1
+     (nil)
+ -> 84)
+(code_label 51 50 52 9 12 "" [1 uses])
+(note 52 51 53 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 9 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:129 -1
+     (nil))
+(insn 54 53 55 9 (parallel [
+            (set (reg/f:DI 99 [ D.12972 ])
+                (plus:DI (reg/f:DI 116)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:129 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 55 54 56 9 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:130 -1
+     (nil))
+(insn 56 55 57 9 (set (reg:HI 100 [ D.12971 ])
+        (mem/j:HI (plus:DI (reg/f:DI 117)
+                (const_int 56 [0x38])) [0 in_5(D)->inScheme.details.any.hashAlg+0 S2 A32])) SigningCommands.c:130 -1
+     (nil))
+(insn 57 56 58 9 (set (reg:SI 101 [ D.12969 ])
+        (zero_extend:SI (reg:HI 100 [ D.12971 ]))) SigningCommands.c:129 -1
+     (nil))
+(insn 58 57 59 9 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:129 -1
+     (nil))
+(insn 59 58 60 9 (set (reg:SI 102 [ D.12968 ])
+        (mem/j:SI (plus:DI (reg/f:DI 118)
+                (const_int 64 [0x40])) [0 in_5(D)->validation.hierarchy+0 S4 A32])) SigningCommands.c:129 -1
+     (nil))
+(insn 60 59 61 9 (parallel [
+            (set (reg:DI 119)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -80 [0xffffffffffffffb0])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:129 -1
+     (nil))
+(insn 61 60 62 9 (set (reg:DI 2 cx)
+        (reg:DI 119)) SigningCommands.c:129 -1
+     (nil))
+(insn 62 61 63 9 (set (reg:DI 1 dx)
+        (reg/f:DI 99 [ D.12972 ])) SigningCommands.c:129 -1
+     (nil))
+(insn 63 62 64 9 (set (reg:SI 4 si)
+        (reg:SI 101 [ D.12969 ])) SigningCommands.c:129 -1
+     (nil))
+(insn 64 63 65 9 (set (reg:SI 5 di)
+        (reg:SI 102 [ D.12968 ])) SigningCommands.c:129 -1
+     (nil))
+(call_insn 65 64 66 9 (call (mem:QI (symbol_ref:DI ("TicketComputeHashCheck") [flags 0x41]  <function_decl 0x7f980baa0e58 TicketComputeHashCheck>) [0 TicketComputeHashCheck S1 A8])
+        (const_int 0 [0])) SigningCommands.c:129 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 66 65 67 9 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:132 -1
+     (nil))
+(insn 67 66 68 9 (parallel [
+            (set (reg/f:DI 103 [ D.12973 ])
+                (plus:DI (reg/f:DI 120)
+                    (const_int 68 [0x44])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:132 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])
+            (const_int 68 [0x44]))
+        (nil)))
+(insn 68 67 69 9 (parallel [
+            (set (reg:DI 121)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -80 [0xffffffffffffffb0])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:132 -1
+     (nil))
+(insn 69 68 70 9 (parallel [
+            (set (reg:DI 122)
+                (plus:DI (reg:DI 121)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:132 -1
+     (nil))
+(insn 70 69 71 9 (set (reg:DI 4 si)
+        (reg:DI 122)) SigningCommands.c:132 -1
+     (nil))
+(insn 71 70 72 9 (set (reg:DI 5 di)
+        (reg/f:DI 103 [ D.12973 ])) SigningCommands.c:132 -1
+     (nil))
+(call_insn 72 71 73 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("MemoryEqual2B") [flags 0x41]  <function_decl 0x7f980ba96798 MemoryEqual2B>) [0 MemoryEqual2B S1 A8])
+            (const_int 0 [0]))) SigningCommands.c:132 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 73 72 74 9 (set (reg:SI 104 [ D.12969 ])
+        (reg:SI 0 ax)) SigningCommands.c:132 -1
+     (nil))
+(insn 74 73 75 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 104 [ D.12969 ])
+            (const_int 0 [0]))) SigningCommands.c:132 -1
+     (nil))
+(jump_insn 75 74 76 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 100)
+            (pc))) SigningCommands.c:132 612 {*jcc_1}
+     (nil)
+ -> 100)
+(note 76 75 77 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 77 76 78 10 (set (reg:SI 87 [ D.12967 ])
+        (const_int 992 [0x3e0])) SigningCommands.c:133 -1
+     (nil))
+(jump_insn 78 77 79 10 (set (pc)
+        (label_ref:DI 118)) SigningCommands.c:133 654 {jump}
+     (nil)
+ -> 118)
+(barrier 79 78 84)
+(code_label 84 79 85 12 13 "" [1 uses])
+(note 85 84 86 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 86 85 87 12 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:141 -1
+     (nil))
+(insn 87 86 88 12 (set (reg:HI 95 [ D.12971 ])
+        (mem/j:HI (plus:DI (reg/f:DI 123)
+                (const_int 4 [0x4])) [0 in_5(D)->digest.t.size+0 S2 A32])) SigningCommands.c:141 -1
+     (nil))
+(insn 88 87 89 12 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:142 -1
+     (nil))
+(insn 89 88 90 12 (set (reg:HI 96 [ D.12971 ])
+        (mem/j:HI (plus:DI (reg/f:DI 124)
+                (const_int 56 [0x38])) [0 in_5(D)->inScheme.details.any.hashAlg+0 S2 A32])) SigningCommands.c:142 -1
+     (nil))
+(insn 90 89 91 12 (set (reg:SI 97 [ D.12969 ])
+        (zero_extend:SI (reg:HI 96 [ D.12971 ]))) SigningCommands.c:142 -1
+     (nil))
+(insn 91 90 92 12 (set (reg:SI 5 di)
+        (reg:SI 97 [ D.12969 ])) SigningCommands.c:142 -1
+     (nil))
+(call_insn 92 91 93 12 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptHashGetDigestSize") [flags 0x41]  <function_decl 0x7f980bab0e58 CryptHashGetDigestSize>) [0 CryptHashGetDigestSize S1 A8])
+            (const_int 0 [0]))) SigningCommands.c:142 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 93 92 94 12 (set (reg:HI 98 [ D.12971 ])
+        (reg:HI 0 ax)) SigningCommands.c:142 -1
+     (nil))
+(insn 94 93 95 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 95 [ D.12971 ])
+            (reg:HI 98 [ D.12971 ]))) SigningCommands.c:141 -1
+     (nil))
+(jump_insn 95 94 96 12 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 100)
+            (pc))) SigningCommands.c:141 -1
+     (nil)
+ -> 100)
+(note 96 95 97 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 97 96 98 13 (set (reg:SI 87 [ D.12967 ])
+        (const_int 469 [0x1d5])) SigningCommands.c:143 -1
+     (nil))
+(jump_insn 98 97 99 13 (set (pc)
+        (label_ref:DI 118)) SigningCommands.c:143 654 {jump}
+     (nil)
+ -> 118)
+(barrier 99 98 100)
+(code_label 100 99 101 14 15 "" [2 uses])
+(note 101 100 102 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 102 101 103 14 (set (reg/f:DI 105 [ D.12974 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 out+0 S8 A64])) SigningCommands.c:148 -1
+     (nil))
+(insn 103 102 104 14 (set (reg/f:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:148 -1
+     (nil))
+(insn 104 103 105 14 (parallel [
+            (set (reg/f:DI 106 [ D.12972 ])
+                (plus:DI (reg/f:DI 125)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:148 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 105 104 106 14 (set (reg/f:DI 126)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) SigningCommands.c:148 -1
+     (nil))
+(insn 106 105 107 14 (parallel [
+            (set (reg/f:DI 107 [ D.12970 ])
+                (plus:DI (reg/f:DI 126)
+                    (const_int 54 [0x36])))
+            (clobber (reg:CC 17 flags))
+        ]) SigningCommands.c:148 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])
+            (const_int 54 [0x36]))
+        (nil)))
+(insn 107 106 108 14 (set (reg:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 signObject+0 S8 A64])) SigningCommands.c:148 -1
+     (nil))
+(insn 108 107 109 14 (set (reg:DI 2 cx)
+        (reg/f:DI 105 [ D.12974 ])) SigningCommands.c:148 -1
+     (nil))
+(insn 109 108 110 14 (set (reg:DI 1 dx)
+        (reg/f:DI 106 [ D.12972 ])) SigningCommands.c:148 -1
+     (nil))
+(insn 110 109 111 14 (set (reg:DI 4 si)
+        (reg/f:DI 107 [ D.12970 ])) SigningCommands.c:148 -1
+     (nil))
+(insn 111 110 112 14 (set (reg:DI 5 di)
+        (reg:DI 127)) SigningCommands.c:148 -1
+     (nil))
+(call_insn 112 111 113 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptSign") [flags 0x41]  <function_decl 0x7f980bab00d8 CryptSign>) [0 CryptSign S1 A8])
+            (const_int 0 [0]))) SigningCommands.c:148 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 113 112 114 14 (set (reg:SI 128)
+        (reg:SI 0 ax)) SigningCommands.c:148 -1
+     (nil))
+(insn 114 113 115 14 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -92 [0xffffffffffffffa4])) [0 result+0 S4 A32])
+        (reg:SI 128)) SigningCommands.c:148 -1
+     (nil))
+(insn 115 114 118 14 (set (reg:SI 87 [ D.12967 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -92 [0xffffffffffffffa4])) [0 result+0 S4 A32])) SigningCommands.c:149 -1
+     (nil))
+(code_label 118 115 119 16 16 "" [4 uses])
+(note 119 118 120 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 120 119 124 16 (set (reg:SI 108 [ <retval> ])
+        (reg:SI 87 [ D.12967 ])) -1
+     (nil))
+(insn 124 120 125 16 (set (reg/i:SI 0 ax)
+        (reg:SI 108 [ <retval> ])) SigningCommands.c:150 -1
+     (nil))
+(insn 125 124 126 16 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.12975+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) SigningCommands.c:150 -1
+     (nil))
+(jump_insn 126 125 132 16 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 129)
+            (pc))) SigningCommands.c:150 -1
+     (nil)
+ -> 129)
+(note 132 126 127 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(call_insn 127 132 128 18 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f980baf2af8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) SigningCommands.c:150 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 128 127 129)
+(code_label 129 128 133 19 17 "" [1 uses])
+(note 133 129 130 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 130 133 0 19 (use (reg/i:SI 0 ax)) SigningCommands.c:150 -1
+     (nil))

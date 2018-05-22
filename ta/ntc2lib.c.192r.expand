@@ -1,0 +1,230 @@
+
+;; Function NTC2_CFG_STRUCT_Unmarshal (NTC2_CFG_STRUCT_Unmarshal, funcdef_no=2, decl_uid=5274, cgraph_uid=2, symbol_order=2)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 28.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 target+0 S8 A64])
+        (reg:DI 5 di [ target ])) ntc2lib.c:52 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])
+        (reg:DI 4 si [ buffer ])) ntc2lib.c:52 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 size+0 S8 A64])
+        (reg:DI 1 dx [ size ])) ntc2lib.c:52 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) ntc2lib.c:53 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) ntc2lib.c:57 -1
+     (nil))
+(jump_insn 10 9 11 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) ntc2lib.c:57 -1
+     (nil)
+ -> 22)
+(note 11 10 12 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 12 11 13 4 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 size+0 S8 A64])) ntc2lib.c:58 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])) ntc2lib.c:58 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 target+0 S8 A64])) ntc2lib.c:58 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 2 cx)
+        (reg:DI 89)) ntc2lib.c:58 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 1 dx)
+        (reg:DI 90)) ntc2lib.c:58 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 4 si)
+        (const_int 18 [0x12])) ntc2lib.c:58 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:DI 5 di)
+        (reg:DI 91)) ntc2lib.c:58 -1
+     (nil))
+(call_insn 19 18 20 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("Array_Unmarshal") [flags 0x41]  <function_decl 0x7f19a165b510 Array_Unmarshal>) [0 Array_Unmarshal S1 A8])
+            (const_int 0 [0]))) ntc2lib.c:58 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 20 19 21 4 (set (reg:SI 92)
+        (reg:SI 0 ax)) ntc2lib.c:58 -1
+     (nil))
+(insn 21 20 22 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 92)) ntc2lib.c:58 -1
+     (nil))
+(code_label 22 21 23 5 2 "" [1 uses])
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 27 5 (set (reg:SI 87 [ D.5301 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) ntc2lib.c:60 -1
+     (nil))
+(insn 27 24 31 5 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.5301 ])) ntc2lib.c:60 -1
+     (nil))
+(insn 31 27 32 5 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) ntc2lib.c:61 -1
+     (nil))
+(insn 32 31 0 5 (use (reg/i:SI 0 ax)) ntc2lib.c:61 -1
+     (nil))
+
+;; Function NTC2_CFG_STRUCT_Marshal (NTC2_CFG_STRUCT_Marshal, funcdef_no=3, decl_uid=5278, cgraph_uid=3, symbol_order=3)
+
+Partition 0: size 2 align 2
+	written_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 23.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 source+0 S8 A64])
+        (reg:DI 5 di [ source ])) ntc2lib.c:65 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])
+        (reg:DI 4 si [ buffer ])) ntc2lib.c:65 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 size+0 S8 A64])
+        (reg:DI 1 dx [ size ])) ntc2lib.c:65 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 written+0 S2 A16])
+        (const_int 0 [0])) ntc2lib.c:66 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 size+0 S8 A64])) ntc2lib.c:69 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])) ntc2lib.c:69 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 source+0 S8 A64])) ntc2lib.c:69 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 2 cx)
+        (reg:DI 90)) ntc2lib.c:69 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 1 dx)
+        (reg:DI 91)) ntc2lib.c:69 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 4 si)
+        (const_int 18 [0x12])) ntc2lib.c:69 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (reg:DI 92)) ntc2lib.c:69 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("Array_Marshal") [flags 0x41]  <function_decl 0x7f19a16ad798 Array_Marshal>) [0 Array_Marshal S1 A8])
+            (const_int 0 [0]))) ntc2lib.c:69 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 17 16 18 2 (set (reg:HI 87 [ D.5302 ])
+        (reg:HI 0 ax)) ntc2lib.c:69 -1
+     (nil))
+(insn 18 17 19 2 (parallel [
+            (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2 [0xfffffffffffffffe])) [0 written+0 S2 A16])
+                (plus:HI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2 [0xfffffffffffffffe])) [0 written+0 S2 A16])
+                    (reg:HI 87 [ D.5302 ])))
+            (clobber (reg:CC 17 flags))
+        ]) ntc2lib.c:69 -1
+     (nil))
+(insn 19 18 22 2 (set (reg:HI 88 [ D.5303 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 written+0 S2 A16])) ntc2lib.c:70 -1
+     (nil))
+(insn 22 19 26 2 (set (reg:HI 89 [ <retval> ])
+        (reg:HI 88 [ D.5303 ])) ntc2lib.c:70 -1
+     (nil))
+(insn 26 22 27 2 (set (reg/i:HI 0 ax)
+        (reg:HI 89 [ <retval> ])) ntc2lib.c:71 -1
+     (nil))
+(insn 27 26 0 2 (use (reg/i:HI 0 ax)) ntc2lib.c:71 -1
+     (nil))

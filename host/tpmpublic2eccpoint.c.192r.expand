@@ -1,0 +1,1368 @@
+
+;; Function main (main, funcdef_no=2, decl_uid=7533, cgraph_uid=2, symbol_order=3)
+
+Partition 4: size 424 align 16
+	public
+Partition 5: size 102 align 16
+	eccPoint2b
+Partition 3: size 8 align 8
+	pointFilename_9
+Partition 2: size 8 align 8
+	publicKeyFilename_6
+Partition 8: size 8 align 8
+	num
+Partition 7: size 8 align 8
+	submsg
+Partition 6: size 8 align 8
+	msg
+Partition 1: size 4 align 4
+	i_4
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+;; Generating RTL for gimple basic block 38
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 40 from 8 to 19.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+Redirecting jump 78 from 13 to 19.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+Edge 34->36 redirected to 38
+Merging block 36 into block 35...
+Merged blocks 35 and 36.
+Merged 35 and 36 without moving.
+Merging block 39 into block 38...
+Merged blocks 38 and 39.
+Merged 38 and 39 without moving.
+Removing jump 283.
+Merging block 40 into block 38...
+Merged blocks 38 and 40.
+Merged 38 and 40 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -596 [0xfffffffffffffdac])) [0 argc+0 S4 A32])
+        (reg:SI 5 di [ argc ])) tpmpublic2eccpoint.c:56 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])
+        (reg:DI 4 si [ argv ])) tpmpublic2eccpoint.c:56 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.7635+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:56 -1
+     (nil))
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:57 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -560 [0xfffffffffffffdd0])) [0 publicKeyFilename+0 S8 A64])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:59 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -552 [0xfffffffffffffdd8])) [0 pointFilename+0 S8 A64])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:60 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])
+        (const_int 1 [0x1])) tpmpublic2eccpoint.c:64 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (label_ref 141)) tpmpublic2eccpoint.c:64 -1
+     (nil)
+ -> 141)
+(barrier 13 12 147)
+(code_label 147 13 14 4 13 "" [1 uses])
+(note 14 147 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (reg:SI 126)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])) tpmpublic2eccpoint.c:65 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 87 [ D.7629 ])
+        (sign_extend:DI (reg:SI 126))) tpmpublic2eccpoint.c:65 -1
+     (nil))
+(insn 17 16 18 4 (parallel [
+            (set (reg:DI 88 [ D.7629 ])
+                (ashift:DI (reg:DI 87 [ D.7629 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:65 -1
+     (nil))
+(insn 18 17 19 4 (set (reg/f:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])) tpmpublic2eccpoint.c:65 -1
+     (nil))
+(insn 19 18 20 4 (parallel [
+            (set (reg/f:DI 89 [ D.7630 ])
+                (plus:DI (reg:DI 88 [ D.7629 ])
+                    (reg/f:DI 127)))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:65 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])
+            (reg:DI 88 [ D.7629 ]))
+        (nil)))
+(insn 20 19 21 4 (set (reg/f:DI 90 [ D.7631 ])
+        (mem/f:DI (reg/f:DI 89 [ D.7630 ]) [0 *_32+0 S8 A64])) tpmpublic2eccpoint.c:65 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f219cf74ab0 *.LC0>)) tpmpublic2eccpoint.c:65 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:DI 5 di)
+        (reg/f:DI 90 [ D.7631 ])) tpmpublic2eccpoint.c:65 -1
+     (nil))
+(call_insn/i 23 22 24 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f219d3000d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:65 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 24 23 25 4 (set (reg:SI 91 [ D.7632 ])
+        (reg:SI 0 ax)) tpmpublic2eccpoint.c:65 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.7632 ])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:65 -1
+     (nil))
+(jump_insn 26 25 27 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) tpmpublic2eccpoint.c:65 -1
+     (nil)
+ -> 51)
+(note 27 26 28 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:66 -1
+     (nil))
+(insn 29 28 30 5 (set (reg:SI 128)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])) tpmpublic2eccpoint.c:67 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 128)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -596 [0xfffffffffffffdac])) [0 argc+0 S4 A32]))) tpmpublic2eccpoint.c:67 -1
+     (nil))
+(jump_insn 31 30 32 5 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) tpmpublic2eccpoint.c:67 -1
+     (nil)
+ -> 42)
+(note 32 31 33 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 6 (set (reg:SI 129)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])) tpmpublic2eccpoint.c:68 -1
+     (nil))
+(insn 34 33 35 6 (set (reg:DI 92 [ D.7629 ])
+        (sign_extend:DI (reg:SI 129))) tpmpublic2eccpoint.c:68 -1
+     (nil))
+(insn 35 34 36 6 (parallel [
+            (set (reg:DI 93 [ D.7629 ])
+                (ashift:DI (reg:DI 92 [ D.7629 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:68 -1
+     (nil))
+(insn 36 35 37 6 (set (reg/f:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])) tpmpublic2eccpoint.c:68 -1
+     (nil))
+(insn 37 36 38 6 (parallel [
+            (set (reg/f:DI 94 [ D.7630 ])
+                (plus:DI (reg:DI 93 [ D.7629 ])
+                    (reg/f:DI 130)))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:68 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])
+            (reg:DI 93 [ D.7629 ]))
+        (nil)))
+(insn 38 37 39 6 (set (reg/f:DI 131)
+        (mem/f:DI (reg/f:DI 94 [ D.7630 ]) [0 *_38+0 S8 A64])) tpmpublic2eccpoint.c:68 -1
+     (nil))
+(insn 39 38 40 6 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -560 [0xfffffffffffffdd0])) [0 publicKeyFilename+0 S8 A64])
+        (reg/f:DI 131)) tpmpublic2eccpoint.c:68 -1
+     (nil))
+(jump_insn 40 39 41 6 (set (pc)
+        (label_ref:DI 138)) 654 {jump}
+     (nil)
+ -> 138)
+(barrier 41 40 42)
+(code_label 42 41 43 7 4 "" [1 uses])
+(note 43 42 44 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 7 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f219cf74b40 *.LC1>)) tpmpublic2eccpoint.c:71 -1
+     (nil))
+(call_insn 45 44 46 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:71 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 46 45 49 7 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f219cf5a288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:72 -1
+     (nil)
+    (nil))
+(jump_insn 49 46 50 7 (set (pc)
+        (label_ref 138)) -1
+     (nil)
+ -> 138)
+(barrier 50 49 51)
+(code_label 51 50 52 9 3 "" [1 uses])
+(note 52 51 53 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 9 (set (reg:SI 132)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])) tpmpublic2eccpoint.c:75 -1
+     (nil))
+(insn 54 53 55 9 (set (reg:DI 95 [ D.7629 ])
+        (sign_extend:DI (reg:SI 132))) tpmpublic2eccpoint.c:75 -1
+     (nil))
+(insn 55 54 56 9 (parallel [
+            (set (reg:DI 96 [ D.7629 ])
+                (ashift:DI (reg:DI 95 [ D.7629 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:75 -1
+     (nil))
+(insn 56 55 57 9 (set (reg/f:DI 133)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])) tpmpublic2eccpoint.c:75 -1
+     (nil))
+(insn 57 56 58 9 (parallel [
+            (set (reg/f:DI 97 [ D.7630 ])
+                (plus:DI (reg:DI 96 [ D.7629 ])
+                    (reg/f:DI 133)))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:75 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])
+            (reg:DI 96 [ D.7629 ]))
+        (nil)))
+(insn 58 57 59 9 (set (reg/f:DI 98 [ D.7631 ])
+        (mem/f:DI (reg/f:DI 97 [ D.7630 ]) [0 *_44+0 S8 A64])) tpmpublic2eccpoint.c:75 -1
+     (nil))
+(insn 59 58 60 9 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f219cf74bd0 *.LC2>)) tpmpublic2eccpoint.c:75 -1
+     (nil))
+(insn 60 59 61 9 (set (reg:DI 5 di)
+        (reg/f:DI 98 [ D.7631 ])) tpmpublic2eccpoint.c:75 -1
+     (nil))
+(call_insn/i 61 60 62 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f219d3000d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:75 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 62 61 63 9 (set (reg:SI 99 [ D.7632 ])
+        (reg:SI 0 ax)) tpmpublic2eccpoint.c:75 -1
+     (nil))
+(insn 63 62 64 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 99 [ D.7632 ])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:75 -1
+     (nil))
+(jump_insn 64 63 65 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 89)
+            (pc))) tpmpublic2eccpoint.c:75 -1
+     (nil)
+ -> 89)
+(note 65 64 66 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 10 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:76 -1
+     (nil))
+(insn 67 66 68 10 (set (reg:SI 134)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])) tpmpublic2eccpoint.c:77 -1
+     (nil))
+(insn 68 67 69 10 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 134)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -596 [0xfffffffffffffdac])) [0 argc+0 S4 A32]))) tpmpublic2eccpoint.c:77 -1
+     (nil))
+(jump_insn 69 68 70 10 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 80)
+            (pc))) tpmpublic2eccpoint.c:77 -1
+     (nil)
+ -> 80)
+(note 70 69 71 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 71 70 72 11 (set (reg:SI 135)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])) tpmpublic2eccpoint.c:78 -1
+     (nil))
+(insn 72 71 73 11 (set (reg:DI 100 [ D.7629 ])
+        (sign_extend:DI (reg:SI 135))) tpmpublic2eccpoint.c:78 -1
+     (nil))
+(insn 73 72 74 11 (parallel [
+            (set (reg:DI 101 [ D.7629 ])
+                (ashift:DI (reg:DI 100 [ D.7629 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:78 -1
+     (nil))
+(insn 74 73 75 11 (set (reg/f:DI 136)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])) tpmpublic2eccpoint.c:78 -1
+     (nil))
+(insn 75 74 76 11 (parallel [
+            (set (reg/f:DI 102 [ D.7630 ])
+                (plus:DI (reg:DI 101 [ D.7629 ])
+                    (reg/f:DI 136)))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:78 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])
+            (reg:DI 101 [ D.7629 ]))
+        (nil)))
+(insn 76 75 77 11 (set (reg/f:DI 137)
+        (mem/f:DI (reg/f:DI 102 [ D.7630 ]) [0 *_50+0 S8 A64])) tpmpublic2eccpoint.c:78 -1
+     (nil))
+(insn 77 76 78 11 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -552 [0xfffffffffffffdd8])) [0 pointFilename+0 S8 A64])
+        (reg/f:DI 137)) tpmpublic2eccpoint.c:78 -1
+     (nil))
+(jump_insn 78 77 79 11 (set (pc)
+        (label_ref:DI 138)) 654 {jump}
+     (nil)
+ -> 138)
+(barrier 79 78 80)
+(code_label 80 79 81 12 8 "" [1 uses])
+(note 81 80 82 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 82 81 83 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f219cf74c60 *.LC3>)) tpmpublic2eccpoint.c:81 -1
+     (nil))
+(call_insn 83 82 84 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:81 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 84 83 87 12 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f219cf5a288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:82 -1
+     (nil)
+    (nil))
+(jump_insn 87 84 88 12 (set (pc)
+        (label_ref 138)) -1
+     (nil)
+ -> 138)
+(barrier 88 87 89)
+(code_label 89 88 90 14 7 "" [1 uses])
+(note 90 89 91 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 91 90 92 14 (set (reg:SI 138)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])) tpmpublic2eccpoint.c:85 -1
+     (nil))
+(insn 92 91 93 14 (set (reg:DI 103 [ D.7629 ])
+        (sign_extend:DI (reg:SI 138))) tpmpublic2eccpoint.c:85 -1
+     (nil))
+(insn 93 92 94 14 (parallel [
+            (set (reg:DI 104 [ D.7629 ])
+                (ashift:DI (reg:DI 103 [ D.7629 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:85 -1
+     (nil))
+(insn 94 93 95 14 (set (reg/f:DI 139)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])) tpmpublic2eccpoint.c:85 -1
+     (nil))
+(insn 95 94 96 14 (parallel [
+            (set (reg/f:DI 105 [ D.7630 ])
+                (plus:DI (reg:DI 104 [ D.7629 ])
+                    (reg/f:DI 139)))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:85 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])
+            (reg:DI 104 [ D.7629 ]))
+        (nil)))
+(insn 96 95 97 14 (set (reg/f:DI 106 [ D.7631 ])
+        (mem/f:DI (reg/f:DI 105 [ D.7630 ]) [0 *_56+0 S8 A64])) tpmpublic2eccpoint.c:85 -1
+     (nil))
+(insn 97 96 98 14 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f219cf74cf0 *.LC4>)) tpmpublic2eccpoint.c:85 -1
+     (nil))
+(insn 98 97 99 14 (set (reg:DI 5 di)
+        (reg/f:DI 106 [ D.7631 ])) tpmpublic2eccpoint.c:85 -1
+     (nil))
+(call_insn/i 99 98 100 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f219d3000d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:85 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 100 99 101 14 (set (reg:SI 107 [ D.7632 ])
+        (reg:SI 0 ax)) tpmpublic2eccpoint.c:85 -1
+     (nil))
+(insn 101 100 102 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 107 [ D.7632 ])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:85 -1
+     (nil))
+(jump_insn 102 101 103 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 107)
+            (pc))) tpmpublic2eccpoint.c:85 -1
+     (nil)
+ -> 107)
+(note 103 102 104 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(call_insn 104 103 105 15 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f219cf5a288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:86 -1
+     (nil)
+    (nil))
+(jump_insn 105 104 106 15 (set (pc)
+        (label_ref 138)) -1
+     (nil)
+ -> 138)
+(barrier 106 105 107)
+(code_label 107 106 108 16 10 "" [1 uses])
+(note 108 107 109 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 109 108 110 16 (set (reg:SI 140)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])) tpmpublic2eccpoint.c:88 -1
+     (nil))
+(insn 110 109 111 16 (set (reg:DI 108 [ D.7629 ])
+        (sign_extend:DI (reg:SI 140))) tpmpublic2eccpoint.c:88 -1
+     (nil))
+(insn 111 110 112 16 (parallel [
+            (set (reg:DI 109 [ D.7629 ])
+                (ashift:DI (reg:DI 108 [ D.7629 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:88 -1
+     (nil))
+(insn 112 111 113 16 (set (reg/f:DI 141)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])) tpmpublic2eccpoint.c:88 -1
+     (nil))
+(insn 113 112 114 16 (parallel [
+            (set (reg/f:DI 110 [ D.7630 ])
+                (plus:DI (reg:DI 109 [ D.7629 ])
+                    (reg/f:DI 141)))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:88 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])
+            (reg:DI 109 [ D.7629 ]))
+        (nil)))
+(insn 114 113 115 16 (set (reg/f:DI 111 [ D.7631 ])
+        (mem/f:DI (reg/f:DI 110 [ D.7630 ]) [0 *_62+0 S8 A64])) tpmpublic2eccpoint.c:88 -1
+     (nil))
+(insn 115 114 116 16 (set (reg:DI 4 si)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f219cf74d80 *.LC5>)) tpmpublic2eccpoint.c:88 -1
+     (nil))
+(insn 116 115 117 16 (set (reg:DI 5 di)
+        (reg/f:DI 111 [ D.7631 ])) tpmpublic2eccpoint.c:88 -1
+     (nil))
+(call_insn/i 117 116 118 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strcmp") [flags 0x41]  <function_decl 0x7f219d3000d8 strcmp>) [0 __builtin_strcmp S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:88 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 118 117 119 16 (set (reg:SI 112 [ D.7632 ])
+        (reg:SI 0 ax)) tpmpublic2eccpoint.c:88 -1
+     (nil))
+(insn 119 118 120 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 112 [ D.7632 ])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:88 -1
+     (nil))
+(jump_insn 120 119 121 16 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 125)
+            (pc))) tpmpublic2eccpoint.c:88 -1
+     (nil)
+ -> 125)
+(note 121 120 122 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 122 121 123 17 (set (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f219d0ca090 verbose>) [0 verbose+0 S4 A32])
+        (const_int 1 [0x1])) tpmpublic2eccpoint.c:89 -1
+     (nil))
+(jump_insn 123 122 124 17 (set (pc)
+        (label_ref 138)) -1
+     (nil)
+ -> 138)
+(barrier 124 123 125)
+(code_label 125 124 126 18 11 "" [1 uses])
+(note 126 125 127 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 127 126 128 18 (set (reg:SI 142)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])) tpmpublic2eccpoint.c:92 -1
+     (nil))
+(insn 128 127 129 18 (set (reg:DI 113 [ D.7629 ])
+        (sign_extend:DI (reg:SI 142))) tpmpublic2eccpoint.c:92 -1
+     (nil))
+(insn 129 128 130 18 (parallel [
+            (set (reg:DI 114 [ D.7629 ])
+                (ashift:DI (reg:DI 113 [ D.7629 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:92 -1
+     (nil))
+(insn 130 129 131 18 (set (reg/f:DI 143)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])) tpmpublic2eccpoint.c:92 -1
+     (nil))
+(insn 131 130 132 18 (parallel [
+            (set (reg/f:DI 115 [ D.7630 ])
+                (plus:DI (reg:DI 114 [ D.7629 ])
+                    (reg/f:DI 143)))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:92 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -608 [0xfffffffffffffda0])) [0 argv+0 S8 A64])
+            (reg:DI 114 [ D.7629 ]))
+        (nil)))
+(insn 132 131 133 18 (set (reg/f:DI 116 [ D.7631 ])
+        (mem/f:DI (reg/f:DI 115 [ D.7630 ]) [0 *_68+0 S8 A64])) tpmpublic2eccpoint.c:92 -1
+     (nil))
+(insn 133 132 134 18 (set (reg:DI 4 si)
+        (reg/f:DI 116 [ D.7631 ])) tpmpublic2eccpoint.c:92 -1
+     (nil))
+(insn 134 133 135 18 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f219cf74e10 *.LC6>)) tpmpublic2eccpoint.c:92 -1
+     (nil))
+(insn 135 134 136 18 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tpmpublic2eccpoint.c:92 -1
+     (nil))
+(call_insn 136 135 137 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f219d306ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:92 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(call_insn 137 136 138 18 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f219cf5a288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:93 -1
+     (nil)
+    (nil))
+(code_label 138 137 139 19 6 "" [6 uses])
+(note 139 138 140 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 140 139 141 19 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:64 -1
+     (nil))
+(code_label 141 140 142 20 2 "" [1 uses])
+(note 142 141 143 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 143 142 144 20 (set (reg:SI 144)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -588 [0xfffffffffffffdb4])) [0 i+0 S4 A32])) tpmpublic2eccpoint.c:64 -1
+     (nil))
+(insn 144 143 145 20 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 144)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -596 [0xfffffffffffffdac])) [0 argc+0 S4 A32]))) tpmpublic2eccpoint.c:64 -1
+     (nil))
+(jump_insn 145 144 146 20 (set (pc)
+        (if_then_else (ge (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 150)
+            (pc))) tpmpublic2eccpoint.c:64 -1
+     (nil)
+ -> 150)
+(note 146 145 148 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 148 146 149 21 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:64 -1
+     (nil))
+(jump_insn 149 148 150 21 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 147)
+            (pc))) tpmpublic2eccpoint.c:64 -1
+     (nil)
+ -> 147)
+(code_label 150 149 151 22 12 "" [1 uses])
+(note 151 150 152 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 152 151 153 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -560 [0xfffffffffffffdd0])) [0 publicKeyFilename+0 S8 A64])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:96 -1
+     (nil))
+(jump_insn 153 152 154 22 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 158)
+            (pc))) tpmpublic2eccpoint.c:96 -1
+     (nil)
+ -> 158)
+(note 154 153 155 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 155 154 156 23 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f219cf74ea0 *.LC7>)) tpmpublic2eccpoint.c:97 -1
+     (nil))
+(call_insn 156 155 157 23 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:97 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 157 156 158 23 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f219cf5a288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:98 -1
+     (nil)
+    (nil))
+(code_label 158 157 159 24 14 "" [1 uses])
+(note 159 158 160 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 160 159 161 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -552 [0xfffffffffffffdd8])) [0 pointFilename+0 S8 A64])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:100 -1
+     (nil))
+(jump_insn 161 160 162 24 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 166)
+            (pc))) tpmpublic2eccpoint.c:100 -1
+     (nil)
+ -> 166)
+(note 162 161 163 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 163 162 164 25 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f219cf74f30 *.LC8>)) tpmpublic2eccpoint.c:101 -1
+     (nil))
+(call_insn 164 163 165 25 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:101 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 165 164 166 25 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f219cf5a288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:102 -1
+     (nil)
+    (nil))
+(code_label 166 165 167 26 15 "" [1 uses])
+(note 167 166 168 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 168 167 169 26 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:105 -1
+     (nil))
+(jump_insn 169 168 170 26 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 180)
+            (pc))) tpmpublic2eccpoint.c:105 -1
+     (nil)
+ -> 180)
+(note 170 169 171 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 171 170 172 27 (set (reg:DI 145)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -560 [0xfffffffffffffdd0])) [0 publicKeyFilename+0 S8 A64])) tpmpublic2eccpoint.c:106 -1
+     (nil))
+(insn 172 171 173 27 (parallel [
+            (set (reg:DI 146)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -432 [0xfffffffffffffe50])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:106 -1
+     (nil))
+(insn 173 172 174 27 (set (reg:DI 1 dx)
+        (reg:DI 145)) tpmpublic2eccpoint.c:106 -1
+     (nil))
+(insn 174 173 175 27 (set (reg:DI 147)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("TPM2B_PUBLIC_Unmarshal") [flags 0x41]  <function_decl 0x7f219d1d4798 TPM2B_PUBLIC_Unmarshal>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tpmpublic2eccpoint.c:106 -1
+     (nil))
+(insn 175 174 176 27 (set (reg:DI 4 si)
+        (reg:DI 147)) tpmpublic2eccpoint.c:106 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("TPM2B_PUBLIC_Unmarshal") [flags 0x41]  <function_decl 0x7f219d1d4798 TPM2B_PUBLIC_Unmarshal>)
+        (nil)))
+(insn 176 175 177 27 (set (reg:DI 5 di)
+        (reg:DI 146)) tpmpublic2eccpoint.c:106 -1
+     (nil))
+(call_insn 177 176 178 27 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_ReadStructure") [flags 0x41]  <function_decl 0x7f219d1871b0 TSS_File_ReadStructure>) [0 TSS_File_ReadStructure S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:106 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 178 177 179 27 (set (reg:SI 148)
+        (reg:SI 0 ax)) tpmpublic2eccpoint.c:106 -1
+     (nil))
+(insn 179 178 180 27 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])
+        (reg:SI 148)) tpmpublic2eccpoint.c:106 -1
+     (nil))
+(code_label 180 179 181 28 16 "" [1 uses])
+(note 181 180 182 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 182 181 183 28 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:110 -1
+     (nil))
+(jump_insn 183 182 184 28 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 196)
+            (pc))) tpmpublic2eccpoint.c:110 -1
+     (nil)
+ -> 196)
+(note 184 183 185 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 185 184 186 29 (set (reg:HI 117 [ D.7633 ])
+        (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -428 [0xfffffffffffffe54])) [0 public.publicArea.type+0 S2 A32])) tpmpublic2eccpoint.c:111 -1
+     (nil))
+(insn 186 185 187 29 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 117 [ D.7633 ])
+            (const_int 35 [0x23]))) tpmpublic2eccpoint.c:111 -1
+     (nil))
+(jump_insn 187 186 188 29 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 196)
+            (pc))) tpmpublic2eccpoint.c:111 -1
+     (nil)
+ -> 196)
+(note 188 187 189 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 189 188 190 30 (set (reg:HI 118 [ D.7633 ])
+        (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -428 [0xfffffffffffffe54])) [0 public.publicArea.type+0 S2 A32])) tpmpublic2eccpoint.c:113 -1
+     (nil))
+(insn 190 189 191 30 (set (reg:SI 119 [ D.7632 ])
+        (zero_extend:SI (reg:HI 118 [ D.7633 ]))) tpmpublic2eccpoint.c:112 -1
+     (nil))
+(insn 191 190 192 30 (set (reg:SI 4 si)
+        (reg:SI 119 [ D.7632 ])) tpmpublic2eccpoint.c:112 -1
+     (nil))
+(insn 192 191 193 30 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f219cf86000 *.LC9>)) tpmpublic2eccpoint.c:112 -1
+     (nil))
+(insn 193 192 194 30 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tpmpublic2eccpoint.c:112 -1
+     (nil))
+(call_insn 194 193 195 30 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f219d306ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:112 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(call_insn 195 194 196 30 (call (mem:QI (symbol_ref:DI ("printUsage") [flags 0x3]  <function_decl 0x7f219cf5a288 printUsage>) [0 printUsage S1 A8])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:114 -1
+     (nil)
+    (nil))
+(code_label 196 195 197 31 17 "" [2 uses])
+(note 197 196 198 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 198 197 199 31 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:117 -1
+     (nil))
+(jump_insn 199 198 200 31 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 236)
+            (pc))) tpmpublic2eccpoint.c:117 -1
+     (nil)
+ -> 236)
+(note 200 199 201 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 201 200 202 32 (set (reg:DI 149)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -268 [0xfffffffffffffef4])) [0 public.publicArea.unique.ecc+0 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 202 201 203 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -542 [0xfffffffffffffde2])) [0 eccPoint2b.point+0 S8 A16])
+        (reg:DI 149)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 203 202 204 32 (set (reg:DI 150)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -260 [0xfffffffffffffefc])) [0 public.publicArea.unique.ecc+8 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 204 203 205 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -534 [0xfffffffffffffdea])) [0 eccPoint2b.point+8 S8 A16])
+        (reg:DI 150)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 205 204 206 32 (set (reg:DI 151)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -252 [0xffffffffffffff04])) [0 public.publicArea.unique.ecc+16 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 206 205 207 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -526 [0xfffffffffffffdf2])) [0 eccPoint2b.point+16 S8 A16])
+        (reg:DI 151)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 207 206 208 32 (set (reg:DI 152)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -244 [0xffffffffffffff0c])) [0 public.publicArea.unique.ecc+24 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 208 207 209 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -518 [0xfffffffffffffdfa])) [0 eccPoint2b.point+24 S8 A16])
+        (reg:DI 152)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 209 208 210 32 (set (reg:DI 153)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -236 [0xffffffffffffff14])) [0 public.publicArea.unique.ecc+32 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 210 209 211 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -510 [0xfffffffffffffe02])) [0 eccPoint2b.point+32 S8 A16])
+        (reg:DI 153)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 211 210 212 32 (set (reg:DI 154)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -228 [0xffffffffffffff1c])) [0 public.publicArea.unique.ecc+40 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 212 211 213 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -502 [0xfffffffffffffe0a])) [0 eccPoint2b.point+40 S8 A16])
+        (reg:DI 154)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 213 212 214 32 (set (reg:DI 155)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 public.publicArea.unique.ecc+48 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 214 213 215 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -494 [0xfffffffffffffe12])) [0 eccPoint2b.point+48 S8 A16])
+        (reg:DI 155)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 215 214 216 32 (set (reg:DI 156)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -212 [0xffffffffffffff2c])) [0 public.publicArea.unique.ecc+56 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 216 215 217 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -486 [0xfffffffffffffe1a])) [0 eccPoint2b.point+56 S8 A16])
+        (reg:DI 156)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 217 216 218 32 (set (reg:DI 157)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -204 [0xffffffffffffff34])) [0 public.publicArea.unique.ecc+64 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 218 217 219 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -478 [0xfffffffffffffe22])) [0 eccPoint2b.point+64 S8 A16])
+        (reg:DI 157)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 219 218 220 32 (set (reg:DI 158)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 public.publicArea.unique.ecc+72 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 220 219 221 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -470 [0xfffffffffffffe2a])) [0 eccPoint2b.point+72 S8 A16])
+        (reg:DI 158)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 221 220 222 32 (set (reg:DI 159)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -188 [0xffffffffffffff44])) [0 public.publicArea.unique.ecc+80 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 222 221 223 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -462 [0xfffffffffffffe32])) [0 eccPoint2b.point+80 S8 A16])
+        (reg:DI 159)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 223 222 224 32 (set (reg:DI 160)
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -180 [0xffffffffffffff4c])) [0 public.publicArea.unique.ecc+88 S8 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 224 223 225 32 (set (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -454 [0xfffffffffffffe3a])) [0 eccPoint2b.point+88 S8 A16])
+        (reg:DI 160)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 225 224 226 32 (set (reg:SI 161)
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -172 [0xffffffffffffff54])) [0 public.publicArea.unique.ecc+96 S4 A32])) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 226 225 227 32 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -446 [0xfffffffffffffe42])) [0 eccPoint2b.point+96 S4 A16])
+        (reg:SI 161)) tpmpublic2eccpoint.c:119 -1
+     (nil))
+(insn 227 226 228 32 (set (reg:DI 162)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -552 [0xfffffffffffffdd8])) [0 pointFilename+0 S8 A64])) tpmpublic2eccpoint.c:121 -1
+     (nil))
+(insn 228 227 229 32 (parallel [
+            (set (reg:DI 163)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -544 [0xfffffffffffffde0])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:121 -1
+     (nil))
+(insn 229 228 230 32 (set (reg:DI 1 dx)
+        (reg:DI 162)) tpmpublic2eccpoint.c:121 -1
+     (nil))
+(insn 230 229 231 32 (set (reg:DI 164)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("TSS_TPM2B_ECC_POINT_Marshal") [flags 0x41]  <function_decl 0x7f219cf3be58 TSS_TPM2B_ECC_POINT_Marshal>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tpmpublic2eccpoint.c:121 -1
+     (nil))
+(insn 231 230 232 32 (set (reg:DI 4 si)
+        (reg:DI 164)) tpmpublic2eccpoint.c:121 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("TSS_TPM2B_ECC_POINT_Marshal") [flags 0x41]  <function_decl 0x7f219cf3be58 TSS_TPM2B_ECC_POINT_Marshal>)
+        (nil)))
+(insn 232 231 233 32 (set (reg:DI 5 di)
+        (reg:DI 163)) tpmpublic2eccpoint.c:121 -1
+     (nil))
+(call_insn 233 232 234 32 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_File_WriteStructure") [flags 0x41]  <function_decl 0x7f219d187288 TSS_File_WriteStructure>) [0 TSS_File_WriteStructure S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:121 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 234 233 235 32 (set (reg:SI 165)
+        (reg:SI 0 ax)) tpmpublic2eccpoint.c:121 -1
+     (nil))
+(insn 235 234 236 32 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])
+        (reg:SI 165)) tpmpublic2eccpoint.c:121 -1
+     (nil))
+(code_label 236 235 237 33 18 "" [1 uses])
+(note 237 236 238 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 238 237 239 33 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:126 -1
+     (nil))
+(jump_insn 239 238 240 33 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 251)
+            (pc))) tpmpublic2eccpoint.c:126 -1
+     (nil)
+ -> 251)
+(note 240 239 241 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 241 240 242 34 (set (reg:SI 120 [ D.7632 ])
+        (mem/c:SI (symbol_ref:DI ("verbose") [flags 0x2]  <var_decl 0x7f219d0ca090 verbose>) [0 verbose+0 S4 A32])) tpmpublic2eccpoint.c:127 -1
+     (nil))
+(insn 242 241 243 34 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 120 [ D.7632 ])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:127 -1
+     (nil))
+(jump_insn 243 242 244 34 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 277)
+            (pc))) tpmpublic2eccpoint.c:127 612 {*jcc_1}
+     (nil)
+ -> 277)
+(note 244 243 245 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 245 244 246 35 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f219cf86090 *.LC10>)) tpmpublic2eccpoint.c:127 -1
+     (nil))
+(call_insn 246 245 249 35 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:127 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 249 246 250 35 (set (pc)
+        (label_ref 277)) -1
+     (nil)
+ -> 277)
+(barrier 250 249 251)
+(code_label 251 250 252 37 19 "" [1 uses])
+(note 252 251 253 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 253 252 254 37 (set (reg:SI 166)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])) tpmpublic2eccpoint.c:133 -1
+     (nil))
+(insn 254 253 255 37 (set (reg:SI 4 si)
+        (reg:SI 166)) tpmpublic2eccpoint.c:133 -1
+     (nil))
+(insn 255 254 256 37 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f219cf86120 *.LC11>)) tpmpublic2eccpoint.c:133 -1
+     (nil))
+(insn 256 255 257 37 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tpmpublic2eccpoint.c:133 -1
+     (nil))
+(call_insn 257 256 258 37 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f219d306ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:133 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 258 257 259 37 (set (reg:SI 167)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])) tpmpublic2eccpoint.c:134 -1
+     (nil))
+(insn 259 258 260 37 (parallel [
+            (set (reg:DI 168)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -568 [0xfffffffffffffdc8])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:134 -1
+     (nil))
+(insn 260 259 261 37 (parallel [
+            (set (reg:DI 169)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -576 [0xfffffffffffffdc0])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:134 -1
+     (nil))
+(insn 261 260 262 37 (parallel [
+            (set (reg:DI 170)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -584 [0xfffffffffffffdb8])))
+            (clobber (reg:CC 17 flags))
+        ]) tpmpublic2eccpoint.c:134 -1
+     (nil))
+(insn 262 261 263 37 (set (reg:SI 2 cx)
+        (reg:SI 167)) tpmpublic2eccpoint.c:134 -1
+     (nil))
+(insn 263 262 264 37 (set (reg:DI 1 dx)
+        (reg:DI 168)) tpmpublic2eccpoint.c:134 -1
+     (nil))
+(insn 264 263 265 37 (set (reg:DI 4 si)
+        (reg:DI 169)) tpmpublic2eccpoint.c:134 -1
+     (nil))
+(insn 265 264 266 37 (set (reg:DI 5 di)
+        (reg:DI 170)) tpmpublic2eccpoint.c:134 -1
+     (nil))
+(call_insn 266 265 267 37 (call (mem:QI (symbol_ref:DI ("TSS_ResponseCode_toString") [flags 0x41]  <function_decl 0x7f219d187510 TSS_ResponseCode_toString>) [0 TSS_ResponseCode_toString S1 A8])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:134 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (nil))))))
+(insn 267 266 268 37 (set (reg/f:DI 121 [ D.7634 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -568 [0xfffffffffffffdc8])) [0 num+0 S8 A64])) tpmpublic2eccpoint.c:135 -1
+     (nil))
+(insn 268 267 269 37 (set (reg/f:DI 122 [ D.7634 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -576 [0xfffffffffffffdc0])) [0 submsg+0 S8 A64])) tpmpublic2eccpoint.c:135 -1
+     (nil))
+(insn 269 268 270 37 (set (reg/f:DI 123 [ D.7634 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -584 [0xfffffffffffffdb8])) [0 msg+0 S8 A64])) tpmpublic2eccpoint.c:135 -1
+     (nil))
+(insn 270 269 271 37 (set (reg:DI 2 cx)
+        (reg/f:DI 121 [ D.7634 ])) tpmpublic2eccpoint.c:135 -1
+     (nil))
+(insn 271 270 272 37 (set (reg:DI 1 dx)
+        (reg/f:DI 122 [ D.7634 ])) tpmpublic2eccpoint.c:135 -1
+     (nil))
+(insn 272 271 273 37 (set (reg:DI 4 si)
+        (reg/f:DI 123 [ D.7634 ])) tpmpublic2eccpoint.c:135 -1
+     (nil))
+(insn 273 272 274 37 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC12") [flags 0x2]  <var_decl 0x7f219cf861b0 *.LC12>)) tpmpublic2eccpoint.c:135 -1
+     (nil))
+(insn 274 273 275 37 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tpmpublic2eccpoint.c:135 -1
+     (nil))
+(call_insn 275 274 276 37 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f219d306ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:135 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (nil)))))))
+(insn 276 275 277 37 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])
+        (const_int 1 [0x1])) tpmpublic2eccpoint.c:136 -1
+     (nil))
+(code_label 277 276 278 38 21 "" [2 uses])
+(note 278 277 279 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 279 278 282 38 (set (reg:SI 124 [ D.7632 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -592 [0xfffffffffffffdb0])) [0 rc+0 S4 A32])) tpmpublic2eccpoint.c:138 -1
+     (nil))
+(insn 282 279 286 38 (set (reg:SI 125 [ <retval> ])
+        (reg:SI 124 [ D.7632 ])) -1
+     (nil))
+(insn 286 282 287 38 (set (reg/i:SI 0 ax)
+        (reg:SI 125 [ <retval> ])) tpmpublic2eccpoint.c:139 -1
+     (nil))
+(insn 287 286 288 38 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.7635+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) tpmpublic2eccpoint.c:139 -1
+     (nil))
+(jump_insn 288 287 294 38 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 291)
+            (pc))) tpmpublic2eccpoint.c:139 -1
+     (nil)
+ -> 291)
+(note 294 288 289 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(call_insn 289 294 290 41 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f219cf5ad80 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:139 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 290 289 291)
+(code_label 291 290 295 42 23 "" [1 uses])
+(note 295 291 292 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 292 295 0 42 (use (reg/i:SI 0 ax)) tpmpublic2eccpoint.c:139 -1
+     (nil))
+
+;; Function printUsage (printUsage, funcdef_no=3, decl_uid=7529, cgraph_uid=3, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) tpmpublic2eccpoint.c:143 -1
+     (nil))
+(call_insn 6 5 7 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f219d309000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:143 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC13") [flags 0x2]  <var_decl 0x7f219cf74510 *.LC13>)) tpmpublic2eccpoint.c:144 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:144 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) tpmpublic2eccpoint.c:145 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f219d309000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:145 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC14") [flags 0x2]  <var_decl 0x7f219cf90a20 *.LC14>)) tpmpublic2eccpoint.c:146 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:146 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC15") [flags 0x2]  <var_decl 0x7f219cf90ab0 *.LC15>)) tpmpublic2eccpoint.c:147 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:147 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC16") [flags 0x2]  <var_decl 0x7f219cf90b40 *.LC16>)) tpmpublic2eccpoint.c:148 -1
+     (nil))
+(call_insn 16 15 17 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:148 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC17") [flags 0x2]  <var_decl 0x7f219cf90bd0 *.LC17>)) tpmpublic2eccpoint.c:149 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:149 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) tpmpublic2eccpoint.c:150 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f219d309000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:150 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 21 20 22 2 (set (reg:SI 5 di)
+        (const_int 10 [0xa])) tpmpublic2eccpoint.c:151 -1
+     (nil))
+(call_insn 22 21 23 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("putchar") [flags 0x41]  <function_decl 0x7f219d309000 __builtin_putchar>) [0 __builtin_putchar S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:151 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 23 22 24 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC18") [flags 0x2]  <var_decl 0x7f219cf90c60 *.LC18>)) tpmpublic2eccpoint.c:152 -1
+     (nil))
+(call_insn 24 23 25 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:152 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC19") [flags 0x2]  <var_decl 0x7f219cf90cf0 *.LC19>)) tpmpublic2eccpoint.c:153 -1
+     (nil))
+(call_insn 26 25 27 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f219d309360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tpmpublic2eccpoint.c:153 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 27 26 28 2 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) tpmpublic2eccpoint.c:154 -1
+     (nil))
+(call_insn 28 27 29 2 (call (mem:QI (symbol_ref:DI ("exit") [flags 0x41]  <function_decl 0x7f219d31c000 exit>) [0 __builtin_exit S1 A8])
+        (const_int 0 [0])) tpmpublic2eccpoint.c:154 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(barrier 29 28 0)

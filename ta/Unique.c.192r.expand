@@ -1,0 +1,355 @@
+
+;; Function _plat__GetUnique (_plat__GetUnique, funcdef_no=0, decl_uid=2567, cgraph_uid=0, symbol_order=1)
+
+Partition 0: size 8 align 8
+	from_3
+Partition 1: size 4 align 4
+	retVal_5
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 7->8 to 16 failed.
+Merging block 17 into block 16...
+Merged blocks 16 and 17.
+Merged 16 and 17 without moving.
+Removing jump 87.
+Merging block 18 into block 16...
+Merged blocks 16 and 18.
+Merged 16 and 18 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 7->8 to 16 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 which+0 S4 A32])
+        (reg:SI 5 di [ which ])) Unique.c:86 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 bSize+0 S4 A32])
+        (reg:SI 4 si [ bSize ])) Unique.c:86 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 b+0 S8 A64])
+        (reg:DI 1 dx [ b ])) Unique.c:86 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 from+0 S8 A64])
+        (symbol_ref:DI ("notReallyUnique") [flags 0x2]  <var_decl 0x7fae12e7c900 notReallyUnique>)) Unique.c:87 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 retVal+0 S4 A32])
+        (const_int 0 [0])) Unique.c:88 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 which+0 S4 A32])
+            (const_int 0 [0]))) Unique.c:89 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 41)
+            (pc))) Unique.c:89 -1
+     (nil)
+ -> 41)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 retVal+0 S4 A32])
+        (const_int 0 [0])) Unique.c:91 -1
+     (nil))
+(jump_insn 14 13 15 4 (set (pc)
+        (label_ref 27)) Unique.c:91 -1
+     (nil)
+ -> 27)
+(barrier 15 14 34)
+(code_label 34 15 16 5 5 "" [1 uses])
+(note 16 34 17 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 5 (set (reg/f:DI 89 [ D.2608 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 b+0 S8 A64])) Unique.c:95 -1
+     (nil))
+(insn 18 17 19 5 (parallel [
+            (set (reg:DI 101)
+                (plus:DI (reg/f:DI 89 [ D.2608 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) Unique.c:95 -1
+     (nil))
+(insn 19 18 20 5 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 b+0 S8 A64])
+        (reg:DI 101)) Unique.c:95 -1
+     (nil))
+(insn 20 19 21 5 (set (reg/f:DI 90 [ D.2609 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 from+0 S8 A64])) Unique.c:95 -1
+     (nil))
+(insn 21 20 22 5 (parallel [
+            (set (reg:DI 102)
+                (plus:DI (reg/f:DI 90 [ D.2609 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) Unique.c:95 -1
+     (nil))
+(insn 22 21 23 5 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 from+0 S8 A64])
+        (reg:DI 102)) Unique.c:95 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:QI 91 [ D.2607 ])
+        (mem:QI (reg/f:DI 90 [ D.2609 ]) [0 *_22+0 S1 A8])) Unique.c:95 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:QI 92 [ D.2610 ])
+        (reg:QI 91 [ D.2607 ])) Unique.c:95 -1
+     (nil))
+(insn 25 24 26 5 (set (mem:QI (reg/f:DI 89 [ D.2608 ]) [0 *_20+0 S1 A8])
+        (reg:QI 92 [ D.2610 ])) Unique.c:95 -1
+     (nil))
+(insn 26 25 27 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -12 [0xfffffffffffffff4])) [0 retVal+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -12 [0xfffffffffffffff4])) [0 retVal+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) Unique.c:93 -1
+     (nil))
+(code_label 27 26 28 6 3 "" [1 uses])
+(note 28 27 29 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 6 (set (reg/f:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 from+0 S8 A64])) Unique.c:92 -1
+     (nil))
+(insn 30 29 31 6 (set (reg:QI 88 [ D.2607 ])
+        (mem:QI (reg/f:DI 103) [0 *from_3+0 S1 A8])) Unique.c:92 -1
+     (nil))
+(insn 31 30 32 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 88 [ D.2607 ])
+            (const_int 0 [0]))) Unique.c:91 -1
+     (nil))
+(jump_insn 32 31 33 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 81)
+            (pc))) Unique.c:91 -1
+     (nil)
+ -> 81)
+(note 33 32 35 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 35 33 36 7 (set (reg:SI 104)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 retVal+0 S4 A32])) Unique.c:92 -1
+     (nil))
+(insn 36 35 37 7 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 104)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 bSize+0 S4 A32]))) Unique.c:92 -1
+     (nil))
+(jump_insn 37 36 40 7 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) Unique.c:92 -1
+     (nil)
+ -> 34)
+(note 40 37 38 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 38 40 39 8 (set (pc)
+        (label_ref 81)) -1
+     (nil)
+ -> 81)
+(barrier 39 38 41)
+(code_label 41 39 42 9 2 "" [1 uses])
+(note 42 41 43 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 43 42 44 9 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 bSize+0 S4 A32])
+            (const_int 91 [0x5b]))) Unique.c:101 -1
+     (nil))
+(jump_insn 44 43 45 9 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 50)
+            (pc))) Unique.c:101 -1
+     (nil)
+ -> 50)
+(note 45 44 46 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 10 (set (reg:DI 93 [ D.2606 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 bSize+0 S4 A32]))) Unique.c:101 -1
+     (nil))
+(insn 47 46 48 10 (parallel [
+            (set (reg:DI 87 [ D.2606 ])
+                (plus:DI (reg:DI 93 [ D.2606 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) Unique.c:101 -1
+     (nil))
+(jump_insn 48 47 49 10 (set (pc)
+        (label_ref 53)) -1
+     (nil)
+ -> 53)
+(barrier 49 48 50)
+(code_label 50 49 51 11 6 "" [1 uses])
+(note 51 50 52 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 11 (set (reg:DI 87 [ D.2606 ])
+        (const_int 91 [0x5b])) Unique.c:101 -1
+     (nil))
+(code_label 53 52 54 12 7 "" [1 uses])
+(note 54 53 55 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 55 54 56 12 (parallel [
+            (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -32 [0xffffffffffffffe0])) [0 b+0 S8 A64])
+                (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -32 [0xffffffffffffffe0])) [0 b+0 S8 A64])
+                    (reg:DI 87 [ D.2606 ])))
+            (clobber (reg:CC 17 flags))
+        ]) Unique.c:101 -1
+     (nil))
+(insn 56 55 57 12 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 retVal+0 S4 A32])
+        (const_int 0 [0])) Unique.c:102 -1
+     (nil))
+(jump_insn 57 56 58 12 (set (pc)
+        (label_ref 70)) Unique.c:102 -1
+     (nil)
+ -> 70)
+(barrier 58 57 77)
+(code_label 77 58 59 13 9 "" [1 uses])
+(note 59 77 60 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 13 (set (reg/f:DI 95 [ D.2608 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 b+0 S8 A64])) Unique.c:106 -1
+     (nil))
+(insn 61 60 62 13 (parallel [
+            (set (reg:DI 105)
+                (plus:DI (reg/f:DI 95 [ D.2608 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) Unique.c:106 -1
+     (nil))
+(insn 62 61 63 13 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 b+0 S8 A64])
+        (reg:DI 105)) Unique.c:106 -1
+     (nil))
+(insn 63 62 64 13 (set (reg/f:DI 96 [ D.2609 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 from+0 S8 A64])) Unique.c:106 -1
+     (nil))
+(insn 64 63 65 13 (parallel [
+            (set (reg:DI 106)
+                (plus:DI (reg/f:DI 96 [ D.2609 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) Unique.c:106 -1
+     (nil))
+(insn 65 64 66 13 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 from+0 S8 A64])
+        (reg:DI 106)) Unique.c:106 -1
+     (nil))
+(insn 66 65 67 13 (set (reg:QI 97 [ D.2607 ])
+        (mem:QI (reg/f:DI 96 [ D.2609 ]) [0 *_36+0 S1 A8])) Unique.c:106 -1
+     (nil))
+(insn 67 66 68 13 (set (reg:QI 98 [ D.2610 ])
+        (reg:QI 97 [ D.2607 ])) Unique.c:106 -1
+     (nil))
+(insn 68 67 69 13 (set (mem:QI (reg/f:DI 95 [ D.2608 ]) [0 *_34+0 S1 A8])
+        (reg:QI 98 [ D.2610 ])) Unique.c:106 -1
+     (nil))
+(insn 69 68 70 13 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -12 [0xfffffffffffffff4])) [0 retVal+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -12 [0xfffffffffffffff4])) [0 retVal+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) Unique.c:104 -1
+     (nil))
+(code_label 70 69 71 14 8 "" [1 uses])
+(note 71 70 72 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 72 71 73 14 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 from+0 S8 A64])) Unique.c:103 -1
+     (nil))
+(insn 73 72 74 14 (set (reg:QI 94 [ D.2607 ])
+        (mem:QI (reg/f:DI 107) [0 *from_4+0 S1 A8])) Unique.c:103 -1
+     (nil))
+(insn 74 73 75 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 94 [ D.2607 ])
+            (const_int 0 [0]))) Unique.c:102 -1
+     (nil))
+(jump_insn 75 74 76 14 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 81)
+            (pc))) Unique.c:102 -1
+     (nil)
+ -> 81)
+(note 76 75 78 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 78 76 79 15 (set (reg:SI 108)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 retVal+0 S4 A32])) Unique.c:103 -1
+     (nil))
+(insn 79 78 80 15 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 108)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 bSize+0 S4 A32]))) Unique.c:103 -1
+     (nil))
+(jump_insn 80 79 81 15 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 77)
+            (pc))) Unique.c:103 -1
+     (nil)
+ -> 77)
+(code_label 81 80 82 16 4 "" [3 uses])
+(note 82 81 83 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 86 16 (set (reg:SI 99 [ D.2611 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 retVal+0 S4 A32])) Unique.c:109 -1
+     (nil))
+(insn 86 83 90 16 (set (reg:SI 100 [ <retval> ])
+        (reg:SI 99 [ D.2611 ])) Unique.c:109 -1
+     (nil))
+(insn 90 86 91 16 (set (reg/i:SI 0 ax)
+        (reg:SI 100 [ <retval> ])) Unique.c:110 -1
+     (nil))
+(insn 91 90 0 16 (use (reg/i:SI 0 ax)) Unique.c:110 -1
+     (nil))

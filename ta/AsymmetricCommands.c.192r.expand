@@ -1,0 +1,2370 @@
+
+;; Function TPM2_RSA_Encrypt (TPM2_RSA_Encrypt, funcdef_no=2, decl_uid=12861, cgraph_uid=2, symbol_order=2)
+
+Partition 1: size 8 align 8
+	scheme_20
+Partition 0: size 8 align 8
+	rsaKey_7
+Partition 2: size 4 align 4
+	result_28
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 86.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AsymmetricCommands.c:71 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AsymmetricCommands.c:71 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:76 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 88 [ D.13118 ])
+        (mem/j:SI (reg/f:DI 100) [0 in_4(D)->keyHandle+0 S4 A32])) AsymmetricCommands.c:76 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13118 ])) AsymmetricCommands.c:76 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f66984820d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:76 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 101)
+        (reg:DI 0 ax)) AsymmetricCommands.c:76 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rsaKey+0 S8 A64])
+        (reg:DI 101)) AsymmetricCommands.c:76 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rsaKey+0 S8 A64])) AsymmetricCommands.c:78 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:HI 89 [ D.13119 ])
+        (mem/j:HI (plus:DI (reg/f:DI 102)
+                (const_int 4 [0x4])) [0 rsaKey_7->publicArea.type+0 S2 A32])) AsymmetricCommands.c:78 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 89 [ D.13119 ])
+            (const_int 1 [0x1]))) AsymmetricCommands.c:78 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) AsymmetricCommands.c:78 -1
+     (nil)
+ -> 21)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 4 (set (reg:SI 87 [ D.13117 ])
+        (const_int 412 [0x19c])) AsymmetricCommands.c:79 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (label_ref 83)) AsymmetricCommands.c:79 -1
+     (nil)
+ -> 83)
+(barrier 20 19 21)
+(code_label 21 20 22 5 2 "" [1 uses])
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 5 (set (reg/f:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rsaKey+0 S8 A64])) AsymmetricCommands.c:81 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 90 [ D.13118 ])
+        (mem/j:SI (plus:DI (reg/f:DI 103)
+                (const_int 8 [0x8])) [0 rsaKey_7->publicArea.objectAttributes+0 S4 A64])) AsymmetricCommands.c:81 -1
+     (nil))
+(insn 25 24 26 5 (parallel [
+            (set (reg:SI 91 [ D.13118 ])
+                (and:SI (reg:SI 90 [ D.13118 ])
+                    (const_int 131072 [0x20000])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:81 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13118 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:81 -1
+     (nil))
+(jump_insn 27 26 28 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) AsymmetricCommands.c:81 -1
+     (nil)
+ -> 32)
+(note 28 27 29 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 6 (set (reg:SI 87 [ D.13117 ])
+        (const_int 386 [0x182])) AsymmetricCommands.c:82 -1
+     (nil))
+(jump_insn 30 29 31 6 (set (pc)
+        (label_ref 83)) AsymmetricCommands.c:82 -1
+     (nil)
+ -> 83)
+(barrier 31 30 32)
+(code_label 32 31 33 7 4 "" [1 uses])
+(note 33 32 34 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 7 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:84 -1
+     (nil))
+(insn 35 34 36 7 (parallel [
+            (set (reg/f:DI 92 [ D.13120 ])
+                (plus:DI (reg/f:DI 104)
+                    (const_int 268 [0x10c])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:84 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])
+            (const_int 268 [0x10c]))
+        (nil)))
+(insn 36 35 37 7 (set (reg:DI 5 di)
+        (reg/f:DI 92 [ D.13120 ])) AsymmetricCommands.c:84 -1
+     (nil))
+(call_insn 37 36 38 7 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("IsLabelProperlyFormatted") [flags 0x41]  <function_decl 0x7f6698550360 IsLabelProperlyFormatted>) [0 IsLabelProperlyFormatted S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:84 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 38 37 39 7 (set (reg:SI 93 [ D.13121 ])
+        (reg:SI 0 ax)) AsymmetricCommands.c:84 -1
+     (nil))
+(insn 39 38 40 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 93 [ D.13121 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:84 -1
+     (nil))
+(jump_insn 40 39 41 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) AsymmetricCommands.c:84 -1
+     (nil)
+ -> 45)
+(note 41 40 42 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 8 (set (reg:SI 87 [ D.13117 ])
+        (const_int 964 [0x3c4])) AsymmetricCommands.c:85 -1
+     (nil))
+(jump_insn 43 42 44 8 (set (pc)
+        (label_ref 83)) AsymmetricCommands.c:85 -1
+     (nil)
+ -> 83)
+(barrier 44 43 45)
+(code_label 45 44 46 9 5 "" [1 uses])
+(note 46 45 47 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 9 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:88 -1
+     (nil))
+(insn 48 47 49 9 (parallel [
+            (set (reg/f:DI 94 [ D.13122 ])
+                (plus:DI (reg/f:DI 105)
+                    (const_int 262 [0x106])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:88 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])
+            (const_int 262 [0x106]))
+        (nil)))
+(insn 49 48 50 9 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:88 -1
+     (nil))
+(insn 50 49 51 9 (set (reg:SI 95 [ D.13118 ])
+        (mem/j:SI (reg/f:DI 106) [0 in_4(D)->keyHandle+0 S4 A32])) AsymmetricCommands.c:88 -1
+     (nil))
+(insn 51 50 52 9 (set (reg:DI 4 si)
+        (reg/f:DI 94 [ D.13122 ])) AsymmetricCommands.c:88 -1
+     (nil))
+(insn 52 51 53 9 (set (reg:SI 5 di)
+        (reg:SI 95 [ D.13118 ])) AsymmetricCommands.c:88 -1
+     (nil))
+(call_insn 53 52 54 9 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptRsaSelectScheme") [flags 0x41]  <function_decl 0x7f6698582af8 CryptRsaSelectScheme>) [0 CryptRsaSelectScheme S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:88 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 54 53 55 9 (set (reg:DI 107)
+        (reg:DI 0 ax)) AsymmetricCommands.c:88 -1
+     (nil))
+(insn 55 54 56 9 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 scheme+0 S8 A64])
+        (reg:DI 107)) AsymmetricCommands.c:88 -1
+     (nil))
+(insn 56 55 57 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 scheme+0 S8 A64])
+            (const_int 0 [0]))) AsymmetricCommands.c:89 -1
+     (nil))
+(jump_insn 57 56 58 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) AsymmetricCommands.c:89 -1
+     (nil)
+ -> 62)
+(note 58 57 59 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 60 10 (set (reg:SI 87 [ D.13117 ])
+        (const_int 722 [0x2d2])) AsymmetricCommands.c:90 -1
+     (nil))
+(jump_insn 60 59 61 10 (set (pc)
+        (label_ref 83)) AsymmetricCommands.c:90 -1
+     (nil)
+ -> 83)
+(barrier 61 60 62)
+(code_label 62 61 63 11 6 "" [1 uses])
+(note 63 62 64 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 65 11 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 out+0 S8 A64])) AsymmetricCommands.c:93 -1
+     (nil))
+(insn 65 64 66 11 (set (mem/j:HI (reg/f:DI 108) [0 out_22(D)->outData.t.size+0 S2 A16])
+        (const_int 256 [0x100])) AsymmetricCommands.c:93 -1
+     (nil))
+(insn 66 65 67 11 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:95 -1
+     (nil))
+(insn 67 66 68 11 (parallel [
+            (set (reg/f:DI 96 [ D.13120 ])
+                (plus:DI (reg/f:DI 109)
+                    (const_int 268 [0x10c])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:95 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])
+            (const_int 268 [0x10c]))
+        (nil)))
+(insn 68 67 69 11 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 69 68 70 11 (parallel [
+            (set (reg/f:DI 97 [ D.13120 ])
+                (plus:DI (reg/f:DI 110)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:94 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 70 69 71 11 (set (reg/f:DI 98 [ D.13123 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 out+0 S8 A64])) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 71 70 72 11 (set (reg:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 scheme+0 S8 A64])) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 72 71 73 11 (set (reg:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rsaKey+0 S8 A64])) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 73 72 74 11 (set (reg:DI 38 r9)
+        (const_int 0 [0])) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 74 73 75 11 (set (reg:DI 37 r8)
+        (reg/f:DI 96 [ D.13120 ])) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 75 74 76 11 (set (reg:DI 2 cx)
+        (reg:DI 111)) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 76 75 77 11 (set (reg:DI 1 dx)
+        (reg:DI 112)) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 77 76 78 11 (set (reg:DI 4 si)
+        (reg/f:DI 97 [ D.13120 ])) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 78 77 79 11 (set (reg:DI 5 di)
+        (reg/f:DI 98 [ D.13123 ])) AsymmetricCommands.c:94 -1
+     (nil))
+(call_insn 79 78 80 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptRsaEncrypt") [flags 0x41]  <function_decl 0x7f6698582ca8 CryptRsaEncrypt>) [0 CryptRsaEncrypt S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:94 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 80 79 81 11 (set (reg:SI 113)
+        (reg:SI 0 ax)) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 81 80 82 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 result+0 S4 A32])
+        (reg:SI 113)) AsymmetricCommands.c:94 -1
+     (nil))
+(insn 82 81 83 11 (set (reg:SI 87 [ D.13117 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 result+0 S4 A32])) AsymmetricCommands.c:96 -1
+     (nil))
+(code_label 83 82 84 12 3 "" [4 uses])
+(note 84 83 85 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 85 84 89 12 (set (reg:SI 99 [ <retval> ])
+        (reg:SI 87 [ D.13117 ])) -1
+     (nil))
+(insn 89 85 90 12 (set (reg/i:SI 0 ax)
+        (reg:SI 99 [ <retval> ])) AsymmetricCommands.c:97 -1
+     (nil))
+(insn 90 89 0 12 (use (reg/i:SI 0 ax)) AsymmetricCommands.c:97 -1
+     (nil))
+
+;; Function TPM2_RSA_Decrypt (TPM2_RSA_Decrypt, funcdef_no=3, decl_uid=12880, cgraph_uid=3, symbol_order=3)
+
+Partition 1: size 8 align 8
+	scheme_21
+Partition 0: size 8 align 8
+	rsaKey_7
+Partition 2: size 4 align 4
+	result_29
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 92.
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AsymmetricCommands.c:109 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AsymmetricCommands.c:109 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:114 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 88 [ D.13125 ])
+        (mem/j:SI (reg/f:DI 102) [0 in_4(D)->keyHandle+0 S4 A32])) AsymmetricCommands.c:114 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13125 ])) AsymmetricCommands.c:114 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f66984820d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:114 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 103)
+        (reg:DI 0 ax)) AsymmetricCommands.c:114 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rsaKey+0 S8 A64])
+        (reg:DI 103)) AsymmetricCommands.c:114 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rsaKey+0 S8 A64])) AsymmetricCommands.c:116 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:HI 89 [ D.13126 ])
+        (mem/j:HI (plus:DI (reg/f:DI 104)
+                (const_int 4 [0x4])) [0 rsaKey_7->publicArea.type+0 S2 A32])) AsymmetricCommands.c:116 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 89 [ D.13126 ])
+            (const_int 1 [0x1]))) AsymmetricCommands.c:116 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) AsymmetricCommands.c:116 -1
+     (nil)
+ -> 21)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 4 (set (reg:SI 87 [ D.13124 ])
+        (const_int 412 [0x19c])) AsymmetricCommands.c:117 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (label_ref 89)) AsymmetricCommands.c:117 -1
+     (nil)
+ -> 89)
+(barrier 20 19 21)
+(code_label 21 20 22 5 8 "" [1 uses])
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 5 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rsaKey+0 S8 A64])) AsymmetricCommands.c:119 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 90 [ D.13125 ])
+        (mem/j:SI (plus:DI (reg/f:DI 105)
+                (const_int 8 [0x8])) [0 rsaKey_7->publicArea.objectAttributes+0 S4 A64])) AsymmetricCommands.c:119 -1
+     (nil))
+(insn 25 24 26 5 (parallel [
+            (set (reg:SI 91 [ D.13125 ])
+                (and:SI (reg:SI 90 [ D.13125 ])
+                    (const_int 65536 [0x10000])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:119 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13125 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:119 -1
+     (nil))
+(jump_insn 27 26 28 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) AsymmetricCommands.c:119 -1
+     (nil)
+ -> 34)
+(note 28 27 29 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 6 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rsaKey+0 S8 A64])) AsymmetricCommands.c:120 -1
+     (nil))
+(insn 30 29 31 6 (set (reg:SI 92 [ D.13125 ])
+        (mem/j:SI (plus:DI (reg/f:DI 106)
+                (const_int 8 [0x8])) [0 rsaKey_7->publicArea.objectAttributes+0 S4 A64])) AsymmetricCommands.c:120 -1
+     (nil))
+(insn 31 30 32 6 (parallel [
+            (set (reg:SI 93 [ D.13125 ])
+                (and:SI (reg:SI 92 [ D.13125 ])
+                    (const_int 131072 [0x20000])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:120 -1
+     (nil))
+(insn 32 31 33 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 93 [ D.13125 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:120 -1
+     (nil))
+(jump_insn 33 32 34 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) AsymmetricCommands.c:120 -1
+     (nil)
+ -> 39)
+(code_label 34 33 35 7 10 "" [1 uses])
+(note 35 34 36 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 7 (set (reg:SI 87 [ D.13124 ])
+        (const_int 386 [0x182])) AsymmetricCommands.c:121 -1
+     (nil))
+(jump_insn 37 36 38 7 (set (pc)
+        (label_ref 89)) AsymmetricCommands.c:121 -1
+     (nil)
+ -> 89)
+(barrier 38 37 39)
+(code_label 39 38 40 8 11 "" [1 uses])
+(note 40 39 41 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 8 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:127 -1
+     (nil))
+(insn 42 41 43 8 (parallel [
+            (set (reg/f:DI 94 [ D.13127 ])
+                (plus:DI (reg/f:DI 107)
+                    (const_int 268 [0x10c])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:127 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])
+            (const_int 268 [0x10c]))
+        (nil)))
+(insn 43 42 44 8 (set (reg:DI 5 di)
+        (reg/f:DI 94 [ D.13127 ])) AsymmetricCommands.c:127 -1
+     (nil))
+(call_insn 44 43 45 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("IsLabelProperlyFormatted") [flags 0x41]  <function_decl 0x7f6698550360 IsLabelProperlyFormatted>) [0 IsLabelProperlyFormatted S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:127 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 45 44 46 8 (set (reg:SI 95 [ D.13128 ])
+        (reg:SI 0 ax)) AsymmetricCommands.c:127 -1
+     (nil))
+(insn 46 45 47 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 95 [ D.13128 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:127 -1
+     (nil))
+(jump_insn 47 46 48 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 52)
+            (pc))) AsymmetricCommands.c:127 -1
+     (nil)
+ -> 52)
+(note 48 47 49 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 9 (set (reg:SI 87 [ D.13124 ])
+        (const_int 964 [0x3c4])) AsymmetricCommands.c:128 -1
+     (nil))
+(jump_insn 50 49 51 9 (set (pc)
+        (label_ref 89)) AsymmetricCommands.c:128 -1
+     (nil)
+ -> 89)
+(barrier 51 50 52)
+(code_label 52 51 53 10 12 "" [1 uses])
+(note 53 52 54 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 54 53 55 10 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:131 -1
+     (nil))
+(insn 55 54 56 10 (parallel [
+            (set (reg/f:DI 96 [ D.13129 ])
+                (plus:DI (reg/f:DI 108)
+                    (const_int 262 [0x106])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:131 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])
+            (const_int 262 [0x106]))
+        (nil)))
+(insn 56 55 57 10 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:131 -1
+     (nil))
+(insn 57 56 58 10 (set (reg:SI 97 [ D.13125 ])
+        (mem/j:SI (reg/f:DI 109) [0 in_4(D)->keyHandle+0 S4 A32])) AsymmetricCommands.c:131 -1
+     (nil))
+(insn 58 57 59 10 (set (reg:DI 4 si)
+        (reg/f:DI 96 [ D.13129 ])) AsymmetricCommands.c:131 -1
+     (nil))
+(insn 59 58 60 10 (set (reg:SI 5 di)
+        (reg:SI 97 [ D.13125 ])) AsymmetricCommands.c:131 -1
+     (nil))
+(call_insn 60 59 61 10 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptRsaSelectScheme") [flags 0x41]  <function_decl 0x7f6698582af8 CryptRsaSelectScheme>) [0 CryptRsaSelectScheme S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:131 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 61 60 62 10 (set (reg:DI 110)
+        (reg:DI 0 ax)) AsymmetricCommands.c:131 -1
+     (nil))
+(insn 62 61 63 10 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 scheme+0 S8 A64])
+        (reg:DI 110)) AsymmetricCommands.c:131 -1
+     (nil))
+(insn 63 62 64 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 scheme+0 S8 A64])
+            (const_int 0 [0]))) AsymmetricCommands.c:132 -1
+     (nil))
+(jump_insn 64 63 65 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 69)
+            (pc))) AsymmetricCommands.c:132 -1
+     (nil)
+ -> 69)
+(note 65 64 66 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 11 (set (reg:SI 87 [ D.13124 ])
+        (const_int 722 [0x2d2])) AsymmetricCommands.c:133 -1
+     (nil))
+(jump_insn 67 66 68 11 (set (pc)
+        (label_ref 89)) AsymmetricCommands.c:133 -1
+     (nil)
+ -> 89)
+(barrier 68 67 69)
+(code_label 69 68 70 12 13 "" [1 uses])
+(note 70 69 71 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 71 70 72 12 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 out+0 S8 A64])) AsymmetricCommands.c:138 -1
+     (nil))
+(insn 72 71 73 12 (set (mem/j:HI (reg/f:DI 111) [0 out_23(D)->message.t.size+0 S2 A16])
+        (const_int 256 [0x100])) AsymmetricCommands.c:138 -1
+     (nil))
+(insn 73 72 74 12 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:140 -1
+     (nil))
+(insn 74 73 75 12 (parallel [
+            (set (reg/f:DI 98 [ D.13127 ])
+                (plus:DI (reg/f:DI 112)
+                    (const_int 268 [0x10c])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:140 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])
+            (const_int 268 [0x10c]))
+        (nil)))
+(insn 75 74 76 12 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])) AsymmetricCommands.c:139 -1
+     (nil))
+(insn 76 75 77 12 (parallel [
+            (set (reg/f:DI 99 [ D.13127 ])
+                (plus:DI (reg/f:DI 113)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:139 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 in+0 S8 A64])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 77 76 78 12 (set (reg/f:DI 100 [ D.13127 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 out+0 S8 A64])) AsymmetricCommands.c:139 -1
+     (nil))
+(insn 78 77 79 12 (set (reg:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 scheme+0 S8 A64])) AsymmetricCommands.c:139 -1
+     (nil))
+(insn 79 78 80 12 (set (reg:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rsaKey+0 S8 A64])) AsymmetricCommands.c:139 -1
+     (nil))
+(insn 80 79 81 12 (set (reg:DI 37 r8)
+        (reg/f:DI 98 [ D.13127 ])) AsymmetricCommands.c:139 -1
+     (nil))
+(insn 81 80 82 12 (set (reg:DI 2 cx)
+        (reg:DI 114)) AsymmetricCommands.c:139 -1
+     (nil))
+(insn 82 81 83 12 (set (reg:DI 1 dx)
+        (reg:DI 115)) AsymmetricCommands.c:139 -1
+     (nil))
+(insn 83 82 84 12 (set (reg:DI 4 si)
+        (reg/f:DI 99 [ D.13127 ])) AsymmetricCommands.c:139 -1
+     (nil))
+(insn 84 83 85 12 (set (reg:DI 5 di)
+        (reg/f:DI 100 [ D.13127 ])) AsymmetricCommands.c:139 -1
+     (nil))
+(call_insn 85 84 86 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptRsaDecrypt") [flags 0x41]  <function_decl 0x7f6698582d80 CryptRsaDecrypt>) [0 CryptRsaDecrypt S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:139 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (nil)))))))
+(insn 86 85 87 12 (set (reg:SI 116)
+        (reg:SI 0 ax)) AsymmetricCommands.c:139 -1
+     (nil))
+(insn 87 86 88 12 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 result+0 S4 A32])
+        (reg:SI 116)) AsymmetricCommands.c:139 -1
+     (nil))
+(insn 88 87 89 12 (set (reg:SI 87 [ D.13124 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 result+0 S4 A32])) AsymmetricCommands.c:141 -1
+     (nil))
+(code_label 89 88 90 13 9 "" [4 uses])
+(note 90 89 91 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 91 90 95 13 (set (reg:SI 101 [ <retval> ])
+        (reg:SI 87 [ D.13124 ])) -1
+     (nil))
+(insn 95 91 96 13 (set (reg/i:SI 0 ax)
+        (reg:SI 101 [ <retval> ])) AsymmetricCommands.c:142 -1
+     (nil))
+(insn 96 95 0 13 (use (reg/i:SI 0 ax)) AsymmetricCommands.c:142 -1
+     (nil))
+
+;; Function TPM2_ECDH_KeyGen (TPM2_ECDH_KeyGen, funcdef_no=4, decl_uid=12897, cgraph_uid=4, symbol_order=4)
+
+Partition 3: size 50 align 16
+	sensitive
+Partition 2: size 8 align 8
+	keyPublic_13
+Partition 1: size 8 align 8
+	eccKey_10
+Partition 0: size 4 align 4
+	result_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 20 from 10 to 11.
+Redirecting jump 66 from 10 to 11.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+Removing jump 79.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AsymmetricCommands.c:154 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AsymmetricCommands.c:154 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13135+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:154 -1
+     (nil))
+(insn 8 5 9 2 (set (reg/f:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -104 [0xffffffffffffff98])) [0 in+0 S8 A64])) AsymmetricCommands.c:159 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13131 ])
+        (mem/j:SI (reg/f:DI 98) [0 in_7(D)->keyHandle+0 S4 A32])) AsymmetricCommands.c:159 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13131 ])) AsymmetricCommands.c:159 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f66984820d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:159 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 12 11 13 2 (set (reg:DI 99)
+        (reg:DI 0 ax)) AsymmetricCommands.c:159 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 eccKey+0 S8 A64])
+        (reg:DI 99)) AsymmetricCommands.c:159 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:161 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:HI 89 [ D.13132 ])
+        (mem/j:HI (plus:DI (reg/f:DI 100)
+                (const_int 4 [0x4])) [0 eccKey_10->publicArea.type+0 S2 A32])) AsymmetricCommands.c:161 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 89 [ D.13132 ])
+            (const_int 35 [0x23]))) AsymmetricCommands.c:161 -1
+     (nil))
+(jump_insn 17 16 18 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) AsymmetricCommands.c:161 -1
+     (nil)
+ -> 22)
+(note 18 17 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (set (reg:SI 87 [ D.13130 ])
+        (const_int 412 [0x19c])) AsymmetricCommands.c:162 -1
+     (nil))
+(jump_insn 20 19 21 4 (set (pc)
+        (label_ref:DI 76)) AsymmetricCommands.c:162 654 {jump}
+     (nil)
+ -> 76)
+(barrier 21 20 22)
+(code_label 22 21 23 5 15 "" [2 uses])
+(note 23 22 27 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 27 23 28 5 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:166 -1
+     (nil))
+(insn 28 27 29 5 (parallel [
+            (set (reg:DI 103)
+                (plus:DI (reg/f:DI 104)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:166 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -80 [0xffffffffffffffb0])) [0 eccKey+0 S8 A64])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 29 28 30 5 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 keyPublic+0 S8 A64])
+        (reg:DI 103)) AsymmetricCommands.c:166 -1
+     (nil))
+(insn 30 29 31 5 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 keyPublic+0 S8 A64])) AsymmetricCommands.c:169 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:HI 90 [ D.13132 ])
+        (mem/j:HI (plus:DI (reg/f:DI 105)
+                (const_int 72 [0x48])) [0 keyPublic_13->parameters.eccDetail.curveID+0 S2 A32])) AsymmetricCommands.c:169 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:SI 91 [ D.13133 ])
+        (zero_extend:SI (reg:HI 90 [ D.13132 ]))) AsymmetricCommands.c:168 -1
+     (nil))
+(insn 33 32 34 5 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 out+0 S8 A64])) AsymmetricCommands.c:168 -1
+     (nil))
+(insn 34 33 35 5 (parallel [
+            (set (reg/f:DI 92 [ D.13134 ])
+                (plus:DI (reg/f:DI 106)
+                    (const_int 104 [0x68])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:168 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 out+0 S8 A64])
+            (const_int 104 [0x68]))
+        (nil)))
+(insn 35 34 36 5 (parallel [
+            (set (reg:DI 107)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -64 [0xffffffffffffffc0])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:168 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:SI 1 dx)
+        (reg:SI 91 [ D.13133 ])) AsymmetricCommands.c:168 -1
+     (nil))
+(insn 37 36 38 5 (set (reg:DI 4 si)
+        (reg:DI 107)) AsymmetricCommands.c:168 -1
+     (nil))
+(insn 38 37 39 5 (set (reg:DI 5 di)
+        (reg/f:DI 92 [ D.13134 ])) AsymmetricCommands.c:168 -1
+     (nil))
+(call_insn 39 38 40 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptEccNewKeyPair") [flags 0x41]  <function_decl 0x7f669858ebd0 CryptEccNewKeyPair>) [0 CryptEccNewKeyPair S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:168 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 40 39 41 5 (set (reg:SI 108)
+        (reg:SI 0 ax)) AsymmetricCommands.c:168 -1
+     (nil))
+(insn 41 40 42 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -84 [0xffffffffffffffac])) [0 result+0 S4 A32])
+        (reg:SI 108)) AsymmetricCommands.c:168 -1
+     (nil))
+(insn 42 41 43 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -84 [0xffffffffffffffac])) [0 result+0 S4 A32])
+            (const_int 0 [0]))) AsymmetricCommands.c:170 -1
+     (nil))
+(jump_insn 43 42 44 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 68)
+            (pc))) AsymmetricCommands.c:170 -1
+     (nil)
+ -> 68)
+(note 44 43 45 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 45 44 46 6 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 keyPublic+0 S8 A64])) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 46 45 47 6 (parallel [
+            (set (reg/f:DI 93 [ D.13134 ])
+                (plus:DI (reg/f:DI 109)
+                    (const_int 80 [0x50])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:173 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -72 [0xffffffffffffffb8])) [0 keyPublic+0 S8 A64])
+            (const_int 80 [0x50]))
+        (nil)))
+(insn 47 46 48 6 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 keyPublic+0 S8 A64])) AsymmetricCommands.c:174 -1
+     (nil))
+(insn 48 47 49 6 (set (reg:HI 94 [ D.13132 ])
+        (mem/j:HI (plus:DI (reg/f:DI 110)
+                (const_int 72 [0x48])) [0 keyPublic_13->parameters.eccDetail.curveID+0 S2 A32])) AsymmetricCommands.c:174 -1
+     (nil))
+(insn 49 48 50 6 (set (reg:SI 95 [ D.13133 ])
+        (zero_extend:SI (reg:HI 94 [ D.13132 ]))) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 50 49 51 6 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -112 [0xffffffffffffff90])) [0 out+0 S8 A64])) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 51 50 52 6 (parallel [
+            (set (reg/f:DI 96 [ D.13134 ])
+                (plus:DI (reg/f:DI 111)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:173 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -112 [0xffffffffffffff90])) [0 out+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 52 51 53 6 (parallel [
+            (set (reg:DI 112)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -64 [0xffffffffffffffc0])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 53 52 54 6 (set (reg:DI 38 r9)
+        (const_int 0 [0])) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 54 53 55 6 (set (reg:DI 37 r8)
+        (const_int 0 [0])) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 55 54 56 6 (set (reg:DI 2 cx)
+        (reg:DI 112)) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 56 55 57 6 (set (reg:DI 1 dx)
+        (reg/f:DI 93 [ D.13134 ])) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 57 56 58 6 (set (reg:SI 4 si)
+        (reg:SI 95 [ D.13133 ])) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 58 57 59 6 (set (reg:DI 5 di)
+        (reg/f:DI 96 [ D.13134 ])) AsymmetricCommands.c:173 -1
+     (nil))
+(call_insn 59 58 60 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptEccPointMultiply") [flags 0x41]  <function_decl 0x7f669858eca8 CryptEccPointMultiply>) [0 CryptEccPointMultiply S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:173 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 60 59 61 6 (set (reg:SI 113)
+        (reg:SI 0 ax)) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 61 60 62 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -84 [0xffffffffffffffac])) [0 result+0 S4 A32])
+        (reg:SI 113)) AsymmetricCommands.c:173 -1
+     (nil))
+(insn 62 61 63 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -84 [0xffffffffffffffac])) [0 result+0 S4 A32])
+            (const_int 167 [0xa7]))) AsymmetricCommands.c:180 -1
+     (nil))
+(jump_insn 63 62 64 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 68)
+            (pc))) AsymmetricCommands.c:180 -1
+     (nil)
+ -> 68)
+(note 64 63 65 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 65 64 66 7 (set (reg:SI 87 [ D.13130 ])
+        (const_int 412 [0x19c])) AsymmetricCommands.c:181 -1
+     (nil))
+(jump_insn 66 65 67 7 (set (pc)
+        (label_ref:DI 76)) AsymmetricCommands.c:181 654 {jump}
+     (nil)
+ -> 76)
+(barrier 67 66 68)
+(code_label 68 67 69 8 17 "" [2 uses])
+(note 69 68 70 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 70 69 71 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -84 [0xffffffffffffffac])) [0 result+0 S4 A32])
+            (const_int 340 [0x154]))) AsymmetricCommands.c:187 -1
+     (nil))
+(jump_insn 71 70 72 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) AsymmetricCommands.c:187 -1
+     (nil)
+ -> 22)
+(note 72 71 73 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 73 72 76 9 (set (reg:SI 87 [ D.13130 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -84 [0xffffffffffffffac])) [0 result+0 S4 A32])) AsymmetricCommands.c:188 -1
+     (nil))
+(code_label 76 73 77 11 18 "" [2 uses])
+(note 77 76 78 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 78 77 82 11 (set (reg:SI 97 [ <retval> ])
+        (reg:SI 87 [ D.13130 ])) -1
+     (nil))
+(insn 82 78 83 11 (set (reg/i:SI 0 ax)
+        (reg:SI 97 [ <retval> ])) AsymmetricCommands.c:189 -1
+     (nil))
+(insn 83 82 84 11 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13135+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) AsymmetricCommands.c:189 -1
+     (nil))
+(jump_insn 84 83 90 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 87)
+            (pc))) AsymmetricCommands.c:189 -1
+     (nil)
+ -> 87)
+(note 90 84 85 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(call_insn 85 90 86 13 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f66985e9948 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) AsymmetricCommands.c:189 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 86 85 87)
+(code_label 87 86 91 14 19 "" [1 uses])
+(note 91 87 88 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 88 91 0 14 (use (reg/i:SI 0 ax)) AsymmetricCommands.c:189 -1
+     (nil))
+
+;; Function TPM2_ECDH_ZGen (TPM2_ECDH_ZGen, funcdef_no=5, decl_uid=12917, cgraph_uid=5, symbol_order=5)
+
+Partition 0: size 8 align 8
+	eccKey_7
+Partition 1: size 4 align 4
+	result_24
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 90.
+Merging block 15 into block 14...
+Merged blocks 14 and 15.
+Merged 14 and 15 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AsymmetricCommands.c:201 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AsymmetricCommands.c:201 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) AsymmetricCommands.c:205 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 88 [ D.13139 ])
+        (mem/j:SI (reg/f:DI 102) [0 in_4(D)->keyHandle+0 S4 A32])) AsymmetricCommands.c:205 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13139 ])) AsymmetricCommands.c:205 -1
+     (nil))
+(call_insn 10 9 11 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f66984820d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:205 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 10 12 2 (set (reg:DI 103)
+        (reg:DI 0 ax)) AsymmetricCommands.c:205 -1
+     (nil))
+(insn 12 11 13 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 eccKey+0 S8 A64])
+        (reg:DI 103)) AsymmetricCommands.c:205 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:207 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:HI 89 [ D.13140 ])
+        (mem/j:HI (plus:DI (reg/f:DI 104)
+                (const_int 4 [0x4])) [0 eccKey_7->publicArea.type+0 S2 A32])) AsymmetricCommands.c:207 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 89 [ D.13140 ])
+            (const_int 35 [0x23]))) AsymmetricCommands.c:207 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) AsymmetricCommands.c:207 -1
+     (nil)
+ -> 21)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 4 (set (reg:SI 87 [ D.13138 ])
+        (const_int 412 [0x19c])) AsymmetricCommands.c:208 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (label_ref 87)) AsymmetricCommands.c:208 -1
+     (nil)
+ -> 87)
+(barrier 20 19 21)
+(code_label 21 20 22 5 21 "" [1 uses])
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 5 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:210 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 90 [ D.13139 ])
+        (mem/j:SI (plus:DI (reg/f:DI 105)
+                (const_int 8 [0x8])) [0 eccKey_7->publicArea.objectAttributes+0 S4 A64])) AsymmetricCommands.c:210 -1
+     (nil))
+(insn 25 24 26 5 (parallel [
+            (set (reg:SI 91 [ D.13139 ])
+                (and:SI (reg:SI 90 [ D.13139 ])
+                    (const_int 65536 [0x10000])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:210 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13139 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:210 -1
+     (nil))
+(jump_insn 27 26 28 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) AsymmetricCommands.c:210 -1
+     (nil)
+ -> 34)
+(note 28 27 29 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 6 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:211 -1
+     (nil))
+(insn 30 29 31 6 (set (reg:SI 92 [ D.13139 ])
+        (mem/j:SI (plus:DI (reg/f:DI 106)
+                (const_int 8 [0x8])) [0 eccKey_7->publicArea.objectAttributes+0 S4 A64])) AsymmetricCommands.c:211 -1
+     (nil))
+(insn 31 30 32 6 (parallel [
+            (set (reg:SI 93 [ D.13139 ])
+                (and:SI (reg:SI 92 [ D.13139 ])
+                    (const_int 131072 [0x20000])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:211 -1
+     (nil))
+(insn 32 31 33 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 93 [ D.13139 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:211 -1
+     (nil))
+(jump_insn 33 32 34 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) AsymmetricCommands.c:211 -1
+     (nil)
+ -> 39)
+(code_label 34 33 35 7 23 "" [1 uses])
+(note 35 34 36 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 7 (set (reg:SI 87 [ D.13138 ])
+        (const_int 386 [0x182])) AsymmetricCommands.c:212 -1
+     (nil))
+(jump_insn 37 36 38 7 (set (pc)
+        (label_ref 87)) AsymmetricCommands.c:212 -1
+     (nil)
+ -> 87)
+(barrier 38 37 39)
+(code_label 39 38 40 8 24 "" [1 uses])
+(note 40 39 41 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 8 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:214 -1
+     (nil))
+(insn 42 41 43 8 (set (reg:HI 94 [ D.13140 ])
+        (mem/j:HI (plus:DI (reg/f:DI 107)
+                (const_int 70 [0x46])) [0 eccKey_7->publicArea.parameters.eccDetail.scheme.scheme+0 S2 A16])) AsymmetricCommands.c:214 -1
+     (nil))
+(insn 43 42 44 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 94 [ D.13140 ])
+            (const_int 25 [0x19]))) AsymmetricCommands.c:214 -1
+     (nil))
+(jump_insn 44 43 45 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) AsymmetricCommands.c:214 -1
+     (nil)
+ -> 54)
+(note 45 44 46 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 9 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:215 -1
+     (nil))
+(insn 47 46 48 9 (set (reg:HI 95 [ D.13140 ])
+        (mem/j:HI (plus:DI (reg/f:DI 108)
+                (const_int 70 [0x46])) [0 eccKey_7->publicArea.parameters.eccDetail.scheme.scheme+0 S2 A16])) AsymmetricCommands.c:215 -1
+     (nil))
+(insn 48 47 49 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 95 [ D.13140 ])
+            (const_int 16 [0x10]))) AsymmetricCommands.c:215 -1
+     (nil))
+(jump_insn 49 48 50 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) AsymmetricCommands.c:215 -1
+     (nil)
+ -> 54)
+(note 50 49 51 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 51 50 52 10 (set (reg:SI 87 [ D.13138 ])
+        (const_int 402 [0x192])) AsymmetricCommands.c:216 -1
+     (nil))
+(jump_insn 52 51 53 10 (set (pc)
+        (label_ref 87)) AsymmetricCommands.c:216 -1
+     (nil)
+ -> 87)
+(barrier 53 52 54)
+(code_label 54 53 55 11 25 "" [2 uses])
+(note 55 54 56 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 57 11 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 57 56 58 11 (parallel [
+            (set (reg/f:DI 96 [ D.13141 ])
+                (plus:DI (reg/f:DI 109)
+                    (const_int 446 [0x1be])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:219 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 eccKey+0 S8 A64])
+            (const_int 446 [0x1be]))
+        (nil)))
+(insn 58 57 59 11 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 59 58 60 11 (parallel [
+            (set (reg/f:DI 97 [ D.13142 ])
+                (plus:DI (reg/f:DI 110)
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:219 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 60 59 61 11 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:220 -1
+     (nil))
+(insn 61 60 62 11 (set (reg:HI 98 [ D.13140 ])
+        (mem/j:HI (plus:DI (reg/f:DI 111)
+                (const_int 76 [0x4c])) [0 eccKey_7->publicArea.parameters.eccDetail.curveID+0 S2 A32])) AsymmetricCommands.c:220 -1
+     (nil))
+(insn 62 61 63 11 (set (reg:SI 99 [ D.13143 ])
+        (zero_extend:SI (reg:HI 98 [ D.13140 ]))) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 63 62 64 11 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 64 63 65 11 (parallel [
+            (set (reg/f:DI 100 [ D.13142 ])
+                (plus:DI (reg/f:DI 112)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:219 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 out+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 65 64 66 11 (set (reg:DI 38 r9)
+        (const_int 0 [0])) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 66 65 67 11 (set (reg:DI 37 r8)
+        (const_int 0 [0])) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 67 66 68 11 (set (reg:DI 2 cx)
+        (reg/f:DI 96 [ D.13141 ])) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 68 67 69 11 (set (reg:DI 1 dx)
+        (reg/f:DI 97 [ D.13142 ])) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 69 68 70 11 (set (reg:SI 4 si)
+        (reg:SI 99 [ D.13143 ])) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 70 69 71 11 (set (reg:DI 5 di)
+        (reg/f:DI 100 [ D.13142 ])) AsymmetricCommands.c:219 -1
+     (nil))
+(call_insn 71 70 72 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptEccPointMultiply") [flags 0x41]  <function_decl 0x7f669858eca8 CryptEccPointMultiply>) [0 CryptEccPointMultiply S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:219 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 72 71 73 11 (set (reg:SI 113)
+        (reg:SI 0 ax)) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 73 72 74 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 result+0 S4 A32])
+        (reg:SI 113)) AsymmetricCommands.c:219 -1
+     (nil))
+(insn 74 73 75 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 result+0 S4 A32])
+            (const_int 0 [0]))) AsymmetricCommands.c:224 -1
+     (nil))
+(jump_insn 75 74 76 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 84)
+            (pc))) AsymmetricCommands.c:224 -1
+     (nil)
+ -> 84)
+(note 76 75 77 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 77 76 78 12 (set (reg:SI 114)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 result+0 S4 A32])) AsymmetricCommands.c:225 -1
+     (nil))
+(insn 78 77 79 12 (set (reg:SI 4 si)
+        (const_int 320 [0x140])) AsymmetricCommands.c:225 -1
+     (nil))
+(insn 79 78 80 12 (set (reg:SI 5 di)
+        (reg:SI 114)) AsymmetricCommands.c:225 -1
+     (nil))
+(call_insn 80 79 81 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("RcSafeAddToResult") [flags 0x41]  <function_decl 0x7f6698557000 RcSafeAddToResult>) [0 RcSafeAddToResult S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:225 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 81 80 82 12 (set (reg:SI 87 [ D.13138 ])
+        (reg:SI 0 ax)) AsymmetricCommands.c:225 -1
+     (nil))
+(jump_insn 82 81 83 12 (set (pc)
+        (label_ref 87)) AsymmetricCommands.c:225 -1
+     (nil)
+ -> 87)
+(barrier 83 82 84)
+(code_label 84 83 85 13 26 "" [1 uses])
+(note 85 84 86 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 86 85 87 13 (set (reg:SI 87 [ D.13138 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 result+0 S4 A32])) AsymmetricCommands.c:226 -1
+     (nil))
+(code_label 87 86 88 14 22 "" [4 uses])
+(note 88 87 89 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 89 88 93 14 (set (reg:SI 101 [ <retval> ])
+        (reg:SI 87 [ D.13138 ])) -1
+     (nil))
+(insn 93 89 94 14 (set (reg/i:SI 0 ax)
+        (reg:SI 101 [ <retval> ])) AsymmetricCommands.c:227 -1
+     (nil))
+(insn 94 93 0 14 (use (reg/i:SI 0 ax)) AsymmetricCommands.c:227 -1
+     (nil))
+
+;; Function TPM2_ECC_Parameters (TPM2_ECC_Parameters, funcdef_no=6, decl_uid=12932, cgraph_uid=6, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 27.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AsymmetricCommands.c:239 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AsymmetricCommands.c:239 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:DI 88 [ D.13145 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 out+0 S8 A64])) AsymmetricCommands.c:242 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) AsymmetricCommands.c:242 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:HI 89 [ D.13146 ])
+        (mem/j:HI (reg/f:DI 93) [0 in_5(D)->curveID+0 S2 A16])) AsymmetricCommands.c:242 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 90 [ D.13147 ])
+        (zero_extend:SI (reg:HI 89 [ D.13146 ]))) AsymmetricCommands.c:242 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 4 si)
+        (reg/f:DI 88 [ D.13145 ])) AsymmetricCommands.c:242 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 5 di)
+        (reg:SI 90 [ D.13147 ])) AsymmetricCommands.c:242 -1
+     (nil))
+(call_insn 13 12 14 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptEccGetParameters") [flags 0x41]  <function_decl 0x7f669858e438 CryptEccGetParameters>) [0 CryptEccGetParameters S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:242 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 14 13 15 2 (set (reg:SI 91 [ D.13147 ])
+        (reg:SI 0 ax)) AsymmetricCommands.c:242 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13147 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:242 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) AsymmetricCommands.c:242 -1
+     (nil)
+ -> 21)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 4 (set (reg:SI 87 [ D.13144 ])
+        (const_int 0 [0])) AsymmetricCommands.c:243 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (label_ref 24)) AsymmetricCommands.c:243 -1
+     (nil)
+ -> 24)
+(barrier 20 19 21)
+(code_label 21 20 22 5 28 "" [1 uses])
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 5 (set (reg:SI 87 [ D.13144 ])
+        (const_int 452 [0x1c4])) AsymmetricCommands.c:245 -1
+     (nil))
+(code_label 24 23 25 6 29 "" [1 uses])
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 30 6 (set (reg:SI 92 [ <retval> ])
+        (reg:SI 87 [ D.13144 ])) -1
+     (nil))
+(insn 30 26 31 6 (set (reg/i:SI 0 ax)
+        (reg:SI 92 [ <retval> ])) AsymmetricCommands.c:246 -1
+     (nil))
+(insn 31 30 0 6 (use (reg/i:SI 0 ax)) AsymmetricCommands.c:246 -1
+     (nil))
+
+;; Function TPM2_ZGen_2Phase (TPM2_ZGen_2Phase, funcdef_no=7, decl_uid=12950, cgraph_uid=7, symbol_order=7)
+
+Partition 3: size 50 align 16
+	r
+Partition 1: size 8 align 8
+	eccKey_9
+Partition 2: size 4 align 4
+	result_49
+Partition 0: size 2 align 2
+	scheme_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 20 from 25 to 26.
+Redirecting jump 38 from 25 to 26.
+Redirecting jump 54 from 25 to 26.
+Redirecting jump 67 from 25 to 26.
+Redirecting jump 84 from 25 to 26.
+Redirecting jump 101 from 25 to 26.
+Redirecting jump 121 from 25 to 26.
+Redirecting jump 156 from 25 to 26.
+Merging block 25 into block 24...
+Merged blocks 24 and 25.
+Merged 24 and 25 without moving.
+Removing jump 176.
+Merging block 27 into block 26...
+Merged blocks 26 and 27.
+Merged 26 and 27 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) AsymmetricCommands.c:257 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 out+0 S8 A64])
+        (reg:DI 4 si [ out ])) AsymmetricCommands.c:257 -1
+     (nil))
+(note 4 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 4 8 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13155+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:257 -1
+     (nil))
+(insn 8 5 9 2 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])) AsymmetricCommands.c:263 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13149 ])
+        (mem/j:SI (reg/f:DI 118) [0 in_6(D)->keyA+0 S4 A32])) AsymmetricCommands.c:263 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.13149 ])) AsymmetricCommands.c:263 -1
+     (nil))
+(call_insn 11 10 12 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("HandleToObject") [flags 0x41]  <function_decl 0x7f66984820d8 HandleToObject>) [0 HandleToObject S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:263 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 12 11 13 2 (set (reg:DI 119)
+        (reg:DI 0 ax)) AsymmetricCommands.c:263 -1
+     (nil))
+(insn 13 12 14 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])
+        (reg:DI 119)) AsymmetricCommands.c:263 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:265 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:HI 89 [ D.13150 ])
+        (mem/j:HI (plus:DI (reg/f:DI 120)
+                (const_int 4 [0x4])) [0 eccKey_9->publicArea.type+0 S2 A32])) AsymmetricCommands.c:265 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 89 [ D.13150 ])
+            (const_int 35 [0x23]))) AsymmetricCommands.c:265 -1
+     (nil))
+(jump_insn 17 16 18 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) AsymmetricCommands.c:265 -1
+     (nil)
+ -> 22)
+(note 18 17 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (set (reg:SI 87 [ D.13148 ])
+        (const_int 412 [0x19c])) AsymmetricCommands.c:266 -1
+     (nil))
+(jump_insn 20 19 21 4 (set (pc)
+        (label_ref:DI 173)) AsymmetricCommands.c:266 654 {jump}
+     (nil)
+ -> 173)
+(barrier 21 20 22)
+(code_label 22 21 23 5 31 "" [1 uses])
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 5 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:268 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 90 [ D.13149 ])
+        (mem/j:SI (plus:DI (reg/f:DI 121)
+                (const_int 8 [0x8])) [0 eccKey_9->publicArea.objectAttributes+0 S4 A64])) AsymmetricCommands.c:268 -1
+     (nil))
+(insn 26 25 27 5 (parallel [
+            (set (reg:SI 91 [ D.13149 ])
+                (and:SI (reg:SI 90 [ D.13149 ])
+                    (const_int 65536 [0x10000])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:268 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 91 [ D.13149 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:268 -1
+     (nil))
+(jump_insn 28 27 29 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 35)
+            (pc))) AsymmetricCommands.c:268 -1
+     (nil)
+ -> 35)
+(note 29 28 30 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 6 (set (reg/f:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:269 -1
+     (nil))
+(insn 31 30 32 6 (set (reg:SI 92 [ D.13149 ])
+        (mem/j:SI (plus:DI (reg/f:DI 122)
+                (const_int 8 [0x8])) [0 eccKey_9->publicArea.objectAttributes+0 S4 A64])) AsymmetricCommands.c:269 -1
+     (nil))
+(insn 32 31 33 6 (parallel [
+            (set (reg:SI 93 [ D.13149 ])
+                (and:SI (reg:SI 92 [ D.13149 ])
+                    (const_int 131072 [0x20000])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:269 -1
+     (nil))
+(insn 33 32 34 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 93 [ D.13149 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:269 -1
+     (nil))
+(jump_insn 34 33 35 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 40)
+            (pc))) AsymmetricCommands.c:269 -1
+     (nil)
+ -> 40)
+(code_label 35 34 36 7 33 "" [1 uses])
+(note 36 35 37 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 7 (set (reg:SI 87 [ D.13148 ])
+        (const_int 386 [0x182])) AsymmetricCommands.c:270 -1
+     (nil))
+(jump_insn 38 37 39 7 (set (pc)
+        (label_ref:DI 173)) AsymmetricCommands.c:270 654 {jump}
+     (nil)
+ -> 173)
+(barrier 39 38 40)
+(code_label 40 39 41 8 34 "" [1 uses])
+(note 41 40 42 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 8 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:273 -1
+     (nil))
+(insn 43 42 44 8 (set (reg:HI 124)
+        (mem/j:HI (plus:DI (reg/f:DI 123)
+                (const_int 70 [0x46])) [0 eccKey_9->publicArea.parameters.asymDetail.scheme.scheme+0 S2 A16])) AsymmetricCommands.c:273 -1
+     (nil))
+(insn 44 43 45 8 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -78 [0xffffffffffffffb2])) [0 scheme+0 S2 A16])
+        (reg:HI 124)) AsymmetricCommands.c:273 -1
+     (nil))
+(insn 45 44 46 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -78 [0xffffffffffffffb2])) [0 scheme+0 S2 A16])
+            (const_int 16 [0x10]))) AsymmetricCommands.c:274 -1
+     (nil))
+(jump_insn 46 45 47 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 56)
+            (pc))) AsymmetricCommands.c:274 -1
+     (nil)
+ -> 56)
+(note 47 46 48 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 9 (set (reg/f:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])) AsymmetricCommands.c:276 -1
+     (nil))
+(insn 49 48 50 9 (set (reg:HI 94 [ D.13150 ])
+        (mem/j:HI (plus:DI (reg/f:DI 125)
+                (const_int 208 [0xd0])) [0 in_6(D)->inScheme+0 S2 A32])) AsymmetricCommands.c:276 -1
+     (nil))
+(insn 50 49 51 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 94 [ D.13150 ])
+            (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -78 [0xffffffffffffffb2])) [0 scheme+0 S2 A16]))) AsymmetricCommands.c:276 -1
+     (nil))
+(jump_insn 51 50 52 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 61)
+            (pc))) AsymmetricCommands.c:276 -1
+     (nil)
+ -> 61)
+(note 52 51 53 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 10 (set (reg:SI 87 [ D.13148 ])
+        (const_int 978 [0x3d2])) AsymmetricCommands.c:277 -1
+     (nil))
+(jump_insn 54 53 55 10 (set (pc)
+        (label_ref:DI 173)) AsymmetricCommands.c:277 654 {jump}
+     (nil)
+ -> 173)
+(barrier 55 54 56)
+(code_label 56 55 57 11 35 "" [1 uses])
+(note 57 56 58 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 59 11 (set (reg/f:DI 126)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])) AsymmetricCommands.c:280 -1
+     (nil))
+(insn 59 58 60 11 (set (reg:HI 127)
+        (mem/j:HI (plus:DI (reg/f:DI 126)
+                (const_int 208 [0xd0])) [0 in_6(D)->inScheme+0 S2 A32])) AsymmetricCommands.c:280 -1
+     (nil))
+(insn 60 59 61 11 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -78 [0xffffffffffffffb2])) [0 scheme+0 S2 A16])
+        (reg:HI 127)) AsymmetricCommands.c:280 -1
+     (nil))
+(code_label 61 60 62 12 36 "" [1 uses])
+(note 62 61 63 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 63 62 64 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -78 [0xffffffffffffffb2])) [0 scheme+0 S2 A16])
+            (const_int 16 [0x10]))) AsymmetricCommands.c:281 -1
+     (nil))
+(jump_insn 64 63 65 12 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 69)
+            (pc))) AsymmetricCommands.c:281 -1
+     (nil)
+ -> 69)
+(note 65 64 66 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 13 (set (reg:SI 87 [ D.13148 ])
+        (const_int 978 [0x3d2])) AsymmetricCommands.c:282 -1
+     (nil))
+(jump_insn 67 66 68 13 (set (pc)
+        (label_ref:DI 173)) AsymmetricCommands.c:282 654 {jump}
+     (nil)
+ -> 173)
+(barrier 68 67 69)
+(code_label 69 68 70 14 37 "" [1 uses])
+(note 70 69 71 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 71 70 72 14 (set (reg/f:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])) AsymmetricCommands.c:284 -1
+     (nil))
+(insn 72 71 73 14 (parallel [
+            (set (reg/f:DI 95 [ D.13151 ])
+                (plus:DI (reg/f:DI 128)
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:284 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 73 72 74 14 (set (reg/f:DI 129)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:284 -1
+     (nil))
+(insn 74 73 75 14 (set (reg:HI 96 [ D.13150 ])
+        (mem/j:HI (plus:DI (reg/f:DI 129)
+                (const_int 76 [0x4c])) [0 eccKey_9->publicArea.parameters.eccDetail.curveID+0 S2 A32])) AsymmetricCommands.c:284 -1
+     (nil))
+(insn 75 74 76 14 (set (reg:SI 97 [ D.13152 ])
+        (zero_extend:SI (reg:HI 96 [ D.13150 ]))) AsymmetricCommands.c:284 -1
+     (nil))
+(insn 76 75 77 14 (set (reg:DI 4 si)
+        (reg/f:DI 95 [ D.13151 ])) AsymmetricCommands.c:284 -1
+     (nil))
+(insn 77 76 78 14 (set (reg:SI 5 di)
+        (reg:SI 97 [ D.13152 ])) AsymmetricCommands.c:284 -1
+     (nil))
+(call_insn 78 77 79 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptEccIsPointOnCurve") [flags 0x41]  <function_decl 0x7f669858ed80 CryptEccIsPointOnCurve>) [0 CryptEccIsPointOnCurve S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:284 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 79 78 80 14 (set (reg:SI 98 [ D.13152 ])
+        (reg:SI 0 ax)) AsymmetricCommands.c:284 -1
+     (nil))
+(insn 80 79 81 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 98 [ D.13152 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:284 -1
+     (nil))
+(jump_insn 81 80 82 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 86)
+            (pc))) AsymmetricCommands.c:284 -1
+     (nil)
+ -> 86)
+(note 82 81 83 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 15 (set (reg:SI 87 [ D.13148 ])
+        (const_int 487 [0x1e7])) AsymmetricCommands.c:286 -1
+     (nil))
+(jump_insn 84 83 85 15 (set (pc)
+        (label_ref:DI 173)) AsymmetricCommands.c:286 654 {jump}
+     (nil)
+ -> 173)
+(barrier 85 84 86)
+(code_label 86 85 87 16 38 "" [1 uses])
+(note 87 86 88 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 89 16 (set (reg/f:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])) AsymmetricCommands.c:287 -1
+     (nil))
+(insn 89 88 90 16 (parallel [
+            (set (reg/f:DI 99 [ D.13151 ])
+                (plus:DI (reg/f:DI 130)
+                    (const_int 108 [0x6c])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:287 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])
+            (const_int 108 [0x6c]))
+        (nil)))
+(insn 90 89 91 16 (set (reg/f:DI 131)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:287 -1
+     (nil))
+(insn 91 90 92 16 (set (reg:HI 100 [ D.13150 ])
+        (mem/j:HI (plus:DI (reg/f:DI 131)
+                (const_int 76 [0x4c])) [0 eccKey_9->publicArea.parameters.eccDetail.curveID+0 S2 A32])) AsymmetricCommands.c:287 -1
+     (nil))
+(insn 92 91 93 16 (set (reg:SI 101 [ D.13152 ])
+        (zero_extend:SI (reg:HI 100 [ D.13150 ]))) AsymmetricCommands.c:287 -1
+     (nil))
+(insn 93 92 94 16 (set (reg:DI 4 si)
+        (reg/f:DI 99 [ D.13151 ])) AsymmetricCommands.c:287 -1
+     (nil))
+(insn 94 93 95 16 (set (reg:SI 5 di)
+        (reg:SI 101 [ D.13152 ])) AsymmetricCommands.c:287 -1
+     (nil))
+(call_insn 95 94 96 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptEccIsPointOnCurve") [flags 0x41]  <function_decl 0x7f669858ed80 CryptEccIsPointOnCurve>) [0 CryptEccIsPointOnCurve S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:287 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 96 95 97 16 (set (reg:SI 102 [ D.13152 ])
+        (reg:SI 0 ax)) AsymmetricCommands.c:287 -1
+     (nil))
+(insn 97 96 98 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 102 [ D.13152 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:287 -1
+     (nil))
+(jump_insn 98 97 99 16 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 103)
+            (pc))) AsymmetricCommands.c:287 -1
+     (nil)
+ -> 103)
+(note 99 98 100 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 100 99 101 17 (set (reg:SI 87 [ D.13148 ])
+        (const_int 743 [0x2e7])) AsymmetricCommands.c:289 -1
+     (nil))
+(jump_insn 101 100 102 17 (set (pc)
+        (label_ref:DI 173)) AsymmetricCommands.c:289 654 {jump}
+     (nil)
+ -> 173)
+(barrier 102 101 103)
+(code_label 103 102 104 18 39 "" [1 uses])
+(note 104 103 105 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 105 104 106 18 (set (reg/f:DI 132)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:291 -1
+     (nil))
+(insn 106 105 107 18 (set (reg:HI 103 [ D.13150 ])
+        (mem/j:HI (plus:DI (reg/f:DI 132)
+                (const_int 76 [0x4c])) [0 eccKey_9->publicArea.parameters.eccDetail.curveID+0 S2 A32])) AsymmetricCommands.c:291 -1
+     (nil))
+(insn 107 106 108 18 (set (reg:SI 104 [ D.13152 ])
+        (zero_extend:SI (reg:HI 103 [ D.13150 ]))) AsymmetricCommands.c:290 -1
+     (nil))
+(insn 108 107 109 18 (set (reg/f:DI 133)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])) AsymmetricCommands.c:290 -1
+     (nil))
+(insn 109 108 110 18 (parallel [
+            (set (reg/f:DI 105 [ D.13153 ])
+                (plus:DI (reg/f:DI 133)
+                    (const_int 210 [0xd2])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:290 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])
+            (const_int 210 [0xd2]))
+        (nil)))
+(insn 110 109 111 18 (parallel [
+            (set (reg:DI 134)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -64 [0xffffffffffffffc0])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:290 -1
+     (nil))
+(insn 111 110 112 18 (set (reg:DI 2 cx)
+        (const_int 0 [0])) AsymmetricCommands.c:290 -1
+     (nil))
+(insn 112 111 113 18 (set (reg:SI 1 dx)
+        (reg:SI 104 [ D.13152 ])) AsymmetricCommands.c:290 -1
+     (nil))
+(insn 113 112 114 18 (set (reg:DI 4 si)
+        (reg/f:DI 105 [ D.13153 ])) AsymmetricCommands.c:290 -1
+     (nil))
+(insn 114 113 115 18 (set (reg:DI 5 di)
+        (reg:DI 134)) AsymmetricCommands.c:290 -1
+     (nil))
+(call_insn 115 114 116 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptGenerateR") [flags 0x41]  <function_decl 0x7f669858e1b0 CryptGenerateR>) [0 CryptGenerateR S1 A8])
+            (const_int 0 [0]))) AsymmetricCommands.c:290 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 116 115 117 18 (set (reg:SI 106 [ D.13152 ])
+        (reg:SI 0 ax)) AsymmetricCommands.c:290 -1
+     (nil))
+(insn 117 116 118 18 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 106 [ D.13152 ])
+            (const_int 0 [0]))) AsymmetricCommands.c:290 -1
+     (nil))
+(jump_insn 118 117 119 18 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 123)
+            (pc))) AsymmetricCommands.c:290 -1
+     (nil)
+ -> 123)
+(note 119 118 120 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 120 119 121 19 (set (reg:SI 87 [ D.13148 ])
+        (const_int 1220 [0x4c4])) AsymmetricCommands.c:293 -1
+     (nil))
+(jump_insn 121 120 122 19 (set (pc)
+        (label_ref:DI 173)) AsymmetricCommands.c:293 654 {jump}
+     (nil)
+ -> 173)
+(barrier 122 121 123)
+(code_label 123 122 124 20 40 "" [1 uses])
+(note 124 123 125 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 125 124 126 20 (set (reg/f:DI 135)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 126 125 127 20 (parallel [
+            (set (reg/f:DI 107 [ D.13151 ])
+                (plus:DI (reg/f:DI 135)
+                    (const_int 108 [0x6c])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:295 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])
+            (const_int 108 [0x6c]))
+        (nil)))
+(insn 127 126 128 20 (set (reg/f:DI 136)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 128 127 129 20 (parallel [
+            (set (reg/f:DI 108 [ D.13151 ])
+                (plus:DI (reg/f:DI 136)
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:295 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 129 128 130 20 (set (reg/f:DI 137)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 130 129 131 20 (parallel [
+            (set (reg/f:DI 109 [ D.13154 ])
+                (plus:DI (reg/f:DI 137)
+                    (const_int 446 [0x1be])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:295 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])
+            (const_int 446 [0x1be]))
+        (nil)))
+(insn 131 130 132 20 (set (reg:SI 110 [ D.13152 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -78 [0xffffffffffffffb2])) [0 scheme+0 S2 A16]))) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 132 131 133 20 (set (reg/f:DI 138)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 eccKey+0 S8 A64])) AsymmetricCommands.c:297 -1
+     (nil))
+(insn 133 132 134 20 (set (reg:HI 111 [ D.13150 ])
+        (mem/j:HI (plus:DI (reg/f:DI 138)
+                (const_int 76 [0x4c])) [0 eccKey_9->publicArea.parameters.eccDetail.curveID+0 S2 A32])) AsymmetricCommands.c:297 -1
+     (nil))
+(insn 134 133 135 20 (set (reg:SI 112 [ D.13152 ])
+        (zero_extend:SI (reg:HI 111 [ D.13150 ]))) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 135 134 136 20 (set (reg/f:DI 139)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 out+0 S8 A64])) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 136 135 137 20 (parallel [
+            (set (reg/f:DI 113 [ D.13151 ])
+                (plus:DI (reg/f:DI 139)
+                    (const_int 104 [0x68])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:295 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -96 [0xffffffffffffffa0])) [0 out+0 S8 A64])
+            (const_int 104 [0x68]))
+        (nil)))
+(insn 137 136 138 20 (set (reg/f:DI 140)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 out+0 S8 A64])) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 138 137 139 20 (parallel [
+            (set (reg/f:DI 114 [ D.13151 ])
+                (plus:DI (reg/f:DI 140)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:295 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -96 [0xffffffffffffffa0])) [0 out+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 139 138 140 20 (parallel [
+            (set (reg:DI 141)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -64 [0xffffffffffffffc0])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 140 139 141 20 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (reg/f:DI 107 [ D.13151 ])) AsymmetricCommands.c:295 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 141 140 142 20 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (reg/f:DI 108 [ D.13151 ])) AsymmetricCommands.c:295 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 142 141 143 20 (set (reg:DI 38 r9)
+        (reg:DI 141)) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 143 142 144 20 (set (reg:DI 37 r8)
+        (reg/f:DI 109 [ D.13154 ])) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 144 143 145 20 (set (reg:SI 2 cx)
+        (reg:SI 110 [ D.13152 ])) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 145 144 146 20 (set (reg:SI 1 dx)
+        (reg:SI 112 [ D.13152 ])) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 146 145 147 20 (set (reg:DI 4 si)
+        (reg/f:DI 113 [ D.13151 ])) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 147 146 148 20 (set (reg:DI 5 di)
+        (reg/f:DI 114 [ D.13151 ])) AsymmetricCommands.c:295 -1
+     (nil))
+(call_insn 148 147 149 20 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptEcc2PhaseKeyExchange") [flags 0x41]  <function_decl 0x7f6698593438 CryptEcc2PhaseKeyExchange>) [0 CryptEcc2PhaseKeyExchange S1 A8])
+            (const_int 16 [0x10]))) AsymmetricCommands.c:295 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (expr_list:DI (use (reg:DI 38 r9))
+                            (nil))))))))
+(insn 149 148 150 20 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) AsymmetricCommands.c:295 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 150 149 151 20 (set (reg:SI 142)
+        (reg:SI 0 ax)) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 151 150 152 20 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -76 [0xffffffffffffffb4])) [0 result+0 S4 A32])
+        (reg:SI 142)) AsymmetricCommands.c:295 -1
+     (nil))
+(insn 152 151 153 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -76 [0xffffffffffffffb4])) [0 result+0 S4 A32])
+            (const_int 146 [0x92]))) AsymmetricCommands.c:303 -1
+     (nil))
+(jump_insn 153 152 154 20 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 158)
+            (pc))) AsymmetricCommands.c:303 -1
+     (nil)
+ -> 158)
+(note 154 153 155 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 155 154 156 21 (set (reg:SI 87 [ D.13148 ])
+        (const_int 978 [0x3d2])) AsymmetricCommands.c:304 -1
+     (nil))
+(jump_insn 156 155 157 21 (set (pc)
+        (label_ref:DI 173)) AsymmetricCommands.c:304 654 {jump}
+     (nil)
+ -> 173)
+(barrier 157 156 158)
+(code_label 158 157 159 22 41 "" [1 uses])
+(note 159 158 160 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 160 159 161 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -76 [0xffffffffffffffb4])) [0 result+0 S4 A32])
+            (const_int 0 [0]))) AsymmetricCommands.c:305 -1
+     (nil))
+(jump_insn 161 160 162 22 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 168)
+            (pc))) AsymmetricCommands.c:305 -1
+     (nil)
+ -> 168)
+(note 162 161 163 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 163 162 164 23 (set (reg/f:DI 143)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 in+0 S8 A64])) AsymmetricCommands.c:306 -1
+     (nil))
+(insn 164 163 165 23 (set (reg:HI 115 [ D.13150 ])
+        (mem/j:HI (plus:DI (reg/f:DI 143)
+                (const_int 210 [0xd2])) [0 in_6(D)->counter+0 S2 A16])) AsymmetricCommands.c:306 -1
+     (nil))
+(insn 165 164 166 23 (set (reg:SI 116 [ D.13152 ])
+        (zero_extend:SI (reg:HI 115 [ D.13150 ]))) AsymmetricCommands.c:306 -1
+     (nil))
+(insn 166 165 167 23 (set (reg:SI 5 di)
+        (reg:SI 116 [ D.13152 ])) AsymmetricCommands.c:306 -1
+     (nil))
+(call_insn 167 166 168 23 (call (mem:QI (symbol_ref:DI ("CryptEndCommit") [flags 0x41]  <function_decl 0x7f669858e360 CryptEndCommit>) [0 CryptEndCommit S1 A8])
+        (const_int 0 [0])) AsymmetricCommands.c:306 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(code_label 168 167 169 24 42 "" [1 uses])
+(note 169 168 170 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 170 169 173 24 (set (reg:SI 87 [ D.13148 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -76 [0xffffffffffffffb4])) [0 result+0 S4 A32])) AsymmetricCommands.c:307 -1
+     (nil))
+(code_label 173 170 174 26 43 "" [8 uses])
+(note 174 173 175 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 175 174 179 26 (set (reg:SI 117 [ <retval> ])
+        (reg:SI 87 [ D.13148 ])) -1
+     (nil))
+(insn 179 175 180 26 (set (reg/i:SI 0 ax)
+        (reg:SI 117 [ <retval> ])) AsymmetricCommands.c:308 -1
+     (nil))
+(insn 180 179 181 26 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13155+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) AsymmetricCommands.c:308 -1
+     (nil))
+(jump_insn 181 180 187 26 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 184)
+            (pc))) AsymmetricCommands.c:308 -1
+     (nil)
+ -> 184)
+(note 187 181 182 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(call_insn 182 187 183 28 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f66985e9948 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) AsymmetricCommands.c:308 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 183 182 184)
+(code_label 184 183 188 29 44 "" [1 uses])
+(note 188 184 185 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 185 188 0 29 (use (reg/i:SI 0 ax)) AsymmetricCommands.c:308 -1
+     (nil))

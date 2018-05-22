@@ -1,0 +1,1164 @@
+
+;; Function _rpc__Signal_PowerOn (_rpc__Signal_PowerOn, funcdef_no=2, decl_uid=4426, cgraph_uid=2, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 4->5 to 13 failed.
+Redirecting jump 13 from 12 to 13.
+Forwarding edge 7->8 to 13 failed.
+Redirecting jump 24 from 12 to 13.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 4->5 to 13 failed.
+Forwarding edge 7->8 to 13 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 isReset+0 S4 A32])
+        (reg:SI 5 di [ isReset ])) TPMCmdp.c:104 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 87 [ D.4632 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:106 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4632 ])
+            (const_int 0 [0]))) TPMCmdp.c:106 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 15)
+            (pc))) TPMCmdp.c:106 -1
+     (nil)
+ -> 15)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 11 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 isReset+0 S4 A32])
+            (const_int 0 [0]))) TPMCmdp.c:106 -1
+     (nil))
+(jump_insn 11 10 12 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 15)
+            (pc))) TPMCmdp.c:106 -1
+     (nil)
+ -> 15)
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 13 12 14 5 (set (pc)
+        (label_ref:DI 38)) TPMCmdp.c:107 654 {jump}
+     (nil)
+ -> 38)
+(barrier 14 13 15)
+(code_label 15 14 16 6 2 "" [2 uses])
+(note 16 15 17 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 isReset+0 S4 A32])
+            (const_int 0 [0]))) TPMCmdp.c:109 -1
+     (nil))
+(jump_insn 18 17 19 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) TPMCmdp.c:109 -1
+     (nil)
+ -> 26)
+(note 19 18 20 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 7 (set (reg:SI 88 [ D.4632 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:109 -1
+     (nil))
+(insn 21 20 22 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.4632 ])
+            (const_int 0 [0]))) TPMCmdp.c:109 -1
+     (nil))
+(jump_insn 22 21 23 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) TPMCmdp.c:109 -1
+     (nil)
+ -> 26)
+(note 23 22 24 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 24 23 25 8 (set (pc)
+        (label_ref:DI 38)) TPMCmdp.c:110 654 {jump}
+     (nil)
+ -> 38)
+(barrier 25 24 26)
+(code_label 26 25 27 9 4 "" [2 uses])
+(note 27 26 28 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 isReset+0 S4 A32])
+            (const_int 0 [0]))) TPMCmdp.c:112 -1
+     (nil))
+(jump_insn 29 28 30 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) TPMCmdp.c:112 -1
+     (nil)
+ -> 32)
+(note 30 29 31 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(call_insn 31 30 32 10 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_plat__Signal_PowerOn") [flags 0x41]  <function_decl 0x7f3854962288 _plat__Signal_PowerOn>) [0 _plat__Signal_PowerOn S1 A8])
+            (const_int 0 [0]))) TPMCmdp.c:113 -1
+     (nil)
+    (nil))
+(code_label 32 31 33 11 5 "" [1 uses])
+(note 33 32 34 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(call_insn 34 33 35 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_plat__Signal_Reset") [flags 0x41]  <function_decl 0x7f3854962438 _plat__Signal_Reset>) [0 _plat__Signal_Reset S1 A8])
+            (const_int 0 [0]))) TPMCmdp.c:115 -1
+     (nil)
+    (nil))
+(insn 35 34 38 11 (set (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])
+        (const_int 1 [0x1])) TPMCmdp.c:117 -1
+     (nil))
+(code_label 38 35 39 13 1 "" [2 uses])
+(note 39 38 0 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__Signal_Restart (_rpc__Signal_Restart, funcdef_no=3, decl_uid=4428, cgraph_uid=3, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 8 2 (call (mem:QI (symbol_ref:DI ("_plat__TimerRestart") [flags 0x41]  <function_decl 0x7f385495f0d8 _plat__TimerRestart>) [0 _plat__TimerRestart S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:127 -1
+     (nil)
+    (nil))
+(insn 8 5 0 2 (const_int 0 [0]) TPMCmdp.c:128 -1
+     (nil))
+
+;; Function _rpc__Signal_PowerOff (_rpc__Signal_PowerOff, funcdef_no=4, decl_uid=4430, cgraph_uid=4, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 7 failed.
+Forwarding edge 2->4 to 7 failed.
+Redirecting jump 9 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 7 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.4633 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:137 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4633 ])
+            (const_int 0 [0]))) TPMCmdp.c:137 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) TPMCmdp.c:137 -1
+     (nil)
+ -> 11)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 9 8 10 4 (set (pc)
+        (label_ref:DI 17)) TPMCmdp.c:137 654 {jump}
+     (nil)
+ -> 17)
+(barrier 10 9 11)
+(code_label 11 10 12 5 10 "" [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 13 12 14 5 (call (mem:QI (symbol_ref:DI ("_plat__Signal_PowerOff") [flags 0x41]  <function_decl 0x7f3854962510 _plat__Signal_PowerOff>) [0 _plat__Signal_PowerOff S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:139 -1
+     (nil)
+    (nil))
+(insn 14 13 19 5 (set (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])
+        (const_int 0 [0])) TPMCmdp.c:140 -1
+     (nil))
+(insn 19 14 17 5 (const_int 0 [0]) TPMCmdp.c:141 -1
+     (nil))
+(code_label 17 19 18 7 9 "" [1 uses])
+(note 18 17 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__ForceFailureMode (_rpc__ForceFailureMode, funcdef_no=5, decl_uid=4432, cgraph_uid=5, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 8 2 (call (mem:QI (symbol_ref:DI ("SetForceFailureMode") [flags 0x41]  <function_decl 0x7f3854967288 SetForceFailureMode>) [0 SetForceFailureMode S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:153 -1
+     (nil)
+    (nil))
+(insn 8 5 0 2 (const_int 0 [0]) TPMCmdp.c:155 -1
+     (nil))
+
+;; Function _rpc__Signal_PhysicalPresenceOn (_rpc__Signal_PhysicalPresenceOn, funcdef_no=6, decl_uid=4434, cgraph_uid=6, symbol_order=7)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 7 failed.
+Forwarding edge 2->4 to 7 failed.
+Redirecting jump 9 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 7 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.4634 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:164 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4634 ])
+            (const_int 0 [0]))) TPMCmdp.c:164 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) TPMCmdp.c:164 -1
+     (nil)
+ -> 11)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 9 8 10 4 (set (pc)
+        (label_ref:DI 16)) TPMCmdp.c:164 654 {jump}
+     (nil)
+ -> 16)
+(barrier 10 9 11)
+(code_label 11 10 12 5 15 "" [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 13 12 18 5 (call (mem:QI (symbol_ref:DI ("_plat__Signal_PhysicalPresenceOn") [flags 0x41]  <function_decl 0x7f38549626c0 _plat__Signal_PhysicalPresenceOn>) [0 _plat__Signal_PhysicalPresenceOn S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:166 -1
+     (nil)
+    (nil))
+(insn 18 13 16 5 (const_int 0 [0]) TPMCmdp.c:167 -1
+     (nil))
+(code_label 16 18 17 7 14 "" [1 uses])
+(note 17 16 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__Signal_PhysicalPresenceOff (_rpc__Signal_PhysicalPresenceOff, funcdef_no=7, decl_uid=4436, cgraph_uid=7, symbol_order=8)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 7 failed.
+Forwarding edge 2->4 to 7 failed.
+Redirecting jump 9 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 7 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.4635 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:177 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4635 ])
+            (const_int 0 [0]))) TPMCmdp.c:177 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) TPMCmdp.c:177 -1
+     (nil)
+ -> 11)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 9 8 10 4 (set (pc)
+        (label_ref:DI 16)) TPMCmdp.c:177 654 {jump}
+     (nil)
+ -> 16)
+(barrier 10 9 11)
+(code_label 11 10 12 5 19 "" [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 13 12 18 5 (call (mem:QI (symbol_ref:DI ("_plat__Signal_PhysicalPresenceOff") [flags 0x41]  <function_decl 0x7f3854962798 _plat__Signal_PhysicalPresenceOff>) [0 _plat__Signal_PhysicalPresenceOff S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:179 -1
+     (nil)
+    (nil))
+(insn 18 13 16 5 (const_int 0 [0]) TPMCmdp.c:180 -1
+     (nil))
+(code_label 16 18 17 7 18 "" [1 uses])
+(note 17 16 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__Signal_Hash_Start (_rpc__Signal_Hash_Start, funcdef_no=8, decl_uid=4438, cgraph_uid=8, symbol_order=9)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 7 failed.
+Forwarding edge 2->4 to 7 failed.
+Redirecting jump 9 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 7 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.4636 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:190 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4636 ])
+            (const_int 0 [0]))) TPMCmdp.c:190 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) TPMCmdp.c:190 -1
+     (nil)
+ -> 11)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 9 8 10 4 (set (pc)
+        (label_ref:DI 16)) TPMCmdp.c:190 654 {jump}
+     (nil)
+ -> 16)
+(barrier 10 9 11)
+(code_label 11 10 12 5 23 "" [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 13 12 18 5 (call (mem:QI (symbol_ref:DI ("_TPM_Hash_Start") [flags 0x41]  <function_decl 0x7f3854967000 _TPM_Hash_Start>) [0 _TPM_Hash_Start S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:192 -1
+     (nil)
+    (nil))
+(insn 18 13 16 5 (const_int 0 [0]) TPMCmdp.c:193 -1
+     (nil))
+(code_label 16 18 17 7 22 "" [1 uses])
+(note 17 16 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__Signal_Hash_Data (_rpc__Signal_Hash_Data, funcdef_no=9, decl_uid=4440, cgraph_uid=9, symbol_order=10)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 7 failed.
+Forwarding edge 2->4 to 7 failed.
+Redirecting jump 14 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 7 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg:DI 92)
+        (reg:DI 5 di [ input ])) TPMCmdp.c:201 -1
+     (nil))
+(insn 3 2 4 2 (set (reg:DI 93)
+        (reg:DI 4 si [ input+8 ])) TPMCmdp.c:201 -1
+     (nil))
+(insn 4 3 5 2 (set (reg:TI 91)
+        (subreg:TI (reg:DI 92) 0)) TPMCmdp.c:201 -1
+     (nil))
+(insn 5 4 6 2 (set (subreg:DI (reg:TI 91) 8)
+        (reg:DI 93)) TPMCmdp.c:201 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:TI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 input+0 S16 A128])
+        (reg:TI 91)) TPMCmdp.c:201 -1
+     (nil))
+(note 7 6 10 2 NOTE_INSN_FUNCTION_BEG)
+(insn 10 7 11 2 (set (reg:SI 87 [ D.4637 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:203 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4637 ])
+            (const_int 0 [0]))) TPMCmdp.c:203 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) TPMCmdp.c:203 -1
+     (nil)
+ -> 16)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 14 13 15 4 (set (pc)
+        (label_ref:DI 26)) TPMCmdp.c:203 654 {jump}
+     (nil)
+ -> 26)
+(barrier 15 14 16)
+(code_label 16 15 17 5 27 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg/f:DI 88 [ D.4638 ])
+        (mem/f/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 input.Buffer+0 S8 A64])) TPMCmdp.c:205 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:DI 89 [ D.4639 ])
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 input.BufferSize+0 S8 A128])) TPMCmdp.c:205 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:SI 90 [ D.4640 ])
+        (subreg:SI (reg:DI 89 [ D.4639 ]) 0)) TPMCmdp.c:205 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:DI 4 si)
+        (reg/f:DI 88 [ D.4638 ])) TPMCmdp.c:205 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:SI 5 di)
+        (reg:SI 90 [ D.4640 ])) TPMCmdp.c:205 -1
+     (nil))
+(call_insn 23 22 28 5 (call (mem:QI (symbol_ref:DI ("_TPM_Hash_Data") [flags 0x41]  <function_decl 0x7f38549670d8 _TPM_Hash_Data>) [0 _TPM_Hash_Data S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:205 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 28 23 26 5 (const_int 0 [0]) TPMCmdp.c:206 -1
+     (nil))
+(code_label 26 28 27 7 26 "" [1 uses])
+(note 27 26 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__Signal_HashEnd (_rpc__Signal_HashEnd, funcdef_no=10, decl_uid=4442, cgraph_uid=10, symbol_order=11)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 7 failed.
+Forwarding edge 2->4 to 7 failed.
+Redirecting jump 9 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 7 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.4641 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:216 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4641 ])
+            (const_int 0 [0]))) TPMCmdp.c:216 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) TPMCmdp.c:216 -1
+     (nil)
+ -> 11)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 9 8 10 4 (set (pc)
+        (label_ref:DI 16)) TPMCmdp.c:216 654 {jump}
+     (nil)
+ -> 16)
+(barrier 10 9 11)
+(code_label 11 10 12 5 31 "" [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 13 12 18 5 (call (mem:QI (symbol_ref:DI ("_TPM_Hash_End") [flags 0x41]  <function_decl 0x7f38549671b0 _TPM_Hash_End>) [0 _TPM_Hash_End S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:218 -1
+     (nil)
+    (nil))
+(insn 18 13 16 5 (const_int 0 [0]) TPMCmdp.c:219 -1
+     (nil))
+(code_label 16 18 17 7 30 "" [1 uses])
+(note 17 16 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__Send_Command (_rpc__Send_Command, funcdef_no=11, decl_uid=4446, cgraph_uid=11, symbol_order=12)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 19 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 11 NOTE_INSN_DELETED)
+(note 11 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 11 4 2 (set (reg:SI 94)
+        (reg:SI 5 di [ locality ])) TPMCmdp.c:229 -1
+     (nil))
+(insn 4 2 5 2 (set (reg:DI 96)
+        (reg:DI 4 si [ request ])) TPMCmdp.c:229 -1
+     (nil))
+(insn 5 4 6 2 (set (reg:DI 97)
+        (reg:DI 1 dx [ request+8 ])) TPMCmdp.c:229 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:TI 95)
+        (subreg:TI (reg:DI 96) 0)) TPMCmdp.c:229 -1
+     (nil))
+(insn 7 6 8 2 (set (subreg:DI (reg:TI 95) 8)
+        (reg:DI 97)) TPMCmdp.c:229 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:TI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 request+0 S16 A128])
+        (reg:TI 95)) TPMCmdp.c:229 -1
+     (nil))
+(insn 9 8 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 response+0 S8 A64])
+        (reg:DI 2 cx [ response ])) TPMCmdp.c:229 -1
+     (nil))
+(insn 3 9 10 2 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 locality+0 S1 A32])
+        (subreg:QI (reg:SI 94) 0)) TPMCmdp.c:229 -1
+     (nil))
+(note 10 3 13 2 NOTE_INSN_FUNCTION_BEG)
+(insn 13 10 14 2 (set (reg:SI 87 [ D.4642 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:231 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4642 ])
+            (const_int 0 [0]))) TPMCmdp.c:231 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) TPMCmdp.c:231 -1
+     (nil)
+ -> 21)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 4 (set (reg/f:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 response+0 S8 A64])) TPMCmdp.c:233 -1
+     (nil))
+(insn 18 17 19 4 (set (mem/j:SI (reg/f:DI 98) [0 response_4(D)->BufferSize+0 S4 A64])
+        (const_int 0 [0])) TPMCmdp.c:233 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (label_ref:DI 39)) TPMCmdp.c:234 654 {jump}
+     (nil)
+ -> 39)
+(barrier 20 19 21)
+(code_label 21 20 22 5 35 "" [1 uses])
+(note 22 21 23 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 5 (set (reg:SI 88 [ D.4642 ])
+        (zero_extend:SI (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 locality+0 S1 A32]))) TPMCmdp.c:237 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.4642 ])) TPMCmdp.c:237 -1
+     (nil))
+(call_insn 25 24 26 5 (call (mem:QI (symbol_ref:DI ("_plat__LocalitySet") [flags 0x41]  <function_decl 0x7f385495f6c0 _plat__LocalitySet>) [0 _plat__LocalitySet S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:237 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 26 25 27 5 (set (reg/f:DI 99)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 response+0 S8 A64])) TPMCmdp.c:240 -1
+     (nil))
+(insn 27 26 28 5 (parallel [
+            (set (reg/f:DI 89 [ D.4643 ])
+                (plus:DI (reg/f:DI 99)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) TPMCmdp.c:240 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 response+0 S8 A64])
+            (const_int 8 [0x8]))
+        (nil)))
+(insn 28 27 29 5 (set (reg/f:DI 90 [ D.4644 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 response+0 S8 A64])) TPMCmdp.c:239 -1
+     (nil))
+(insn 29 28 30 5 (set (reg/f:DI 91 [ D.4645 ])
+        (mem/f/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 request.Buffer+0 S8 A64])) TPMCmdp.c:239 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:DI 92 [ D.4646 ])
+        (mem/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 request.BufferSize+0 S8 A128])) TPMCmdp.c:239 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:SI 93 [ D.4647 ])
+        (subreg:SI (reg:DI 92 [ D.4646 ]) 0)) TPMCmdp.c:239 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:DI 2 cx)
+        (reg/f:DI 89 [ D.4643 ])) TPMCmdp.c:239 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:DI 1 dx)
+        (reg/f:DI 90 [ D.4644 ])) TPMCmdp.c:239 -1
+     (nil))
+(insn 34 33 35 5 (set (reg:DI 4 si)
+        (reg/f:DI 91 [ D.4645 ])) TPMCmdp.c:239 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:SI 5 di)
+        (reg:SI 93 [ D.4647 ])) TPMCmdp.c:239 -1
+     (nil))
+(call_insn 36 35 41 5 (call (mem:QI (symbol_ref:DI ("_plat__RunCommand") [flags 0x41]  <function_decl 0x7f3854962870 _plat__RunCommand>) [0 _plat__RunCommand S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:239 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 41 36 39 5 (const_int 0 [0]) TPMCmdp.c:241 -1
+     (nil))
+(code_label 39 41 40 7 34 "" [1 uses])
+(note 40 39 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__Signal_CancelOn (_rpc__Signal_CancelOn, funcdef_no=12, decl_uid=4448, cgraph_uid=12, symbol_order=13)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 7 failed.
+Forwarding edge 2->4 to 7 failed.
+Redirecting jump 9 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 7 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.4648 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:253 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4648 ])
+            (const_int 0 [0]))) TPMCmdp.c:253 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) TPMCmdp.c:253 -1
+     (nil)
+ -> 11)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 9 8 10 4 (set (pc)
+        (label_ref:DI 16)) TPMCmdp.c:253 654 {jump}
+     (nil)
+ -> 16)
+(barrier 10 9 11)
+(code_label 11 10 12 5 38 "" [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 13 12 18 5 (call (mem:QI (symbol_ref:DI ("_plat__SetCancel") [flags 0x41]  <function_decl 0x7f3854921d80 _plat__SetCancel>) [0 _plat__SetCancel S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:255 -1
+     (nil)
+    (nil))
+(insn 18 13 16 5 (const_int 0 [0]) TPMCmdp.c:256 -1
+     (nil))
+(code_label 16 18 17 7 37 "" [1 uses])
+(note 17 16 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__Signal_CancelOff (_rpc__Signal_CancelOff, funcdef_no=13, decl_uid=4450, cgraph_uid=13, symbol_order=14)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 7 failed.
+Forwarding edge 2->4 to 7 failed.
+Redirecting jump 9 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 7 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.4649 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:266 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4649 ])
+            (const_int 0 [0]))) TPMCmdp.c:266 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) TPMCmdp.c:266 -1
+     (nil)
+ -> 11)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 9 8 10 4 (set (pc)
+        (label_ref:DI 16)) TPMCmdp.c:266 654 {jump}
+     (nil)
+ -> 16)
+(barrier 10 9 11)
+(code_label 11 10 12 5 42 "" [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 13 12 18 5 (call (mem:QI (symbol_ref:DI ("_plat__ClearCancel") [flags 0x41]  <function_decl 0x7f3854921e58 _plat__ClearCancel>) [0 _plat__ClearCancel S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:268 -1
+     (nil)
+    (nil))
+(insn 18 13 16 5 (const_int 0 [0]) TPMCmdp.c:269 -1
+     (nil))
+(code_label 16 18 17 7 41 "" [1 uses])
+(note 17 16 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__Signal_NvOn (_rpc__Signal_NvOn, funcdef_no=14, decl_uid=4452, cgraph_uid=14, symbol_order=15)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 7 failed.
+Forwarding edge 2->4 to 7 failed.
+Redirecting jump 9 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 7 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.4650 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:280 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4650 ])
+            (const_int 0 [0]))) TPMCmdp.c:280 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) TPMCmdp.c:280 -1
+     (nil)
+ -> 11)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 9 8 10 4 (set (pc)
+        (label_ref:DI 16)) TPMCmdp.c:280 654 {jump}
+     (nil)
+ -> 16)
+(barrier 10 9 11)
+(code_label 11 10 12 5 46 "" [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 13 12 18 5 (call (mem:QI (symbol_ref:DI ("_plat__SetNvAvail") [flags 0x41]  <function_decl 0x7f38549620d8 _plat__SetNvAvail>) [0 _plat__SetNvAvail S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:281 -1
+     (nil)
+    (nil))
+(insn 18 13 16 5 (const_int 0 [0]) TPMCmdp.c:282 -1
+     (nil))
+(code_label 16 18 17 7 45 "" [1 uses])
+(note 17 16 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__Signal_NvOff (_rpc__Signal_NvOff, funcdef_no=15, decl_uid=4454, cgraph_uid=15, symbol_order=16)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 7 failed.
+Forwarding edge 2->4 to 7 failed.
+Redirecting jump 9 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 7 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:SI 87 [ D.4651 ])
+        (mem/c:SI (symbol_ref:DI ("s_isPowerOn") [flags 0x2]  <var_decl 0x7f3854a31090 s_isPowerOn>) [0 s_isPowerOn+0 S4 A32])) TPMCmdp.c:292 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.4651 ])
+            (const_int 0 [0]))) TPMCmdp.c:292 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) TPMCmdp.c:292 -1
+     (nil)
+ -> 11)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 9 8 10 4 (set (pc)
+        (label_ref:DI 16)) TPMCmdp.c:292 654 {jump}
+     (nil)
+ -> 16)
+(barrier 10 9 11)
+(code_label 11 10 12 5 50 "" [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 13 12 18 5 (call (mem:QI (symbol_ref:DI ("_plat__ClearNvAvail") [flags 0x41]  <function_decl 0x7f38549621b0 _plat__ClearNvAvail>) [0 _plat__ClearNvAvail S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:293 -1
+     (nil)
+    (nil))
+(insn 18 13 16 5 (const_int 0 [0]) TPMCmdp.c:294 -1
+     (nil))
+(code_label 16 18 17 7 49 "" [1 uses])
+(note 17 16 0 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+
+;; Function _rpc__RsaKeyCacheControl (_rpc__RsaKeyCacheControl, funcdef_no=16, decl_uid=4456, cgraph_uid=16, symbol_order=17)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 state+0 S4 A32])
+        (reg:SI 5 di [ state ])) TPMCmdp.c:303 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 87)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 state+0 S4 A32])) TPMCmdp.c:305 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 5 di)
+        (reg:SI 87)) TPMCmdp.c:305 -1
+     (nil))
+(call_insn 8 7 11 2 (call (mem:QI (symbol_ref:DI ("RsaKeyCacheControl") [flags 0x41]  <function_decl 0x7f3854a706c0 RsaKeyCacheControl>) [0 RsaKeyCacheControl S1 A8])
+        (const_int 0 [0])) TPMCmdp.c:305 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 11 8 0 2 (const_int 0 [0]) TPMCmdp.c:309 -1
+     (nil))
+
+;; Function _rpc__Shutdown (_rpc__Shutdown, funcdef_no=17, decl_uid=4458, cgraph_uid=17, symbol_order=18)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 5 failed.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 2 0 2 (const_int 0 [0]) TPMCmdp.c:334 -1
+     (nil))

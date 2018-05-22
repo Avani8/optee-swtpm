@@ -1,0 +1,3047 @@
+
+;; Function RsaAdjustPrimeLimit (RsaAdjustPrimeLimit, funcdef_no=2, decl_uid=12570, cgraph_uid=2, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 10 into block 9...
+Merged blocks 9 and 10.
+Merged 9 and 10 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 requestedPrimes+0 S4 A32])
+        (reg:SI 5 di [ requestedPrimes ])) CryptPrimeSieve.c:92 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 requestedPrimes+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:93 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 12)
+            (pc))) CryptPrimeSieve.c:93 -1
+     (nil)
+ -> 12)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 4 (set (reg:SI 87 [ D.13126 ])
+        (mem/u/c:SI (symbol_ref:DI ("s_PrimesInTable") [flags 0x40]  <var_decl 0x7f82ac84f000 s_PrimesInTable>) [0 s_PrimesInTable+0 S4 A32])) CryptPrimeSieve.c:93 -1
+     (nil))
+(insn 10 9 11 4 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 requestedPrimes+0 S4 A32])
+            (reg:SI 87 [ D.13126 ]))) CryptPrimeSieve.c:93 -1
+     (nil))
+(jump_insn 11 10 12 4 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) CryptPrimeSieve.c:93 -1
+     (nil)
+ -> 16)
+(code_label 12 11 13 5 2 "" [1 uses])
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 5 (set (reg:SI 94)
+        (mem/u/c:SI (symbol_ref:DI ("s_PrimesInTable") [flags 0x40]  <var_decl 0x7f82ac84f000 s_PrimesInTable>) [0 s_PrimesInTable+0 S4 A32])) CryptPrimeSieve.c:94 -1
+     (nil))
+(insn 15 14 16 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 requestedPrimes+0 S4 A32])
+        (reg:SI 94)) CryptPrimeSieve.c:94 -1
+     (nil))
+(code_label 16 15 17 6 3 "" [1 uses])
+(note 17 16 18 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 6 (set (reg:SI 95)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 requestedPrimes+0 S4 A32])) CryptPrimeSieve.c:95 -1
+     (nil))
+(insn 19 18 20 6 (parallel [
+            (set (reg:SI 88 [ D.13126 ])
+                (plus:SI (reg:SI 95)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:95 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 requestedPrimes+0 S4 A32])
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 20 19 21 6 (parallel [
+            (set (reg:SI 96)
+                (lshiftrt:SI (reg:SI 88 [ D.13126 ])
+                    (const_int 10 [0xa])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:95 -1
+     (nil))
+(insn 21 20 22 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 requestedPrimes+0 S4 A32])
+        (reg:SI 96)) CryptPrimeSieve.c:95 -1
+     (nil))
+(insn 22 21 23 6 (set (reg:SI 89 [ D.13126 ])
+        (const_int 6 [0x6])) CryptPrimeSieve.c:96 -1
+     (nil))
+(insn 23 22 24 6 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 requestedPrimes+0 S4 A32])
+            (reg:SI 89 [ D.13126 ]))) CryptPrimeSieve.c:96 -1
+     (nil))
+(jump_insn 24 23 25 6 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 31)
+            (pc))) CryptPrimeSieve.c:96 -1
+     (nil)
+ -> 31)
+(note 25 24 26 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 7 (set (reg:DI 97)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 requestedPrimes+0 S4 A32]))) CryptPrimeSieve.c:97 -1
+     (nil))
+(insn 27 26 28 7 (set (reg:SI 90 [ D.13126 ])
+        (mem/u/j:SI (plus:DI (mult:DI (reg:DI 97)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("s_PrimeMarkers") [flags 0x2]  <var_decl 0x7f82ac84f1b0 s_PrimeMarkers>)) [0 s_PrimeMarkers S4 A32])) CryptPrimeSieve.c:97 -1
+     (nil))
+(insn 28 27 29 7 (set (mem/c:SI (symbol_ref:DI ("primeLimit") [flags 0x2]  <var_decl 0x7f82ac84f2d0 primeLimit>) [0 primeLimit+0 S4 A32])
+        (reg:SI 90 [ D.13126 ])) CryptPrimeSieve.c:97 -1
+     (nil))
+(jump_insn 29 28 30 7 (set (pc)
+        (label_ref 35)) -1
+     (nil)
+ -> 35)
+(barrier 30 29 31)
+(code_label 31 30 32 8 4 "" [1 uses])
+(note 32 31 33 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 8 (set (reg:SI 91 [ D.13126 ])
+        (mem/u/c:SI (symbol_ref:DI ("s_LastPrimeInTable") [flags 0x40]  <var_decl 0x7f82ac722ea0 s_LastPrimeInTable>) [0 s_LastPrimeInTable+0 S4 A32])) CryptPrimeSieve.c:99 -1
+     (nil))
+(insn 34 33 35 8 (set (mem/c:SI (symbol_ref:DI ("primeLimit") [flags 0x2]  <var_decl 0x7f82ac84f2d0 primeLimit>) [0 primeLimit+0 S4 A32])
+        (reg:SI 91 [ D.13126 ])) CryptPrimeSieve.c:99 -1
+     (nil))
+(code_label 35 34 36 9 5 "" [1 uses])
+(note 36 35 37 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 9 (set (reg:SI 92 [ D.13126 ])
+        (mem/c:SI (symbol_ref:DI ("primeLimit") [flags 0x2]  <var_decl 0x7f82ac84f2d0 primeLimit>) [0 primeLimit+0 S4 A32])) CryptPrimeSieve.c:100 -1
+     (nil))
+(insn 38 37 39 9 (parallel [
+            (set (reg:SI 93 [ D.13126 ])
+                (lshiftrt:SI (reg:SI 92 [ D.13126 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:100 -1
+     (nil))
+(insn 39 38 42 9 (set (mem/c:SI (symbol_ref:DI ("primeLimit") [flags 0x2]  <var_decl 0x7f82ac84f2d0 primeLimit>) [0 primeLimit+0 S4 A32])
+        (reg:SI 93 [ D.13126 ])) CryptPrimeSieve.c:100 -1
+     (nil))
+(insn 42 39 0 9 (const_int 0 [0]) CryptPrimeSieve.c:101 -1
+     (nil))
+
+;; Function RsaNextPrime (RsaNextPrime, funcdef_no=3, decl_uid=12572, cgraph_uid=3, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 50.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+        (reg:SI 5 di [ lastPrime ])) CryptPrimeSieve.c:110 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:111 -1
+     (nil))
+(jump_insn 7 6 8 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 12)
+            (pc))) CryptPrimeSieve.c:111 -1
+     (nil)
+ -> 12)
+(note 8 7 9 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 9 8 10 4 (set (reg:SI 87 [ D.13127 ])
+        (const_int 0 [0])) CryptPrimeSieve.c:112 -1
+     (nil))
+(jump_insn 10 9 11 4 (set (pc)
+        (label_ref 47)) CryptPrimeSieve.c:112 -1
+     (nil)
+ -> 47)
+(barrier 11 10 12)
+(code_label 12 11 13 5 7 "" [1 uses])
+(note 13 12 14 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+                (lshiftrt:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:113 -1
+     (nil))
+(insn 15 14 16 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:114 -1
+     (nil))
+(jump_insn 16 15 17 5 (set (pc)
+        (label_ref 39)) CryptPrimeSieve.c:114 -1
+     (nil)
+ -> 39)
+(barrier 17 16 42)
+(code_label 42 17 18 6 11 "" [1 uses])
+(note 18 42 19 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 6 (set (reg:SI 97)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])) CryptPrimeSieve.c:116 -1
+     (nil))
+(insn 20 19 21 6 (parallel [
+            (set (reg:SI 89 [ D.13128 ])
+                (lshiftrt:SI (reg:SI 97)
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:116 -1
+     (expr_list:REG_EQUAL (lshiftrt:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 21 20 22 6 (set (reg:DI 98)
+        (zero_extend:DI (reg:SI 89 [ D.13128 ]))) CryptPrimeSieve.c:116 -1
+     (nil))
+(insn 22 21 23 6 (set (reg:QI 90 [ D.13129 ])
+        (mem/u/j:QI (plus:DI (reg:DI 98)
+                (symbol_ref:DI ("s_PrimeTable") [flags 0x40]  <var_decl 0x7f82ac84f090 s_PrimeTable>)) [0 s_PrimeTable S1 A8])) CryptPrimeSieve.c:116 -1
+     (nil))
+(insn 23 22 24 6 (set (reg:SI 91 [ D.13130 ])
+        (zero_extend:SI (reg:QI 90 [ D.13129 ]))) CryptPrimeSieve.c:116 -1
+     (nil))
+(insn 24 23 25 6 (set (reg:SI 99)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])) CryptPrimeSieve.c:116 -1
+     (nil))
+(insn 25 24 26 6 (parallel [
+            (set (reg:SI 92 [ D.13128 ])
+                (and:SI (reg:SI 99)
+                    (const_int 7 [0x7])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:116 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+            (const_int 7 [0x7]))
+        (nil)))
+(insn 26 25 27 6 (parallel [
+            (set (reg:SI 93 [ D.13130 ])
+                (ashiftrt:SI (reg:SI 91 [ D.13130 ])
+                    (subreg:QI (reg:SI 92 [ D.13128 ]) 0)))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:116 -1
+     (nil))
+(insn 27 26 28 6 (parallel [
+            (set (reg:SI 94 [ D.13130 ])
+                (and:SI (reg:SI 93 [ D.13130 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:116 -1
+     (nil))
+(insn 28 27 29 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 94 [ D.13130 ])
+            (const_int 0 [0]))) CryptPrimeSieve.c:116 -1
+     (nil))
+(jump_insn 29 28 30 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 36)
+            (pc))) CryptPrimeSieve.c:116 -1
+     (nil)
+ -> 36)
+(note 30 29 31 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 7 (set (reg:SI 100)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])) CryptPrimeSieve.c:117 -1
+     (nil))
+(insn 32 31 33 7 (parallel [
+            (set (reg:SI 95 [ D.13128 ])
+                (ashift:SI (reg:SI 100)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:117 -1
+     (expr_list:REG_EQUAL (ashift:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 33 32 34 7 (parallel [
+            (set (reg:SI 87 [ D.13127 ])
+                (plus:SI (reg:SI 95 [ D.13128 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:117 -1
+     (nil))
+(jump_insn 34 33 35 7 (set (pc)
+        (label_ref 47)) CryptPrimeSieve.c:117 -1
+     (nil)
+ -> 47)
+(barrier 35 34 36)
+(code_label 36 35 37 8 10 "" [1 uses])
+(note 37 36 38 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 8 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:114 -1
+     (nil))
+(code_label 39 38 40 9 9 "" [1 uses])
+(note 40 39 41 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 43 9 (set (reg:SI 88 [ D.13128 ])
+        (mem/c:SI (symbol_ref:DI ("primeLimit") [flags 0x2]  <var_decl 0x7f82ac84f2d0 primeLimit>) [0 primeLimit+0 S4 A32])) CryptPrimeSieve.c:114 -1
+     (nil))
+(insn 43 41 44 9 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 lastPrime+0 S4 A32])
+            (reg:SI 88 [ D.13128 ]))) CryptPrimeSieve.c:114 -1
+     (nil))
+(jump_insn 44 43 45 9 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) CryptPrimeSieve.c:114 -1
+     (nil)
+ -> 42)
+(note 45 44 46 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 10 (set (reg:SI 87 [ D.13127 ])
+        (const_int 0 [0])) CryptPrimeSieve.c:119 -1
+     (nil))
+(code_label 47 46 48 11 8 "" [2 uses])
+(note 48 47 49 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 53 11 (set (reg:SI 96 [ <retval> ])
+        (reg:SI 87 [ D.13127 ])) -1
+     (nil))
+(insn 53 49 54 11 (set (reg/i:SI 0 ax)
+        (reg:SI 96 [ <retval> ])) CryptPrimeSieve.c:120 -1
+     (nil))
+(insn 54 53 0 11 (use (reg/i:SI 0 ax)) CryptPrimeSieve.c:120 -1
+     (nil))
+
+;; Function BitsInArray (BitsInArray, funcdef_no=4, decl_uid=12870, cgraph_uid=4, symbol_order=9)
+
+Partition 0: size 4 align 4
+	j_3
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Removing jump 40.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 a+0 S8 A64])
+        (reg:DI 5 di [ a ])) CryptPrimeSieve.c:190 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 aSize+0 S4 A32])
+        (reg:SI 4 si [ aSize ])) CryptPrimeSieve.c:190 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 j+0 S4 A32])
+        (const_int 0 [0])) CryptPrimeSieve.c:191 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (label_ref 30)) CryptPrimeSieve.c:192 -1
+     (nil)
+ -> 30)
+(barrier 9 8 32)
+(code_label 32 9 10 4 14 "" [1 uses])
+(note 10 32 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg/f:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 a+0 S8 A64])) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:QI 87 [ D.13131 ])
+        (mem:QI (reg/f:DI 101) [0 *a_1+0 S1 A8])) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:SI 88 [ D.13132 ])
+        (zero_extend:SI (reg:QI 87 [ D.13131 ]))) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 14 13 15 4 (parallel [
+            (set (reg:SI 89 [ D.13132 ])
+                (and:SI (reg:SI 88 [ D.13132 ])
+                    (const_int 15 [0xf])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 102)
+        (sign_extend:DI (reg:SI 89 [ D.13132 ]))) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:QI 90 [ D.13131 ])
+        (mem/u/j:QI (plus:DI (reg:DI 102)
+                (symbol_ref:DI ("bitsInNibble") [flags 0x2]  <var_decl 0x7f82ac84f480 bitsInNibble>)) [0 bitsInNibble S1 A8])) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 91 [ D.13132 ])
+        (zero_extend:SI (reg:QI 90 [ D.13131 ]))) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 18 17 19 4 (set (reg/f:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 a+0 S8 A64])) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:QI 92 [ D.13131 ])
+        (mem:QI (reg/f:DI 103) [0 *a_1+0 S1 A8])) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 20 19 21 4 (parallel [
+            (set (reg:QI 93 [ D.13131 ])
+                (lshiftrt:QI (reg:QI 92 [ D.13131 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 94 [ D.13132 ])
+        (zero_extend:SI (reg:QI 93 [ D.13131 ]))) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 22 21 23 4 (parallel [
+            (set (reg:SI 95 [ D.13132 ])
+                (and:SI (reg:SI 94 [ D.13132 ])
+                    (const_int 15 [0xf])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:DI 104)
+        (sign_extend:DI (reg:SI 95 [ D.13132 ]))) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:QI 96 [ D.13131 ])
+        (mem/u/j:QI (plus:DI (reg:DI 104)
+                (symbol_ref:DI ("bitsInNibble") [flags 0x2]  <var_decl 0x7f82ac84f480 bitsInNibble>)) [0 bitsInNibble S1 A8])) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 97 [ D.13132 ])
+        (zero_extend:SI (reg:QI 96 [ D.13131 ]))) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 26 25 27 4 (parallel [
+            (set (reg:SI 98 [ D.13132 ])
+                (plus:SI (reg:SI 91 [ D.13132 ])
+                    (reg:SI 97 [ D.13132 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 27 26 28 4 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 j+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 j+0 S4 A32])
+                    (reg:SI 98 [ D.13132 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:193 -1
+     (nil))
+(insn 28 27 29 4 (parallel [
+            (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -24 [0xffffffffffffffe8])) [0 a+0 S8 A64])
+                (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -24 [0xffffffffffffffe8])) [0 a+0 S8 A64])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:192 -1
+     (nil))
+(insn 29 28 30 4 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -28 [0xffffffffffffffe4])) [0 aSize+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -28 [0xffffffffffffffe4])) [0 aSize+0 S4 A32])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:192 -1
+     (nil))
+(code_label 30 29 31 5 13 "" [1 uses])
+(note 31 30 33 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 33 31 34 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -28 [0xffffffffffffffe4])) [0 aSize+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:192 -1
+     (nil))
+(jump_insn 34 33 35 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) CryptPrimeSieve.c:192 -1
+     (nil)
+ -> 32)
+(note 35 34 36 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 39 6 (set (reg:SI 99 [ D.13132 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 j+0 S4 A32])) CryptPrimeSieve.c:194 -1
+     (nil))
+(insn 39 36 43 6 (set (reg:SI 100 [ <retval> ])
+        (reg:SI 99 [ D.13132 ])) CryptPrimeSieve.c:194 -1
+     (nil))
+(insn 43 39 44 6 (set (reg/i:SI 0 ax)
+        (reg:SI 100 [ <retval> ])) CryptPrimeSieve.c:195 -1
+     (nil))
+(insn 44 43 0 6 (use (reg/i:SI 0 ax)) CryptPrimeSieve.c:195 -1
+     (nil))
+
+;; Function FindNthSetBit (FindNthSetBit, funcdef_no=5, decl_uid=12576, cgraph_uid=5, symbol_order=10)
+
+Partition 2: size 4 align 4
+	sum_3
+Partition 1: size 4 align 4
+	retValue_2
+Partition 0: size 2 align 2
+	i_1
+Partition 3: size 1 align 1
+	sel_5
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 105 from 14 to 15.
+Merging block 14 into block 13...
+Merged blocks 13 and 14.
+Merged 13 and 14 without moving.
+Removing jump 115.
+Merging block 16 into block 15...
+Merged blocks 15 and 16.
+Merged 15 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 4 2 (set (reg:SI 127)
+        (reg:SI 5 di [ aSize ])) CryptPrimeSieve.c:209 -1
+     (nil))
+(insn 4 2 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 a+0 S8 A64])
+        (reg:DI 4 si [ a ])) CryptPrimeSieve.c:209 -1
+     (nil))
+(insn 5 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 n+0 S4 A32])
+        (reg:SI 1 dx [ n ])) CryptPrimeSieve.c:209 -1
+     (nil))
+(insn 3 5 6 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 aSize+0 S2 A32])
+        (subreg:HI (reg:SI 127) 0)) CryptPrimeSieve.c:209 -1
+     (nil))
+(note 6 3 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 sum+0 S4 A32])
+        (const_int 0 [0])) CryptPrimeSieve.c:212 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [0 i+0 S2 A16])
+        (const_int 0 [0])) CryptPrimeSieve.c:215 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (label_ref 39)) CryptPrimeSieve.c:215 -1
+     (nil)
+ -> 39)
+(barrier 12 11 45)
+(code_label 45 12 13 4 19 "" [1 uses])
+(note 13 45 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:DI 88 [ D.13134 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])) [0 i+0 S2 A16]))) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 15 14 16 4 (set (reg/f:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 a+0 S8 A64])) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 16 15 17 4 (parallel [
+            (set (reg/f:DI 89 [ D.13135 ])
+                (plus:DI (reg:DI 88 [ D.13134 ])
+                    (reg/f:DI 128)))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:216 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 a+0 S8 A64])
+            (reg:DI 88 [ D.13134 ]))
+        (nil)))
+(insn 17 16 18 4 (set (reg:QI 90 [ D.13136 ])
+        (mem:QI (reg/f:DI 89 [ D.13135 ]) [0 *_13+0 S1 A8])) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:SI 91 [ D.13133 ])
+        (zero_extend:SI (reg:QI 90 [ D.13136 ]))) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 19 18 20 4 (parallel [
+            (set (reg:SI 92 [ D.13133 ])
+                (and:SI (reg:SI 91 [ D.13133 ])
+                    (const_int 15 [0xf])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:DI 129)
+        (sign_extend:DI (reg:SI 92 [ D.13133 ]))) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:QI 93 [ D.13136 ])
+        (mem/u/j:QI (plus:DI (reg:DI 129)
+                (symbol_ref:DI ("bitsInNibble") [flags 0x2]  <var_decl 0x7f82ac84f480 bitsInNibble>)) [0 bitsInNibble S1 A8])) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 94 [ D.13133 ])
+        (zero_extend:SI (reg:QI 93 [ D.13136 ]))) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:DI 95 [ D.13134 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])) [0 i+0 S2 A16]))) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 24 23 25 4 (set (reg/f:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 a+0 S8 A64])) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 25 24 26 4 (parallel [
+            (set (reg/f:DI 96 [ D.13135 ])
+                (plus:DI (reg:DI 95 [ D.13134 ])
+                    (reg/f:DI 130)))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:216 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 a+0 S8 A64])
+            (reg:DI 95 [ D.13134 ]))
+        (nil)))
+(insn 26 25 27 4 (set (reg:QI 97 [ D.13136 ])
+        (mem:QI (reg/f:DI 96 [ D.13135 ]) [0 *_21+0 S1 A8])) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 27 26 28 4 (parallel [
+            (set (reg:QI 98 [ D.13136 ])
+                (lshiftrt:QI (reg:QI 97 [ D.13136 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:SI 99 [ D.13133 ])
+        (zero_extend:SI (reg:QI 98 [ D.13136 ]))) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 29 28 30 4 (parallel [
+            (set (reg:SI 100 [ D.13133 ])
+                (and:SI (reg:SI 99 [ D.13133 ])
+                    (const_int 15 [0xf])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 30 29 31 4 (set (reg:DI 131)
+        (sign_extend:DI (reg:SI 100 [ D.13133 ]))) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:QI 101 [ D.13136 ])
+        (mem/u/j:QI (plus:DI (reg:DI 131)
+                (symbol_ref:DI ("bitsInNibble") [flags 0x2]  <var_decl 0x7f82ac84f480 bitsInNibble>)) [0 bitsInNibble S1 A8])) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:SI 102 [ D.13133 ])
+        (zero_extend:SI (reg:QI 101 [ D.13136 ]))) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 33 32 34 4 (parallel [
+            (set (reg:SI 103 [ D.13133 ])
+                (plus:SI (reg:SI 94 [ D.13133 ])
+                    (reg:SI 102 [ D.13133 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 34 33 35 4 (set (reg:SI 104 [ D.13137 ])
+        (reg:SI 103 [ D.13133 ])) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 35 34 36 4 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 sum+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 sum+0 S4 A32])
+                    (reg:SI 104 [ D.13137 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:216 -1
+     (nil))
+(insn 36 35 37 4 (set (reg:HI 105 [ D.13138 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [0 i+0 S2 A16])) CryptPrimeSieve.c:215 -1
+     (nil))
+(insn 37 36 38 4 (parallel [
+            (set (reg:HI 132)
+                (plus:HI (reg:HI 105 [ D.13138 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:215 -1
+     (nil))
+(insn 38 37 39 4 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [0 i+0 S2 A16])
+        (reg:HI 132)) CryptPrimeSieve.c:215 -1
+     (nil))
+(code_label 39 38 40 5 17 "" [1 uses])
+(note 40 39 41 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 5 (set (reg:HI 133)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [0 i+0 S2 A16])) CryptPrimeSieve.c:215 -1
+     (nil))
+(insn 42 41 43 5 (set (reg:CC 17 flags)
+        (compare:CC (reg:HI 133)
+            (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 aSize+0 S2 A32]))) CryptPrimeSieve.c:215 -1
+     (nil))
+(jump_insn 43 42 44 5 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 49)
+            (pc))) CryptPrimeSieve.c:215 -1
+     (nil)
+ -> 49)
+(note 44 43 46 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 46 44 47 6 (set (reg:SI 134)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 sum+0 S4 A32])) CryptPrimeSieve.c:215 -1
+     (nil))
+(insn 47 46 48 6 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 134)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 n+0 S4 A32]))) CryptPrimeSieve.c:215 -1
+     (nil))
+(jump_insn 48 47 49 6 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) CryptPrimeSieve.c:215 -1
+     (nil)
+ -> 45)
+(code_label 49 48 50 7 18 "" [1 uses])
+(note 50 49 51 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 51 50 52 7 (set (reg:HI 106 [ D.13138 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [0 i+0 S2 A16])) CryptPrimeSieve.c:217 -1
+     (nil))
+(insn 52 51 53 7 (parallel [
+            (set (reg:HI 135)
+                (plus:HI (reg:HI 106 [ D.13138 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:217 -1
+     (nil))
+(insn 53 52 54 7 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [0 i+0 S2 A16])
+        (reg:HI 135)) CryptPrimeSieve.c:217 -1
+     (nil))
+(insn 54 53 55 7 (set (reg:SI 107 [ D.13133 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])) [0 i+0 S2 A16]))) CryptPrimeSieve.c:220 -1
+     (nil))
+(insn 55 54 56 7 (parallel [
+            (set (reg:SI 108 [ D.13133 ])
+                (ashift:SI (reg:SI 107 [ D.13133 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:220 -1
+     (nil))
+(insn 56 55 57 7 (parallel [
+            (set (reg:SI 136)
+                (plus:SI (reg:SI 108 [ D.13133 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:220 -1
+     (nil))
+(insn 57 56 58 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 retValue+0 S4 A32])
+        (reg:SI 136)) CryptPrimeSieve.c:220 -1
+     (nil))
+(insn 58 57 59 7 (set (reg:DI 109 [ D.13134 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])) [0 i+0 S2 A16]))) CryptPrimeSieve.c:221 -1
+     (nil))
+(insn 59 58 60 7 (set (reg/f:DI 137)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 a+0 S8 A64])) CryptPrimeSieve.c:221 -1
+     (nil))
+(insn 60 59 61 7 (parallel [
+            (set (reg/f:DI 110 [ D.13135 ])
+                (plus:DI (reg:DI 109 [ D.13134 ])
+                    (reg/f:DI 137)))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:221 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 a+0 S8 A64])
+            (reg:DI 109 [ D.13134 ]))
+        (nil)))
+(insn 61 60 62 7 (set (reg:QI 138)
+        (mem:QI (reg/f:DI 110 [ D.13135 ]) [0 *_39+0 S1 A8])) CryptPrimeSieve.c:221 -1
+     (nil))
+(insn 62 61 63 7 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -11 [0xfffffffffffffff5])) [0 sel+0 S1 A8])
+        (reg:QI 138)) CryptPrimeSieve.c:221 -1
+     (nil))
+(insn 63 62 64 7 (set (reg:SI 111 [ D.13133 ])
+        (zero_extend:SI (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -11 [0xfffffffffffffff5])) [0 sel+0 S1 A8]))) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 64 63 65 7 (parallel [
+            (set (reg:SI 112 [ D.13133 ])
+                (and:SI (reg:SI 111 [ D.13133 ])
+                    (const_int 15 [0xf])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 65 64 66 7 (set (reg:DI 139)
+        (sign_extend:DI (reg:SI 112 [ D.13133 ]))) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 66 65 67 7 (set (reg:QI 113 [ D.13136 ])
+        (mem/u/j:QI (plus:DI (reg:DI 139)
+                (symbol_ref:DI ("bitsInNibble") [flags 0x2]  <var_decl 0x7f82ac84f480 bitsInNibble>)) [0 bitsInNibble S1 A8])) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 67 66 68 7 (set (reg:SI 114 [ D.13133 ])
+        (zero_extend:SI (reg:QI 113 [ D.13136 ]))) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 68 67 69 7 (set (reg:QI 140)
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -11 [0xfffffffffffffff5])) [0 sel+0 S1 A8])) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 69 68 70 7 (parallel [
+            (set (reg:QI 115 [ D.13136 ])
+                (lshiftrt:QI (reg:QI 140)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:223 -1
+     (expr_list:REG_EQUAL (lshiftrt:QI (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -11 [0xfffffffffffffff5])) [0 sel+0 S1 A8])
+            (const_int 4 [0x4]))
+        (nil)))
+(insn 70 69 71 7 (set (reg:SI 116 [ D.13133 ])
+        (zero_extend:SI (reg:QI 115 [ D.13136 ]))) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 71 70 72 7 (parallel [
+            (set (reg:SI 117 [ D.13133 ])
+                (and:SI (reg:SI 116 [ D.13133 ])
+                    (const_int 15 [0xf])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 72 71 73 7 (set (reg:DI 141)
+        (sign_extend:DI (reg:SI 117 [ D.13133 ]))) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 73 72 74 7 (set (reg:QI 118 [ D.13136 ])
+        (mem/u/j:QI (plus:DI (reg:DI 141)
+                (symbol_ref:DI ("bitsInNibble") [flags 0x2]  <var_decl 0x7f82ac84f480 bitsInNibble>)) [0 bitsInNibble S1 A8])) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 74 73 75 7 (set (reg:SI 119 [ D.13133 ])
+        (zero_extend:SI (reg:QI 118 [ D.13136 ]))) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 75 74 76 7 (parallel [
+            (set (reg:SI 120 [ D.13133 ])
+                (plus:SI (reg:SI 114 [ D.13133 ])
+                    (reg:SI 119 [ D.13133 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 76 75 77 7 (set (reg:SI 121 [ D.13137 ])
+        (reg:SI 120 [ D.13133 ])) CryptPrimeSieve.c:223 -1
+     (nil))
+(insn 77 76 78 7 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 sum+0 S4 A32])
+                (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 sum+0 S4 A32])
+                    (reg:SI 121 [ D.13137 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:223 -1
+     (nil))
+(jump_insn 78 77 79 7 (set (pc)
+        (label_ref 89)) CryptPrimeSieve.c:225 -1
+     (nil)
+ -> 89)
+(barrier 79 78 94)
+(code_label 94 79 80 8 22 "" [1 uses])
+(note 80 94 81 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 81 80 82 8 (set (reg:SI 122 [ D.13133 ])
+        (zero_extend:SI (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -11 [0xfffffffffffffff5])) [0 sel+0 S1 A8]))) CryptPrimeSieve.c:226 -1
+     (nil))
+(insn 82 81 83 8 (parallel [
+            (set (reg:SI 123 [ D.13133 ])
+                (and:SI (reg:SI 122 [ D.13133 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:226 -1
+     (nil))
+(insn 83 82 84 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 123 [ D.13133 ])
+            (const_int 0 [0]))) CryptPrimeSieve.c:226 -1
+     (nil))
+(insn 84 83 85 8 (set (reg:QI 124 [ D.13139 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) CryptPrimeSieve.c:226 -1
+     (nil))
+(insn 85 84 86 8 (set (reg:SI 125 [ D.13137 ])
+        (zero_extend:SI (reg:QI 124 [ D.13139 ]))) CryptPrimeSieve.c:226 -1
+     (nil))
+(insn 86 85 87 8 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 sum+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 sum+0 S4 A32])
+                    (reg:SI 125 [ D.13137 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:226 -1
+     (nil))
+(insn 87 86 88 8 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 retValue+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -8 [0xfffffffffffffff8])) [0 retValue+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:225 -1
+     (nil))
+(insn 88 87 89 8 (parallel [
+            (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -11 [0xfffffffffffffff5])) [0 sel+0 S1 A8])
+                (lshiftrt:QI (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -11 [0xfffffffffffffff5])) [0 sel+0 S1 A8])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:225 -1
+     (nil))
+(code_label 89 88 90 9 20 "" [1 uses])
+(note 90 89 91 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 91 90 92 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -11 [0xfffffffffffffff5])) [0 sel+0 S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:225 -1
+     (nil))
+(jump_insn 92 91 93 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 98)
+            (pc))) CryptPrimeSieve.c:225 -1
+     (nil)
+ -> 98)
+(note 93 92 95 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 95 93 96 10 (set (reg:SI 142)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 sum+0 S4 A32])) CryptPrimeSieve.c:225 -1
+     (nil))
+(insn 96 95 97 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 142)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 n+0 S4 A32]))) CryptPrimeSieve.c:225 -1
+     (nil))
+(jump_insn 97 96 98 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 94)
+            (pc))) CryptPrimeSieve.c:225 -1
+     (nil)
+ -> 94)
+(code_label 98 97 99 11 21 "" [1 uses])
+(note 99 98 100 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 100 99 101 11 (set (reg:SI 143)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 sum+0 S4 A32])) CryptPrimeSieve.c:227 -1
+     (nil))
+(insn 101 100 102 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 143)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 n+0 S4 A32]))) CryptPrimeSieve.c:227 -1
+     (nil))
+(jump_insn 102 101 103 11 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 107)
+            (pc))) CryptPrimeSieve.c:227 -1
+     (nil)
+ -> 107)
+(note 103 102 104 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 104 103 105 12 (set (reg:SI 87 [ D.13133 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 retValue+0 S4 A32])) CryptPrimeSieve.c:227 -1
+     (nil))
+(jump_insn 105 104 106 12 (set (pc)
+        (label_ref:DI 112)) 654 {jump}
+     (nil)
+ -> 112)
+(barrier 106 105 107)
+(code_label 107 106 108 13 23 "" [1 uses])
+(note 108 107 109 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 109 108 112 13 (set (reg:SI 87 [ D.13133 ])
+        (const_int -1 [0xffffffffffffffff])) CryptPrimeSieve.c:227 -1
+     (nil))
+(code_label 112 109 113 15 25 "" [1 uses])
+(note 113 112 114 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 114 113 118 15 (set (reg:SI 126 [ <retval> ])
+        (reg:SI 87 [ D.13133 ])) CryptPrimeSieve.c:227 -1
+     (nil))
+(insn 118 114 119 15 (set (reg/i:SI 0 ax)
+        (reg:SI 126 [ <retval> ])) CryptPrimeSieve.c:228 -1
+     (nil))
+(insn 119 118 0 15 (use (reg/i:SI 0 ax)) CryptPrimeSieve.c:228 -1
+     (nil))
+
+;; Function PrimeSieve (PrimeSieve, funcdef_no=6, decl_uid=12580, cgraph_uid=6, symbol_order=12)
+
+Partition 12: size 32 align 16
+	pList
+Partition 2: size 8 align 8
+	pField_6
+Partition 11: size 4 align 4
+	r_78
+Partition 10: size 4 align 4
+	fieldBits_25
+Partition 9: size 4 align 4
+	next_15
+Partition 8: size 4 align 4
+	composite_13
+Partition 7: size 4 align 4
+	stop_12
+Partition 6: size 4 align 4
+	count_11
+Partition 5: size 4 align 4
+	mark_10
+Partition 4: size 4 align 4
+	adjust_9
+Partition 3: size 4 align 4
+	iter_7
+Partition 1: size 4 align 4
+	j_4
+Partition 0: size 4 align 4
+	i_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 20->21 to 35 failed.
+Merging block 36 into block 35...
+Merged blocks 35 and 36.
+Merged 35 and 36 without moving.
+Removing jump 274.
+Merging block 37 into block 35...
+Merged blocks 35 and 37.
+Merged 35 and 37 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 20->21 to 35 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 bnN+0 S8 A64])
+        (reg:DI 5 di [ bnN ])) CryptPrimeSieve.c:252 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 fieldSize+0 S4 A32])
+        (reg:SI 4 si [ fieldSize ])) CryptPrimeSieve.c:252 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -136 [0xffffffffffffff78])) [0 field+0 S8 A64])
+        (reg:DI 1 dx [ field ])) CryptPrimeSieve.c:252 -1
+     (nil))
+(note 5 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 5 12 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13146+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:252 -1
+     (nil))
+(insn 12 6 13 2 (set (reg:SI 111)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 fieldSize+0 S4 A32])) CryptPrimeSieve.c:255 -1
+     (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg:SI 110)
+                (ashift:SI (reg:SI 111)
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:255 -1
+     (expr_list:REG_EQUAL (ashift:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -124 [0xffffffffffffff84])) [0 fieldSize+0 S4 A32])
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 14 13 15 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -64 [0xffffffffffffffc0])) [0 fieldBits+0 S4 A32])
+        (reg:SI 110)) CryptPrimeSieve.c:255 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -84 [0xffffffffffffffac])) [0 mark+0 S4 A32])
+        (const_int 0 [0])) CryptPrimeSieve.c:260 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:HI 87 [ D.13140 ])
+        (const_int 7 [0x7])) CryptPrimeSieve.c:261 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 112)
+        (zero_extend:SI (reg:HI 87 [ D.13140 ]))) CryptPrimeSieve.c:261 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 count+0 S4 A32])
+        (reg:SI 112)) CryptPrimeSieve.c:261 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:HI 88 [ D.13140 ])
+        (const_int 31 [0x1f])) CryptPrimeSieve.c:262 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 113)
+        (zero_extend:SI (reg:HI 88 [ D.13140 ]))) CryptPrimeSieve.c:262 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -76 [0xffffffffffffffb4])) [0 stop+0 S4 A32])
+        (reg:SI 113)) CryptPrimeSieve.c:262 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -136 [0xffffffffffffff78])) [0 field+0 S8 A64])
+            (const_int 0 [0]))) CryptPrimeSieve.c:266 -1
+     (nil))
+(jump_insn 23 22 24 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 27)
+            (pc))) CryptPrimeSieve.c:266 -1
+     (nil)
+ -> 27)
+(note 24 23 25 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 26 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -120 [0xffffffffffffff88])) [0 bnN+0 S8 A64])
+            (const_int 0 [0]))) CryptPrimeSieve.c:266 -1
+     (nil))
+(jump_insn 26 25 27 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) CryptPrimeSieve.c:266 -1
+     (nil)
+ -> 34)
+(code_label 27 26 28 5 27 "" [1 uses])
+(note 28 27 29 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 5 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) CryptPrimeSieve.c:266 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:SI 4 si)
+        (const_int 266 [0x10a])) CryptPrimeSieve.c:266 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:DI 5 di)
+        (const_int 0 [0])) CryptPrimeSieve.c:266 -1
+     (nil))
+(call_insn 32 31 33 5 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7f82ac7620d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CryptPrimeSieve.c:266 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 33 32 34)
+(code_label 34 33 35 6 28 "" [1 uses])
+(note 35 34 36 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 6 (set (reg:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 bnN+0 S8 A64])) CryptPrimeSieve.c:270 -1
+     (nil))
+(insn 37 36 38 6 (set (reg:DI 4 si)
+        (const_int 105 [0x69])) CryptPrimeSieve.c:270 -1
+     (nil))
+(insn 38 37 39 6 (set (reg:DI 5 di)
+        (reg:DI 114)) CryptPrimeSieve.c:270 -1
+     (nil))
+(call_insn 39 38 40 6 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnModWord") [flags 0x41]  <function_decl 0x7f82ac804bd0 BnModWord>) [0 BnModWord S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:270 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 40 39 41 6 (set (reg:DI 89 [ D.13141 ])
+        (reg:DI 0 ax)) CryptPrimeSieve.c:270 -1
+     (nil))
+(insn 41 40 42 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 adjust+0 S4 A32])
+        (subreg:SI (reg:DI 89 [ D.13141 ]) 0)) CryptPrimeSieve.c:270 -1
+     (nil))
+(insn 42 41 43 6 (set (reg:SI 115)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -88 [0xffffffffffffffa8])) [0 adjust+0 S4 A32])) CryptPrimeSieve.c:271 -1
+     (nil))
+(insn 43 42 44 6 (parallel [
+            (set (reg:SI 90 [ D.13142 ])
+                (and:SI (reg:SI 115)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:271 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -88 [0xffffffffffffffa8])) [0 adjust+0 S4 A32])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 44 43 45 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13142 ])
+            (const_int 0 [0]))) CryptPrimeSieve.c:271 -1
+     (nil))
+(jump_insn 45 44 46 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 48)
+            (pc))) CryptPrimeSieve.c:271 -1
+     (nil)
+ -> 48)
+(note 46 45 47 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 7 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -88 [0xffffffffffffffa8])) [0 adjust+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -88 [0xffffffffffffffa8])) [0 adjust+0 S4 A32])
+                    (const_int 105 [0x69])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:272 -1
+     (nil))
+(code_label 48 47 49 8 29 "" [1 uses])
+(note 49 48 50 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 8 (set (reg:DI 91 [ D.13143 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -88 [0xffffffffffffffa8])) [0 adjust+0 S4 A32]))) CryptPrimeSieve.c:275 -1
+     (nil))
+(insn 51 50 52 8 (set (reg:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 bnN+0 S8 A64])) CryptPrimeSieve.c:275 -1
+     (nil))
+(insn 52 51 53 8 (set (reg:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 bnN+0 S8 A64])) CryptPrimeSieve.c:275 -1
+     (nil))
+(insn 53 52 54 8 (set (reg:DI 1 dx)
+        (reg:DI 91 [ D.13143 ])) CryptPrimeSieve.c:275 -1
+     (nil))
+(insn 54 53 55 8 (set (reg:DI 4 si)
+        (reg:DI 116)) CryptPrimeSieve.c:275 -1
+     (nil))
+(insn 55 54 56 8 (set (reg:DI 5 di)
+        (reg:DI 117)) CryptPrimeSieve.c:275 -1
+     (nil))
+(call_insn 56 55 57 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnSubWord") [flags 0x41]  <function_decl 0x7f82ac804948 BnSubWord>) [0 BnSubWord S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:275 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 57 56 58 8 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -136 [0xffffffffffffff78])) [0 field+0 S8 A64])) CryptPrimeSieve.c:277 -1
+     (nil))
+(insn 58 57 59 8 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 pField+0 S8 A64])
+        (reg/f:DI 118)) CryptPrimeSieve.c:277 -1
+     (nil))
+(insn 59 58 60 8 (set (reg:SI 119)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 fieldSize+0 S4 A32])) CryptPrimeSieve.c:278 -1
+     (nil))
+(insn 60 59 61 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+        (reg:SI 119)) CryptPrimeSieve.c:278 -1
+     (nil))
+(jump_insn 61 60 62 8 (set (pc)
+        (label_ref 96)) CryptPrimeSieve.c:278 -1
+     (nil)
+ -> 96)
+(barrier 62 61 98)
+(code_label 98 62 63 9 31 "" [1 uses])
+(note 63 98 64 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 65 9 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 pField+0 S8 A64])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 65 64 66 9 (set (reg:DI 121)
+        (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 66 65 67 9 (set (reg:DI 122)
+        (mem/u/c:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>) [0 MEM[(char * {ref-all})&seedValues]+0 S8 A256])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 67 66 68 9 (set (mem:DI (reg/f:DI 120) [0 MEM[(char * {ref-all})pField_6]+0 S8 A8])
+        (reg:DI 122)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 68 67 69 9 (set (reg:DI 123)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 8 [0x8]))) [0 MEM[(char * {ref-all})&seedValues]+8 S8 A64])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 69 68 70 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 8 [0x8])) [0 MEM[(char * {ref-all})pField_6]+8 S8 A8])
+        (reg:DI 123)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 70 69 71 9 (set (reg:DI 124)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 16 [0x10]))) [0 MEM[(char * {ref-all})&seedValues]+16 S8 A128])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 71 70 72 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 16 [0x10])) [0 MEM[(char * {ref-all})pField_6]+16 S8 A8])
+        (reg:DI 124)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 72 71 73 9 (set (reg:DI 125)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 24 [0x18]))) [0 MEM[(char * {ref-all})&seedValues]+24 S8 A64])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 73 72 74 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 24 [0x18])) [0 MEM[(char * {ref-all})pField_6]+24 S8 A8])
+        (reg:DI 125)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 74 73 75 9 (set (reg:DI 126)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 32 [0x20]))) [0 MEM[(char * {ref-all})&seedValues]+32 S8 A256])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 75 74 76 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 32 [0x20])) [0 MEM[(char * {ref-all})pField_6]+32 S8 A8])
+        (reg:DI 126)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 76 75 77 9 (set (reg:DI 127)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 40 [0x28]))) [0 MEM[(char * {ref-all})&seedValues]+40 S8 A64])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 77 76 78 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 40 [0x28])) [0 MEM[(char * {ref-all})pField_6]+40 S8 A8])
+        (reg:DI 127)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 78 77 79 9 (set (reg:DI 128)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 48 [0x30]))) [0 MEM[(char * {ref-all})&seedValues]+48 S8 A128])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 79 78 80 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 48 [0x30])) [0 MEM[(char * {ref-all})pField_6]+48 S8 A8])
+        (reg:DI 128)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 80 79 81 9 (set (reg:DI 129)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 56 [0x38]))) [0 MEM[(char * {ref-all})&seedValues]+56 S8 A64])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 81 80 82 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 56 [0x38])) [0 MEM[(char * {ref-all})pField_6]+56 S8 A8])
+        (reg:DI 129)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 82 81 83 9 (set (reg:DI 130)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 64 [0x40]))) [0 MEM[(char * {ref-all})&seedValues]+64 S8 A256])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 83 82 84 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 64 [0x40])) [0 MEM[(char * {ref-all})pField_6]+64 S8 A8])
+        (reg:DI 130)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 84 83 85 9 (set (reg:DI 131)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 72 [0x48]))) [0 MEM[(char * {ref-all})&seedValues]+72 S8 A64])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 85 84 86 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 72 [0x48])) [0 MEM[(char * {ref-all})pField_6]+72 S8 A8])
+        (reg:DI 131)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 86 85 87 9 (set (reg:DI 132)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 80 [0x50]))) [0 MEM[(char * {ref-all})&seedValues]+80 S8 A128])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 87 86 88 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 80 [0x50])) [0 MEM[(char * {ref-all})pField_6]+80 S8 A8])
+        (reg:DI 132)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 88 87 89 9 (set (reg:DI 133)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 88 [0x58]))) [0 MEM[(char * {ref-all})&seedValues]+88 S8 A64])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 89 88 90 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 88 [0x58])) [0 MEM[(char * {ref-all})pField_6]+88 S8 A8])
+        (reg:DI 133)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 90 89 91 9 (set (reg:DI 134)
+        (mem/u/c:DI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 96 [0x60]))) [0 MEM[(char * {ref-all})&seedValues]+96 S8 A256])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 91 90 92 9 (set (mem:DI (plus:DI (reg/f:DI 120)
+                (const_int 96 [0x60])) [0 MEM[(char * {ref-all})pField_6]+96 S8 A8])
+        (reg:DI 134)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 92 91 93 9 (set (reg:QI 135)
+        (mem/u/c:QI (const:DI (plus:DI (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)
+                    (const_int 104 [0x68]))) [0 MEM[(char * {ref-all})&seedValues]+104 S1 A64])) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 93 92 94 9 (set (mem:QI (plus:DI (reg/f:DI 120)
+                (const_int 104 [0x68])) [0 MEM[(char * {ref-all})pField_6]+104 S1 A8])
+        (reg:QI 135)) CryptPrimeSieve.c:281 -1
+     (nil))
+(insn 94 93 95 9 (parallel [
+            (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -56 [0xffffffffffffffc8])) [0 pField+0 S8 A64])
+                (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -56 [0xffffffffffffffc8])) [0 pField+0 S8 A64])
+                    (const_int 105 [0x69])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:279 -1
+     (nil))
+(insn 95 94 96 9 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+                    (const_int -105 [0xffffffffffffff97])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:279 -1
+     (nil))
+(code_label 96 95 97 10 30 "" [1 uses])
+(note 97 96 99 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 99 97 100 10 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+            (const_int 104 [0x68]))) CryptPrimeSieve.c:278 -1
+     (nil))
+(jump_insn 100 99 101 10 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 98)
+            (pc))) CryptPrimeSieve.c:278 -1
+     (nil)
+ -> 98)
+(note 101 100 102 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 102 101 103 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:283 -1
+     (nil))
+(jump_insn 103 102 104 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 111)
+            (pc))) CryptPrimeSieve.c:283 -1
+     (nil)
+ -> 111)
+(note 104 103 105 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 105 104 106 12 (set (reg:DI 92 [ D.13143 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32]))) CryptPrimeSieve.c:284 -1
+     (nil))
+(insn 106 105 107 12 (set (reg:DI 136)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 pField+0 S8 A64])) CryptPrimeSieve.c:284 -1
+     (nil))
+(insn 107 106 108 12 (set (reg:DI 1 dx)
+        (reg:DI 92 [ D.13143 ])) CryptPrimeSieve.c:284 -1
+     (nil))
+(insn 108 107 109 12 (set (reg:DI 4 si)
+        (symbol_ref:DI ("seedValues") [flags 0x2]  <var_decl 0x7f82ac84f360 seedValues>)) CryptPrimeSieve.c:284 -1
+     (nil))
+(insn 109 108 110 12 (set (reg:DI 5 di)
+        (reg:DI 136)) CryptPrimeSieve.c:284 -1
+     (nil))
+(call_insn 110 109 111 12 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f82ad417e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:284 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(code_label 111 110 112 13 32 "" [1 uses])
+(note 112 111 113 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 113 112 114 13 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -92 [0xffffffffffffffa4])) [0 iter+0 S4 A32])
+        (const_int 7 [0x7])) CryptPrimeSieve.c:287 -1
+     (nil))
+(jump_insn 114 113 115 13 (set (pc)
+        (label_ref 249)) CryptPrimeSieve.c:290 -1
+     (nil)
+ -> 249)
+(barrier 115 114 258)
+(code_label 258 115 116 14 46 "" [1 uses])
+(note 116 258 117 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 117 116 118 14 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])
+        (const_int 0 [0])) CryptPrimeSieve.c:292 -1
+     (nil))
+(insn 118 117 119 14 (set (reg:SI 137)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 count+0 S4 A32])) CryptPrimeSieve.c:293 -1
+     (nil))
+(insn 119 118 120 14 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+        (reg:SI 137)) CryptPrimeSieve.c:293 -1
+     (nil))
+(insn 120 119 121 14 (set (reg:SI 95 [ D.13142 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])) CryptPrimeSieve.c:294 -1
+     (nil))
+(insn 121 120 122 14 (parallel [
+            (set (reg:SI 138)
+                (plus:SI (reg:SI 95 [ D.13142 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:294 -1
+     (nil))
+(insn 122 121 123 14 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+        (reg:SI 138)) CryptPrimeSieve.c:294 -1
+     (nil))
+(insn 123 122 124 14 (set (reg:DI 139)
+        (zero_extend:DI (reg:SI 95 [ D.13142 ]))) CryptPrimeSieve.c:294 -1
+     (nil))
+(insn 124 123 125 14 (set (reg:SI 140)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 composite+0 S4 A32])) CryptPrimeSieve.c:294 -1
+     (nil))
+(insn 125 124 126 14 (set (mem/j:SI (plus:DI (plus:DI (mult:DI (reg:DI 139)
+                        (const_int 4 [0x4]))
+                    (reg/f:DI 82 virtual-stack-vars))
+                (const_int -48 [0xffffffffffffffd0])) [0 pList S4 A32])
+        (reg:SI 140)) CryptPrimeSieve.c:294 -1
+     (nil))
+(jump_insn 126 125 127 14 (set (pc)
+        (label_ref 148)) CryptPrimeSieve.c:295 -1
+     (nil)
+ -> 148)
+(barrier 127 126 150)
+(code_label 150 127 128 15 36 "" [1 uses])
+(note 128 150 129 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 129 128 130 15 (set (reg:SI 96 [ D.13142 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -92 [0xffffffffffffffa4])) [0 iter+0 S4 A32])) CryptPrimeSieve.c:297 -1
+     (nil))
+(insn 130 129 131 15 (set (reg:SI 5 di)
+        (reg:SI 96 [ D.13142 ])) CryptPrimeSieve.c:297 -1
+     (nil))
+(call_insn 131 130 132 15 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("RsaNextPrime") [flags 0x3]  <function_decl 0x7f82ac835288 RsaNextPrime>) [0 RsaNextPrime S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:297 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 132 131 133 15 (set (reg:SI 97 [ D.13142 ])
+        (reg:SI 0 ax)) CryptPrimeSieve.c:297 -1
+     (nil))
+(insn 133 132 134 15 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -92 [0xffffffffffffffa4])) [0 iter+0 S4 A32])
+        (reg:SI 97 [ D.13142 ])) CryptPrimeSieve.c:297 -1
+     (nil))
+(insn 134 133 135 15 (set (reg:SI 141)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -92 [0xffffffffffffffa4])) [0 iter+0 S4 A32])) CryptPrimeSieve.c:297 -1
+     (nil))
+(insn 135 134 136 15 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])
+        (reg:SI 141)) CryptPrimeSieve.c:297 -1
+     (nil))
+(insn 136 135 137 15 (set (reg:DI 142)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32]))) CryptPrimeSieve.c:298 -1
+     (nil))
+(insn 137 136 138 15 (set (reg:SI 143)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])) CryptPrimeSieve.c:298 -1
+     (nil))
+(insn 138 137 139 15 (set (mem/j:SI (plus:DI (plus:DI (mult:DI (reg:DI 142)
+                        (const_int 4 [0x4]))
+                    (reg/f:DI 82 virtual-stack-vars))
+                (const_int -48 [0xffffffffffffffd0])) [0 pList S4 A32])
+        (reg:SI 143)) CryptPrimeSieve.c:298 -1
+     (nil))
+(insn 139 138 140 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:299 -1
+     (nil))
+(jump_insn 140 139 141 15 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 145)
+            (pc))) CryptPrimeSieve.c:299 -1
+     (nil)
+ -> 145)
+(note 141 140 142 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 142 141 143 16 (set (reg:SI 145)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 composite+0 S4 A32])) CryptPrimeSieve.c:300 -1
+     (nil))
+(insn 143 142 144 16 (parallel [
+            (set (reg:SI 144)
+                (mult:SI (reg:SI 145)
+                    (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:300 -1
+     (nil))
+(insn 144 143 145 16 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 composite+0 S4 A32])
+        (reg:SI 144)) CryptPrimeSieve.c:300 -1
+     (nil))
+(code_label 145 144 146 17 35 "" [1 uses])
+(note 146 145 147 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 147 146 148 17 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:295 -1
+     (nil))
+(code_label 148 147 149 18 34 "" [1 uses])
+(note 149 148 151 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 151 149 152 18 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:295 -1
+     (nil))
+(jump_insn 152 151 153 18 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 150)
+            (pc))) CryptPrimeSieve.c:295 -1
+     (nil)
+ -> 150)
+(note 153 152 154 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 154 153 155 19 (set (reg:DI 98 [ D.13141 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -72 [0xffffffffffffffb8])) [0 composite+0 S4 A32]))) CryptPrimeSieve.c:304 -1
+     (nil))
+(insn 155 154 156 19 (set (reg:DI 146)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -120 [0xffffffffffffff88])) [0 bnN+0 S8 A64])) CryptPrimeSieve.c:304 -1
+     (nil))
+(insn 156 155 157 19 (set (reg:DI 4 si)
+        (reg:DI 98 [ D.13141 ])) CryptPrimeSieve.c:304 -1
+     (nil))
+(insn 157 156 158 19 (set (reg:DI 5 di)
+        (reg:DI 146)) CryptPrimeSieve.c:304 -1
+     (nil))
+(call_insn 158 157 159 19 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnModWord") [flags 0x41]  <function_decl 0x7f82ac804bd0 BnModWord>) [0 BnModWord S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:304 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 159 158 160 19 (set (reg:DI 99 [ D.13141 ])
+        (reg:DI 0 ax)) CryptPrimeSieve.c:304 -1
+     (nil))
+(insn 160 159 161 19 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 composite+0 S4 A32])
+        (subreg:SI (reg:DI 99 [ D.13141 ]) 0)) CryptPrimeSieve.c:304 -1
+     (nil))
+(insn 161 160 162 19 (set (reg:SI 147)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 count+0 S4 A32])) CryptPrimeSieve.c:313 -1
+     (nil))
+(insn 162 161 163 19 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+        (reg:SI 147)) CryptPrimeSieve.c:313 -1
+     (nil))
+(jump_insn 163 162 164 19 (set (pc)
+        (label_ref 230)) CryptPrimeSieve.c:313 -1
+     (nil)
+ -> 230)
+(barrier 164 163 232)
+(code_label 232 164 165 20 45 "" [1 uses])
+(note 165 232 166 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 166 165 167 20 (set (reg:DI 148)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32]))) CryptPrimeSieve.c:315 -1
+     (nil))
+(insn 167 166 168 20 (set (reg:SI 149)
+        (mem/j:SI (plus:DI (plus:DI (mult:DI (reg:DI 148)
+                        (const_int 4 [0x4]))
+                    (reg/f:DI 82 virtual-stack-vars))
+                (const_int -48 [0xffffffffffffffd0])) [0 pList S4 A32])) CryptPrimeSieve.c:315 -1
+     (nil))
+(insn 168 167 169 20 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])
+        (reg:SI 149)) CryptPrimeSieve.c:315 -1
+     (nil))
+(insn 169 168 170 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:316 -1
+     (nil))
+(jump_insn 170 169 171 20 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 174)
+            (pc))) CryptPrimeSieve.c:316 -1
+     (nil)
+ -> 174)
+(note 171 170 172 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 172 171 173 21 (set (pc)
+        (label_ref 261)) CryptPrimeSieve.c:317 -1
+     (nil)
+ -> 261)
+(barrier 173 172 174)
+(code_label 174 173 175 22 38 "" [1 uses])
+(note 175 174 176 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 176 175 177 22 (set (reg:SI 151)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 composite+0 S4 A32])) CryptPrimeSieve.c:318 -1
+     (nil))
+(insn 177 176 178 22 (parallel [
+            (set (reg:SI 153)
+                (udiv:SI (reg:SI 151)
+                    (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])))
+            (set (reg:SI 152)
+                (umod:SI (reg:SI 151)
+                    (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:318 -1
+     (nil))
+(insn 178 177 179 22 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 r+0 S4 A32])
+        (reg:SI 152)) CryptPrimeSieve.c:318 -1
+     (nil))
+(insn 179 178 180 22 (set (reg:SI 154)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 r+0 S4 A32])) CryptPrimeSieve.c:329 -1
+     (nil))
+(insn 180 179 181 22 (parallel [
+            (set (reg:SI 102 [ D.13142 ])
+                (and:SI (reg:SI 154)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:329 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -60 [0xffffffffffffffc4])) [0 r+0 S4 A32])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 181 180 182 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 102 [ D.13142 ])
+            (const_int 0 [0]))) CryptPrimeSieve.c:329 -1
+     (nil))
+(jump_insn 182 181 183 22 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 190)
+            (pc))) CryptPrimeSieve.c:329 -1
+     (nil)
+ -> 190)
+(note 183 182 184 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 184 183 185 23 (set (reg:SI 155)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])) CryptPrimeSieve.c:329 -1
+     (nil))
+(insn 185 184 186 23 (parallel [
+            (set (reg:SI 103 [ D.13142 ])
+                (minus:SI (reg:SI 155)
+                    (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -60 [0xffffffffffffffc4])) [0 r+0 S4 A32])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:329 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -60 [0xffffffffffffffc4])) [0 r+0 S4 A32]))
+        (nil)))
+(insn 186 185 187 23 (parallel [
+            (set (reg:SI 156)
+                (lshiftrt:SI (reg:SI 103 [ D.13142 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:329 -1
+     (nil))
+(insn 187 186 188 23 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 j+0 S4 A32])
+        (reg:SI 156)) CryptPrimeSieve.c:329 -1
+     (nil))
+(jump_insn 188 187 189 23 (set (pc)
+        (label_ref 208)) -1
+     (nil)
+ -> 208)
+(barrier 189 188 190)
+(code_label 190 189 191 24 40 "" [1 uses])
+(note 191 190 192 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 192 191 193 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -60 [0xffffffffffffffc4])) [0 r+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:330 -1
+     (nil))
+(jump_insn 193 192 194 24 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 198)
+            (pc))) CryptPrimeSieve.c:330 -1
+     (nil)
+ -> 198)
+(note 194 193 195 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 195 194 196 25 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 j+0 S4 A32])
+        (const_int 0 [0])) CryptPrimeSieve.c:330 -1
+     (nil))
+(jump_insn 196 195 197 25 (set (pc)
+        (label_ref 208)) -1
+     (nil)
+ -> 208)
+(barrier 197 196 198)
+(code_label 198 197 199 26 42 "" [1 uses])
+(note 199 198 200 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 200 199 201 26 (set (reg:SI 157)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -60 [0xffffffffffffffc4])) [0 r+0 S4 A32])) CryptPrimeSieve.c:331 -1
+     (nil))
+(insn 201 200 205 26 (parallel [
+            (set (reg:SI 104 [ D.13142 ])
+                (lshiftrt:SI (reg:SI 157)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:331 -1
+     (expr_list:REG_EQUAL (udiv:SI (reg:SI 157)
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 205 201 206 26 (set (reg:SI 161)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])) CryptPrimeSieve.c:331 -1
+     (nil))
+(insn 206 205 207 26 (parallel [
+            (set (reg:SI 160)
+                (minus:SI (reg:SI 161)
+                    (reg:SI 104 [ D.13142 ])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:331 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])
+            (reg:SI 104 [ D.13142 ]))
+        (nil)))
+(insn 207 206 208 26 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 j+0 S4 A32])
+        (reg:SI 160)) CryptPrimeSieve.c:331 -1
+     (nil))
+(code_label 208 207 209 27 41 "" [2 uses])
+(note 209 208 210 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 210 209 211 27 (set (pc)
+        (label_ref 222)) CryptPrimeSieve.c:332 -1
+     (nil)
+ -> 222)
+(barrier 211 210 224)
+(code_label 224 211 212 28 44 "" [1 uses])
+(note 212 224 213 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 213 212 214 28 (set (reg:SI 162)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 fieldSize+0 S4 A32])) CryptPrimeSieve.c:333 -1
+     (nil))
+(insn 214 213 215 28 (set (reg:DI 163)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -136 [0xffffffffffffff78])) [0 field+0 S8 A64])) CryptPrimeSieve.c:333 -1
+     (nil))
+(insn 215 214 216 28 (set (reg:SI 164)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 j+0 S4 A32])) CryptPrimeSieve.c:333 -1
+     (nil))
+(insn 216 215 217 28 (set (reg:SI 1 dx)
+        (reg:SI 162)) CryptPrimeSieve.c:333 -1
+     (nil))
+(insn 217 216 218 28 (set (reg:DI 4 si)
+        (reg:DI 163)) CryptPrimeSieve.c:333 -1
+     (nil))
+(insn 218 217 219 28 (set (reg:SI 5 di)
+        (reg:SI 164)) CryptPrimeSieve.c:333 -1
+     (nil))
+(call_insn 219 218 220 28 (call (mem:QI (symbol_ref:DI ("ClearBit") [flags 0x41]  <function_decl 0x7f82ac7f9d80 ClearBit>) [0 ClearBit S1 A8])
+        (const_int 0 [0])) CryptPrimeSieve.c:333 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 220 219 221 28 (set (reg:SI 165)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])) CryptPrimeSieve.c:332 -1
+     (nil))
+(insn 221 220 222 28 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -96 [0xffffffffffffffa0])) [0 j+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -96 [0xffffffffffffffa0])) [0 j+0 S4 A32])
+                    (reg:SI 165)))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:332 -1
+     (nil))
+(code_label 222 221 223 29 43 "" [1 uses])
+(note 223 222 225 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 225 223 226 29 (set (reg:SI 166)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -96 [0xffffffffffffffa0])) [0 j+0 S4 A32])) CryptPrimeSieve.c:332 -1
+     (nil))
+(insn 226 225 227 29 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 166)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -64 [0xffffffffffffffc0])) [0 fieldBits+0 S4 A32]))) CryptPrimeSieve.c:332 -1
+     (nil))
+(jump_insn 227 226 228 29 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 224)
+            (pc))) CryptPrimeSieve.c:332 -1
+     (nil)
+ -> 224)
+(note 228 227 229 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 229 228 230 30 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:313 -1
+     (nil))
+(code_label 230 229 231 31 37 "" [1 uses])
+(note 231 230 233 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 233 231 234 31 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:313 -1
+     (nil))
+(jump_insn 234 233 235 31 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 232)
+            (pc))) CryptPrimeSieve.c:313 -1
+     (nil)
+ -> 232)
+(note 235 234 236 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 236 235 237 32 (set (reg:SI 167)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -68 [0xffffffffffffffbc])) [0 next+0 S4 A32])) CryptPrimeSieve.c:335 -1
+     (nil))
+(insn 237 236 238 32 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 167)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -76 [0xffffffffffffffb4])) [0 stop+0 S4 A32]))) CryptPrimeSieve.c:335 -1
+     (nil))
+(jump_insn 238 237 239 32 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 249)
+            (pc))) CryptPrimeSieve.c:335 -1
+     (nil)
+ -> 249)
+(note 239 238 240 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 240 239 241 33 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -84 [0xffffffffffffffac])) [0 mark+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -84 [0xffffffffffffffac])) [0 mark+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:337 -1
+     (nil))
+(insn 241 240 242 33 (set (reg:DI 168)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -84 [0xffffffffffffffac])) [0 mark+0 S4 A32]))) CryptPrimeSieve.c:338 -1
+     (nil))
+(insn 242 241 243 33 (set (reg:HI 100 [ D.13140 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 168)
+                    (const_int 4 [0x4]))
+                (const:DI (plus:DI (symbol_ref:DI ("sieveMarks") [flags 0x2]  <var_decl 0x7f82ac84f870 sieveMarks>)
+                        (const_int 2 [0x2])))) [0 sieveMarks[mark_72].count+0 S2 A16])) CryptPrimeSieve.c:338 -1
+     (nil))
+(insn 243 242 244 33 (set (reg:SI 169)
+        (zero_extend:SI (reg:HI 100 [ D.13140 ]))) CryptPrimeSieve.c:338 -1
+     (nil))
+(insn 244 243 245 33 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -80 [0xffffffffffffffb0])) [0 count+0 S4 A32])
+        (reg:SI 169)) CryptPrimeSieve.c:338 -1
+     (nil))
+(insn 245 244 246 33 (set (reg:DI 170)
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -84 [0xffffffffffffffac])) [0 mark+0 S4 A32]))) CryptPrimeSieve.c:339 -1
+     (nil))
+(insn 246 245 247 33 (set (reg:HI 101 [ D.13140 ])
+        (mem/u/j:HI (plus:DI (mult:DI (reg:DI 170)
+                    (const_int 4 [0x4]))
+                (symbol_ref:DI ("sieveMarks") [flags 0x2]  <var_decl 0x7f82ac84f870 sieveMarks>)) [0 sieveMarks[mark_72].prime+0 S2 A32])) CryptPrimeSieve.c:339 -1
+     (nil))
+(insn 247 246 248 33 (set (reg:SI 171)
+        (zero_extend:SI (reg:HI 101 [ D.13140 ]))) CryptPrimeSieve.c:339 -1
+     (nil))
+(insn 248 247 249 33 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -76 [0xffffffffffffffb4])) [0 stop+0 S4 A32])
+        (reg:SI 171)) CryptPrimeSieve.c:339 -1
+     (nil))
+(code_label 249 248 250 34 33 "" [2 uses])
+(note 250 249 251 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 251 250 252 34 (set (reg:SI 93 [ D.13142 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -92 [0xffffffffffffffa4])) [0 iter+0 S4 A32])) CryptPrimeSieve.c:290 -1
+     (nil))
+(insn 252 251 253 34 (set (reg:SI 5 di)
+        (reg:SI 93 [ D.13142 ])) CryptPrimeSieve.c:290 -1
+     (nil))
+(call_insn 253 252 254 34 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("RsaNextPrime") [flags 0x3]  <function_decl 0x7f82ac835288 RsaNextPrime>) [0 RsaNextPrime S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:290 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 254 253 255 34 (set (reg:SI 94 [ D.13142 ])
+        (reg:SI 0 ax)) CryptPrimeSieve.c:290 -1
+     (nil))
+(insn 255 254 256 34 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -92 [0xffffffffffffffa4])) [0 iter+0 S4 A32])
+        (reg:SI 94 [ D.13142 ])) CryptPrimeSieve.c:290 -1
+     (nil))
+(insn 256 255 257 34 (set (reg:SI 172)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -92 [0xffffffffffffffa4])) [0 iter+0 S4 A32])) CryptPrimeSieve.c:290 -1
+     (nil))
+(insn 257 256 259 34 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -72 [0xffffffffffffffb8])) [0 composite+0 S4 A32])
+        (reg:SI 172)) CryptPrimeSieve.c:290 -1
+     (nil))
+(insn 259 257 260 34 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -72 [0xffffffffffffffb8])) [0 composite+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:290 -1
+     (nil))
+(jump_insn 260 259 261 34 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 258)
+            (pc))) CryptPrimeSieve.c:290 -1
+     (nil)
+ -> 258)
+(code_label 261 260 262 35 39 ("done") [1 uses])
+(note 262 261 263 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 263 262 264 35 (set (reg:SI 173)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -124 [0xffffffffffffff84])) [0 fieldSize+0 S4 A32])) CryptPrimeSieve.c:344 -1
+     (nil))
+(insn 264 263 265 35 (set (reg:DI 174)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -136 [0xffffffffffffff78])) [0 field+0 S8 A64])) CryptPrimeSieve.c:344 -1
+     (nil))
+(insn 265 264 266 35 (set (reg:SI 4 si)
+        (reg:SI 173)) CryptPrimeSieve.c:344 -1
+     (nil))
+(insn 266 265 267 35 (set (reg:DI 5 di)
+        (reg:DI 174)) CryptPrimeSieve.c:344 -1
+     (nil))
+(call_insn 267 266 268 35 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BitsInArray") [flags 0x3]  <function_decl 0x7f82ac84cd80 BitsInArray>) [0 BitsInArray S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:344 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 268 267 269 35 (set (reg:SI 105 [ D.13144 ])
+        (reg:SI 0 ax)) CryptPrimeSieve.c:344 -1
+     (nil))
+(insn 269 268 270 35 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])
+        (reg:SI 105 [ D.13144 ])) CryptPrimeSieve.c:344 -1
+     (nil))
+(insn 270 269 273 35 (set (reg:SI 106 [ D.13145 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -100 [0xffffffffffffff9c])) [0 i+0 S4 A32])) CryptPrimeSieve.c:347 -1
+     (nil))
+(insn 273 270 277 35 (set (reg:SI 107 [ <retval> ])
+        (reg:SI 106 [ D.13145 ])) CryptPrimeSieve.c:347 -1
+     (nil))
+(insn 277 273 278 35 (set (reg/i:SI 0 ax)
+        (reg:SI 107 [ <retval> ])) CryptPrimeSieve.c:348 -1
+     (nil))
+(insn 278 277 279 35 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13146+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) CryptPrimeSieve.c:348 -1
+     (nil))
+(jump_insn 279 278 285 35 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 282)
+            (pc))) CryptPrimeSieve.c:348 -1
+     (nil)
+ -> 282)
+(note 285 279 280 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(call_insn 280 285 281 38 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f82ac87f948 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) CryptPrimeSieve.c:348 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 281 280 282)
+(code_label 282 281 286 39 48 "" [1 uses])
+(note 286 282 283 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 283 286 0 39 (use (reg/i:SI 0 ax)) CryptPrimeSieve.c:348 -1
+     (nil))
+
+;; Function PrimeSelectWithSieve (PrimeSelectWithSieve, funcdef_no=7, decl_uid=12586, cgraph_uid=7, symbol_order=13)
+
+Partition 7: size 2048 align 16
+	field
+Partition 8: size 152 align 16
+	_test
+Partition 1: size 8 align 8
+	test_9
+Partition 6: size 4 align 4
+	modE_38
+Partition 5: size 4 align 4
+	chosen_28
+Partition 4: size 4 align 4
+	first_19
+Partition 3: size 4 align 4
+	primeSize_13
+Partition 2: size 4 align 4
+	fieldSize_10
+Partition 0: size 4 align 4
+	ones_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 143 from 22 to 23.
+Merging block 22 into block 21...
+Merged blocks 21 and 22.
+Merged 21 and 22 without moving.
+Removing jump 167.
+Merging block 24 into block 23...
+Merged blocks 23 and 24.
+Merged 23 and 24 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2264 [0xfffffffffffff728])) [0 candidate+0 S8 A64])
+        (reg:DI 5 di [ candidate ])) CryptPrimeSieve.c:381 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2268 [0xfffffffffffff724])) [0 e+0 S4 A32])
+        (reg:SI 4 si [ e ])) CryptPrimeSieve.c:381 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 rand+0 S8 A64])
+        (reg:DI 1 dx [ rand ])) CryptPrimeSieve.c:381 -1
+     (nil))
+(note 5 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 5 9 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13154+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:381 -1
+     (nil))
+(insn 9 6 10 2 (parallel [
+            (set (reg:DI 104)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2224 [0xfffffffffffff750])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:386 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (const_int 17 [0x11])) CryptPrimeSieve.c:386 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 104)) CryptPrimeSieve.c:386 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnInit") [flags 0x41]  <function_decl 0x7f82ac807870 BnInit>) [0 BnInit S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:386 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 13 12 14 2 (set (reg:DI 105)
+        (reg:DI 0 ax)) CryptPrimeSieve.c:386 -1
+     (nil))
+(insn 14 13 15 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2232 [0xfffffffffffff748])) [0 test+0 S8 A64])
+        (reg:DI 105)) CryptPrimeSieve.c:386 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2252 [0xfffffffffffff734])) [0 fieldSize+0 S4 A32])
+        (const_int 2048 [0x800])) CryptPrimeSieve.c:389 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2264 [0xfffffffffffff728])) [0 candidate+0 S8 A64])) CryptPrimeSieve.c:399 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (reg:DI 106)) CryptPrimeSieve.c:399 -1
+     (nil))
+(call_insn 18 17 19 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnSizeInBits") [flags 0x41]  <function_decl 0x7f82ac804e58 BnSizeInBits>) [0 BnSizeInBits S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:399 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 19 18 20 2 (set (reg:SI 107)
+        (reg:SI 0 ax)) CryptPrimeSieve.c:399 -1
+     (nil))
+(insn 20 19 21 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2248 [0xfffffffffffff738])) [0 primeSize+0 S4 A32])
+        (reg:SI 107)) CryptPrimeSieve.c:399 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2248 [0xfffffffffffff738])) [0 primeSize+0 S4 A32])
+            (const_int 512 [0x200]))) CryptPrimeSieve.c:400 -1
+     (nil))
+(jump_insn 22 21 23 2 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) CryptPrimeSieve.c:400 -1
+     (nil)
+ -> 28)
+(note 23 22 24 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 4 (set (reg:SI 5 di)
+        (const_int 1024 [0x400])) CryptPrimeSieve.c:402 -1
+     (nil))
+(call_insn 25 24 26 4 (call (mem:QI (symbol_ref:DI ("RsaAdjustPrimeLimit") [flags 0x3]  <function_decl 0x7f82ac8351b0 RsaAdjustPrimeLimit>) [0 RsaAdjustPrimeLimit S1 A8])
+        (const_int 0 [0])) CryptPrimeSieve.c:402 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(jump_insn 26 25 27 4 (set (pc)
+        (label_ref 41)) -1
+     (nil)
+ -> 41)
+(barrier 27 26 28)
+(code_label 28 27 29 5 51 "" [1 uses])
+(note 29 28 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 5 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2248 [0xfffffffffffff738])) [0 primeSize+0 S4 A32])
+            (const_int 1024 [0x400]))) CryptPrimeSieve.c:404 -1
+     (nil))
+(jump_insn 31 30 32 5 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 37)
+            (pc))) CryptPrimeSieve.c:404 -1
+     (nil)
+ -> 37)
+(note 32 31 33 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 6 (set (reg:SI 5 di)
+        (const_int 4096 [0x1000])) CryptPrimeSieve.c:406 -1
+     (nil))
+(call_insn 34 33 35 6 (call (mem:QI (symbol_ref:DI ("RsaAdjustPrimeLimit") [flags 0x3]  <function_decl 0x7f82ac8351b0 RsaAdjustPrimeLimit>) [0 RsaAdjustPrimeLimit S1 A8])
+        (const_int 0 [0])) CryptPrimeSieve.c:406 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(jump_insn 35 34 36 6 (set (pc)
+        (label_ref 41)) -1
+     (nil)
+ -> 41)
+(barrier 36 35 37)
+(code_label 37 36 38 7 53 "" [1 uses])
+(note 38 37 39 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 40 7 (set (reg:SI 5 di)
+        (const_int 0 [0])) CryptPrimeSieve.c:410 -1
+     (nil))
+(call_insn 40 39 41 7 (call (mem:QI (symbol_ref:DI ("RsaAdjustPrimeLimit") [flags 0x3]  <function_decl 0x7f82ac8351b0 RsaAdjustPrimeLimit>) [0 RsaAdjustPrimeLimit S1 A8])
+        (const_int 0 [0])) CryptPrimeSieve.c:410 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(code_label 41 40 42 8 52 "" [2 uses])
+(note 42 41 43 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 43 42 44 8 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2264 [0xfffffffffffff728])) [0 candidate+0 S8 A64])) CryptPrimeSieve.c:414 -1
+     (nil))
+(insn 44 43 45 8 (set (reg:DI 88 [ D.13150 ])
+        (mem/j:DI (plus:DI (reg/f:DI 108)
+                (const_int 16 [0x10])) [0 candidate_11(D)->d+0 S8 A64])) CryptPrimeSieve.c:414 -1
+     (nil))
+(insn 45 44 46 8 (set (reg:SI 89 [ D.13151 ])
+        (subreg:SI (reg:DI 88 [ D.13150 ]) 0)) CryptPrimeSieve.c:414 -1
+     (nil))
+(insn 46 45 47 8 (parallel [
+            (set (reg:SI 109)
+                (ior:SI (reg:SI 89 [ D.13151 ])
+                    (const_int -2147483648 [0xffffffff80000000])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:414 -1
+     (nil))
+(insn 47 46 48 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2244 [0xfffffffffffff73c])) [0 first+0 S4 A32])
+        (reg:SI 109)) CryptPrimeSieve.c:414 -1
+     (nil))
+(insn 48 47 49 8 (parallel [
+            (set (reg:DI 110)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:416 -1
+     (nil))
+(insn 49 48 50 8 (set (reg:SI 111)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2252 [0xfffffffffffff734])) [0 fieldSize+0 S4 A32])) CryptPrimeSieve.c:416 -1
+     (nil))
+(insn 50 49 51 8 (set (reg:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2264 [0xfffffffffffff728])) [0 candidate+0 S8 A64])) CryptPrimeSieve.c:416 -1
+     (nil))
+(insn 51 50 52 8 (set (reg:DI 1 dx)
+        (reg:DI 110)) CryptPrimeSieve.c:416 -1
+     (nil))
+(insn 52 51 53 8 (set (reg:SI 4 si)
+        (reg:SI 111)) CryptPrimeSieve.c:416 -1
+     (nil))
+(insn 53 52 54 8 (set (reg:DI 5 di)
+        (reg:DI 112)) CryptPrimeSieve.c:416 -1
+     (nil))
+(call_insn 54 53 55 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("PrimeSieve") [flags 0x3]  <function_decl 0x7f82ac835438 PrimeSieve>) [0 PrimeSieve S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:416 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 55 54 56 8 (set (reg:SI 113)
+        (reg:SI 0 ax)) CryptPrimeSieve.c:416 -1
+     (nil))
+(insn 56 55 57 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2256 [0xfffffffffffff730])) [0 ones+0 S4 A32])
+        (reg:SI 113)) CryptPrimeSieve.c:416 -1
+     (nil))
+(insn 57 56 58 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2256 [0xfffffffffffff730])) [0 ones+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:417 -1
+     (nil))
+(jump_insn 58 57 59 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 64)
+            (pc))) CryptPrimeSieve.c:417 -1
+     (nil)
+ -> 64)
+(note 59 58 60 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 60 59 61 9 (set (reg:SI 114)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2252 [0xfffffffffffff734])) [0 fieldSize+0 S4 A32])) CryptPrimeSieve.c:417 -1
+     (nil))
+(insn 61 60 62 9 (parallel [
+            (set (reg:SI 90 [ D.13151 ])
+                (ashift:SI (reg:SI 114)
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:417 -1
+     (expr_list:REG_EQUAL (ashift:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2252 [0xfffffffffffff734])) [0 fieldSize+0 S4 A32])
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 62 61 63 9 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 90 [ D.13151 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2256 [0xfffffffffffff730])) [0 ones+0 S4 A32]))) CryptPrimeSieve.c:417 -1
+     (nil))
+(jump_insn 63 62 64 9 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) CryptPrimeSieve.c:417 -1
+     (nil)
+ -> 71)
+(code_label 64 63 65 10 54 "" [1 uses])
+(note 65 64 66 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 10 (set (reg:SI 1 dx)
+        (const_int 4 [0x4])) CryptPrimeSieve.c:417 -1
+     (nil))
+(insn 67 66 68 10 (set (reg:SI 4 si)
+        (const_int 417 [0x1a1])) CryptPrimeSieve.c:417 -1
+     (nil))
+(insn 68 67 69 10 (set (reg:DI 5 di)
+        (const_int 0 [0])) CryptPrimeSieve.c:417 -1
+     (nil))
+(call_insn 69 68 70 10 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7f82ac7620d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CryptPrimeSieve.c:417 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 70 69 71)
+(code_label 71 70 72 11 55 "" [1 uses])
+(note 72 71 73 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 73 72 74 11 (set (pc)
+        (label_ref 155)) CryptPrimeSieve.c:418 -1
+     (nil)
+ -> 155)
+(barrier 74 73 157)
+(code_label 157 74 75 12 61 "" [1 uses])
+(note 75 157 76 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 76 75 77 12 (set (reg:SI 115)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2244 [0xfffffffffffff73c])) [0 first+0 S4 A32])) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 77 76 78 12 (parallel [
+            (set (reg:SI 117)
+                (udiv:SI (reg:SI 115)
+                    (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2256 [0xfffffffffffff730])) [0 ones+0 S4 A32])))
+            (set (reg:SI 116)
+                (umod:SI (reg:SI 115)
+                    (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2256 [0xfffffffffffff730])) [0 ones+0 S4 A32])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 78 77 79 12 (set (reg:SI 91 [ D.13151 ])
+        (reg:SI 116)) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 79 78 80 12 (parallel [
+            (set (reg:SI 92 [ D.13151 ])
+                (plus:SI (reg:SI 91 [ D.13151 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 80 79 81 12 (set (reg:SI 93 [ D.13152 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2252 [0xfffffffffffff734])) [0 fieldSize+0 S4 A32])) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 81 80 82 12 (set (reg:SI 94 [ D.13152 ])
+        (zero_extend:SI (subreg:HI (reg:SI 93 [ D.13152 ]) 0))) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 82 81 83 12 (parallel [
+            (set (reg:DI 118)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 83 82 84 12 (set (reg:SI 1 dx)
+        (reg:SI 92 [ D.13151 ])) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 84 83 85 12 (set (reg:DI 4 si)
+        (reg:DI 118)) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 85 84 86 12 (set (reg:SI 5 di)
+        (reg:SI 94 [ D.13152 ])) CryptPrimeSieve.c:421 -1
+     (nil))
+(call_insn 86 85 87 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("FindNthSetBit") [flags 0x3]  <function_decl 0x7f82ac835360 FindNthSetBit>) [0 FindNthSetBit S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:421 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 87 86 88 12 (set (reg:SI 119)
+        (reg:SI 0 ax)) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 88 87 89 12 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2240 [0xfffffffffffff740])) [0 chosen+0 S4 A32])
+        (reg:SI 119)) CryptPrimeSieve.c:421 -1
+     (nil))
+(insn 89 88 90 12 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2240 [0xfffffffffffff740])) [0 chosen+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:422 -1
+     (nil))
+(jump_insn 90 89 91 12 (set (pc)
+        (if_then_else (lt (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 97)
+            (pc))) CryptPrimeSieve.c:422 -1
+     (nil)
+ -> 97)
+(note 91 90 92 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 92 91 93 13 (set (reg:SI 120)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2252 [0xfffffffffffff734])) [0 fieldSize+0 S4 A32])) CryptPrimeSieve.c:422 -1
+     (nil))
+(insn 93 92 94 13 (parallel [
+            (set (reg:SI 95 [ D.13151 ])
+                (ashift:SI (reg:SI 120)
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:422 -1
+     (expr_list:REG_EQUAL (ashift:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2252 [0xfffffffffffff734])) [0 fieldSize+0 S4 A32])
+            (const_int 3 [0x3]))
+        (nil)))
+(insn 94 93 95 13 (set (reg:SI 96 [ D.13152 ])
+        (reg:SI 95 [ D.13151 ])) CryptPrimeSieve.c:422 -1
+     (nil))
+(insn 95 94 96 13 (set (reg:CCGC 17 flags)
+        (compare:CCGC (reg:SI 96 [ D.13152 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2240 [0xfffffffffffff740])) [0 chosen+0 S4 A32]))) CryptPrimeSieve.c:422 -1
+     (nil))
+(jump_insn 96 95 97 13 (set (pc)
+        (if_then_else (gt (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 104)
+            (pc))) CryptPrimeSieve.c:422 -1
+     (nil)
+ -> 104)
+(code_label 97 96 98 14 57 "" [1 uses])
+(note 98 97 99 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 99 98 100 14 (set (reg:SI 1 dx)
+        (const_int 3 [0x3])) CryptPrimeSieve.c:423 -1
+     (nil))
+(insn 100 99 101 14 (set (reg:SI 4 si)
+        (const_int 423 [0x1a7])) CryptPrimeSieve.c:423 -1
+     (nil))
+(insn 101 100 102 14 (set (reg:DI 5 di)
+        (const_int 0 [0])) CryptPrimeSieve.c:423 -1
+     (nil))
+(call_insn 102 101 103 14 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7f82ac7620d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) CryptPrimeSieve.c:423 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 103 102 104)
+(code_label 104 103 105 15 58 "" [1 uses])
+(note 105 104 106 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 106 105 107 15 (set (reg:SI 121)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2240 [0xfffffffffffff740])) [0 chosen+0 S4 A32])) CryptPrimeSieve.c:425 -1
+     (nil))
+(insn 107 106 108 15 (parallel [
+            (set (reg:SI 97 [ D.13152 ])
+                (ashift:SI (reg:SI 121)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:425 -1
+     (expr_list:REG_EQUAL (ashift:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2240 [0xfffffffffffff740])) [0 chosen+0 S4 A32])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 108 107 109 15 (set (reg:DI 98 [ D.13150 ])
+        (sign_extend:DI (reg:SI 97 [ D.13152 ]))) CryptPrimeSieve.c:425 -1
+     (nil))
+(insn 109 108 110 15 (set (reg:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2264 [0xfffffffffffff728])) [0 candidate+0 S8 A64])) CryptPrimeSieve.c:425 -1
+     (nil))
+(insn 110 109 111 15 (set (reg:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2232 [0xfffffffffffff748])) [0 test+0 S8 A64])) CryptPrimeSieve.c:425 -1
+     (nil))
+(insn 111 110 112 15 (set (reg:DI 1 dx)
+        (reg:DI 98 [ D.13150 ])) CryptPrimeSieve.c:425 -1
+     (nil))
+(insn 112 111 113 15 (set (reg:DI 4 si)
+        (reg:DI 122)) CryptPrimeSieve.c:425 -1
+     (nil))
+(insn 113 112 114 15 (set (reg:DI 5 di)
+        (reg:DI 123)) CryptPrimeSieve.c:425 -1
+     (nil))
+(call_insn 114 113 115 15 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnAddWord") [flags 0x41]  <function_decl 0x7f82ac804798 BnAddWord>) [0 BnAddWord S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:425 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 115 114 116 15 (set (reg:DI 99 [ D.13153 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2268 [0xfffffffffffff724])) [0 e+0 S4 A32]))) CryptPrimeSieve.c:429 -1
+     (nil))
+(insn 116 115 117 15 (set (reg:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2232 [0xfffffffffffff748])) [0 test+0 S8 A64])) CryptPrimeSieve.c:429 -1
+     (nil))
+(insn 117 116 118 15 (set (reg:DI 4 si)
+        (reg:DI 99 [ D.13153 ])) CryptPrimeSieve.c:429 -1
+     (nil))
+(insn 118 117 119 15 (set (reg:DI 5 di)
+        (reg:DI 124)) CryptPrimeSieve.c:429 -1
+     (nil))
+(call_insn 119 118 120 15 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnModWord") [flags 0x41]  <function_decl 0x7f82ac804bd0 BnModWord>) [0 BnModWord S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:429 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 120 119 121 15 (set (reg:DI 100 [ D.13153 ])
+        (reg:DI 0 ax)) CryptPrimeSieve.c:429 -1
+     (nil))
+(insn 121 120 122 15 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2236 [0xfffffffffffff744])) [0 modE+0 S4 A32])
+        (subreg:SI (reg:DI 100 [ D.13153 ]) 0)) CryptPrimeSieve.c:429 -1
+     (nil))
+(insn 122 121 123 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2236 [0xfffffffffffff744])) [0 modE+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:430 -1
+     (nil))
+(jump_insn 123 122 124 15 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 145)
+            (pc))) CryptPrimeSieve.c:430 -1
+     (nil)
+ -> 145)
+(note 124 123 125 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 125 124 126 16 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2236 [0xfffffffffffff744])) [0 modE+0 S4 A32])
+            (const_int 1 [0x1]))) CryptPrimeSieve.c:430 -1
+     (nil))
+(jump_insn 126 125 127 16 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 145)
+            (pc))) CryptPrimeSieve.c:430 -1
+     (nil)
+ -> 145)
+(note 127 126 128 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 128 127 129 17 (set (reg:DI 125)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2280 [0xfffffffffffff718])) [0 rand+0 S8 A64])) CryptPrimeSieve.c:430 -1
+     (nil))
+(insn 129 128 130 17 (set (reg:DI 126)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2232 [0xfffffffffffff748])) [0 test+0 S8 A64])) CryptPrimeSieve.c:430 -1
+     (nil))
+(insn 130 129 131 17 (set (reg:DI 4 si)
+        (reg:DI 125)) CryptPrimeSieve.c:430 -1
+     (nil))
+(insn 131 130 132 17 (set (reg:DI 5 di)
+        (reg:DI 126)) CryptPrimeSieve.c:430 -1
+     (nil))
+(call_insn 132 131 133 17 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("MillerRabin") [flags 0x41]  <function_decl 0x7f82ac821bd0 MillerRabin>) [0 MillerRabin S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:430 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 133 132 134 17 (set (reg:SI 102 [ D.13152 ])
+        (reg:SI 0 ax)) CryptPrimeSieve.c:430 -1
+     (nil))
+(insn 134 133 135 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 102 [ D.13152 ])
+            (const_int 0 [0]))) CryptPrimeSieve.c:430 -1
+     (nil))
+(jump_insn 135 134 136 17 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 145)
+            (pc))) CryptPrimeSieve.c:430 -1
+     (nil)
+ -> 145)
+(note 136 135 137 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 137 136 138 18 (set (reg:DI 127)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2232 [0xfffffffffffff748])) [0 test+0 S8 A64])) CryptPrimeSieve.c:432 -1
+     (nil))
+(insn 138 137 139 18 (set (reg:DI 128)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2264 [0xfffffffffffff728])) [0 candidate+0 S8 A64])) CryptPrimeSieve.c:432 -1
+     (nil))
+(insn 139 138 140 18 (set (reg:DI 4 si)
+        (reg:DI 127)) CryptPrimeSieve.c:432 -1
+     (nil))
+(insn 140 139 141 18 (set (reg:DI 5 di)
+        (reg:DI 128)) CryptPrimeSieve.c:432 -1
+     (nil))
+(call_insn 141 140 142 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("BnCopy") [flags 0x41]  <function_decl 0x7f82ac807948 BnCopy>) [0 BnCopy S1 A8])
+            (const_int 0 [0]))) CryptPrimeSieve.c:432 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 142 141 143 18 (set (reg:SI 87 [ D.13149 ])
+        (const_int 0 [0])) CryptPrimeSieve.c:433 -1
+     (nil))
+(jump_insn 143 142 144 18 (set (pc)
+        (label_ref:DI 164)) CryptPrimeSieve.c:433 654 {jump}
+     (nil)
+ -> 164)
+(barrier 144 143 145)
+(code_label 145 144 146 19 59 "" [3 uses])
+(note 146 145 147 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 147 146 148 19 (set (reg:SI 101 [ D.13151 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2240 [0xfffffffffffff740])) [0 chosen+0 S4 A32])) CryptPrimeSieve.c:436 -1
+     (nil))
+(insn 148 147 149 19 (set (reg:SI 129)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2252 [0xfffffffffffff734])) [0 fieldSize+0 S4 A32])) CryptPrimeSieve.c:436 -1
+     (nil))
+(insn 149 148 150 19 (parallel [
+            (set (reg:DI 130)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2064 [0xfffffffffffff7f0])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:436 -1
+     (nil))
+(insn 150 149 151 19 (set (reg:SI 1 dx)
+        (reg:SI 129)) CryptPrimeSieve.c:436 -1
+     (nil))
+(insn 151 150 152 19 (set (reg:DI 4 si)
+        (reg:DI 130)) CryptPrimeSieve.c:436 -1
+     (nil))
+(insn 152 151 153 19 (set (reg:SI 5 di)
+        (reg:SI 101 [ D.13151 ])) CryptPrimeSieve.c:436 -1
+     (nil))
+(call_insn 153 152 154 19 (call (mem:QI (symbol_ref:DI ("ClearBit") [flags 0x41]  <function_decl 0x7f82ac7f9d80 ClearBit>) [0 ClearBit S1 A8])
+        (const_int 0 [0])) CryptPrimeSieve.c:436 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 154 153 155 19 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -2256 [0xfffffffffffff730])) [0 ones+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -2256 [0xfffffffffffff730])) [0 ones+0 S4 A32])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) CryptPrimeSieve.c:418 -1
+     (nil))
+(code_label 155 154 156 20 56 "" [1 uses])
+(note 156 155 158 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 158 156 159 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -2256 [0xfffffffffffff730])) [0 ones+0 S4 A32])
+            (const_int 0 [0]))) CryptPrimeSieve.c:418 -1
+     (nil))
+(jump_insn 159 158 160 20 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 157)
+            (pc))) CryptPrimeSieve.c:418 -1
+     (nil)
+ -> 157)
+(note 160 159 161 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 161 160 164 21 (set (reg:SI 87 [ D.13149 ])
+        (const_int 340 [0x154])) CryptPrimeSieve.c:440 -1
+     (nil))
+(code_label 164 161 165 23 62 "" [1 uses])
+(note 165 164 166 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 166 165 170 23 (set (reg:SI 103 [ <retval> ])
+        (reg:SI 87 [ D.13149 ])) -1
+     (nil))
+(insn 170 166 171 23 (set (reg/i:SI 0 ax)
+        (reg:SI 103 [ <retval> ])) CryptPrimeSieve.c:441 -1
+     (nil))
+(insn 171 170 172 23 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13154+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) CryptPrimeSieve.c:441 -1
+     (nil))
+(jump_insn 172 171 178 23 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 175)
+            (pc))) CryptPrimeSieve.c:441 -1
+     (nil)
+ -> 175)
+(note 178 172 173 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(call_insn 173 178 174 25 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f82ac87f948 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) CryptPrimeSieve.c:441 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 174 173 175)
+(code_label 175 174 179 26 63 "" [1 uses])
+(note 179 175 176 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 176 179 0 26 (use (reg/i:SI 0 ax)) CryptPrimeSieve.c:441 -1
+     (nil))
+
+;; Function RsaSimulationEnd (RsaSimulationEnd, funcdef_no=8, decl_uid=12588, cgraph_uid=8, symbol_order=14)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 2 0 2 (const_int 0 [0]) CryptPrimeSieve.c:517 -1
+     (nil))

@@ -1,0 +1,4684 @@
+
+;; Function TSS_HMAC_Generate (TSS_HMAC_Generate, funcdef_no=2, decl_uid=13894, cgraph_uid=2, symbol_order=2)
+
+Partition 1: size 24 align 8
+	ap
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Merging block 6 into block 4...
+Merged blocks 4 and 6.
+Merged 4 and 6 without moving.
+Removing jump 43.
+Merging block 7 into block 4...
+Merged blocks 4 and 7.
+Merged 4 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 22 NOTE_INSN_DELETED)
+(note 22 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 22 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 digest+0 S8 A64])
+        (reg:DI 5 di [ digest ])) tsscryptoh.c:89 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -64 [0xffffffffffffffc0])) [0 hmacKey+0 S8 A64])
+        (reg:DI 4 si [ hmacKey ])) tsscryptoh.c:89 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 16 [0x10])) [0  S8 A8])
+        (reg:DI 1 dx)) tsscryptoh.c:89 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 24 [0x18])) [0  S8 A8])
+        (reg:DI 2 cx)) tsscryptoh.c:89 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 32 [0x20])) [0  S8 A8])
+        (reg:DI 37 r8)) tsscryptoh.c:89 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 40 [0x28])) [0  S8 A8])
+        (reg:DI 38 r9)) tsscryptoh.c:89 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 0 ax)
+            (const_int 0 [0]))) tsscryptoh.c:89 -1
+     (nil))
+(jump_insn 9 8 55 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) tsscryptoh.c:89 -1
+     (nil)
+ -> 18)
+(note 55 9 10 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 10 55 11 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 48 [0x30])) [0  S16 A128])
+        (reg:V4SF 21 xmm0)) tsscryptoh.c:89 -1
+     (nil))
+(insn 11 10 12 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 64 [0x40])) [0  S16 A128])
+        (reg:V4SF 22 xmm1)) tsscryptoh.c:89 -1
+     (nil))
+(insn 12 11 13 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 80 [0x50])) [0  S16 A128])
+        (reg:V4SF 23 xmm2)) tsscryptoh.c:89 -1
+     (nil))
+(insn 13 12 14 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 96 [0x60])) [0  S16 A128])
+        (reg:V4SF 24 xmm3)) tsscryptoh.c:89 -1
+     (nil))
+(insn 14 13 15 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 112 [0x70])) [0  S16 A128])
+        (reg:V4SF 25 xmm4)) tsscryptoh.c:89 -1
+     (nil))
+(insn 15 14 16 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 128 [0x80])) [0  S16 A128])
+        (reg:V4SF 26 xmm5)) tsscryptoh.c:89 -1
+     (nil))
+(insn 16 15 17 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 144 [0x90])) [0  S16 A128])
+        (reg:V4SF 27 xmm6)) tsscryptoh.c:89 -1
+     (nil))
+(insn 17 16 18 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 160 [0xa0])) [0  S16 A128])
+        (reg:V4SF 28 xmm7)) tsscryptoh.c:89 -1
+     (nil))
+(code_label 18 17 56 4 2 "" [1 uses])
+(note 56 18 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 19 56 20 4 NOTE_INSN_FUNCTION_BEG)
+(insn 20 19 21 4 (set (reg/f:DI 89)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:89 -1
+     (nil))
+(insn 21 20 24 4 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.15546+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:89 -1
+     (nil))
+(insn 24 21 25 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:90 -1
+     (nil))
+(insn 25 24 26 4 (parallel [
+            (set (reg:DI 90)
+                (plus:DI (reg/f:DI 81 virtual-incoming-args)
+                    (const_int 0 [0])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:93 -1
+     (nil))
+(insn 26 25 27 4 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 MEM[(struct [1] *)&ap].gp_offset+0 S4 A64])
+        (const_int 16 [0x10])) tsscryptoh.c:93 -1
+     (nil))
+(insn 27 26 28 4 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 MEM[(struct [1] *)&ap].fp_offset+0 S4 A32])
+        (const_int 48 [0x30])) tsscryptoh.c:93 -1
+     (nil))
+(insn 28 27 29 4 (set (mem/f/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 MEM[(struct [1] *)&ap].overflow_arg_area+0 S8 A64])
+        (reg/f:DI 81 virtual-incoming-args)) tsscryptoh.c:93 -1
+     (nil))
+(insn 29 28 30 4 (set (mem/f/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 MEM[(struct [1] *)&ap].reg_save_area+0 S8 A64])
+        (reg/f:DI 20 frame)) tsscryptoh.c:93 -1
+     (nil))
+(insn 30 29 31 4 (parallel [
+            (set (reg:DI 91)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:94 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -64 [0xffffffffffffffc0])) [0 hmacKey+0 S8 A64])) tsscryptoh.c:94 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 digest+0 S8 A64])) tsscryptoh.c:94 -1
+     (nil))
+(insn 33 32 34 4 (set (reg:DI 1 dx)
+        (reg:DI 91)) tsscryptoh.c:94 -1
+     (nil))
+(insn 34 33 35 4 (set (reg:DI 4 si)
+        (reg:DI 92)) tsscryptoh.c:94 -1
+     (nil))
+(insn 35 34 36 4 (set (reg:DI 5 di)
+        (reg:DI 93)) tsscryptoh.c:94 -1
+     (nil))
+(call_insn 36 35 37 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_HMAC_Generate_valist") [flags 0x41]  <function_decl 0x7f10eff0d870 TSS_HMAC_Generate_valist>) [0 TSS_HMAC_Generate_valist S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:94 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 37 36 38 4 (set (reg:SI 94)
+        (reg:SI 0 ax)) tsscryptoh.c:94 -1
+     (nil))
+(insn 38 37 39 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 rc+0 S4 A32])
+        (reg:SI 94)) tsscryptoh.c:94 -1
+     (nil))
+(insn 39 38 42 4 (set (reg:SI 87 [ D.15545 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 rc+0 S4 A32])) tsscryptoh.c:96 -1
+     (nil))
+(insn 42 39 46 4 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.15545 ])) tsscryptoh.c:96 -1
+     (nil))
+(insn 46 42 47 4 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tsscryptoh.c:97 -1
+     (nil))
+(insn 47 46 48 4 (set (reg/f:DI 96)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:97 -1
+     (nil))
+(insn 48 47 49 4 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.15546+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) tsscryptoh.c:97 -1
+     (nil))
+(jump_insn 49 48 57 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 52)
+            (pc))) tsscryptoh.c:97 -1
+     (nil)
+ -> 52)
+(note 57 49 50 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(call_insn 50 57 51 8 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f10eff86510 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:97 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 51 50 52)
+(code_label 52 51 58 9 4 "" [1 uses])
+(note 58 52 53 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 53 58 0 9 (use (reg/i:SI 0 ax)) tsscryptoh.c:97 -1
+     (nil))
+
+;; Function TSS_HMAC_Verify (TSS_HMAC_Verify, funcdef_no=3, decl_uid=13898, cgraph_uid=3, symbol_order=3)
+
+Partition 3: size 130 align 16
+	actual
+Partition 2: size 24 align 8
+	ap
+Partition 1: size 4 align 4
+	irc_17
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+Removing jump 78.
+Merging block 12 into block 10...
+Merged blocks 10 and 12.
+Merged 10 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 22 NOTE_INSN_DELETED)
+(note 22 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 22 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 expect+0 S8 A64])
+        (reg:DI 5 di [ expect ])) tsscryptoh.c:111 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [0 hmacKey+0 S8 A64])
+        (reg:DI 4 si [ hmacKey ])) tsscryptoh.c:111 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 sizeInBytes+0 S4 A32])
+        (reg:SI 1 dx [ sizeInBytes ])) tsscryptoh.c:111 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 24 [0x18])) [0  S8 A8])
+        (reg:DI 2 cx)) tsscryptoh.c:111 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 32 [0x20])) [0  S8 A8])
+        (reg:DI 37 r8)) tsscryptoh.c:111 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 40 [0x28])) [0  S8 A8])
+        (reg:DI 38 r9)) tsscryptoh.c:111 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 0 ax)
+            (const_int 0 [0]))) tsscryptoh.c:111 -1
+     (nil))
+(jump_insn 9 8 90 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) tsscryptoh.c:111 -1
+     (nil)
+ -> 18)
+(note 90 9 10 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 10 90 11 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 48 [0x30])) [0  S16 A128])
+        (reg:V4SF 21 xmm0)) tsscryptoh.c:111 -1
+     (nil))
+(insn 11 10 12 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 64 [0x40])) [0  S16 A128])
+        (reg:V4SF 22 xmm1)) tsscryptoh.c:111 -1
+     (nil))
+(insn 12 11 13 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 80 [0x50])) [0  S16 A128])
+        (reg:V4SF 23 xmm2)) tsscryptoh.c:111 -1
+     (nil))
+(insn 13 12 14 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 96 [0x60])) [0  S16 A128])
+        (reg:V4SF 24 xmm3)) tsscryptoh.c:111 -1
+     (nil))
+(insn 14 13 15 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 112 [0x70])) [0  S16 A128])
+        (reg:V4SF 25 xmm4)) tsscryptoh.c:111 -1
+     (nil))
+(insn 15 14 16 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 128 [0x80])) [0  S16 A128])
+        (reg:V4SF 26 xmm5)) tsscryptoh.c:111 -1
+     (nil))
+(insn 16 15 17 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 144 [0x90])) [0  S16 A128])
+        (reg:V4SF 27 xmm6)) tsscryptoh.c:111 -1
+     (nil))
+(insn 17 16 18 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 160 [0xa0])) [0  S16 A128])
+        (reg:V4SF 28 xmm7)) tsscryptoh.c:111 -1
+     (nil))
+(code_label 18 17 91 4 6 "" [1 uses])
+(note 91 18 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 19 91 20 4 NOTE_INSN_FUNCTION_BEG)
+(insn 20 19 21 4 (set (reg/f:DI 92)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:111 -1
+     (nil))
+(insn 21 20 24 4 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.15555+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:111 -1
+     (nil))
+(insn 24 21 25 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:112 -1
+     (nil))
+(insn 25 24 26 4 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 expect+0 S8 A64])) tsscryptoh.c:117 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:HI 87 [ D.15551 ])
+        (mem/j:HI (reg/f:DI 93) [0 expect_7(D)->hashAlg+0 S2 A16])) tsscryptoh.c:117 -1
+     (nil))
+(insn 27 26 28 4 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 actual.hashAlg+0 S2 A64])
+        (reg:HI 87 [ D.15551 ])) tsscryptoh.c:117 -1
+     (nil))
+(insn 28 27 29 4 (parallel [
+            (set (reg:DI 94)
+                (plus:DI (reg/f:DI 81 virtual-incoming-args)
+                    (const_int 0 [0])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:118 -1
+     (nil))
+(insn 29 28 30 4 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [0 MEM[(struct [1] *)&ap].gp_offset+0 S4 A64])
+        (const_int 24 [0x18])) tsscryptoh.c:118 -1
+     (nil))
+(insn 30 29 31 4 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 MEM[(struct [1] *)&ap].fp_offset+0 S4 A32])
+        (const_int 48 [0x30])) tsscryptoh.c:118 -1
+     (nil))
+(insn 31 30 32 4 (set (mem/f/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -160 [0xffffffffffffff60])) [0 MEM[(struct [1] *)&ap].overflow_arg_area+0 S8 A64])
+        (reg/f:DI 81 virtual-incoming-args)) tsscryptoh.c:118 -1
+     (nil))
+(insn 32 31 33 4 (set (mem/f/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -152 [0xffffffffffffff68])) [0 MEM[(struct [1] *)&ap].reg_save_area+0 S8 A64])
+        (reg/f:DI 20 frame)) tsscryptoh.c:118 -1
+     (nil))
+(insn 33 32 34 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:119 -1
+     (nil))
+(jump_insn 34 33 35 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) tsscryptoh.c:119 -1
+     (nil)
+ -> 45)
+(note 35 34 36 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 6 (parallel [
+            (set (reg:DI 95)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -168 [0xffffffffffffff58])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:120 -1
+     (nil))
+(insn 37 36 38 6 (set (reg:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [0 hmacKey+0 S8 A64])) tsscryptoh.c:120 -1
+     (nil))
+(insn 38 37 39 6 (parallel [
+            (set (reg:DI 97)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:120 -1
+     (nil))
+(insn 39 38 40 6 (set (reg:DI 1 dx)
+        (reg:DI 95)) tsscryptoh.c:120 -1
+     (nil))
+(insn 40 39 41 6 (set (reg:DI 4 si)
+        (reg:DI 96)) tsscryptoh.c:120 -1
+     (nil))
+(insn 41 40 42 6 (set (reg:DI 5 di)
+        (reg:DI 97)) tsscryptoh.c:120 -1
+     (nil))
+(call_insn 42 41 43 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_HMAC_Generate_valist") [flags 0x41]  <function_decl 0x7f10eff0d870 TSS_HMAC_Generate_valist>) [0 TSS_HMAC_Generate_valist S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:120 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 43 42 44 6 (set (reg:SI 98)
+        (reg:SI 0 ax)) tsscryptoh.c:120 -1
+     (nil))
+(insn 44 43 45 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 rc+0 S4 A32])
+        (reg:SI 98)) tsscryptoh.c:120 -1
+     (nil))
+(code_label 45 44 46 7 7 "" [1 uses])
+(note 46 45 47 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:122 -1
+     (nil))
+(jump_insn 48 47 49 7 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 72)
+            (pc))) tsscryptoh.c:122 -1
+     (nil)
+ -> 72)
+(note 49 48 50 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 8 (set (reg:DI 88 [ D.15552 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 sizeInBytes+0 S4 A32]))) tsscryptoh.c:123 -1
+     (nil))
+(insn 51 50 52 8 (set (reg/f:DI 99)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 expect+0 S8 A64])) tsscryptoh.c:123 -1
+     (nil))
+(insn 52 51 53 8 (parallel [
+            (set (reg/f:DI 89 [ D.15553 ])
+                (plus:DI (reg/f:DI 99)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:123 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -184 [0xffffffffffffff48])) [0 expect+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 53 52 54 8 (parallel [
+            (set (reg:DI 100)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:123 -1
+     (nil))
+(insn 54 53 55 8 (parallel [
+            (set (reg:DI 101)
+                (plus:DI (reg:DI 100)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:123 -1
+     (nil))
+(insn 55 54 56 8 (set (reg:DI 1 dx)
+        (reg:DI 88 [ D.15552 ])) tsscryptoh.c:123 -1
+     (nil))
+(insn 56 55 57 8 (set (reg:DI 4 si)
+        (reg:DI 101)) tsscryptoh.c:123 -1
+     (nil))
+(insn 57 56 58 8 (set (reg:DI 5 di)
+        (reg/f:DI 89 [ D.15553 ])) tsscryptoh.c:123 -1
+     (nil))
+(call_insn/i 58 57 59 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcmp") [flags 0x41]  <function_decl 0x7f10f08c6ca8 memcmp>) [0 __builtin_memcmp S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:123 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 59 58 60 8 (set (reg:SI 102)
+        (reg:SI 0 ax)) tsscryptoh.c:123 -1
+     (nil))
+(insn 60 59 61 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -172 [0xffffffffffffff54])) [0 irc+0 S4 A32])
+        (reg:SI 102)) tsscryptoh.c:123 -1
+     (nil))
+(insn 61 60 62 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -172 [0xffffffffffffff54])) [0 irc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:124 -1
+     (nil))
+(jump_insn 62 61 63 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 72)
+            (pc))) tsscryptoh.c:124 -1
+     (nil)
+ -> 72)
+(note 63 62 64 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 65 9 (set (reg:SI 103)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 sizeInBytes+0 S4 A32])) tsscryptoh.c:125 -1
+     (nil))
+(insn 65 64 66 9 (parallel [
+            (set (reg:DI 104)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:125 -1
+     (nil))
+(insn 66 65 67 9 (parallel [
+            (set (reg:DI 105)
+                (plus:DI (reg:DI 104)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:125 -1
+     (nil))
+(insn 67 66 68 9 (set (reg:SI 1 dx)
+        (reg:SI 103)) tsscryptoh.c:125 -1
+     (nil))
+(insn 68 67 69 9 (set (reg:DI 4 si)
+        (reg:DI 105)) tsscryptoh.c:125 -1
+     (nil))
+(insn 69 68 70 9 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f10eff8cbd0 *.LC0>)) tsscryptoh.c:125 -1
+     (nil))
+(call_insn 70 69 71 9 (call (mem:QI (symbol_ref:DI ("TSS_PrintAll") [flags 0x41]  <function_decl 0x7f10f023b6c0 TSS_PrintAll>) [0 TSS_PrintAll S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:125 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 71 70 72 9 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 rc+0 S4 A32])
+        (const_int 721011 [0xb0073])) tsscryptoh.c:127 -1
+     (nil))
+(code_label 72 71 73 10 8 "" [2 uses])
+(note 73 72 74 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 74 73 77 10 (set (reg:SI 90 [ D.15554 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 rc+0 S4 A32])) tsscryptoh.c:131 -1
+     (nil))
+(insn 77 74 81 10 (set (reg:SI 91 [ <retval> ])
+        (reg:SI 90 [ D.15554 ])) tsscryptoh.c:131 -1
+     (nil))
+(insn 81 77 82 10 (set (reg/i:SI 0 ax)
+        (reg:SI 91 [ <retval> ])) tsscryptoh.c:132 -1
+     (nil))
+(insn 82 81 83 10 (set (reg/f:DI 107)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:132 -1
+     (nil))
+(insn 83 82 84 10 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.15555+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) tsscryptoh.c:132 -1
+     (nil))
+(jump_insn 84 83 92 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 87)
+            (pc))) tsscryptoh.c:132 -1
+     (nil)
+ -> 87)
+(note 92 84 85 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(call_insn 85 92 86 13 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f10eff86510 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:132 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 86 85 87)
+(code_label 87 86 93 14 10 "" [1 uses])
+(note 93 87 88 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 88 93 0 14 (use (reg/i:SI 0 ax)) tsscryptoh.c:132 -1
+     (nil))
+
+;; Function TSS_KDFA (TSS_KDFA, funcdef_no=4, decl_uid=13906, cgraph_uid=4, symbol_order=4)
+
+Partition 7: size 130 align 16
+	hmac
+Partition 2: size 8 align 8
+	stream_4
+Partition 4: size 4 align 4
+	counter_8
+Partition 1: size 4 align 4
+	bytes_3
+Partition 0: size 4 align 4
+	rc_1
+Partition 6: size 4 align 4
+	counterNbo
+Partition 5: size 4 align 4
+	sizeInBitsNbo
+Partition 3: size 2 align 2
+	bytesThisPass_5
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 15 into block 14...
+Merged blocks 14 and 15.
+Merged 14 and 15 without moving.
+Removing jump 133.
+Merging block 16 into block 14...
+Merged blocks 14 and 16.
+Merged 14 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 12 NOTE_INSN_DELETED)
+(note 12 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 12 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 keyStream+0 S8 A64])
+        (reg:DI 5 di [ keyStream ])) tsscryptoh.c:149 -1
+     (nil))
+(insn 3 2 5 2 (set (reg:SI 106)
+        (reg:SI 4 si [ hashAlg ])) tsscryptoh.c:149 -1
+     (nil))
+(insn 5 3 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 key+0 S8 A64])
+        (reg:DI 1 dx [ key ])) tsscryptoh.c:149 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 label+0 S8 A64])
+        (reg:DI 2 cx [ label ])) tsscryptoh.c:149 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 contextU+0 S8 A64])
+        (reg:DI 37 r8 [ contextU ])) tsscryptoh.c:149 -1
+     (nil))
+(insn 8 7 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [0 contextV+0 S8 A64])
+        (reg:DI 38 r9 [ contextV ])) tsscryptoh.c:149 -1
+     (nil))
+(insn 4 8 9 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -188 [0xffffffffffffff44])) [0 hashAlg+0 S2 A32])
+        (subreg:HI (reg:SI 106) 0)) tsscryptoh.c:149 -1
+     (nil))
+(note 9 4 10 2 NOTE_INSN_FUNCTION_BEG)
+(insn 10 9 11 2 (set (reg/f:DI 107)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:149 -1
+     (nil))
+(insn 11 10 14 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.15566+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:149 -1
+     (nil))
+(insn 14 11 15 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:150 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 108)
+        (mem/c:SI (reg/f:DI 81 virtual-incoming-args) [0 sizeInBits+0 S4 A64])) tsscryptoh.c:151 -1
+     (nil))
+(insn 16 15 17 2 (parallel [
+            (set (reg:SI 87 [ D.15559 ])
+                (plus:SI (reg:SI 108)
+                    (const_int 7 [0x7])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:151 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (reg/f:DI 81 virtual-incoming-args) [0 sizeInBits+0 S4 A64])
+            (const_int 7 [0x7]))
+        (nil)))
+(insn 17 16 18 2 (parallel [
+            (set (reg:SI 109)
+                (lshiftrt:SI (reg:SI 87 [ D.15559 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:151 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32])
+        (reg:SI 109)) tsscryptoh.c:151 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 5 di)
+        (mem/c:SI (reg/f:DI 81 virtual-incoming-args) [0 sizeInBits+0 S4 A64])) tsscryptoh.c:153 -1
+     (nil))
+(call_insn/u 20 19 21 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("htonl") [flags 0x41]  <function_decl 0x7f10f06720d8 htonl>) [0 htonl S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:153 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 21 20 22 2 (set (reg:SI 88 [ D.15559 ])
+        (reg:SI 0 ax)) tsscryptoh.c:153 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -172 [0xffffffffffffff54])) [0 sizeInBitsNbo+0 S4 A32])
+        (reg:SI 88 [ D.15559 ])) tsscryptoh.c:153 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:160 -1
+     (nil))
+(jump_insn 24 23 25 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 46)
+            (pc))) tsscryptoh.c:160 -1
+     (nil)
+ -> 46)
+(note 25 24 26 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 4 (set (reg:HI 110)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -188 [0xffffffffffffff44])) [0 hashAlg+0 S2 A32])) tsscryptoh.c:161 -1
+     (nil))
+(insn 27 26 28 4 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 hmac.hashAlg+0 S2 A64])
+        (reg:HI 110)) tsscryptoh.c:161 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:SI 89 [ D.15560 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -188 [0xffffffffffffff44])) [0 hashAlg+0 S2 A32]))) tsscryptoh.c:162 -1
+     (nil))
+(insn 29 28 30 4 (set (reg:SI 5 di)
+        (reg:SI 89 [ D.15560 ])) tsscryptoh.c:162 -1
+     (nil))
+(call_insn 30 29 31 4 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_GetDigestSize") [flags 0x1]  <function_decl 0x7f10efe48a20 TSS_GetDigestSize>) [0 TSS_GetDigestSize S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:162 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 31 30 32 4 (set (reg:HI 111)
+        (reg:HI 0 ax)) tsscryptoh.c:162 -1
+     (nil))
+(insn 32 31 33 4 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -174 [0xffffffffffffff52])) [0 bytesThisPass+0 S2 A16])
+        (reg:HI 111)) tsscryptoh.c:162 -1
+     (nil))
+(insn 33 32 34 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -174 [0xffffffffffffff52])) [0 bytesThisPass+0 S2 A16])
+            (const_int 0 [0]))) tsscryptoh.c:163 -1
+     (nil))
+(jump_insn 34 33 35 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 46)
+            (pc))) tsscryptoh.c:163 -1
+     (nil)
+ -> 46)
+(note 35 34 36 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 5 (set (reg/f:DI 112)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose") [flags 0x40]  <var_decl 0x7f10eff35000 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:164 -1
+     (nil))
+(insn 37 36 38 5 (set (reg:SI 90 [ D.15560 ])
+        (mem/c:SI (reg/f:DI 112) [0 tssVerbose+0 S4 A32])) tsscryptoh.c:164 -1
+     (nil))
+(insn 38 37 39 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.15560 ])
+            (const_int 0 [0]))) tsscryptoh.c:164 -1
+     (nil))
+(jump_insn 39 38 40 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 43)
+            (pc))) tsscryptoh.c:164 -1
+     (nil)
+ -> 43)
+(note 40 39 41 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 6 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f10eff9b750 *.LC1>)) tsscryptoh.c:164 -1
+     (nil))
+(call_insn 42 41 43 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f10f08d3360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:164 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 43 42 44 7 13 "" [1 uses])
+(note 44 43 45 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 45 44 46 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])
+        (const_int 721008 [0xb0070])) tsscryptoh.c:165 -1
+     (nil))
+(code_label 46 45 47 8 12 "" [2 uses])
+(note 47 46 48 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 8 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 keyStream+0 S8 A64])) tsscryptoh.c:169 -1
+     (nil))
+(insn 49 48 50 8 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -152 [0xffffffffffffff68])) [0 stream+0 S8 A64])
+        (reg/f:DI 113)) tsscryptoh.c:169 -1
+     (nil))
+(insn 50 49 51 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -156 [0xffffffffffffff64])) [0 counter+0 S4 A32])
+        (const_int 1 [0x1])) tsscryptoh.c:169 -1
+     (nil))
+(jump_insn 51 50 52 8 (set (pc)
+        (label_ref 119)) tsscryptoh.c:169 -1
+     (nil)
+ -> 119)
+(barrier 52 51 124)
+(code_label 124 52 53 9 17 "" [1 uses])
+(note 53 124 54 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 54 53 55 9 (set (reg:SI 91 [ D.15559 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -174 [0xffffffffffffff52])) [0 bytesThisPass+0 S2 A16]))) tsscryptoh.c:174 -1
+     (nil))
+(insn 55 54 56 9 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 91 [ D.15559 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32]))) tsscryptoh.c:174 -1
+     (nil))
+(jump_insn 56 55 57 9 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 60)
+            (pc))) tsscryptoh.c:174 -1
+     (nil)
+ -> 60)
+(note 57 56 58 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 59 10 (set (reg:SI 114)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32])) tsscryptoh.c:175 -1
+     (nil))
+(insn 59 58 60 10 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -174 [0xffffffffffffff52])) [0 bytesThisPass+0 S2 A16])
+        (subreg:HI (reg:SI 114) 0)) tsscryptoh.c:175 -1
+     (nil))
+(code_label 60 59 61 11 15 "" [1 uses])
+(note 61 60 62 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 62 61 63 11 (set (reg:SI 115)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -156 [0xffffffffffffff64])) [0 counter+0 S4 A32])) tsscryptoh.c:177 -1
+     (nil))
+(insn 63 62 64 11 (set (reg:SI 5 di)
+        (reg:SI 115)) tsscryptoh.c:177 -1
+     (nil))
+(call_insn/u 64 63 65 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("htonl") [flags 0x41]  <function_decl 0x7f10f06720d8 htonl>) [0 htonl S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:177 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 65 64 66 11 (set (reg:SI 92 [ D.15559 ])
+        (reg:SI 0 ax)) tsscryptoh.c:177 -1
+     (nil))
+(insn 66 65 67 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [0 counterNbo+0 S4 A64])
+        (reg:SI 92 [ D.15559 ])) tsscryptoh.c:177 -1
+     (nil))
+(insn 67 66 68 11 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [0 contextV+0 S8 A64])) tsscryptoh.c:185 -1
+     (nil))
+(insn 68 67 69 11 (parallel [
+            (set (reg/f:DI 93 [ D.15561 ])
+                (plus:DI (reg/f:DI 116)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:185 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -224 [0xffffffffffffff20])) [0 contextV+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 69 68 70 11 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [0 contextV+0 S8 A64])) tsscryptoh.c:185 -1
+     (nil))
+(insn 70 69 71 11 (set (reg:HI 94 [ D.15562 ])
+        (mem/j:HI (reg/f:DI 117) [0 contextV_35(D)->size+0 S2 A16])) tsscryptoh.c:185 -1
+     (nil))
+(insn 71 70 72 11 (set (reg:SI 95 [ D.15560 ])
+        (zero_extend:SI (reg:HI 94 [ D.15562 ]))) tsscryptoh.c:179 -1
+     (nil))
+(insn 72 71 73 11 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 contextU+0 S8 A64])) tsscryptoh.c:184 -1
+     (nil))
+(insn 73 72 74 11 (parallel [
+            (set (reg/f:DI 96 [ D.15561 ])
+                (plus:DI (reg/f:DI 118)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:184 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -216 [0xffffffffffffff28])) [0 contextU+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 74 73 75 11 (set (reg/f:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 contextU+0 S8 A64])) tsscryptoh.c:184 -1
+     (nil))
+(insn 75 74 76 11 (set (reg:HI 97 [ D.15562 ])
+        (mem/j:HI (reg/f:DI 119) [0 contextU_39(D)->size+0 S2 A16])) tsscryptoh.c:184 -1
+     (nil))
+(insn 76 75 77 11 (set (reg:SI 98 [ D.15560 ])
+        (zero_extend:SI (reg:HI 97 [ D.15562 ]))) tsscryptoh.c:179 -1
+     (nil))
+(insn 77 76 78 11 (set (reg:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 label+0 S8 A64])) tsscryptoh.c:182 -1
+     (nil))
+(insn 78 77 79 11 (set (reg:DI 5 di)
+        (reg:DI 120)) tsscryptoh.c:182 -1
+     (nil))
+(call_insn/i 79 78 80 11 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x7f10f08ca948 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:182 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 80 79 81 11 (set (reg:DI 99 [ D.15563 ])
+        (reg:DI 0 ax)) tsscryptoh.c:182 -1
+     (nil))
+(insn 81 80 82 11 (parallel [
+            (set (reg:DI 100 [ D.15563 ])
+                (plus:DI (reg:DI 99 [ D.15563 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:179 -1
+     (nil))
+(insn 82 81 83 11 (set (reg:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 label+0 S8 A64])) tsscryptoh.c:179 -1
+     (nil))
+(insn 83 82 84 11 (parallel [
+            (set (reg:DI 122)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -168 [0xffffffffffffff58])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:179 -1
+     (nil))
+(insn 84 83 85 11 (set (reg:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 key+0 S8 A64])) tsscryptoh.c:179 -1
+     (nil))
+(insn 85 84 86 11 (parallel [
+            (set (reg:DI 124)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:179 -1
+     (nil))
+(insn 86 85 87 11 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) tsscryptoh.c:179 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 87 86 88 11 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:179 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 88 87 89 11 (parallel [
+            (set (reg:DI 125)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -172 [0xffffffffffffff54])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:179 -1
+     (nil))
+(insn 89 88 90 11 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (reg:DI 125)) tsscryptoh.c:179 -1
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 90 89 91 11 (set (mem:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 4 [0x4])) tsscryptoh.c:179 -1
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(insn 91 90 92 11 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (reg/f:DI 93 [ D.15561 ])) tsscryptoh.c:179 -1
+     (expr_list:REG_ARGS_SIZE (const_int 40 [0x28])
+        (nil)))
+(insn 92 91 93 11 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 95 [ D.15560 ])) tsscryptoh.c:179 -1
+     (expr_list:REG_ARGS_SIZE (const_int 48 [0x30])
+        (nil)))
+(insn 93 92 94 11 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (reg/f:DI 96 [ D.15561 ])) tsscryptoh.c:179 -1
+     (expr_list:REG_ARGS_SIZE (const_int 56 [0x38])
+        (nil)))
+(insn 94 93 95 11 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 98 [ D.15560 ])) tsscryptoh.c:179 -1
+     (expr_list:REG_ARGS_SIZE (const_int 64 [0x40])
+        (nil)))
+(insn 95 94 96 11 (set (reg:DI 38 r9)
+        (reg:DI 121)) tsscryptoh.c:179 -1
+     (nil))
+(insn 96 95 97 11 (set (reg:DI 37 r8)
+        (reg:DI 100 [ D.15563 ])) tsscryptoh.c:179 -1
+     (nil))
+(insn 97 96 98 11 (set (reg:DI 2 cx)
+        (reg:DI 122)) tsscryptoh.c:179 -1
+     (nil))
+(insn 98 97 99 11 (set (reg:DI 1 dx)
+        (const_int 4 [0x4])) tsscryptoh.c:179 -1
+     (nil))
+(insn 99 98 100 11 (set (reg:DI 4 si)
+        (reg:DI 123)) tsscryptoh.c:179 -1
+     (nil))
+(insn 100 99 101 11 (set (reg:DI 5 di)
+        (reg:DI 124)) tsscryptoh.c:179 -1
+     (nil))
+(insn 101 100 102 11 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tsscryptoh.c:179 -1
+     (nil))
+(call_insn 102 101 103 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_HMAC_Generate") [flags 0x1]  <function_decl 0x7f10efe48ca8 TSS_HMAC_Generate>) [0 TSS_HMAC_Generate S1 A8])
+            (const_int 64 [0x40]))) tsscryptoh.c:179 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:DI (use (reg:DI 2 cx))
+                        (expr_list:DI (use (reg:DI 37 r8))
+                            (expr_list:DI (use (reg:DI 38 r9))
+                                (nil)))))))))
+(insn 103 102 104 11 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:179 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 104 103 105 11 (set (reg:SI 126)
+        (reg:SI 0 ax)) tsscryptoh.c:179 -1
+     (nil))
+(insn 105 104 106 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])
+        (reg:SI 126)) tsscryptoh.c:179 -1
+     (nil))
+(insn 106 105 107 11 (set (reg:DI 101 [ D.15563 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -174 [0xffffffffffffff52])) [0 bytesThisPass+0 S2 A16]))) tsscryptoh.c:188 -1
+     (nil))
+(insn 107 106 108 11 (parallel [
+            (set (reg:DI 127)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:188 -1
+     (nil))
+(insn 108 107 109 11 (parallel [
+            (set (reg:DI 128)
+                (plus:DI (reg:DI 127)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:188 -1
+     (nil))
+(insn 109 108 110 11 (set (reg:DI 129)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -152 [0xffffffffffffff68])) [0 stream+0 S8 A64])) tsscryptoh.c:188 -1
+     (nil))
+(insn 110 109 111 11 (set (reg:DI 1 dx)
+        (reg:DI 101 [ D.15563 ])) tsscryptoh.c:188 -1
+     (nil))
+(insn 111 110 112 11 (set (reg:DI 4 si)
+        (reg:DI 128)) tsscryptoh.c:188 -1
+     (nil))
+(insn 112 111 113 11 (set (reg:DI 5 di)
+        (reg:DI 129)) tsscryptoh.c:188 -1
+     (nil))
+(call_insn 113 112 114 11 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f10f08c6e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:188 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 114 113 115 11 (set (reg:DI 102 [ D.15564 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -174 [0xffffffffffffff52])) [0 bytesThisPass+0 S2 A16]))) tsscryptoh.c:171 -1
+     (nil))
+(insn 115 114 116 11 (parallel [
+            (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -152 [0xffffffffffffff68])) [0 stream+0 S8 A64])
+                (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -152 [0xffffffffffffff68])) [0 stream+0 S8 A64])
+                    (reg:DI 102 [ D.15564 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:171 -1
+     (nil))
+(insn 116 115 117 11 (set (reg:SI 103 [ D.15559 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -174 [0xffffffffffffff52])) [0 bytesThisPass+0 S2 A16]))) tsscryptoh.c:171 -1
+     (nil))
+(insn 117 116 118 11 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32])
+                (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32])
+                    (reg:SI 103 [ D.15559 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:171 -1
+     (nil))
+(insn 118 117 119 11 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -156 [0xffffffffffffff64])) [0 counter+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -156 [0xffffffffffffff64])) [0 counter+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:171 -1
+     (nil))
+(code_label 119 118 120 12 14 "" [1 uses])
+(note 120 119 121 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 121 120 122 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:169 -1
+     (nil))
+(jump_insn 122 121 123 12 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 127)
+            (pc))) tsscryptoh.c:169 -1
+     (nil)
+ -> 127)
+(note 123 122 125 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 125 123 126 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:170 -1
+     (nil))
+(jump_insn 126 125 127 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 124)
+            (pc))) tsscryptoh.c:170 -1
+     (nil)
+ -> 124)
+(code_label 127 126 128 14 16 "" [1 uses])
+(note 128 127 129 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 129 128 132 14 (set (reg:SI 104 [ D.15565 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])) tsscryptoh.c:190 -1
+     (nil))
+(insn 132 129 136 14 (set (reg:SI 105 [ <retval> ])
+        (reg:SI 104 [ D.15565 ])) tsscryptoh.c:190 -1
+     (nil))
+(insn 136 132 137 14 (set (reg/i:SI 0 ax)
+        (reg:SI 105 [ <retval> ])) tsscryptoh.c:191 -1
+     (nil))
+(insn 137 136 138 14 (set (reg/f:DI 131)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:191 -1
+     (nil))
+(insn 138 137 139 14 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.15566+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) tsscryptoh.c:191 -1
+     (nil))
+(jump_insn 139 138 145 14 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 142)
+            (pc))) tsscryptoh.c:191 -1
+     (nil)
+ -> 142)
+(note 145 139 140 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(call_insn 140 145 141 17 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f10eff86510 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:191 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 141 140 142)
+(code_label 142 141 146 18 19 "" [1 uses])
+(note 146 142 143 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 143 146 0 18 (use (reg/i:SI 0 ax)) tsscryptoh.c:191 -1
+     (nil))
+
+;; Function TSS_KDFE (TSS_KDFE, funcdef_no=5, decl_uid=13914, cgraph_uid=5, symbol_order=5)
+
+Partition 6: size 130 align 16
+	digest
+Partition 2: size 8 align 8
+	stream_4
+Partition 4: size 4 align 4
+	counter_8
+Partition 1: size 4 align 4
+	bytes_3
+Partition 0: size 4 align 4
+	rc_1
+Partition 5: size 4 align 4
+	counterNbo
+Partition 3: size 2 align 2
+	bytesThisPass_5
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 15 into block 14...
+Merged blocks 14 and 15.
+Merged 14 and 15 without moving.
+Removing jump 131.
+Merging block 16 into block 14...
+Merged blocks 14 and 16.
+Merged 14 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 12 NOTE_INSN_DELETED)
+(note 12 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 12 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 keyStream+0 S8 A64])
+        (reg:DI 5 di [ keyStream ])) tsscryptoh.c:222 -1
+     (nil))
+(insn 3 2 5 2 (set (reg:SI 108)
+        (reg:SI 4 si [ hashAlg ])) tsscryptoh.c:222 -1
+     (nil))
+(insn 5 3 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 key+0 S8 A64])
+        (reg:DI 1 dx [ key ])) tsscryptoh.c:222 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 label+0 S8 A64])
+        (reg:DI 2 cx [ label ])) tsscryptoh.c:222 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 contextU+0 S8 A64])
+        (reg:DI 37 r8 [ contextU ])) tsscryptoh.c:222 -1
+     (nil))
+(insn 8 7 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [0 contextV+0 S8 A64])
+        (reg:DI 38 r9 [ contextV ])) tsscryptoh.c:222 -1
+     (nil))
+(insn 4 8 9 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -188 [0xffffffffffffff44])) [0 hashAlg+0 S2 A32])
+        (subreg:HI (reg:SI 108) 0)) tsscryptoh.c:222 -1
+     (nil))
+(note 9 4 10 2 NOTE_INSN_FUNCTION_BEG)
+(insn 10 9 11 2 (set (reg/f:DI 109)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:222 -1
+     (nil))
+(insn 11 10 14 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.15575+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:222 -1
+     (nil))
+(insn 14 11 15 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:223 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 110)
+        (mem/c:SI (reg/f:DI 81 virtual-incoming-args) [0 sizeInBits+0 S4 A64])) tsscryptoh.c:224 -1
+     (nil))
+(insn 16 15 17 2 (parallel [
+            (set (reg:SI 87 [ D.15568 ])
+                (plus:SI (reg:SI 110)
+                    (const_int 7 [0x7])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:224 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (reg/f:DI 81 virtual-incoming-args) [0 sizeInBits+0 S4 A64])
+            (const_int 7 [0x7]))
+        (nil)))
+(insn 17 16 18 2 (parallel [
+            (set (reg:SI 111)
+                (lshiftrt:SI (reg:SI 87 [ D.15568 ])
+                    (const_int 3 [0x3])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:224 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32])
+        (reg:SI 111)) tsscryptoh.c:224 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:231 -1
+     (nil))
+(jump_insn 20 19 21 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) tsscryptoh.c:231 -1
+     (nil)
+ -> 42)
+(note 21 20 22 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 4 (set (reg:HI 112)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -188 [0xffffffffffffff44])) [0 hashAlg+0 S2 A32])) tsscryptoh.c:232 -1
+     (nil))
+(insn 23 22 24 4 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 digest.hashAlg+0 S2 A64])
+        (reg:HI 112)) tsscryptoh.c:232 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 88 [ D.15569 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -188 [0xffffffffffffff44])) [0 hashAlg+0 S2 A32]))) tsscryptoh.c:233 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 5 di)
+        (reg:SI 88 [ D.15569 ])) tsscryptoh.c:233 -1
+     (nil))
+(call_insn 26 25 27 4 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_GetDigestSize") [flags 0x1]  <function_decl 0x7f10efe48a20 TSS_GetDigestSize>) [0 TSS_GetDigestSize S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:233 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 27 26 28 4 (set (reg:HI 113)
+        (reg:HI 0 ax)) tsscryptoh.c:233 -1
+     (nil))
+(insn 28 27 29 4 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -170 [0xffffffffffffff56])) [0 bytesThisPass+0 S2 A16])
+        (reg:HI 113)) tsscryptoh.c:233 -1
+     (nil))
+(insn 29 28 30 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -170 [0xffffffffffffff56])) [0 bytesThisPass+0 S2 A16])
+            (const_int 0 [0]))) tsscryptoh.c:234 -1
+     (nil))
+(jump_insn 30 29 31 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) tsscryptoh.c:234 -1
+     (nil)
+ -> 42)
+(note 31 30 32 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 5 (set (reg/f:DI 114)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose") [flags 0x40]  <var_decl 0x7f10eff35000 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:235 -1
+     (nil))
+(insn 33 32 34 5 (set (reg:SI 89 [ D.15569 ])
+        (mem/c:SI (reg/f:DI 114) [0 tssVerbose+0 S4 A32])) tsscryptoh.c:235 -1
+     (nil))
+(insn 34 33 35 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.15569 ])
+            (const_int 0 [0]))) tsscryptoh.c:235 -1
+     (nil))
+(jump_insn 35 34 36 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) tsscryptoh.c:235 -1
+     (nil)
+ -> 39)
+(note 36 35 37 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 6 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f10effa8750 *.LC2>)) tsscryptoh.c:235 -1
+     (nil))
+(call_insn 38 37 39 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f10f08d3360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:235 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 39 38 40 7 22 "" [1 uses])
+(note 40 39 41 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])
+        (const_int 721028 [0xb0084])) tsscryptoh.c:236 -1
+     (nil))
+(code_label 42 41 43 8 21 "" [2 uses])
+(note 43 42 44 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 8 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 keyStream+0 S8 A64])) tsscryptoh.c:240 -1
+     (nil))
+(insn 45 44 46 8 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -152 [0xffffffffffffff68])) [0 stream+0 S8 A64])
+        (reg/f:DI 115)) tsscryptoh.c:240 -1
+     (nil))
+(insn 46 45 47 8 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -156 [0xffffffffffffff64])) [0 counter+0 S4 A32])
+        (const_int 1 [0x1])) tsscryptoh.c:240 -1
+     (nil))
+(jump_insn 47 46 48 8 (set (pc)
+        (label_ref 117)) tsscryptoh.c:240 -1
+     (nil)
+ -> 117)
+(barrier 48 47 122)
+(code_label 122 48 49 9 26 "" [1 uses])
+(note 49 122 50 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 9 (set (reg:SI 90 [ D.15568 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -170 [0xffffffffffffff56])) [0 bytesThisPass+0 S2 A16]))) tsscryptoh.c:244 -1
+     (nil))
+(insn 51 50 52 9 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 90 [ D.15568 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32]))) tsscryptoh.c:244 -1
+     (nil))
+(jump_insn 52 51 53 9 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 56)
+            (pc))) tsscryptoh.c:244 -1
+     (nil)
+ -> 56)
+(note 53 52 54 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 54 53 55 10 (set (reg:SI 116)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32])) tsscryptoh.c:245 -1
+     (nil))
+(insn 55 54 56 10 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -170 [0xffffffffffffff56])) [0 bytesThisPass+0 S2 A16])
+        (subreg:HI (reg:SI 116) 0)) tsscryptoh.c:245 -1
+     (nil))
+(code_label 56 55 57 11 24 "" [1 uses])
+(note 57 56 58 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 59 11 (set (reg:SI 117)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -156 [0xffffffffffffff64])) [0 counter+0 S4 A32])) tsscryptoh.c:247 -1
+     (nil))
+(insn 59 58 60 11 (set (reg:SI 5 di)
+        (reg:SI 117)) tsscryptoh.c:247 -1
+     (nil))
+(call_insn/u 60 59 61 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("htonl") [flags 0x41]  <function_decl 0x7f10f06720d8 htonl>) [0 htonl S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:247 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 61 60 62 11 (set (reg:SI 91 [ D.15568 ])
+        (reg:SI 0 ax)) tsscryptoh.c:247 -1
+     (nil))
+(insn 62 61 63 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [0 counterNbo+0 S4 A64])
+        (reg:SI 91 [ D.15568 ])) tsscryptoh.c:247 -1
+     (nil))
+(insn 63 62 64 11 (set (reg/f:DI 118)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [0 contextV+0 S8 A64])) tsscryptoh.c:255 -1
+     (nil))
+(insn 64 63 65 11 (parallel [
+            (set (reg/f:DI 92 [ D.15570 ])
+                (plus:DI (reg/f:DI 118)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:255 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -224 [0xffffffffffffff20])) [0 contextV+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 65 64 66 11 (set (reg/f:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [0 contextV+0 S8 A64])) tsscryptoh.c:255 -1
+     (nil))
+(insn 66 65 67 11 (set (reg:HI 93 [ D.15571 ])
+        (mem/j:HI (reg/f:DI 119) [0 contextV_33(D)->size+0 S2 A16])) tsscryptoh.c:255 -1
+     (nil))
+(insn 67 66 68 11 (set (reg:SI 94 [ D.15569 ])
+        (zero_extend:SI (reg:HI 93 [ D.15571 ]))) tsscryptoh.c:249 -1
+     (nil))
+(insn 68 67 69 11 (set (reg/f:DI 120)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 contextU+0 S8 A64])) tsscryptoh.c:254 -1
+     (nil))
+(insn 69 68 70 11 (parallel [
+            (set (reg/f:DI 95 [ D.15570 ])
+                (plus:DI (reg/f:DI 120)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:254 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -216 [0xffffffffffffff28])) [0 contextU+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 70 69 71 11 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 contextU+0 S8 A64])) tsscryptoh.c:254 -1
+     (nil))
+(insn 71 70 72 11 (set (reg:HI 96 [ D.15571 ])
+        (mem/j:HI (reg/f:DI 121) [0 contextU_37(D)->size+0 S2 A16])) tsscryptoh.c:254 -1
+     (nil))
+(insn 72 71 73 11 (set (reg:SI 97 [ D.15569 ])
+        (zero_extend:SI (reg:HI 96 [ D.15571 ]))) tsscryptoh.c:249 -1
+     (nil))
+(insn 73 72 74 11 (set (reg:DI 122)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 label+0 S8 A64])) tsscryptoh.c:252 -1
+     (nil))
+(insn 74 73 75 11 (set (reg:DI 5 di)
+        (reg:DI 122)) tsscryptoh.c:252 -1
+     (nil))
+(call_insn/i 75 74 76 11 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strlen") [flags 0x41]  <function_decl 0x7f10f08ca948 strlen>) [0 __builtin_strlen S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:252 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 76 75 77 11 (set (reg:DI 98 [ D.15572 ])
+        (reg:DI 0 ax)) tsscryptoh.c:252 -1
+     (nil))
+(insn 77 76 78 11 (parallel [
+            (set (reg:DI 99 [ D.15572 ])
+                (plus:DI (reg:DI 98 [ D.15572 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:249 -1
+     (nil))
+(insn 78 77 79 11 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 key+0 S8 A64])) tsscryptoh.c:251 -1
+     (nil))
+(insn 79 78 80 11 (parallel [
+            (set (reg/f:DI 100 [ D.15570 ])
+                (plus:DI (reg/f:DI 123)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:251 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -200 [0xffffffffffffff38])) [0 key+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 80 79 81 11 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 key+0 S8 A64])) tsscryptoh.c:251 -1
+     (nil))
+(insn 81 80 82 11 (set (reg:HI 101 [ D.15571 ])
+        (mem/j:HI (reg/f:DI 124) [0 key_44(D)->size+0 S2 A16])) tsscryptoh.c:251 -1
+     (nil))
+(insn 82 81 83 11 (set (reg:SI 102 [ D.15569 ])
+        (zero_extend:SI (reg:HI 101 [ D.15571 ]))) tsscryptoh.c:249 -1
+     (nil))
+(insn 83 82 84 11 (parallel [
+            (set (reg:DI 125)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -168 [0xffffffffffffff58])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:249 -1
+     (nil))
+(insn 84 83 85 11 (parallel [
+            (set (reg:DI 126)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:249 -1
+     (nil))
+(insn 85 84 86 11 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:249 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 86 85 87 11 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) tsscryptoh.c:249 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 87 86 88 11 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:249 -1
+     (expr_list:REG_ARGS_SIZE (const_int 24 [0x18])
+        (nil)))
+(insn 88 87 89 11 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (reg/f:DI 92 [ D.15570 ])) tsscryptoh.c:249 -1
+     (expr_list:REG_ARGS_SIZE (const_int 32 [0x20])
+        (nil)))
+(insn 89 88 90 11 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 94 [ D.15569 ])) tsscryptoh.c:249 -1
+     (expr_list:REG_ARGS_SIZE (const_int 40 [0x28])
+        (nil)))
+(insn 90 89 91 11 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (reg/f:DI 95 [ D.15570 ])) tsscryptoh.c:249 -1
+     (expr_list:REG_ARGS_SIZE (const_int 48 [0x30])
+        (nil)))
+(insn 91 90 92 11 (set (mem:SI (pre_modify:DI (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8]))) [0  S4 A32])
+        (reg:SI 97 [ D.15569 ])) tsscryptoh.c:249 -1
+     (expr_list:REG_ARGS_SIZE (const_int 56 [0x38])
+        (nil)))
+(insn 92 91 93 11 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 label+0 S8 A64])) tsscryptoh.c:249 -1
+     (expr_list:REG_ARGS_SIZE (const_int 64 [0x40])
+        (nil)))
+(insn 93 92 94 11 (set (reg:DI 38 r9)
+        (reg:DI 99 [ D.15572 ])) tsscryptoh.c:249 -1
+     (nil))
+(insn 94 93 95 11 (set (reg:DI 37 r8)
+        (reg/f:DI 100 [ D.15570 ])) tsscryptoh.c:249 -1
+     (nil))
+(insn 95 94 96 11 (set (reg:SI 2 cx)
+        (reg:SI 102 [ D.15569 ])) tsscryptoh.c:249 -1
+     (nil))
+(insn 96 95 97 11 (set (reg:DI 1 dx)
+        (reg:DI 125)) tsscryptoh.c:249 -1
+     (nil))
+(insn 97 96 98 11 (set (reg:DI 4 si)
+        (const_int 4 [0x4])) tsscryptoh.c:249 -1
+     (nil))
+(insn 98 97 99 11 (set (reg:DI 5 di)
+        (reg:DI 126)) tsscryptoh.c:249 -1
+     (nil))
+(insn 99 98 100 11 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tsscryptoh.c:249 -1
+     (nil))
+(call_insn 100 99 101 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Hash_Generate") [flags 0x1]  <function_decl 0x7f10efe48bd0 TSS_Hash_Generate>) [0 TSS_Hash_Generate S1 A8])
+            (const_int 64 [0x40]))) tsscryptoh.c:249 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:SI (use (reg:SI 2 cx))
+                        (expr_list:DI (use (reg:DI 37 r8))
+                            (expr_list:DI (use (reg:DI 38 r9))
+                                (nil)))))))))
+(insn 101 100 102 11 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:249 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 102 101 103 11 (set (reg:SI 127)
+        (reg:SI 0 ax)) tsscryptoh.c:249 -1
+     (nil))
+(insn 103 102 104 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])
+        (reg:SI 127)) tsscryptoh.c:249 -1
+     (nil))
+(insn 104 103 105 11 (set (reg:DI 103 [ D.15572 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -170 [0xffffffffffffff56])) [0 bytesThisPass+0 S2 A16]))) tsscryptoh.c:257 -1
+     (nil))
+(insn 105 104 106 11 (parallel [
+            (set (reg:DI 128)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:257 -1
+     (nil))
+(insn 106 105 107 11 (parallel [
+            (set (reg:DI 129)
+                (plus:DI (reg:DI 128)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:257 -1
+     (nil))
+(insn 107 106 108 11 (set (reg:DI 130)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -152 [0xffffffffffffff68])) [0 stream+0 S8 A64])) tsscryptoh.c:257 -1
+     (nil))
+(insn 108 107 109 11 (set (reg:DI 1 dx)
+        (reg:DI 103 [ D.15572 ])) tsscryptoh.c:257 -1
+     (nil))
+(insn 109 108 110 11 (set (reg:DI 4 si)
+        (reg:DI 129)) tsscryptoh.c:257 -1
+     (nil))
+(insn 110 109 111 11 (set (reg:DI 5 di)
+        (reg:DI 130)) tsscryptoh.c:257 -1
+     (nil))
+(call_insn 111 110 112 11 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f10f08c6e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:257 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 112 111 113 11 (set (reg:DI 104 [ D.15573 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -170 [0xffffffffffffff56])) [0 bytesThisPass+0 S2 A16]))) tsscryptoh.c:242 -1
+     (nil))
+(insn 113 112 114 11 (parallel [
+            (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -152 [0xffffffffffffff68])) [0 stream+0 S8 A64])
+                (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -152 [0xffffffffffffff68])) [0 stream+0 S8 A64])
+                    (reg:DI 104 [ D.15573 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:242 -1
+     (nil))
+(insn 114 113 115 11 (set (reg:SI 105 [ D.15568 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -170 [0xffffffffffffff56])) [0 bytesThisPass+0 S2 A16]))) tsscryptoh.c:242 -1
+     (nil))
+(insn 115 114 116 11 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32])
+                (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32])
+                    (reg:SI 105 [ D.15568 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:242 -1
+     (nil))
+(insn 116 115 117 11 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -156 [0xffffffffffffff64])) [0 counter+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -156 [0xffffffffffffff64])) [0 counter+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:242 -1
+     (nil))
+(code_label 117 116 118 12 23 "" [1 uses])
+(note 118 117 119 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 119 118 120 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:240 -1
+     (nil))
+(jump_insn 120 119 121 12 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 125)
+            (pc))) tsscryptoh.c:240 -1
+     (nil)
+ -> 125)
+(note 121 120 123 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 123 121 124 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])) [0 bytes+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:241 -1
+     (nil))
+(jump_insn 124 123 125 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 122)
+            (pc))) tsscryptoh.c:241 -1
+     (nil)
+ -> 122)
+(code_label 125 124 126 14 25 "" [1 uses])
+(note 126 125 127 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 127 126 130 14 (set (reg:SI 106 [ D.15574 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 rc+0 S4 A32])) tsscryptoh.c:259 -1
+     (nil))
+(insn 130 127 134 14 (set (reg:SI 107 [ <retval> ])
+        (reg:SI 106 [ D.15574 ])) tsscryptoh.c:259 -1
+     (nil))
+(insn 134 130 135 14 (set (reg/i:SI 0 ax)
+        (reg:SI 107 [ <retval> ])) tsscryptoh.c:260 -1
+     (nil))
+(insn 135 134 136 14 (set (reg/f:DI 132)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:260 -1
+     (nil))
+(insn 136 135 137 14 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.15575+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) tsscryptoh.c:260 -1
+     (nil))
+(jump_insn 137 136 143 14 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 140)
+            (pc))) tsscryptoh.c:260 -1
+     (nil)
+ -> 140)
+(note 143 137 138 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(call_insn 138 143 139 17 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f10eff86510 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:260 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 139 138 140)
+(code_label 140 139 144 18 28 "" [1 uses])
+(note 144 140 141 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 141 144 0 18 (use (reg/i:SI 0 ax)) tsscryptoh.c:260 -1
+     (nil))
+
+;; Function TSS_Hash_Generate (TSS_Hash_Generate, funcdef_no=6, decl_uid=13891, cgraph_uid=6, symbol_order=6)
+
+Partition 1: size 24 align 8
+	ap
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Merging block 6 into block 4...
+Merged blocks 4 and 6.
+Merged 4 and 6 without moving.
+Removing jump 41.
+Merging block 7 into block 4...
+Merged blocks 4 and 7.
+Merged 4 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 22 NOTE_INSN_DELETED)
+(note 22 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 22 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 digest+0 S8 A64])
+        (reg:DI 5 di [ digest ])) tsscryptoh.c:271 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 8 [0x8])) [0  S8 A8])
+        (reg:DI 4 si)) tsscryptoh.c:271 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 16 [0x10])) [0  S8 A8])
+        (reg:DI 1 dx)) tsscryptoh.c:271 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 24 [0x18])) [0  S8 A8])
+        (reg:DI 2 cx)) tsscryptoh.c:271 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 32 [0x20])) [0  S8 A8])
+        (reg:DI 37 r8)) tsscryptoh.c:271 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:DI (plus:DI (reg/f:DI 20 frame)
+                (const_int 40 [0x28])) [0  S8 A8])
+        (reg:DI 38 r9)) tsscryptoh.c:271 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:QI 0 ax)
+            (const_int 0 [0]))) tsscryptoh.c:271 -1
+     (nil))
+(jump_insn 9 8 53 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) tsscryptoh.c:271 -1
+     (nil)
+ -> 18)
+(note 53 9 10 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 10 53 11 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 48 [0x30])) [0  S16 A128])
+        (reg:V4SF 21 xmm0)) tsscryptoh.c:271 -1
+     (nil))
+(insn 11 10 12 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 64 [0x40])) [0  S16 A128])
+        (reg:V4SF 22 xmm1)) tsscryptoh.c:271 -1
+     (nil))
+(insn 12 11 13 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 80 [0x50])) [0  S16 A128])
+        (reg:V4SF 23 xmm2)) tsscryptoh.c:271 -1
+     (nil))
+(insn 13 12 14 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 96 [0x60])) [0  S16 A128])
+        (reg:V4SF 24 xmm3)) tsscryptoh.c:271 -1
+     (nil))
+(insn 14 13 15 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 112 [0x70])) [0  S16 A128])
+        (reg:V4SF 25 xmm4)) tsscryptoh.c:271 -1
+     (nil))
+(insn 15 14 16 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 128 [0x80])) [0  S16 A128])
+        (reg:V4SF 26 xmm5)) tsscryptoh.c:271 -1
+     (nil))
+(insn 16 15 17 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 144 [0x90])) [0  S16 A128])
+        (reg:V4SF 27 xmm6)) tsscryptoh.c:271 -1
+     (nil))
+(insn 17 16 18 3 (set (mem/c:V4SF (plus:DI (reg/f:DI 20 frame)
+                (const_int 160 [0xa0])) [0  S16 A128])
+        (reg:V4SF 28 xmm7)) tsscryptoh.c:271 -1
+     (nil))
+(code_label 18 17 54 4 30 "" [1 uses])
+(note 54 18 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 19 54 20 4 NOTE_INSN_FUNCTION_BEG)
+(insn 20 19 21 4 (set (reg/f:DI 89)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:271 -1
+     (nil))
+(insn 21 20 24 4 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.15578+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:271 -1
+     (nil))
+(insn 24 21 25 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:272 -1
+     (nil))
+(insn 25 24 26 4 (parallel [
+            (set (reg:DI 90)
+                (plus:DI (reg/f:DI 81 virtual-incoming-args)
+                    (const_int 0 [0])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:274 -1
+     (nil))
+(insn 26 25 27 4 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 MEM[(struct [1] *)&ap].gp_offset+0 S4 A64])
+        (const_int 8 [0x8])) tsscryptoh.c:274 -1
+     (nil))
+(insn 27 26 28 4 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 MEM[(struct [1] *)&ap].fp_offset+0 S4 A32])
+        (const_int 48 [0x30])) tsscryptoh.c:274 -1
+     (nil))
+(insn 28 27 29 4 (set (mem/f/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 MEM[(struct [1] *)&ap].overflow_arg_area+0 S8 A64])
+        (reg/f:DI 81 virtual-incoming-args)) tsscryptoh.c:274 -1
+     (nil))
+(insn 29 28 30 4 (set (mem/f/j/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 MEM[(struct [1] *)&ap].reg_save_area+0 S8 A64])
+        (reg/f:DI 20 frame)) tsscryptoh.c:274 -1
+     (nil))
+(insn 30 29 31 4 (parallel [
+            (set (reg:DI 91)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:275 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -56 [0xffffffffffffffc8])) [0 digest+0 S8 A64])) tsscryptoh.c:275 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:DI 4 si)
+        (reg:DI 91)) tsscryptoh.c:275 -1
+     (nil))
+(insn 33 32 34 4 (set (reg:DI 5 di)
+        (reg:DI 92)) tsscryptoh.c:275 -1
+     (nil))
+(call_insn 34 33 35 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Hash_Generate_valist") [flags 0x41]  <function_decl 0x7f10eff0d798 TSS_Hash_Generate_valist>) [0 TSS_Hash_Generate_valist S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:275 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 35 34 36 4 (set (reg:SI 93)
+        (reg:SI 0 ax)) tsscryptoh.c:275 -1
+     (nil))
+(insn 36 35 37 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 rc+0 S4 A32])
+        (reg:SI 93)) tsscryptoh.c:275 -1
+     (nil))
+(insn 37 36 40 4 (set (reg:SI 87 [ D.15577 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 rc+0 S4 A32])) tsscryptoh.c:277 -1
+     (nil))
+(insn 40 37 44 4 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.15577 ])) tsscryptoh.c:277 -1
+     (nil))
+(insn 44 40 45 4 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tsscryptoh.c:278 -1
+     (nil))
+(insn 45 44 46 4 (set (reg/f:DI 95)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:278 -1
+     (nil))
+(insn 46 45 47 4 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.15578+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) tsscryptoh.c:278 -1
+     (nil))
+(jump_insn 47 46 55 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 50)
+            (pc))) tsscryptoh.c:278 -1
+     (nil)
+ -> 50)
+(note 55 47 48 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(call_insn 48 55 49 8 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f10eff86510 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:278 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 49 48 50)
+(code_label 50 49 56 9 32 "" [1 uses])
+(note 56 50 51 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 51 56 0 9 (use (reg/i:SI 0 ax)) tsscryptoh.c:278 -1
+     (nil))
+
+;; Function TSS_GetDigestSize (TSS_GetDigestSize, funcdef_no=7, decl_uid=13887, cgraph_uid=7, symbol_order=7)
+
+Partition 0: size 2 align 2
+	size_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+Purged edges from bb 13
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 5->6 to 10 failed.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+Removing jump 40.
+Merging block 13 into block 11...
+Merged blocks 11 and 13.
+Merged 11 and 13 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 5->6 to 10 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 90)
+        (reg:SI 5 di [ hashAlg ])) tsscryptoh.c:286 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 hashAlg+0 S2 A32])
+        (subreg:HI (reg:SI 90) 0)) tsscryptoh.c:286 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.15581 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 hashAlg+0 S2 A32]))) tsscryptoh.c:289 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.15581 ])
+            (const_int 11 [0xb]))) tsscryptoh.c:289 -1
+     (nil))
+(jump_insn 9 8 46 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) tsscryptoh.c:289 -1
+     (nil)
+ -> 21)
+(note 46 9 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 46 11 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.15581 ])
+            (const_int 12 [0xc]))) tsscryptoh.c:289 -1
+     (nil))
+(jump_insn 11 10 47 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tsscryptoh.c:289 -1
+     (nil)
+ -> 26)
+(note 47 11 12 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 12 47 13 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.15581 ])
+            (const_int 4 [0x4]))) tsscryptoh.c:289 -1
+     (nil))
+(jump_insn 13 12 48 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tsscryptoh.c:289 -1
+     (nil)
+ -> 16)
+(note 48 13 14 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 14 48 15 6 (set (pc)
+        (label_ref 31)) tsscryptoh.c:289 -1
+     (nil)
+ -> 31)
+(barrier 15 14 16)
+(code_label 16 15 17 7 37 "" [1 uses])
+(note 17 16 18 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 7 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 size+0 S2 A16])
+        (const_int 20 [0x14])) tsscryptoh.c:291 -1
+     (nil))
+(jump_insn 19 18 20 7 (set (pc)
+        (label_ref 34)) tsscryptoh.c:292 -1
+     (nil)
+ -> 34)
+(barrier 20 19 21)
+(code_label 21 20 22 8 35 "" [1 uses])
+(note 22 21 23 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 8 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 size+0 S2 A16])
+        (const_int 32 [0x20])) tsscryptoh.c:294 -1
+     (nil))
+(jump_insn 24 23 25 8 (set (pc)
+        (label_ref 34)) tsscryptoh.c:295 -1
+     (nil)
+ -> 34)
+(barrier 25 24 26)
+(code_label 26 25 27 9 36 "" [1 uses])
+(note 27 26 28 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 9 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 size+0 S2 A16])
+        (const_int 48 [0x30])) tsscryptoh.c:297 -1
+     (nil))
+(jump_insn 29 28 30 9 (set (pc)
+        (label_ref 34)) tsscryptoh.c:298 -1
+     (nil)
+ -> 34)
+(barrier 30 29 31)
+(code_label 31 30 32 10 34 "" [1 uses])
+(note 32 31 33 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 10 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 size+0 S2 A16])
+        (const_int 0 [0])) tsscryptoh.c:308 -1
+     (nil))
+(code_label 34 33 35 11 38 "" [3 uses])
+(note 35 34 36 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 39 11 (set (reg:HI 88 [ D.15582 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 size+0 S2 A16])) tsscryptoh.c:310 -1
+     (nil))
+(insn 39 36 43 11 (set (reg:HI 89 [ <retval> ])
+        (reg:HI 88 [ D.15582 ])) tsscryptoh.c:310 -1
+     (nil))
+(insn 43 39 44 11 (set (reg/i:HI 0 ax)
+        (reg:HI 89 [ <retval> ])) tsscryptoh.c:311 -1
+     (nil))
+(insn 44 43 0 11 (use (reg/i:HI 0 ax)) tsscryptoh.c:311 -1
+     (nil))
+
+;; Function TSS_GetDigestBlockSize (TSS_GetDigestBlockSize, funcdef_no=8, decl_uid=13889, cgraph_uid=8, symbol_order=8)
+
+Partition 0: size 2 align 2
+	size_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+Purged edges from bb 13
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 5->6 to 10 failed.
+Merging block 12 into block 11...
+Merged blocks 11 and 12.
+Merged 11 and 12 without moving.
+Removing jump 40.
+Merging block 13 into block 11...
+Merged blocks 11 and 13.
+Merged 11 and 13 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 5->6 to 10 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg:SI 90)
+        (reg:SI 5 di [ hashAlg ])) tsscryptoh.c:314 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 hashAlg+0 S2 A32])
+        (subreg:HI (reg:SI 90) 0)) tsscryptoh.c:314 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 87 [ D.15583 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 hashAlg+0 S2 A32]))) tsscryptoh.c:317 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.15583 ])
+            (const_int 11 [0xb]))) tsscryptoh.c:317 -1
+     (nil))
+(jump_insn 9 8 46 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) tsscryptoh.c:317 -1
+     (nil)
+ -> 21)
+(note 46 9 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 46 11 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.15583 ])
+            (const_int 12 [0xc]))) tsscryptoh.c:317 -1
+     (nil))
+(jump_insn 11 10 47 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tsscryptoh.c:317 -1
+     (nil)
+ -> 26)
+(note 47 11 12 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 12 47 13 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.15583 ])
+            (const_int 4 [0x4]))) tsscryptoh.c:317 -1
+     (nil))
+(jump_insn 13 12 48 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) tsscryptoh.c:317 -1
+     (nil)
+ -> 16)
+(note 48 13 14 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 14 48 15 6 (set (pc)
+        (label_ref 31)) tsscryptoh.c:317 -1
+     (nil)
+ -> 31)
+(barrier 15 14 16)
+(code_label 16 15 17 7 45 "" [1 uses])
+(note 17 16 18 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 7 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 size+0 S2 A16])
+        (const_int 64 [0x40])) tsscryptoh.c:319 -1
+     (nil))
+(jump_insn 19 18 20 7 (set (pc)
+        (label_ref 34)) tsscryptoh.c:320 -1
+     (nil)
+ -> 34)
+(barrier 20 19 21)
+(code_label 21 20 22 8 43 "" [1 uses])
+(note 22 21 23 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 8 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 size+0 S2 A16])
+        (const_int 64 [0x40])) tsscryptoh.c:322 -1
+     (nil))
+(jump_insn 24 23 25 8 (set (pc)
+        (label_ref 34)) tsscryptoh.c:323 -1
+     (nil)
+ -> 34)
+(barrier 25 24 26)
+(code_label 26 25 27 9 44 "" [1 uses])
+(note 27 26 28 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 29 9 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 size+0 S2 A16])
+        (const_int 128 [0x80])) tsscryptoh.c:325 -1
+     (nil))
+(jump_insn 29 28 30 9 (set (pc)
+        (label_ref 34)) tsscryptoh.c:326 -1
+     (nil)
+ -> 34)
+(barrier 30 29 31)
+(code_label 31 30 32 10 42 "" [1 uses])
+(note 32 31 33 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 10 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 size+0 S2 A16])
+        (const_int 0 [0])) tsscryptoh.c:336 -1
+     (nil))
+(code_label 34 33 35 11 46 "" [3 uses])
+(note 35 34 36 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 39 11 (set (reg:HI 88 [ D.15584 ])
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -2 [0xfffffffffffffffe])) [0 size+0 S2 A16])) tsscryptoh.c:338 -1
+     (nil))
+(insn 39 36 43 11 (set (reg:HI 89 [ <retval> ])
+        (reg:HI 88 [ D.15584 ])) tsscryptoh.c:338 -1
+     (nil))
+(insn 43 39 44 11 (set (reg/i:HI 0 ax)
+        (reg:HI 89 [ <retval> ])) tsscryptoh.c:339 -1
+     (nil))
+(insn 44 43 0 11 (use (reg/i:HI 0 ax)) tsscryptoh.c:339 -1
+     (nil))
+
+;; Function TSS_MGF1 (TSS_MGF1, funcdef_no=9, decl_uid=15193, cgraph_uid=9, symbol_order=9)
+
+Partition 5: size 130 align 16
+	digest
+Partition 2: size 4 align 4
+	outLen_4
+Partition 1: size 4 align 4
+	count_3
+Partition 0: size 4 align 4
+	rc_1
+Partition 6: size 4 align 4
+	count_n
+Partition 4: size 4 align 16
+	counter
+Partition 3: size 2 align 2
+	digestSize_13
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+Removing jump 122.
+Merging block 12 into block 10...
+Merged blocks 10 and 12.
+Merged 10 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 12 NOTE_INSN_DELETED)
+(note 12 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 12 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 mask+0 S8 A64])
+        (reg:DI 5 di [ mask ])) tsscryptoh.c:378 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -204 [0xffffffffffffff34])) [0 maskLen+0 S4 A32])
+        (reg:SI 4 si [ maskLen ])) tsscryptoh.c:378 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 mgfSeed+0 S8 A64])
+        (reg:DI 1 dx [ mgfSeed ])) tsscryptoh.c:378 -1
+     (nil))
+(insn 5 4 7 2 (set (reg:SI 104)
+        (reg:SI 2 cx [ mgfSeedlen ])) tsscryptoh.c:378 -1
+     (nil))
+(insn 7 5 6 2 (set (reg:SI 105)
+        (reg:SI 37 r8 [ halg ])) tsscryptoh.c:378 -1
+     (nil))
+(insn 6 7 8 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -208 [0xffffffffffffff30])) [0 mgfSeedlen+0 S2 A32])
+        (subreg:HI (reg:SI 104) 0)) tsscryptoh.c:378 -1
+     (nil))
+(insn 8 6 9 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 halg+0 S2 A32])
+        (subreg:HI (reg:SI 105) 0)) tsscryptoh.c:378 -1
+     (nil))
+(note 9 8 10 2 NOTE_INSN_FUNCTION_BEG)
+(insn 10 9 11 2 (set (reg/f:DI 106)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:378 -1
+     (nil))
+(insn 11 10 14 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.15591+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:378 -1
+     (nil))
+(insn 14 11 15 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -172 [0xffffffffffffff54])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:379 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 87 [ D.15585 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -220 [0xffffffffffffff24])) [0 halg+0 S2 A32]))) tsscryptoh.c:384 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 5 di)
+        (reg:SI 87 [ D.15585 ])) tsscryptoh.c:384 -1
+     (nil))
+(call_insn 17 16 18 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_GetDigestSize") [flags 0x1]  <function_decl 0x7f10efe48a20 TSS_GetDigestSize>) [0 TSS_GetDigestSize S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:384 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 18 17 19 2 (set (reg:HI 107)
+        (reg:HI 0 ax)) tsscryptoh.c:384 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -178 [0xffffffffffffff4e])) [0 digestSize+0 S2 A16])
+        (reg:HI 107)) tsscryptoh.c:384 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:HI 108)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 halg+0 S2 A32])) tsscryptoh.c:386 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -160 [0xffffffffffffff60])) [0 digest.hashAlg+0 S2 A64])
+        (reg:HI 108)) tsscryptoh.c:386 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [0 count+0 S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:402 -1
+     (nil))
+(insn 23 22 24 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:402 -1
+     (nil))
+(jump_insn 24 23 25 2 (set (pc)
+        (label_ref 107)) tsscryptoh.c:402 -1
+     (nil)
+ -> 107)
+(barrier 25 24 112)
+(code_label 112 25 26 4 54 "" [1 uses])
+(note 26 112 27 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 4 (set (reg:SI 109)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [0 count+0 S4 A32])) tsscryptoh.c:405 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:SI 5 di)
+        (reg:SI 109)) tsscryptoh.c:405 -1
+     (nil))
+(call_insn/u 29 28 30 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("htonl") [flags 0x41]  <function_decl 0x7f10f06720d8 htonl>) [0 htonl S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:405 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 30 29 31 4 (set (reg:SI 88 [ D.15586 ])
+        (reg:SI 0 ax)) tsscryptoh.c:405 -1
+     (nil))
+(insn 31 30 32 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 count_n+0 S4 A64])
+        (reg:SI 88 [ D.15586 ])) tsscryptoh.c:405 -1
+     (nil))
+(insn 32 31 33 4 (set (reg:SI 89 [ D.15586 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 MEM[(char * {ref-all})&count_n]+0 S4 A64])) tsscryptoh.c:406 -1
+     (nil))
+(insn 33 32 34 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 MEM[(char * {ref-all})&counter]+0 S4 A64])
+        (reg:SI 89 [ D.15586 ])) tsscryptoh.c:406 -1
+     (nil))
+(insn 34 33 35 4 (set (reg:SI 90 [ D.15586 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -178 [0xffffffffffffff4e])) [0 digestSize+0 S2 A16]))) tsscryptoh.c:410 -1
+     (nil))
+(insn 35 34 36 4 (set (reg:SI 110)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32])) tsscryptoh.c:410 -1
+     (nil))
+(insn 36 35 37 4 (parallel [
+            (set (reg:SI 91 [ D.15586 ])
+                (plus:SI (reg:SI 90 [ D.15586 ])
+                    (reg:SI 110)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:410 -1
+     (expr_list:REG_EQUAL (plus:SI (reg:SI 90 [ D.15586 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32]))
+        (nil)))
+(insn 37 36 38 4 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 91 [ D.15586 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -204 [0xffffffffffffff34])) [0 maskLen+0 S4 A32]))) tsscryptoh.c:410 -1
+     (nil))
+(jump_insn 38 37 39 4 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) tsscryptoh.c:410 -1
+     (nil)
+ -> 71)
+(note 39 38 40 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 40 39 41 5 (set (reg:SI 92 [ D.15585 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -208 [0xffffffffffffff30])) [0 mgfSeedlen+0 S2 A32]))) tsscryptoh.c:411 -1
+     (nil))
+(insn 41 40 42 5 (parallel [
+            (set (reg:DI 111)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:411 -1
+     (nil))
+(insn 42 41 43 5 (set (reg:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 mgfSeed+0 S8 A64])) tsscryptoh.c:411 -1
+     (nil))
+(insn 43 42 44 5 (parallel [
+            (set (reg:DI 113)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:411 -1
+     (nil))
+(insn 44 43 45 5 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:411 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 45 44 46 5 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) tsscryptoh.c:411 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 46 45 47 5 (set (reg:SI 38 r9)
+        (const_int 0 [0])) tsscryptoh.c:411 -1
+     (nil))
+(insn 47 46 48 5 (set (reg:DI 37 r8)
+        (reg:DI 111)) tsscryptoh.c:411 -1
+     (nil))
+(insn 48 47 49 5 (set (reg:SI 2 cx)
+        (const_int 4 [0x4])) tsscryptoh.c:411 -1
+     (nil))
+(insn 49 48 50 5 (set (reg:DI 1 dx)
+        (reg:DI 112)) tsscryptoh.c:411 -1
+     (nil))
+(insn 50 49 51 5 (set (reg:SI 4 si)
+        (reg:SI 92 [ D.15585 ])) tsscryptoh.c:411 -1
+     (nil))
+(insn 51 50 52 5 (set (reg:DI 5 di)
+        (reg:DI 113)) tsscryptoh.c:411 -1
+     (nil))
+(insn 52 51 53 5 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tsscryptoh.c:411 -1
+     (nil))
+(call_insn 53 52 54 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Hash_Generate") [flags 0x1]  <function_decl 0x7f10efe48bd0 TSS_Hash_Generate>) [0 TSS_Hash_Generate S1 A8])
+            (const_int 16 [0x10]))) tsscryptoh.c:411 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:SI (use (reg:SI 2 cx))
+                        (expr_list:DI (use (reg:DI 37 r8))
+                            (expr_list:SI (use (reg:SI 38 r9))
+                                (nil)))))))))
+(insn 54 53 55 5 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:411 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 55 54 56 5 (set (reg:SI 114)
+        (reg:SI 0 ax)) tsscryptoh.c:411 -1
+     (nil))
+(insn 56 55 57 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -172 [0xffffffffffffff54])) [0 rc+0 S4 A32])
+        (reg:SI 114)) tsscryptoh.c:411 -1
+     (nil))
+(insn 57 56 58 5 (set (reg:DI 93 [ D.15587 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -178 [0xffffffffffffff4e])) [0 digestSize+0 S2 A16]))) tsscryptoh.c:415 -1
+     (nil))
+(insn 58 57 59 5 (set (reg:DI 94 [ D.15588 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32]))) tsscryptoh.c:415 -1
+     (nil))
+(insn 59 58 60 5 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 mask+0 S8 A64])) tsscryptoh.c:415 -1
+     (nil))
+(insn 60 59 61 5 (parallel [
+            (set (reg/f:DI 95 [ D.15589 ])
+                (plus:DI (reg:DI 94 [ D.15588 ])
+                    (reg/f:DI 115)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:415 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -200 [0xffffffffffffff38])) [0 mask+0 S8 A64])
+            (reg:DI 94 [ D.15588 ]))
+        (nil)))
+(insn 61 60 62 5 (parallel [
+            (set (reg:DI 116)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:415 -1
+     (nil))
+(insn 62 61 63 5 (parallel [
+            (set (reg:DI 117)
+                (plus:DI (reg:DI 116)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:415 -1
+     (nil))
+(insn 63 62 64 5 (set (reg:DI 1 dx)
+        (reg:DI 93 [ D.15587 ])) tsscryptoh.c:415 -1
+     (nil))
+(insn 64 63 65 5 (set (reg:DI 4 si)
+        (reg:DI 117)) tsscryptoh.c:415 -1
+     (nil))
+(insn 65 64 66 5 (set (reg:DI 5 di)
+        (reg/f:DI 95 [ D.15589 ])) tsscryptoh.c:415 -1
+     (nil))
+(call_insn 66 65 67 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f10f08c6e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:415 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 67 66 68 5 (set (reg:SI 96 [ D.15586 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -178 [0xffffffffffffff4e])) [0 digestSize+0 S2 A16]))) tsscryptoh.c:416 -1
+     (nil))
+(insn 68 67 69 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32])
+                    (reg:SI 96 [ D.15586 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:416 -1
+     (nil))
+(jump_insn 69 68 70 5 (set (pc)
+        (label_ref 104)) -1
+     (nil)
+ -> 104)
+(barrier 70 69 71)
+(code_label 71 70 72 6 51 "" [1 uses])
+(note 72 71 73 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 73 72 74 6 (set (reg:SI 97 [ D.15585 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -208 [0xffffffffffffff30])) [0 mgfSeedlen+0 S2 A32]))) tsscryptoh.c:421 -1
+     (nil))
+(insn 74 73 75 6 (parallel [
+            (set (reg:DI 118)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:421 -1
+     (nil))
+(insn 75 74 76 6 (set (reg:DI 119)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 mgfSeed+0 S8 A64])) tsscryptoh.c:421 -1
+     (nil))
+(insn 76 75 77 6 (parallel [
+            (set (reg:DI 120)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:421 -1
+     (nil))
+(insn 77 76 78 6 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:421 -1
+     (expr_list:REG_ARGS_SIZE (const_int 8 [0x8])
+        (nil)))
+(insn 78 77 79 6 (set (mem/f:DI (pre_dec:DI (reg/f:DI 7 sp)) [0  S8 A64])
+        (const_int 0 [0])) tsscryptoh.c:421 -1
+     (expr_list:REG_ARGS_SIZE (const_int 16 [0x10])
+        (nil)))
+(insn 79 78 80 6 (set (reg:SI 38 r9)
+        (const_int 0 [0])) tsscryptoh.c:421 -1
+     (nil))
+(insn 80 79 81 6 (set (reg:DI 37 r8)
+        (reg:DI 118)) tsscryptoh.c:421 -1
+     (nil))
+(insn 81 80 82 6 (set (reg:SI 2 cx)
+        (const_int 4 [0x4])) tsscryptoh.c:421 -1
+     (nil))
+(insn 82 81 83 6 (set (reg:DI 1 dx)
+        (reg:DI 119)) tsscryptoh.c:421 -1
+     (nil))
+(insn 83 82 84 6 (set (reg:SI 4 si)
+        (reg:SI 97 [ D.15585 ])) tsscryptoh.c:421 -1
+     (nil))
+(insn 84 83 85 6 (set (reg:DI 5 di)
+        (reg:DI 120)) tsscryptoh.c:421 -1
+     (nil))
+(insn 85 84 86 6 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tsscryptoh.c:421 -1
+     (nil))
+(call_insn 86 85 87 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Hash_Generate") [flags 0x1]  <function_decl 0x7f10efe48bd0 TSS_Hash_Generate>) [0 TSS_Hash_Generate S1 A8])
+            (const_int 16 [0x10]))) tsscryptoh.c:421 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:SI (use (reg:SI 2 cx))
+                        (expr_list:DI (use (reg:DI 37 r8))
+                            (expr_list:SI (use (reg:SI 38 r9))
+                                (nil)))))))))
+(insn 87 86 88 6 (parallel [
+            (set (reg/f:DI 7 sp)
+                (plus:DI (reg/f:DI 7 sp)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:421 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (nil)))
+(insn 88 87 89 6 (set (reg:SI 121)
+        (reg:SI 0 ax)) tsscryptoh.c:421 -1
+     (nil))
+(insn 89 88 90 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -172 [0xffffffffffffff54])) [0 rc+0 S4 A32])
+        (reg:SI 121)) tsscryptoh.c:421 -1
+     (nil))
+(insn 90 89 91 6 (set (reg:SI 122)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -204 [0xffffffffffffff34])) [0 maskLen+0 S4 A32])) tsscryptoh.c:426 -1
+     (nil))
+(insn 91 90 92 6 (parallel [
+            (set (reg:SI 98 [ D.15586 ])
+                (minus:SI (reg:SI 122)
+                    (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:426 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -204 [0xffffffffffffff34])) [0 maskLen+0 S4 A32])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32]))
+        (nil)))
+(insn 92 91 93 6 (set (reg:DI 99 [ D.15587 ])
+        (zero_extend:DI (reg:SI 98 [ D.15586 ]))) tsscryptoh.c:426 -1
+     (nil))
+(insn 93 92 94 6 (set (reg:DI 100 [ D.15588 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32]))) tsscryptoh.c:426 -1
+     (nil))
+(insn 94 93 95 6 (set (reg/f:DI 123)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -200 [0xffffffffffffff38])) [0 mask+0 S8 A64])) tsscryptoh.c:426 -1
+     (nil))
+(insn 95 94 96 6 (parallel [
+            (set (reg/f:DI 101 [ D.15589 ])
+                (plus:DI (reg:DI 100 [ D.15588 ])
+                    (reg/f:DI 123)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:426 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -200 [0xffffffffffffff38])) [0 mask+0 S8 A64])
+            (reg:DI 100 [ D.15588 ]))
+        (nil)))
+(insn 96 95 97 6 (parallel [
+            (set (reg:DI 124)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -160 [0xffffffffffffff60])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:426 -1
+     (nil))
+(insn 97 96 98 6 (parallel [
+            (set (reg:DI 125)
+                (plus:DI (reg:DI 124)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:426 -1
+     (nil))
+(insn 98 97 99 6 (set (reg:DI 1 dx)
+        (reg:DI 99 [ D.15587 ])) tsscryptoh.c:426 -1
+     (nil))
+(insn 99 98 100 6 (set (reg:DI 4 si)
+        (reg:DI 125)) tsscryptoh.c:426 -1
+     (nil))
+(insn 100 99 101 6 (set (reg:DI 5 di)
+        (reg/f:DI 101 [ D.15589 ])) tsscryptoh.c:426 -1
+     (nil))
+(call_insn 101 100 102 6 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f10f08c6e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:426 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 102 101 103 6 (set (reg:SI 126)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -204 [0xffffffffffffff34])) [0 maskLen+0 S4 A32])) tsscryptoh.c:427 -1
+     (nil))
+(insn 103 102 104 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32])
+        (reg:SI 126)) tsscryptoh.c:427 -1
+     (nil))
+(code_label 104 103 105 7 52 "" [1 uses])
+(note 105 104 106 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 106 105 107 7 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -168 [0xffffffffffffff58])) [0 count+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -168 [0xffffffffffffff58])) [0 count+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:402 -1
+     (nil))
+(code_label 107 106 108 8 50 "" [1 uses])
+(note 108 107 109 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 109 108 110 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -172 [0xffffffffffffff54])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:402 -1
+     (nil))
+(jump_insn 110 109 111 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 116)
+            (pc))) tsscryptoh.c:402 -1
+     (nil)
+ -> 116)
+(note 111 110 113 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 113 111 114 9 (set (reg:SI 127)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -164 [0xffffffffffffff5c])) [0 outLen+0 S4 A32])) tsscryptoh.c:402 -1
+     (nil))
+(insn 114 113 115 9 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 127)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -204 [0xffffffffffffff34])) [0 maskLen+0 S4 A32]))) tsscryptoh.c:402 -1
+     (nil))
+(jump_insn 115 114 116 9 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 112)
+            (pc))) tsscryptoh.c:402 -1
+     (nil)
+ -> 112)
+(code_label 116 115 117 10 53 "" [1 uses])
+(note 117 116 118 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 118 117 121 10 (set (reg:SI 102 [ D.15590 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -172 [0xffffffffffffff54])) [0 rc+0 S4 A32])) tsscryptoh.c:431 -1
+     (nil))
+(insn 121 118 125 10 (set (reg:SI 103 [ <retval> ])
+        (reg:SI 102 [ D.15590 ])) tsscryptoh.c:431 -1
+     (nil))
+(insn 125 121 126 10 (set (reg/i:SI 0 ax)
+        (reg:SI 103 [ <retval> ])) tsscryptoh.c:432 -1
+     (nil))
+(insn 126 125 127 10 (set (reg/f:DI 129)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:432 -1
+     (nil))
+(insn 127 126 128 10 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.15591+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) tsscryptoh.c:432 -1
+     (nil))
+(jump_insn 128 127 134 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 131)
+            (pc))) tsscryptoh.c:432 -1
+     (nil)
+ -> 131)
+(note 134 128 129 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(call_insn 129 134 130 13 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f10eff86510 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:432 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 130 129 131)
+(code_label 131 130 135 14 56 "" [1 uses])
+(note 135 131 132 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 132 135 0 14 (use (reg/i:SI 0 ax)) tsscryptoh.c:432 -1
+     (nil))
+
+;; Function TSS_RSA_padding_add_PKCS1_OAEP (TSS_RSA_padding_add_PKCS1_OAEP, funcdef_no=10, decl_uid=15130, cgraph_uid=10, symbol_order=10)
+
+Partition 6: size 130 align 16
+	lHash
+Partition 5: size 8 align 8
+	maskedSeed_123
+Partition 4: size 8 align 8
+	maskedDb_107
+Partition 2: size 8 align 8
+	seedMask_10
+Partition 1: size 8 align 8
+	db_9
+Partition 8: size 8 align 8
+	seed
+Partition 7: size 8 align 8
+	dbMask
+Partition 0: size 4 align 4
+	rc_1
+Partition 3: size 2 align 2
+	hlen_30
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 30 into block 29...
+Merged blocks 29 and 30.
+Merged 29 and 30 without moving.
+Removing jump 290.
+Merging block 31 into block 29...
+Merged blocks 29 and 31.
+Merged 29 and 31 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 13 NOTE_INSN_DELETED)
+(note 13 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 13 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 em+0 S8 A64])
+        (reg:DI 5 di [ em ])) tsscryptoh.c:470 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])
+        (reg:SI 4 si [ emLen ])) tsscryptoh.c:470 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -232 [0xffffffffffffff18])) [0 from+0 S8 A64])
+        (reg:DI 1 dx [ from ])) tsscryptoh.c:470 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [0 fLen+0 S4 A32])
+        (reg:SI 2 cx [ fLen ])) tsscryptoh.c:470 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -240 [0xffffffffffffff10])) [0 p+0 S8 A64])
+        (reg:DI 37 r8 [ p ])) tsscryptoh.c:470 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -244 [0xffffffffffffff0c])) [0 plen+0 S4 A32])
+        (reg:SI 38 r9 [ plen ])) tsscryptoh.c:470 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 153)
+        (mem/c:SI (reg/f:DI 81 virtual-incoming-args) [0 halg+0 S4 A64])) tsscryptoh.c:470 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -248 [0xffffffffffffff08])) [0 halg+0 S2 A32])
+        (subreg:HI (reg:SI 153) 0)) tsscryptoh.c:470 -1
+     (nil))
+(note 10 9 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 10 12 2 (set (reg/f:DI 154)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:470 -1
+     (nil))
+(insn 12 11 15 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.15600+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:470 -1
+     (nil))
+(insn 15 12 16 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tsscryptoh.c:471 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [0 dbMask+0 S8 A64])
+        (const_int 0 [0])) tsscryptoh.c:475 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 seed+0 S8 A64])
+        (const_int 0 [0])) tsscryptoh.c:476 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 87 [ D.15592 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -248 [0xffffffffffffff08])) [0 halg+0 S2 A32]))) tsscryptoh.c:481 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 5 di)
+        (reg:SI 87 [ D.15592 ])) tsscryptoh.c:481 -1
+     (nil))
+(call_insn 20 19 21 2 (set (reg:HI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_GetDigestSize") [flags 0x1]  <function_decl 0x7f10efe48a20 TSS_GetDigestSize>) [0 TSS_GetDigestSize S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:481 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 21 20 22 2 (set (reg:HI 155)
+        (reg:HI 0 ax)) tsscryptoh.c:481 -1
+     (nil))
+(insn 22 21 23 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16])
+        (reg:HI 155)) tsscryptoh.c:481 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:486 -1
+     (nil))
+(jump_insn 24 23 25 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) tsscryptoh.c:486 -1
+     (nil)
+ -> 42)
+(note 25 24 26 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 4 (set (reg:CCGC 17 flags)
+        (compare:CCGC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -244 [0xffffffffffffff0c])) [0 plen+0 S4 A32])
+            (const_int 65535 [0xffff]))) tsscryptoh.c:487 -1
+     (nil))
+(jump_insn 27 26 28 4 (set (pc)
+        (if_then_else (le (reg:CCGC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) tsscryptoh.c:487 -1
+     (nil)
+ -> 42)
+(note 28 27 29 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 5 (set (reg/f:DI 156)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose") [flags 0x40]  <var_decl 0x7f10eff35000 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:488 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:SI 88 [ D.15592 ])
+        (mem/c:SI (reg/f:DI 156) [0 tssVerbose+0 S4 A32])) tsscryptoh.c:488 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.15592 ])
+            (const_int 0 [0]))) tsscryptoh.c:488 -1
+     (nil))
+(jump_insn 32 31 33 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 39)
+            (pc))) tsscryptoh.c:488 -1
+     (nil)
+ -> 39)
+(note 33 32 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 6 (set (reg:SI 157)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -244 [0xffffffffffffff0c])) [0 plen+0 S4 A32])) tsscryptoh.c:488 -1
+     (nil))
+(insn 35 34 36 6 (set (reg:SI 4 si)
+        (reg:SI 157)) tsscryptoh.c:488 -1
+     (nil))
+(insn 36 35 37 6 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f10effd3f30 *.LC3>)) tsscryptoh.c:488 -1
+     (nil))
+(insn 37 36 38 6 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tsscryptoh.c:488 -1
+     (nil))
+(call_insn 38 37 39 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f10f08d0ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:488 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(code_label 39 38 40 7 59 "" [1 uses])
+(note 40 39 41 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+        (const_int 721015 [0xb0077])) tsscryptoh.c:490 -1
+     (nil))
+(code_label 42 41 43 8 58 "" [2 uses])
+(note 43 42 44 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:494 -1
+     (nil))
+(jump_insn 45 44 46 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) tsscryptoh.c:494 -1
+     (nil)
+ -> 71)
+(note 46 45 47 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 9 (set (reg:SI 89 [ D.15592 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:495 -1
+     (nil))
+(insn 48 47 49 9 (parallel [
+            (set (reg:SI 90 [ D.15592 ])
+                (plus:SI (reg:SI 89 [ D.15592 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:495 -1
+     (nil))
+(insn 49 48 50 9 (parallel [
+            (set (reg:SI 91 [ D.15592 ])
+                (ashift:SI (reg:SI 90 [ D.15592 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:495 -1
+     (nil))
+(insn 50 49 51 9 (set (reg:SI 92 [ D.15593 ])
+        (reg:SI 91 [ D.15592 ])) tsscryptoh.c:495 -1
+     (nil))
+(insn 51 50 52 9 (set (reg:SI 158)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [0 fLen+0 S4 A32])) tsscryptoh.c:495 -1
+     (nil))
+(insn 52 51 53 9 (parallel [
+            (set (reg:SI 93 [ D.15593 ])
+                (plus:SI (reg:SI 92 [ D.15593 ])
+                    (reg:SI 158)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:495 -1
+     (expr_list:REG_EQUAL (plus:SI (reg:SI 92 [ D.15593 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -224 [0xffffffffffffff20])) [0 fLen+0 S4 A32]))
+        (nil)))
+(insn 53 52 54 9 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 93 [ D.15593 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32]))) tsscryptoh.c:495 -1
+     (nil))
+(jump_insn 54 53 55 9 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) tsscryptoh.c:495 -1
+     (nil)
+ -> 71)
+(note 55 54 56 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 57 10 (set (reg/f:DI 159)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose") [flags 0x40]  <var_decl 0x7f10eff35000 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:496 -1
+     (nil))
+(insn 57 56 58 10 (set (reg:SI 94 [ D.15592 ])
+        (mem/c:SI (reg/f:DI 159) [0 tssVerbose+0 S4 A32])) tsscryptoh.c:496 -1
+     (nil))
+(insn 58 57 59 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 94 [ D.15592 ])
+            (const_int 0 [0]))) tsscryptoh.c:496 -1
+     (nil))
+(jump_insn 59 58 60 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 68)
+            (pc))) tsscryptoh.c:496 -1
+     (nil)
+ -> 68)
+(note 60 59 61 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 61 60 62 11 (set (reg:SI 160)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])) tsscryptoh.c:496 -1
+     (nil))
+(insn 62 61 63 11 (set (reg:SI 161)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -224 [0xffffffffffffff20])) [0 fLen+0 S4 A32])) tsscryptoh.c:496 -1
+     (nil))
+(insn 63 62 64 11 (set (reg:SI 1 dx)
+        (reg:SI 160)) tsscryptoh.c:496 -1
+     (nil))
+(insn 64 63 65 11 (set (reg:SI 4 si)
+        (reg:SI 161)) tsscryptoh.c:496 -1
+     (nil))
+(insn 65 64 66 11 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f10effc4b40 *.LC4>)) tsscryptoh.c:496 -1
+     (nil))
+(insn 66 65 67 11 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tsscryptoh.c:496 -1
+     (nil))
+(call_insn 67 66 68 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f10f08d0ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:496 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:SI (use (reg:SI 1 dx))
+                    (nil))))))
+(code_label 68 67 69 12 61 "" [1 uses])
+(note 69 68 70 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 70 69 71 12 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+        (const_int 721015 [0xb0077])) tsscryptoh.c:499 -1
+     (nil))
+(code_label 71 70 72 13 60 "" [2 uses])
+(note 72 71 73 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 73 72 74 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:503 -1
+     (nil))
+(jump_insn 74 73 75 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 90)
+            (pc))) tsscryptoh.c:503 -1
+     (nil)
+ -> 90)
+(note 75 74 76 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 76 75 77 14 (set (reg:HI 162)
+        (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -248 [0xffffffffffffff08])) [0 halg+0 S2 A32])) tsscryptoh.c:504 -1
+     (nil))
+(insn 77 76 78 14 (set (mem/j/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -144 [0xffffffffffffff70])) [0 lHash.hashAlg+0 S2 A64])
+        (reg:HI 162)) tsscryptoh.c:504 -1
+     (nil))
+(insn 78 77 79 14 (set (reg:DI 163)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -240 [0xffffffffffffff10])) [0 p+0 S8 A64])) tsscryptoh.c:505 -1
+     (nil))
+(insn 79 78 80 14 (set (reg:SI 164)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -244 [0xffffffffffffff0c])) [0 plen+0 S4 A32])) tsscryptoh.c:505 -1
+     (nil))
+(insn 80 79 81 14 (parallel [
+            (set (reg:DI 165)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:505 -1
+     (nil))
+(insn 81 80 82 14 (set (reg:DI 37 r8)
+        (const_int 0 [0])) tsscryptoh.c:505 -1
+     (nil))
+(insn 82 81 83 14 (set (reg:SI 2 cx)
+        (const_int 0 [0])) tsscryptoh.c:505 -1
+     (nil))
+(insn 83 82 84 14 (set (reg:DI 1 dx)
+        (reg:DI 163)) tsscryptoh.c:505 -1
+     (nil))
+(insn 84 83 85 14 (set (reg:SI 4 si)
+        (reg:SI 164)) tsscryptoh.c:505 -1
+     (nil))
+(insn 85 84 86 14 (set (reg:DI 5 di)
+        (reg:DI 165)) tsscryptoh.c:505 -1
+     (nil))
+(insn 86 85 87 14 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tsscryptoh.c:505 -1
+     (nil))
+(call_insn 87 86 88 14 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Hash_Generate") [flags 0x1]  <function_decl 0x7f10efe48bd0 TSS_Hash_Generate>) [0 TSS_Hash_Generate S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:505 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (expr_list:SI (use (reg:SI 2 cx))
+                        (expr_list:DI (use (reg:DI 37 r8))
+                            (nil))))))))
+(insn 88 87 89 14 (set (reg:SI 166)
+        (reg:SI 0 ax)) tsscryptoh.c:505 -1
+     (nil))
+(insn 89 88 90 14 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+        (reg:SI 166)) tsscryptoh.c:505 -1
+     (nil))
+(code_label 90 89 91 15 62 "" [1 uses])
+(note 91 90 92 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 92 91 93 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:509 -1
+     (nil))
+(jump_insn 93 92 94 15 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 149)
+            (pc))) tsscryptoh.c:509 -1
+     (nil)
+ -> 149)
+(note 94 93 95 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 95 94 96 16 (set (reg:DI 95 [ D.15594 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:515 -1
+     (nil))
+(insn 96 95 100 16 (parallel [
+            (set (reg:DI 96 [ D.15594 ])
+                (plus:DI (reg:DI 95 [ D.15594 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:515 -1
+     (nil))
+(insn 100 96 101 16 (set (reg/f:DI 170)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 em+0 S8 A64])) tsscryptoh.c:515 -1
+     (nil))
+(insn 101 100 102 16 (parallel [
+            (set (reg:DI 169)
+                (plus:DI (reg:DI 96 [ D.15594 ])
+                    (reg/f:DI 170)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:515 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -216 [0xffffffffffffff28])) [0 em+0 S8 A64])
+            (reg:DI 96 [ D.15594 ]))
+        (nil)))
+(insn 102 101 103 16 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 db+0 S8 A64])
+        (reg:DI 169)) tsscryptoh.c:515 -1
+     (nil))
+(insn 103 102 104 16 (set (reg:DI 97 [ D.15595 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:516 -1
+     (nil))
+(insn 104 103 105 16 (parallel [
+            (set (reg:DI 171)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -144 [0xffffffffffffff70])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:516 -1
+     (nil))
+(insn 105 104 106 16 (parallel [
+            (set (reg:DI 172)
+                (plus:DI (reg:DI 171)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:516 -1
+     (nil))
+(insn 106 105 107 16 (set (reg:DI 173)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 db+0 S8 A64])) tsscryptoh.c:516 -1
+     (nil))
+(insn 107 106 108 16 (set (reg:DI 1 dx)
+        (reg:DI 97 [ D.15595 ])) tsscryptoh.c:516 -1
+     (nil))
+(insn 108 107 109 16 (set (reg:DI 4 si)
+        (reg:DI 172)) tsscryptoh.c:516 -1
+     (nil))
+(insn 109 108 110 16 (set (reg:DI 5 di)
+        (reg:DI 173)) tsscryptoh.c:516 -1
+     (nil))
+(call_insn 110 109 111 16 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f10f08c6e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:516 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 111 110 112 16 (set (reg:SI 174)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])) tsscryptoh.c:519 -1
+     (nil))
+(insn 112 111 113 16 (parallel [
+            (set (reg:SI 98 [ D.15593 ])
+                (minus:SI (reg:SI 174)
+                    (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -224 [0xffffffffffffff20])) [0 fLen+0 S4 A32])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:519 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -224 [0xffffffffffffff20])) [0 fLen+0 S4 A32]))
+        (nil)))
+(insn 113 112 114 16 (set (reg:SI 99 [ D.15592 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:519 -1
+     (nil))
+(insn 114 113 115 16 (parallel [
+            (set (reg:SI 100 [ D.15592 ])
+                (ashift:SI (reg:SI 99 [ D.15592 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:519 -1
+     (nil))
+(insn 115 114 116 16 (set (reg:SI 101 [ D.15593 ])
+        (reg:SI 100 [ D.15592 ])) tsscryptoh.c:519 -1
+     (nil))
+(insn 116 115 117 16 (parallel [
+            (set (reg:SI 102 [ D.15593 ])
+                (minus:SI (reg:SI 98 [ D.15593 ])
+                    (reg:SI 101 [ D.15593 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:519 -1
+     (nil))
+(insn 117 116 118 16 (parallel [
+            (set (reg:SI 103 [ D.15593 ])
+                (plus:SI (reg:SI 102 [ D.15593 ])
+                    (const_int -2 [0xfffffffffffffffe])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:519 -1
+     (nil))
+(insn 118 117 119 16 (set (reg:DI 104 [ D.15595 ])
+        (zero_extend:DI (reg:SI 103 [ D.15593 ]))) tsscryptoh.c:518 -1
+     (nil))
+(insn 119 118 120 16 (set (reg:DI 105 [ D.15594 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:518 -1
+     (nil))
+(insn 120 119 121 16 (set (reg/f:DI 175)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 db+0 S8 A64])) tsscryptoh.c:518 -1
+     (nil))
+(insn 121 120 122 16 (parallel [
+            (set (reg/f:DI 106 [ D.15596 ])
+                (plus:DI (reg:DI 105 [ D.15594 ])
+                    (reg/f:DI 175)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:518 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [0 db+0 S8 A64])
+            (reg:DI 105 [ D.15594 ]))
+        (nil)))
+(insn 122 121 123 16 (set (reg:DI 1 dx)
+        (reg:DI 104 [ D.15595 ])) tsscryptoh.c:518 -1
+     (nil))
+(insn 123 122 124 16 (set (reg:SI 4 si)
+        (const_int 0 [0])) tsscryptoh.c:518 -1
+     (nil))
+(insn 124 123 125 16 (set (reg:DI 5 di)
+        (reg/f:DI 106 [ D.15596 ])) tsscryptoh.c:518 -1
+     (nil))
+(call_insn 125 124 126 16 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memset") [flags 0x41]  <function_decl 0x7f10f08c7438 memset>) [0 __builtin_memset S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:518 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 126 125 127 16 (set (reg:SI 176)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])) tsscryptoh.c:524 -1
+     (nil))
+(insn 127 126 128 16 (parallel [
+            (set (reg:SI 107 [ D.15593 ])
+                (minus:SI (reg:SI 176)
+                    (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -224 [0xffffffffffffff20])) [0 fLen+0 S4 A32])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:524 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -224 [0xffffffffffffff20])) [0 fLen+0 S4 A32]))
+        (nil)))
+(insn 128 127 129 16 (set (reg:SI 108 [ D.15593 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:524 -1
+     (nil))
+(insn 129 128 130 16 (parallel [
+            (set (reg:SI 109 [ D.15593 ])
+                (minus:SI (reg:SI 107 [ D.15593 ])
+                    (reg:SI 108 [ D.15593 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:524 -1
+     (nil))
+(insn 130 129 131 16 (parallel [
+            (set (reg:SI 110 [ D.15593 ])
+                (plus:SI (reg:SI 109 [ D.15593 ])
+                    (const_int -2 [0xfffffffffffffffe])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:524 -1
+     (nil))
+(insn 131 130 132 16 (set (reg:DI 111 [ D.15594 ])
+        (zero_extend:DI (reg:SI 110 [ D.15593 ]))) tsscryptoh.c:524 -1
+     (nil))
+(insn 132 131 133 16 (set (reg/f:DI 177)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 db+0 S8 A64])) tsscryptoh.c:524 -1
+     (nil))
+(insn 133 132 134 16 (parallel [
+            (set (reg/f:DI 112 [ D.15597 ])
+                (plus:DI (reg:DI 111 [ D.15594 ])
+                    (reg/f:DI 177)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:524 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [0 db+0 S8 A64])
+            (reg:DI 111 [ D.15594 ]))
+        (nil)))
+(insn 134 133 135 16 (set (mem:QI (reg/f:DI 112 [ D.15597 ]) [0 *_71+0 S1 A8])
+        (const_int 1 [0x1])) tsscryptoh.c:524 -1
+     (nil))
+(insn 135 134 136 16 (set (reg:DI 113 [ D.15595 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -224 [0xffffffffffffff20])) [0 fLen+0 S4 A32]))) tsscryptoh.c:525 -1
+     (nil))
+(insn 136 135 137 16 (set (reg:DI 114 [ D.15594 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32]))) tsscryptoh.c:525 -1
+     (nil))
+(insn 137 136 138 16 (set (reg:DI 115 [ D.15594 ])
+        (zero_extend:DI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -224 [0xffffffffffffff20])) [0 fLen+0 S4 A32]))) tsscryptoh.c:525 -1
+     (nil))
+(insn 138 137 139 16 (parallel [
+            (set (reg:DI 116 [ D.15594 ])
+                (minus:DI (reg:DI 114 [ D.15594 ])
+                    (reg:DI 115 [ D.15594 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:525 -1
+     (nil))
+(insn 139 138 140 16 (set (reg:DI 117 [ D.15594 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:525 -1
+     (nil))
+(insn 140 139 141 16 (parallel [
+            (set (reg:DI 118 [ D.15594 ])
+                (minus:DI (reg:DI 116 [ D.15594 ])
+                    (reg:DI 117 [ D.15594 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:525 -1
+     (nil))
+(insn 141 140 142 16 (parallel [
+            (set (reg:DI 119 [ D.15594 ])
+                (plus:DI (reg:DI 118 [ D.15594 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:525 -1
+     (nil))
+(insn 142 141 143 16 (set (reg/f:DI 178)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 db+0 S8 A64])) tsscryptoh.c:525 -1
+     (nil))
+(insn 143 142 144 16 (parallel [
+            (set (reg/f:DI 120 [ D.15597 ])
+                (plus:DI (reg:DI 119 [ D.15594 ])
+                    (reg/f:DI 178)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:525 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -176 [0xffffffffffffff50])) [0 db+0 S8 A64])
+            (reg:DI 119 [ D.15594 ]))
+        (nil)))
+(insn 144 143 145 16 (set (reg:DI 179)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -232 [0xffffffffffffff18])) [0 from+0 S8 A64])) tsscryptoh.c:525 -1
+     (nil))
+(insn 145 144 146 16 (set (reg:DI 1 dx)
+        (reg:DI 113 [ D.15595 ])) tsscryptoh.c:525 -1
+     (nil))
+(insn 146 145 147 16 (set (reg:DI 4 si)
+        (reg:DI 179)) tsscryptoh.c:525 -1
+     (nil))
+(insn 147 146 148 16 (set (reg:DI 5 di)
+        (reg/f:DI 120 [ D.15597 ])) tsscryptoh.c:525 -1
+     (nil))
+(call_insn 148 147 149 16 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f10f08c6e58 memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:525 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(code_label 149 148 150 17 63 "" [1 uses])
+(note 150 149 151 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 151 150 152 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:528 -1
+     (nil))
+(jump_insn 152 151 153 17 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 161)
+            (pc))) tsscryptoh.c:528 -1
+     (nil)
+ -> 161)
+(note 153 152 154 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 154 153 155 18 (set (reg:SI 121 [ D.15593 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:529 -1
+     (nil))
+(insn 155 154 156 18 (parallel [
+            (set (reg:DI 180)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -184 [0xffffffffffffff48])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:529 -1
+     (nil))
+(insn 156 155 157 18 (set (reg:SI 4 si)
+        (reg:SI 121 [ D.15593 ])) tsscryptoh.c:529 -1
+     (nil))
+(insn 157 156 158 18 (set (reg:DI 5 di)
+        (reg:DI 180)) tsscryptoh.c:529 -1
+     (nil))
+(call_insn 158 157 159 18 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Malloc") [flags 0x41]  <function_decl 0x7f10f0186798 TSS_Malloc>) [0 TSS_Malloc S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:529 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 159 158 160 18 (set (reg:SI 181)
+        (reg:SI 0 ax)) tsscryptoh.c:529 -1
+     (nil))
+(insn 160 159 161 18 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+        (reg:SI 181)) tsscryptoh.c:529 -1
+     (nil))
+(code_label 161 160 162 19 64 "" [1 uses])
+(note 162 161 163 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 163 162 164 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:531 -1
+     (nil))
+(jump_insn 164 163 165 19 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 173)
+            (pc))) tsscryptoh.c:531 -1
+     (nil)
+ -> 173)
+(note 165 164 166 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 166 165 167 20 (set (reg:SI 122 [ D.15593 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:532 -1
+     (nil))
+(insn 167 166 168 20 (set (reg/f:DI 123 [ D.15597 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 seed+0 S8 A64])) tsscryptoh.c:532 -1
+     (nil))
+(insn 168 167 169 20 (set (reg:SI 4 si)
+        (reg:SI 122 [ D.15593 ])) tsscryptoh.c:532 -1
+     (nil))
+(insn 169 168 170 20 (set (reg:DI 5 di)
+        (reg/f:DI 123 [ D.15597 ])) tsscryptoh.c:532 -1
+     (nil))
+(call_insn 170 169 171 20 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_RandBytes") [flags 0x41]  <function_decl 0x7f10eff0da20 TSS_RandBytes>) [0 TSS_RandBytes S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:532 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 171 170 172 20 (set (reg:SI 182)
+        (reg:SI 0 ax)) tsscryptoh.c:532 -1
+     (nil))
+(insn 172 171 173 20 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+        (reg:SI 182)) tsscryptoh.c:532 -1
+     (nil))
+(code_label 173 172 174 21 65 "" [1 uses])
+(note 174 173 175 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 175 174 176 21 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:534 -1
+     (nil))
+(jump_insn 176 175 177 21 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 188)
+            (pc))) tsscryptoh.c:534 -1
+     (nil)
+ -> 188)
+(note 177 176 178 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 178 177 179 22 (set (reg:SI 124 [ D.15593 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:535 -1
+     (nil))
+(insn 179 178 180 22 (set (reg:SI 183)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])) tsscryptoh.c:535 -1
+     (nil))
+(insn 180 179 181 22 (parallel [
+            (set (reg:SI 125 [ D.15593 ])
+                (minus:SI (reg:SI 183)
+                    (reg:SI 124 [ D.15593 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:535 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])
+            (reg:SI 124 [ D.15593 ]))
+        (nil)))
+(insn 181 180 182 22 (parallel [
+            (set (reg:SI 126 [ D.15593 ])
+                (plus:SI (reg:SI 125 [ D.15593 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:535 -1
+     (nil))
+(insn 182 181 183 22 (parallel [
+            (set (reg:DI 184)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -192 [0xffffffffffffff40])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:535 -1
+     (nil))
+(insn 183 182 184 22 (set (reg:SI 4 si)
+        (reg:SI 126 [ D.15593 ])) tsscryptoh.c:535 -1
+     (nil))
+(insn 184 183 185 22 (set (reg:DI 5 di)
+        (reg:DI 184)) tsscryptoh.c:535 -1
+     (nil))
+(call_insn 185 184 186 22 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Malloc") [flags 0x41]  <function_decl 0x7f10f0186798 TSS_Malloc>) [0 TSS_Malloc S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:535 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 186 185 187 22 (set (reg:SI 185)
+        (reg:SI 0 ax)) tsscryptoh.c:535 -1
+     (nil))
+(insn 187 186 188 22 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+        (reg:SI 185)) tsscryptoh.c:535 -1
+     (nil))
+(code_label 188 187 189 23 66 "" [1 uses])
+(note 189 188 190 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 190 189 191 23 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:537 -1
+     (nil))
+(jump_insn 191 190 192 23 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 209)
+            (pc))) tsscryptoh.c:537 -1
+     (nil)
+ -> 209)
+(note 192 191 193 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 193 192 194 24 (set (reg:SI 127 [ D.15592 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -248 [0xffffffffffffff08])) [0 halg+0 S2 A32]))) tsscryptoh.c:539 -1
+     (nil))
+(insn 194 193 195 24 (set (reg:SI 128 [ D.15592 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:539 -1
+     (nil))
+(insn 195 194 196 24 (set (reg/f:DI 129 [ D.15597 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 seed+0 S8 A64])) tsscryptoh.c:539 -1
+     (nil))
+(insn 196 195 197 24 (set (reg:SI 130 [ D.15593 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:539 -1
+     (nil))
+(insn 197 196 198 24 (set (reg:SI 186)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])) tsscryptoh.c:539 -1
+     (nil))
+(insn 198 197 199 24 (parallel [
+            (set (reg:SI 131 [ D.15593 ])
+                (minus:SI (reg:SI 186)
+                    (reg:SI 130 [ D.15593 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:539 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])
+            (reg:SI 130 [ D.15593 ]))
+        (nil)))
+(insn 199 198 200 24 (parallel [
+            (set (reg:SI 132 [ D.15593 ])
+                (plus:SI (reg:SI 131 [ D.15593 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:539 -1
+     (nil))
+(insn 200 199 201 24 (set (reg/f:DI 133 [ D.15597 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [0 dbMask+0 S8 A64])) tsscryptoh.c:539 -1
+     (nil))
+(insn 201 200 202 24 (set (reg:SI 37 r8)
+        (reg:SI 127 [ D.15592 ])) tsscryptoh.c:539 -1
+     (nil))
+(insn 202 201 203 24 (set (reg:SI 2 cx)
+        (reg:SI 128 [ D.15592 ])) tsscryptoh.c:539 -1
+     (nil))
+(insn 203 202 204 24 (set (reg:DI 1 dx)
+        (reg/f:DI 129 [ D.15597 ])) tsscryptoh.c:539 -1
+     (nil))
+(insn 204 203 205 24 (set (reg:SI 4 si)
+        (reg:SI 132 [ D.15593 ])) tsscryptoh.c:539 -1
+     (nil))
+(insn 205 204 206 24 (set (reg:DI 5 di)
+        (reg/f:DI 133 [ D.15597 ])) tsscryptoh.c:539 -1
+     (nil))
+(call_insn 206 205 207 24 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_MGF1") [flags 0x3]  <function_decl 0x7f10eff31510 TSS_MGF1>) [0 TSS_MGF1 S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:539 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (expr_list:SI (use (reg:SI 37 r8))
+                        (nil)))))))
+(insn 207 206 208 24 (set (reg:SI 187)
+        (reg:SI 0 ax)) tsscryptoh.c:539 -1
+     (nil))
+(insn 208 207 209 24 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+        (reg:SI 187)) tsscryptoh.c:539 -1
+     (nil))
+(code_label 209 208 210 25 67 "" [1 uses])
+(note 210 209 211 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 211 210 212 25 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:543 -1
+     (nil))
+(jump_insn 212 211 213 25 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 258)
+            (pc))) tsscryptoh.c:543 -1
+     (nil)
+ -> 258)
+(note 213 212 214 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 214 213 215 26 (set (reg:DI 134 [ D.15594 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:546 -1
+     (nil))
+(insn 215 214 219 26 (parallel [
+            (set (reg:DI 135 [ D.15594 ])
+                (plus:DI (reg:DI 134 [ D.15594 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:546 -1
+     (nil))
+(insn 219 215 220 26 (set (reg/f:DI 191)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 em+0 S8 A64])) tsscryptoh.c:546 -1
+     (nil))
+(insn 220 219 221 26 (parallel [
+            (set (reg:DI 190)
+                (plus:DI (reg:DI 135 [ D.15594 ])
+                    (reg/f:DI 191)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:546 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -216 [0xffffffffffffff28])) [0 em+0 S8 A64])
+            (reg:DI 135 [ D.15594 ]))
+        (nil)))
+(insn 221 220 222 26 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -160 [0xffffffffffffff60])) [0 maskedDb+0 S8 A64])
+        (reg:DI 190)) tsscryptoh.c:546 -1
+     (nil))
+(insn 222 221 223 26 (set (reg:SI 136 [ D.15593 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:547 -1
+     (nil))
+(insn 223 222 224 26 (set (reg:SI 192)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])) tsscryptoh.c:547 -1
+     (nil))
+(insn 224 223 225 26 (parallel [
+            (set (reg:SI 137 [ D.15593 ])
+                (minus:SI (reg:SI 192)
+                    (reg:SI 136 [ D.15593 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:547 -1
+     (expr_list:REG_EQUAL (minus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])
+            (reg:SI 136 [ D.15593 ]))
+        (nil)))
+(insn 225 224 226 26 (parallel [
+            (set (reg:SI 138 [ D.15593 ])
+                (plus:SI (reg:SI 137 [ D.15593 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:547 -1
+     (nil))
+(insn 226 225 227 26 (set (reg:DI 139 [ D.15595 ])
+        (zero_extend:DI (reg:SI 138 [ D.15593 ]))) tsscryptoh.c:547 -1
+     (nil))
+(insn 227 226 228 26 (set (reg/f:DI 140 [ D.15597 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [0 dbMask+0 S8 A64])) tsscryptoh.c:547 -1
+     (nil))
+(insn 228 227 229 26 (set (reg:DI 193)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -176 [0xffffffffffffff50])) [0 db+0 S8 A64])) tsscryptoh.c:547 -1
+     (nil))
+(insn 229 228 230 26 (set (reg:DI 194)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -160 [0xffffffffffffff60])) [0 maskedDb+0 S8 A64])) tsscryptoh.c:547 -1
+     (nil))
+(insn 230 229 231 26 (set (reg:DI 2 cx)
+        (reg:DI 139 [ D.15595 ])) tsscryptoh.c:547 -1
+     (nil))
+(insn 231 230 232 26 (set (reg:DI 1 dx)
+        (reg/f:DI 140 [ D.15597 ])) tsscryptoh.c:547 -1
+     (nil))
+(insn 232 231 233 26 (set (reg:DI 4 si)
+        (reg:DI 193)) tsscryptoh.c:547 -1
+     (nil))
+(insn 233 232 234 26 (set (reg:DI 5 di)
+        (reg:DI 194)) tsscryptoh.c:547 -1
+     (nil))
+(call_insn 234 233 238 26 (call (mem:QI (symbol_ref:DI ("TSS_XOR") [flags 0x1]  <function_decl 0x7f10eff0d948 TSS_XOR>) [0 TSS_XOR S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:547 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 238 234 239 26 (set (reg/f:DI 198)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 em+0 S8 A64])) tsscryptoh.c:550 -1
+     (nil))
+(insn 239 238 240 26 (parallel [
+            (set (reg:DI 197)
+                (plus:DI (reg/f:DI 198)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:550 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -216 [0xffffffffffffff28])) [0 em+0 S8 A64])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 240 239 241 26 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [0 seedMask+0 S8 A64])
+        (reg:DI 197)) tsscryptoh.c:550 -1
+     (nil))
+(insn 241 240 242 26 (set (reg:SI 141 [ D.15592 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -248 [0xffffffffffffff08])) [0 halg+0 S2 A32]))) tsscryptoh.c:551 -1
+     (nil))
+(insn 242 241 243 26 (set (reg:SI 199)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -220 [0xffffffffffffff24])) [0 emLen+0 S4 A32])) tsscryptoh.c:551 -1
+     (nil))
+(insn 243 242 244 26 (set (reg:HI 142 [ D.15598 ])
+        (subreg:HI (reg:SI 199) 0)) tsscryptoh.c:551 -1
+     (nil))
+(insn 244 243 245 26 (parallel [
+            (set (reg:HI 143 [ D.15598 ])
+                (minus:HI (reg:HI 142 [ D.15598 ])
+                    (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:551 -1
+     (nil))
+(insn 245 244 246 26 (parallel [
+            (set (reg:HI 144 [ D.15598 ])
+                (plus:HI (reg:HI 143 [ D.15598 ])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:551 -1
+     (nil))
+(insn 246 245 247 26 (set (reg:SI 145 [ D.15592 ])
+        (zero_extend:SI (reg:HI 144 [ D.15598 ]))) tsscryptoh.c:551 -1
+     (nil))
+(insn 247 246 248 26 (set (reg:SI 146 [ D.15593 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:551 -1
+     (nil))
+(insn 248 247 249 26 (set (reg:DI 200)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -160 [0xffffffffffffff60])) [0 maskedDb+0 S8 A64])) tsscryptoh.c:551 -1
+     (nil))
+(insn 249 248 250 26 (set (reg:DI 201)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [0 seedMask+0 S8 A64])) tsscryptoh.c:551 -1
+     (nil))
+(insn 250 249 251 26 (set (reg:SI 37 r8)
+        (reg:SI 141 [ D.15592 ])) tsscryptoh.c:551 -1
+     (nil))
+(insn 251 250 252 26 (set (reg:SI 2 cx)
+        (reg:SI 145 [ D.15592 ])) tsscryptoh.c:551 -1
+     (nil))
+(insn 252 251 253 26 (set (reg:DI 1 dx)
+        (reg:DI 200)) tsscryptoh.c:551 -1
+     (nil))
+(insn 253 252 254 26 (set (reg:SI 4 si)
+        (reg:SI 146 [ D.15593 ])) tsscryptoh.c:551 -1
+     (nil))
+(insn 254 253 255 26 (set (reg:DI 5 di)
+        (reg:DI 201)) tsscryptoh.c:551 -1
+     (nil))
+(call_insn 255 254 256 26 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_MGF1") [flags 0x3]  <function_decl 0x7f10eff31510 TSS_MGF1>) [0 TSS_MGF1 S1 A8])
+            (const_int 0 [0]))) tsscryptoh.c:551 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:SI (use (reg:SI 2 cx))
+                    (expr_list:SI (use (reg:SI 37 r8))
+                        (nil)))))))
+(insn 256 255 257 26 (set (reg:SI 202)
+        (reg:SI 0 ax)) tsscryptoh.c:551 -1
+     (nil))
+(insn 257 256 258 26 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+        (reg:SI 202)) tsscryptoh.c:551 -1
+     (nil))
+(code_label 258 257 259 27 68 "" [1 uses])
+(note 259 258 260 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 260 259 261 27 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tsscryptoh.c:555 -1
+     (nil))
+(jump_insn 261 260 262 27 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 278)
+            (pc))) tsscryptoh.c:555 -1
+     (nil)
+ -> 278)
+(note 262 261 266 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 266 262 267 28 (set (reg/f:DI 206)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -216 [0xffffffffffffff28])) [0 em+0 S8 A64])) tsscryptoh.c:558 -1
+     (nil))
+(insn 267 266 268 28 (parallel [
+            (set (reg:DI 205)
+                (plus:DI (reg/f:DI 206)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:558 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -216 [0xffffffffffffff28])) [0 em+0 S8 A64])
+            (const_int 1 [0x1]))
+        (nil)))
+(insn 268 267 269 28 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -152 [0xffffffffffffff68])) [0 maskedSeed+0 S8 A64])
+        (reg:DI 205)) tsscryptoh.c:558 -1
+     (nil))
+(insn 269 268 270 28 (set (reg:DI 147 [ D.15595 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -198 [0xffffffffffffff3a])) [0 hlen+0 S2 A16]))) tsscryptoh.c:559 -1
+     (nil))
+(insn 270 269 271 28 (set (reg/f:DI 148 [ D.15597 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 seed+0 S8 A64])) tsscryptoh.c:559 -1
+     (nil))
+(insn 271 270 272 28 (set (reg:DI 207)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -168 [0xffffffffffffff58])) [0 seedMask+0 S8 A64])) tsscryptoh.c:559 -1
+     (nil))
+(insn 272 271 273 28 (set (reg:DI 208)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -152 [0xffffffffffffff68])) [0 maskedSeed+0 S8 A64])) tsscryptoh.c:559 -1
+     (nil))
+(insn 273 272 274 28 (set (reg:DI 2 cx)
+        (reg:DI 147 [ D.15595 ])) tsscryptoh.c:559 -1
+     (nil))
+(insn 274 273 275 28 (set (reg:DI 1 dx)
+        (reg:DI 207)) tsscryptoh.c:559 -1
+     (nil))
+(insn 275 274 276 28 (set (reg:DI 4 si)
+        (reg/f:DI 148 [ D.15597 ])) tsscryptoh.c:559 -1
+     (nil))
+(insn 276 275 277 28 (set (reg:DI 5 di)
+        (reg:DI 208)) tsscryptoh.c:559 -1
+     (nil))
+(call_insn 277 276 278 28 (call (mem:QI (symbol_ref:DI ("TSS_XOR") [flags 0x1]  <function_decl 0x7f10eff0d948 TSS_XOR>) [0 TSS_XOR S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:559 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(code_label 278 277 279 29 69 "" [1 uses])
+(note 279 278 280 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 280 279 281 29 (set (reg/f:DI 149 [ D.15597 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -192 [0xffffffffffffff40])) [0 dbMask+0 S8 A64])) tsscryptoh.c:563 -1
+     (nil))
+(insn 281 280 282 29 (set (reg:DI 5 di)
+        (reg/f:DI 149 [ D.15597 ])) tsscryptoh.c:563 -1
+     (nil))
+(call_insn 282 281 283 29 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f10f08e6e58 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:563 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 283 282 284 29 (set (reg/f:DI 150 [ D.15597 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -184 [0xffffffffffffff48])) [0 seed+0 S8 A64])) tsscryptoh.c:564 -1
+     (nil))
+(insn 284 283 285 29 (set (reg:DI 5 di)
+        (reg/f:DI 150 [ D.15597 ])) tsscryptoh.c:564 -1
+     (nil))
+(call_insn 285 284 286 29 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f10f08e6e58 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:564 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 286 285 289 29 (set (reg:SI 151 [ D.15599 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -196 [0xffffffffffffff3c])) [0 rc+0 S4 A32])) tsscryptoh.c:565 -1
+     (nil))
+(insn 289 286 293 29 (set (reg:SI 152 [ <retval> ])
+        (reg:SI 151 [ D.15599 ])) tsscryptoh.c:565 -1
+     (nil))
+(insn 293 289 294 29 (set (reg/i:SI 0 ax)
+        (reg:SI 152 [ <retval> ])) tsscryptoh.c:566 -1
+     (nil))
+(insn 294 293 295 29 (set (reg/f:DI 210)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("__stack_chk_guard") [flags 0x40]  <var_decl 0x7f10eff6e360 __stack_chk_guard>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tsscryptoh.c:566 -1
+     (nil))
+(insn 295 294 296 29 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.15600+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) tsscryptoh.c:566 -1
+     (nil))
+(jump_insn 296 295 302 29 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 299)
+            (pc))) tsscryptoh.c:566 -1
+     (nil)
+ -> 299)
+(note 302 296 297 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(call_insn 297 302 298 32 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f10eff86510 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) tsscryptoh.c:566 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 298 297 299)
+(code_label 299 298 303 33 71 "" [1 uses])
+(note 303 299 300 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 300 303 0 33 (use (reg/i:SI 0 ax)) tsscryptoh.c:566 -1
+     (nil))
+
+;; Function TSS_XOR (TSS_XOR, funcdef_no=11, decl_uid=15119, cgraph_uid=11, symbol_order=11)
+
+Partition 0: size 8 align 8
+	i_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 5->6 to 8 failed.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 out+0 S8 A64])
+        (reg:DI 5 di [ out ])) tsscryptoh.c:576 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 in1+0 S8 A64])
+        (reg:DI 4 si [ in1 ])) tsscryptoh.c:576 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in2+0 S8 A64])
+        (reg:DI 1 dx [ in2 ])) tsscryptoh.c:576 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 length+0 S8 A64])
+        (reg:DI 2 cx [ length ])) tsscryptoh.c:576 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S8 A64])
+        (const_int 0 [0])) tsscryptoh.c:579 -1
+     (nil))
+(jump_insn 10 9 11 2 (set (pc)
+        (label_ref 27)) tsscryptoh.c:579 -1
+     (nil)
+ -> 27)
+(barrier 11 10 29)
+(code_label 29 11 12 4 74 "" [1 uses])
+(note 12 29 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 out+0 S8 A64])) tsscryptoh.c:580 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:DI 94)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S8 A64])) tsscryptoh.c:580 -1
+     (nil))
+(insn 15 14 16 4 (parallel [
+            (set (reg/f:DI 87 [ D.15603 ])
+                (plus:DI (reg/f:DI 93)
+                    (reg:DI 94)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:580 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 out+0 S8 A64])
+            (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S8 A64]))
+        (nil)))
+(insn 16 15 17 4 (set (reg/f:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 in1+0 S8 A64])) tsscryptoh.c:580 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:DI 96)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S8 A64])) tsscryptoh.c:580 -1
+     (nil))
+(insn 18 17 19 4 (parallel [
+            (set (reg/f:DI 88 [ D.15604 ])
+                (plus:DI (reg/f:DI 95)
+                    (reg:DI 96)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:580 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 in1+0 S8 A64])
+            (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S8 A64]))
+        (nil)))
+(insn 19 18 20 4 (set (reg:QI 89 [ D.15605 ])
+        (mem:QI (reg/f:DI 88 [ D.15604 ]) [0 *_9+0 S1 A8])) tsscryptoh.c:580 -1
+     (nil))
+(insn 20 19 21 4 (set (reg/f:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 in2+0 S8 A64])) tsscryptoh.c:580 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:DI 98)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S8 A64])) tsscryptoh.c:580 -1
+     (nil))
+(insn 22 21 23 4 (parallel [
+            (set (reg/f:DI 90 [ D.15604 ])
+                (plus:DI (reg/f:DI 97)
+                    (reg:DI 98)))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:580 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 in2+0 S8 A64])
+            (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 i+0 S8 A64]))
+        (nil)))
+(insn 23 22 24 4 (set (reg:QI 91 [ D.15605 ])
+        (mem:QI (reg/f:DI 90 [ D.15604 ]) [0 *_12+0 S1 A8])) tsscryptoh.c:580 -1
+     (nil))
+(insn 24 23 25 4 (parallel [
+            (set (reg:QI 92 [ D.15605 ])
+                (xor:QI (reg:QI 89 [ D.15605 ])
+                    (reg:QI 91 [ D.15605 ])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:580 -1
+     (nil))
+(insn 25 24 26 4 (set (mem:QI (reg/f:DI 87 [ D.15603 ]) [0 *_7+0 S1 A8])
+        (reg:QI 92 [ D.15605 ])) tsscryptoh.c:580 -1
+     (nil))
+(insn 26 25 27 4 (parallel [
+            (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 i+0 S8 A64])
+                (plus:DI (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -8 [0xfffffffffffffff8])) [0 i+0 S8 A64])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) tsscryptoh.c:579 -1
+     (nil))
+(code_label 27 26 28 5 73 "" [1 uses])
+(note 28 27 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 30 28 31 5 (set (reg:DI 99)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 i+0 S8 A64])) tsscryptoh.c:579 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 99)
+            (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])) [0 length+0 S8 A64]))) tsscryptoh.c:579 -1
+     (nil))
+(jump_insn 32 31 33 5 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 29)
+            (pc))) tsscryptoh.c:579 -1
+     (nil)
+ -> 29)
+(note 33 32 38 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 38 33 0 6 (const_int 0 [0]) tsscryptoh.c:582 -1
+     (nil))
+
+;; Function TSS_Sym_GetBlockSize (TSS_Sym_GetBlockSize, funcdef_no=12, decl_uid=13917, cgraph_uid=12, symbol_order=12)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+Purged edges from bb 8
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 2->4 to 6 failed.
+Forwarding edge 2->4 to 6 failed.
+Removing jump 25.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 2->4 to 6 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 4 2 (set (reg:SI 90)
+        (reg:SI 5 di [ symmetricAlg ])) tsscryptoh.c:593 -1
+     (nil))
+(insn 4 2 3 2 (set (reg:SI 91)
+        (reg:SI 4 si [ keySizeInBits ])) tsscryptoh.c:593 -1
+     (nil))
+(insn 3 4 5 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 symmetricAlg+0 S2 A32])
+        (subreg:HI (reg:SI 90) 0)) tsscryptoh.c:593 -1
+     (nil))
+(insn 5 3 6 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 keySizeInBits+0 S2 A32])
+        (subreg:HI (reg:SI 91) 0)) tsscryptoh.c:593 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:SI 88 [ D.15607 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 symmetricAlg+0 S2 A32]))) tsscryptoh.c:596 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.15607 ])
+            (const_int 6 [0x6]))) tsscryptoh.c:596 -1
+     (nil))
+(jump_insn 11 10 31 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 14)
+            (pc))) tsscryptoh.c:596 -1
+     (nil)
+ -> 14)
+(note 31 11 12 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 12 31 13 4 (set (pc)
+        (label_ref 19)) tsscryptoh.c:596 -1
+     (nil)
+ -> 19)
+(barrier 13 12 14)
+(code_label 14 13 15 5 78 "" [1 uses])
+(note 15 14 16 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 5 (set (reg:HI 87 [ D.15606 ])
+        (const_int 16 [0x10])) tsscryptoh.c:603 -1
+     (nil))
+(jump_insn 17 16 18 5 (set (pc)
+        (label_ref 22)) tsscryptoh.c:603 -1
+     (nil)
+ -> 22)
+(barrier 18 17 19)
+(code_label 19 18 20 6 77 "" [1 uses])
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (reg:HI 87 [ D.15606 ])
+        (const_int 0 [0])) tsscryptoh.c:605 -1
+     (nil))
+(code_label 22 21 23 7 79 "" [1 uses])
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 28 7 (set (reg:HI 89 [ <retval> ])
+        (reg:HI 87 [ D.15606 ])) -1
+     (nil))
+(insn 28 24 29 7 (set (reg/i:HI 0 ax)
+        (reg:HI 89 [ <retval> ])) tsscryptoh.c:608 -1
+     (nil))
+(insn 29 28 0 7 (use (reg/i:HI 0 ax)) tsscryptoh.c:608 -1
+     (nil))

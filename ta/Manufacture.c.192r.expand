@@ -1,0 +1,387 @@
+
+;; Function TPM_Manufacture (TPM_Manufacture, funcdef_no=2, decl_uid=11940, cgraph_uid=2, symbol_order=2)
+
+Partition 0: size 2 align 2
+	orderlyShutdown
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 16 from 7 to 8.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Removing jump 65.
+Merging block 9 into block 8...
+Merged blocks 8 and 9.
+Merged 8 and 9 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 firstTime+0 S4 A32])
+        (reg:SI 5 di [ firstTime ])) Manufacture.c:84 -1
+     (nil))
+(note 3 2 4 2 NOTE_INSN_FUNCTION_BEG)
+(insn 4 3 7 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.12888+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) Manufacture.c:84 -1
+     (nil))
+(call_insn 7 4 8 2 (call (mem:QI (symbol_ref:DI ("TpmSizeChecks") [flags 0x41]  <function_decl 0x7f14b1f02d80 TpmSizeChecks>) [0 TpmSizeChecks S1 A8])
+        (const_int 0 [0])) Manufacture.c:89 -1
+     (nil)
+    (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 firstTime+0 S4 A32])
+            (const_int 0 [0]))) Manufacture.c:92 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) Manufacture.c:92 -1
+     (nil)
+ -> 18)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg:SI 88 [ D.12887 ])
+        (mem/c:SI (symbol_ref:DI ("g_manufactured") [flags 0x40]  <var_decl 0x7f14b1dd7900 g_manufactured>) [0 g_manufactured+0 S4 A32])) Manufacture.c:92 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.12887 ])
+            (const_int 0 [0]))) Manufacture.c:92 -1
+     (nil))
+(jump_insn 13 12 14 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) Manufacture.c:92 -1
+     (nil)
+ -> 18)
+(note 14 13 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 5 (set (reg:SI 87 [ D.12887 ])
+        (const_int 1 [0x1])) Manufacture.c:93 -1
+     (nil))
+(jump_insn 16 15 17 5 (set (pc)
+        (label_ref:DI 62)) Manufacture.c:93 654 {jump}
+     (nil)
+ -> 62)
+(barrier 17 16 18)
+(code_label 18 17 19 6 2 "" [2 uses])
+(note 19 18 20 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 6 (set (mem/c:SI (symbol_ref:DI ("s_DAPendingOnNV") [flags 0x40]  <var_decl 0x7f14b1de3000 s_DAPendingOnNV>) [0 s_DAPendingOnNV+0 S4 A32])
+        (const_int 0 [0])) Manufacture.c:94 -1
+     (nil))
+(call_insn 21 20 22 6 (call (mem:QI (symbol_ref:DI ("NvManufacture") [flags 0x41]  <function_decl 0x7f14b1e00a20 NvManufacture>) [0 NvManufacture S1 A8])
+        (const_int 0 [0])) Manufacture.c:96 -1
+     (nil)
+    (nil))
+(insn 22 21 23 6 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f14b1d95f30 go>)
+                    (const_int 24 [0x18]))) [0 go.drbgState.magic+0 S4 A64])
+        (const_int 0 [0])) Manufacture.c:98 -1
+     (nil))
+(insn 23 22 24 6 (set (reg:SI 5 di)
+        (const_int 0 [0])) Manufacture.c:99 -1
+     (nil))
+(call_insn 24 23 25 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptStartup") [flags 0x41]  <function_decl 0x7f14b1ec7510 CryptStartup>) [0 CryptStartup S1 A8])
+            (const_int 0 [0]))) Manufacture.c:99 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(call_insn 25 24 26 6 (call (mem:QI (symbol_ref:DI ("PCRSimStart") [flags 0x41]  <function_decl 0x7f14b1e0f948 PCRSimStart>) [0 PCRSimStart S1 A8])
+        (const_int 0 [0])) Manufacture.c:101 -1
+     (nil)
+    (nil))
+(call_insn 26 25 27 6 (call (mem:QI (symbol_ref:DI ("HierarchyPreInstall_Init") [flags 0x41]  <function_decl 0x7f14b1e00360 HierarchyPreInstall_Init>) [0 HierarchyPreInstall_Init S1 A8])
+        (const_int 0 [0])) Manufacture.c:105 -1
+     (nil)
+    (nil))
+(call_insn 27 26 28 6 (call (mem:QI (symbol_ref:DI ("DAPreInstall_Init") [flags 0x41]  <function_decl 0x7f14b1e13af8 DAPreInstall_Init>) [0 DAPreInstall_Init S1 A8])
+        (const_int 0 [0])) Manufacture.c:107 -1
+     (nil)
+    (nil))
+(call_insn 28 27 29 6 (call (mem:QI (symbol_ref:DI ("PhysicalPresencePreInstall_Init") [flags 0x41]  <function_decl 0x7f14b1eab5e8 PhysicalPresencePreInstall_Init>) [0 PhysicalPresencePreInstall_Init S1 A8])
+        (const_int 0 [0])) Manufacture.c:109 -1
+     (nil)
+    (nil))
+(call_insn 29 28 30 6 (call (mem:QI (symbol_ref:DI ("CommandAuditPreInstall_Init") [flags 0x41]  <function_decl 0x7f14b1eaba20 CommandAuditPreInstall_Init>) [0 CommandAuditPreInstall_Init S1 A8])
+        (const_int 0 [0])) Manufacture.c:111 -1
+     (nil)
+    (nil))
+(insn 30 29 31 6 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -10 [0xfffffffffffffff6])) [0 orderlyShutdown+0 S2 A16])
+        (const_int 0 [0])) Manufacture.c:113 -1
+     (nil))
+(insn 31 30 32 6 (parallel [
+            (set (reg:DI 90)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -10 [0xfffffffffffffff6])))
+            (clobber (reg:CC 17 flags))
+        ]) Manufacture.c:114 -1
+     (nil))
+(insn 32 31 33 6 (set (reg:DI 1 dx)
+        (reg:DI 90)) Manufacture.c:114 -1
+     (nil))
+(insn 33 32 34 6 (set (reg:SI 4 si)
+        (const_int 2 [0x2])) Manufacture.c:114 -1
+     (nil))
+(insn 34 33 35 6 (set (reg:SI 5 di)
+        (const_int 888 [0x378])) Manufacture.c:114 -1
+     (nil))
+(call_insn 35 34 36 6 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7f14b1e00bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) Manufacture.c:114 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 36 35 37 6 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f14b1d95ea0 gp>)
+                    (const_int 924 [0x39c]))) [0 gp.firmwareV1+0 S4 A32])
+        (const_int 538314001 [0x20160511])) Manufacture.c:116 -1
+     (nil))
+(insn 37 36 38 6 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f14b1d95ea0 gp>)
+                    (const_int 928 [0x3a0]))) [0 gp.firmwareV2+0 S4 A64])
+        (const_int 1452032 [0x162800])) Manufacture.c:118 -1
+     (nil))
+(insn 38 37 39 6 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f14b1d95ea0 gp>)
+                (const_int 924 [0x39c])))) Manufacture.c:122 -1
+     (nil))
+(insn 39 38 40 6 (set (reg:SI 4 si)
+        (const_int 4 [0x4])) Manufacture.c:122 -1
+     (nil))
+(insn 40 39 41 6 (set (reg:SI 5 di)
+        (const_int 924 [0x39c])) Manufacture.c:122 -1
+     (nil))
+(call_insn 41 40 42 6 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7f14b1e00bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) Manufacture.c:122 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 42 41 43 6 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f14b1d95ea0 gp>)
+                (const_int 928 [0x3a0])))) Manufacture.c:123 -1
+     (nil))
+(insn 43 42 44 6 (set (reg:SI 4 si)
+        (const_int 4 [0x4])) Manufacture.c:123 -1
+     (nil))
+(insn 44 43 45 6 (set (reg:SI 5 di)
+        (const_int 928 [0x3a0])) Manufacture.c:123 -1
+     (nil))
+(call_insn 45 44 46 6 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7f14b1e00bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) Manufacture.c:123 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 46 45 47 6 (set (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f14b1d95ea0 gp>)
+                    (const_int 712 [0x2c8]))) [0 gp.totalResetCount+0 S8 A64])
+        (const_int 0 [0])) Manufacture.c:125 -1
+     (nil))
+(insn 47 46 48 6 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f14b1d95ea0 gp>)
+                (const_int 712 [0x2c8])))) Manufacture.c:126 -1
+     (nil))
+(insn 48 47 49 6 (set (reg:SI 4 si)
+        (const_int 8 [0x8])) Manufacture.c:126 -1
+     (nil))
+(insn 49 48 50 6 (set (reg:SI 5 di)
+        (const_int 712 [0x2c8])) Manufacture.c:126 -1
+     (nil))
+(call_insn 50 49 51 6 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7f14b1e00bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) Manufacture.c:126 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 51 50 52 6 (set (mem/j/c:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f14b1d95f30 go>) [0 go.clock+0 S8 A64])
+        (const_int 0 [0])) Manufacture.c:128 -1
+     (nil))
+(insn 52 51 53 6 (set (mem/j/c:QI (const:DI (plus:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f14b1d95f30 go>)
+                    (const_int 8 [0x8]))) [0 go.clockSafe+0 S1 A64])
+        (const_int 1 [0x1])) Manufacture.c:129 -1
+     (nil))
+(insn 53 52 54 6 (set (reg:DI 1 dx)
+        (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7f14b1d95f30 go>)) Manufacture.c:130 -1
+     (nil))
+(insn 54 53 55 6 (set (reg:SI 4 si)
+        (const_int 120 [0x78])) Manufacture.c:130 -1
+     (nil))
+(insn 55 54 56 6 (set (reg:SI 5 di)
+        (const_int 3068 [0xbfc])) Manufacture.c:130 -1
+     (nil))
+(call_insn 56 55 57 6 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7f14b1e00bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) Manufacture.c:130 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(call_insn 57 56 58 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NvCommit") [flags 0x41]  <function_decl 0x7f14b1e00870 NvCommit>) [0 NvCommit S1 A8])
+            (const_int 0 [0]))) Manufacture.c:136 -1
+     (nil)
+    (nil))
+(insn 58 57 59 6 (set (mem/c:SI (symbol_ref:DI ("g_manufactured") [flags 0x40]  <var_decl 0x7f14b1dd7900 g_manufactured>) [0 g_manufactured+0 S4 A32])
+        (const_int 1 [0x1])) Manufacture.c:137 -1
+     (nil))
+(insn 59 58 62 6 (set (reg:SI 87 [ D.12887 ])
+        (const_int 0 [0])) Manufacture.c:138 -1
+     (nil))
+(code_label 62 59 63 8 4 "" [1 uses])
+(note 63 62 64 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 68 8 (set (reg:SI 89 [ <retval> ])
+        (reg:SI 87 [ D.12887 ])) -1
+     (nil))
+(insn 68 64 69 8 (set (reg/i:SI 0 ax)
+        (reg:SI 89 [ <retval> ])) Manufacture.c:139 -1
+     (nil))
+(insn 69 68 70 8 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.12888+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) Manufacture.c:139 -1
+     (nil))
+(jump_insn 70 69 76 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 73)
+            (pc))) Manufacture.c:139 -1
+     (nil)
+ -> 73)
+(note 76 70 71 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(call_insn 71 76 72 10 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f14b1f0bca8 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) Manufacture.c:139 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 72 71 73)
+(code_label 73 72 77 11 5 "" [1 uses])
+(note 77 73 74 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 74 77 0 11 (use (reg/i:SI 0 ax)) Manufacture.c:139 -1
+     (nil))
+
+;; Function TPM_TearDown (TPM_TearDown, funcdef_no=3, decl_uid=11942, cgraph_uid=3, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 10.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (mem/c:SI (symbol_ref:DI ("g_manufactured") [flags 0x40]  <var_decl 0x7f14b1dd7900 g_manufactured>) [0 g_manufactured+0 S4 A32])
+        (const_int 0 [0])) Manufacture.c:154 -1
+     (nil))
+(insn 6 5 9 2 (set (reg:SI 87 [ D.12891 ])
+        (const_int 0 [0])) Manufacture.c:155 -1
+     (nil))
+(insn 9 6 13 2 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.12891 ])) Manufacture.c:155 -1
+     (nil))
+(insn 13 9 14 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) Manufacture.c:156 -1
+     (nil))
+(insn 14 13 0 2 (use (reg/i:SI 0 ax)) Manufacture.c:156 -1
+     (nil))
+
+;; Function TpmEndSimulation (TpmEndSimulation, funcdef_no=4, decl_uid=11944, cgraph_uid=4, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 6 2 (call (mem:QI (symbol_ref:DI ("RsaSimulationEnd") [flags 0x41]  <function_decl 0x7f14b1eec6c0 RsaSimulationEnd>) [0 RsaSimulationEnd S1 A8])
+        (const_int 0 [0])) Manufacture.c:170 -1
+     (nil)
+    (nil))
+(call_insn 6 5 9 2 (call (mem:QI (symbol_ref:DI ("EccSimulationEnd") [flags 0x41]  <function_decl 0x7f14b1eec798 EccSimulationEnd>) [0 EccSimulationEnd S1 A8])
+        (const_int 0 [0])) Manufacture.c:173 -1
+     (nil)
+    (nil))
+(insn 9 6 0 2 (const_int 0 [0]) Manufacture.c:176 -1
+     (nil))

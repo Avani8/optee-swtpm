@@ -1,0 +1,1702 @@
+
+;; Function TSS_Dev_Transmit (TSS_Dev_Transmit, funcdef_no=2, decl_uid=7069, cgraph_uid=2, symbol_order=2)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+Removing jump 71.
+Merging block 14 into block 12...
+Merged blocks 12 and 14.
+Merged 12 and 14 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 9 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssdev.c:81 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 responseBuffer+0 S8 A64])
+        (reg:DI 4 si [ responseBuffer ])) tssdev.c:81 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 read+0 S8 A64])
+        (reg:DI 1 dx [ read ])) tssdev.c:81 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 commandBuffer+0 S8 A64])
+        (reg:DI 2 cx [ commandBuffer ])) tssdev.c:81 -1
+     (nil))
+(insn 6 5 7 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -52 [0xffffffffffffffcc])) [0 written+0 S4 A32])
+        (reg:SI 37 r8 [ written ])) tssdev.c:81 -1
+     (nil))
+(insn 7 6 8 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -64 [0xffffffffffffffc0])) [0 message+0 S8 A64])
+        (reg:DI 38 r9 [ message ])) tssdev.c:81 -1
+     (nil))
+(note 8 7 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 8 12 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssdev.c:82 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssdev.c:85 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 87 [ D.7246 ])
+        (mem/j:SI (plus:DI (reg/f:DI 94)
+                (const_int 80 [0x50])) [0 tssContext_11(D)->tssFirstTransmit+0 S4 A64])) tssdev.c:85 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.7246 ])
+            (const_int 0 [0]))) tssdev.c:85 -1
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) tssdev.c:85 -1
+     (nil)
+ -> 32)
+(note 16 15 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 18 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:86 -1
+     (nil))
+(jump_insn 18 17 19 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 25)
+            (pc))) tssdev.c:86 -1
+     (nil)
+ -> 25)
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 5 (set (reg:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssdev.c:87 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:DI 5 di)
+        (reg:DI 95)) tssdev.c:87 -1
+     (nil))
+(call_insn 22 21 23 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Dev_Open") [flags 0x3]  <function_decl 0x7f903bd3c360 TSS_Dev_Open>) [0 TSS_Dev_Open S1 A8])
+            (const_int 0 [0]))) tssdev.c:87 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 23 22 24 5 (set (reg:SI 96)
+        (reg:SI 0 ax)) tssdev.c:87 -1
+     (nil))
+(insn 24 23 25 5 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 96)) tssdev.c:87 -1
+     (nil))
+(code_label 25 24 26 6 3 "" [1 uses])
+(note 26 25 27 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:89 -1
+     (nil))
+(jump_insn 28 27 29 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) tssdev.c:89 -1
+     (nil)
+ -> 32)
+(note 29 28 30 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 7 (set (reg/f:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssdev.c:90 -1
+     (nil))
+(insn 31 30 32 7 (set (mem/j:SI (plus:DI (reg/f:DI 97)
+                (const_int 80 [0x50])) [0 tssContext_11(D)->tssFirstTransmit+0 S4 A64])
+        (const_int 0 [0])) tssdev.c:90 -1
+     (nil))
+(code_label 32 31 33 8 2 "" [2 uses])
+(note 33 32 34 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:94 -1
+     (nil))
+(jump_insn 35 34 36 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 50)
+            (pc))) tssdev.c:94 -1
+     (nil)
+ -> 50)
+(note 36 35 37 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 9 (set (reg:SI 88 [ D.7246 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -52 [0xffffffffffffffcc])) [0 written+0 S4 A32])) tssdev.c:95 -1
+     (nil))
+(insn 38 37 39 9 (set (reg:SI 89 [ D.7246 ])
+        (zero_extend:SI (subreg:HI (reg:SI 88 [ D.7246 ]) 0))) tssdev.c:95 -1
+     (nil))
+(insn 39 38 40 9 (set (reg/f:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssdev.c:95 -1
+     (nil))
+(insn 40 39 41 9 (set (reg:SI 90 [ D.7246 ])
+        (mem/j:SI (plus:DI (reg/f:DI 98)
+                (const_int 88 [0x58])) [0 tssContext_11(D)->dev_fd+0 S4 A64])) tssdev.c:95 -1
+     (nil))
+(insn 41 40 42 9 (set (reg:DI 99)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -64 [0xffffffffffffffc0])) [0 message+0 S8 A64])) tssdev.c:95 -1
+     (nil))
+(insn 42 41 43 9 (set (reg:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 commandBuffer+0 S8 A64])) tssdev.c:95 -1
+     (nil))
+(insn 43 42 44 9 (set (reg:DI 2 cx)
+        (reg:DI 99)) tssdev.c:95 -1
+     (nil))
+(insn 44 43 45 9 (set (reg:SI 1 dx)
+        (reg:SI 89 [ D.7246 ])) tssdev.c:95 -1
+     (nil))
+(insn 45 44 46 9 (set (reg:DI 4 si)
+        (reg:DI 100)) tssdev.c:95 -1
+     (nil))
+(insn 46 45 47 9 (set (reg:SI 5 di)
+        (reg:SI 90 [ D.7246 ])) tssdev.c:95 -1
+     (nil))
+(call_insn 47 46 48 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Dev_SendCommand") [flags 0x3]  <function_decl 0x7f903bd3c438 TSS_Dev_SendCommand>) [0 TSS_Dev_SendCommand S1 A8])
+            (const_int 0 [0]))) tssdev.c:95 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 48 47 49 9 (set (reg:SI 101)
+        (reg:SI 0 ax)) tssdev.c:95 -1
+     (nil))
+(insn 49 48 50 9 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 101)) tssdev.c:95 -1
+     (nil))
+(code_label 50 49 51 10 4 "" [1 uses])
+(note 51 50 52 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:99 -1
+     (nil))
+(jump_insn 53 52 54 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 65)
+            (pc))) tssdev.c:99 -1
+     (nil)
+ -> 65)
+(note 54 53 55 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 55 54 56 11 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssdev.c:100 -1
+     (nil))
+(insn 56 55 57 11 (set (reg:SI 91 [ D.7246 ])
+        (mem/j:SI (plus:DI (reg/f:DI 102)
+                (const_int 88 [0x58])) [0 tssContext_11(D)->dev_fd+0 S4 A64])) tssdev.c:100 -1
+     (nil))
+(insn 57 56 58 11 (set (reg:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 read+0 S8 A64])) tssdev.c:100 -1
+     (nil))
+(insn 58 57 59 11 (set (reg:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 responseBuffer+0 S8 A64])) tssdev.c:100 -1
+     (nil))
+(insn 59 58 60 11 (set (reg:DI 1 dx)
+        (reg:DI 103)) tssdev.c:100 -1
+     (nil))
+(insn 60 59 61 11 (set (reg:DI 4 si)
+        (reg:DI 104)) tssdev.c:100 -1
+     (nil))
+(insn 61 60 62 11 (set (reg:SI 5 di)
+        (reg:SI 91 [ D.7246 ])) tssdev.c:100 -1
+     (nil))
+(call_insn 62 61 63 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Dev_ReceiveCommand") [flags 0x3]  <function_decl 0x7f903bd3c510 TSS_Dev_ReceiveCommand>) [0 TSS_Dev_ReceiveCommand S1 A8])
+            (const_int 0 [0]))) tssdev.c:100 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 63 62 64 11 (set (reg:SI 105)
+        (reg:SI 0 ax)) tssdev.c:100 -1
+     (nil))
+(insn 64 63 65 11 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 105)) tssdev.c:100 -1
+     (nil))
+(code_label 65 64 66 12 5 "" [1 uses])
+(note 66 65 67 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 67 66 70 12 (set (reg:SI 92 [ D.7247 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssdev.c:102 -1
+     (nil))
+(insn 70 67 74 12 (set (reg:SI 93 [ <retval> ])
+        (reg:SI 92 [ D.7247 ])) tssdev.c:102 -1
+     (nil))
+(insn 74 70 75 12 (set (reg/i:SI 0 ax)
+        (reg:SI 93 [ <retval> ])) tssdev.c:103 -1
+     (nil))
+(insn 75 74 0 12 (use (reg/i:SI 0 ax)) tssdev.c:103 -1
+     (nil))
+
+;; Function TSS_Dev_Open (TSS_Dev_Open, funcdef_no=3, decl_uid=7073, cgraph_uid=3, symbol_order=3)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 11 into block 10...
+Merged blocks 10 and 11.
+Merged 10 and 11 without moving.
+Removing jump 57.
+Merging block 12 into block 10...
+Merged blocks 10 and 12.
+Merged 10 and 12 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssdev.c:108 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssdev.c:109 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:111 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) tssdev.c:111 -1
+     (nil)
+ -> 51)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 11 4 (set (reg/f:DI 96)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVverbose") [flags 0x40]  <var_decl 0x7f903bf38f30 tssVverbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:112 -1
+     (nil))
+(insn 11 10 12 4 (set (reg:SI 87 [ D.7248 ])
+        (mem/c:SI (reg/f:DI 96) [0 tssVverbose+0 S4 A32])) tssdev.c:112 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.7248 ])
+            (const_int 0 [0]))) tssdev.c:112 -1
+     (nil))
+(jump_insn 13 12 14 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) tssdev.c:112 -1
+     (nil)
+ -> 21)
+(note 14 13 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 5 (set (reg/f:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssdev.c:112 -1
+     (nil))
+(insn 16 15 17 5 (set (reg/f:DI 88 [ D.7249 ])
+        (mem/f/j:DI (plus:DI (reg/f:DI 97)
+                (const_int 72 [0x48])) [0 tssContext_8(D)->tssDevice+0 S8 A64])) tssdev.c:112 -1
+     (nil))
+(insn 17 16 18 5 (set (reg:DI 4 si)
+        (reg/f:DI 88 [ D.7249 ])) tssdev.c:112 -1
+     (nil))
+(insn 18 17 19 5 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f903bd6cb40 *.LC0>)) tssdev.c:112 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssdev.c:112 -1
+     (nil))
+(call_insn 20 19 21 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f903c0c3ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tssdev.c:112 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(code_label 21 20 22 6 9 "" [1 uses])
+(note 22 21 23 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 6 (set (reg/f:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssdev.c:113 -1
+     (nil))
+(insn 24 23 25 6 (set (reg/f:DI 89 [ D.7249 ])
+        (mem/f/j:DI (plus:DI (reg/f:DI 98)
+                (const_int 72 [0x48])) [0 tssContext_8(D)->tssDevice+0 S8 A64])) tssdev.c:113 -1
+     (nil))
+(insn 25 24 26 6 (set (reg:SI 4 si)
+        (const_int 2 [0x2])) tssdev.c:113 -1
+     (nil))
+(insn 26 25 27 6 (set (reg:DI 5 di)
+        (reg/f:DI 89 [ D.7249 ])) tssdev.c:113 -1
+     (nil))
+(insn 27 26 28 6 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssdev.c:113 -1
+     (nil))
+(call_insn 28 27 29 6 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("open") [flags 0x41]  <function_decl 0x7f903bf09798 open>) [0 open S1 A8])
+            (const_int 0 [0]))) tssdev.c:113 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(insn 29 28 30 6 (set (reg:SI 90 [ D.7248 ])
+        (reg:SI 0 ax)) tssdev.c:113 -1
+     (nil))
+(insn 30 29 31 6 (set (reg/f:DI 99)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssdev.c:113 -1
+     (nil))
+(insn 31 30 32 6 (set (mem/j:SI (plus:DI (reg/f:DI 99)
+                (const_int 88 [0x58])) [0 tssContext_8(D)->dev_fd+0 S4 A64])
+        (reg:SI 90 [ D.7248 ])) tssdev.c:113 -1
+     (nil))
+(insn 32 31 33 6 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssdev.c:114 -1
+     (nil))
+(insn 33 32 34 6 (set (reg:SI 91 [ D.7248 ])
+        (mem/j:SI (plus:DI (reg/f:DI 100)
+                (const_int 88 [0x58])) [0 tssContext_8(D)->dev_fd+0 S4 A64])) tssdev.c:114 -1
+     (nil))
+(insn 34 33 35 6 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (reg:SI 91 [ D.7248 ])
+            (const_int 0 [0]))) tssdev.c:114 -1
+     (nil))
+(jump_insn 35 34 36 6 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) tssdev.c:114 -1
+     (nil)
+ -> 51)
+(note 36 35 37 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 37 36 38 7 (set (reg/f:DI 101)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose") [flags 0x40]  <var_decl 0x7f903bd3f000 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:115 -1
+     (nil))
+(insn 38 37 39 7 (set (reg:SI 92 [ D.7248 ])
+        (mem/c:SI (reg/f:DI 101) [0 tssVerbose+0 S4 A32])) tssdev.c:115 -1
+     (nil))
+(insn 39 38 40 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.7248 ])
+            (const_int 0 [0]))) tssdev.c:115 -1
+     (nil))
+(jump_insn 40 39 41 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 48)
+            (pc))) tssdev.c:115 -1
+     (nil)
+ -> 48)
+(note 41 40 42 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 8 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 tssContext+0 S8 A64])) tssdev.c:115 -1
+     (nil))
+(insn 43 42 44 8 (set (reg/f:DI 93 [ D.7249 ])
+        (mem/f/j:DI (plus:DI (reg/f:DI 102)
+                (const_int 72 [0x48])) [0 tssContext_8(D)->tssDevice+0 S8 A64])) tssdev.c:115 -1
+     (nil))
+(insn 44 43 45 8 (set (reg:DI 4 si)
+        (reg/f:DI 93 [ D.7249 ])) tssdev.c:115 -1
+     (nil))
+(insn 45 44 46 8 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f903bd6cbd0 *.LC1>)) tssdev.c:115 -1
+     (nil))
+(insn 46 45 47 8 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssdev.c:115 -1
+     (nil))
+(call_insn 47 46 48 8 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f903c0c3ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tssdev.c:115 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(code_label 48 47 49 9 10 "" [1 uses])
+(note 49 48 50 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 9 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 720904 [0xb0008])) tssdev.c:116 -1
+     (nil))
+(code_label 51 50 52 10 8 "" [2 uses])
+(note 52 51 53 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 56 10 (set (reg:SI 94 [ D.7250 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssdev.c:119 -1
+     (nil))
+(insn 56 53 60 10 (set (reg:SI 95 [ <retval> ])
+        (reg:SI 94 [ D.7250 ])) tssdev.c:119 -1
+     (nil))
+(insn 60 56 61 10 (set (reg/i:SI 0 ax)
+        (reg:SI 95 [ <retval> ])) tssdev.c:120 -1
+     (nil))
+(insn 61 60 0 10 (use (reg/i:SI 0 ax)) tssdev.c:120 -1
+     (nil))
+
+;; Function TSS_Dev_SendCommand (TSS_Dev_SendCommand, funcdef_no=4, decl_uid=7078, cgraph_uid=4, symbol_order=4)
+
+Partition 1: size 4 align 4
+	irc_20
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 15 into block 14...
+Merged blocks 14 and 15.
+Merged 14 and 15 without moving.
+Removing jump 85.
+Merging block 16 into block 14...
+Merged blocks 14 and 16.
+Merged 14 and 16 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 dev_fd+0 S4 A32])
+        (reg:SI 5 di [ dev_fd ])) tssdev.c:130 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])
+        (reg:DI 4 si [ buffer ])) tssdev.c:130 -1
+     (nil))
+(insn 4 3 6 2 (set (reg:SI 100)
+        (reg:SI 1 dx [ length ])) tssdev.c:130 -1
+     (nil))
+(insn 6 4 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 message+0 S8 A64])
+        (reg:DI 2 cx [ message ])) tssdev.c:130 -1
+     (nil))
+(insn 5 6 7 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 length+0 S2 A32])
+        (subreg:HI (reg:SI 100) 0)) tssdev.c:130 -1
+     (nil))
+(note 7 5 10 2 NOTE_INSN_FUNCTION_BEG)
+(insn 10 7 11 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssdev.c:131 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 message+0 S8 A64])
+            (const_int 0 [0]))) tssdev.c:134 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) tssdev.c:134 -1
+     (nil)
+ -> 24)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg/f:DI 101)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVverbose") [flags 0x40]  <var_decl 0x7f903bf38f30 tssVverbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:135 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 87 [ D.7253 ])
+        (mem/c:SI (reg/f:DI 101) [0 tssVverbose+0 S4 A32])) tssdev.c:135 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.7253 ])
+            (const_int 0 [0]))) tssdev.c:135 -1
+     (nil))
+(jump_insn 17 16 18 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) tssdev.c:135 -1
+     (nil)
+ -> 24)
+(note 18 17 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 5 (set (reg:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 message+0 S8 A64])) tssdev.c:135 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:DI 4 si)
+        (reg:DI 102)) tssdev.c:135 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f903bd795a0 *.LC2>)) tssdev.c:135 -1
+     (nil))
+(insn 22 21 23 5 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssdev.c:135 -1
+     (nil))
+(call_insn 23 22 24 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f903c0c3ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tssdev.c:135 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(code_label 24 23 25 6 13 "" [2 uses])
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:137 -1
+     (nil))
+(jump_insn 27 26 28 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 40)
+            (pc))) tssdev.c:137 -1
+     (nil)
+ -> 40)
+(note 28 27 29 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 7 (set (reg/f:DI 103)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVverbose") [flags 0x40]  <var_decl 0x7f903bf38f30 tssVverbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:137 -1
+     (nil))
+(insn 30 29 31 7 (set (reg:SI 88 [ D.7253 ])
+        (mem/c:SI (reg/f:DI 103) [0 tssVverbose+0 S4 A32])) tssdev.c:137 -1
+     (nil))
+(insn 31 30 32 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.7253 ])
+            (const_int 0 [0]))) tssdev.c:137 -1
+     (nil))
+(jump_insn 32 31 33 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 40)
+            (pc))) tssdev.c:137 -1
+     (nil)
+ -> 40)
+(note 33 32 34 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 8 (set (reg:SI 89 [ D.7254 ])
+        (zero_extend:SI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 length+0 S2 A32]))) tssdev.c:138 -1
+     (nil))
+(insn 35 34 36 8 (set (reg:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])) tssdev.c:138 -1
+     (nil))
+(insn 36 35 37 8 (set (reg:SI 1 dx)
+        (reg:SI 89 [ D.7254 ])) tssdev.c:138 -1
+     (nil))
+(insn 37 36 38 8 (set (reg:DI 4 si)
+        (reg:DI 104)) tssdev.c:138 -1
+     (nil))
+(insn 38 37 39 8 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7f903bd79630 *.LC3>)) tssdev.c:138 -1
+     (nil))
+(call_insn 39 38 40 8 (call (mem:QI (symbol_ref:DI ("TSS_PrintAll") [flags 0x41]  <function_decl 0x7f903bffa000 TSS_PrintAll>) [0 TSS_PrintAll S1 A8])
+        (const_int 0 [0])) tssdev.c:138 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(code_label 40 39 41 9 14 "" [2 uses])
+(note 41 40 42 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:141 -1
+     (nil))
+(jump_insn 43 42 44 9 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 79)
+            (pc))) tssdev.c:141 -1
+     (nil)
+ -> 79)
+(note 44 43 45 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 45 44 46 10 (set (reg:DI 90 [ D.7255 ])
+        (zero_extend:DI (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -24 [0xffffffffffffffe8])) [0 length+0 S2 A32]))) tssdev.c:142 -1
+     (nil))
+(insn 46 45 47 10 (set (reg:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])) tssdev.c:142 -1
+     (nil))
+(insn 47 46 48 10 (set (reg:SI 106)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 dev_fd+0 S4 A32])) tssdev.c:142 -1
+     (nil))
+(insn 48 47 49 10 (set (reg:DI 1 dx)
+        (reg:DI 90 [ D.7255 ])) tssdev.c:142 -1
+     (nil))
+(insn 49 48 50 10 (set (reg:DI 4 si)
+        (reg:DI 105)) tssdev.c:142 -1
+     (nil))
+(insn 50 49 51 10 (set (reg:SI 5 di)
+        (reg:SI 106)) tssdev.c:142 -1
+     (nil))
+(call_insn 51 50 52 10 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("write") [flags 0x41]  <function_decl 0x7f903be51870 write>) [0 write S1 A8])
+            (const_int 0 [0]))) tssdev.c:142 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 52 51 53 10 (set (reg:DI 91 [ D.7256 ])
+        (reg:DI 0 ax)) tssdev.c:142 -1
+     (nil))
+(insn 53 52 54 10 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 irc+0 S4 A32])
+        (subreg:SI (reg:DI 91 [ D.7256 ]) 0)) tssdev.c:142 -1
+     (nil))
+(insn 54 53 55 10 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 irc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:143 -1
+     (nil))
+(jump_insn 55 54 56 10 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 79)
+            (pc))) tssdev.c:143 -1
+     (nil)
+ -> 79)
+(note 56 55 57 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 57 56 58 11 (set (reg/f:DI 107)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose") [flags 0x40]  <var_decl 0x7f903bd3f000 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:144 -1
+     (nil))
+(insn 58 57 59 11 (set (reg:SI 92 [ D.7253 ])
+        (mem/c:SI (reg/f:DI 107) [0 tssVerbose+0 S4 A32])) tssdev.c:144 -1
+     (nil))
+(insn 59 58 60 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.7253 ])
+            (const_int 0 [0]))) tssdev.c:144 -1
+     (nil))
+(jump_insn 60 59 61 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 76)
+            (pc))) tssdev.c:144 -1
+     (nil)
+ -> 76)
+(note 61 60 62 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 62 61 63 12 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7f903be51360 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) tssdev.c:145 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 63 62 64 12 (set (reg/f:DI 93 [ D.7257 ])
+        (reg:DI 0 ax)) tssdev.c:145 -1
+     (nil))
+(insn 64 63 65 12 (set (reg:SI 94 [ D.7253 ])
+        (mem:SI (reg/f:DI 93 [ D.7257 ]) [0 *_22+0 S4 A32])) tssdev.c:144 -1
+     (nil))
+(insn 65 64 66 12 (set (reg:SI 5 di)
+        (reg:SI 94 [ D.7253 ])) tssdev.c:144 -1
+     (nil))
+(call_insn 66 65 67 12 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strerror") [flags 0x41]  <function_decl 0x7f903be375e8 strerror>) [0 strerror S1 A8])
+            (const_int 0 [0]))) tssdev.c:144 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 67 66 68 12 (set (reg/f:DI 95 [ D.7258 ])
+        (reg:DI 0 ax)) tssdev.c:144 -1
+     (nil))
+(call_insn/u 68 67 69 12 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7f903be51360 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) tssdev.c:145 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 69 68 70 12 (set (reg/f:DI 96 [ D.7257 ])
+        (reg:DI 0 ax)) tssdev.c:145 -1
+     (nil))
+(insn 70 69 71 12 (set (reg:SI 97 [ D.7253 ])
+        (mem:SI (reg/f:DI 96 [ D.7257 ]) [0 *_26+0 S4 A32])) tssdev.c:144 -1
+     (nil))
+(insn 71 70 72 12 (set (reg:DI 1 dx)
+        (reg/f:DI 95 [ D.7258 ])) tssdev.c:144 -1
+     (nil))
+(insn 72 71 73 12 (set (reg:SI 4 si)
+        (reg:SI 97 [ D.7253 ])) tssdev.c:144 -1
+     (nil))
+(insn 73 72 74 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7f903bd796c0 *.LC4>)) tssdev.c:144 -1
+     (nil))
+(insn 74 73 75 12 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssdev.c:144 -1
+     (nil))
+(call_insn 75 74 76 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f903c0c3ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tssdev.c:144 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(code_label 76 75 77 13 16 "" [1 uses])
+(note 77 76 78 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 78 77 79 13 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])
+        (const_int 720905 [0xb0009])) tssdev.c:146 -1
+     (nil))
+(code_label 79 78 80 14 15 "" [2 uses])
+(note 80 79 81 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 81 80 84 14 (set (reg:SI 98 [ D.7259 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 rc+0 S4 A32])) tssdev.c:149 -1
+     (nil))
+(insn 84 81 88 14 (set (reg:SI 99 [ <retval> ])
+        (reg:SI 98 [ D.7259 ])) tssdev.c:149 -1
+     (nil))
+(insn 88 84 89 14 (set (reg/i:SI 0 ax)
+        (reg:SI 99 [ <retval> ])) tssdev.c:150 -1
+     (nil))
+(insn 89 88 0 14 (use (reg/i:SI 0 ax)) tssdev.c:150 -1
+     (nil))
+
+;; Function TSS_Dev_ReceiveCommand (TSS_Dev_ReceiveCommand, funcdef_no=5, decl_uid=7082, cgraph_uid=5, symbol_order=5)
+
+Partition 3: size 4 align 4
+	responseCode_7
+Partition 2: size 4 align 4
+	responseSize_6
+Partition 1: size 4 align 4
+	irc_5
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 30 into block 29...
+Merged blocks 29 and 30.
+Merged 29 and 30 without moving.
+Removing jump 166.
+Merging block 31 into block 29...
+Merged blocks 29 and 31.
+Merged 29 and 31 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 dev_fd+0 S4 A32])
+        (reg:SI 5 di [ dev_fd ])) tssdev.c:160 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])
+        (reg:DI 4 si [ buffer ])) tssdev.c:160 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 length+0 S8 A64])
+        (reg:DI 1 dx [ length ])) tssdev.c:160 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssdev.c:161 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 responseSize+0 S4 A32])
+        (const_int 0 [0])) tssdev.c:163 -1
+     (nil))
+(insn 10 9 11 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 responseCode+0 S4 A32])
+        (const_int 0 [0])) tssdev.c:164 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:DI 109)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVverbose") [flags 0x40]  <var_decl 0x7f903bf38f30 tssVverbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:166 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 87 [ D.7263 ])
+        (mem/c:SI (reg/f:DI 109) [0 tssVverbose+0 S4 A32])) tssdev.c:166 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.7263 ])
+            (const_int 0 [0]))) tssdev.c:166 -1
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 18)
+            (pc))) tssdev.c:166 -1
+     (nil)
+ -> 18)
+(note 15 14 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7f903bd83240 *.LC5>)) tssdev.c:166 -1
+     (nil))
+(call_insn 17 16 18 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7f903c0c6360 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) tssdev.c:166 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(code_label 18 17 19 5 19 "" [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:168 -1
+     (nil))
+(jump_insn 21 20 22 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 57)
+            (pc))) tssdev.c:168 -1
+     (nil)
+ -> 57)
+(note 22 21 23 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 6 (set (reg:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])) tssdev.c:169 -1
+     (nil))
+(insn 24 23 25 6 (set (reg:SI 111)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 dev_fd+0 S4 A32])) tssdev.c:169 -1
+     (nil))
+(insn 25 24 26 6 (set (reg:DI 1 dx)
+        (const_int 4096 [0x1000])) tssdev.c:169 -1
+     (nil))
+(insn 26 25 27 6 (set (reg:DI 4 si)
+        (reg:DI 110)) tssdev.c:169 -1
+     (nil))
+(insn 27 26 28 6 (set (reg:SI 5 di)
+        (reg:SI 111)) tssdev.c:169 -1
+     (nil))
+(call_insn 28 27 29 6 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("read") [flags 0x41]  <function_decl 0x7f903be51798 read>) [0 read S1 A8])
+            (const_int 0 [0]))) tssdev.c:169 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 29 28 30 6 (set (reg:DI 88 [ D.7264 ])
+        (reg:DI 0 ax)) tssdev.c:169 -1
+     (nil))
+(insn 30 29 31 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 irc+0 S4 A32])
+        (subreg:SI (reg:DI 88 [ D.7264 ]) 0)) tssdev.c:169 -1
+     (nil))
+(insn 31 30 32 6 (set (reg:CCNO 17 flags)
+        (compare:CCNO (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 irc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:170 -1
+     (nil))
+(jump_insn 32 31 33 6 (set (pc)
+        (if_then_else (gt (reg:CCNO 17 flags)
+                (const_int 0 [0]))
+            (label_ref 57)
+            (pc))) tssdev.c:170 -1
+     (nil)
+ -> 57)
+(note 33 32 34 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 7 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+        (const_int 720905 [0xb0009])) tssdev.c:171 -1
+     (nil))
+(insn 35 34 36 7 (set (reg:CCGOC 17 flags)
+        (compare:CCGOC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 irc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:172 -1
+     (nil))
+(jump_insn 36 35 37 7 (set (pc)
+        (if_then_else (ge (reg:CCGOC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 57)
+            (pc))) tssdev.c:172 -1
+     (nil)
+ -> 57)
+(note 37 36 38 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 8 (set (reg/f:DI 112)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose") [flags 0x40]  <var_decl 0x7f903bd3f000 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:173 -1
+     (nil))
+(insn 39 38 40 8 (set (reg:SI 89 [ D.7263 ])
+        (mem/c:SI (reg/f:DI 112) [0 tssVerbose+0 S4 A32])) tssdev.c:173 -1
+     (nil))
+(insn 40 39 41 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.7263 ])
+            (const_int 0 [0]))) tssdev.c:173 -1
+     (nil))
+(jump_insn 41 40 42 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 57)
+            (pc))) tssdev.c:173 -1
+     (nil)
+ -> 57)
+(note 42 41 43 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(call_insn/u 43 42 44 9 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7f903be51360 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) tssdev.c:174 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 44 43 45 9 (set (reg/f:DI 90 [ D.7265 ])
+        (reg:DI 0 ax)) tssdev.c:174 -1
+     (nil))
+(insn 45 44 46 9 (set (reg:SI 91 [ D.7263 ])
+        (mem:SI (reg/f:DI 90 [ D.7265 ]) [0 *_30+0 S4 A32])) tssdev.c:173 -1
+     (nil))
+(insn 46 45 47 9 (set (reg:SI 5 di)
+        (reg:SI 91 [ D.7263 ])) tssdev.c:173 -1
+     (nil))
+(call_insn 47 46 48 9 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("strerror") [flags 0x41]  <function_decl 0x7f903be375e8 strerror>) [0 strerror S1 A8])
+            (const_int 0 [0]))) tssdev.c:173 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 48 47 49 9 (set (reg/f:DI 92 [ D.7266 ])
+        (reg:DI 0 ax)) tssdev.c:173 -1
+     (nil))
+(call_insn/u 49 48 50 9 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7f903be51360 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) tssdev.c:174 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (nil))
+(insn 50 49 51 9 (set (reg/f:DI 93 [ D.7265 ])
+        (reg:DI 0 ax)) tssdev.c:174 -1
+     (nil))
+(insn 51 50 52 9 (set (reg:SI 94 [ D.7263 ])
+        (mem:SI (reg/f:DI 93 [ D.7265 ]) [0 *_34+0 S4 A32])) tssdev.c:173 -1
+     (nil))
+(insn 52 51 53 9 (set (reg:DI 1 dx)
+        (reg/f:DI 92 [ D.7266 ])) tssdev.c:173 -1
+     (nil))
+(insn 53 52 54 9 (set (reg:SI 4 si)
+        (reg:SI 94 [ D.7263 ])) tssdev.c:173 -1
+     (nil))
+(insn 54 53 55 9 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC6") [flags 0x2]  <var_decl 0x7f903bd832d0 *.LC6>)) tssdev.c:173 -1
+     (nil))
+(insn 55 54 56 9 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssdev.c:173 -1
+     (nil))
+(call_insn 56 55 57 9 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f903c0c3ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tssdev.c:173 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(code_label 57 56 58 10 20 "" [4 uses])
+(note 58 57 59 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 60 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:178 -1
+     (nil))
+(jump_insn 60 59 61 10 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 73)
+            (pc))) tssdev.c:178 -1
+     (nil)
+ -> 73)
+(note 61 60 62 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 62 61 63 11 (set (reg/f:DI 113)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVverbose") [flags 0x40]  <var_decl 0x7f903bf38f30 tssVverbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:178 -1
+     (nil))
+(insn 63 62 64 11 (set (reg:SI 95 [ D.7263 ])
+        (mem/c:SI (reg/f:DI 113) [0 tssVverbose+0 S4 A32])) tssdev.c:178 -1
+     (nil))
+(insn 64 63 65 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 95 [ D.7263 ])
+            (const_int 0 [0]))) tssdev.c:178 -1
+     (nil))
+(jump_insn 65 64 66 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 73)
+            (pc))) tssdev.c:178 -1
+     (nil)
+ -> 73)
+(note 66 65 67 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 67 66 68 12 (set (reg:SI 96 [ D.7267 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 irc+0 S4 A32])) tssdev.c:179 -1
+     (nil))
+(insn 68 67 69 12 (set (reg:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])) tssdev.c:179 -1
+     (nil))
+(insn 69 68 70 12 (set (reg:SI 1 dx)
+        (reg:SI 96 [ D.7267 ])) tssdev.c:179 -1
+     (nil))
+(insn 70 69 71 12 (set (reg:DI 4 si)
+        (reg:DI 114)) tssdev.c:179 -1
+     (nil))
+(insn 71 70 72 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC7") [flags 0x2]  <var_decl 0x7f903bd83360 *.LC7>)) tssdev.c:179 -1
+     (nil))
+(call_insn 72 71 73 12 (call (mem:QI (symbol_ref:DI ("TSS_PrintAll") [flags 0x41]  <function_decl 0x7f903bffa000 TSS_PrintAll>) [0 TSS_PrintAll S1 A8])
+        (const_int 0 [0])) tssdev.c:179 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(code_label 73 72 74 13 21 "" [2 uses])
+(note 74 73 75 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 75 74 76 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:183 -1
+     (nil))
+(jump_insn 76 75 77 13 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 95)
+            (pc))) tssdev.c:183 -1
+     (nil)
+ -> 95)
+(note 77 76 78 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 78 77 79 14 (set (reg:SI 97 [ D.7267 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 irc+0 S4 A32])) tssdev.c:184 -1
+     (nil))
+(insn 79 78 80 14 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 97 [ D.7267 ])
+            (const_int 9 [0x9]))) tssdev.c:184 -1
+     (nil))
+(jump_insn 80 79 81 14 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 95)
+            (pc))) tssdev.c:184 -1
+     (nil)
+ -> 95)
+(note 81 80 82 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 82 81 83 15 (set (reg/f:DI 115)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose") [flags 0x40]  <var_decl 0x7f903bd3f000 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:185 -1
+     (nil))
+(insn 83 82 84 15 (set (reg:SI 98 [ D.7263 ])
+        (mem/c:SI (reg/f:DI 115) [0 tssVerbose+0 S4 A32])) tssdev.c:185 -1
+     (nil))
+(insn 84 83 85 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 98 [ D.7263 ])
+            (const_int 0 [0]))) tssdev.c:185 -1
+     (nil))
+(jump_insn 85 84 86 15 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 92)
+            (pc))) tssdev.c:185 -1
+     (nil)
+ -> 92)
+(note 86 85 87 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 87 86 88 16 (set (reg:SI 116)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 irc+0 S4 A32])) tssdev.c:185 -1
+     (nil))
+(insn 88 87 89 16 (set (reg:SI 4 si)
+        (reg:SI 116)) tssdev.c:185 -1
+     (nil))
+(insn 89 88 90 16 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC8") [flags 0x2]  <var_decl 0x7f903bd833f0 *.LC8>)) tssdev.c:185 -1
+     (nil))
+(insn 90 89 91 16 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssdev.c:185 -1
+     (nil))
+(call_insn 91 90 92 16 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f903c0c3ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tssdev.c:185 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(code_label 92 91 93 17 23 "" [1 uses])
+(note 93 92 94 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 94 93 95 17 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+        (const_int 720906 [0xb000a])) tssdev.c:186 -1
+     (nil))
+(code_label 95 94 96 18 22 "" [2 uses])
+(note 96 95 97 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 97 96 98 18 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:190 -1
+     (nil))
+(jump_insn 98 97 99 18 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 126)
+            (pc))) tssdev.c:190 -1
+     (nil)
+ -> 126)
+(note 99 98 100 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 100 99 101 19 (set (reg/f:DI 117)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])) tssdev.c:191 -1
+     (nil))
+(insn 101 100 102 19 (parallel [
+            (set (reg/f:DI 99 [ D.7268 ])
+                (plus:DI (reg/f:DI 117)
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) tssdev.c:191 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])
+            (const_int 2 [0x2]))
+        (nil)))
+(insn 102 101 103 19 (set (reg:SI 100 [ D.7267 ])
+        (mem:SI (reg/f:DI 99 [ D.7268 ]) [0 *_44+0 S4 A32])) tssdev.c:191 -1
+     (nil))
+(insn 103 102 104 19 (set (reg:SI 5 di)
+        (reg:SI 100 [ D.7267 ])) tssdev.c:191 -1
+     (nil))
+(call_insn/u 104 103 105 19 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("ntohl") [flags 0x41]  <function_decl 0x7f903bedc360 ntohl>) [0 ntohl S1 A8])
+            (const_int 0 [0]))) tssdev.c:191 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 105 104 106 19 (set (reg:SI 118)
+        (reg:SI 0 ax)) tssdev.c:191 -1
+     (nil))
+(insn 106 105 107 19 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 responseSize+0 S4 A32])
+        (reg:SI 118)) tssdev.c:191 -1
+     (nil))
+(insn 107 106 108 19 (set (reg:SI 101 [ D.7267 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 irc+0 S4 A32])) tssdev.c:193 -1
+     (nil))
+(insn 108 107 109 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ D.7267 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [0 responseSize+0 S4 A32]))) tssdev.c:193 -1
+     (nil))
+(jump_insn 109 108 110 19 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 126)
+            (pc))) tssdev.c:193 -1
+     (nil)
+ -> 126)
+(note 110 109 111 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 111 110 112 20 (set (reg/f:DI 119)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVerbose") [flags 0x40]  <var_decl 0x7f903bd3f000 tssVerbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:194 -1
+     (nil))
+(insn 112 111 113 20 (set (reg:SI 102 [ D.7263 ])
+        (mem/c:SI (reg/f:DI 119) [0 tssVerbose+0 S4 A32])) tssdev.c:194 -1
+     (nil))
+(insn 113 112 114 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 102 [ D.7263 ])
+            (const_int 0 [0]))) tssdev.c:194 -1
+     (nil))
+(jump_insn 114 113 115 20 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 123)
+            (pc))) tssdev.c:194 -1
+     (nil)
+ -> 123)
+(note 115 114 116 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 116 115 117 21 (set (reg:SI 103 [ D.7267 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 irc+0 S4 A32])) tssdev.c:194 -1
+     (nil))
+(insn 117 116 118 21 (set (reg:SI 120)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 responseSize+0 S4 A32])) tssdev.c:194 -1
+     (nil))
+(insn 118 117 119 21 (set (reg:SI 1 dx)
+        (reg:SI 120)) tssdev.c:194 -1
+     (nil))
+(insn 119 118 120 21 (set (reg:SI 4 si)
+        (reg:SI 103 [ D.7267 ])) tssdev.c:194 -1
+     (nil))
+(insn 120 119 121 21 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC9") [flags 0x2]  <var_decl 0x7f903bd83480 *.LC9>)) tssdev.c:194 -1
+     (nil))
+(insn 121 120 122 21 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssdev.c:194 -1
+     (nil))
+(call_insn 122 121 123 21 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f903c0c3ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tssdev.c:194 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:SI (use (reg:SI 1 dx))
+                    (nil))))))
+(code_label 123 122 124 22 25 "" [1 uses])
+(note 124 123 125 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 125 124 126 22 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+        (const_int 720905 [0xb0009])) tssdev.c:196 -1
+     (nil))
+(code_label 126 125 127 23 24 "" [2 uses])
+(note 127 126 128 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 128 127 129 23 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:200 -1
+     (nil))
+(jump_insn 129 128 130 23 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 138)
+            (pc))) tssdev.c:200 -1
+     (nil)
+ -> 138)
+(note 130 129 131 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 131 130 132 24 (set (reg/f:DI 121)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])) tssdev.c:201 -1
+     (nil))
+(insn 132 131 133 24 (parallel [
+            (set (reg/f:DI 104 [ D.7268 ])
+                (plus:DI (reg/f:DI 121)
+                    (const_int 6 [0x6])))
+            (clobber (reg:CC 17 flags))
+        ]) tssdev.c:201 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])
+            (const_int 6 [0x6]))
+        (nil)))
+(insn 133 132 134 24 (set (reg:SI 105 [ D.7267 ])
+        (mem:SI (reg/f:DI 104 [ D.7268 ]) [0 *_52+0 S4 A32])) tssdev.c:201 -1
+     (nil))
+(insn 134 133 135 24 (set (reg:SI 5 di)
+        (reg:SI 105 [ D.7267 ])) tssdev.c:201 -1
+     (nil))
+(call_insn/u 135 134 136 24 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("ntohl") [flags 0x41]  <function_decl 0x7f903bedc360 ntohl>) [0 ntohl S1 A8])
+            (const_int 0 [0]))) tssdev.c:201 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 136 135 137 24 (set (reg:SI 122)
+        (reg:SI 0 ax)) tssdev.c:201 -1
+     (nil))
+(insn 137 136 138 24 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 responseCode+0 S4 A32])
+        (reg:SI 122)) tssdev.c:201 -1
+     (nil))
+(code_label 138 137 139 25 26 "" [1 uses])
+(note 139 138 140 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 140 139 141 25 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssdev.c:203 -1
+     (nil))
+(jump_insn 141 140 142 25 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 145)
+            (pc))) tssdev.c:203 -1
+     (nil)
+ -> 145)
+(note 142 141 143 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 143 142 144 26 (set (reg:SI 123)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 responseCode+0 S4 A32])) tssdev.c:204 -1
+     (nil))
+(insn 144 143 145 26 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])
+        (reg:SI 123)) tssdev.c:204 -1
+     (nil))
+(code_label 145 144 146 27 27 "" [1 uses])
+(note 146 145 147 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 147 146 148 27 (set (reg/f:DI 124)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 length+0 S8 A64])) tssdev.c:207 -1
+     (nil))
+(insn 148 147 149 27 (set (reg:SI 125)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 responseSize+0 S4 A32])) tssdev.c:207 -1
+     (nil))
+(insn 149 148 150 27 (set (mem:SI (reg/f:DI 124) [0 *length_56(D)+0 S4 A32])
+        (reg:SI 125)) tssdev.c:207 -1
+     (nil))
+(insn 150 149 151 27 (set (reg/f:DI 126)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVverbose") [flags 0x40]  <var_decl 0x7f903bf38f30 tssVverbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:208 -1
+     (nil))
+(insn 151 150 152 27 (set (reg:SI 106 [ D.7263 ])
+        (mem/c:SI (reg/f:DI 126) [0 tssVverbose+0 S4 A32])) tssdev.c:208 -1
+     (nil))
+(insn 152 151 153 27 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 106 [ D.7263 ])
+            (const_int 0 [0]))) tssdev.c:208 -1
+     (nil))
+(jump_insn 153 152 154 27 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 160)
+            (pc))) tssdev.c:208 -1
+     (nil)
+ -> 160)
+(note 154 153 155 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 155 154 156 28 (set (reg:SI 127)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])) tssdev.c:208 -1
+     (nil))
+(insn 156 155 157 28 (set (reg:SI 4 si)
+        (reg:SI 127)) tssdev.c:208 -1
+     (nil))
+(insn 157 156 158 28 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC10") [flags 0x2]  <var_decl 0x7f903bd83510 *.LC10>)) tssdev.c:208 -1
+     (nil))
+(insn 158 157 159 28 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssdev.c:208 -1
+     (nil))
+(call_insn 159 158 160 28 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f903c0c3ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tssdev.c:208 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (nil)))))
+(code_label 160 159 161 29 28 "" [1 uses])
+(note 161 160 162 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 162 161 165 29 (set (reg:SI 107 [ D.7269 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 rc+0 S4 A32])) tssdev.c:209 -1
+     (nil))
+(insn 165 162 169 29 (set (reg:SI 108 [ <retval> ])
+        (reg:SI 107 [ D.7269 ])) tssdev.c:209 -1
+     (nil))
+(insn 169 165 170 29 (set (reg/i:SI 0 ax)
+        (reg:SI 108 [ <retval> ])) tssdev.c:210 -1
+     (nil))
+(insn 170 169 0 29 (use (reg/i:SI 0 ax)) tssdev.c:210 -1
+     (nil))
+
+;; Function TSS_Dev_Close (TSS_Dev_Close, funcdef_no=6, decl_uid=7071, cgraph_uid=6, symbol_order=6)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 27.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 tssContext+0 S8 A64])
+        (reg:DI 5 di [ tssContext ])) tssdev.c:213 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 92)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("tssVverbose") [flags 0x40]  <var_decl 0x7f903bf38f30 tssVverbose>)
+                    ] UNSPEC_GOTPCREL)) [0  S8 A8])) tssdev.c:214 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 87 [ D.7276 ])
+        (mem/c:SI (reg/f:DI 92) [0 tssVverbose+0 S4 A32])) tssdev.c:214 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ D.7276 ])
+            (const_int 0 [0]))) tssdev.c:214 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 17)
+            (pc))) tssdev.c:214 -1
+     (nil)
+ -> 17)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 tssContext+0 S8 A64])) tssdev.c:214 -1
+     (nil))
+(insn 12 11 13 4 (set (reg/f:DI 88 [ D.7277 ])
+        (mem/f/j:DI (plus:DI (reg/f:DI 93)
+                (const_int 72 [0x48])) [0 tssContext_4(D)->tssDevice+0 S8 A64])) tssdev.c:214 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:DI 4 si)
+        (reg/f:DI 88 [ D.7277 ])) tssdev.c:214 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC11") [flags 0x2]  <var_decl 0x7f903bd8f5a0 *.LC11>)) tssdev.c:214 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:QI 0 ax)
+        (const_int 0 [0])) tssdev.c:214 -1
+     (nil))
+(call_insn 16 15 17 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7f903c0c3ca8 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) tssdev.c:214 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (nil)))))
+(code_label 17 16 18 5 31 "" [1 uses])
+(note 18 17 19 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 5 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 tssContext+0 S8 A64])) tssdev.c:215 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:SI 89 [ D.7276 ])
+        (mem/j:SI (plus:DI (reg/f:DI 94)
+                (const_int 88 [0x58])) [0 tssContext_4(D)->dev_fd+0 S4 A64])) tssdev.c:215 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:SI 5 di)
+        (reg:SI 89 [ D.7276 ])) tssdev.c:215 -1
+     (nil))
+(call_insn 22 21 23 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("close") [flags 0x41]  <function_decl 0x7f903be516c0 close>) [0 close S1 A8])
+            (const_int 0 [0]))) tssdev.c:215 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 23 22 26 5 (set (reg:SI 90 [ D.7278 ])
+        (const_int 0 [0])) tssdev.c:216 -1
+     (nil))
+(insn 26 23 30 5 (set (reg:SI 91 [ <retval> ])
+        (reg:SI 90 [ D.7278 ])) tssdev.c:216 -1
+     (nil))
+(insn 30 26 31 5 (set (reg/i:SI 0 ax)
+        (reg:SI 91 [ <retval> ])) tssdev.c:217 -1
+     (nil))
+(insn 31 30 0 5 (use (reg/i:SI 0 ax)) tssdev.c:217 -1
+     (nil))

@@ -1,0 +1,1582 @@
+
+;; Function _TPM_Init (_TPM_Init, funcdef_no=2, decl_uid=12851, cgraph_uid=2, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Edge 5->7 redirected to 9
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 6 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_plat__WasPowerLost") [flags 0x41]  <function_decl 0x7fa48d1455e8 _plat__WasPowerLost>) [0 _plat__WasPowerLost S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:71 -1
+     (nil)
+    (nil))
+(insn 6 5 7 2 (set (reg:SI 87 [ D.13001 ])
+        (reg:SI 0 ax)) StartupCommands.c:71 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 88 [ D.13001 ])
+        (mem/c:SI (symbol_ref:DI ("g_powerWasLost") [flags 0x40]  <var_decl 0x7fa48cfd9ab0 g_powerWasLost>) [0 g_powerWasLost+0 S4 A32])) StartupCommands.c:71 -1
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg:SI 89 [ D.13001 ])
+                (ior:SI (reg:SI 87 [ D.13001 ])
+                    (reg:SI 88 [ D.13001 ])))
+            (clobber (reg:CC 17 flags))
+        ]) StartupCommands.c:71 -1
+     (nil))
+(insn 9 8 10 2 (set (mem/c:SI (symbol_ref:DI ("g_powerWasLost") [flags 0x40]  <var_decl 0x7fa48cfd9ab0 g_powerWasLost>) [0 g_powerWasLost+0 S4 A32])
+        (reg:SI 89 [ D.13001 ])) StartupCommands.c:71 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 90 [ D.13001 ])
+        (mem/c:SI (symbol_ref:DI ("g_powerWasLost") [flags 0x40]  <var_decl 0x7fa48cfd9ab0 g_powerWasLost>) [0 g_powerWasLost+0 S4 A32])) StartupCommands.c:75 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13001 ])
+            (const_int 0 [0]))) StartupCommands.c:75 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 30)
+            (pc))) StartupCommands.c:75 -1
+     (nil)
+ -> 30)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg:DI 1 dx)
+        (const_int 1772 [0x6ec])) StartupCommands.c:77 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:SI 4 si)
+        (const_int 187 [0xbb])) StartupCommands.c:77 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 5 di)
+        (symbol_ref:DI ("gc") [flags 0x40]  <var_decl 0x7fa48d01b000 gc>)) StartupCommands.c:77 -1
+     (nil))
+(call_insn 17 16 18 4 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memset") [flags 0x41]  <function_decl 0x7fa48dd10438 memset>) [0 __builtin_memset S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:77 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 18 17 19 4 (set (reg:DI 1 dx)
+        (const_int 360 [0x168])) StartupCommands.c:78 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 4 si)
+        (const_int 187 [0xbb])) StartupCommands.c:78 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:DI 5 di)
+        (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)) StartupCommands.c:78 -1
+     (nil))
+(call_insn 21 20 22 4 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memset") [flags 0x41]  <function_decl 0x7fa48dd10438 memset>) [0 __builtin_memset S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:78 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 22 21 23 4 (set (reg:DI 1 dx)
+        (const_int 936 [0x3a8])) StartupCommands.c:79 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 4 si)
+        (const_int 187 [0xbb])) StartupCommands.c:79 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:DI 5 di)
+        (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)) StartupCommands.c:79 -1
+     (nil))
+(call_insn 25 24 26 4 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memset") [flags 0x41]  <function_decl 0x7fa48dd10438 memset>) [0 __builtin_memset S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:79 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 26 25 27 4 (set (reg:DI 1 dx)
+        (const_int 120 [0x78])) StartupCommands.c:80 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 4 si)
+        (const_int 187 [0xbb])) StartupCommands.c:80 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:DI 5 di)
+        (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7fa48cfd9f30 go>)) StartupCommands.c:80 -1
+     (nil))
+(call_insn 29 28 30 4 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memset") [flags 0x41]  <function_decl 0x7fa48dd10438 memset>) [0 __builtin_memset S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:80 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:SI (use (reg:SI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(code_label 30 29 31 5 2 "" [1 uses])
+(note 31 30 32 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 5 (set (mem/c:SI (symbol_ref:DI ("g_forceFailureMode") [flags 0x40]  <var_decl 0x7fa48d01bab0 g_forceFailureMode>) [0 g_forceFailureMode+0 S4 A32])
+        (const_int 0 [0])) StartupCommands.c:85 -1
+     (nil))
+(call_insn 33 32 34 5 (call (mem:QI (symbol_ref:DI ("TPMInit") [flags 0x41]  <function_decl 0x7fa48d0f26c0 TPMInit>) [0 TPMInit S1 A8])
+        (const_int 0 [0])) StartupCommands.c:88 -1
+     (nil)
+    (nil))
+(insn 34 33 35 5 (set (mem/c:SI (symbol_ref:DI ("g_DRTMHandle") [flags 0x40]  <var_decl 0x7fa48cfd96c0 g_DRTMHandle>) [0 g_DRTMHandle+0 S4 A32])
+        (const_int 1073741832 [0x40000008])) StartupCommands.c:90 -1
+     (nil))
+(insn 35 34 36 5 (set (mem/c:SI (symbol_ref:DI ("g_DrtmPreStartup") [flags 0x40]  <var_decl 0x7fa48cfd9750 g_DrtmPreStartup>) [0 g_DrtmPreStartup+0 S4 A32])
+        (const_int 0 [0])) StartupCommands.c:92 -1
+     (nil))
+(call_insn 36 35 37 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NvPowerOn") [flags 0x41]  <function_decl 0x7fa48d042948 NvPowerOn>) [0 NvPowerOn S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:94 -1
+     (nil)
+    (nil))
+(insn 37 36 38 5 (set (reg:SI 91 [ D.13001 ])
+        (reg:SI 0 ax)) StartupCommands.c:94 -1
+     (nil))
+(insn 38 37 39 5 (set (mem/c:SI (symbol_ref:DI ("g_nvOk") [flags 0x40]  <var_decl 0x7fa48cfd9c60 g_nvOk>) [0 g_nvOk+0 S4 A32])
+        (reg:SI 91 [ D.13001 ])) StartupCommands.c:94 -1
+     (nil))
+(call_insn 39 38 40 5 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptInit") [flags 0x41]  <function_decl 0x7fa48d109438 CryptInit>) [0 CryptInit S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:96 -1
+     (nil)
+    (nil))
+(insn 40 39 41 5 (set (reg:SI 92 [ D.13001 ])
+        (reg:SI 0 ax)) StartupCommands.c:96 -1
+     (nil))
+(insn 41 40 42 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 92 [ D.13001 ])
+            (const_int 0 [0]))) StartupCommands.c:96 -1
+     (nil))
+(insn 42 41 43 5 (set (reg:QI 93 [ D.13002 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) StartupCommands.c:96 -1
+     (nil))
+(insn 43 42 44 5 (set (reg:SI 94 [ D.13001 ])
+        (zero_extend:SI (reg:QI 93 [ D.13002 ]))) StartupCommands.c:96 -1
+     (nil))
+(insn 44 43 45 5 (set (mem/c:SI (symbol_ref:DI ("g_inFailureMode") [flags 0x40]  <var_decl 0x7fa48d01ba20 g_inFailureMode>) [0 g_inFailureMode+0 S4 A32])
+        (reg:SI 94 [ D.13001 ])) StartupCommands.c:96 -1
+     (nil))
+(insn 45 44 46 5 (set (reg:SI 95 [ D.13001 ])
+        (mem/c:SI (symbol_ref:DI ("g_inFailureMode") [flags 0x40]  <var_decl 0x7fa48d01ba20 g_inFailureMode>) [0 g_inFailureMode+0 S4 A32])) StartupCommands.c:97 -1
+     (nil))
+(insn 46 45 47 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 95 [ D.13001 ])
+            (const_int 0 [0]))) StartupCommands.c:97 -1
+     (nil))
+(jump_insn 47 46 48 5 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 59)
+            (pc))) StartupCommands.c:97 612 {*jcc_1}
+     (nil)
+ -> 59)
+(note 48 47 49 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(call_insn 49 48 50 6 (call (mem:QI (symbol_ref:DI ("NvReadPersistent") [flags 0x41]  <function_decl 0x7fa48d042e58 NvReadPersistent>) [0 NvReadPersistent S1 A8])
+        (const_int 0 [0])) StartupCommands.c:100 -1
+     (nil)
+    (nil))
+(insn 50 49 51 6 (set (reg:SI 1 dx)
+        (const_int 120 [0x78])) StartupCommands.c:103 -1
+     (nil))
+(insn 51 50 52 6 (set (reg:SI 4 si)
+        (const_int 3068 [0xbfc])) StartupCommands.c:103 -1
+     (nil))
+(insn 52 51 53 6 (set (reg:DI 5 di)
+        (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7fa48cfd9f30 go>)) StartupCommands.c:103 -1
+     (nil))
+(call_insn 53 52 54 6 (call (mem:QI (symbol_ref:DI ("NvRead") [flags 0x41]  <function_decl 0x7fa48d042af8 NvRead>) [0 NvRead S1 A8])
+        (const_int 0 [0])) StartupCommands.c:103 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(call_insn 54 53 61 6 (call (mem:QI (symbol_ref:DI ("TimePowerOn") [flags 0x41]  <function_decl 0x7fa48d0e8d80 TimePowerOn>) [0 TimePowerOn S1 A8])
+        (const_int 0 [0])) StartupCommands.c:105 -1
+     (nil)
+    (nil))
+(insn 61 54 59 6 (const_int 0 [0]) StartupCommands.c:107 -1
+     (nil))
+(code_label 59 61 60 9 1 "" [1 uses])
+(note 60 59 0 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+
+;; Function TPM2_Startup (TPM2_Startup, funcdef_no=3, decl_uid=12861, cgraph_uid=3, symbol_order=3)
+
+Partition 0: size 4 align 4
+	startup_1
+Partition 1: size 1 align 1
+	locality_3
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+Purged edges from bb 39
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 135 from 27 to 29.
+Merging block 27 into block 26...
+Merged blocks 26 and 27.
+Merged 26 and 27 without moving.
+Forwarding edge 30->31 to 34 failed.
+Removing jump 250.
+Merging block 39 into block 38...
+Merged blocks 38 and 39.
+Merged 38 and 39 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 30->31 to 34 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) StartupCommands.c:116 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 6 3 7 2 (set (reg:QI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_plat__LocalityGet") [flags 0x41]  <function_decl 0x7fa48d142870 _plat__LocalityGet>) [0 _plat__LocalityGet S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:118 -1
+     (nil)
+    (nil))
+(insn 7 6 8 2 (set (reg:QI 132)
+        (reg:QI 0 ax)) StartupCommands.c:118 -1
+     (nil))
+(insn 8 7 9 2 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -5 [0xfffffffffffffffb])) [0 locality+0 S1 A8])
+        (reg:QI 132)) StartupCommands.c:118 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 88 [ D.13004 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7fa48cfd9cf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) StartupCommands.c:120 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.13004 ])
+            (const_int 0 [0]))) StartupCommands.c:120 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) StartupCommands.c:120 -1
+     (nil)
+ -> 16)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg:SI 87 [ D.13003 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7fa48cfd9cf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) StartupCommands.c:120 -1
+     (nil))
+(jump_insn 14 13 15 4 (set (pc)
+        (label_ref 247)) StartupCommands.c:120 -1
+     (nil)
+ -> 247)
+(barrier 15 14 16)
+(code_label 16 15 17 5 7 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -5 [0xfffffffffffffffb])) [0 locality+0 S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:129 -1
+     (nil))
+(jump_insn 19 18 20 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 27)
+            (pc))) StartupCommands.c:129 -1
+     (nil)
+ -> 27)
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -5 [0xfffffffffffffffb])) [0 locality+0 S1 A8])
+            (const_int 3 [0x3]))) StartupCommands.c:129 -1
+     (nil))
+(jump_insn 22 21 23 6 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 27)
+            (pc))) StartupCommands.c:129 -1
+     (nil)
+ -> 27)
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 7 (set (reg:SI 87 [ D.13003 ])
+        (const_int 2311 [0x907])) StartupCommands.c:130 -1
+     (nil))
+(jump_insn 25 24 26 7 (set (pc)
+        (label_ref 247)) StartupCommands.c:130 -1
+     (nil)
+ -> 247)
+(barrier 26 25 27)
+(code_label 27 26 28 8 9 "" [2 uses])
+(note 28 27 29 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 8 (set (reg:SI 89 [ D.13005 ])
+        (mem/c:SI (symbol_ref:DI ("g_DrtmPreStartup") [flags 0x40]  <var_decl 0x7fa48cfd9750 g_DrtmPreStartup>) [0 g_DrtmPreStartup+0 S4 A32])) StartupCommands.c:136 -1
+     (nil))
+(insn 30 29 31 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.13005 ])
+            (const_int 0 [0]))) StartupCommands.c:136 -1
+     (nil))
+(jump_insn 31 30 32 8 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) StartupCommands.c:136 -1
+     (nil)
+ -> 34)
+(note 32 31 33 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 34 9 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -5 [0xfffffffffffffffb])) [0 locality+0 S1 A8])
+        (const_int 0 [0])) StartupCommands.c:137 -1
+     (nil))
+(code_label 34 33 35 10 10 "" [1 uses])
+(note 35 34 36 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 36 35 37 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -5 [0xfffffffffffffffb])) [0 locality+0 S1 A8])
+            (const_int 3 [0x3]))) StartupCommands.c:138 -1
+     (nil))
+(insn 37 36 38 10 (set (reg:QI 90 [ D.13006 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) StartupCommands.c:138 -1
+     (nil))
+(insn 38 37 39 10 (set (reg:SI 91 [ D.13005 ])
+        (zero_extend:SI (reg:QI 90 [ D.13006 ]))) StartupCommands.c:138 -1
+     (nil))
+(insn 39 38 40 10 (set (mem/c:SI (symbol_ref:DI ("g_StartupLocality3") [flags 0x40]  <var_decl 0x7fa48cfd97e0 g_StartupLocality3>) [0 g_StartupLocality3+0 S4 A32])
+        (reg:SI 91 [ D.13005 ])) StartupCommands.c:138 -1
+     (nil))
+(insn 40 39 41 10 (set (reg:HI 92 [ D.13007 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])) StartupCommands.c:143 -1
+     (nil))
+(insn 41 40 42 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 92 [ D.13007 ])
+            (const_int -2 [0xfffffffffffffffe]))) StartupCommands.c:143 -1
+     (nil))
+(insn 42 41 43 10 (set (reg:QI 93 [ D.13006 ])
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) StartupCommands.c:143 -1
+     (nil))
+(insn 43 42 44 10 (set (reg:SI 94 [ D.13005 ])
+        (zero_extend:SI (reg:QI 93 [ D.13006 ]))) StartupCommands.c:143 -1
+     (nil))
+(insn 44 43 45 10 (set (mem/c:SI (symbol_ref:DI ("g_daUsed") [flags 0x40]  <var_decl 0x7fa48cfd9990 g_daUsed>) [0 g_daUsed+0 S4 A32])
+        (reg:SI 94 [ D.13005 ])) StartupCommands.c:143 -1
+     (nil))
+(insn 45 44 46 10 (set (reg:SI 95 [ D.13005 ])
+        (mem/c:SI (symbol_ref:DI ("g_daUsed") [flags 0x40]  <var_decl 0x7fa48cfd9990 g_daUsed>) [0 g_daUsed+0 S4 A32])) StartupCommands.c:144 -1
+     (nil))
+(insn 46 45 47 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 95 [ D.13005 ])
+            (const_int 0 [0]))) StartupCommands.c:144 -1
+     (nil))
+(jump_insn 47 46 48 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 50)
+            (pc))) StartupCommands.c:144 -1
+     (nil)
+ -> 50)
+(note 48 47 49 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 11 (set (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])
+        (const_int -1 [0xffffffffffffffff])) StartupCommands.c:145 -1
+     (nil))
+(code_label 50 49 51 12 11 "" [1 uses])
+(note 51 50 52 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 52 51 53 12 (set (reg:HI 96 [ D.13007 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])) StartupCommands.c:147 -1
+     (nil))
+(insn 53 52 54 12 (set (mem/c:HI (symbol_ref:DI ("g_prevOrderlyState") [flags 0x40]  <var_decl 0x7fa48cfd9bd0 g_prevOrderlyState>) [0 g_prevOrderlyState+0 S2 A16])
+        (reg:HI 96 [ D.13007 ])) StartupCommands.c:147 -1
+     (nil))
+(insn 54 53 55 12 (set (reg/f:DI 133)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) StartupCommands.c:149 -1
+     (nil))
+(insn 55 54 56 12 (set (reg:HI 97 [ D.13007 ])
+        (mem/j:HI (reg/f:DI 133) [0 in_30(D)->startupType+0 S2 A16])) StartupCommands.c:149 -1
+     (nil))
+(insn 56 55 57 12 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 97 [ D.13007 ])
+            (const_int 1 [0x1]))) StartupCommands.c:149 -1
+     (nil))
+(jump_insn 57 56 58 12 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 111)
+            (pc))) StartupCommands.c:149 -1
+     (nil)
+ -> 111)
+(note 58 57 59 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 60 13 (set (reg:HI 98 [ D.13007 ])
+        (mem/c:HI (symbol_ref:DI ("g_prevOrderlyState") [flags 0x40]  <var_decl 0x7fa48cfd9bd0 g_prevOrderlyState>) [0 g_prevOrderlyState+0 S2 A16])) StartupCommands.c:154 -1
+     (nil))
+(insn 60 59 61 13 (parallel [
+            (set (reg:HI 99 [ D.13007 ])
+                (and:HI (reg:HI 98 [ D.13007 ])
+                    (const_int 16383 [0x3fff])))
+            (clobber (reg:CC 17 flags))
+        ]) StartupCommands.c:154 -1
+     (nil))
+(insn 61 60 62 13 (set (mem/c:HI (symbol_ref:DI ("g_prevOrderlyState") [flags 0x40]  <var_decl 0x7fa48cfd9bd0 g_prevOrderlyState>) [0 g_prevOrderlyState+0 S2 A16])
+        (reg:HI 99 [ D.13007 ])) StartupCommands.c:154 -1
+     (nil))
+(insn 62 61 63 13 (set (reg:HI 100 [ D.13007 ])
+        (mem/c:HI (symbol_ref:DI ("g_prevOrderlyState") [flags 0x40]  <var_decl 0x7fa48cfd9bd0 g_prevOrderlyState>) [0 g_prevOrderlyState+0 S2 A16])) StartupCommands.c:156 -1
+     (nil))
+(insn 63 62 64 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 100 [ D.13007 ])
+            (const_int 1 [0x1]))) StartupCommands.c:156 -1
+     (nil))
+(jump_insn 64 63 65 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 69)
+            (pc))) StartupCommands.c:156 -1
+     (nil)
+ -> 69)
+(note 65 64 66 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 14 (set (reg:SI 87 [ D.13003 ])
+        (const_int 452 [0x1c4])) StartupCommands.c:157 -1
+     (nil))
+(jump_insn 67 66 68 14 (set (pc)
+        (label_ref 247)) StartupCommands.c:157 -1
+     (nil)
+ -> 247)
+(barrier 68 67 69)
+(code_label 69 68 70 15 13 "" [1 uses])
+(note 70 69 71 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 71 70 72 15 (set (reg:SI 101 [ D.13005 ])
+        (mem/c:SI (symbol_ref:DI ("g_nvOk") [flags 0x40]  <var_decl 0x7fa48cfd9c60 g_nvOk>) [0 g_nvOk+0 S4 A32])) StartupCommands.c:163 -1
+     (nil))
+(insn 72 71 73 15 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 101 [ D.13005 ])
+            (const_int 0 [0]))) StartupCommands.c:163 -1
+     (nil))
+(jump_insn 73 72 74 15 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 78)
+            (pc))) StartupCommands.c:163 -1
+     (nil)
+ -> 78)
+(note 74 73 75 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 75 74 76 16 (set (reg:SI 87 [ D.13003 ])
+        (const_int 330 [0x14a])) StartupCommands.c:164 -1
+     (nil))
+(jump_insn 76 75 77 16 (set (pc)
+        (label_ref 247)) StartupCommands.c:164 -1
+     (nil)
+ -> 247)
+(barrier 77 76 78)
+(code_label 78 77 79 17 14 "" [1 uses])
+(note 79 78 80 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 80 79 81 17 (set (reg:HI 102 [ D.13007 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])) StartupCommands.c:166 -1
+     (nil))
+(insn 81 80 82 17 (set (reg:HI 103 [ D.13008 ])
+        (reg:HI 102 [ D.13007 ])) StartupCommands.c:166 -1
+     (nil))
+(insn 82 81 83 17 (parallel [
+            (set (reg:HI 134)
+                (lshiftrt:HI (reg:HI 103 [ D.13008 ])
+                    (const_int 15 [0xf])))
+            (clobber (reg:CC 17 flags))
+        ]) StartupCommands.c:166 -1
+     (nil))
+(insn 83 82 84 17 (set (reg:QI 104 [ D.13006 ])
+        (subreg:QI (reg:HI 134) 0)) StartupCommands.c:166 -1
+     (nil))
+(insn 84 83 85 17 (set (reg:SI 105 [ D.13005 ])
+        (zero_extend:SI (reg:QI 104 [ D.13006 ]))) StartupCommands.c:166 -1
+     (nil))
+(insn 85 84 86 17 (set (reg:SI 106 [ D.13005 ])
+        (mem/c:SI (symbol_ref:DI ("g_DrtmPreStartup") [flags 0x40]  <var_decl 0x7fa48cfd9750 g_DrtmPreStartup>) [0 g_DrtmPreStartup+0 S4 A32])) StartupCommands.c:166 -1
+     (nil))
+(insn 86 85 87 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 105 [ D.13005 ])
+            (reg:SI 106 [ D.13005 ]))) StartupCommands.c:166 -1
+     (nil))
+(jump_insn 87 86 88 17 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 92)
+            (pc))) StartupCommands.c:166 -1
+     (nil)
+ -> 92)
+(note 88 87 89 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 89 88 90 18 (set (reg:SI 87 [ D.13003 ])
+        (const_int 452 [0x1c4])) StartupCommands.c:167 -1
+     (nil))
+(jump_insn 90 89 91 18 (set (pc)
+        (label_ref 247)) StartupCommands.c:167 -1
+     (nil)
+ -> 247)
+(barrier 91 90 92)
+(code_label 92 91 93 19 15 "" [1 uses])
+(note 93 92 94 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 94 93 95 19 (set (reg:HI 107 [ D.13007 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])) StartupCommands.c:168 -1
+     (nil))
+(insn 95 94 96 19 (set (reg:SI 108 [ D.13005 ])
+        (zero_extend:SI (reg:HI 107 [ D.13007 ]))) StartupCommands.c:168 -1
+     (nil))
+(insn 96 95 97 19 (parallel [
+            (set (reg:SI 109 [ D.13005 ])
+                (and:SI (reg:SI 108 [ D.13005 ])
+                    (const_int 16384 [0x4000])))
+            (clobber (reg:CC 17 flags))
+        ]) StartupCommands.c:168 -1
+     (nil))
+(insn 97 96 98 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 109 [ D.13005 ])
+            (const_int 0 [0]))) StartupCommands.c:168 -1
+     (nil))
+(insn 98 97 99 19 (set (reg:QI 110 [ D.13006 ])
+        (ne:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) StartupCommands.c:168 -1
+     (nil))
+(insn 99 98 100 19 (set (reg:SI 111 [ D.13005 ])
+        (zero_extend:SI (reg:QI 110 [ D.13006 ]))) StartupCommands.c:168 -1
+     (nil))
+(insn 100 99 101 19 (set (reg:SI 112 [ D.13005 ])
+        (mem/c:SI (symbol_ref:DI ("g_StartupLocality3") [flags 0x40]  <var_decl 0x7fa48cfd97e0 g_StartupLocality3>) [0 g_StartupLocality3+0 S4 A32])) StartupCommands.c:168 -1
+     (nil))
+(insn 101 100 102 19 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 111 [ D.13005 ])
+            (reg:SI 112 [ D.13005 ]))) StartupCommands.c:168 -1
+     (nil))
+(jump_insn 102 101 103 19 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 107)
+            (pc))) StartupCommands.c:168 -1
+     (nil)
+ -> 107)
+(note 103 102 104 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 104 103 105 20 (set (reg:SI 87 [ D.13003 ])
+        (const_int 2311 [0x907])) StartupCommands.c:169 -1
+     (nil))
+(jump_insn 105 104 106 20 (set (pc)
+        (label_ref 247)) StartupCommands.c:169 -1
+     (nil)
+ -> 247)
+(barrier 106 105 107)
+(code_label 107 106 108 21 16 "" [1 uses])
+(note 108 107 109 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 109 108 110 21 (set (reg:HI 113 [ D.13007 ])
+        (mem/c:HI (symbol_ref:DI ("g_prevOrderlyState") [flags 0x40]  <var_decl 0x7fa48cfd9bd0 g_prevOrderlyState>) [0 g_prevOrderlyState+0 S2 A16])) StartupCommands.c:170 -1
+     (nil))
+(insn 110 109 111 21 (set (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])
+        (reg:HI 113 [ D.13007 ])) StartupCommands.c:170 -1
+     (nil))
+(code_label 111 110 112 22 12 "" [1 uses])
+(note 112 111 113 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 113 112 114 22 (set (reg:HI 114 [ D.13007 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])) StartupCommands.c:173 -1
+     (nil))
+(insn 114 113 115 22 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 114 [ D.13007 ])
+            (const_int 1 [0x1]))) StartupCommands.c:173 -1
+     (nil))
+(jump_insn 115 114 116 22 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 144)
+            (pc))) StartupCommands.c:173 -1
+     (nil)
+ -> 144)
+(note 116 115 117 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 117 116 118 23 (set (reg:SI 115 [ D.13005 ])
+        (mem/c:SI (symbol_ref:DI ("g_nvOk") [flags 0x40]  <var_decl 0x7fa48cfd9c60 g_nvOk>) [0 g_nvOk+0 S4 A32])) StartupCommands.c:173 -1
+     (nil))
+(insn 118 117 119 23 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 115 [ D.13005 ])
+            (const_int 1 [0x1]))) StartupCommands.c:173 -1
+     (nil))
+(jump_insn 119 118 120 23 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 144)
+            (pc))) StartupCommands.c:173 -1
+     (nil)
+ -> 144)
+(note 120 119 121 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 121 120 122 24 (set (reg:SI 1 dx)
+        (const_int 360 [0x168])) StartupCommands.c:177 -1
+     (nil))
+(insn 122 121 123 24 (set (reg:SI 4 si)
+        (const_int 936 [0x3a8])) StartupCommands.c:177 -1
+     (nil))
+(insn 123 122 124 24 (set (reg:DI 5 di)
+        (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)) StartupCommands.c:177 -1
+     (nil))
+(call_insn 124 123 125 24 (call (mem:QI (symbol_ref:DI ("NvRead") [flags 0x41]  <function_decl 0x7fa48d042af8 NvRead>) [0 NvRead S1 A8])
+        (const_int 0 [0])) StartupCommands.c:177 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 125 124 126 24 (set (reg/f:DI 135)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 in+0 S8 A64])) StartupCommands.c:178 -1
+     (nil))
+(insn 126 125 127 24 (set (reg:HI 116 [ D.13007 ])
+        (mem/j:HI (reg/f:DI 135) [0 in_30(D)->startupType+0 S2 A16])) StartupCommands.c:178 -1
+     (nil))
+(insn 127 126 128 24 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 116 [ D.13007 ])
+            (const_int 1 [0x1]))) StartupCommands.c:178 -1
+     (nil))
+(jump_insn 128 127 129 24 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 137)
+            (pc))) StartupCommands.c:178 -1
+     (nil)
+ -> 137)
+(note 129 128 130 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 130 129 131 25 (set (reg:SI 1 dx)
+        (const_int 1772 [0x6ec])) StartupCommands.c:183 -1
+     (nil))
+(insn 131 130 132 25 (set (reg:SI 4 si)
+        (const_int 1296 [0x510])) StartupCommands.c:183 -1
+     (nil))
+(insn 132 131 133 25 (set (reg:DI 5 di)
+        (symbol_ref:DI ("gc") [flags 0x40]  <var_decl 0x7fa48d01b000 gc>)) StartupCommands.c:183 -1
+     (nil))
+(call_insn 133 132 134 25 (call (mem:QI (symbol_ref:DI ("NvRead") [flags 0x41]  <function_decl 0x7fa48d042af8 NvRead>) [0 NvRead S1 A8])
+        (const_int 0 [0])) StartupCommands.c:183 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 134 133 135 25 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])
+        (const_int 2 [0x2])) StartupCommands.c:184 -1
+     (nil))
+(jump_insn 135 134 136 25 (set (pc)
+        (label_ref:DI 147)) 654 {jump}
+     (nil)
+ -> 147)
+(barrier 136 135 137)
+(code_label 137 136 138 26 18 "" [1 uses])
+(note 138 137 139 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 139 138 142 26 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])
+        (const_int 1 [0x1])) StartupCommands.c:187 -1
+     (nil))
+(jump_insn 142 139 143 26 (set (pc)
+        (label_ref 147)) StartupCommands.c:178 -1
+     (nil)
+ -> 147)
+(barrier 143 142 144)
+(code_label 144 143 145 28 17 "" [2 uses])
+(note 145 144 146 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 146 145 147 28 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])
+        (const_int 0 [0])) StartupCommands.c:192 -1
+     (nil))
+(code_label 147 146 148 29 20 "" [2 uses])
+(note 148 147 149 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 149 148 150 29 (set (reg:SI 136)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])) StartupCommands.c:195 -1
+     (nil))
+(insn 150 149 151 29 (set (reg:SI 5 di)
+        (reg:SI 136)) StartupCommands.c:195 -1
+     (nil))
+(call_insn 151 150 152 29 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("CryptStartup") [flags 0x41]  <function_decl 0x7fa48d109510 CryptStartup>) [0 CryptStartup S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:195 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(call_insn 152 151 153 29 (call (mem:QI (symbol_ref:DI ("TPMRegisterStartup") [flags 0x41]  <function_decl 0x7fa48d0f2798 TPMRegisterStartup>) [0 TPMRegisterStartup S1 A8])
+        (const_int 0 [0])) StartupCommands.c:198 -1
+     (nil)
+    (nil))
+(insn 153 152 154 29 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("g_platformUniqueDetails") [flags 0x40]  <var_decl 0x7fa48cfd9e10 g_platformUniqueDetails>)
+                (const_int 2 [0x2])))) StartupCommands.c:202 -1
+     (nil))
+(insn 154 153 155 29 (set (reg:SI 4 si)
+        (const_int 48 [0x30])) StartupCommands.c:202 -1
+     (nil))
+(insn 155 154 156 29 (set (reg:SI 5 di)
+        (const_int 1 [0x1])) StartupCommands.c:202 -1
+     (nil))
+(call_insn 156 155 157 29 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_plat__GetUnique") [flags 0x41]  <function_decl 0x7fa48d145ca8 _plat__GetUnique>) [0 _plat__GetUnique S1 A8])
+            (const_int 0 [0]))) StartupCommands.c:202 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 157 156 158 29 (set (reg:SI 117 [ D.13004 ])
+        (reg:SI 0 ax)) StartupCommands.c:202 -1
+     (nil))
+(insn 158 157 159 29 (set (reg:HI 118 [ D.13007 ])
+        (subreg:HI (reg:SI 117 [ D.13004 ]) 0)) StartupCommands.c:202 -1
+     (nil))
+(insn 159 158 160 29 (set (mem/j/c:HI (symbol_ref:DI ("g_platformUniqueDetails") [flags 0x40]  <var_decl 0x7fa48cfd9e10 g_platformUniqueDetails>) [0 g_platformUniqueDetails.t.size+0 S2 A16])
+        (reg:HI 118 [ D.13007 ])) StartupCommands.c:202 -1
+     (nil))
+(insn 160 159 161 29 (set (reg:SI 137)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])) StartupCommands.c:206 -1
+     (nil))
+(insn 161 160 162 29 (set (reg:SI 5 di)
+        (reg:SI 137)) StartupCommands.c:206 -1
+     (nil))
+(call_insn 162 161 163 29 (call (mem:QI (symbol_ref:DI ("TimeStartup") [flags 0x41]  <function_decl 0x7fa48d0e8e58 TimeStartup>) [0 TimeStartup S1 A8])
+        (const_int 0 [0])) StartupCommands.c:206 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 163 162 164 29 (set (reg:SI 138)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])) StartupCommands.c:208 -1
+     (nil))
+(insn 164 163 165 29 (set (reg:SI 5 di)
+        (reg:SI 138)) StartupCommands.c:208 -1
+     (nil))
+(call_insn 165 164 166 29 (call (mem:QI (symbol_ref:DI ("DAStartup") [flags 0x41]  <function_decl 0x7fa48d056ca8 DAStartup>) [0 DAStartup S1 A8])
+        (const_int 0 [0])) StartupCommands.c:208 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 166 165 167 29 (set (reg:SI 139)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])) StartupCommands.c:210 -1
+     (nil))
+(insn 167 166 168 29 (set (reg:SI 5 di)
+        (reg:SI 139)) StartupCommands.c:210 -1
+     (nil))
+(call_insn 168 167 169 29 (call (mem:QI (symbol_ref:DI ("HierarchyStartup") [flags 0x41]  <function_decl 0x7fa48d042438 HierarchyStartup>) [0 HierarchyStartup S1 A8])
+        (const_int 0 [0])) StartupCommands.c:210 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 169 168 170 29 (set (reg:SI 119 [ D.13005 ])
+        (zero_extend:SI (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -5 [0xfffffffffffffffb])) [0 locality+0 S1 A8]))) StartupCommands.c:212 -1
+     (nil))
+(insn 170 169 171 29 (set (reg:SI 140)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])) StartupCommands.c:212 -1
+     (nil))
+(insn 171 170 172 29 (set (reg:SI 4 si)
+        (reg:SI 119 [ D.13005 ])) StartupCommands.c:212 -1
+     (nil))
+(insn 172 171 173 29 (set (reg:SI 5 di)
+        (reg:SI 140)) StartupCommands.c:212 -1
+     (nil))
+(call_insn 173 172 174 29 (call (mem:QI (symbol_ref:DI ("PCRStartup") [flags 0x41]  <function_decl 0x7fa48d050ca8 PCRStartup>) [0 PCRStartup S1 A8])
+        (const_int 0 [0])) StartupCommands.c:212 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(insn 174 173 175 29 (set (reg:SI 141)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])) StartupCommands.c:214 -1
+     (nil))
+(insn 175 174 176 29 (set (reg:SI 5 di)
+        (reg:SI 141)) StartupCommands.c:214 -1
+     (nil))
+(call_insn 176 175 177 29 (call (mem:QI (symbol_ref:DI ("CommandAuditStartup") [flags 0x41]  <function_decl 0x7fa48d0edaf8 CommandAuditStartup>) [0 CommandAuditStartup S1 A8])
+        (const_int 0 [0])) StartupCommands.c:214 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 177 176 178 29 (set (reg:SI 142 [ startup ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])) StartupCommands.c:216 -1
+     (nil))
+(insn 178 177 179 29 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 142 [ startup ])
+            (const_int 1 [0x1]))) StartupCommands.c:216 -1
+     (nil))
+(jump_insn 179 178 256 29 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 191)
+            (pc))) StartupCommands.c:216 -1
+     (nil)
+ -> 191)
+(note 256 179 180 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 180 256 181 30 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 142 [ startup ])
+            (const_int 2 [0x2]))) StartupCommands.c:216 -1
+     (nil))
+(jump_insn 181 180 257 30 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 184)
+            (pc))) StartupCommands.c:216 -1
+     (nil)
+ -> 184)
+(note 257 181 182 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 182 257 183 31 (set (pc)
+        (label_ref 201)) StartupCommands.c:216 -1
+     (nil)
+ -> 201)
+(barrier 183 182 184)
+(code_label 184 183 185 32 23 "" [1 uses])
+(note 185 184 186 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 186 185 187 32 (set (reg:SI 120 [ D.13004 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)
+                    (const_int 268 [0x10c]))) [0 gr.restartCount+0 S4 A32])) StartupCommands.c:220 -1
+     (nil))
+(insn 187 186 188 32 (parallel [
+            (set (reg:SI 121 [ D.13004 ])
+                (plus:SI (reg:SI 120 [ D.13004 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) StartupCommands.c:220 -1
+     (nil))
+(insn 188 187 189 32 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)
+                    (const_int 268 [0x10c]))) [0 gr.restartCount+0 S4 A32])
+        (reg:SI 121 [ D.13004 ])) StartupCommands.c:220 -1
+     (nil))
+(jump_insn 189 188 190 32 (set (pc)
+        (label_ref 231)) StartupCommands.c:221 -1
+     (nil)
+ -> 231)
+(barrier 190 189 191)
+(code_label 191 190 192 33 22 "" [1 uses])
+(note 192 191 193 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 193 192 194 33 (set (reg:SI 122 [ D.13004 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)
+                    (const_int 132 [0x84]))) [0 gr.clearCount+0 S4 A32])) StartupCommands.c:224 -1
+     (nil))
+(insn 194 193 195 33 (parallel [
+            (set (reg:SI 123 [ D.13004 ])
+                (plus:SI (reg:SI 122 [ D.13004 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) StartupCommands.c:224 -1
+     (nil))
+(insn 195 194 196 33 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)
+                    (const_int 132 [0x84]))) [0 gr.clearCount+0 S4 A32])
+        (reg:SI 123 [ D.13004 ])) StartupCommands.c:224 -1
+     (nil))
+(insn 196 195 197 33 (set (reg:SI 124 [ D.13004 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)
+                    (const_int 268 [0x10c]))) [0 gr.restartCount+0 S4 A32])) StartupCommands.c:225 -1
+     (nil))
+(insn 197 196 198 33 (parallel [
+            (set (reg:SI 125 [ D.13004 ])
+                (plus:SI (reg:SI 124 [ D.13004 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) StartupCommands.c:225 -1
+     (nil))
+(insn 198 197 199 33 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)
+                    (const_int 268 [0x10c]))) [0 gr.restartCount+0 S4 A32])
+        (reg:SI 125 [ D.13004 ])) StartupCommands.c:225 -1
+     (nil))
+(jump_insn 199 198 200 33 (set (pc)
+        (label_ref 231)) StartupCommands.c:226 -1
+     (nil)
+ -> 231)
+(barrier 200 199 201)
+(code_label 201 200 202 34 21 "" [1 uses])
+(note 202 201 203 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 203 202 204 34 (set (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)
+                    (const_int 136 [0x88]))) [0 gr.objectContextID+0 S8 A64])
+        (const_int 0 [0])) StartupCommands.c:229 -1
+     (nil))
+(insn 204 203 205 34 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)
+                    (const_int 132 [0x84]))) [0 gr.clearCount+0 S4 A32])
+        (const_int 0 [0])) StartupCommands.c:231 -1
+     (nil))
+(insn 205 204 206 34 (set (reg:SI 126 [ D.13004 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 720 [0x2d0]))) [0 gp.resetCount+0 S4 A64])) StartupCommands.c:234 -1
+     (nil))
+(insn 206 205 207 34 (parallel [
+            (set (reg:SI 127 [ D.13004 ])
+                (plus:SI (reg:SI 126 [ D.13004 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) StartupCommands.c:234 -1
+     (nil))
+(insn 207 206 208 34 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 720 [0x2d0]))) [0 gp.resetCount+0 S4 A64])
+        (reg:SI 127 [ D.13004 ])) StartupCommands.c:234 -1
+     (nil))
+(insn 208 207 209 34 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                (const_int 720 [0x2d0])))) StartupCommands.c:236 -1
+     (nil))
+(insn 209 208 210 34 (set (reg:SI 4 si)
+        (const_int 4 [0x4])) StartupCommands.c:236 -1
+     (nil))
+(insn 210 209 211 34 (set (reg:SI 5 di)
+        (const_int 720 [0x2d0])) StartupCommands.c:236 -1
+     (nil))
+(call_insn 211 210 212 34 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fa48d042bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) StartupCommands.c:236 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 212 211 213 34 (set (reg:DI 128 [ D.13009 ])
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 712 [0x2c8]))) [0 gp.totalResetCount+0 S8 A64])) StartupCommands.c:237 -1
+     (nil))
+(insn 213 212 214 34 (parallel [
+            (set (reg:DI 129 [ D.13009 ])
+                (plus:DI (reg:DI 128 [ D.13009 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) StartupCommands.c:237 -1
+     (nil))
+(insn 214 213 215 34 (set (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 712 [0x2c8]))) [0 gp.totalResetCount+0 S8 A64])
+        (reg:DI 129 [ D.13009 ])) StartupCommands.c:237 -1
+     (nil))
+(insn 215 214 216 34 (set (reg:DI 130 [ D.13009 ])
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 712 [0x2c8]))) [0 gp.totalResetCount+0 S8 A64])) StartupCommands.c:245 -1
+     (nil))
+(insn 216 215 217 34 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:DI 130 [ D.13009 ])
+            (const_int 0 [0]))) StartupCommands.c:245 -1
+     (nil))
+(jump_insn 217 216 218 34 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 224)
+            (pc))) StartupCommands.c:245 -1
+     (nil)
+ -> 224)
+(note 218 217 219 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 219 218 220 35 (set (reg:SI 1 dx)
+        (const_int 3 [0x3])) StartupCommands.c:246 -1
+     (nil))
+(insn 220 219 221 35 (set (reg:SI 4 si)
+        (const_int 246 [0xf6])) StartupCommands.c:246 -1
+     (nil))
+(insn 221 220 222 35 (set (reg:DI 5 di)
+        (const_int 0 [0])) StartupCommands.c:246 -1
+     (nil))
+(call_insn 222 221 223 35 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fa48d05b0d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) StartupCommands.c:246 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 223 222 224)
+(code_label 224 223 225 36 25 "" [1 uses])
+(note 225 224 226 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 226 225 227 36 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                (const_int 712 [0x2c8])))) StartupCommands.c:248 -1
+     (nil))
+(insn 227 226 228 36 (set (reg:SI 4 si)
+        (const_int 8 [0x8])) StartupCommands.c:248 -1
+     (nil))
+(insn 228 227 229 36 (set (reg:SI 5 di)
+        (const_int 712 [0x2c8])) StartupCommands.c:248 -1
+     (nil))
+(call_insn 229 228 230 36 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fa48d042bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) StartupCommands.c:248 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 230 229 231 36 (set (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)
+                    (const_int 268 [0x10c]))) [0 gr.restartCount+0 S4 A32])
+        (const_int 0 [0])) StartupCommands.c:250 -1
+     (nil))
+(code_label 231 230 232 37 24 "" [2 uses])
+(note 232 231 233 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 233 232 234 37 (set (reg:SI 143)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])) StartupCommands.c:255 -1
+     (nil))
+(insn 234 233 235 37 (set (reg:SI 5 di)
+        (reg:SI 143)) StartupCommands.c:255 -1
+     (nil))
+(call_insn 235 234 236 37 (call (mem:QI (symbol_ref:DI ("SessionStartup") [flags 0x41]  <function_decl 0x7fa48d03f288 SessionStartup>) [0 SessionStartup S1 A8])
+        (const_int 0 [0])) StartupCommands.c:255 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(call_insn 236 235 237 37 (call (mem:QI (symbol_ref:DI ("ObjectStartup") [flags 0x41]  <function_decl 0x7fa48cffbca8 ObjectStartup>) [0 ObjectStartup S1 A8])
+        (const_int 0 [0])) StartupCommands.c:257 -1
+     (nil)
+    (nil))
+(insn 237 236 238 37 (set (reg:SI 144)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 startup+0 S4 A32])) StartupCommands.c:260 -1
+     (nil))
+(insn 238 237 239 37 (set (reg:SI 5 di)
+        (reg:SI 144)) StartupCommands.c:260 -1
+     (nil))
+(call_insn 239 238 240 37 (call (mem:QI (symbol_ref:DI ("NvEntityStartup") [flags 0x41]  <function_decl 0x7fa48d04caf8 NvEntityStartup>) [0 NvEntityStartup S1 A8])
+        (const_int 0 [0])) StartupCommands.c:260 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 240 239 241 37 (set (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])
+        (const_int -1 [0xffffffffffffffff])) StartupCommands.c:262 -1
+     (nil))
+(insn 241 240 242 37 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                (const_int 888 [0x378])))) StartupCommands.c:263 -1
+     (nil))
+(insn 242 241 243 37 (set (reg:SI 4 si)
+        (const_int 2 [0x2])) StartupCommands.c:263 -1
+     (nil))
+(insn 243 242 244 37 (set (reg:SI 5 di)
+        (const_int 888 [0x378])) StartupCommands.c:263 -1
+     (nil))
+(call_insn 244 243 245 37 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fa48d042bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) StartupCommands.c:263 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 245 244 246 37 (set (mem/c:SI (symbol_ref:DI ("g_powerWasLost") [flags 0x40]  <var_decl 0x7fa48cfd9ab0 g_powerWasLost>) [0 g_powerWasLost+0 S4 A32])
+        (const_int 0 [0])) StartupCommands.c:266 -1
+     (nil))
+(insn 246 245 247 37 (set (reg:SI 87 [ D.13003 ])
+        (const_int 0 [0])) StartupCommands.c:267 -1
+     (nil))
+(code_label 247 246 248 38 8 "" [6 uses])
+(note 248 247 249 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 249 248 253 38 (set (reg:SI 131 [ <retval> ])
+        (reg:SI 87 [ D.13003 ])) -1
+     (nil))
+(insn 253 249 254 38 (set (reg/i:SI 0 ax)
+        (reg:SI 131 [ <retval> ])) StartupCommands.c:268 -1
+     (nil))
+(insn 254 253 0 38 (use (reg/i:SI 0 ax)) StartupCommands.c:268 -1
+     (nil))
+
+;; Function TPM2_Shutdown (TPM2_Shutdown, funcdef_no=4, decl_uid=12875, cgraph_uid=4, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 62 from 13 to 17.
+Edge 11->13 redirected to 17
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+Removing jump 105.
+Merging block 19 into block 18...
+Merged blocks 18 and 19.
+Merged 18 and 19 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])
+        (reg:DI 5 di [ in ])) StartupCommands.c:277 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 88 [ D.13011 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7fa48cfd9cf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) StartupCommands.c:281 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 88 [ D.13011 ])
+            (const_int 0 [0]))) StartupCommands.c:281 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 13)
+            (pc))) StartupCommands.c:281 -1
+     (nil)
+ -> 13)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 11 4 (set (reg:SI 87 [ D.13010 ])
+        (mem/c:SI (symbol_ref:DI ("g_NvStatus") [flags 0x40]  <var_decl 0x7fa48cfd9cf0 g_NvStatus>) [0 g_NvStatus+0 S4 A32])) StartupCommands.c:281 -1
+     (nil))
+(jump_insn 11 10 12 4 (set (pc)
+        (label_ref 102)) StartupCommands.c:281 -1
+     (nil)
+ -> 102)
+(barrier 12 11 13)
+(code_label 13 12 14 5 28 "" [1 uses])
+(note 14 13 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 5 (set (reg:SI 89 [ D.13012 ])
+        (mem/c:SI (symbol_ref:DI ("g_pcrReConfig") [flags 0x40]  <var_decl 0x7fa48cfd9630 g_pcrReConfig>) [0 g_pcrReConfig+0 S4 A32])) StartupCommands.c:284 -1
+     (nil))
+(insn 16 15 17 5 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 89 [ D.13012 ])
+            (const_int 0 [0]))) StartupCommands.c:284 -1
+     (nil))
+(jump_insn 17 16 18 5 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 27)
+            (pc))) StartupCommands.c:284 -1
+     (nil)
+ -> 27)
+(note 18 17 19 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 6 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) StartupCommands.c:284 -1
+     (nil))
+(insn 20 19 21 6 (set (reg:HI 90 [ D.13013 ])
+        (mem/j:HI (reg/f:DI 100) [0 in_9(D)->shutdownType+0 S2 A16])) StartupCommands.c:284 -1
+     (nil))
+(insn 21 20 22 6 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 90 [ D.13013 ])
+            (const_int 1 [0x1]))) StartupCommands.c:284 -1
+     (nil))
+(jump_insn 22 21 23 6 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 27)
+            (pc))) StartupCommands.c:284 -1
+     (nil)
+ -> 27)
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 7 (set (reg:SI 87 [ D.13010 ])
+        (const_int 458 [0x1ca])) StartupCommands.c:285 -1
+     (nil))
+(jump_insn 25 24 26 7 (set (pc)
+        (label_ref 102)) StartupCommands.c:285 -1
+     (nil)
+ -> 102)
+(barrier 26 25 27)
+(code_label 27 26 28 8 30 "" [2 uses])
+(note 28 27 29 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 29 28 30 8 (set (reg/f:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) StartupCommands.c:287 -1
+     (nil))
+(insn 30 29 31 8 (set (reg:HI 91 [ D.13013 ])
+        (mem/j:HI (reg/f:DI 101) [0 in_9(D)->shutdownType+0 S2 A16])) StartupCommands.c:287 -1
+     (nil))
+(insn 31 30 32 8 (set (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])
+        (reg:HI 91 [ D.13013 ])) StartupCommands.c:287 -1
+     (nil))
+(insn 32 31 33 8 (set (reg/f:DI 102)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) StartupCommands.c:289 -1
+     (nil))
+(insn 33 32 34 8 (set (reg:HI 92 [ D.13013 ])
+        (mem/j:HI (reg/f:DI 102) [0 in_9(D)->shutdownType+0 S2 A16])) StartupCommands.c:289 -1
+     (nil))
+(insn 34 33 35 8 (set (reg:SI 93 [ D.13012 ])
+        (zero_extend:SI (reg:HI 92 [ D.13013 ]))) StartupCommands.c:289 -1
+     (nil))
+(insn 35 34 36 8 (set (reg:SI 5 di)
+        (reg:SI 93 [ D.13012 ])) StartupCommands.c:289 -1
+     (nil))
+(call_insn 36 35 37 8 (call (mem:QI (symbol_ref:DI ("PCRStateSave") [flags 0x41]  <function_decl 0x7fa48d050d80 PCRStateSave>) [0 PCRStateSave S1 A8])
+        (const_int 0 [0])) StartupCommands.c:289 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(call_insn 37 36 38 8 (call (mem:QI (symbol_ref:DI ("NvUpdateIndexOrderlyData") [flags 0x41]  <function_decl 0x7fa48d0480d8 NvUpdateIndexOrderlyData>) [0 NvUpdateIndexOrderlyData S1 A8])
+        (const_int 0 [0])) StartupCommands.c:291 -1
+     (nil)
+    (nil))
+(insn 38 37 39 8 (set (reg:DI 94 [ D.13014 ])
+        (mem/c:DI (symbol_ref:DI ("g_time") [flags 0x40]  <var_decl 0x7fa48cfd9510 g_time>) [0 g_time+0 S8 A64])) StartupCommands.c:294 -1
+     (nil))
+(insn 39 38 40 8 (set (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7fa48cfd9f30 go>)
+                    (const_int 112 [0x70]))) [0 go.time+0 S8 A64])
+        (reg:DI 94 [ D.13014 ])) StartupCommands.c:294 -1
+     (nil))
+(insn 40 39 41 8 (set (reg:DI 1 dx)
+        (symbol_ref:DI ("go") [flags 0x40]  <var_decl 0x7fa48cfd9f30 go>)) StartupCommands.c:297 -1
+     (nil))
+(insn 41 40 42 8 (set (reg:SI 4 si)
+        (const_int 120 [0x78])) StartupCommands.c:297 -1
+     (nil))
+(insn 42 41 43 8 (set (reg:SI 5 di)
+        (const_int 3068 [0xbfc])) StartupCommands.c:297 -1
+     (nil))
+(call_insn 43 42 44 8 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fa48d042bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) StartupCommands.c:297 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 44 43 45 8 (set (reg/f:DI 103)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) StartupCommands.c:298 -1
+     (nil))
+(insn 45 44 46 8 (set (reg:HI 95 [ D.13013 ])
+        (mem/j:HI (reg/f:DI 103) [0 in_9(D)->shutdownType+0 S2 A16])) StartupCommands.c:298 -1
+     (nil))
+(insn 46 45 47 8 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 95 [ D.13013 ])
+            (const_int 1 [0x1]))) StartupCommands.c:298 -1
+     (nil))
+(jump_insn 47 46 48 8 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 75)
+            (pc))) StartupCommands.c:298 -1
+     (nil)
+ -> 75)
+(note 48 47 49 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 9 (set (reg:DI 1 dx)
+        (symbol_ref:DI ("gc") [flags 0x40]  <var_decl 0x7fa48d01b000 gc>)) StartupCommands.c:301 -1
+     (nil))
+(insn 50 49 51 9 (set (reg:SI 4 si)
+        (const_int 1772 [0x6ec])) StartupCommands.c:301 -1
+     (nil))
+(insn 51 50 52 9 (set (reg:SI 5 di)
+        (const_int 1296 [0x510])) StartupCommands.c:301 -1
+     (nil))
+(call_insn 52 51 53 9 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fa48d042bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) StartupCommands.c:301 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 53 52 54 9 (set (reg:DI 1 dx)
+        (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)) StartupCommands.c:302 -1
+     (nil))
+(insn 54 53 55 9 (set (reg:SI 4 si)
+        (const_int 360 [0x168])) StartupCommands.c:302 -1
+     (nil))
+(insn 55 54 56 9 (set (reg:SI 5 di)
+        (const_int 936 [0x3a8])) StartupCommands.c:302 -1
+     (nil))
+(call_insn 56 55 57 9 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fa48d042bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) StartupCommands.c:302 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 57 56 58 9 (set (reg:SI 96 [ D.13012 ])
+        (mem/c:SI (symbol_ref:DI ("g_DrtmPreStartup") [flags 0x40]  <var_decl 0x7fa48cfd9750 g_DrtmPreStartup>) [0 g_DrtmPreStartup+0 S4 A32])) StartupCommands.c:304 -1
+     (nil))
+(insn 58 57 59 9 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 96 [ D.13012 ])
+            (const_int 0 [0]))) StartupCommands.c:304 -1
+     (nil))
+(jump_insn 59 58 60 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 64)
+            (pc))) StartupCommands.c:304 -1
+     (nil)
+ -> 64)
+(note 60 59 61 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 61 60 62 10 (set (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])
+        (const_int -32767 [0xffffffffffff8001])) StartupCommands.c:305 -1
+     (nil))
+(jump_insn 62 61 63 10 (set (pc)
+        (label_ref:DI 95)) 654 {jump}
+     (nil)
+ -> 95)
+(barrier 63 62 64)
+(code_label 64 63 65 11 32 "" [1 uses])
+(note 65 64 66 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 66 65 67 11 (set (reg:SI 97 [ D.13012 ])
+        (mem/c:SI (symbol_ref:DI ("g_StartupLocality3") [flags 0x40]  <var_decl 0x7fa48cfd97e0 g_StartupLocality3>) [0 g_StartupLocality3+0 S4 A32])) StartupCommands.c:306 -1
+     (nil))
+(insn 67 66 68 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 97 [ D.13012 ])
+            (const_int 0 [0]))) StartupCommands.c:306 -1
+     (nil))
+(jump_insn 68 67 69 11 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 95)
+            (pc))) StartupCommands.c:306 612 {*jcc_1}
+     (nil)
+ -> 95)
+(note 69 68 70 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 70 69 73 12 (set (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                    (const_int 888 [0x378]))) [0 gp.orderlyState+0 S2 A64])
+        (const_int 16385 [0x4001])) StartupCommands.c:307 -1
+     (nil))
+(jump_insn 73 70 74 12 (set (pc)
+        (label_ref 95)) -1
+     (nil)
+ -> 95)
+(barrier 74 73 75)
+(code_label 75 74 76 14 31 "" [1 uses])
+(note 76 75 77 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 77 76 78 14 (set (reg/f:DI 104)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [0 in+0 S8 A64])) StartupCommands.c:309 -1
+     (nil))
+(insn 78 77 79 14 (set (reg:HI 98 [ D.13013 ])
+        (mem/j:HI (reg/f:DI 104) [0 in_9(D)->shutdownType+0 S2 A16])) StartupCommands.c:309 -1
+     (nil))
+(insn 79 78 80 14 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 98 [ D.13013 ])
+            (const_int 0 [0]))) StartupCommands.c:309 -1
+     (nil))
+(jump_insn 80 79 81 14 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 88)
+            (pc))) StartupCommands.c:309 -1
+     (nil)
+ -> 88)
+(note 81 80 82 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 82 81 83 15 (set (reg:DI 1 dx)
+        (symbol_ref:DI ("gr") [flags 0x40]  <var_decl 0x7fa48d01b090 gr>)) StartupCommands.c:312 -1
+     (nil))
+(insn 83 82 84 15 (set (reg:SI 4 si)
+        (const_int 360 [0x168])) StartupCommands.c:312 -1
+     (nil))
+(insn 84 83 85 15 (set (reg:SI 5 di)
+        (const_int 936 [0x3a8])) StartupCommands.c:312 -1
+     (nil))
+(call_insn 85 84 86 15 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fa48d042bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) StartupCommands.c:312 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(jump_insn 86 85 87 15 (set (pc)
+        (label_ref 95)) -1
+     (nil)
+ -> 95)
+(barrier 87 86 88)
+(code_label 88 87 89 16 35 "" [1 uses])
+(note 89 88 90 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 90 89 91 16 (set (reg:SI 1 dx)
+        (const_int 3 [0x3])) StartupCommands.c:315 -1
+     (nil))
+(insn 91 90 92 16 (set (reg:SI 4 si)
+        (const_int 315 [0x13b])) StartupCommands.c:315 -1
+     (nil))
+(insn 92 91 93 16 (set (reg:DI 5 di)
+        (const_int 0 [0])) StartupCommands.c:315 -1
+     (nil))
+(call_insn 93 92 94 16 (call (mem:QI (symbol_ref:DI ("TpmFail") [flags 0x41]  <function_decl 0x7fa48d05b0d8 TpmFail>) [0 TpmFail S1 A8])
+        (const_int 0 [0])) StartupCommands.c:315 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(barrier 94 93 95)
+(code_label 95 94 96 17 34 "" [4 uses])
+(note 96 95 97 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 97 96 98 17 (set (reg:DI 1 dx)
+        (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7fa48cfd9ea0 gp>)
+                (const_int 888 [0x378])))) StartupCommands.c:316 -1
+     (nil))
+(insn 98 97 99 17 (set (reg:SI 4 si)
+        (const_int 2 [0x2])) StartupCommands.c:316 -1
+     (nil))
+(insn 99 98 100 17 (set (reg:SI 5 di)
+        (const_int 888 [0x378])) StartupCommands.c:316 -1
+     (nil))
+(call_insn 100 99 101 17 (call (mem:QI (symbol_ref:DI ("NvWrite") [flags 0x41]  <function_decl 0x7fa48d042bd0 NvWrite>) [0 NvWrite S1 A8])
+        (const_int 0 [0])) StartupCommands.c:316 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 101 100 102 17 (set (reg:SI 87 [ D.13010 ])
+        (const_int 0 [0])) StartupCommands.c:317 -1
+     (nil))
+(code_label 102 101 103 18 29 "" [2 uses])
+(note 103 102 104 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 104 103 108 18 (set (reg:SI 99 [ <retval> ])
+        (reg:SI 87 [ D.13010 ])) -1
+     (nil))
+(insn 108 104 109 18 (set (reg/i:SI 0 ax)
+        (reg:SI 99 [ <retval> ])) StartupCommands.c:318 -1
+     (nil))
+(insn 109 108 0 18 (use (reg/i:SI 0 ax)) StartupCommands.c:318 -1
+     (nil))

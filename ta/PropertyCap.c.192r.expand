@@ -1,0 +1,2588 @@
+
+;; Function TPMPropertyIsDefined (TPMPropertyIsDefined, funcdef_no=2, decl_uid=12852, cgraph_uid=2, symbol_order=2)
+
+Partition 2: size 4 align 16
+	flags	attributes	flags
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+
+;; Generating RTL for gimple basic block 25
+
+;; Generating RTL for gimple basic block 26
+
+;; Generating RTL for gimple basic block 27
+
+;; Generating RTL for gimple basic block 28
+
+;; Generating RTL for gimple basic block 29
+
+;; Generating RTL for gimple basic block 30
+
+;; Generating RTL for gimple basic block 31
+
+;; Generating RTL for gimple basic block 32
+
+;; Generating RTL for gimple basic block 33
+
+;; Generating RTL for gimple basic block 34
+
+;; Generating RTL for gimple basic block 35
+
+;; Generating RTL for gimple basic block 36
+
+;; Generating RTL for gimple basic block 37
+
+;; Generating RTL for gimple basic block 38
+
+;; Generating RTL for gimple basic block 39
+
+;; Generating RTL for gimple basic block 40
+
+;; Generating RTL for gimple basic block 41
+
+;; Generating RTL for gimple basic block 42
+
+;; Generating RTL for gimple basic block 43
+
+;; Generating RTL for gimple basic block 44
+
+;; Generating RTL for gimple basic block 45
+
+;; Generating RTL for gimple basic block 46
+
+;; Generating RTL for gimple basic block 47
+
+;; Generating RTL for gimple basic block 48
+
+;; Generating RTL for gimple basic block 49
+
+;; Generating RTL for gimple basic block 50
+
+;; Generating RTL for gimple basic block 51
+
+;; Generating RTL for gimple basic block 52
+
+;; Generating RTL for gimple basic block 53
+
+;; Generating RTL for gimple basic block 54
+
+;; Generating RTL for gimple basic block 55
+
+;; Generating RTL for gimple basic block 56
+
+;; Generating RTL for gimple basic block 57
+
+;; Generating RTL for gimple basic block 58
+
+;; Generating RTL for gimple basic block 59
+
+;; Generating RTL for gimple basic block 60
+
+;; Generating RTL for gimple basic block 61
+
+;; Generating RTL for gimple basic block 62
+
+;; Generating RTL for gimple basic block 63
+
+;; Generating RTL for gimple basic block 64
+
+;; Generating RTL for gimple basic block 65
+
+;; Generating RTL for gimple basic block 66
+
+;; Generating RTL for gimple basic block 67
+
+;; Generating RTL for gimple basic block 68
+
+;; Generating RTL for gimple basic block 69
+
+;; Generating RTL for gimple basic block 70
+
+;; Generating RTL for gimple basic block 71
+
+;; Generating RTL for gimple basic block 72
+
+;; Generating RTL for gimple basic block 73
+
+;; Generating RTL for gimple basic block 74
+
+;; Generating RTL for gimple basic block 75
+
+;; Generating RTL for gimple basic block 76
+
+;; Generating RTL for gimple basic block 77
+
+;; Generating RTL for gimple basic block 78
+
+;; Generating RTL for gimple basic block 79
+
+;; Generating RTL for gimple basic block 80
+
+;; Generating RTL for gimple basic block 81
+
+;; Generating RTL for gimple basic block 82
+
+;; Generating RTL for gimple basic block 83
+
+;; Generating RTL for gimple basic block 84
+
+;; Generating RTL for gimple basic block 85
+
+;; Generating RTL for gimple basic block 86
+
+;; Generating RTL for gimple basic block 87
+
+;; Generating RTL for gimple basic block 88
+
+;; Generating RTL for gimple basic block 89
+
+;; Generating RTL for gimple basic block 90
+
+;; Generating RTL for gimple basic block 91
+
+;; Generating RTL for gimple basic block 92
+
+;; Generating RTL for gimple basic block 93
+
+;; Generating RTL for gimple basic block 94
+
+;; Generating RTL for gimple basic block 95
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 29 into block 28...
+Merged blocks 28 and 29.
+Merged 28 and 29 without moving.
+Merging block 63 into block 62...
+Merged blocks 62 and 63.
+Merged 62 and 63 without moving.
+Merging block 75 into block 74...
+Merged blocks 74 and 75.
+Merged 74 and 75 without moving.
+Removing jump 583.
+Merging block 98 into block 97...
+Merged blocks 97 and 98.
+Merged 97 and 98 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 property+0 S4 A32])
+        (reg:SI 5 di [ property ])) PropertyCap.c:81 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])
+        (reg:DI 4 si [ value ])) PropertyCap.c:81 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:SI 155)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 property+0 S4 A32])) PropertyCap.c:82 -1
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg:SI 154)
+                (plus:SI (reg:SI 155)
+                    (const_int -256 [0xffffffffffffff00])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:82 -1
+     (expr_list:REG_EQUAL (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])) [0 property+0 S4 A32])
+            (const_int -256 [0xffffffffffffff00]))
+        (nil)))
+(insn 9 8 10 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 154)
+            (const_int 276 [0x114]))) PropertyCap.c:82 -1
+     (nil))
+(jump_insn 10 9 589 2 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 572)
+            (pc))) PropertyCap.c:82 -1
+     (nil)
+ -> 572)
+(note 589 10 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 589 12 4 (set (reg:DI 156)
+        (zero_extend:DI (reg:SI 154))) PropertyCap.c:82 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 157)
+        (mem/u/c:DI (plus:DI (ashift:DI (reg:DI 156)
+                    (const_int 3 [0x3]))
+                (label_ref:DI 15)) [0  S8 A8])) PropertyCap.c:82 -1
+     (insn_list:REG_LABEL_OPERAND 15 (nil)))
+(jump_insn 13 12 14 4 (parallel [
+            (set (pc)
+                (reg:DI 157))
+            (use (label_ref 15))
+        ]) PropertyCap.c:82 -1
+     (nil)
+ -> 15)
+(barrier 14 13 15)
+(code_label 15 14 16 4 "" [2 uses])
+(jump_table_data 16 15 17 (addr_vec:DI [
+            (label_ref:DI 18)
+            (label_ref:DI 24)
+            (label_ref:DI 30)
+            (label_ref:DI 36)
+            (label_ref:DI 42)
+            (label_ref:DI 48)
+            (label_ref:DI 57)
+            (label_ref:DI 66)
+            (label_ref:DI 75)
+            (label_ref:DI 81)
+            (label_ref:DI 87)
+            (label_ref:DI 93)
+            (label_ref:DI 100)
+            (label_ref:DI 107)
+            (label_ref:DI 113)
+            (label_ref:DI 119)
+            (label_ref:DI 125)
+            (label_ref:DI 131)
+            (label_ref:DI 137)
+            (label_ref:DI 143)
+            (label_ref:DI 149)
+            (label_ref:DI 572)
+            (label_ref:DI 155)
+            (label_ref:DI 161)
+            (label_ref:DI 167)
+            (label_ref:DI 182)
+            (label_ref:DI 188)
+            (label_ref:DI 194)
+            (label_ref:DI 200)
+            (label_ref:DI 206)
+            (label_ref:DI 212)
+            (label_ref:DI 218)
+            (label_ref:DI 224)
+            (label_ref:DI 230)
+            (label_ref:DI 236)
+            (label_ref:DI 242)
+            (label_ref:DI 248)
+            (label_ref:DI 254)
+            (label_ref:DI 260)
+            (label_ref:DI 266)
+            (label_ref:DI 272)
+            (label_ref:DI 280)
+            (label_ref:DI 286)
+            (label_ref:DI 292)
+            (label_ref:DI 298)
+            (label_ref:DI 304)
+            (label_ref:DI 310)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 572)
+            (label_ref:DI 316)
+            (label_ref:DI 374)
+            (label_ref:DI 428)
+            (label_ref:DI 436)
+            (label_ref:DI 444)
+            (label_ref:DI 452)
+            (label_ref:DI 460)
+            (label_ref:DI 468)
+            (label_ref:DI 476)
+            (label_ref:DI 484)
+            (label_ref:DI 492)
+            (label_ref:DI 500)
+            (label_ref:DI 508)
+            (label_ref:DI 515)
+            (label_ref:DI 521)
+            (label_ref:DI 528)
+            (label_ref:DI 535)
+            (label_ref:DI 542)
+            (label_ref:DI 549)
+            (label_ref:DI 555)
+            (label_ref:DI 564)
+        ]))
+(barrier 17 16 18)
+(code_label 18 17 19 5 3 "" [1 uses])
+(note 19 18 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 20 19 21 5 (set (reg/f:DI 158)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:87 -1
+     (nil))
+(insn 21 20 22 5 (set (mem:SI (reg/f:DI 158) [0 *value_17(D)+0 S4 A32])
+        (const_int 841887744 [0x322e3000])) PropertyCap.c:87 -1
+     (nil))
+(jump_insn 22 21 23 5 (set (pc)
+        (label_ref 577)) PropertyCap.c:88 -1
+     (nil)
+ -> 577)
+(barrier 23 22 24)
+(code_label 24 23 25 6 5 "" [1 uses])
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 6 (set (reg/f:DI 159)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:91 -1
+     (nil))
+(insn 27 26 28 6 (set (mem:SI (reg/f:DI 159) [0 *value_17(D)+0 S4 A32])
+        (const_int 0 [0])) PropertyCap.c:91 -1
+     (nil))
+(jump_insn 28 27 29 6 (set (pc)
+        (label_ref 577)) PropertyCap.c:92 -1
+     (nil)
+ -> 577)
+(barrier 29 28 30)
+(code_label 30 29 31 7 6 "" [1 uses])
+(note 31 30 32 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 7 (set (reg/f:DI 160)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:95 -1
+     (nil))
+(insn 33 32 34 7 (set (mem:SI (reg/f:DI 160) [0 *value_17(D)+0 S4 A32])
+        (const_int 146 [0x92])) PropertyCap.c:95 -1
+     (nil))
+(jump_insn 34 33 35 7 (set (pc)
+        (label_ref 577)) PropertyCap.c:96 -1
+     (nil)
+ -> 577)
+(barrier 35 34 36)
+(code_label 36 35 37 8 7 "" [1 uses])
+(note 37 36 38 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 8 (set (reg/f:DI 161)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:99 -1
+     (nil))
+(insn 39 38 40 8 (set (mem:SI (reg/f:DI 161) [0 *value_17(D)+0 S4 A32])
+        (const_int 167 [0xa7])) PropertyCap.c:99 -1
+     (nil))
+(jump_insn 40 39 41 8 (set (pc)
+        (label_ref 577)) PropertyCap.c:100 -1
+     (nil)
+ -> 577)
+(barrier 41 40 42)
+(code_label 42 41 43 9 8 "" [1 uses])
+(note 43 42 44 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 9 (set (reg/f:DI 162)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:103 -1
+     (nil))
+(insn 45 44 46 9 (set (mem:SI (reg/f:DI 162) [0 *value_17(D)+0 S4 A32])
+        (const_int 2017 [0x7e1])) PropertyCap.c:103 -1
+     (nil))
+(jump_insn 46 45 47 9 (set (pc)
+        (label_ref 577)) PropertyCap.c:104 -1
+     (nil)
+ -> 577)
+(barrier 47 46 48)
+(code_label 48 47 49 10 9 "" [1 uses])
+(note 49 48 50 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 10 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f020e7ae900 *.LC0>)) PropertyCap.c:107 -1
+     (nil))
+(call_insn 51 50 52 10 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("ByteArrayToUint32") [flags 0x41]  <function_decl 0x7f020e727d80 ByteArrayToUint32>) [0 ByteArrayToUint32 S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:107 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 52 51 53 10 (set (reg:SI 88 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:107 -1
+     (nil))
+(insn 53 52 54 10 (set (reg/f:DI 163)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:107 -1
+     (nil))
+(insn 54 53 55 10 (set (mem:SI (reg/f:DI 163) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 88 [ D.13070 ])) PropertyCap.c:107 -1
+     (nil))
+(jump_insn 55 54 56 10 (set (pc)
+        (label_ref 577)) PropertyCap.c:108 -1
+     (nil)
+ -> 577)
+(barrier 56 55 57)
+(code_label 57 56 58 11 10 "" [1 uses])
+(note 58 57 59 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 59 58 60 11 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f020e7ae990 *.LC1>)) PropertyCap.c:111 -1
+     (nil))
+(call_insn 60 59 61 11 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("ByteArrayToUint32") [flags 0x41]  <function_decl 0x7f020e727d80 ByteArrayToUint32>) [0 ByteArrayToUint32 S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:111 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 61 60 62 11 (set (reg:SI 89 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:111 -1
+     (nil))
+(insn 62 61 63 11 (set (reg/f:DI 164)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:111 -1
+     (nil))
+(insn 63 62 64 11 (set (mem:SI (reg/f:DI 164) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 89 [ D.13070 ])) PropertyCap.c:111 -1
+     (nil))
+(jump_insn 64 63 65 11 (set (pc)
+        (label_ref 577)) PropertyCap.c:112 -1
+     (nil)
+ -> 577)
+(barrier 65 64 66)
+(code_label 66 65 67 12 11 "" [1 uses])
+(note 67 66 68 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 68 67 69 12 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7f020e7aea20 *.LC2>)) PropertyCap.c:116 -1
+     (nil))
+(call_insn 69 68 70 12 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("ByteArrayToUint32") [flags 0x41]  <function_decl 0x7f020e727d80 ByteArrayToUint32>) [0 ByteArrayToUint32 S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:116 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 70 69 71 12 (set (reg:SI 90 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:116 -1
+     (nil))
+(insn 71 70 72 12 (set (reg/f:DI 165)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:116 -1
+     (nil))
+(insn 72 71 73 12 (set (mem:SI (reg/f:DI 165) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 90 [ D.13070 ])) PropertyCap.c:116 -1
+     (nil))
+(jump_insn 73 72 74 12 (set (pc)
+        (label_ref 577)) PropertyCap.c:120 -1
+     (nil)
+ -> 577)
+(barrier 74 73 75)
+(code_label 75 74 76 13 12 "" [1 uses])
+(note 76 75 77 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 77 76 78 13 (set (reg/f:DI 166)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:126 -1
+     (nil))
+(insn 78 77 79 13 (set (mem:SI (reg/f:DI 166) [0 *value_17(D)+0 S4 A32])
+        (const_int 0 [0])) PropertyCap.c:126 -1
+     (nil))
+(jump_insn 79 78 80 13 (set (pc)
+        (label_ref 577)) PropertyCap.c:128 -1
+     (nil)
+ -> 577)
+(barrier 80 79 81)
+(code_label 81 80 82 14 13 "" [1 uses])
+(note 82 81 83 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 14 (set (reg/f:DI 167)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:134 -1
+     (nil))
+(insn 84 83 85 14 (set (mem:SI (reg/f:DI 167) [0 *value_17(D)+0 S4 A32])
+        (const_int 0 [0])) PropertyCap.c:134 -1
+     (nil))
+(jump_insn 85 84 86 14 (set (pc)
+        (label_ref 577)) PropertyCap.c:136 -1
+     (nil)
+ -> 577)
+(barrier 86 85 87)
+(code_label 87 86 88 15 14 "" [1 uses])
+(note 88 87 89 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 89 88 90 15 (set (reg/f:DI 168)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:139 -1
+     (nil))
+(insn 90 89 91 15 (set (mem:SI (reg/f:DI 168) [0 *value_17(D)+0 S4 A32])
+        (const_int 1 [0x1])) PropertyCap.c:139 -1
+     (nil))
+(jump_insn 91 90 92 15 (set (pc)
+        (label_ref 577)) PropertyCap.c:140 -1
+     (nil)
+ -> 577)
+(barrier 92 91 93)
+(code_label 93 92 94 16 15 "" [1 uses])
+(note 94 93 95 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 95 94 96 16 (set (reg:SI 91 [ D.13070 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 924 [0x39c]))) [0 gp.firmwareV1+0 S4 A32])) PropertyCap.c:143 -1
+     (nil))
+(insn 96 95 97 16 (set (reg/f:DI 169)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:143 -1
+     (nil))
+(insn 97 96 98 16 (set (mem:SI (reg/f:DI 169) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 91 [ D.13070 ])) PropertyCap.c:143 -1
+     (nil))
+(jump_insn 98 97 99 16 (set (pc)
+        (label_ref 577)) PropertyCap.c:144 -1
+     (nil)
+ -> 577)
+(barrier 99 98 100)
+(code_label 100 99 101 17 16 "" [1 uses])
+(note 101 100 102 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 102 101 103 17 (set (reg:SI 92 [ D.13070 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 928 [0x3a0]))) [0 gp.firmwareV2+0 S4 A64])) PropertyCap.c:147 -1
+     (nil))
+(insn 103 102 104 17 (set (reg/f:DI 170)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:147 -1
+     (nil))
+(insn 104 103 105 17 (set (mem:SI (reg/f:DI 170) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 92 [ D.13070 ])) PropertyCap.c:147 -1
+     (nil))
+(jump_insn 105 104 106 17 (set (pc)
+        (label_ref 577)) PropertyCap.c:148 -1
+     (nil)
+ -> 577)
+(barrier 106 105 107)
+(code_label 107 106 108 18 17 "" [1 uses])
+(note 108 107 109 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 109 108 110 18 (set (reg/f:DI 171)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:151 -1
+     (nil))
+(insn 110 109 111 18 (set (mem:SI (reg/f:DI 171) [0 *value_17(D)+0 S4 A32])
+        (const_int 1024 [0x400])) PropertyCap.c:151 -1
+     (nil))
+(jump_insn 111 110 112 18 (set (pc)
+        (label_ref 577)) PropertyCap.c:152 -1
+     (nil)
+ -> 577)
+(barrier 112 111 113)
+(code_label 113 112 114 19 18 "" [1 uses])
+(note 114 113 115 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 115 114 116 19 (set (reg/f:DI 172)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:156 -1
+     (nil))
+(insn 116 115 117 19 (set (mem:SI (reg/f:DI 172) [0 *value_17(D)+0 S4 A32])
+        (const_int 3 [0x3])) PropertyCap.c:156 -1
+     (nil))
+(jump_insn 117 116 118 19 (set (pc)
+        (label_ref 577)) PropertyCap.c:157 -1
+     (nil)
+ -> 577)
+(barrier 118 117 119)
+(code_label 119 118 120 20 19 "" [1 uses])
+(note 120 119 121 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 121 120 122 20 (set (reg/f:DI 173)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:163 -1
+     (nil))
+(insn 122 121 123 20 (set (mem:SI (reg/f:DI 173) [0 *value_17(D)+0 S4 A32])
+        (const_int 2 [0x2])) PropertyCap.c:163 -1
+     (nil))
+(jump_insn 123 122 124 20 (set (pc)
+        (label_ref 577)) PropertyCap.c:164 -1
+     (nil)
+ -> 577)
+(barrier 124 123 125)
+(code_label 125 124 126 21 20 "" [1 uses])
+(note 126 125 127 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 127 126 128 21 (set (reg/f:DI 174)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:168 -1
+     (nil))
+(insn 128 127 129 21 (set (mem:SI (reg/f:DI 174) [0 *value_17(D)+0 S4 A32])
+        (const_int 3 [0x3])) PropertyCap.c:168 -1
+     (nil))
+(jump_insn 129 128 130 21 (set (pc)
+        (label_ref 577)) PropertyCap.c:169 -1
+     (nil)
+ -> 577)
+(barrier 130 129 131)
+(code_label 131 130 132 22 21 "" [1 uses])
+(note 132 131 133 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 133 132 134 22 (set (reg/f:DI 175)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:172 -1
+     (nil))
+(insn 134 133 135 22 (set (mem:SI (reg/f:DI 175) [0 *value_17(D)+0 S4 A32])
+        (const_int 64 [0x40])) PropertyCap.c:172 -1
+     (nil))
+(jump_insn 135 134 136 22 (set (pc)
+        (label_ref 577)) PropertyCap.c:173 -1
+     (nil)
+ -> 577)
+(barrier 136 135 137)
+(code_label 137 136 138 23 22 "" [1 uses])
+(note 138 137 139 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 139 138 140 23 (set (reg/f:DI 176)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:176 -1
+     (nil))
+(insn 140 139 141 23 (set (mem:SI (reg/f:DI 176) [0 *value_17(D)+0 S4 A32])
+        (const_int 24 [0x18])) PropertyCap.c:176 -1
+     (nil))
+(jump_insn 141 140 142 23 (set (pc)
+        (label_ref 577)) PropertyCap.c:177 -1
+     (nil)
+ -> 577)
+(barrier 142 141 143)
+(code_label 143 142 144 24 23 "" [1 uses])
+(note 144 143 145 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 145 144 146 24 (set (reg/f:DI 177)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:180 -1
+     (nil))
+(insn 146 145 147 24 (set (mem:SI (reg/f:DI 177) [0 *value_17(D)+0 S4 A32])
+        (const_int 3 [0x3])) PropertyCap.c:180 -1
+     (nil))
+(jump_insn 147 146 148 24 (set (pc)
+        (label_ref 577)) PropertyCap.c:181 -1
+     (nil)
+ -> 577)
+(barrier 148 147 149)
+(code_label 149 148 150 25 24 "" [1 uses])
+(note 150 149 151 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 151 150 152 25 (set (reg/f:DI 178)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:185 -1
+     (nil))
+(insn 152 151 153 25 (set (mem:SI (reg/f:DI 178) [0 *value_17(D)+0 S4 A32])
+        (const_int 255 [0xff])) PropertyCap.c:185 -1
+     (nil))
+(jump_insn 153 152 154 25 (set (pc)
+        (label_ref 577)) PropertyCap.c:186 -1
+     (nil)
+ -> 577)
+(barrier 154 153 155)
+(code_label 155 154 156 26 25 "" [1 uses])
+(note 156 155 157 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 157 156 158 26 (set (reg/f:DI 179)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:192 -1
+     (nil))
+(insn 158 157 159 26 (set (mem:SI (reg/f:DI 179) [0 *value_17(D)+0 S4 A32])
+        (const_int 0 [0])) PropertyCap.c:192 -1
+     (nil))
+(jump_insn 159 158 160 26 (set (pc)
+        (label_ref 577)) PropertyCap.c:193 -1
+     (nil)
+ -> 577)
+(barrier 160 159 161)
+(code_label 161 160 162 27 26 "" [1 uses])
+(note 162 161 163 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 163 162 164 27 (set (reg/f:DI 180)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:196 -1
+     (nil))
+(insn 164 163 165 27 (set (mem:SI (reg/f:DI 180) [0 *value_17(D)+0 S4 A32])
+        (const_int 2048 [0x800])) PropertyCap.c:196 -1
+     (nil))
+(jump_insn 165 164 166 27 (set (pc)
+        (label_ref 577)) PropertyCap.c:197 -1
+     (nil)
+ -> 577)
+(barrier 166 165 167)
+(code_label 167 166 168 28 27 "" [1 uses])
+(note 168 167 169 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 169 168 170 28 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 attributes.att+0 S4 A64])
+        (const_int 0 [0])) PropertyCap.c:205 -1
+     (nil))
+(insn 170 169 171 28 (set (reg:SI 93 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 attributes.att+0 S4 A64])) PropertyCap.c:206 -1
+     (nil))
+(insn 171 170 172 28 (parallel [
+            (set (reg:SI 94 [ D.13070 ])
+                (ior:SI (reg:SI 93 [ D.13070 ])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:206 -1
+     (nil))
+(insn 172 171 173 28 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 attributes.att+0 S4 A64])
+        (reg:SI 94 [ D.13070 ])) PropertyCap.c:206 -1
+     (nil))
+(insn 173 172 174 28 (set (reg:SI 95 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 attributes.att+0 S4 A64])) PropertyCap.c:207 -1
+     (nil))
+(insn 174 173 175 28 (parallel [
+            (set (reg:SI 96 [ D.13070 ])
+                (ior:SI (reg:SI 95 [ D.13070 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:207 -1
+     (nil))
+(insn 175 174 176 28 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 attributes.att+0 S4 A64])
+        (reg:SI 96 [ D.13070 ])) PropertyCap.c:207 -1
+     (nil))
+(insn 176 175 177 28 (set (reg:SI 97 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 attributes.u32+0 S4 A64])) PropertyCap.c:212 -1
+     (nil))
+(insn 177 176 178 28 (set (reg/f:DI 181)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:212 -1
+     (nil))
+(insn 178 177 590 28 (set (mem:SI (reg/f:DI 181) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 97 [ D.13070 ])) PropertyCap.c:212 -1
+     (nil))
+(insn 590 178 180 28 (const_int 0 [0]) PropertyCap.c:213 -1
+     (nil))
+(jump_insn 180 590 181 28 (set (pc)
+        (label_ref 577)) -1
+     (nil)
+ -> 577)
+(barrier 181 180 182)
+(code_label 182 181 183 30 28 "" [1 uses])
+(note 183 182 184 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 184 183 185 30 (set (reg/f:DI 182)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:218 -1
+     (nil))
+(insn 185 184 186 30 (set (mem:SI (reg/f:DI 182) [0 *value_17(D)+0 S4 A32])
+        (const_int 4096 [0x1000])) PropertyCap.c:218 -1
+     (nil))
+(jump_insn 186 185 187 30 (set (pc)
+        (label_ref 577)) PropertyCap.c:219 -1
+     (nil)
+ -> 577)
+(barrier 187 186 188)
+(code_label 188 187 189 31 29 "" [1 uses])
+(note 189 188 190 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 190 189 191 31 (set (reg/f:DI 183)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:223 -1
+     (nil))
+(insn 191 190 192 31 (set (mem:SI (reg/f:DI 183) [0 *value_17(D)+0 S4 A32])
+        (const_int 12 [0xc])) PropertyCap.c:223 -1
+     (nil))
+(jump_insn 192 191 193 31 (set (pc)
+        (label_ref 577)) PropertyCap.c:224 -1
+     (nil)
+ -> 577)
+(barrier 193 192 194)
+(code_label 194 193 195 32 30 "" [1 uses])
+(note 195 194 196 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 196 195 197 32 (set (reg/f:DI 184)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:227 -1
+     (nil))
+(insn 197 196 198 32 (set (mem:SI (reg/f:DI 184) [0 *value_17(D)+0 S4 A32])
+        (const_int 6 [0x6])) PropertyCap.c:227 -1
+     (nil))
+(jump_insn 198 197 199 32 (set (pc)
+        (label_ref 577)) PropertyCap.c:228 -1
+     (nil)
+ -> 577)
+(barrier 199 198 200)
+(code_label 200 199 201 33 31 "" [1 uses])
+(note 201 200 202 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 202 201 203 33 (set (reg/f:DI 185)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:231 -1
+     (nil))
+(insn 203 202 204 33 (set (mem:SI (reg/f:DI 185) [0 *value_17(D)+0 S4 A32])
+        (const_int 256 [0x100])) PropertyCap.c:231 -1
+     (nil))
+(jump_insn 204 203 205 33 (set (pc)
+        (label_ref 577)) PropertyCap.c:232 -1
+     (nil)
+ -> 577)
+(barrier 205 204 206)
+(code_label 206 205 207 34 32 "" [1 uses])
+(note 207 206 208 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 208 207 209 34 (set (reg/f:DI 186)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:236 -1
+     (nil))
+(insn 209 208 210 34 (set (mem:SI (reg/f:DI 186) [0 *value_17(D)+0 S4 A32])
+        (const_int 255 [0xff])) PropertyCap.c:236 -1
+     (nil))
+(jump_insn 210 209 211 34 (set (pc)
+        (label_ref 577)) PropertyCap.c:237 -1
+     (nil)
+ -> 577)
+(barrier 211 210 212)
+(code_label 212 211 213 35 33 "" [1 uses])
+(note 213 212 214 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 214 213 215 35 (set (reg/f:DI 187)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:240 -1
+     (nil))
+(insn 215 214 216 35 (set (mem:SI (reg/f:DI 187) [0 *value_17(D)+0 S4 A32])
+        (const_int 4096 [0x1000])) PropertyCap.c:240 -1
+     (nil))
+(jump_insn 216 215 217 35 (set (pc)
+        (label_ref 577)) PropertyCap.c:241 -1
+     (nil)
+ -> 577)
+(barrier 217 216 218)
+(code_label 218 217 219 36 34 "" [1 uses])
+(note 219 218 220 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 220 219 221 36 (set (reg/f:DI 188)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:244 -1
+     (nil))
+(insn 221 220 222 36 (set (mem:SI (reg/f:DI 188) [0 *value_17(D)+0 S4 A32])
+        (const_int 4096 [0x1000])) PropertyCap.c:244 -1
+     (nil))
+(jump_insn 222 221 223 36 (set (pc)
+        (label_ref 577)) PropertyCap.c:245 -1
+     (nil)
+ -> 577)
+(barrier 223 222 224)
+(code_label 224 223 225 37 35 "" [1 uses])
+(note 225 224 226 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 226 225 227 37 (set (reg/f:DI 189)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:248 -1
+     (nil))
+(insn 227 226 228 37 (set (mem:SI (reg/f:DI 189) [0 *value_17(D)+0 S4 A32])
+        (const_int 48 [0x30])) PropertyCap.c:248 -1
+     (nil))
+(jump_insn 228 227 229 37 (set (pc)
+        (label_ref 577)) PropertyCap.c:249 -1
+     (nil)
+ -> 577)
+(barrier 229 228 230)
+(code_label 230 229 231 38 36 "" [1 uses])
+(note 231 230 232 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 232 231 233 38 (set (reg/f:DI 190)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:279 -1
+     (nil))
+(insn 233 232 234 38 (set (mem:SI (reg/f:DI 190) [0 *value_17(D)+0 S4 A32])
+        (const_int 1892 [0x764])) PropertyCap.c:279 -1
+     (nil))
+(jump_insn 234 233 235 38 (set (pc)
+        (label_ref 577)) PropertyCap.c:281 -1
+     (nil)
+ -> 577)
+(barrier 235 234 236)
+(code_label 236 235 237 39 37 "" [1 uses])
+(note 237 236 238 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 238 237 239 39 (set (reg/f:DI 191)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:302 -1
+     (nil))
+(insn 239 238 240 39 (set (mem:SI (reg/f:DI 191) [0 *value_17(D)+0 S4 A32])
+        (const_int 324 [0x144])) PropertyCap.c:302 -1
+     (nil))
+(jump_insn 240 239 241 39 (set (pc)
+        (label_ref 577)) PropertyCap.c:304 -1
+     (nil)
+ -> 577)
+(barrier 241 240 242)
+(code_label 242 241 243 40 38 "" [1 uses])
+(note 243 242 244 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(insn 244 243 245 40 (set (reg/f:DI 192)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:309 -1
+     (nil))
+(insn 245 244 246 40 (set (mem:SI (reg/f:DI 192) [0 *value_17(D)+0 S4 A32])
+        (const_int 841887744 [0x322e3000])) PropertyCap.c:309 -1
+     (nil))
+(jump_insn 246 245 247 40 (set (pc)
+        (label_ref 577)) PropertyCap.c:310 -1
+     (nil)
+ -> 577)
+(barrier 247 246 248)
+(code_label 248 247 249 41 39 "" [1 uses])
+(note 249 248 250 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 250 249 251 41 (set (reg/f:DI 193)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:313 -1
+     (nil))
+(insn 251 250 252 41 (set (mem:SI (reg/f:DI 193) [0 *value_17(D)+0 S4 A32])
+        (const_int 0 [0])) PropertyCap.c:313 -1
+     (nil))
+(jump_insn 252 251 253 41 (set (pc)
+        (label_ref 577)) PropertyCap.c:314 -1
+     (nil)
+ -> 577)
+(barrier 253 252 254)
+(code_label 254 253 255 42 40 "" [1 uses])
+(note 255 254 256 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 256 255 257 42 (set (reg/f:DI 194)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:318 -1
+     (nil))
+(insn 257 256 258 42 (set (mem:SI (reg/f:DI 194) [0 *value_17(D)+0 S4 A32])
+        (const_int 146 [0x92])) PropertyCap.c:318 -1
+     (nil))
+(jump_insn 258 257 259 42 (set (pc)
+        (label_ref 577)) PropertyCap.c:319 -1
+     (nil)
+ -> 577)
+(barrier 259 258 260)
+(code_label 260 259 261 43 41 "" [1 uses])
+(note 261 260 262 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(insn 262 261 263 43 (set (reg/f:DI 195)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:322 -1
+     (nil))
+(insn 263 262 264 43 (set (mem:SI (reg/f:DI 195) [0 *value_17(D)+0 S4 A32])
+        (const_int 167 [0xa7])) PropertyCap.c:322 -1
+     (nil))
+(jump_insn 264 263 265 43 (set (pc)
+        (label_ref 577)) PropertyCap.c:323 -1
+     (nil)
+ -> 577)
+(barrier 265 264 266)
+(code_label 266 265 267 44 42 "" [1 uses])
+(note 267 266 268 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(insn 268 267 269 44 (set (reg/f:DI 196)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:326 -1
+     (nil))
+(insn 269 268 270 44 (set (mem:SI (reg/f:DI 196) [0 *value_17(D)+0 S4 A32])
+        (const_int 2017 [0x7e1])) PropertyCap.c:326 -1
+     (nil))
+(jump_insn 270 269 271 44 (set (pc)
+        (label_ref 577)) PropertyCap.c:327 -1
+     (nil)
+ -> 577)
+(barrier 271 270 272)
+(code_label 272 271 273 45 43 "" [1 uses])
+(note 273 272 274 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 274 273 275 45 (set (reg/f:DI 197)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:330 -1
+     (nil))
+(insn 275 274 276 45 (set (mem:SI (reg/f:DI 197) [0 *value_17(D)+0 S4 A32])
+        (const_int 0 [0])) PropertyCap.c:330 -1
+     (nil))
+(insn 276 275 277 45 (set (reg/f:DI 198)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:332 -1
+     (nil))
+(insn 277 276 278 45 (set (mem:SI (reg/f:DI 198) [0 *value_17(D)+0 S4 A32])
+        (const_int 128 [0x80])) PropertyCap.c:332 -1
+     (nil))
+(jump_insn 278 277 279 45 (set (pc)
+        (label_ref 577)) PropertyCap.c:334 -1
+     (nil)
+ -> 577)
+(barrier 279 278 280)
+(code_label 280 279 281 46 44 "" [1 uses])
+(note 281 280 282 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(insn 282 281 283 46 (set (reg/f:DI 199)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:342 -1
+     (nil))
+(insn 283 282 284 46 (set (mem:SI (reg/f:DI 199) [0 *value_17(D)+0 S4 A32])
+        (const_int 113 [0x71])) PropertyCap.c:342 -1
+     (nil))
+(jump_insn 284 283 285 46 (set (pc)
+        (label_ref 577)) PropertyCap.c:354 -1
+     (nil)
+ -> 577)
+(barrier 285 284 286)
+(code_label 286 285 287 47 45 "" [1 uses])
+(note 287 286 288 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(insn 288 287 289 47 (set (reg/f:DI 200)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:360 -1
+     (nil))
+(insn 289 288 290 47 (set (mem:SI (reg/f:DI 200) [0 *value_17(D)+0 S4 A32])
+        (const_int 109 [0x6d])) PropertyCap.c:360 -1
+     (nil))
+(jump_insn 290 289 291 47 (set (pc)
+        (label_ref 577)) PropertyCap.c:372 -1
+     (nil)
+ -> 577)
+(barrier 291 290 292)
+(code_label 292 291 293 48 46 "" [1 uses])
+(note 293 292 294 48 [bb 48] NOTE_INSN_BASIC_BLOCK)
+(insn 294 293 295 48 (set (reg/f:DI 201)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:376 -1
+     (nil))
+(insn 295 294 296 48 (set (mem:SI (reg/f:DI 201) [0 *value_17(D)+0 S4 A32])
+        (const_int 4 [0x4])) PropertyCap.c:376 -1
+     (nil))
+(jump_insn 296 295 297 48 (set (pc)
+        (label_ref 577)) PropertyCap.c:377 -1
+     (nil)
+ -> 577)
+(barrier 297 296 298)
+(code_label 298 297 299 49 47 "" [1 uses])
+(note 299 298 300 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(insn 300 299 301 49 (set (reg/f:DI 202)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:380 -1
+     (nil))
+(insn 301 300 302 49 (set (mem:SI (reg/f:DI 202) [0 *value_17(D)+0 S4 A32])
+        (const_int 1024 [0x400])) PropertyCap.c:380 -1
+     (nil))
+(jump_insn 302 301 303 49 (set (pc)
+        (label_ref 577)) PropertyCap.c:381 -1
+     (nil)
+ -> 577)
+(barrier 303 302 304)
+(code_label 304 303 305 50 48 "" [1 uses])
+(note 305 304 306 50 [bb 50] NOTE_INSN_BASIC_BLOCK)
+(insn 306 305 307 50 (set (reg/f:DI 203)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:386 -1
+     (nil))
+(insn 307 306 308 50 (set (mem:SI (reg/f:DI 203) [0 *value_17(D)+0 S4 A32])
+        (const_int 0 [0])) PropertyCap.c:386 -1
+     (nil))
+(jump_insn 308 307 309 50 (set (pc)
+        (label_ref 577)) PropertyCap.c:388 -1
+     (nil)
+ -> 577)
+(barrier 309 308 310)
+(code_label 310 309 311 51 49 "" [1 uses])
+(note 311 310 312 51 [bb 51] NOTE_INSN_BASIC_BLOCK)
+(insn 312 311 313 51 (set (reg/f:DI 204)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:390 -1
+     (nil))
+(insn 313 312 314 51 (set (mem:SI (reg/f:DI 204) [0 *value_17(D)+0 S4 A32])
+        (const_int 1024 [0x400])) PropertyCap.c:390 -1
+     (nil))
+(jump_insn 314 313 315 51 (set (pc)
+        (label_ref 577)) PropertyCap.c:391 -1
+     (nil)
+ -> 577)
+(barrier 315 314 316)
+(code_label 316 315 317 52 50 "" [1 uses])
+(note 317 316 318 52 [bb 52] NOTE_INSN_BASIC_BLOCK)
+(insn 318 317 319 52 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (const_int 0 [0])) PropertyCap.c:399 -1
+     (nil))
+(insn 319 318 320 52 (set (reg:HI 98 [ D.13071 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 160 [0xa0]))) [0 gp.ownerAuth.t.size+0 S2 A64])) PropertyCap.c:400 -1
+     (nil))
+(insn 320 319 321 52 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 98 [ D.13071 ])
+            (const_int 0 [0]))) PropertyCap.c:400 -1
+     (nil))
+(jump_insn 321 320 322 52 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 326)
+            (pc))) PropertyCap.c:400 -1
+     (nil)
+ -> 326)
+(note 322 321 323 53 [bb 53] NOTE_INSN_BASIC_BLOCK)
+(insn 323 322 324 53 (set (reg:SI 99 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:401 -1
+     (nil))
+(insn 324 323 325 53 (parallel [
+            (set (reg:SI 100 [ D.13070 ])
+                (ior:SI (reg:SI 99 [ D.13070 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:401 -1
+     (nil))
+(insn 325 324 326 53 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 100 [ D.13070 ])) PropertyCap.c:401 -1
+     (nil))
+(code_label 326 325 327 54 72 "" [1 uses])
+(note 327 326 328 54 [bb 54] NOTE_INSN_BASIC_BLOCK)
+(insn 328 327 329 54 (set (reg:HI 101 [ D.13071 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 210 [0xd2]))) [0 gp.endorsementAuth.t.size+0 S2 A16])) PropertyCap.c:402 -1
+     (nil))
+(insn 329 328 330 54 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 101 [ D.13071 ])
+            (const_int 0 [0]))) PropertyCap.c:402 -1
+     (nil))
+(jump_insn 330 329 331 54 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 335)
+            (pc))) PropertyCap.c:402 -1
+     (nil)
+ -> 335)
+(note 331 330 332 55 [bb 55] NOTE_INSN_BASIC_BLOCK)
+(insn 332 331 333 55 (set (reg:SI 102 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:403 -1
+     (nil))
+(insn 333 332 334 55 (parallel [
+            (set (reg:SI 103 [ D.13070 ])
+                (ior:SI (reg:SI 102 [ D.13070 ])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:403 -1
+     (nil))
+(insn 334 333 335 55 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 103 [ D.13070 ])) PropertyCap.c:403 -1
+     (nil))
+(code_label 335 334 336 56 73 "" [1 uses])
+(note 336 335 337 56 [bb 56] NOTE_INSN_BASIC_BLOCK)
+(insn 337 336 338 56 (set (reg:HI 104 [ D.13071 ])
+        (mem/j/c:HI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 260 [0x104]))) [0 gp.lockoutAuth.t.size+0 S2 A32])) PropertyCap.c:404 -1
+     (nil))
+(insn 338 337 339 56 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 104 [ D.13071 ])
+            (const_int 0 [0]))) PropertyCap.c:404 -1
+     (nil))
+(jump_insn 339 338 340 56 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 344)
+            (pc))) PropertyCap.c:404 -1
+     (nil)
+ -> 344)
+(note 340 339 341 57 [bb 57] NOTE_INSN_BASIC_BLOCK)
+(insn 341 340 342 57 (set (reg:SI 105 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:405 -1
+     (nil))
+(insn 342 341 343 57 (parallel [
+            (set (reg:SI 106 [ D.13070 ])
+                (ior:SI (reg:SI 105 [ D.13070 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:405 -1
+     (nil))
+(insn 343 342 344 57 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 106 [ D.13070 ])) PropertyCap.c:405 -1
+     (nil))
+(code_label 344 343 345 58 74 "" [1 uses])
+(note 345 344 346 58 [bb 58] NOTE_INSN_BASIC_BLOCK)
+(insn 346 345 347 58 (set (reg:SI 107 [ D.13072 ])
+        (mem/j/c:SI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>) [0 gp.disableClear+0 S4 A64])) PropertyCap.c:406 -1
+     (nil))
+(insn 347 346 348 58 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 107 [ D.13072 ])
+            (const_int 0 [0]))) PropertyCap.c:406 -1
+     (nil))
+(jump_insn 348 347 349 58 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 353)
+            (pc))) PropertyCap.c:406 -1
+     (nil)
+ -> 353)
+(note 349 348 350 59 [bb 59] NOTE_INSN_BASIC_BLOCK)
+(insn 350 349 351 59 (set (reg:SI 108 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:407 -1
+     (nil))
+(insn 351 350 352 59 (parallel [
+            (set (reg:SI 109 [ D.13070 ])
+                (ior:SI (reg:SI 108 [ D.13070 ])
+                    (const_int 256 [0x100])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:407 -1
+     (nil))
+(insn 352 351 353 59 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 109 [ D.13070 ])) PropertyCap.c:407 -1
+     (nil))
+(code_label 353 352 354 60 75 "" [1 uses])
+(note 354 353 355 60 [bb 60] NOTE_INSN_BASIC_BLOCK)
+(insn 355 354 356 60 (set (reg:SI 110 [ D.13070 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 868 [0x364]))) [0 gp.failedTries+0 S4 A32])) PropertyCap.c:408 -1
+     (nil))
+(insn 356 355 357 60 (set (reg:SI 111 [ D.13070 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 872 [0x368]))) [0 gp.maxTries+0 S4 A64])) PropertyCap.c:408 -1
+     (nil))
+(insn 357 356 358 60 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 110 [ D.13070 ])
+            (reg:SI 111 [ D.13070 ]))) PropertyCap.c:408 -1
+     (nil))
+(jump_insn 358 357 359 60 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 363)
+            (pc))) PropertyCap.c:408 -1
+     (nil)
+ -> 363)
+(note 359 358 360 61 [bb 61] NOTE_INSN_BASIC_BLOCK)
+(insn 360 359 361 61 (set (reg:SI 112 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:409 -1
+     (nil))
+(insn 361 360 362 61 (parallel [
+            (set (reg:SI 113 [ D.13070 ])
+                (ior:SI (reg:SI 112 [ D.13070 ])
+                    (const_int 512 [0x200])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:409 -1
+     (nil))
+(insn 362 361 363 61 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 113 [ D.13070 ])) PropertyCap.c:409 -1
+     (nil))
+(code_label 363 362 364 62 76 "" [1 uses])
+(note 364 363 365 62 [bb 62] NOTE_INSN_BASIC_BLOCK)
+(insn 365 364 366 62 (set (reg:SI 114 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:411 -1
+     (nil))
+(insn 366 365 367 62 (parallel [
+            (set (reg:SI 115 [ D.13070 ])
+                (ior:SI (reg:SI 114 [ D.13070 ])
+                    (const_int 1024 [0x400])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:411 -1
+     (nil))
+(insn 367 366 368 62 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 115 [ D.13070 ])) PropertyCap.c:411 -1
+     (nil))
+(insn 368 367 369 62 (set (reg:SI 116 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.u32+0 S4 A64])) PropertyCap.c:416 -1
+     (nil))
+(insn 369 368 370 62 (set (reg/f:DI 205)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:416 -1
+     (nil))
+(insn 370 369 591 62 (set (mem:SI (reg/f:DI 205) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 116 [ D.13070 ])) PropertyCap.c:416 -1
+     (nil))
+(insn 591 370 372 62 (const_int 0 [0]) PropertyCap.c:417 -1
+     (nil))
+(jump_insn 372 591 373 62 (set (pc)
+        (label_ref 577)) -1
+     (nil)
+ -> 577)
+(barrier 373 372 374)
+(code_label 374 373 375 64 51 "" [1 uses])
+(note 375 374 376 64 [bb 64] NOTE_INSN_BASIC_BLOCK)
+(insn 376 375 377 64 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (const_int 0 [0])) PropertyCap.c:425 -1
+     (nil))
+(insn 377 376 378 64 (set (reg:SI 117 [ D.13072 ])
+        (mem/c:SI (symbol_ref:DI ("g_phEnable") [flags 0x40]  <var_decl 0x7f020e60a5a0 g_phEnable>) [0 g_phEnable+0 S4 A32])) PropertyCap.c:427 -1
+     (nil))
+(insn 378 377 379 64 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 117 [ D.13072 ])
+            (const_int 0 [0]))) PropertyCap.c:427 -1
+     (nil))
+(jump_insn 379 378 380 64 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 384)
+            (pc))) PropertyCap.c:427 -1
+     (nil)
+ -> 384)
+(note 380 379 381 65 [bb 65] NOTE_INSN_BASIC_BLOCK)
+(insn 381 380 382 65 (set (reg:SI 118 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:428 -1
+     (nil))
+(insn 382 381 383 65 (parallel [
+            (set (reg:SI 119 [ D.13070 ])
+                (ior:SI (reg:SI 118 [ D.13070 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:428 -1
+     (nil))
+(insn 383 382 384 65 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 119 [ D.13070 ])) PropertyCap.c:428 -1
+     (nil))
+(code_label 384 383 385 66 77 "" [1 uses])
+(note 385 384 386 66 [bb 66] NOTE_INSN_BASIC_BLOCK)
+(insn 386 385 387 66 (set (reg:SI 120 [ D.13072 ])
+        (mem/j/c:SI (symbol_ref:DI ("gc") [flags 0x40]  <var_decl 0x7f020e64c000 gc>) [0 gc.shEnable+0 S4 A32])) PropertyCap.c:429 -1
+     (nil))
+(insn 387 386 388 66 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 120 [ D.13072 ])
+            (const_int 0 [0]))) PropertyCap.c:429 -1
+     (nil))
+(jump_insn 388 387 389 66 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 393)
+            (pc))) PropertyCap.c:429 -1
+     (nil)
+ -> 393)
+(note 389 388 390 67 [bb 67] NOTE_INSN_BASIC_BLOCK)
+(insn 390 389 391 67 (set (reg:SI 121 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:430 -1
+     (nil))
+(insn 391 390 392 67 (parallel [
+            (set (reg:SI 122 [ D.13070 ])
+                (ior:SI (reg:SI 121 [ D.13070 ])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:430 -1
+     (nil))
+(insn 392 391 393 67 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 122 [ D.13070 ])) PropertyCap.c:430 -1
+     (nil))
+(code_label 393 392 394 68 78 "" [1 uses])
+(note 394 393 395 68 [bb 68] NOTE_INSN_BASIC_BLOCK)
+(insn 395 394 396 68 (set (reg:SI 123 [ D.13072 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gc") [flags 0x40]  <var_decl 0x7f020e64c000 gc>)
+                    (const_int 4 [0x4]))) [0 gc.ehEnable+0 S4 A32])) PropertyCap.c:431 -1
+     (nil))
+(insn 396 395 397 68 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 123 [ D.13072 ])
+            (const_int 0 [0]))) PropertyCap.c:431 -1
+     (nil))
+(jump_insn 397 396 398 68 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 402)
+            (pc))) PropertyCap.c:431 -1
+     (nil)
+ -> 402)
+(note 398 397 399 69 [bb 69] NOTE_INSN_BASIC_BLOCK)
+(insn 399 398 400 69 (set (reg:SI 124 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:432 -1
+     (nil))
+(insn 400 399 401 69 (parallel [
+            (set (reg:SI 125 [ D.13070 ])
+                (ior:SI (reg:SI 124 [ D.13070 ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:432 -1
+     (nil))
+(insn 401 400 402 69 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 125 [ D.13070 ])) PropertyCap.c:432 -1
+     (nil))
+(code_label 402 401 403 70 79 "" [1 uses])
+(note 403 402 404 70 [bb 70] NOTE_INSN_BASIC_BLOCK)
+(insn 404 403 405 70 (set (reg:SI 126 [ D.13072 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gc") [flags 0x40]  <var_decl 0x7f020e64c000 gc>)
+                    (const_int 8 [0x8]))) [0 gc.phEnableNV+0 S4 A32])) PropertyCap.c:433 -1
+     (nil))
+(insn 405 404 406 70 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 126 [ D.13072 ])
+            (const_int 0 [0]))) PropertyCap.c:433 -1
+     (nil))
+(jump_insn 406 405 407 70 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 411)
+            (pc))) PropertyCap.c:433 -1
+     (nil)
+ -> 411)
+(note 407 406 408 71 [bb 71] NOTE_INSN_BASIC_BLOCK)
+(insn 408 407 409 71 (set (reg:SI 127 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:434 -1
+     (nil))
+(insn 409 408 410 71 (parallel [
+            (set (reg:SI 128 [ D.13070 ])
+                (ior:SI (reg:SI 127 [ D.13070 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:434 -1
+     (nil))
+(insn 410 409 411 71 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 128 [ D.13070 ])) PropertyCap.c:434 -1
+     (nil))
+(code_label 411 410 412 72 80 "" [1 uses])
+(note 412 411 413 72 [bb 72] NOTE_INSN_BASIC_BLOCK)
+(insn 413 412 414 72 (set (reg:HI 129 [ D.13071 ])
+        (mem/c:HI (symbol_ref:DI ("g_prevOrderlyState") [flags 0x40]  <var_decl 0x7f020e60abd0 g_prevOrderlyState>) [0 g_prevOrderlyState+0 S2 A16])) PropertyCap.c:435 -1
+     (nil))
+(insn 414 413 415 72 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:HI 129 [ D.13071 ])
+            (const_int -1 [0xffffffffffffffff]))) PropertyCap.c:435 -1
+     (nil))
+(jump_insn 415 414 416 72 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 420)
+            (pc))) PropertyCap.c:435 -1
+     (nil)
+ -> 420)
+(note 416 415 417 73 [bb 73] NOTE_INSN_BASIC_BLOCK)
+(insn 417 416 418 73 (set (reg:SI 130 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])) PropertyCap.c:436 -1
+     (nil))
+(insn 418 417 419 73 (parallel [
+            (set (reg:SI 131 [ D.13070 ])
+                (ior:SI (reg:SI 130 [ D.13070 ])
+                    (const_int -2147483648 [0xffffffff80000000])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:436 -1
+     (nil))
+(insn 419 418 420 73 (set (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.attr+0 S4 A64])
+        (reg:SI 131 [ D.13070 ])) PropertyCap.c:436 -1
+     (nil))
+(code_label 420 419 421 74 81 "" [1 uses])
+(note 421 420 422 74 [bb 74] NOTE_INSN_BASIC_BLOCK)
+(insn 422 421 423 74 (set (reg:SI 132 [ D.13070 ])
+        (mem/j/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 flags.u32+0 S4 A64])) PropertyCap.c:441 -1
+     (nil))
+(insn 423 422 424 74 (set (reg/f:DI 206)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:441 -1
+     (nil))
+(insn 424 423 592 74 (set (mem:SI (reg/f:DI 206) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 132 [ D.13070 ])) PropertyCap.c:441 -1
+     (nil))
+(insn 592 424 426 74 (const_int 0 [0]) PropertyCap.c:442 -1
+     (nil))
+(jump_insn 426 592 427 74 (set (pc)
+        (label_ref 577)) -1
+     (nil)
+ -> 577)
+(barrier 427 426 428)
+(code_label 428 427 429 76 52 "" [1 uses])
+(note 429 428 430 76 [bb 76] NOTE_INSN_BASIC_BLOCK)
+(call_insn 430 429 431 76 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NvCapGetIndexNumber") [flags 0x41]  <function_decl 0x7f020e67d798 NvCapGetIndexNumber>) [0 NvCapGetIndexNumber S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:446 -1
+     (nil)
+    (nil))
+(insn 431 430 432 76 (set (reg:SI 133 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:446 -1
+     (nil))
+(insn 432 431 433 76 (set (reg/f:DI 207)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:446 -1
+     (nil))
+(insn 433 432 434 76 (set (mem:SI (reg/f:DI 207) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 133 [ D.13070 ])) PropertyCap.c:446 -1
+     (nil))
+(jump_insn 434 433 435 76 (set (pc)
+        (label_ref 577)) PropertyCap.c:447 -1
+     (nil)
+ -> 577)
+(barrier 435 434 436)
+(code_label 436 435 437 77 53 "" [1 uses])
+(note 437 436 438 77 [bb 77] NOTE_INSN_BASIC_BLOCK)
+(call_insn 438 437 439 77 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SessionCapGetLoadedNumber") [flags 0x41]  <function_decl 0x7f020e673000 SessionCapGetLoadedNumber>) [0 SessionCapGetLoadedNumber S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:451 -1
+     (nil)
+    (nil))
+(insn 439 438 440 77 (set (reg:SI 134 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:451 -1
+     (nil))
+(insn 440 439 441 77 (set (reg/f:DI 208)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:451 -1
+     (nil))
+(insn 441 440 442 77 (set (mem:SI (reg/f:DI 208) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 134 [ D.13070 ])) PropertyCap.c:451 -1
+     (nil))
+(jump_insn 442 441 443 77 (set (pc)
+        (label_ref 577)) PropertyCap.c:452 -1
+     (nil)
+ -> 577)
+(barrier 443 442 444)
+(code_label 444 443 445 78 54 "" [1 uses])
+(note 445 444 446 78 [bb 78] NOTE_INSN_BASIC_BLOCK)
+(call_insn 446 445 447 78 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SessionCapGetLoadedAvail") [flags 0x41]  <function_decl 0x7f020e6730d8 SessionCapGetLoadedAvail>) [0 SessionCapGetLoadedAvail S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:456 -1
+     (nil)
+    (nil))
+(insn 447 446 448 78 (set (reg:SI 135 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:456 -1
+     (nil))
+(insn 448 447 449 78 (set (reg/f:DI 209)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:456 -1
+     (nil))
+(insn 449 448 450 78 (set (mem:SI (reg/f:DI 209) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 135 [ D.13070 ])) PropertyCap.c:456 -1
+     (nil))
+(jump_insn 450 449 451 78 (set (pc)
+        (label_ref 577)) PropertyCap.c:457 -1
+     (nil)
+ -> 577)
+(barrier 451 450 452)
+(code_label 452 451 453 79 55 "" [1 uses])
+(note 453 452 454 79 [bb 79] NOTE_INSN_BASIC_BLOCK)
+(call_insn 454 453 455 79 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SessionCapGetActiveNumber") [flags 0x41]  <function_decl 0x7f020e6731b0 SessionCapGetActiveNumber>) [0 SessionCapGetActiveNumber S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:461 -1
+     (nil)
+    (nil))
+(insn 455 454 456 79 (set (reg:SI 136 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:461 -1
+     (nil))
+(insn 456 455 457 79 (set (reg/f:DI 210)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:461 -1
+     (nil))
+(insn 457 456 458 79 (set (mem:SI (reg/f:DI 210) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 136 [ D.13070 ])) PropertyCap.c:461 -1
+     (nil))
+(jump_insn 458 457 459 79 (set (pc)
+        (label_ref 577)) PropertyCap.c:462 -1
+     (nil)
+ -> 577)
+(barrier 459 458 460)
+(code_label 460 459 461 80 56 "" [1 uses])
+(note 461 460 462 80 [bb 80] NOTE_INSN_BASIC_BLOCK)
+(call_insn 462 461 463 80 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("SessionCapGetActiveAvail") [flags 0x41]  <function_decl 0x7f020e673288 SessionCapGetActiveAvail>) [0 SessionCapGetActiveAvail S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:466 -1
+     (nil)
+    (nil))
+(insn 463 462 464 80 (set (reg:SI 137 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:466 -1
+     (nil))
+(insn 464 463 465 80 (set (reg/f:DI 211)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:466 -1
+     (nil))
+(insn 465 464 466 80 (set (mem:SI (reg/f:DI 211) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 137 [ D.13070 ])) PropertyCap.c:466 -1
+     (nil))
+(jump_insn 466 465 467 80 (set (pc)
+        (label_ref 577)) PropertyCap.c:467 -1
+     (nil)
+ -> 577)
+(barrier 467 466 468)
+(code_label 468 467 469 81 57 "" [1 uses])
+(note 469 468 470 81 [bb 81] NOTE_INSN_BASIC_BLOCK)
+(call_insn 470 469 471 81 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("ObjectCapGetTransientAvail") [flags 0x41]  <function_decl 0x7f020e65f5e8 ObjectCapGetTransientAvail>) [0 ObjectCapGetTransientAvail S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:471 -1
+     (nil)
+    (nil))
+(insn 471 470 472 81 (set (reg:SI 138 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:471 -1
+     (nil))
+(insn 472 471 473 81 (set (reg/f:DI 212)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:471 -1
+     (nil))
+(insn 473 472 474 81 (set (mem:SI (reg/f:DI 212) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 138 [ D.13070 ])) PropertyCap.c:471 -1
+     (nil))
+(jump_insn 474 473 475 81 (set (pc)
+        (label_ref 577)) PropertyCap.c:472 -1
+     (nil)
+ -> 577)
+(barrier 475 474 476)
+(code_label 476 475 477 82 58 "" [1 uses])
+(note 477 476 478 82 [bb 82] NOTE_INSN_BASIC_BLOCK)
+(call_insn 478 477 479 82 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NvCapGetPersistentNumber") [flags 0x41]  <function_decl 0x7f020e67d870 NvCapGetPersistentNumber>) [0 NvCapGetPersistentNumber S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:476 -1
+     (nil)
+    (nil))
+(insn 479 478 480 82 (set (reg:SI 139 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:476 -1
+     (nil))
+(insn 480 479 481 82 (set (reg/f:DI 213)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:476 -1
+     (nil))
+(insn 481 480 482 82 (set (mem:SI (reg/f:DI 213) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 139 [ D.13070 ])) PropertyCap.c:476 -1
+     (nil))
+(jump_insn 482 481 483 82 (set (pc)
+        (label_ref 577)) PropertyCap.c:477 -1
+     (nil)
+ -> 577)
+(barrier 483 482 484)
+(code_label 484 483 485 83 59 "" [1 uses])
+(note 485 484 486 83 [bb 83] NOTE_INSN_BASIC_BLOCK)
+(call_insn 486 485 487 83 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NvCapGetPersistentAvail") [flags 0x41]  <function_decl 0x7f020e67d948 NvCapGetPersistentAvail>) [0 NvCapGetPersistentAvail S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:481 -1
+     (nil)
+    (nil))
+(insn 487 486 488 83 (set (reg:SI 140 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:481 -1
+     (nil))
+(insn 488 487 489 83 (set (reg/f:DI 214)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:481 -1
+     (nil))
+(insn 489 488 490 83 (set (mem:SI (reg/f:DI 214) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 140 [ D.13070 ])) PropertyCap.c:481 -1
+     (nil))
+(jump_insn 490 489 491 83 (set (pc)
+        (label_ref 577)) PropertyCap.c:482 -1
+     (nil)
+ -> 577)
+(barrier 491 490 492)
+(code_label 492 491 493 84 60 "" [1 uses])
+(note 493 492 494 84 [bb 84] NOTE_INSN_BASIC_BLOCK)
+(call_insn 494 493 495 84 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NvCapGetCounterNumber") [flags 0x41]  <function_decl 0x7f020e67da20 NvCapGetCounterNumber>) [0 NvCapGetCounterNumber S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:486 -1
+     (nil)
+    (nil))
+(insn 495 494 496 84 (set (reg:SI 141 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:486 -1
+     (nil))
+(insn 496 495 497 84 (set (reg/f:DI 215)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:486 -1
+     (nil))
+(insn 497 496 498 84 (set (mem:SI (reg/f:DI 215) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 141 [ D.13070 ])) PropertyCap.c:486 -1
+     (nil))
+(jump_insn 498 497 499 84 (set (pc)
+        (label_ref 577)) PropertyCap.c:487 -1
+     (nil)
+ -> 577)
+(barrier 499 498 500)
+(code_label 500 499 501 85 61 "" [1 uses])
+(note 501 500 502 85 [bb 85] NOTE_INSN_BASIC_BLOCK)
+(call_insn 502 501 503 85 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NvCapGetCounterAvail") [flags 0x41]  <function_decl 0x7f020e67dbd0 NvCapGetCounterAvail>) [0 NvCapGetCounterAvail S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:491 -1
+     (nil)
+    (nil))
+(insn 503 502 504 85 (set (reg:SI 142 [ D.13070 ])
+        (reg:SI 0 ax)) PropertyCap.c:491 -1
+     (nil))
+(insn 504 503 505 85 (set (reg/f:DI 216)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:491 -1
+     (nil))
+(insn 505 504 506 85 (set (mem:SI (reg/f:DI 216) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 142 [ D.13070 ])) PropertyCap.c:491 -1
+     (nil))
+(jump_insn 506 505 507 85 (set (pc)
+        (label_ref 577)) PropertyCap.c:492 -1
+     (nil)
+ -> 577)
+(barrier 507 506 508)
+(code_label 508 507 509 86 62 "" [1 uses])
+(note 509 508 510 86 [bb 86] NOTE_INSN_BASIC_BLOCK)
+(insn 510 509 511 86 (set (reg:SI 143 [ D.13070 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 920 [0x398]))) [0 gp.algorithmSet+0 S4 A64])) PropertyCap.c:495 -1
+     (nil))
+(insn 511 510 512 86 (set (reg/f:DI 217)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:495 -1
+     (nil))
+(insn 512 511 513 86 (set (mem:SI (reg/f:DI 217) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 143 [ D.13070 ])) PropertyCap.c:495 -1
+     (nil))
+(jump_insn 513 512 514 86 (set (pc)
+        (label_ref 577)) PropertyCap.c:496 -1
+     (nil)
+ -> 577)
+(barrier 514 513 515)
+(code_label 515 514 516 87 63 "" [1 uses])
+(note 516 515 517 87 [bb 87] NOTE_INSN_BASIC_BLOCK)
+(insn 517 516 518 87 (set (reg/f:DI 218)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:500 -1
+     (nil))
+(insn 518 517 519 87 (set (mem:SI (reg/f:DI 218) [0 *value_17(D)+0 S4 A32])
+        (const_int 3 [0x3])) PropertyCap.c:500 -1
+     (nil))
+(jump_insn 519 518 520 87 (set (pc)
+        (label_ref 577)) PropertyCap.c:504 -1
+     (nil)
+ -> 577)
+(barrier 520 519 521)
+(code_label 521 520 522 88 64 "" [1 uses])
+(note 522 521 523 88 [bb 88] NOTE_INSN_BASIC_BLOCK)
+(insn 523 522 524 88 (set (reg:SI 144 [ D.13070 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 868 [0x364]))) [0 gp.failedTries+0 S4 A32])) PropertyCap.c:507 -1
+     (nil))
+(insn 524 523 525 88 (set (reg/f:DI 219)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:507 -1
+     (nil))
+(insn 525 524 526 88 (set (mem:SI (reg/f:DI 219) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 144 [ D.13070 ])) PropertyCap.c:507 -1
+     (nil))
+(jump_insn 526 525 527 88 (set (pc)
+        (label_ref 577)) PropertyCap.c:508 -1
+     (nil)
+ -> 577)
+(barrier 527 526 528)
+(code_label 528 527 529 89 65 "" [1 uses])
+(note 529 528 530 89 [bb 89] NOTE_INSN_BASIC_BLOCK)
+(insn 530 529 531 89 (set (reg:SI 145 [ D.13070 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 872 [0x368]))) [0 gp.maxTries+0 S4 A64])) PropertyCap.c:511 -1
+     (nil))
+(insn 531 530 532 89 (set (reg/f:DI 220)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:511 -1
+     (nil))
+(insn 532 531 533 89 (set (mem:SI (reg/f:DI 220) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 145 [ D.13070 ])) PropertyCap.c:511 -1
+     (nil))
+(jump_insn 533 532 534 89 (set (pc)
+        (label_ref 577)) PropertyCap.c:512 -1
+     (nil)
+ -> 577)
+(barrier 534 533 535)
+(code_label 535 534 536 90 66 "" [1 uses])
+(note 536 535 537 90 [bb 90] NOTE_INSN_BASIC_BLOCK)
+(insn 537 536 538 90 (set (reg:SI 146 [ D.13070 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 876 [0x36c]))) [0 gp.recoveryTime+0 S4 A32])) PropertyCap.c:516 -1
+     (nil))
+(insn 538 537 539 90 (set (reg/f:DI 221)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:516 -1
+     (nil))
+(insn 539 538 540 90 (set (mem:SI (reg/f:DI 221) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 146 [ D.13070 ])) PropertyCap.c:516 -1
+     (nil))
+(jump_insn 540 539 541 90 (set (pc)
+        (label_ref 577)) PropertyCap.c:517 -1
+     (nil)
+ -> 577)
+(barrier 541 540 542)
+(code_label 542 541 543 91 67 "" [1 uses])
+(note 543 542 544 91 [bb 91] NOTE_INSN_BASIC_BLOCK)
+(insn 544 543 545 91 (set (reg:SI 147 [ D.13070 ])
+        (mem/j/c:SI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 880 [0x370]))) [0 gp.lockoutRecovery+0 S4 A64])) PropertyCap.c:521 -1
+     (nil))
+(insn 545 544 546 91 (set (reg/f:DI 222)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:521 -1
+     (nil))
+(insn 546 545 547 91 (set (mem:SI (reg/f:DI 222) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 147 [ D.13070 ])) PropertyCap.c:521 -1
+     (nil))
+(jump_insn 547 546 548 91 (set (pc)
+        (label_ref 577)) PropertyCap.c:522 -1
+     (nil)
+ -> 577)
+(barrier 548 547 549)
+(code_label 549 548 550 92 68 "" [1 uses])
+(note 550 549 551 92 [bb 92] NOTE_INSN_BASIC_BLOCK)
+(insn 551 550 552 92 (set (reg/f:DI 223)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:529 -1
+     (nil))
+(insn 552 551 553 92 (set (mem:SI (reg/f:DI 223) [0 *value_17(D)+0 S4 A32])
+        (const_int 0 [0])) PropertyCap.c:529 -1
+     (nil))
+(jump_insn 553 552 554 92 (set (pc)
+        (label_ref 577)) PropertyCap.c:530 -1
+     (nil)
+ -> 577)
+(barrier 554 553 555)
+(code_label 555 554 556 93 69 "" [1 uses])
+(note 556 555 557 93 [bb 93] NOTE_INSN_BASIC_BLOCK)
+(insn 557 556 558 93 (set (reg:DI 148 [ D.13073 ])
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 912 [0x390]))) [0 gp.auditCounter+0 S8 A64])) PropertyCap.c:533 -1
+     (nil))
+(insn 558 557 559 93 (parallel [
+            (set (reg:DI 149 [ D.13073 ])
+                (lshiftrt:DI (reg:DI 148 [ D.13073 ])
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:533 -1
+     (nil))
+(insn 559 558 560 93 (set (reg:SI 150 [ D.13070 ])
+        (subreg:SI (reg:DI 149 [ D.13073 ]) 0)) PropertyCap.c:533 -1
+     (nil))
+(insn 560 559 561 93 (set (reg/f:DI 224)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:533 -1
+     (nil))
+(insn 561 560 562 93 (set (mem:SI (reg/f:DI 224) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 150 [ D.13070 ])) PropertyCap.c:533 -1
+     (nil))
+(jump_insn 562 561 563 93 (set (pc)
+        (label_ref 577)) PropertyCap.c:534 -1
+     (nil)
+ -> 577)
+(barrier 563 562 564)
+(code_label 564 563 565 94 70 "" [1 uses])
+(note 565 564 566 94 [bb 94] NOTE_INSN_BASIC_BLOCK)
+(insn 566 565 567 94 (set (reg:DI 151 [ D.13073 ])
+        (mem/j/c:DI (const:DI (plus:DI (symbol_ref:DI ("gp") [flags 0x40]  <var_decl 0x7f020e60aea0 gp>)
+                    (const_int 912 [0x390]))) [0 gp.auditCounter+0 S8 A64])) PropertyCap.c:537 -1
+     (nil))
+(insn 567 566 568 94 (set (reg:SI 152 [ D.13070 ])
+        (subreg:SI (reg:DI 151 [ D.13073 ]) 0)) PropertyCap.c:537 -1
+     (nil))
+(insn 568 567 569 94 (set (reg/f:DI 225)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 value+0 S8 A64])) PropertyCap.c:537 -1
+     (nil))
+(insn 569 568 570 94 (set (mem:SI (reg/f:DI 225) [0 *value_17(D)+0 S4 A32])
+        (reg:SI 152 [ D.13070 ])) PropertyCap.c:537 -1
+     (nil))
+(jump_insn 570 569 571 94 (set (pc)
+        (label_ref 577)) PropertyCap.c:538 -1
+     (nil)
+ -> 577)
+(barrier 571 570 572)
+(code_label 572 571 573 95 2 "" [211 uses])
+(note 573 572 574 95 [bb 95] NOTE_INSN_BASIC_BLOCK)
+(insn 574 573 575 95 (set (reg:SI 87 [ D.13069 ])
+        (const_int 0 [0])) PropertyCap.c:541 -1
+     (nil))
+(jump_insn 575 574 576 95 (set (pc)
+        (label_ref 580)) PropertyCap.c:541 -1
+     (nil)
+ -> 580)
+(barrier 576 575 577)
+(code_label 577 576 578 96 71 "" [67 uses])
+(note 578 577 579 96 [bb 96] NOTE_INSN_BASIC_BLOCK)
+(insn 579 578 580 96 (set (reg:SI 87 [ D.13069 ])
+        (const_int 1 [0x1])) PropertyCap.c:544 -1
+     (nil))
+(code_label 580 579 581 97 82 "" [1 uses])
+(note 581 580 582 97 [bb 97] NOTE_INSN_BASIC_BLOCK)
+(insn 582 581 586 97 (set (reg:SI 153 [ <retval> ])
+        (reg:SI 87 [ D.13069 ])) -1
+     (nil))
+(insn 586 582 587 97 (set (reg/i:SI 0 ax)
+        (reg:SI 153 [ <retval> ])) PropertyCap.c:545 -1
+     (nil))
+(insn 587 586 0 97 (use (reg/i:SI 0 ax)) PropertyCap.c:545 -1
+     (nil))
+
+;; Function TPMCapGetProperties (TPMCapGetProperties, funcdef_no=3, decl_uid=11981, cgraph_uid=3, symbol_order=3)
+
+Partition 2: size 4 align 4
+	nextGroup_23
+Partition 1: size 4 align 4
+	i_5
+Partition 3: size 4 align 4
+	value
+Partition 0: size 1 align 1
+	more_3
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Forwarding edge 11->12 to 20 failed.
+Redirecting jump 51 from 18 to 20.
+Removing jump 114.
+Merging block 22 into block 21...
+Merged blocks 21 and 22.
+Merged 21 and 22 without moving.
+
+
+try_optimize_cfg iteration 2
+
+Forwarding edge 11->12 to 20 failed.
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 property+0 S4 A32])
+        (reg:SI 5 di [ property ])) PropertyCap.c:560 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 count+0 S4 A32])
+        (reg:SI 4 si [ count ])) PropertyCap.c:560 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 propertyList+0 S8 A64])
+        (reg:DI 1 dx [ propertyList ])) PropertyCap.c:560 -1
+     (nil))
+(note 5 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 5 9 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [0 D.13081+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:560 -1
+     (nil))
+(insn 9 6 10 2 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -21 [0xffffffffffffffeb])) [0 more+0 S1 A8])
+        (const_int 0 [0])) PropertyCap.c:561 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:DI 99)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 propertyList+0 S8 A64])) PropertyCap.c:565 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/j:SI (reg/f:DI 99) [0 propertyList_14(D)->count+0 S4 A32])
+        (const_int 0 [0])) PropertyCap.c:565 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 count+0 S4 A32])
+            (const_int 127 [0x7f]))) PropertyCap.c:567 -1
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) PropertyCap.c:567 -1
+     (nil)
+ -> 16)
+(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 count+0 S4 A32])
+        (const_int 127 [0x7f])) PropertyCap.c:567 -1
+     (nil))
+(code_label 16 15 17 5 84 "" [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 property+0 S4 A32])
+            (const_int 255 [0xff]))) PropertyCap.c:569 -1
+     (nil))
+(jump_insn 19 18 20 5 (set (pc)
+        (if_then_else (gtu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) PropertyCap.c:569 -1
+     (nil)
+ -> 22)
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 property+0 S4 A32])
+        (const_int 256 [0x100])) PropertyCap.c:570 -1
+     (nil))
+(code_label 22 21 23 7 85 "" [1 uses])
+(note 23 22 24 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 7 (set (reg:CC 17 flags)
+        (compare:CC (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 property+0 S4 A32])
+            (const_int 767 [0x2ff]))) PropertyCap.c:573 -1
+     (nil))
+(jump_insn 25 24 26 7 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 30)
+            (pc))) PropertyCap.c:573 -1
+     (nil)
+ -> 30)
+(note 26 25 27 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 28 8 (set (reg:QI 87 [ D.13078 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -21 [0xffffffffffffffeb])) [0 more+0 S1 A8])) PropertyCap.c:574 -1
+     (nil))
+(jump_insn 28 27 29 8 (set (pc)
+        (label_ref 111)) PropertyCap.c:574 -1
+     (nil)
+ -> 111)
+(barrier 29 28 30)
+(code_label 30 29 31 9 86 "" [1 uses])
+(note 31 30 32 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 32 31 33 9 (set (reg:SI 100)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 property+0 S4 A32])) PropertyCap.c:576 -1
+     (nil))
+(insn 33 32 34 9 (parallel [
+            (set (reg:SI 88 [ D.13079 ])
+                (lshiftrt:SI (reg:SI 100)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:576 -1
+     (expr_list:REG_EQUAL (udiv:SI (reg:SI 100)
+            (const_int 256 [0x100]))
+        (nil)))
+(insn 34 33 35 9 (parallel [
+            (set (reg:SI 89 [ D.13079 ])
+                (plus:SI (reg:SI 88 [ D.13079 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:576 -1
+     (nil))
+(insn 35 34 36 9 (parallel [
+            (set (reg:SI 101)
+                (ashift:SI (reg:SI 89 [ D.13079 ])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:576 -1
+     (nil))
+(insn 36 35 37 9 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -12 [0xfffffffffffffff4])) [0 nextGroup+0 S4 A32])
+        (reg:SI 101)) PropertyCap.c:576 -1
+     (nil))
+(insn 37 36 38 9 (set (reg:SI 102)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -36 [0xffffffffffffffdc])) [0 property+0 S4 A32])) PropertyCap.c:578 -1
+     (nil))
+(insn 38 37 39 9 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 i+0 S4 A32])
+        (reg:SI 102)) PropertyCap.c:578 -1
+     (nil))
+(jump_insn 39 38 40 9 (set (pc)
+        (label_ref 102)) PropertyCap.c:578 -1
+     (nil)
+ -> 102)
+(barrier 40 39 104)
+(code_label 104 40 41 10 94 "" [1 uses])
+(note 41 104 42 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 10 (set (reg:SI 103)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 i+0 S4 A32])) PropertyCap.c:582 -1
+     (nil))
+(insn 43 42 44 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 103)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -36 [0xffffffffffffffdc])) [0 property+0 S4 A32]))) PropertyCap.c:582 -1
+     (nil))
+(jump_insn 44 43 45 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 53)
+            (pc))) PropertyCap.c:582 -1
+     (nil)
+ -> 53)
+(note 45 44 46 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 46 45 47 11 (set (reg:SI 104)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 i+0 S4 A32])) PropertyCap.c:582 -1
+     (nil))
+(insn 47 46 48 11 (set (reg:SI 97 [ D.13079 ])
+        (zero_extend:SI (subreg:QI (reg:SI 104) 0))) PropertyCap.c:582 -1
+     (expr_list:REG_EQUAL (and:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [0 i+0 S4 A32])
+            (const_int 255 [0xff]))
+        (nil)))
+(insn 48 47 49 11 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 97 [ D.13079 ])
+            (const_int 0 [0]))) PropertyCap.c:582 -1
+     (nil))
+(jump_insn 49 48 50 11 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 53)
+            (pc))) PropertyCap.c:582 -1
+     (nil)
+ -> 53)
+(note 50 49 51 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 51 50 52 12 (set (pc)
+        (label_ref:DI 108)) PropertyCap.c:583 654 {jump}
+     (nil)
+ -> 108)
+(barrier 52 51 53)
+(code_label 53 52 54 13 89 "" [2 uses])
+(note 54 53 55 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 55 54 56 13 (parallel [
+            (set (reg:DI 105)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -20 [0xffffffffffffffec])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:584 -1
+     (nil))
+(insn 56 55 57 13 (set (reg:SI 106)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 i+0 S4 A32])) PropertyCap.c:584 -1
+     (nil))
+(insn 57 56 58 13 (set (reg:DI 4 si)
+        (reg:DI 105)) PropertyCap.c:584 -1
+     (nil))
+(insn 58 57 59 13 (set (reg:SI 5 di)
+        (reg:SI 106)) PropertyCap.c:584 -1
+     (nil))
+(call_insn 59 58 60 13 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TPMPropertyIsDefined") [flags 0x3]  <function_decl 0x7f020e776d80 TPMPropertyIsDefined>) [0 TPMPropertyIsDefined S1 A8])
+            (const_int 0 [0]))) PropertyCap.c:584 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 60 59 61 13 (set (reg:SI 90 [ D.13080 ])
+        (reg:SI 0 ax)) PropertyCap.c:584 -1
+     (nil))
+(insn 61 60 62 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 90 [ D.13080 ])
+            (const_int 0 [0]))) PropertyCap.c:584 -1
+     (nil))
+(jump_insn 62 61 63 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 93)
+            (pc))) PropertyCap.c:584 -1
+     (nil)
+ -> 93)
+(note 63 62 64 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 65 14 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 propertyList+0 S8 A64])) PropertyCap.c:586 -1
+     (nil))
+(insn 65 64 66 14 (set (reg:SI 91 [ D.13079 ])
+        (mem/j:SI (reg/f:DI 107) [0 propertyList_14(D)->count+0 S4 A32])) PropertyCap.c:586 -1
+     (nil))
+(insn 66 65 67 14 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 91 [ D.13079 ])
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -40 [0xffffffffffffffd8])) [0 count+0 S4 A32]))) PropertyCap.c:586 -1
+     (nil))
+(jump_insn 67 66 68 14 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 88)
+            (pc))) PropertyCap.c:586 -1
+     (nil)
+ -> 88)
+(note 68 67 69 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 69 68 70 15 (set (reg/f:DI 108)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 propertyList+0 S8 A64])) PropertyCap.c:589 -1
+     (nil))
+(insn 70 69 71 15 (set (reg:SI 92 [ D.13079 ])
+        (mem/j:SI (reg/f:DI 108) [0 propertyList_14(D)->count+0 S4 A32])) PropertyCap.c:589 -1
+     (nil))
+(insn 71 70 72 15 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 propertyList+0 S8 A64])) PropertyCap.c:589 -1
+     (nil))
+(insn 72 71 73 15 (set (reg:DI 110)
+        (zero_extend:DI (reg:SI 92 [ D.13079 ]))) PropertyCap.c:589 -1
+     (nil))
+(insn 73 72 74 15 (set (reg:SI 111)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 i+0 S4 A32])) PropertyCap.c:589 -1
+     (nil))
+(insn 74 73 75 15 (set (mem/j:SI (plus:DI (plus:DI (mult:DI (reg:DI 110)
+                        (const_int 8 [0x8]))
+                    (reg/f:DI 109))
+                (const_int 4 [0x4])) [0 propertyList_14(D)->tpmProperty[_28].property+0 S4 A32])
+        (reg:SI 111)) PropertyCap.c:589 -1
+     (nil))
+(insn 75 74 76 15 (set (reg/f:DI 112)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 propertyList+0 S8 A64])) PropertyCap.c:591 -1
+     (nil))
+(insn 76 75 77 15 (set (reg:SI 93 [ D.13079 ])
+        (mem/j:SI (reg/f:DI 112) [0 propertyList_14(D)->count+0 S4 A32])) PropertyCap.c:591 -1
+     (nil))
+(insn 77 76 78 15 (set (reg:SI 94 [ D.13079 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -20 [0xffffffffffffffec])) [0 value+0 S4 A32])) PropertyCap.c:591 -1
+     (nil))
+(insn 78 77 79 15 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 propertyList+0 S8 A64])) PropertyCap.c:591 -1
+     (nil))
+(insn 79 78 80 15 (set (reg:DI 114)
+        (zero_extend:DI (reg:SI 93 [ D.13079 ]))) PropertyCap.c:591 -1
+     (nil))
+(insn 80 79 81 15 (set (mem/j:SI (plus:DI (plus:DI (mult:DI (reg:DI 114)
+                        (const_int 8 [0x8]))
+                    (reg/f:DI 113))
+                (const_int 8 [0x8])) [0 propertyList_14(D)->tpmProperty[_30].value+0 S4 A32])
+        (reg:SI 94 [ D.13079 ])) PropertyCap.c:591 -1
+     (nil))
+(insn 81 80 82 15 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 propertyList+0 S8 A64])) PropertyCap.c:592 -1
+     (nil))
+(insn 82 81 83 15 (set (reg:SI 95 [ D.13079 ])
+        (mem/j:SI (reg/f:DI 115) [0 propertyList_14(D)->count+0 S4 A32])) PropertyCap.c:592 -1
+     (nil))
+(insn 83 82 84 15 (parallel [
+            (set (reg:SI 96 [ D.13079 ])
+                (plus:SI (reg:SI 95 [ D.13079 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:592 -1
+     (nil))
+(insn 84 83 85 15 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 propertyList+0 S8 A64])) PropertyCap.c:592 -1
+     (nil))
+(insn 85 84 86 15 (set (mem/j:SI (reg/f:DI 116) [0 propertyList_14(D)->count+0 S4 A32])
+        (reg:SI 96 [ D.13079 ])) PropertyCap.c:592 -1
+     (nil))
+(jump_insn 86 85 87 15 (set (pc)
+        (label_ref 93)) -1
+     (nil)
+ -> 93)
+(barrier 87 86 88)
+(code_label 88 87 89 16 92 "" [1 uses])
+(note 89 88 90 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 90 89 91 16 (set (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -21 [0xffffffffffffffeb])) [0 more+0 S1 A8])
+        (const_int 1 [0x1])) PropertyCap.c:598 -1
+     (nil))
+(jump_insn 91 90 92 16 (set (pc)
+        (label_ref 98)) PropertyCap.c:599 -1
+     (nil)
+ -> 98)
+(barrier 92 91 93)
+(code_label 93 92 94 17 91 "" [2 uses])
+(note 94 93 95 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 95 94 96 17 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -16 [0xfffffffffffffff0])) [0 i+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -16 [0xfffffffffffffff0])) [0 i+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) PropertyCap.c:578 -1
+     (nil))
+(jump_insn 96 95 97 17 (set (pc)
+        (label_ref 102)) PropertyCap.c:578 -1
+     (nil)
+ -> 102)
+(barrier 97 96 98)
+(code_label 98 97 99 18 90 "" [1 uses])
+(note 99 98 100 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 100 99 101 18 (set (pc)
+        (label_ref 108)) PropertyCap.c:583 -1
+     (nil)
+ -> 108)
+(barrier 101 100 102)
+(code_label 102 101 103 19 88 "" [2 uses])
+(note 103 102 105 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 105 103 106 19 (set (reg:SI 117)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [0 i+0 S4 A32])) PropertyCap.c:578 -1
+     (nil))
+(insn 106 105 107 19 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 117)
+            (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -12 [0xfffffffffffffff4])) [0 nextGroup+0 S4 A32]))) PropertyCap.c:578 -1
+     (nil))
+(jump_insn 107 106 108 19 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 104)
+            (pc))) PropertyCap.c:578 -1
+     (nil)
+ -> 104)
+(code_label 108 107 109 20 93 "" [2 uses])
+(note 109 108 110 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 110 109 111 20 (set (reg:QI 87 [ D.13078 ])
+        (mem/c:QI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -21 [0xffffffffffffffeb])) [0 more+0 S1 A8])) PropertyCap.c:603 -1
+     (nil))
+(code_label 111 110 112 21 87 "" [1 uses])
+(note 112 111 113 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 113 112 117 21 (set (reg:QI 98 [ <retval> ])
+        (reg:QI 87 [ D.13078 ])) -1
+     (nil))
+(insn 117 113 118 21 (set (reg/i:QI 0 ax)
+        (reg:QI 98 [ <retval> ])) PropertyCap.c:604 -1
+     (nil))
+(insn 118 117 119 21 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [0 D.13081+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) PropertyCap.c:604 -1
+     (nil))
+(jump_insn 119 118 125 21 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 122)
+            (pc))) PropertyCap.c:604 -1
+     (nil)
+ -> 122)
+(note 125 119 120 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(call_insn 120 125 121 23 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f020e790000 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) PropertyCap.c:604 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 121 120 122)
+(code_label 122 121 126 24 95 "" [1 uses])
+(note 126 122 123 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 123 126 0 24 (use (reg/i:QI 0 ax)) PropertyCap.c:604 -1
+     (nil))

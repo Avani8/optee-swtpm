@@ -1,0 +1,657 @@
+
+;; Function NTC2_CFG_STRUCT_Unmarshal (NTC2_CFG_STRUCT_Unmarshal, funcdef_no=2, decl_uid=8389, cgraph_uid=2, symbol_order=2)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 28.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 target+0 S8 A64])
+        (reg:DI 5 di [ target ])) tssntc.c:53 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])
+        (reg:DI 4 si [ buffer ])) tssntc.c:53 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 size+0 S8 A64])
+        (reg:DI 1 dx [ size ])) tssntc.c:53 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssntc.c:54 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssntc.c:58 -1
+     (nil))
+(jump_insn 10 9 11 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) tssntc.c:58 -1
+     (nil)
+ -> 22)
+(note 11 10 12 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 12 11 13 4 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 size+0 S8 A64])) tssntc.c:59 -1
+     (nil))
+(insn 13 12 14 4 (set (reg:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])) tssntc.c:59 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 target+0 S8 A64])) tssntc.c:59 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 2 cx)
+        (reg:DI 89)) tssntc.c:59 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 1 dx)
+        (reg:DI 90)) tssntc.c:59 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:SI 4 si)
+        (const_int 18 [0x12])) tssntc.c:59 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:DI 5 di)
+        (reg:DI 91)) tssntc.c:59 -1
+     (nil))
+(call_insn 19 18 20 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("Array_Unmarshal") [flags 0x41]  <function_decl 0x7f59bb900bd0 Array_Unmarshal>) [0 Array_Unmarshal S1 A8])
+            (const_int 0 [0]))) tssntc.c:59 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 20 19 21 4 (set (reg:SI 92)
+        (reg:SI 0 ax)) tssntc.c:59 -1
+     (nil))
+(insn 21 20 22 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 92)) tssntc.c:59 -1
+     (nil))
+(code_label 22 21 23 5 2 "" [1 uses])
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 27 5 (set (reg:SI 87 [ D.8475 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssntc.c:61 -1
+     (nil))
+(insn 27 24 31 5 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.8475 ])) tssntc.c:61 -1
+     (nil))
+(insn 31 27 32 5 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tssntc.c:62 -1
+     (nil))
+(insn 32 31 0 5 (use (reg/i:SI 0 ax)) tssntc.c:62 -1
+     (nil))
+
+;; Function TSS_NTC2_CFG_STRUCT_Marshal (TSS_NTC2_CFG_STRUCT_Marshal, funcdef_no=3, decl_uid=8394, cgraph_uid=3, symbol_order=3)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 31.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 source+0 S8 A64])
+        (reg:DI 5 di [ source ])) tssntc.c:66 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 written+0 S8 A64])
+        (reg:DI 4 si [ written ])) tssntc.c:66 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 buffer+0 S8 A64])
+        (reg:DI 1 dx [ buffer ])) tssntc.c:66 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 size+0 S8 A64])
+        (reg:DI 2 cx [ size ])) tssntc.c:66 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssntc.c:67 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssntc.c:68 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 25)
+            (pc))) tssntc.c:68 -1
+     (nil)
+ -> 25)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 size+0 S8 A64])) tssntc.c:69 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 buffer+0 S8 A64])) tssntc.c:69 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 written+0 S8 A64])) tssntc.c:69 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 source+0 S8 A64])) tssntc.c:69 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:DI 37 r8)
+        (reg:DI 89)) tssntc.c:69 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:DI 2 cx)
+        (reg:DI 90)) tssntc.c:69 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:DI 1 dx)
+        (reg:DI 91)) tssntc.c:69 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:SI 4 si)
+        (const_int 18 [0x12])) tssntc.c:69 -1
+     (nil))
+(insn 21 20 22 4 (set (reg:DI 5 di)
+        (reg:DI 92)) tssntc.c:69 -1
+     (nil))
+(call_insn 22 21 23 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_Array_Marshal") [flags 0x41]  <function_decl 0x7f59bb713d80 TSS_Array_Marshal>) [0 TSS_Array_Marshal S1 A8])
+            (const_int 0 [0]))) tssntc.c:69 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (expr_list:DI (use (reg:DI 37 r8))
+                        (nil)))))))
+(insn 23 22 24 4 (set (reg:SI 93)
+        (reg:SI 0 ax)) tssntc.c:69 -1
+     (nil))
+(insn 24 23 25 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 93)) tssntc.c:69 -1
+     (nil))
+(code_label 25 24 26 5 5 "" [1 uses])
+(note 26 25 27 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 27 26 30 5 (set (reg:SI 87 [ D.8476 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssntc.c:71 -1
+     (nil))
+(insn 30 27 34 5 (set (reg:SI 88 [ <retval> ])
+        (reg:SI 87 [ D.8476 ])) tssntc.c:71 -1
+     (nil))
+(insn 34 30 35 5 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) tssntc.c:72 -1
+     (nil))
+(insn 35 34 0 5 (use (reg/i:SI 0 ax)) tssntc.c:72 -1
+     (nil))
+
+;; Function NTC2_PreConfig_In_Unmarshal (NTC2_PreConfig_In_Unmarshal, funcdef_no=4, decl_uid=8399, cgraph_uid=4, symbol_order=4)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+Removing jump 32.
+Merging block 8 into block 6...
+Merged blocks 6 and 8.
+Merged 6 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 target+0 S8 A64])
+        (reg:DI 5 di [ target ])) tssntc.c:76 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])
+        (reg:DI 4 si [ buffer ])) tssntc.c:76 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 size+0 S8 A64])
+        (reg:DI 1 dx [ size ])) tssntc.c:76 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 handles+0 S8 A64])
+        (reg:DI 2 cx [ handles ])) tssntc.c:76 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssntc.c:77 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssntc.c:80 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssntc.c:80 -1
+     (nil)
+ -> 26)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg/f:DI 87 [ D.8477 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 target+0 S8 A64])) tssntc.c:81 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 size+0 S8 A64])) tssntc.c:81 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 buffer+0 S8 A64])) tssntc.c:81 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 1 dx)
+        (reg:DI 90)) tssntc.c:81 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:DI 4 si)
+        (reg:DI 91)) tssntc.c:81 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.8477 ])) tssntc.c:81 -1
+     (nil))
+(call_insn 19 18 20 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NTC2_CFG_STRUCT_Unmarshal") [flags 0x1]  <function_decl 0x7f59bb7cf510 NTC2_CFG_STRUCT_Unmarshal>) [0 NTC2_CFG_STRUCT_Unmarshal S1 A8])
+            (const_int 0 [0]))) tssntc.c:81 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 20 19 21 4 (set (reg:SI 92)
+        (reg:SI 0 ax)) tssntc.c:81 -1
+     (nil))
+(insn 21 20 22 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 92)) tssntc.c:81 -1
+     (nil))
+(insn 22 21 23 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssntc.c:82 -1
+     (nil))
+(jump_insn 23 22 24 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 26)
+            (pc))) tssntc.c:82 -1
+     (nil)
+ -> 26)
+(note 24 23 25 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 26 5 (parallel [
+            (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+                (plus:SI (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                            (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+                    (const_int 320 [0x140])))
+            (clobber (reg:CC 17 flags))
+        ]) tssntc.c:83 -1
+     (nil))
+(code_label 26 25 27 6 8 "" [2 uses])
+(note 27 26 28 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 31 6 (set (reg:SI 88 [ D.8478 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssntc.c:86 -1
+     (nil))
+(insn 31 28 35 6 (set (reg:SI 89 [ <retval> ])
+        (reg:SI 88 [ D.8478 ])) tssntc.c:86 -1
+     (nil))
+(insn 35 31 36 6 (set (reg/i:SI 0 ax)
+        (reg:SI 89 [ <retval> ])) tssntc.c:87 -1
+     (nil))
+(insn 36 35 0 6 (use (reg/i:SI 0 ax)) tssntc.c:87 -1
+     (nil))
+
+;; Function TSS_NTC2_PreConfig_In_Marshal (TSS_NTC2_PreConfig_In_Marshal, funcdef_no=5, decl_uid=8404, cgraph_uid=5, symbol_order=5)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 30.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 source+0 S8 A64])
+        (reg:DI 5 di [ source ])) tssntc.c:91 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 written+0 S8 A64])
+        (reg:DI 4 si [ written ])) tssntc.c:91 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 buffer+0 S8 A64])
+        (reg:DI 1 dx [ buffer ])) tssntc.c:91 -1
+     (nil))
+(insn 5 4 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 size+0 S8 A64])
+        (reg:DI 2 cx [ size ])) tssntc.c:91 -1
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssntc.c:92 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssntc.c:93 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) tssntc.c:93 -1
+     (nil)
+ -> 24)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg/f:DI 87 [ D.8479 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 source+0 S8 A64])) tssntc.c:94 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 size+0 S8 A64])) tssntc.c:94 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 buffer+0 S8 A64])) tssntc.c:94 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -32 [0xffffffffffffffe0])) [0 written+0 S8 A64])) tssntc.c:94 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:DI 2 cx)
+        (reg:DI 90)) tssntc.c:94 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:DI 1 dx)
+        (reg:DI 91)) tssntc.c:94 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:DI 4 si)
+        (reg:DI 92)) tssntc.c:94 -1
+     (nil))
+(insn 20 19 21 4 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.8479 ])) tssntc.c:94 -1
+     (nil))
+(call_insn 21 20 22 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("TSS_NTC2_CFG_STRUCT_Marshal") [flags 0x1]  <function_decl 0x7f59bb7cf5e8 TSS_NTC2_CFG_STRUCT_Marshal>) [0 TSS_NTC2_CFG_STRUCT_Marshal S1 A8])
+            (const_int 0 [0]))) tssntc.c:94 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (expr_list:DI (use (reg:DI 2 cx))
+                    (nil))))))
+(insn 22 21 23 4 (set (reg:SI 93)
+        (reg:SI 0 ax)) tssntc.c:94 -1
+     (nil))
+(insn 23 22 24 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 93)) tssntc.c:94 -1
+     (nil))
+(code_label 24 23 25 5 11 "" [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 29 5 (set (reg:SI 88 [ D.8480 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssntc.c:96 -1
+     (nil))
+(insn 29 26 33 5 (set (reg:SI 89 [ <retval> ])
+        (reg:SI 88 [ D.8480 ])) tssntc.c:96 -1
+     (nil))
+(insn 33 29 34 5 (set (reg/i:SI 0 ax)
+        (reg:SI 89 [ <retval> ])) tssntc.c:97 -1
+     (nil))
+(insn 34 33 0 5 (use (reg/i:SI 0 ax)) tssntc.c:97 -1
+     (nil))
+
+;; Function TSS_NTC2_GetConfig_Out_Unmarshal (TSS_NTC2_GetConfig_Out_Unmarshal, funcdef_no=6, decl_uid=8409, cgraph_uid=6, symbol_order=6)
+
+Partition 0: size 4 align 4
+	rc_1
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 29.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 target+0 S8 A64])
+        (reg:DI 5 di [ target ])) tssntc.c:101 -1
+     (nil))
+(insn 3 2 5 2 (set (reg:SI 90)
+        (reg:SI 4 si [ tag ])) tssntc.c:101 -1
+     (nil))
+(insn 5 3 6 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 buffer+0 S8 A64])
+        (reg:DI 1 dx [ buffer ])) tssntc.c:101 -1
+     (nil))
+(insn 6 5 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 size+0 S8 A64])
+        (reg:DI 2 cx [ size ])) tssntc.c:101 -1
+     (nil))
+(insn 4 6 7 2 (set (mem/c:HI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -28 [0xffffffffffffffe4])) [0 tag+0 S2 A32])
+        (subreg:HI (reg:SI 90) 0)) tssntc.c:101 -1
+     (nil))
+(note 7 4 10 2 NOTE_INSN_FUNCTION_BEG)
+(insn 10 7 11 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (const_int 0 [0])) tssntc.c:102 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+            (const_int 0 [0]))) tssntc.c:105 -1
+     (nil))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 23)
+            (pc))) tssntc.c:105 -1
+     (nil)
+ -> 23)
+(note 13 12 14 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 14 13 15 4 (set (reg/f:DI 87 [ D.8481 ])
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [0 target+0 S8 A64])) tssntc.c:106 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [0 size+0 S8 A64])) tssntc.c:106 -1
+     (nil))
+(insn 16 15 17 4 (set (reg:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [0 buffer+0 S8 A64])) tssntc.c:106 -1
+     (nil))
+(insn 17 16 18 4 (set (reg:DI 1 dx)
+        (reg:DI 91)) tssntc.c:106 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:DI 4 si)
+        (reg:DI 92)) tssntc.c:106 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ D.8481 ])) tssntc.c:106 -1
+     (nil))
+(call_insn 20 19 21 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("NTC2_CFG_STRUCT_Unmarshal") [flags 0x1]  <function_decl 0x7f59bb7cf510 NTC2_CFG_STRUCT_Unmarshal>) [0 NTC2_CFG_STRUCT_Unmarshal S1 A8])
+            (const_int 0 [0]))) tssntc.c:106 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 21 20 22 4 (set (reg:SI 93)
+        (reg:SI 0 ax)) tssntc.c:106 -1
+     (nil))
+(insn 22 21 23 4 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])
+        (reg:SI 93)) tssntc.c:106 -1
+     (nil))
+(code_label 23 22 24 5 14 "" [1 uses])
+(note 24 23 25 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 28 5 (set (reg:SI 88 [ D.8482 ])
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [0 rc+0 S4 A32])) tssntc.c:108 -1
+     (nil))
+(insn 28 25 32 5 (set (reg:SI 89 [ <retval> ])
+        (reg:SI 88 [ D.8482 ])) tssntc.c:108 -1
+     (nil))
+(insn 32 28 33 5 (set (reg/i:SI 0 ax)
+        (reg:SI 89 [ <retval> ])) tssntc.c:109 -1
+     (nil))
+(insn 33 32 0 5 (use (reg/i:SI 0 ax)) tssntc.c:109 -1
+     (nil))
