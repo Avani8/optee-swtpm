@@ -1,4 +1,4 @@
-# OP-TEE Sample Applications
+# TPM TA POC Applications
 ## Contents
 1. [Introduction](#1-introduction)
 2. [List of sample applications](#2-list-of-sample-applications)
