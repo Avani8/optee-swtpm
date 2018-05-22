@@ -47,7 +47,7 @@ ciphered data.
 * Test application: `tpm_rsa`
 * Trusted application UUID: 5dbac793-f574-4871-8ad3-04331ec17f24
 
-Directory */hotp**:
+Directory **hotp/**:
 * Runs an hotp from a TA using the GPD TEE Internal
 Core API. Non secure test application provides the key, initial vector and
 ciphered data.
